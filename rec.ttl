@@ -1,0 +1,318 @@
+# baseURI: https://w3id.org/rec
+# imports: http://datashapes.org/dash
+# prefix: rec
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rec: <https://w3id.org/rec#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/rec>
+  a owl:Ontology ;
+  rdfs:label "RealEstateCore" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "4.0" ;
+.
+rec:Agent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Agent" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:memberOf ;
+      sh:class rec:Organization ;
+      sh:name "member of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:name ;
+      sh:datatype xsd:string ;
+      sh:name "name" ;
+    ] ;
+.
+rec:Apartment
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Apartment" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Room ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:BasementLevel
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Basement level" ;
+  rdfs:subClassOf rec:Level ;
+.
+rec:Building
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A confined building structure." ;
+  rdfs:label "Building" ;
+  rdfs:subClassOf rec:Space ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:architectedBy ;
+      sh:class rec:Agent ;
+      sh:name "architected by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:constructedBy ;
+      sh:class rec:Agent ;
+      sh:name "constructed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Campus
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A campus represents a collection of location entities. The constituent locations may have differing legal ownership and utilization purposes, but they are generally perceived as a coherent unit or sub-region within a city or other region. E.g., a university campus, a hospital campus, a corporate campus, etc." ;
+  rdfs:label "Campus" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Space ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Collection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
+  rdfs:label "Collection" ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+rec:Document
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Document" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:url ;
+      sh:name "URL" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:HVACZone
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "HVAC zone" ;
+  rdfs:subClassOf rec:Zone ;
+.
+rec:Land
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A piece of land upon which zero or more buildings may be situated." ;
+  rdfs:label "Land" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:Level
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "The level of a building, a.k.a. storey, floor, etc." ;
+  rdfs:label "Level" ;
+  rdfs:subClassOf rec:Space ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:levelNumber ;
+      sh:datatype xsd:integer ;
+      sh:name "level number" ;
+    ] ;
+.
+rec:MezzanineLevel
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Mezzanine level" ;
+  rdfs:subClassOf rec:Level ;
+.
+rec:OccupancyZone
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Occupancy zone" ;
+  rdfs:subClassOf rec:Zone ;
+.
+rec:Organization
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Organization" ;
+  rdfs:subClassOf rec:Agent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:department ;
+      sh:class rec:Organization ;
+      sh:description "A relationship between an organization and a department of that organization, also described as an organization." ;
+      sh:name "department" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:member ;
+      sh:class rec:Agent ;
+      sh:minCount 1 ;
+      sh:name "member" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Person
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Person" ;
+  rdfs:subClassOf rec:Agent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:familyName ;
+      sh:datatype xsd:string ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:givenName ;
+      sh:datatype xsd:string ;
+    ] ;
+.
+rec:Region
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Region" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:RoofLevel
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Roof level" ;
+  rdfs:subClassOf rec:Level ;
+.
+rec:Room
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Room" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:Space
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings." ;
+  rdfs:label "Space" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:contains ;
+      sh:class rec:Space ;
+      sh:name "contains" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:operatedBy ;
+      sh:class rec:Agent ;
+      sh:name "operated by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:ownedBy ;
+      sh:class rec:Agent ;
+      sh:name "owned by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:subjectOf ;
+      sh:class rec:Document ;
+      sh:name "subject of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Sub-building
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Sub-building" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:Workspace
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Workspace" ;
+  rdfs:subClassOf rec:Zone ;
+.
+rec:Zone
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Zone" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:architectedBy
+  a rdf:Property ;
+  rdfs:label "architected by" ;
+.
+rec:constructedBy
+  a rdf:Property ;
+  rdfs:label "constructed by" ;
+.
+rec:contains
+  a rdf:Property ;
+  rdfs:label "contains" ;
+.
+rec:department
+  a rdf:Property ;
+  rdfs:label "department" ;
+.
+rec:familyName
+  a rdf:Property ;
+  rdfs:label "family name" ;
+.
+rec:givenName
+  a rdf:Property ;
+  rdfs:label "given name" ;
+.
+rec:includes
+  a rdf:Property ;
+  rdfs:label "includes" ;
+.
+rec:member
+  a rdf:Property ;
+  rdfs:label "member" ;
+.
+rec:memberOf
+  a rdf:Property ;
+  rdfs:label "member of" ;
+.
+rec:name
+  a rdf:Property ;
+  rdfs:label "name" ;
+.
+rec:operatedBy
+  a rdf:Property ;
+  rdfs:label "operated by" ;
+.
+rec:ownedBy
+  a rdf:Property ;
+  rdfs:label "owned by" ;
+.
+rec:subjectOf
+  a rdf:Property ;
+  rdfs:label "subject of" ;
+.
+rec:url
+  a rdf:Property ;
+  rdfs:label "URL" ;
+.
+[
+  a sh:PropertyShape ;
+].
