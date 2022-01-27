@@ -58,6 +58,14 @@ rec:Architecture
   rdfs:subClassOf rec:Place ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:address ;
+      sh:class rec:PostalAddress ;
+      sh:description "Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question." ;
+      sh:name "address" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:contains ;
       sh:class rec:Architecture ;
       sh:name "contains" ;
@@ -153,7 +161,7 @@ rec:Document
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Document" ;
-  rdfs:subClassOf rdfs:Resource ;
+  rdfs:subClassOf rec:Information ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:url ;
@@ -166,6 +174,12 @@ rec:HVACZone
   a sh:NodeShape ;
   rdfs:label "HVAC zone" ;
   rdfs:subClassOf rec:Zone ;
+.
+rec:Information
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Information" ;
+  rdfs:subClassOf rdfs:Resource ;
 .
 rec:Level
   a rdfs:Class ;
@@ -243,6 +257,20 @@ rec:Place
       sh:path rec:contains ;
       sh:class rec:Place ;
       sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:PostalAddress
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Postal address" ;
+  rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:country ;
+      sh:datatype xsd:string ;
+      sh:description "The country, e.g., USA, Sweden, Argentina, or optionally a two-letter ISO 3166-1 alpha-2 country code, e.g., \"SE\", \"US\", etc." ;
+      sh:maxCount 1 ;
+      sh:name "country" ;
     ] ;
 .
 rec:Region
