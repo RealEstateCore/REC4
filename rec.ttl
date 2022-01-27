@@ -77,6 +77,13 @@ rec:Building
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:BuildingElement
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, RoofInner, etc." ;
+  rdfs:label "Building element" ;
+  rdfs:subClassOf rdfs:Resource ;
+.
 rec:Campus
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -241,6 +248,14 @@ rec:Space
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:hasBuildingElement ;
+      sh:class rec:BuildingElement ;
+      sh:description "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
+      sh:name "has building element" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:operatedBy ;
       sh:class rec:Agent ;
       sh:name "operated by" ;
@@ -309,6 +324,11 @@ rec:familyName
 rec:givenName
   a rdf:Property ;
   rdfs:label "given name" ;
+.
+rec:hasBuildingElement
+  a rdf:Property ;
+  rdfs:comment "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
+  rdfs:label "has building element" ;
 .
 rec:includes
   a rdf:Property ;
