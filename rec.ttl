@@ -117,13 +117,6 @@ rec:HVACZone
   rdfs:label "HVAC zone" ;
   rdfs:subClassOf rec:Zone ;
 .
-rec:Land
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:comment "A piece of land upon which zero or more buildings may be situated." ;
-  rdfs:label "Land" ;
-  rdfs:subClassOf rec:Space ;
-.
 rec:Level
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -188,6 +181,12 @@ rec:Person
       sh:path rec:givenName ;
       sh:datatype xsd:string ;
     ] ;
+.
+rec:Place
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Place" ;
+  rdfs:subClassOf rdfs:Resource ;
 .
 rec:Region
   a rdfs:Class ;
