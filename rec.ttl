@@ -50,6 +50,49 @@ rec:Apartment
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:Architecture
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A designed/landscaped (or potentially designed/landscaped) part of the physical world that has a 3D spatial extent. E.g., a building site, a building, levels within the building, rooms, etc." ;
+  rdfs:label "Architecture" ;
+  rdfs:subClassOf rec:Place ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:contains ;
+      sh:class rec:Architecture ;
+      sh:name "contains" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasBuildingElement ;
+      sh:class rec:BuildingElement ;
+      sh:description "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
+      sh:name "has building element" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:operatedBy ;
+      sh:class rec:Agent ;
+      sh:name "operated by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:ownedBy ;
+      sh:class rec:Agent ;
+      sh:name "owned by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:subjectOf ;
+      sh:class rec:Document ;
+      sh:name "subject of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:BasementLevel
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -61,7 +104,7 @@ rec:Building
   a sh:NodeShape ;
   rdfs:comment "A confined building structure." ;
   rdfs:label "Building" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:architectedBy ;
@@ -93,7 +136,7 @@ rec:Campus
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
-      sh:class rec:Space ;
+      sh:class rec:Architecture ;
       sh:minCount 1 ;
       sh:name "includes" ;
       sh:nodeKind sh:IRI ;
@@ -129,7 +172,7 @@ rec:Level
   a sh:NodeShape ;
   rdfs:comment "The level of a building, a.k.a. storey, floor, etc." ;
   rdfs:label "Level" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:levelNumber ;
@@ -192,8 +235,15 @@ rec:Person
 rec:Place
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A contiguous part of the physical world that contains or can contain sub-spaces. E.g., a Region can contain many Sites, which in turn can contain many Buildings." ;
   rdfs:label "Place" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:contains ;
+      sh:class rec:Place ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:Region
   a rdfs:Class ;
@@ -218,14 +268,14 @@ rec:Room
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Room" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
 .
 rec:Site
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:comment "A piece of land upon which zero or more buildings may be situated." ;
   rdfs:label "Site" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
 .
 rec:Slab
   a rdfs:Class ;
@@ -233,54 +283,11 @@ rec:Slab
   rdfs:label "Slab" ;
   rdfs:subClassOf rec:BuildingElement ;
 .
-rec:Space
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:comment "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings." ;
-  rdfs:label "Space" ;
-  rdfs:subClassOf rec:Place ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:contains ;
-      sh:class rec:Space ;
-      sh:name "contains" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasBuildingElement ;
-      sh:class rec:BuildingElement ;
-      sh:description "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
-      sh:name "has building element" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:operatedBy ;
-      sh:class rec:Agent ;
-      sh:name "operated by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:ownedBy ;
-      sh:class rec:Agent ;
-      sh:name "owned by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:subjectOf ;
-      sh:class rec:Document ;
-      sh:name "subject of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-.
 rec:Sub-building
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Sub-building" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
 .
 rec:Wall
   a rdfs:Class ;
@@ -299,7 +306,7 @@ rec:Zone
   a sh:NodeShape ;
   rdfs:comment "A sub-zone within a building defined to support some technology and/or use, e.g., an HVAC zone, a security zone, etc." ;
   rdfs:label "Zone" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Architecture ;
 .
 rec:architectedBy
   a rdf:Property ;
