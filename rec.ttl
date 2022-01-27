@@ -19,6 +19,7 @@
 rec:Agent
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, ....) to be anchored in one joint place, on the Agent class." ;
   rdfs:label "Agent" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
@@ -151,6 +152,7 @@ rec:OccupancyZone
 rec:Organization
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "An organization of any sort (e.g., a business, association, project, consortium, tribe, etc.)" ;
   rdfs:label "Organization" ;
   rdfs:subClassOf rec:Agent ;
   sh:property [
@@ -173,6 +175,7 @@ rec:Organization
 rec:Person
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A natural person (i.e., an individual human being)." ;
   rdfs:label "Person" ;
   rdfs:subClassOf rec:Agent ;
   sh:property [
@@ -189,8 +192,15 @@ rec:Person
 rec:Region
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "An administrative geospatial unit larger than the individual real estate. For instance, \"Lombary\", \"North America\", \"The Back Bay\", \"Elnätsområde Syd\", etc." ;
   rdfs:label "Region" ;
-  rdfs:subClassOf rec:Space ;
+  rdfs:subClassOf rec:Place ;
+.
+rec:Roof
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Roof" ;
+  rdfs:subClassOf rec:BuildingElement ;
 .
 rec:RoofLevel
   a rdfs:Class ;
@@ -204,12 +214,25 @@ rec:Room
   rdfs:label "Room" ;
   rdfs:subClassOf rec:Space ;
 .
+rec:Site
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A piece of land upon which zero or more buildings may be situated." ;
+  rdfs:label "Site" ;
+  rdfs:subClassOf rec:Space ;
+.
+rec:Slab
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Slab" ;
+  rdfs:subClassOf rec:BuildingElement ;
+.
 rec:Space
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:comment "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings." ;
   rdfs:label "Space" ;
-  rdfs:subClassOf rdfs:Resource ;
+  rdfs:subClassOf rec:Place ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:contains ;
@@ -245,6 +268,12 @@ rec:Sub-building
   rdfs:label "Sub-building" ;
   rdfs:subClassOf rec:Space ;
 .
+rec:Wall
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Wall" ;
+  rdfs:subClassOf rec:BuildingElement ;
+.
 rec:Workspace
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -254,6 +283,7 @@ rec:Workspace
 rec:Zone
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A sub-zone within a building defined to support some technology and/or use, e.g., an HVAC zone, a security zone, etc." ;
   rdfs:label "Zone" ;
   rdfs:subClassOf rec:Space ;
 .
