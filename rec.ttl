@@ -66,17 +66,17 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:contains ;
-      sh:class rec:Architecture ;
-      sh:name "contains" ;
+      sh:path rec:buildingElements ;
+      sh:class rec:BuildingElement ;
+      sh:description "Links an Architecture to BuildingElement(s) that are either contained in, adjacent to or intersecting with the Space." ;
+      sh:name "building elements" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasBuildingElement ;
-      sh:class rec:BuildingElement ;
-      sh:description "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
-      sh:name "has building element" ;
+      sh:path rec:contains ;
+      sh:class rec:Architecture ;
+      sh:name "contains" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -340,6 +340,11 @@ rec:architectedBy
   a rdf:Property ;
   rdfs:label "architected by" ;
 .
+rec:buildingElements
+  a rdf:Property ;
+  rdfs:comment "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
+  rdfs:label "has building element" ;
+.
 rec:constructedBy
   a rdf:Property ;
   rdfs:label "constructed by" ;
@@ -359,11 +364,6 @@ rec:familyName
 rec:givenName
   a rdf:Property ;
   rdfs:label "given name" ;
-.
-rec:hasBuildingElement
-  a rdf:Property ;
-  rdfs:comment "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
-  rdfs:label "has building element" ;
 .
 rec:includes
   a rdf:Property ;
