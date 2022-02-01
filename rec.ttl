@@ -66,10 +66,23 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:architectedBy ;
+      sh:class rec:Agent ;
+      sh:name "architected by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:buildingElements ;
       sh:class rec:BuildingElement ;
       sh:description "Links an Architecture to BuildingElement(s) that are either contained in, adjacent to or intersecting with the Space." ;
       sh:name "building elements" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:constructedBy ;
+      sh:class rec:Agent ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -113,20 +126,6 @@ rec:Building
   rdfs:comment "A confined building structure." ;
   rdfs:label "Building" ;
   rdfs:subClassOf rec:Architecture ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:architectedBy ;
-      sh:class rec:Agent ;
-      sh:name "architected by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:constructedBy ;
-      sh:class rec:Agent ;
-      sh:name "constructed by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
 .
 rec:BuildingElement
   a rdfs:Class ;
