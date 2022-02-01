@@ -335,67 +335,6 @@ rec:Zone
   rdfs:label "Zone" ;
   rdfs:subClassOf rec:Architecture ;
 .
-rec:architectedBy
-  a rdf:Property ;
-  rdfs:label "architected by" ;
-.
-rec:buildingElements
-  a rdf:Property ;
-  rdfs:comment "Links a Space to a BuildingElement that is either contained in, adjacent to or intersecting with the Space." ;
-  rdfs:label "has building element" ;
-.
-rec:constructedBy
-  a rdf:Property ;
-  rdfs:label "constructed by" ;
-.
-rec:contains
-  a rdf:Property ;
-  rdfs:label "contains" ;
-.
-rec:department
-  a rdf:Property ;
-  rdfs:label "department" ;
-.
-rec:familyName
-  a rdf:Property ;
-  rdfs:label "family name" ;
-.
-rec:givenName
-  a rdf:Property ;
-  rdfs:label "given name" ;
-.
-rec:includes
-  a rdf:Property ;
-  rdfs:label "includes" ;
-.
-rec:member
-  a rdf:Property ;
-  rdfs:label "member" ;
-.
-rec:memberOf
-  a rdf:Property ;
-  rdfs:label "member of" ;
-.
-rec:name
-  a rdf:Property ;
-  rdfs:label "name" ;
-.
-rec:operatedBy
-  a rdf:Property ;
-  rdfs:label "operated by" ;
-.
-rec:ownedBy
-  a rdf:Property ;
-  rdfs:label "owned by" ;
-.
-rec:subjectOf
-  a rdf:Property ;
-  rdfs:label "subject of" ;
-.
-rec:url
-  a rdf:Property ;
-  rdfs:label "URL" ;
-.
 [
   a sh:PropertyShape ;
 ].
