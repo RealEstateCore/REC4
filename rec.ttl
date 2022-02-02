@@ -3,6 +3,7 @@
 # imports: https://brickschema.org/schema/Brick
 # prefix: rec
 
+@prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,7 +12,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://brickschema.org/schema/Brick#Equipment>
+brick:Equipment
   rdfs:subClassOf rec:Asset ;
 .
 <https://w3id.org/rec>
@@ -61,6 +62,13 @@ rec:Architecture
   rdfs:comment "A designed/landscaped (or potentially designed/landscaped) part of the physical world that has a 3D spatial extent. E.g., a building site, a building, levels within the building, rooms, etc." ;
   rdfs:label "Architecture" ;
   rdfs:subClassOf rec:Space ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:address ;
