@@ -17,11 +17,25 @@
   owl:imports <http://datashapes.org/dash> ;
   owl:versionInfo "2.0" ;
 .
+brick:Alarm
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Alarm points are signals (either audible or visual) that alert an operator to an off-normal condition which requires some form of corrective action." ;
+  rdfs:label "Alarm" ;
+  rdfs:subClassOf brick:Point ;
+.
 brick:Camera
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Camera" ;
   rdfs:subClassOf brick:Equipment ;
+.
+brick:Command
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A Command is an output point that directly determines the behavior of equipment and/or affects relevant operational points." ;
+  rdfs:label "Command" ;
+  rdfs:subClassOf brick:Point ;
 .
 brick:Equipment
   a rdfs:Class ;
@@ -42,6 +56,40 @@ brick:Motor
   rdfs:comment "A machine in which power is applied to do work by the conversion of various forms of energy into mechanical force and motion." ;
   rdfs:label "Motor" ;
   rdfs:subClassOf brick:Equipment ;
+.
+brick:Parameter
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Parameter points are configuration settings used to guide the operation of equipment and control systems; for example they may provide bounds on valid setpoint values." ;
+  rdfs:label "Parameter" ;
+  rdfs:subClassOf brick:Point ;
+.
+brick:Point
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Point" ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+brick:Sensor
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A Sensor is an input point that represents the value of a device or instrument designed to detect and measure a variable (ASHRAE Dictionary)." ;
+  rdfs:label "Sensor" ;
+  rdfs:subClassOf brick:Point ;
+.
+brick:Setpoint
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A Setpoint is an input value at which the desired property is set." ;
+  rdfs:label "Setpoint" ;
+  rdfs:subClassOf brick:Point ;
+.
+brick:Status
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A Status is input point that reports the current operating mode, state, position, or condition of an item. Statuses are observations and should be considered 'read-only'." ;
+  rdfs:label "Status" ;
+  rdfs:subClassOf brick:Point ;
 .
 brick:Valve
   a rdfs:Class ;
