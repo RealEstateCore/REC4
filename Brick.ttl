@@ -20,24 +20,33 @@
 brick:Camera
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:label "Camera" ;
   rdfs:subClassOf brick:Equipment ;
 .
 brick:Equipment
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "Devices that serve all or part of the building and may include electric power, lighting, transportation, or service water heating, including, but not limited to, furnaces, boilers, air conditioners, heat pumps, chillers, water heaters, lamps, luminaires, ballasts, elevators, escalators, or other devices or installations." ;
+  rdfs:label "Equipment" ;
 .
 brick:Meter
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A device that measure usage or consumption of some media --- typically a form energy or power." ;
+  rdfs:label "Meter" ;
   rdfs:subClassOf brick:Equipment ;
 .
 brick:Motor
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A machine in which power is applied to do work by the conversion of various forms of energy into mechanical force and motion." ;
+  rdfs:label "Motor" ;
   rdfs:subClassOf brick:Equipment ;
 .
 brick:Valve
   a rdfs:Class ;
   a sh:NodeShape ;
+  rdfs:comment "A device that regulates, directs or controls the flow of a fluid by opening, closing or partially obstructing various passageways." ;
+  rdfs:label "Valve" ;
   rdfs:subClassOf brick:Equipment ;
 .
