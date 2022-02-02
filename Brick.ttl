@@ -1,0 +1,43 @@
+# baseURI: https://brickschema.org/schema/Brick
+# imports: http://datashapes.org/dash
+# prefix: brick
+
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://brickschema.org/schema/Brick>
+  a owl:Ontology ;
+  rdfs:comment "This is a proxy stub for a future Brick 2 based on SHACL shapes, for integration testing with a future REC 4 also based on SHACL shapes. We make no guarantees as to whether this is the direction either project will actually take; this early prototype level stuff." ;
+  rdfs:label "Brick Schema stub" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "2.0" ;
+.
+brick:Camera
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf brick:Equipment ;
+.
+brick:Equipment
+  a rdfs:Class ;
+  a sh:NodeShape ;
+.
+brick:Meter
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf brick:Equipment ;
+.
+brick:Motor
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf brick:Equipment ;
+.
+brick:Valve
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf brick:Equipment ;
+.

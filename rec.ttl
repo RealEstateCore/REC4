@@ -1,5 +1,6 @@
 # baseURI: https://w3id.org/rec
 # imports: http://datashapes.org/dash
+# imports: https://brickschema.org/schema/Brick
 # prefix: rec
 
 @prefix dash: <http://datashapes.org/dash#> .
@@ -10,10 +11,14 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://brickschema.org/schema/Brick#Equipment>
+  rdfs:subClassOf rec:Asset ;
+.
 <https://w3id.org/rec>
   a owl:Ontology ;
   rdfs:label "RealEstateCore" ;
   owl:imports <http://datashapes.org/dash> ;
+  owl:imports <https://brickschema.org/schema/Brick> ;
   owl:versionInfo "4.0" ;
 .
 rec:Agent
