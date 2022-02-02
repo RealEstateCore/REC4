@@ -245,18 +245,10 @@ rec:Organization
   rdfs:subClassOf rec:Agent ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:department ;
+      sh:path rec:departmentOf ;
       sh:class rec:Organization ;
-      sh:description "A relationship between an organization and a department of that organization, also described as an organization." ;
-      sh:name "department" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:member ;
-      sh:class rec:Agent ;
-      sh:minCount 1 ;
-      sh:name "member" ;
+      sh:description "A relationship between a child organization and the parent organization that the child is a department of." ;
+      sh:name "department of" ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
