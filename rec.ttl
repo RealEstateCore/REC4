@@ -114,6 +114,13 @@ rec:Architecture
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:Asset
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Something which is placed inside of a building, but is not an integral part of that building's structure; e.g., furniture, equipment, systems, etc." ;
+  rdfs:label "Asset" ;
+  rdfs:subClassOf rdfs:Resource ;
+.
 rec:BasementLevel
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -167,6 +174,12 @@ rec:Document
       sh:name "URL" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:Furniture
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Furniture" ;
+  rdfs:subClassOf rec:Asset ;
 .
 rec:HVACZone
   a rdfs:Class ;
