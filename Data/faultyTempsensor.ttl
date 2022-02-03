@@ -3,9 +3,8 @@
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 
-
 ex:MySensor
     a brick:TemperatureSensor ;
     brick:measures quantitykind:Temperature22 ;
     brick:unit unit:DEG_1C ;
-    brick:value "193" .
+    brick:value "193"@en .

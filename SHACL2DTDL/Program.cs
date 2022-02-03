@@ -22,31 +22,10 @@ namespace OWL2DTDL
             ttlparser.Load(datagraph, args[1]);
 
             Report report = sgraph.Validate(datagraph);
-            foreach (Result res in report.Results) 
-            {
-                Console.WriteLine(res.Message);
-                Console.WriteLine(res.ToString());
+            Console.WriteLine("Report:");
+            foreach (Result result in report.Results) {
+                Console.WriteLine($"{result.FocusNode} -- {result.ResultPath} -- {result.Message}");
             }
-
-
-            /*foreach (Triple t in sgraph.Triples)
-            {
-                Console.WriteLine(t.ToString());
-            }*/
-
-            /*IGraph g = new Graph();
-            g.BaseUri = new Uri("http://example.org/");
-
-            var karl = g.CreateUriNode(new Uri("https://karlhammar.com/me"));
-            var name = g.CreateUriNode(new Uri("https://karlhammar.com/name"));
-            var karlsname = g.CreateLiteralNode("Karl Hammar");
-
-            g.Assert(new Triple(karl, name, karlsname));
-
-            foreach (Triple t in g.Triples)
-            {
-                Console.WriteLine(t.ToString());
-            }*/
         }
     }
 }
