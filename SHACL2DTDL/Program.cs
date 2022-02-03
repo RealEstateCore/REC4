@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 using VDS.RDF;
 using VDS.RDF.Parsing;
 using VDS.RDF.JsonLd;
+using VDS.RDF.Shacl;
 using VDS.RDF.Writing;
 
 namespace SHACL2DTDL
@@ -41,6 +42,7 @@ namespace SHACL2DTDL
         /// The RDF graph holding the SHACL-formatted ontology upon which this tool subsequently operates.
         /// </summary>
         private static readonly IGraph _ontologyGraph = new Graph();
+        private static readonly ShapesGraph _shapesGraph = new ShapesGraph(_ontologyGraph);
 
         /// <summary>
         /// URIs that will be ignored by this tool, parsed from CSV file using -i command line option
@@ -115,8 +117,8 @@ namespace SHACL2DTDL
         /// </summary>
         private static void GenerateInterfaces()
         {
-            foreach (Triple t in _ontologyGraph.Triples) {
-                Console.WriteLine(t.ToString());
+            foreach (NodeShape shape in _shapesGraph.NodeShapes()) {
+                Console.WriteLine(shape.Node.ToString());
             }
 
 
@@ -162,10 +164,10 @@ namespace SHACL2DTDL
             Console.WriteLine("Generating DTDL Interface declarations: ");
 
             // TODO Get only explicit node shapes
-            foreach(UriNode shapeNode in _ontologyGraph.Nodes.UriNodes()) {
+            foreach(NodeShape shape in _shapesGraph.NodeShapes()) {
 
                 // Create Interface
-                string interfaceDtmi = GetDTMI(shapeNode);
+                string interfaceDtmi = GetDTMI(shape.Node);
                 Console.WriteLine($"\t* {interfaceDtmi}");
                 IUriNode interfaceNode = dtdlModel.CreateUriNode(UriFactory.Create(interfaceDtmi));
                 dtdlModel.Assert(new Triple(interfaceNode, rdfType, dtdl_Interface));
@@ -194,8 +196,12 @@ namespace SHACL2DTDL
 
         }
 
-        private static string GetDTMI(IUriNode node) {
+        private static string GetDTMI(INode inputNode) {
             // TODO: Implement me
+            if (inputNode.NodeType == NodeType.Blank) {
+                return $"dtmi:digitaltwins:{System.Guid.NewGuid().ToString()};1";
+            }
+            IUriNode node = (IUriNode)inputNode;
             string hostPortion = node.Uri.Host.Replace('.',':');
             string pathPortion = node.Uri.LocalPath.Trim('/').Replace('/',':');
             string fragmentPortion = node.Uri.Fragment.Trim('#');

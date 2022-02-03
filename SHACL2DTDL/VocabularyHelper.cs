@@ -22,6 +22,16 @@ namespace SHACL2DTDL.VocabularyHelper
         public static readonly Uri license = new Uri("http://creativecommons.org/ns#license");
     }
 
+    public static class SH
+    {
+        public static readonly Uri NodeShape = new Uri("http://www.w3.org/ns/shacl#NodeShape");
+    }
+
+    public static class RDF
+    {
+            public static readonly Uri type = new Uri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
+    }
+
     public static class RDFS
     {
         public static readonly Uri label = new Uri("http://www.w3.org/2000/01/rdf-schema#label");
