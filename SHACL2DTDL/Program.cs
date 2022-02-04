@@ -117,11 +117,6 @@ namespace SHACL2DTDL
         /// </summary>
         private static void GenerateInterfaces()
         {
-            foreach (NodeShape shape in _shapesGraph.NodeShapes()) {
-                Console.WriteLine(shape.Node.ToString());
-            }
-
-
             // Working graph
             Graph dtdlModel = new Graph();
 
@@ -182,8 +177,13 @@ namespace SHACL2DTDL
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);
 
-                Directory.CreateDirectory(_outputPath);
-                string outputFileName = _outputPath + interfaceDtmi.Replace(':','.').Replace(';','.') + ".json";
+                List<IUriNode> parentDirectories = shape.LongestSuperClassesPath;
+                string modelPath = string.Join("/", parentDirectories.Select(parent => parent.LocalName()));
+                string modelOutputPath = $"{_outputPath}/{modelPath}/";
+                // If the class has subclasses, place it with them
+                if (shape.DirectSubClasses.Any()) { modelOutputPath += $"{shape.Node.LocalName()}/"; }
+                Directory.CreateDirectory(modelOutputPath);
+                string outputFileName = modelOutputPath + shape.Node.LocalName() + ".json";
                 using (StreamWriter file = File.CreateText(outputFileName))
                 using (JsonTextWriter writer = new JsonTextWriter(file) { Formatting = Formatting.Indented })
                 {
