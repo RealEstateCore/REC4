@@ -1,6 +1,6 @@
 # baseURI: https://w3id.org/rec
 # imports: http://datashapes.org/dash
-# imports: https://brickschema.org/schema/Brick
+# imports: https://brickschema.org/schema/1.2/Brick
 # prefix: rec
 
 @prefix brick: <https://brickschema.org/schema/Brick#> .
@@ -19,7 +19,7 @@ brick:Equipment
   a owl:Ontology ;
   rdfs:label "RealEstateCore" ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:imports <https://brickschema.org/schema/Brick> ;
+  owl:imports <https://brickschema.org/schema/1.2/Brick> ;
   owl:versionInfo "4.0" ;
 .
 rec:Agent
