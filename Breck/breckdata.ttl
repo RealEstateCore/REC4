@@ -1,8 +1,7 @@
 # baseURI: https://w3id.org/rec/breck/breckdata
 # imports: https://w3id.org/rec/breck
-# prefix: breckdata
 
-@prefix breckdata: <https://w3id.org/rec/breck/breckdata#> .
+@prefix : <https://w3id.org/rec/breck/breckdata#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,62 +14,62 @@
   owl:imports <https://w3id.org/rec/breck> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
-breckdata:E2423A
+:E2423A
   a rec:Room ;
   rdfs:label "E2423A" ;
-  brick:hasPoint breckdata:E2423A-HueSensor1-Illuminance ;
-  brick:hasPoint breckdata:E2423A-HueSensor1-Motion ;
-  brick:hasPoint breckdata:E2423A-HueSensor1-Temperature ;
+  brick:hasPoint :E2423A-HueSensor1-Illuminance ;
+  brick:hasPoint :E2423A-HueSensor1-Motion ;
+  brick:hasPoint :E2423A-HueSensor1-Temperature ;
 .
-breckdata:E2423A-HueSensor1-Illuminance
+:E2423A-HueSensor1-Illuminance
   a brick:Illuminance_Sensor ;
   rdfs:label "E2423A-Hue sensor1-Illuminance" ;
 .
-breckdata:E2423A-HueSensor1-Motion
+:E2423A-HueSensor1-Motion
   a brick:Motion_Sensor ;
   rdfs:label "E2423A-Hue sensor1-Motion" ;
 .
-breckdata:E2423A-HueSensor1-Temperature
+:E2423A-HueSensor1-Temperature
   a brick:Temperature_Sensor ;
   rdfs:label "E2423A-Hue sensor1-Temperature" ;
 .
-breckdata:JU
+:JU
   a rec:Campus ;
   rdfs:label "JU" ;
-  rec:includes breckdata:JU-Building-B ;
-  rec:includes breckdata:JU-Building-E ;
-  rec:includes breckdata:JU-Building-K ;
+  rec:includes :JU-Building-B ;
+  rec:includes :JU-Building-E ;
+  rec:includes :JU-Building-K ;
 .
-breckdata:JU-Building-B
+:JU-Building-B
   a rec:Building ;
   rdfs:label "JU Campus B Building (JIBS)" ;
 .
-breckdata:JU-Building-E
+:JU-Building-E
   a rec:Building ;
   rdfs:label "JU Campus E Building (JTH)" ;
-  rec:containsSpace breckdata:JU-EBuilding-Level1 ;
-  rec:containsSpace breckdata:JU-EBuilding-Level2 ;
-  rec:containsSpace breckdata:JU-EBuilding-Level3 ;
-  rec:containsSpace breckdata:JU-EBuilding-Level4 ;
+  rec:containsSpace :JU-EBuilding-Level1 ;
+  rec:containsSpace :JU-EBuilding-Level2 ;
+  rec:containsSpace :JU-EBuilding-Level3 ;
+  rec:containsSpace :JU-EBuilding-Level4 ;
 .
-breckdata:JU-Building-K
+:JU-Building-K
   a rec:Building ;
   rdfs:label "JU Campus K Building (HS)" ;
 .
-breckdata:JU-EBuilding-Level1
+:JU-EBuilding-Level1
   a rec:Level ;
   rdfs:label "JU-EBuilding-Level1" ;
 .
-breckdata:JU-EBuilding-Level2
+:JU-EBuilding-Level2
   a rec:Level ;
   rdfs:label "JU-EBuilding-Level2" ;
-  rec:containsSpace breckdata:E2423A ;
+  rec:containsSpace :E2423A ;
 .
-breckdata:JU-EBuilding-Level3
+:JU-EBuilding-Level3
   a rec:Level ;
   rdfs:label "JU-EBuilding-Level3" ;
 .
-breckdata:JU-EBuilding-Level4
+:JU-EBuilding-Level4
   a rec:Level ;
   rdfs:label "JU-EBuilding-Level4" ;
 .

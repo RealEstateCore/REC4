@@ -1,6 +1,7 @@
 # baseURI: https://w3id.org/rec/breck
 # imports: http://datashapes.org/dash
 
+@prefix : <https://w3id.org/rec/breck#> .
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
