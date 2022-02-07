@@ -3,12 +3,14 @@
 # imports: https://brickschema.org/schema/1.2/Brick
 # prefix: rec
 
+@prefix : <https://w3id.org/rec#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rec: <https://w3id.org/rec#> .
+@prefix recp: <https://w3id.org/rec/platform#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -160,6 +162,7 @@ rec:Building
   rdfs:comment "A confined building structure." ;
   rdfs:label "Building" ;
   rdfs:subClassOf rec:Architecture ;
+  recp:apiEndpoint "buildings" ;
 .
 rec:BuildingElement
   a rdfs:Class ;
@@ -189,6 +192,7 @@ rec:Collection
   rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
+  recp:apiEndpoint "collections" ;
 .
 rec:Document
   a rdfs:Class ;
@@ -315,6 +319,7 @@ rec:Room
   a sh:NodeShape ;
   rdfs:label "Room" ;
   rdfs:subClassOf rec:Architecture ;
+  recp:apiEndpoint "rooms" ;
 .
 rec:Site
   a rdfs:Class ;
@@ -381,6 +386,13 @@ rec:Zone
   rdfs:comment "A sub-zone within a building defined to support some technology and/or use, e.g., an HVAC zone, a security zone, etc." ;
   rdfs:label "Zone" ;
   rdfs:subClassOf rec:Architecture ;
+.
+recp:apiEndpoint
+  a rdf:Property ;
+  rdfs:comment "This property governs the endpoint name of this node shape in the RealEstateCore Platform REST API." ;
+  rdfs:domain sh:NodeShape ;
+  rdfs:label "API endpoint" ;
+  rdfs:range xsd:string ;
 .
 [
   a sh:PropertyShape ;

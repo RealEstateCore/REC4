@@ -14,6 +14,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rec: <https://w3id.org/rec#> .
+@prefix recp: <https://w3id.org/rec/platform#> .
 @prefix sdo: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -55136,6 +55137,7 @@ rec:Building
   rdfs:comment "A confined building structure." ;
   rdfs:label "Building" ;
   rdfs:subClassOf rec:Architecture ;
+  recp:apiEndpoint "buildings" ;
 .
 rec:BuildingElement
   a rdfs:Class ;
@@ -55165,6 +55167,7 @@ rec:Collection
   rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
+  recp:apiEndpoint "collections" ;
 .
 rec:Document
   a rdfs:Class ;
@@ -55291,6 +55294,7 @@ rec:Room
   a sh:NodeShape ;
   rdfs:label "Room" ;
   rdfs:subClassOf rec:Architecture ;
+  recp:apiEndpoint "rooms" ;
 .
 rec:Site
   a rdfs:Class ;
@@ -55361,6 +55365,13 @@ rec:Zone
 <https://w3id.org/rec/breck>
   a owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
+.
+recp:apiEndpoint
+  a rdf:Property ;
+  rdfs:comment "This property governs the endpoint name of this node shape in the RealEstateCore Platform REST API." ;
+  rdfs:domain sh:NodeShape ;
+  rdfs:label "API endpoint" ;
+  rdfs:range xsd:string ;
 .
 [
   a sh:PropertyShape ;
