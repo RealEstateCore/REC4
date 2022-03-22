@@ -149,6 +149,141 @@ rec:Asset
   rdfs:comment "Something which is placed inside of a building, but is not an integral part of that building's structure; e.g., furniture, equipment, systems, etc." ;
   rdfs:label "Asset" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:IPAddress ;
+      sh:datatype xsd:string ;
+      sh:name "IP address" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:MACAddress ;
+      sh:datatype xsd:string ;
+      sh:name "MAC address" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:assetTag ;
+      sh:datatype xsd:string ;
+      sh:name "asset tag" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:commissionDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "commission date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:commissionedBy ;
+      sh:class rec:Agent ;
+      sh:name "commissioned by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:documentation ;
+      sh:class rec:Document ;
+      sh:name "documentation" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPart ;
+      sh:class rec:Asset ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:initialCost ;
+      sh:maxCount 1 ;
+      sh:name "initial cost" ;
+      sh:nodeKind sh:Literal ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:installationDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "installation date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:installedBy ;
+      sh:class rec:Agent ;
+      sh:name "installed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:Asset ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:locatedIn ;
+      sh:class rec:Space ;
+      sh:minCount 1 ;
+      sh:name "located in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:maintenanceInterval ;
+      sh:datatype xsd:duration ;
+      sh:name "maintenance interval" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:manufacturedBy ;
+      sh:class rec:Agent ;
+      sh:name "manufactured by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:modelNumber ;
+      sh:datatype xsd:string ;
+      sh:name "model number" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:serialNumber ;
+      sh:datatype xsd:string ;
+      sh:name "serial number" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:servicedBy ;
+      sh:class rec:Agent ;
+      sh:name "serviced by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:turnoverDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "turnover date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:weight ;
+      sh:datatype xsd:decimal ;
+      sh:maxCount 1 ;
+      sh:name "weight" ;
+    ] ;
 .
 rec:BasementLevel
   a rdfs:Class ;
