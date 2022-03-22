@@ -156,6 +156,12 @@ rec:BasementLevel
   rdfs:label "Basement level" ;
   rdfs:subClassOf rec:Level ;
 .
+rec:Bed
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bed" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Building
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -185,6 +191,12 @@ rec:Campus
       sh:name "includes" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:Chair
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Chair" ;
+  rdfs:subClassOf rec:Furniture ;
 .
 rec:Collection
   a rdfs:Class ;
