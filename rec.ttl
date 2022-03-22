@@ -443,8 +443,21 @@ rec:Person
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:gender ;
+      sh:datatype xsd:string ;
+      sh:name "gender" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:givenName ;
       sh:datatype xsd:string ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:image ;
+      sh:datatype xsd:anyURI ;
+      sh:description "URL link to an image that represents the person." ;
+      sh:name "image" ;
     ] ;
 .
 rec:PostalAddress
