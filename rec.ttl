@@ -341,6 +341,26 @@ rec:Collection
   rdfs:subClassOf rdfs:Resource ;
   recp:apiEndpoint "collections" ;
 .
+rec:Company
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Company" ;
+  rdfs:subClassOf rec:Organization ;
+.
+rec:Department
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Department" ;
+  rdfs:subClassOf rec:Organization ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:departmentOf ;
+      sh:class rec:Organization ;
+      sh:description "Indicates a parent organization that this department belongs to." ;
+      sh:name "department of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:Document
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -404,11 +424,10 @@ rec:Organization
   rdfs:subClassOf rec:Agent ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:departmentOf ;
-      sh:class rec:Organization ;
-      sh:description "A relationship between a child organization and the parent organization that the child is a department of." ;
-      sh:name "department of" ;
-      sh:nodeKind sh:IRI ;
+      sh:path rec:logo ;
+      sh:datatype xsd:anyURI ;
+      sh:description "URL link to an image/logo that represents the organization." ;
+      sh:name "logo" ;
     ] ;
 .
 rec:Person
