@@ -33,7 +33,7 @@ namespace SHACL2DTDL
         // Configuration fields
         private static bool _noImports;
         private static bool _localOntology;
-        private static string? _ontologyPath;
+        private static string _ontologyPath = "";
         private static string? _outputPath;
         private static bool _mergedOutput;
         private static string? _ontologySource;
@@ -62,7 +62,7 @@ namespace SHACL2DTDL
                            _localOntology = true;
                            _ontologyPath = o.FilePath;
                        }
-                       else
+                       else if (o.UriPath != null)
                        {
                            _localOntology = false;
                            _ontologyPath = o.UriPath;
