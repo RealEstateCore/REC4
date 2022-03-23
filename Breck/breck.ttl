@@ -55124,12 +55124,159 @@ rec:Asset
   rdfs:comment "Something which is placed inside of a building, but is not an integral part of that building's structure; e.g., furniture, equipment, systems, etc." ;
   rdfs:label "Asset" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:IPAddress ;
+      sh:datatype xsd:string ;
+      sh:name "IP address" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:MACAddress ;
+      sh:datatype xsd:string ;
+      sh:name "MAC address" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:assetTag ;
+      sh:datatype xsd:string ;
+      sh:name "asset tag" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:commissionDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "commission date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:commissionedBy ;
+      sh:class rec:Agent ;
+      sh:name "commissioned by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:documentation ;
+      sh:class rec:Document ;
+      sh:name "documentation" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPart ;
+      sh:class rec:Asset ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:initialCost ;
+      sh:maxCount 1 ;
+      sh:name "initial cost" ;
+      sh:nodeKind sh:Literal ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:installationDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "installation date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:installedBy ;
+      sh:class rec:Agent ;
+      sh:name "installed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:Asset ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:locatedIn ;
+      sh:class rec:Space ;
+      sh:minCount 1 ;
+      sh:name "located in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:maintenanceInterval ;
+      sh:datatype xsd:duration ;
+      sh:name "maintenance interval" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:manufacturedBy ;
+      sh:class rec:Agent ;
+      sh:name "manufactured by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:modelNumber ;
+      sh:datatype xsd:string ;
+      sh:name "model number" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:serialNumber ;
+      sh:datatype xsd:string ;
+      sh:name "serial number" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:servicedBy ;
+      sh:class rec:Agent ;
+      sh:name "serviced by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:turnoverDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "turnover date" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:weight ;
+      sh:datatype xsd:decimal ;
+      sh:maxCount 1 ;
+      sh:name "weight" ;
+    ] ;
 .
 rec:BasementLevel
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Basement level" ;
   rdfs:subClassOf rec:Level ;
+.
+rec:Bed
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bed" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:Bookcase
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bookcase" ;
+  rdfs:subClassOf rec:Furniture ;
 .
 rec:Building
   a rdfs:Class ;
@@ -55146,6 +55293,12 @@ rec:BuildingElement
   rdfs:label "Building element" ;
   rdfs:subClassOf rdfs:Resource ;
 .
+rec:BulletinBoard
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bulletin board" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Campus
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -55161,6 +55314,30 @@ rec:Campus
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:Cart
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cart" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:Chair
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Chair" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:CoatRack
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Coat rack" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:CoffeeTable
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Coffee table" ;
+  rdfs:subClassOf rec:Table ;
+.
 rec:Collection
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -55168,6 +55345,50 @@ rec:Collection
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
   recp:apiEndpoint "collections" ;
+.
+rec:Company
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Company" ;
+  rdfs:subClassOf rec:Organization ;
+.
+rec:ComputerCart
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Computer cart" ;
+  rdfs:subClassOf rec:Cart ;
+.
+rec:ConferenceTable
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Conference table" ;
+  rdfs:subClassOf rec:Table ;
+.
+rec:Department
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Department" ;
+  rdfs:subClassOf rec:Organization ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:departmentOf ;
+      sh:class rec:Organization ;
+      sh:description "Indicates a parent organization that this department belongs to." ;
+      sh:name "department of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Desk
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Desk" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:DeskLamp
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Desk lamp" ;
+  rdfs:subClassOf rec:Lamp ;
 .
 rec:Document
   a rdfs:Class ;
@@ -55180,6 +55401,48 @@ rec:Document
       sh:name "URL" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:EndTable
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "End table" ;
+  rdfs:subClassOf rec:Table ;
+.
+rec:FilingCabinet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Filing cabinet" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:FloorLamp
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Floor lamp" ;
+  rdfs:subClassOf rec:Lamp ;
+.
+rec:FloorMat
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Floor mat" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:FoldingChair
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Folding chair" ;
+  rdfs:subClassOf rec:Chair ;
+.
+rec:FoldingTable
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Folding table" ;
+  rdfs:subClassOf rec:Table ;
+.
+rec:Footrest
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Footrest" ;
+  rdfs:subClassOf rec:Furniture ;
 .
 rec:Furniture
   a rdfs:Class ;
@@ -55199,6 +55462,12 @@ rec:Information
   rdfs:label "Information" ;
   rdfs:subClassOf rdfs:Resource ;
 .
+rec:Lamp
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Lamp" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Level
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -55212,17 +55481,35 @@ rec:Level
       sh:name "level number" ;
     ] ;
 .
+rec:MailroomCart
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Mailroom cart" ;
+  rdfs:subClassOf rec:Cart ;
+.
 rec:MezzanineLevel
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Mezzanine level" ;
   rdfs:subClassOf rec:Level ;
 .
+rec:MobileDesk
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Mobile desk" ;
+  rdfs:subClassOf rec:Desk ;
+.
 rec:OccupancyZone
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Occupancy zone" ;
   rdfs:subClassOf rec:Zone ;
+.
+rec:OfficeChair
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Office chair" ;
+  rdfs:subClassOf rec:Chair ;
 .
 rec:Organization
   a rdfs:Class ;
@@ -55232,11 +55519,10 @@ rec:Organization
   rdfs:subClassOf rec:Agent ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:departmentOf ;
-      sh:class rec:Organization ;
-      sh:description "A relationship between a child organization and the parent organization that the child is a department of." ;
-      sh:name "department of" ;
-      sh:nodeKind sh:IRI ;
+      sh:path rec:logo ;
+      sh:datatype xsd:anyURI ;
+      sh:description "URL link to an image/logo that represents the organization." ;
+      sh:name "logo" ;
     ] ;
 .
 rec:Person
@@ -55252,8 +55538,21 @@ rec:Person
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:gender ;
+      sh:datatype xsd:string ;
+      sh:name "gender" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:givenName ;
       sh:datatype xsd:string ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:image ;
+      sh:datatype xsd:anyURI ;
+      sh:description "URL link to an image that represents the person." ;
+      sh:name "image" ;
     ] ;
 .
 rec:PostalAddress
@@ -55269,6 +55568,24 @@ rec:PostalAddress
       sh:maxCount 1 ;
       sh:name "country" ;
     ] ;
+.
+rec:PrinterCart
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Printer cart" ;
+  rdfs:subClassOf rec:Cart ;
+.
+rec:PrinterStand
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Printer stand" ;
+  rdfs:subClassOf rec:Stand ;
+.
+rec:ReceptionTable
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Reception table" ;
+  rdfs:subClassOf rec:Table ;
 .
 rec:Region
   a rdfs:Class ;
@@ -55296,6 +55613,12 @@ rec:Room
   rdfs:subClassOf rec:Architecture ;
   recp:apiEndpoint "rooms" ;
 .
+rec:Safe
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Safe" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Site
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -55308,6 +55631,12 @@ rec:Slab
   a sh:NodeShape ;
   rdfs:label "Slab" ;
   rdfs:subClassOf rec:BuildingElement ;
+.
+rec:Sofa
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Sofa" ;
+  rdfs:subClassOf rec:Furniture ;
 .
 rec:Space
   a rdfs:Class ;
@@ -55337,17 +55666,47 @@ rec:Space
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:Stand
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Stand" ;
+  rdfs:subClassOf rec:Furniture ;
+.
+rec:StorageCabinet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Storage cabinet" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Sub-building
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Sub-building" ;
   rdfs:subClassOf rec:Architecture ;
 .
+rec:TVStand
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "TV stand" ;
+  rdfs:subClassOf rec:Stand ;
+.
+rec:Table
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Table" ;
+  rdfs:subClassOf rec:Furniture ;
+.
 rec:Wall
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Wall" ;
   rdfs:subClassOf rec:BuildingElement ;
+.
+rec:WasteBasket
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Waste basket" ;
+  rdfs:subClassOf rec:Furniture ;
 .
 rec:Workspace
   a rdfs:Class ;
