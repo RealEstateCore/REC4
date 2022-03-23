@@ -166,9 +166,20 @@ namespace SHACL2DTDL
                 dtdlModel.Assert(new Triple(interfaceNode, rdfType, dtdl_Interface));
 
                 // If there are rdfs:labels, use them for DTDL displayName
-                /*if (shapeNode.Label.Any()) {
-                    dtdlModel.Assert(GetDtdlDisplayNameTriples(oClass, interfaceNode));
-                 }*/
+                Dictionary<string,string> displayNameMap = new();
+                foreach (LiteralNode shapeLabel in shape.Labels) {
+                    // Flatten possibly multiple occurences of labels with a given language tag, keep only one
+                    displayNameMap[shapeLabel.Language] = shapeLabel.Value;
+                }
+                foreach (string shapeLanguageTag in displayNameMap.Keys) {
+                    // Create a displayName assertion for reach of the above labels
+                    ILiteralNode dtdlDisplayNameLiteral;
+                    if (shapeLanguageTag == String.Empty)
+                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLanguageTag].Take(64)));
+                    else
+                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLanguageTag].Take(64)), shapeLanguageTag);
+                    dtdlModel.Assert(new Triple(interfaceNode, dtdl_displayName, dtdlDisplayNameLiteral));
+                }
 
                 // TODO: All of the rest of the stuff
 
