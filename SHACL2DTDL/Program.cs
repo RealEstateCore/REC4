@@ -73,12 +73,10 @@ namespace SHACL2DTDL
                        {
                            using (var reader = new StreamReader(o.IgnoreFile))
                            {
-                               while (!reader.EndOfStream)
-                               {
-                                   var line = reader.ReadLine();
-                                   var values = line.Split(';');
-                                   ignoredUris.Add(values[0]);
-                               }
+                               string ignoredNamesCsv = reader.ReadToEnd();
+                               string[] lines = ignoredNamesCsv.Split(Environment.NewLine);
+                               IEnumerable<string> values = lines.Select(line => line.Split(';').First());
+                               ignoredUris.UnionWith(values);
                            }
                        }
 
@@ -158,9 +156,9 @@ namespace SHACL2DTDL
             Console.WriteLine();
             Console.WriteLine("Generating DTDL Interface declarations: ");
 
-            // TODO Get only explicit node shapes
-            foreach(NodeShape shape in _shapesGraph.NodeShapes()) {
-
+            // Get only explicit node shapes
+            foreach(NodeShape shape in _shapesGraph.NodeShapes().Where(nodeShape => !IsIgnored(nodeShape) && !nodeShape.SuperClasses.Any(parent => IsIgnored(parent)))) {
+                
                 // Create Interface
                 string interfaceDtmi = GetDTMI(shape.Node);
                 Console.WriteLine($"\t* {interfaceDtmi}");
@@ -249,6 +247,24 @@ namespace SHACL2DTDL
             compactedJson["@context"] = new JValue(DTDL.dtdlContext);
 
             return compactedJson;
+        }
+
+                /// <summary>
+        /// Checks if a given Ontology Resource is in the ignored names list.
+        /// </summary>
+        /// <param name="resource">Resource to check</param>
+        /// <returns>True iff the resource is ignored</returns>
+        private static bool IsIgnored(Shape shape)
+        {
+            foreach (string ignoredUri in ignoredUris)
+            {
+                string resourceUri = shape.Node.Uri.AbsoluteUri;
+                if (resourceUri.Contains(ignoredUri))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

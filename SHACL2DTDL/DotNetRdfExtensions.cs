@@ -26,7 +26,7 @@ namespace SHACL2DTDL
         }
     }
 
-    public class Shape {
+    public class Shape: IEquatable<Shape>  {
         /// <summary>
         /// The Node which this NodeShape is a wrapper around.
         /// </summary>
@@ -35,6 +35,14 @@ namespace SHACL2DTDL
         /// The Graph from which this Shape originates.
         /// </summary>
         protected ShapesGraph _graph;
+
+
+        // Implementation of IEquatable<T> interface
+        public bool Equals(Shape? shape)
+        {
+            return this.Node == shape?.Node;
+        }
+
         public IEnumerable<ILiteralNode> Labels { 
             get {
                 IUriNode rdfsLabel = _graph.CreateUriNode(RDFS.label);
@@ -56,6 +64,19 @@ namespace SHACL2DTDL
                         yield return new Shape((IUriNode)t.Object, _graph);
                     }
                 }
+            }
+        }
+
+        public IEnumerable<Shape> SuperClasses {
+            get {
+                IUriNode rdfsSubClassOf = _graph.CreateUriNode(RDFS.subClassOf);
+                IEnumerable<Shape> directSuperClasses = this.DirectSuperClasses;
+                HashSet<Shape> allSuperClasses = new HashSet<Shape>();
+                allSuperClasses.UnionWith(directSuperClasses);
+                foreach (Shape superClass in directSuperClasses) {
+                    allSuperClasses.UnionWith(superClass.SuperClasses);
+                }
+                return allSuperClasses;
             }
         }
 
