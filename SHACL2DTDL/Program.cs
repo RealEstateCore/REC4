@@ -138,6 +138,7 @@ namespace SHACL2DTDL
             IUriNode dtdl_contents = dtdlModel.CreateUriNode(DTDL.contents);
             IUriNode dtdl_name = dtdlModel.CreateUriNode(DTDL.name);
             IUriNode dtdl_displayName = dtdlModel.CreateUriNode(DTDL.displayName);
+            IUriNode dtdl_description = dtdlModel.CreateUriNode(DTDL.description);
             IUriNode dtdl_properties = dtdlModel.CreateUriNode(DTDL.properties);
             IUriNode dtdl_mapKey = dtdlModel.CreateUriNode(DTDL.mapKey);
             IUriNode dtdl_mapValue = dtdlModel.CreateUriNode(DTDL.mapValue);
@@ -167,21 +168,41 @@ namespace SHACL2DTDL
 
                 // If there are rdfs:labels, use them for DTDL displayName
                 Dictionary<string,string> displayNameMap = new();
-                foreach (LiteralNode shapeLabel in shape.Labels) {
+                foreach (LiteralNode shapeLabel in shape.Node.RdfsLabels()) {
                     // Flatten possibly multiple occurences of labels with a given language tag, keep only one
                     displayNameMap[shapeLabel.Language] = shapeLabel.Value;
                 }
-                foreach (string shapeLanguageTag in displayNameMap.Keys) {
+                foreach (string shapeLabelLanguageTag in displayNameMap.Keys) {
                     // Create a displayName assertion for reach of the above labels
                     ILiteralNode dtdlDisplayNameLiteral;
-                    if (shapeLanguageTag == String.Empty)
-                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLanguageTag].Take(64)));
+                    if (shapeLabelLanguageTag == String.Empty)
+                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLabelLanguageTag].Take(64)));
                     else
-                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLanguageTag].Take(64)), shapeLanguageTag);
+                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLabelLanguageTag].Take(64)), shapeLabelLanguageTag);
                     dtdlModel.Assert(new Triple(interfaceNode, dtdl_displayName, dtdlDisplayNameLiteral));
                 }
 
+                // If there are rdfs:comments, use them for DTDL description
+                Dictionary<string,string> descriptionMap = new();
+                foreach (LiteralNode shapeComment in shape.Node.RdfsComments()) {
+                    // Flatten possibly multiple occurences of comments with a given language tag, keep only one
+                    descriptionMap[shapeComment.Language] = shapeComment.Value;
+                }
+                foreach (string shapeCommentLanguageTag in descriptionMap.Keys) {
+                    // Create a description assertion for reach of the above comments
+                    ILiteralNode dtdlDescriptionLiteral;
+                    if (shapeCommentLanguageTag == String.Empty)
+                        dtdlDescriptionLiteral = dtdlModel.CreateLiteralNode(string.Concat(descriptionMap[shapeCommentLanguageTag].Take(512)));
+                    else
+                        dtdlDescriptionLiteral = dtdlModel.CreateLiteralNode(string.Concat(descriptionMap[shapeCommentLanguageTag].Take(512)), shapeCommentLanguageTag);
+                    dtdlModel.Assert(new Triple(interfaceNode, dtdl_description, dtdlDescriptionLiteral));
+                }
+
                 // TODO: All of the rest of the stuff
+                foreach (PropertyShape propertyShape in shape.PropertyShapes) {
+                    // TODO: Implement me!
+                    Console.WriteLine($"Found property: {shape.Node.ToString()} -- {propertyShape.Node.ToString()}");
+                }
 
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);
@@ -260,22 +281,21 @@ namespace SHACL2DTDL
             return compactedJson;
         }
 
-                /// <summary>
-        /// Checks if a given Ontology Resource is in the ignored names list.
+        /// <summary>
+        /// Checks if a given Shape should be ignored by tis tool.
         /// </summary>
-        /// <param name="resource">Resource to check</param>
+        /// <param name="shape">SHACL shape to check</param>
         /// <returns>True iff the resource is ignored</returns>
         private static bool IsIgnored(Shape shape)
         {
-            foreach (string ignoredUri in ignoredUris)
-            {
-                string resourceUri = shape.Node.Uri.AbsoluteUri;
-                if (resourceUri.Contains(ignoredUri))
-                {
-                    return true;
-                }
+            // If the shape is backed by a URI node, it is ignored IFF it is part of the ignoredUris set
+            if (shape.Node.NodeType == NodeType.Uri) {
+                string shapeUri = ((IUriNode)shape.Node).Uri.AbsoluteUri;
+                return ignoredUris.Any(ignoredUri => shapeUri.Contains(ignoredUri));
             }
-            return false;
+            // If the shape isn't backed by a single URI node (e.g., sequence paths, 
+            // alternative paths, etc) then we ignore it (for now..)
+            return true;
         }
     }
 }
