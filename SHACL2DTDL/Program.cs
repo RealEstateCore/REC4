@@ -198,11 +198,25 @@ namespace SHACL2DTDL
                     dtdlModel.Assert(new Triple(interfaceNode, dtdl_description, dtdlDescriptionLiteral));
                 }
 
-                // TODO: All of the rest of the stuff
-                foreach (PropertyShape propertyShape in shape.PropertyShapes) {
-                    // TODO: Implement me!
-                    Console.WriteLine($"Found property: {shape.Node.ToString()} -- {propertyShape.Node.ToString()}");
+                // TODO: Implement and document property/relationship generation
+                foreach (PropertyShape ps in shape.PropertyShapes.Where(ps => ps.Path.NodeType == NodeType.Uri)) {
+                    // TODO: We also need to capture properties using rdfs:domain.
+                    // TODO: We also need to avoid re-asserting on subclasses fields that are asserted on superclasses (disallowed in DTDL)
+                    string psPathLocalName = ((IUriNode)ps.Path).LocalName();
+
+                    // TODO: We need to take different path here depending on whether it's a data field (DTDL Property) or a URI field (DTDL Relationship)..
+
+                    // Define a Relationship and its name
+                    IBlankNode relationshipNode = dtdlModel.CreateBlankNode();
+                    dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, relationshipNode));
+
+                    // Assert that this is indeed a Relationship
+                    dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
+                    
+                    ILiteralNode relationshipNameNode = dtdlModel.CreateLiteralNode(psPathLocalName);
+                    dtdlModel.Assert(new Triple(relationshipNode, dtdl_name, relationshipNameNode));
                 }
+                
 
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);

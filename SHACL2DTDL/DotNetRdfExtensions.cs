@@ -182,7 +182,13 @@ namespace SHACL2DTDL
 
     public class PropertyShape: Shape {
         public PropertyShape(INode node, ShapesGraph graph): base(node, graph) {
+        }
 
+        public INode Path {
+            get {
+                IUriNode shPath = _graph.CreateUriNode(SH.path);
+                return _graph.GetTriplesWithSubjectPredicate(_node, shPath).First().Object;
+            }
         }
     }
 }
