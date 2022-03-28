@@ -730,6 +730,12 @@ rec:HealthcareRoom
   rdfs:label "Healthcare room" ;
   rdfs:subClassOf rec:Room ;
 .
+rec:Hospital
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Hospital" ;
+  rdfs:subClassOf rec:Building ;
+.
 rec:Information
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1097,6 +1103,12 @@ rec:Sauna
   rdfs:label "Sauna" ;
   rdfs:subClassOf rec:PersonalHygiene ;
 .
+rec:School
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "School" ;
+  rdfs:subClassOf rec:Building ;
+.
 rec:SecurityRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1132,6 +1144,12 @@ rec:ShelterRoom
   a sh:NodeShape ;
   rdfs:label "Shelter room" ;
   rdfs:subClassOf rec:Shelter ;
+.
+rec:ShoppingMall
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Shopping mall" ;
+  rdfs:subClassOf rec:Building ;
 .
 rec:ShowerRoom
   a rdfs:Class ;
@@ -1197,6 +1215,12 @@ rec:SprinklerRoom
   a sh:NodeShape ;
   rdfs:label "Sprinkler room" ;
   rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:Stadium
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Stadium" ;
+  rdfs:subClassOf rec:Building ;
 .
 rec:StaffRoom
   a rdfs:Class ;
@@ -1287,6 +1311,12 @@ rec:UtilitiesRoom
   a sh:NodeShape ;
   rdfs:label "Utilities room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:VirtualBuilding
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Virtual building" ;
+  rdfs:subClassOf rec:Building ;
 .
 rec:Wall
   a rdfs:Class ;
