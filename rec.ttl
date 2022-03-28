@@ -1004,11 +1004,46 @@ rec:PostalAddress
   rdfs:subClassOf rec:Information ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:addressLine1 ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "address line 1" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:addressLine2 ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "address line 2" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:city ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "city" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:country ;
       sh:datatype xsd:string ;
       sh:description "The country, e.g., USA, Sweden, Argentina, or optionally a two-letter ISO 3166-1 alpha-2 country code, e.g., \"SE\", \"US\", etc." ;
       sh:maxCount 1 ;
       sh:name "country" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:postalCode ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "postal code" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:region ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "region" ;
     ] ;
 .
 rec:PrinterCart
