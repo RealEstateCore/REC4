@@ -24,6 +24,12 @@ brick:Equipment
   owl:imports <https://brickschema.org/schema/1.2/Brick> ;
   owl:versionInfo "4.0" ;
 .
+rec:AdmittingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Admitting room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
 rec:Agent
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -285,17 +291,59 @@ rec:Asset
       sh:name "weight" ;
     ] ;
 .
+rec:Atrium
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Atrium" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:Auditorium
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Auditorium" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:BackOffice
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Back office" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:BarRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bar room" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
 rec:BasementLevel
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Basement level" ;
   rdfs:subClassOf rec:Level ;
 .
+rec:Bathroom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bathroom" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:Bed
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Bed" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:Bedroom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bedroom" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:BicycleGarage
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Bicycle garage" ;
+  rdfs:subClassOf rec:Garage ;
 .
 rec:Bookcase
   a rdfs:Class ;
@@ -324,6 +372,24 @@ rec:BulletinBoard
   rdfs:label "Bulletin board" ;
   rdfs:subClassOf rec:Furniture ;
 .
+rec:Cabinet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cabinet" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:CableRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cable room" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:CafeteriaRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cafeteria room" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
 rec:Campus
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -350,6 +416,36 @@ rec:Chair
   a sh:NodeShape ;
   rdfs:label "Chair" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:Cinema
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cinema" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:Classroom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Classroom" ;
+  rdfs:subClassOf rec:EducationalRoom ;
+.
+rec:CleaningRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cleaning room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ClimateControlRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Climate-control room" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:CloakRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cloak room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:CoatRack
   a rdfs:Class ;
@@ -383,11 +479,41 @@ rec:ComputerCart
   rdfs:label "Computer cart" ;
   rdfs:subClassOf rec:Cart ;
 .
+rec:ConferenceRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Conference room" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:ConferenceTable
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Conference table" ;
   rdfs:subClassOf rec:Table ;
+.
+rec:ConversationRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Conversation room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:CookingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cooking room" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
+rec:CopyingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Copying room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:DataServerRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Data server room" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
 .
 rec:Department
   a rdfs:Class ;
@@ -415,6 +541,24 @@ rec:DeskLamp
   rdfs:label "Desk lamp" ;
   rdfs:subClassOf rec:Lamp ;
 .
+rec:DiningRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Dining room" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
+rec:DisabledToilet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Disabled toilet" ;
+  rdfs:subClassOf rec:PersonalHygiene ;
+.
+rec:DishingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Dishing room" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
 rec:Document
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -427,17 +571,71 @@ rec:Document
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:DressingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Dressing room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:EducationalRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Educational room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ElectricityRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Electricity room" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:ElevatorRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Elevator room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ElevatorShaft
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Elevator shaft" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:EndTable
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "End table" ;
   rdfs:subClassOf rec:Table ;
 .
+rec:Entrance
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Entrance" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ExerciseRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Exercise room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ExhibitionRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Exhibition room" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:FilingCabinet
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Filing cabinet" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:FittingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Fitting room" ;
+  rdfs:subClassOf rec:RetailRoom ;
 .
 rec:FloorLamp
   a rdfs:Class ;
@@ -463,6 +661,12 @@ rec:FoldingTable
   rdfs:label "Folding table" ;
   rdfs:subClassOf rec:Table ;
 .
+rec:FoodHandlingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Food-handling room" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:Footrest
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -475,11 +679,35 @@ rec:Furniture
   rdfs:label "Furniture" ;
   rdfs:subClassOf rec:Asset ;
 .
+rec:Garage
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Garage" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:GroupRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Group room" ;
+  rdfs:subClassOf rec:EducationalRoom ;
+.
 rec:HVACZone
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "HVAC zone" ;
   rdfs:subClassOf rec:Zone ;
+.
+rec:Hallway
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Hallway" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:HealthcareRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Healthcare room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:Information
   a rdfs:Class ;
@@ -487,11 +715,41 @@ rec:Information
   rdfs:label "Information" ;
   rdfs:subClassOf rdfs:Resource ;
 .
+rec:Kitchenette
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Kitchenette" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
+rec:Laboratory
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Laboratory" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:LaboratoryDry
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Laboratory (dry)" ;
+  rdfs:subClassOf rec:Laboratory ;
+.
+rec:LaboratoryWet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Laboratory (wet)" ;
+  rdfs:subClassOf rec:Laboratory ;
+.
 rec:Lamp
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Lamp" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:LaundryRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Laundry room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:Level
   a rdfs:Class ;
@@ -506,11 +764,53 @@ rec:Level
       sh:name "level number" ;
     ] ;
 .
+rec:Library
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Library" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:LivingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Living room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:LoadingReceivingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Loading/receiving room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:LockerRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Locker room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:MailRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Mail room" ;
+  rdfs:subClassOf rec:BackOffice ;
+.
 rec:MailroomCart
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Mailroom cart" ;
   rdfs:subClassOf rec:Cart ;
+.
+rec:MainEntrance
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Main entrance" ;
+  rdfs:subClassOf rec:Entrance ;
+.
+rec:MeditationRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Meditation room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:MezzanineLevel
   a rdfs:Class ;
@@ -524,17 +824,65 @@ rec:MobileDesk
   rdfs:label "Mobile desk" ;
   rdfs:subClassOf rec:Desk ;
 .
+rec:Morgue
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Morgue" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:MothersRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Mothers' room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:MultiPurposeRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Multi-purpose room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:NeonatalNursingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Neonatal nursing room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
 rec:OccupancyZone
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Occupancy zone" ;
   rdfs:subClassOf rec:Zone ;
 .
+rec:Office
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Office" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:OfficeChair
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Office chair" ;
   rdfs:subClassOf rec:Chair ;
+.
+rec:OfficeLandscape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "OfficeLandscape" ;
+  rdfs:subClassOf rec:Office ;
+.
+rec:OfficeRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "OfficeRoom" ;
+  rdfs:subClassOf rec:Office ;
+.
+rec:OperatingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Operating room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
 .
 rec:Organization
   a rdfs:Class ;
@@ -549,6 +897,30 @@ rec:Organization
       sh:description "URL link to an image/logo that represents the organization." ;
       sh:name "logo" ;
     ] ;
+.
+rec:OutpatientServicesRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Outpatient services room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:Pantry
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Pantry" ;
+  rdfs:subClassOf rec:FoodHandlingRoom ;
+.
+rec:ParkingSlotCold
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Parking slot (cold)" ;
+  rdfs:subClassOf rec:Garage ;
+.
+rec:ParkingSlotWarm
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Parking slot (warm)" ;
+  rdfs:subClassOf rec:Garage ;
 .
 rec:Person
   a rdfs:Class ;
@@ -580,6 +952,24 @@ rec:Person
       sh:name "image" ;
     ] ;
 .
+rec:PersonalHygiene
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Personal hygiene room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:PharmacyRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Pharmacy room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:PhoneBooth
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "PhoneBooth" ;
+  rdfs:subClassOf rec:Office ;
+.
 rec:PostalAddress
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -606,11 +996,35 @@ rec:PrinterStand
   rdfs:label "Printer stand" ;
   rdfs:subClassOf rec:Stand ;
 .
+rec:RadiologyRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Radiology room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:Reception
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Reception" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:ReceptionTable
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Reception table" ;
   rdfs:subClassOf rec:Table ;
+.
+rec:RecordingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Recording room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:RecreationalRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Recreational room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:Region
   a rdfs:Class ;
@@ -618,6 +1032,18 @@ rec:Region
   rdfs:comment "An administrative geospatial unit larger than the individual real estate. For instance, \"Lombary\", \"North America\", \"The Back Bay\", \"Elnätsområde Syd\", etc." ;
   rdfs:label "Region" ;
   rdfs:subClassOf rec:Space ;
+.
+rec:RestingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Resting room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:RetailRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Retail room" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:Roof
   a rdfs:Class ;
@@ -644,6 +1070,54 @@ rec:Safe
   rdfs:label "Safe" ;
   rdfs:subClassOf rec:Furniture ;
 .
+rec:Sauna
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Sauna" ;
+  rdfs:subClassOf rec:PersonalHygiene ;
+.
+rec:SecurityRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Security room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ServiceEntrance
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Service entrance" ;
+  rdfs:subClassOf rec:Entrance ;
+.
+rec:ServiceShaft
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Service shaft" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:Shelter
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Shelter" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:ShelterGasLock
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Shelter gas lock" ;
+  rdfs:subClassOf rec:Shelter ;
+.
+rec:ShelterRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Shelter room" ;
+  rdfs:subClassOf rec:Shelter ;
+.
+rec:ShowerRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Shower room" ;
+  rdfs:subClassOf rec:PersonalHygiene ;
+.
 rec:Site
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -656,6 +1130,12 @@ rec:Slab
   a sh:NodeShape ;
   rdfs:label "Slab" ;
   rdfs:subClassOf rec:BuildingElement ;
+.
+rec:SmallStudyRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Small study room" ;
+  rdfs:subClassOf rec:EducationalRoom ;
 .
 rec:Sofa
   a rdfs:Class ;
@@ -691,11 +1171,35 @@ rec:Space
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:SprinklerRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Sprinkler room" ;
+  rdfs:subClassOf rec:UtilitiesRoom ;
+.
+rec:StaffRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Staff room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:Stairwell
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Stairwell" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:Stand
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Stand" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:Storage
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Storage" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:StorageCabinet
   a rdfs:Class ;
@@ -721,6 +1225,48 @@ rec:Table
   rdfs:label "Table" ;
   rdfs:subClassOf rec:Furniture ;
 .
+rec:TelecommunicationRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Telecommunication room" ;
+  rdfs:subClassOf rec:CableRoom ;
+.
+rec:Theater
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Theater" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:TherapyRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Therapy room" ;
+  rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:Toilet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Toilet" ;
+  rdfs:subClassOf rec:PersonalHygiene ;
+.
+rec:TreatmentRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Treatment room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:TreatmentWaitingRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Treatment waiting room" ;
+  rdfs:subClassOf rec:TreatmentRoom ;
+.
+rec:UtilitiesRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Utilities room" ;
+  rdfs:subClassOf rec:Room ;
+.
 rec:Wall
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -732,6 +1278,18 @@ rec:WasteBasket
   a sh:NodeShape ;
   rdfs:label "Waste basket" ;
   rdfs:subClassOf rec:Furniture ;
+.
+rec:WasteManagementRoom
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Waste management room" ;
+  rdfs:subClassOf rec:Room ;
+.
+rec:Workshop
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Workshop" ;
+  rdfs:subClassOf rec:Room ;
 .
 rec:Workspace
   a rdfs:Class ;
