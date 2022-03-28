@@ -122,6 +122,13 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:documentation ;
+      sh:class rec:Document ;
+      sh:name "documentation" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:intersectingElement ;
       sh:class rec:BuildingElement ;
       sh:name "intersecting element" ;
@@ -140,6 +147,20 @@ rec:Architecture
       sh:class rec:Agent ;
       sh:name "owned by" ;
       sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:personCapacity ;
+      sh:datatype xsd:integer ;
+      sh:maxCount 1 ;
+      sh:name "person capacity" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:personOccupancy ;
+      sh:datatype xsd:integer ;
+      sh:maxCount 1 ;
+      sh:name "person occupancy" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
