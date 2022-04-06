@@ -199,22 +199,62 @@ namespace SHACL2DTDL
                 }
 
                 // TODO: Implement and document property/relationship generation
+                // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
+                // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
                 foreach (PropertyShape ps in shape.PropertyShapes.Where(ps => ps.Path.NodeType == NodeType.Uri)) {
                     // TODO: We also need to capture properties using rdfs:domain.
                     // TODO: We also need to avoid re-asserting on subclasses fields that are asserted on superclasses (disallowed in DTDL)
+                    // TODO: We also need to filter out any deprecated shapes from source SHACL
                     string psPathLocalName = ((IUriNode)ps.Path).LocalName();
 
-                    // TODO: We need to take different path here depending on whether it's a data field (DTDL Property) or a URI field (DTDL Relationship)..
+                    // We take different path here depending on whether it's a data field (DTDL Property) or a URI field (DTDL Relationship)
+                    if (ps.Datatype is IUriNode datatype || (ps.NodeKind is IUriNode nodeKind1 && nodeKind1.LocalName() == "Literal")) {
+                        // Target is an datatype, so this becomes a DTDL Property
+                        IBlankNode propertyNode = dtdlModel.CreateBlankNode();
+                        dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, propertyNode));
 
-                    // Define a Relationship and its name
-                    IBlankNode relationshipNode = dtdlModel.CreateBlankNode();
-                    dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, relationshipNode));
+                        // Assert that this is indeed a Property
+                        dtdlModel.Assert(new Triple(propertyNode, rdfType, dtdl_Property));
 
-                    // Assert that this is indeed a Relationship
-                    dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
-                    
-                    ILiteralNode relationshipNameNode = dtdlModel.CreateLiteralNode(psPathLocalName);
-                    dtdlModel.Assert(new Triple(relationshipNode, dtdl_name, relationshipNameNode));
+                        // Assert the property name
+                        ILiteralNode propertyNameNode = dtdlModel.CreateLiteralNode(psPathLocalName);
+                        dtdlModel.Assert(new Triple(propertyNode, dtdl_name, propertyNameNode));
+
+                        // Assert the property schema (falling back to string if none is defined)
+                        Uri propertySchema;
+                        if (ps.Datatype != null && ps.Datatype is IUriNode) {
+                            propertySchema = GetXsdAsDtdl((IUriNode)ps.Datatype);
+                        }
+                        else {
+                            propertySchema = DTDL._string;
+                        }
+                        IUriNode schemaNode = dtdlModel.CreateUriNode(propertySchema);
+                        dtdlModel.Assert(new Triple(propertyNode, dtdl_schema, schemaNode));
+
+                    }
+                    else if ((ps.Class.FirstOrDefault() is IUriNode cls || ps.NodeKind is IUriNode nodeKind2 && nodeKind2.LocalName() == "IRI")) { 
+                        // Target is an RDFS class, so this becomes a DTDL Relationship
+                        // DTDL supports only single targets, so we choose the first one if multiple exist (probably rare anyway)
+                        
+                        // Define a Relationship and its name
+                        IBlankNode relationshipNode = dtdlModel.CreateBlankNode();
+                        dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, relationshipNode));
+
+                        // Assert that this is indeed a Relationship
+                        dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
+
+                        // Assert the relationship name
+                        ILiteralNode relationshipNameNode = dtdlModel.CreateLiteralNode(psPathLocalName);
+                        dtdlModel.Assert(new Triple(relationshipNode, dtdl_name, relationshipNameNode));
+
+                        // Assert the relationship target (falling back to no target if class count <> 1)
+                        if (ps.Class.Count() == 1 && ps.Class.First() is IUriNode) {
+                            IUriNode shClassNode = (IUriNode)ps.Class.First();
+                            string targetDtmi = GetDTMI(shClassNode);
+                            IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
+                            dtdlModel.Assert(new Triple(relationshipNode, dtdl_target, targetNode));
+                        }
+                    }
                 }
                 
 
@@ -310,6 +350,39 @@ namespace SHACL2DTDL
             // If the shape isn't backed by a single URI node (e.g., sequence paths, 
             // alternative paths, etc) then we ignore it (for now..)
             return true;
+        }
+
+        /// <summary>
+        /// Translate an XSD datatype into a DTDL URI
+        /// </summary>
+        /// <param name="xsdDatatype">XSD datatype to translate</param>
+        /// <returns>DTDL-equivalent URI</returns>
+        private static Uri GetXsdAsDtdl(IUriNode xsdDatatype)
+        {
+            Dictionary<string, Uri> xsdDtdlPrimitiveTypesMappings = new Dictionary<string, Uri>
+                {
+                    {"boolean", DTDL._boolean },
+                    {"byte", DTDL._integer },
+                    {"date", DTDL._date },
+                    {"dateTime", DTDL._dateTime },
+                    {"duration", DTDL._duration },
+                    {"dateTimeStamp", DTDL._dateTime },
+                    {"double", DTDL._double },
+                    {"float", DTDL._float },
+                    {"int", DTDL._integer },
+                    {"integer", DTDL._integer },
+                    {"long", DTDL._long },
+                    {"string",DTDL._string }
+                };
+
+            if (xsdDtdlPrimitiveTypesMappings.ContainsKey(xsdDatatype.LocalName()))
+            {
+                return xsdDtdlPrimitiveTypesMappings[xsdDatatype.LocalName()];
+                
+            }
+
+            // Fall-back option
+            return DTDL._string;
         }
     }
 }

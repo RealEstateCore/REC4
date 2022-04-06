@@ -63,6 +63,13 @@ namespace SHACL2DTDL
             return this.Node == shape?.Node;
         }
 
+        public IUriNode? NodeKind {
+            get {
+                IUriNode shNodeKind = _graph.CreateUriNode(SH.nodeKind);
+                return _graph.GetTriplesWithSubjectPredicate(_node, shNodeKind).Select(trip => trip.Object).UriNodes().FirstOrDefault();
+            }
+        }
+
         protected internal Shape(INode node, ShapesGraph graph) {
             _node = node;
             _graph = graph;
@@ -181,6 +188,7 @@ namespace SHACL2DTDL
     }
 
     public class PropertyShape: Shape {
+
         public PropertyShape(INode node, ShapesGraph graph): base(node, graph) {
         }
 
@@ -190,5 +198,21 @@ namespace SHACL2DTDL
                 return _graph.GetTriplesWithSubjectPredicate(_node, shPath).First().Object;
             }
         }
+
+        public INode? Datatype {
+            get {
+                IUriNode shDatatype = _graph.CreateUriNode(SH.datatype);
+                return _graph.GetTriplesWithSubjectPredicate(_node, shDatatype).Select(trip => trip.Object).FirstOrDefault();
+            }
+        }
+
+        public IEnumerable<INode> Class {
+            get {
+                IUriNode shClass = _graph.CreateUriNode(SH.cls);
+                return _graph.GetTriplesWithSubjectPredicate(_node, shClass).Select(trip => trip.Object);
+            }
+        }
+
+        
     }
 }

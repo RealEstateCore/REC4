@@ -27,6 +27,9 @@ namespace SHACL2DTDL.VocabularyHelper
         public static readonly Uri NodeShape = new Uri("http://www.w3.org/ns/shacl#NodeShape");
         public static readonly Uri property = new Uri("http://www.w3.org/ns/shacl#property");
         public static readonly Uri path = new Uri("http://www.w3.org/ns/shacl#path");
+        public static readonly Uri cls = new Uri("http://www.w3.org/ns/shacl#class");
+        public static readonly Uri datatype = new Uri("http://www.w3.org/ns/shacl#datatype");
+        public static readonly Uri nodeKind = new Uri("http://www.w3.org/ns/shacl#nodeKind");   
     }
 
     public static class RDF
