@@ -59444,7 +59444,7 @@ rec:StorageCabinet
   rdfs:label "Storage cabinet" ;
   rdfs:subClassOf rec:Furniture ;
 .
-rec:Sub-building
+rec:SubBuilding
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Sub-building" ;
