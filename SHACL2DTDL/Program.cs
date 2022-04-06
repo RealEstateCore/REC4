@@ -2,6 +2,7 @@
 using SHACL2DTDL.VocabularyHelper;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 using VDS.RDF;
 using VDS.RDF.Parsing;
 using VDS.RDF.JsonLd;
@@ -175,8 +176,8 @@ namespace SHACL2DTDL
                 foreach (string shapeLabelLanguageTag in displayNameMap.Keys) {
                     // Create a displayName assertion for reach of the above labels
                     ILiteralNode dtdlDisplayNameLiteral;
-                    if (shapeLabelLanguageTag == String.Empty)
-                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLabelLanguageTag].Take(64)));
+                    if (shapeLabelLanguageTag == String.Empty) // Fall back to EN language if none is defined b/c DTDL validator cannot handle language @none
+                        dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLabelLanguageTag].Take(64)),"en");
                     else
                         dtdlDisplayNameLiteral = dtdlModel.CreateLiteralNode(string.Concat(displayNameMap[shapeLabelLanguageTag].Take(64)), shapeLabelLanguageTag);
                     dtdlModel.Assert(new Triple(interfaceNode, dtdl_displayName, dtdlDisplayNameLiteral));
@@ -191,14 +192,17 @@ namespace SHACL2DTDL
                 foreach (string shapeCommentLanguageTag in descriptionMap.Keys) {
                     // Create a description assertion for reach of the above comments
                     ILiteralNode dtdlDescriptionLiteral;
-                    if (shapeCommentLanguageTag == String.Empty)
-                        dtdlDescriptionLiteral = dtdlModel.CreateLiteralNode(string.Concat(descriptionMap[shapeCommentLanguageTag].Take(512)));
+                    if (shapeCommentLanguageTag == String.Empty) // Fall back to EN language if none is defined b/c DTDL validator cannot handle language @none
+                        dtdlDescriptionLiteral = dtdlModel.CreateLiteralNode(string.Concat(descriptionMap[shapeCommentLanguageTag].Take(512)),"en");
                     else
                         dtdlDescriptionLiteral = dtdlModel.CreateLiteralNode(string.Concat(descriptionMap[shapeCommentLanguageTag].Take(512)), shapeCommentLanguageTag);
                     dtdlModel.Assert(new Triple(interfaceNode, dtdl_description, dtdlDescriptionLiteral));
                 }
 
-                // TODO: Implement and document property/relationship generation
+                // TODO: Implements extends
+                // TODO: Create reasonable top-level categories (not current Entity/Resource)
+
+                // TODO: Implement cardinality of relationships and properties
                 // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
                 // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
                 foreach (PropertyShape ps in shape.PropertyShapes.Where(ps => ps.Path.NodeType == NodeType.Uri)) {
@@ -280,8 +284,11 @@ namespace SHACL2DTDL
 
         }
 
+            // TODO: Implement this properly in adherence w/ https://github.com/Azure/digital-twin-model-identifier
         private static string GetDTMI(INode inputNode) {
-            // TODO: Implement me
+            if (inputNode.NodeType == NodeType.Literal) {
+                throw new ArgumentException("Attempting to generate DTMI from literal node.");
+            }
             if (inputNode.NodeType == NodeType.Blank) {
                 return $"dtmi:digitaltwins:{System.Guid.NewGuid().ToString()};1";
             }
@@ -290,8 +297,9 @@ namespace SHACL2DTDL
             string pathPortion = node.Uri.LocalPath.Trim('/').Replace('/',':');
             string fragmentPortion = node.Uri.Fragment.Trim('#');
             string dtmi = $"{hostPortion}:{pathPortion}:{fragmentPortion}";
+            string cleanDtmi = Regex.Replace(dtmi, @"[^a-zA-Z0-9_:]", "");
             string dtmiVersion = "1";
-            return $"dtmi:digitaltwins:{dtmi};{dtmiVersion}";
+            return $"dtmi:digitaltwins:{cleanDtmi};{dtmiVersion}";
         }
 
         /// <summary>
