@@ -199,7 +199,18 @@ namespace SHACL2DTDL
                     dtdlModel.Assert(new Triple(interfaceNode, dtdl_description, dtdlDescriptionLiteral));
                 }
 
-                // TODO: Implements extends
+                // If the class has direct superclasses, implement DTDL extends (for at most two, see limitation in DTDL spec)
+                IEnumerable<NodeShape> namedSuperClasses = shape.DirectSuperClasses.Where(superClass => !superClass.IsTopThing && !superClass.IsDeprecated);
+                if (namedSuperClasses.Any())
+                {
+                    foreach (NodeShape superClass in namedSuperClasses.Take(2))
+                    {
+                        string superInterfaceDTMI = GetDTMI(superClass.Node);
+                        IUriNode superInterfaceNode = dtdlModel.CreateUriNode(UriFactory.Create(superInterfaceDTMI));
+                        dtdlModel.Assert(new Triple(interfaceNode, dtdl_extends, superInterfaceNode));
+                    }
+                }
+
                 // TODO: Create reasonable top-level categories (not current Entity/Resource)
 
                 // TODO: Implement cardinality of relationships and properties
@@ -297,9 +308,19 @@ namespace SHACL2DTDL
             string pathPortion = node.Uri.LocalPath.Trim('/').Replace('/',':');
             string fragmentPortion = node.Uri.Fragment.Trim('#');
             string dtmi = $"{hostPortion}:{pathPortion}:{fragmentPortion}";
-            string cleanDtmi = Regex.Replace(dtmi, @"[^a-zA-Z0-9_:]", "");
+            string cleanedDtmi = "";
+            foreach (string segment in dtmi.Split(':')) {
+                string cleanedSegment = Regex.Replace(segment, @"[^a-zA-Z0-9_]", "");
+                cleanedSegment = cleanedSegment.TrimEnd('_');
+                char[] digits = {'0','1','2','3','4','5','6','7','8','9'};
+                cleanedSegment = cleanedSegment.TrimStart(digits);
+                if (cleanedSegment.Length > 0) {
+                    cleanedDtmi += $"{cleanedSegment}:";
+                }
+            }
+            cleanedDtmi = cleanedDtmi.TrimEnd(':');
             string dtmiVersion = "1";
-            return $"dtmi:digitaltwins:{cleanDtmi};{dtmiVersion}";
+            return $"dtmi:digitaltwins:{cleanedDtmi};{dtmiVersion}";
         }
 
         /// <summary>

@@ -32,6 +32,11 @@ namespace SHACL2DTDL.VocabularyHelper
         public static readonly Uri nodeKind = new Uri("http://www.w3.org/ns/shacl#nodeKind");   
     }
 
+    public static class Brick  
+    {
+        public static readonly Uri Entity = new Uri("https://brickschema.org/schema/Brick#Entity");
+    }
+
     public static class RDF
     {
             public static readonly Uri type = new Uri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
@@ -44,6 +49,7 @@ namespace SHACL2DTDL.VocabularyHelper
         public static readonly Uri subClassOf = new Uri("http://www.w3.org/2000/01/rdf-schema#subClassOf");
         public static readonly Uri Datatype = new Uri("http://www.w3.org/2000/01/rdf-schema#Datatype");
         public static readonly Uri Literal = new Uri("http://www.w3.org/2000/01/rdf-schema#Literal");
+        public static readonly Uri Resource = new Uri("http://www.w3.org/2000/01/rdf-schema#Resource");
     }
 
     public static class OWL

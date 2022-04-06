@@ -16,6 +16,13 @@ namespace SHACL2DTDL
             }
         }
 
+        public static bool IsNodeShape(this INode node) {
+            IGraph graph = node.Graph;
+            IUriNode rdfType = graph.CreateUriNode(RDF.type);
+            IUriNode shNodeShape = graph.CreateUriNode(SH.NodeShape);
+            return graph.ContainsTriple(new Triple(node, rdfType, shNodeShape));
+        }
+
         public static string LocalName(this IUriNode node)
         {
             if (node.Uri.Fragment.Length > 0)
@@ -90,6 +97,15 @@ namespace SHACL2DTDL
                 return _graph;
             }
         }
+
+        // TODO: Implement this to capture deprecation annotations (which ones?)
+        public bool IsDeprecated 
+        {
+            get 
+            {
+                return false;
+            }
+        }
     }
 
     public class  NodeShape: Shape {
@@ -112,7 +128,7 @@ namespace SHACL2DTDL
                 IUriNode rdfsSubClassOf = _graph.CreateUriNode(RDFS.subClassOf);
                 foreach (Triple t in _graph.GetTriplesWithSubjectPredicate(_node, rdfsSubClassOf))
                 {
-                    if (t.Object.NodeType == NodeType.Uri) {
+                    if (t.Object.NodeType == NodeType.Uri && t.Object.IsNodeShape()) {
                         yield return new NodeShape((IUriNode)t.Object, _graph);
                     }
                 }
@@ -147,7 +163,7 @@ namespace SHACL2DTDL
         public List<IUriNode> LongestSuperClassesPath {
             get {
                 IEnumerable<NodeShape> directSuperClasses = this.DirectSuperClasses;
-                if (directSuperClasses.Count() < 1 || directSuperClasses.Any(superClass => superClass.IsOwlThing)) {
+                if (directSuperClasses.Count() < 1 || directSuperClasses.Any(superClass => superClass.IsTopThing)) {
                     return new List<IUriNode>();
                 }
                 else {
@@ -179,10 +195,14 @@ namespace SHACL2DTDL
             }
         }
 
-        public bool IsOwlThing
+        public bool IsTopThing
         {
             get {
-                return Node.Uri.AbsoluteUri.Equals(OWL.Thing.AbsoluteUri);
+                string[] topLevelThings = {
+                    OWL.Thing.AbsoluteUri,
+                    RDFS.Resource.AbsoluteUri
+                };
+                return topLevelThings.Contains(Node.Uri.AbsoluteUri);
             }            
         }
     }
