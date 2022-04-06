@@ -211,16 +211,20 @@ namespace SHACL2DTDL
                     }
                 }
 
-                // TODO: Create reasonable top-level categories (not current Entity/Resource)
-
                 // TODO: Implement cardinality of relationships and properties
                 // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
                 // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
                 foreach (PropertyShape ps in shape.PropertyShapes.Where(ps => ps.Path.NodeType == NodeType.Uri)) {
                     // TODO: We also need to capture properties using rdfs:domain.
-                    // TODO: We also need to avoid re-asserting on subclasses fields that are asserted on superclasses (disallowed in DTDL)
                     // TODO: We also need to filter out any deprecated shapes from source SHACL
                     string psPathLocalName = ((IUriNode)ps.Path).LocalName();
+
+                    // If we have seen this local name linked from a sub-shape, skip it; DTDL does not allow subinterfaces
+                    // to specialise properties/relationships
+                    if (PropertyIsDefinedOnChild(shape, psPathLocalName))
+                    {
+                        continue;
+                    }
 
                     // We take different path here depending on whether it's a data field (DTDL Property) or a URI field (DTDL Relationship)
                     if (ps.Datatype is IUriNode datatype || (ps.NodeKind is IUriNode nodeKind1 && nodeKind1.LocalName() == "Literal")) {
@@ -295,7 +299,7 @@ namespace SHACL2DTDL
 
         }
 
-            // TODO: Implement this properly in adherence w/ https://github.com/Azure/digital-twin-model-identifier
+        // TODO: Implement this properly in adherence w/ https://github.com/Azure/digital-twin-model-identifier
         private static string GetDTMI(INode inputNode) {
             if (inputNode.NodeType == NodeType.Literal) {
                 throw new ArgumentException("Attempting to generate DTMI from literal node.");
@@ -412,6 +416,19 @@ namespace SHACL2DTDL
 
             // Fall-back option
             return DTDL._string;
+        }
+
+        /// <summary>
+        /// Checks whether a certain property shape on a node shape is also defined on any of its child shapes.
+        /// This is necessary since DTDL does not allow sub-interfaces to extend properties from their super-interfaces.
+        /// TODO Rewrite docs
+        /// </summary>
+        /// <param name="oClass">Superclass that holds the property being checked</param>
+        /// <param name="checkedForProperty">The property to check for</param>
+        /// <returns>True iff this property is not defined on any subclass</returns>
+        private static bool PropertyIsDefinedOnChild(NodeShape shape, string soughtPropertyName)
+        {
+            return shape.SubClasses.SelectMany(childShape => childShape.PropertyShapes).Select(ps => ps.Path).UriNodes().Any(pathNode => pathNode.LocalName() == soughtPropertyName);
         }
     }
 }

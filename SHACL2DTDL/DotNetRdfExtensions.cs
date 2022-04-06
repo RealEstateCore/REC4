@@ -137,7 +137,6 @@ namespace SHACL2DTDL
 
         public IEnumerable<NodeShape> SuperClasses {
             get {
-                IUriNode rdfsSubClassOf = _graph.CreateUriNode(RDFS.subClassOf);
                 IEnumerable<NodeShape> directSuperClasses = this.DirectSuperClasses;
                 HashSet<NodeShape> allSuperClasses = new HashSet<NodeShape>();
                 allSuperClasses.UnionWith(directSuperClasses);
@@ -157,6 +156,18 @@ namespace SHACL2DTDL
                         yield return new NodeShape((IUriNode)t.Subject, _graph);
                     }
                 }
+            }
+        }
+
+        public IEnumerable<NodeShape> SubClasses {
+            get {
+                IEnumerable<NodeShape> directSubClasses = this.DirectSubClasses;
+                HashSet<NodeShape> allSubClasses = new HashSet<NodeShape>();
+                allSubClasses.UnionWith(directSubClasses);
+                foreach (NodeShape subClass in directSubClasses) {
+                    allSubClasses.UnionWith(subClass.SubClasses);
+                }
+                return allSubClasses;
             }
         }
 
