@@ -63,9 +63,9 @@ namespace SHACL2DTDL
         }
 
         public static IEnumerable<IUriNode> TransitiveRdfTypes(this IUriNode node) {
-            IEnumerable<IUriNode> superClasses = node.SuperClasses();
-            IEnumerable<IUriNode> superClassTypes = superClasses.SelectMany(superClass => superClass.DirectRdfTypes());
-            return node.DirectRdfTypes().Union(superClassTypes);
+            IEnumerable<IUriNode> directRdfTypes = node.DirectRdfTypes();
+            IEnumerable<IUriNode> superClassesOfDirectRdfTypes = directRdfTypes.SelectMany(rdfType => rdfType.SuperClasses());
+            return directRdfTypes.Union(superClassesOfDirectRdfTypes);
         }
 
         public static IEnumerable<IUriNode> DirectRdfTypes(this IUriNode node) {
