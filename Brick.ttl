@@ -55264,6 +55264,12 @@ bsh:AreaShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
@@ -55289,6 +55295,12 @@ bsh:AzimuthShape
           unit:RAD
           unit:REV
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -55397,6 +55409,12 @@ bsh:BuildingPrimaryFunctionShape
         ) ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:CollectionShape
   a sh:NodeShape ;
@@ -55479,6 +55497,12 @@ bsh:CoolingCapacityShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
@@ -55513,6 +55537,12 @@ bsh:CurrentFlowTypeShape
         ) ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:CurrentShape
   a owl:Class ;
@@ -55540,6 +55570,12 @@ bsh:CurrentShape
       a sh:PropertyShape ;
       sh:path brick:ratedVoltageOutput ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:CurrentValueShape
   a owl:Class ;
@@ -55549,6 +55585,12 @@ bsh:CurrentValueShape
       a sh:PropertyShape ;
       sh:path brick:timestamp ;
       sh:datatype xsd:dateTime ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
 .
@@ -55608,6 +55650,12 @@ bsh:EfficiencyShape
       sh:in (
           unit:PERCENT
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -55863,6 +55911,12 @@ bsh:PhaseCountShape
         ) ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:PhasesShape
   a owl:Class ;
@@ -55880,6 +55934,12 @@ bsh:PhasesShape
           "AC"
           "ABC"
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
 .
@@ -55948,6 +56008,12 @@ bsh:PowerComplexityShape
         ) ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:PowerFlowShape
   a owl:Class ;
@@ -55962,6 +56028,12 @@ bsh:PowerFlowShape
           "net"
           "absolute"
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
 .
@@ -56020,12 +56092,12 @@ bsh:PowerShape
           unit:TeraW
           unit:W
           unit:MegaV-A_Reactive
-          unit:MegaV-A
-          unit:V-A
-          unit:KiloV-A_Reactive
-          unit:BTU_IT
           unit:V-A_Reactive
+          unit:MegaV-A
+          unit:BTU_IT
+          unit:V-A
           unit:KiloV-A
+          unit:KiloV-A_Reactive
         ) ;
       sh:minCount 1 ;
     ] ;
@@ -56044,6 +56116,12 @@ bsh:PowerShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:ratedVoltageOutput ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
     ] ;
 .
 bsh:RDFSRangeRule
@@ -56094,6 +56172,12 @@ bsh:StageShape
         ) ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:TagInferenceRule
   a sh:NodeShape ;
@@ -56126,6 +56210,12 @@ bsh:TemperatureCoefficientPerDegreeCelsiusShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
@@ -56150,6 +56240,12 @@ bsh:TemperatureShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
@@ -56165,6 +56261,12 @@ bsh:ThermalTransmittanceShape
           unit:BTU_IT
           unit:W-PER-M2-K
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -56195,6 +56297,12 @@ bsh:TiltShape
           unit:RAD
           unit:REV
         ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -56240,6 +56348,12 @@ bsh:VoltageShape
       a sh:PropertyShape ;
       sh:path brick:ratedCurrentOutput ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:VolumeShape
   a owl:Class ;
@@ -56257,6 +56371,12 @@ bsh:VolumeShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
@@ -56269,6 +56389,12 @@ bsh:YearBuiltShape
       a sh:PropertyShape ;
       sh:path brick:value ;
       sh:datatype xsd:nonNegativeInteger ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
 .
