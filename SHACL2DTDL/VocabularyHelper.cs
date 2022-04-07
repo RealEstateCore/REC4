@@ -45,6 +45,8 @@ namespace SHACL2DTDL.VocabularyHelper
     public static class RDFS
     {
         public static readonly Uri label = new Uri("http://www.w3.org/2000/01/rdf-schema#label");
+        public static readonly Uri domain = new Uri("http://www.w3.org/2000/01/rdf-schema#domain");
+        public static readonly Uri range = new Uri("http://www.w3.org/2000/01/rdf-schema#range");
         public static readonly Uri comment = new Uri("http://www.w3.org/2000/01/rdf-schema#comment");
         public static readonly Uri subClassOf = new Uri("http://www.w3.org/2000/01/rdf-schema#subClassOf");
         public static readonly Uri Datatype = new Uri("http://www.w3.org/2000/01/rdf-schema#Datatype");
@@ -54,6 +56,8 @@ namespace SHACL2DTDL.VocabularyHelper
 
     public static class OWL
     {
+        public static readonly Uri ObjectProperty = new Uri("http://www.w3.org/2002/07/owl#ObjectProperty");
+        public static readonly Uri DatatypeProperty = new Uri("http://www.w3.org/2002/07/owl#DatatypeProperty");
         public static readonly Uri Thing = new Uri("http://www.w3.org/2002/07/owl#Thing");
         public static readonly Uri Restriction = new Uri("http://www.w3.org/2002/07/owl#Restriction");
         public static readonly Uri FunctionalProperty = new Uri("http://www.w3.org/2002/07/owl#FunctionalProperty");

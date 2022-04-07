@@ -160,6 +160,11 @@ namespace SHACL2DTDL
 
             // Get only explicit node shapes
             foreach(NodeShape shape in _shapesGraph.NodeShapes().Where(nodeShape => !IsIgnored(nodeShape) && !nodeShape.SuperClasses.Any(parent => IsIgnored(parent)))) {
+
+                // Keeping track of which RDF properties we have already parsed on a given shape
+                // This is to ensure that, e.g., properties linked via rdfs:domain don't overwrite 
+                // properties found via PropertyShapes
+                List<string> propertiesParsed = new List<string>();
                 
                 // Create Interface
                 string interfaceDtmi = GetDTMI(shape.Node);
@@ -213,15 +218,15 @@ namespace SHACL2DTDL
 
                 // TODO: Implement cardinality of relationships and properties
                 // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
+                // TODO: Handle case where object properties point to BrickShape# namespace, where the target shape should be translated into a DTDL complex schema
                 // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
                 foreach (PropertyShape ps in shape.PropertyShapes.Where(ps => ps.Path.NodeType == NodeType.Uri)) {
-                    // TODO: We also need to capture properties using rdfs:domain.
                     // TODO: We also need to filter out any deprecated shapes from source SHACL
                     string psPathLocalName = ((IUriNode)ps.Path).LocalName();
 
                     // If we have seen this local name linked from a sub-shape, skip it; DTDL does not allow subinterfaces
-                    // to specialise properties/relationships
-                    if (PropertyIsDefinedOnChild(shape, psPathLocalName))
+                    // to specialise properties/relationships. Likewise if we have seen this property on this shape already
+                    if (PropertyIsDefinedOnChild(shape, psPathLocalName) || propertiesParsed.Contains(psPathLocalName))
                     {
                         continue;
                     }
@@ -250,6 +255,8 @@ namespace SHACL2DTDL
                         IUriNode schemaNode = dtdlModel.CreateUriNode(propertySchema);
                         dtdlModel.Assert(new Triple(propertyNode, dtdl_schema, schemaNode));
 
+                        propertiesParsed.Add(psPathLocalName);
+
                     }
                     else if ((ps.Class.FirstOrDefault() is IUriNode cls || ps.NodeKind is IUriNode nodeKind2 && nodeKind2.LocalName() == "IRI")) { 
                         // Target is an RDFS class, so this becomes a DTDL Relationship
@@ -273,9 +280,75 @@ namespace SHACL2DTDL
                             IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
                             dtdlModel.Assert(new Triple(relationshipNode, dtdl_target, targetNode));
                         }
+
+                        propertiesParsed.Add(psPathLocalName);
                     }
                 }
                 
+                foreach (IUriNode property in shape.Node.PropertiesThroughRdfsDomain()) {
+                    string propertyLocalName = property.LocalName();
+
+                    // If we have seen this local name linked from a sub-shape, skip it; DTDL does not allow subinterfaces
+                    // to specialise properties/relationships. Likewise if we have seen this property on this shape already
+                    if (PropertyIsDefinedOnChild(shape, propertyLocalName) || propertiesParsed.Contains(propertyLocalName))
+                    {
+                        continue;
+                    }
+
+                    if (property.IsDataProperty()) {
+                        // Target is an datatype, so this becomes a DTDL Property
+                        IBlankNode propertyNode = dtdlModel.CreateBlankNode();
+                        dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, propertyNode));
+
+                        // Assert that this is indeed a Property
+                        dtdlModel.Assert(new Triple(propertyNode, rdfType, dtdl_Property));
+
+                        // Assert the property name
+                        ILiteralNode propertyNameNode = dtdlModel.CreateLiteralNode(propertyLocalName);
+                        dtdlModel.Assert(new Triple(propertyNode, dtdl_name, propertyNameNode));
+
+                        // Assert the property schema (falling back to string if <> 1 is defined)
+                        Uri propertySchema;
+                        if (property.RdfsRanges().Count() == 1) {
+                            propertySchema = GetXsdAsDtdl(property.RdfsRanges().First());
+                        }
+                        else {
+                            propertySchema = DTDL._string;
+                        }
+                        IUriNode schemaNode = dtdlModel.CreateUriNode(propertySchema);
+                        dtdlModel.Assert(new Triple(propertyNode, dtdl_schema, schemaNode));
+
+                        // Mark this property as read
+                        propertiesParsed.Add(propertyLocalName);
+                    }
+                    else if (property.IsObjectProperty()) {
+                        // Define a Relationship and its name
+                        IBlankNode relationshipNode = dtdlModel.CreateBlankNode();
+                        dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, relationshipNode));
+
+                        // Assert that this is indeed a Relationship
+                        dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
+
+                        // Assert the relationship name
+                        ILiteralNode relationshipNameNode = dtdlModel.CreateLiteralNode(propertyLocalName);
+                        dtdlModel.Assert(new Triple(relationshipNode, dtdl_name, relationshipNameNode));
+
+                        // Assert the relationship target (falling back to no target if class count <> 1)
+                        if (property.RdfsRanges().Count() == 1) {
+                            IUriNode rangeNode = property.RdfsRanges().First();
+                            string targetDtmi = GetDTMI(rangeNode);
+                            IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
+                            dtdlModel.Assert(new Triple(relationshipNode, dtdl_target, targetNode));
+                        }
+
+                        // Mark property as read
+                        propertiesParsed.Add(propertyLocalName);
+                    }
+                        
+
+                    
+                }
+
 
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);
