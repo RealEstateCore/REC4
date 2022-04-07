@@ -11,6 +11,7 @@
 @prefix qudtqk: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
 @prefix sdo: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -2047,7 +2048,7 @@ ifc:projectID
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-04-06" ;
+  dcterms1:modified "2022-04-07" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -54752,6 +54753,13 @@ brick:currentFlowType
   rdfs:range bsh:CurrentFlowTypeShape ;
   skos:definition "The current flow type of the entity" ;
 .
+brick:currentValue
+  a brick:EntityProperty ;
+  rdfs:domain brick:Point ;
+  rdfs:label "Current Value" ;
+  rdfs:range bsh:CurrentValueShape ;
+  skos:definition "The current value of the Point entity" ;
+.
 brick:deprecatedInVersion
   a owl:DatatypeProperty ;
 .
@@ -55185,10 +55193,17 @@ brick:timeseries
   skos:definition "Metadata for accessing related timeseries data" ;
   skos:definition "Relates a Brick point to the TimeseriesReference that indicates where and how the data for this point is stored"@en ;
 .
+brick:timestamp
+  a rdf:Property ;
+  a owl:DatatypeProperty ;
+  rdfs:label "Timestamp" ;
+  rdfs:subPropertyOf s223:hasTimestamp ;
+.
 brick:value
   a rdf:Property ;
   a owl:DatatypeProperty ;
   rdfs:label "Value" ;
+  rdfs:subPropertyOf s223:hasSimpleValue ;
   rdfs:subPropertyOf qudt:value ;
   skos:definition "The basic value of an entity property" ;
 .
@@ -55524,6 +55539,17 @@ bsh:CurrentShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:ratedVoltageOutput ;
+    ] ;
+.
+bsh:CurrentValueShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:timestamp ;
+      sh:datatype xsd:dateTime ;
+      sh:minCount 1 ;
     ] ;
 .
 bsh:DeprecationRule
@@ -55993,13 +56019,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
+          unit:MegaV-A_Reactive
+          unit:MegaV-A
           unit:V-A
           unit:KiloV-A_Reactive
           unit:BTU_IT
-          unit:KiloV-A
-          unit:MegaV-A
           unit:V-A_Reactive
-          unit:MegaV-A_Reactive
+          unit:KiloV-A
         ) ;
       sh:minCount 1 ;
     ] ;
