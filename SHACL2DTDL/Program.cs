@@ -219,17 +219,72 @@ namespace SHACL2DTDL
                     }
                 }
 
+                // Index all property shapes on the node shape
                 // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
                 // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
-                // HashSet with name comparer means we only store every property/field once, regardless of if it is mentioned multiple times in source
-                HashSet<Relationship> relationships = new HashSet<Relationship>(new Relationship.RelationshipNameComparer());
+                // HashSet with name comparer means we only store every property once, regardless of if it is mentioned multiple times in source
+                HashSet<Property> processedProperties = new HashSet<Property>(new Property.PropertyNameComparer());
                 foreach (PropertyShape pShape in shape.PropertyShapes.Where(pShape => pShape.Path.NodeType == NodeType.Uri)) {
-                    relationships.Add(new Relationship(pShape));
+                    processedProperties.Add(new Property(pShape));
                 }
 
+                // Index all RDFS properties with the shape in domain
                 OntologyClass oClass = _ontologyGraph.CreateOntologyClass(shape.Node);
                 foreach (OntologyProperty oProp in oClass.IsDomainOf.Where(oProp => oProp is IUriNode)) {
-                    relationships.Add(new Relationship(oProp));
+                    processedProperties.Add(new Property(oProp));
+                }
+
+                // Process the previously indexed properties, creating DTDL Property or Relationship objects within the content: field
+                foreach (Property property in processedProperties) {
+                    string propertyName = property.Name;
+
+                    if (RelationshipIsDefinedOnChild(shape, propertyName)) {
+                        continue;
+                    }
+
+                    // Create an object in the target interface contents field
+                    IBlankNode contentNode = dtdlModel.CreateBlankNode();
+                    dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, contentNode));
+
+                    // Assert the content name
+                    ILiteralNode propertyNameNode = dtdlModel.CreateLiteralNode(propertyName);
+                    dtdlModel.Assert(new Triple(contentNode, dtdl_name, propertyNameNode));
+
+                    if (property.Type == Property.PropertyType.Data) {
+                        // This content node is a DTDL Property
+                        dtdlModel.Assert(new Triple(contentNode, rdfType, dtdl_Property));
+
+                        // Assert the property schema (falling back to string if none is defined)
+                        Uri schema;
+                        if (property.Target != null && property.Target is IUriNode) {
+                            schema = GetXsdAsDtdl((IUriNode)property.Target);
+                        }
+                        else {
+                            schema = DTDL._string;
+                        }
+                        IUriNode schemaNode = dtdlModel.CreateUriNode(schema);
+                        dtdlModel.Assert(new Triple(contentNode, dtdl_schema, schemaNode));
+                    }
+                    else if (property.Type == Property.PropertyType.Object) {
+                        // Assert that this is a DTDL Relationship
+                        dtdlModel.Assert(new Triple(contentNode, rdfType, dtdl_Relationship));
+
+                        // Assert the relationship target (falling back to no target if class count <> 1)
+                        if (property.Target != null) {
+                            string targetDtmi = GetDTMI(property.Target);
+                            IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
+                            dtdlModel.Assert(new Triple(contentNode, dtdl_target, targetNode));
+                        }
+
+                        // Assert the cardinality
+                        // Note: we ignore minMultiplicity as it is per DTDL v2 spec always 0 
+                        // (see: https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#relationship)
+                        if (property.MaxCardinality.HasValue) {
+                            Uri xsdInt = new Uri(XmlSpecsHelper.XmlSchemaDataTypeInt);
+                            ILiteralNode maxCardinality = dtdlModel.CreateLiteralNode(property.MaxCardinality.ToString(), xsdInt);
+                            dtdlModel.Assert(contentNode, dtdl_maxMultiplicity, maxCardinality);
+                        }
+                    }
                 }
 
                 // TODO: Implement cardinality of relationships and properties
@@ -242,7 +297,7 @@ namespace SHACL2DTDL
 
                     // If we have seen this local name linked from a sub-shape, skip it; DTDL does not allow subinterfaces
                     // to specialise properties/relationships. Likewise if we have seen this property on this shape already
-                    if (PropertyIsDefinedOnChild(shape, psPathLocalName) || propertiesParsed.Contains(psPathLocalName))
+                    if (RelationshipIsDefinedOnChild(shape, psPathLocalName) || propertiesParsed.Contains(psPathLocalName))
                     {
                         continue;
                     }
@@ -307,7 +362,7 @@ namespace SHACL2DTDL
 
                     // If we have seen this local name linked from a sub-shape, skip it; DTDL does not allow subinterfaces
                     // to specialise properties/relationships. Likewise if we have seen this property on this shape already
-                    if (PropertyIsDefinedOnChild(shape, propertyLocalName) || propertiesParsed.Contains(propertyLocalName))
+                    if (RelationshipIsDefinedOnChild(shape, propertyLocalName) || propertiesParsed.Contains(propertyLocalName))
                     {
                         continue;
                     }
@@ -526,9 +581,9 @@ namespace SHACL2DTDL
         /// <param name="oClass">Superclass that holds the property being checked</param>
         /// <param name="checkedForProperty">The property to check for</param>
         /// <returns>True iff this property is not defined on any subclass</returns>
-        private static bool PropertyIsDefinedOnChild(NodeShape shape, string soughtPropertyName)
+        private static bool RelationshipIsDefinedOnChild(NodeShape shape, string soughtRelationshipName)
         {
-            return shape.SubShapes.SelectMany(childShape => childShape.PropertyShapes).Select(ps => ps.Path).UriNodes().Any(pathNode => pathNode.LocalName() == soughtPropertyName);
+            return shape.SubShapes.SelectMany(childShape => childShape.PropertyShapes).Select(ps => ps.Path).UriNodes().Any(pathNode => pathNode.LocalName() == soughtRelationshipName);
         }
 
         public static bool IsBrickValueShape(IUriNode node) {
