@@ -514,7 +514,38 @@ namespace SHACL2DTDL
         /// <returns>True iff this property is not defined on any subclass</returns>
         private static bool PropertyIsDefinedOnChild(NodeShape shape, string soughtPropertyName)
         {
-            return shape.SubClasses.SelectMany(childShape => childShape.PropertyShapes).Select(ps => ps.Path).UriNodes().Any(pathNode => pathNode.LocalName() == soughtPropertyName);
+            return shape.SubShapes.SelectMany(childShape => childShape.PropertyShapes).Select(ps => ps.Path).UriNodes().Any(pathNode => pathNode.LocalName() == soughtPropertyName);
+        }
+
+        public static bool IsBrickValueShape(IUriNode node) {
+            return node.IsNodeShape() && node.SuperClasses().Any(superClass => superClass.Uri.AbsoluteUri.Contains("https://brickschema.org/schema/BrickShape#ValueShape"));
+        }
+
+
+        public static void AssertDtdlSchemaFromBrickValueShape(IBlankNode dtdlProperty, NodeShape shape) {
+            IGraph dtdlGraph = dtdlProperty.Graph;
+            IUriNode dtdlSchema = dtdlGraph.CreateUriNode(DTDL.schema);
+            IUriNode rdfType = dtdlGraph.CreateUriNode(RDF.type);
+            IUriNode dtdlObject = dtdlGraph.CreateUriNode(DTDL.Object);
+            IUriNode dtdlFields = dtdlGraph.CreateUriNode(DTDL.fields);
+            IUriNode dtdlName = dtdlGraph.CreateUriNode(DTDL.name);
+
+            IBlankNode schemaNode = dtdlGraph.CreateBlankNode();
+            
+            dtdlGraph.Assert(dtdlProperty, dtdlSchema, schemaNode);
+            dtdlGraph.Assert(schemaNode, rdfType, dtdlObject);
+
+            
+            foreach (PropertyShape ps in shape.PropertyShapes) {
+                IBlankNode fieldNode = dtdlGraph.CreateBlankNode();
+                ILiteralNode fieldName = dtdlGraph.CreateLiteralNode(((IUriNode)ps.Path).LocalName());
+                dtdlGraph.Assert(schemaNode, dtdlFields, fieldNode);
+                dtdlGraph.Assert(fieldNode, dtdlName, fieldName);
+
+                // TODO: Implement schema translation here
+                IUriNode dtdlString = dtdlGraph.CreateUriNode(DTDL._string);
+                dtdlGraph.Assert(fieldNode, dtdlSchema, dtdlString);
+            }
         }
     }
 }
