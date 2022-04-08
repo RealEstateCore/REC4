@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text.RegularExpressions;
 using VDS.RDF;
+using VDS.RDF.Ontology;
 using VDS.RDF.Parsing;
 using VDS.RDF.JsonLd;
 using VDS.RDF.Shacl;
@@ -44,7 +45,7 @@ namespace SHACL2DTDL
         /// <summary>
         /// The RDF graph holding the SHACL-formatted ontology upon which this tool subsequently operates.
         /// </summary>
-        private static readonly IGraph _ontologyGraph = new Graph();
+        private static readonly OntologyGraph _ontologyGraph = new OntologyGraph();
         private static readonly ShapesGraph _shapesGraph = new ShapesGraph(_ontologyGraph);
 
         /// <summary>
@@ -107,7 +108,7 @@ namespace SHACL2DTDL
                 UriLoader.Load(_ontologyGraph, new Uri(_ontologyPath));
             }
 
-            // TODO:Possibly implement (recursive) model loading over owl:imports statements
+            // TODO: Implement (recursive) model loading over owl:imports statements
 
             // Execute the main logic that generates DTDL interfaces.
             GenerateInterfaces();
@@ -216,6 +217,19 @@ namespace SHACL2DTDL
                         IUriNode superInterfaceNode = dtdlModel.CreateUriNode(UriFactory.Create(superInterfaceDTMI));
                         dtdlModel.Assert(new Triple(interfaceNode, dtdl_extends, superInterfaceNode));
                     }
+                }
+
+                // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
+                // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
+                // HashSet with name comparer means we only store every property/field once, regardless of if it is mentioned multiple times in source
+                HashSet<Relationship> relationships = new HashSet<Relationship>(new Relationship.RelationshipNameComparer());
+                foreach (PropertyShape pShape in shape.PropertyShapes.Where(pShape => pShape.Path.NodeType == NodeType.Uri)) {
+                    relationships.Add(new Relationship(pShape));
+                }
+
+                OntologyClass oClass = _ontologyGraph.CreateOntologyClass(shape.Node);
+                foreach (OntologyProperty oProp in oClass.IsDomainOf.Where(oProp => oProp is IUriNode)) {
+                    relationships.Add(new Relationship(oProp));
                 }
 
                 // TODO: Implement cardinality of relationships and properties
