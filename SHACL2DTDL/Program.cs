@@ -8,6 +8,8 @@ using VDS.RDF.Parsing;
 using VDS.RDF.JsonLd;
 using VDS.RDF.Shacl;
 using VDS.RDF.Writing;
+using DotNetRdfExtensions;
+using DotNetRdfExtensions.SHACL;
 
 namespace SHACL2DTDL
 {
@@ -159,7 +161,7 @@ namespace SHACL2DTDL
             Console.WriteLine("Generating DTDL Interface declarations: ");
 
             // Get only explicit node shapes
-            foreach(NodeShape shape in _shapesGraph.NodeShapes().Where(nodeShape => !IsIgnored(nodeShape) && !nodeShape.SuperClasses.Any(parent => IsIgnored(parent)))) {
+            foreach(NodeShape shape in _shapesGraph.NodeShapes().Where(nodeShape => !IsIgnored(nodeShape) && !nodeShape.SuperShapes.Any(parent => IsIgnored(parent)))) {
 
                 // Keeping track of which RDF properties we have already parsed on a given shape
                 // This is to ensure that, e.g., properties linked via rdfs:domain don't overwrite 
@@ -205,7 +207,7 @@ namespace SHACL2DTDL
                 }
 
                 // If the class has direct superclasses, implement DTDL extends (for at most two, see limitation in DTDL spec)
-                IEnumerable<NodeShape> namedSuperClasses = shape.DirectSuperClasses.Where(superClass => !superClass.IsTopThing && !superClass.IsDeprecated);
+                IEnumerable<NodeShape> namedSuperClasses = shape.DirectSuperShapes.Where(superClass => !superClass.IsTopThing && !superClass.IsDeprecated);
                 if (namedSuperClasses.Any())
                 {
                     foreach (NodeShape superClass in namedSuperClasses.Take(2))
@@ -285,6 +287,7 @@ namespace SHACL2DTDL
                     }
                 }
                 
+                // TODO: Wow this is messy, needs to be substantially refactored and broken out into functions
                 foreach (IUriNode property in shape.Node.PropertiesThroughRdfsDomain()) {
                     string propertyLocalName = property.LocalName();
 
@@ -322,42 +325,52 @@ namespace SHACL2DTDL
                         propertiesParsed.Add(propertyLocalName);
                     }
                     else if (property.IsObjectProperty()) {
-                        // Define a Relationship and its name
+                        // This is probably a Relationship (unless it targets a Brick Valueshape, which we translate as a DTDL property w/ complex schema, see below)
                         IBlankNode relationshipNode = dtdlModel.CreateBlankNode();
                         dtdlModel.Assert(new Triple(interfaceNode, dtdl_contents, relationshipNode));
 
-                        // Assert that this is indeed a Relationship
-                        dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
+                        // Assert the relationship target (falling back to no target if class count <> 1)
+                        if (property.RdfsRanges().Count() == 1) {
+                            IUriNode rangeNode = property.RdfsRanges().First();
+
+                            if (IsBrickValueShape(rangeNode)) {
+                                NodeShape brickValueShape = new NodeShape(rangeNode, _shapesGraph);
+                                if (brickValueShape.PropertyShapes.Count() > 0) {
+                                    // Assert that this is actually a Property
+                                    dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Property));
+                                    // Translate the Brick Value Shape into a DTDL property schema
+                                    AssertDtdlSchemaFromBrickValueShape(relationshipNode, new NodeShape(rangeNode, _shapesGraph));
+                                }
+                            }
+                            else {
+                                string targetDtmi = GetDTMI(rangeNode);
+                                IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
+                                dtdlModel.Assert(new Triple(relationshipNode, dtdl_target, targetNode));
+
+                                // Assert that this is indeed a Relationship
+                                dtdlModel.Assert(new Triple(relationshipNode, rdfType, dtdl_Relationship));
+                            }
+                        }
+
+                        
 
                         // Assert the relationship name
                         ILiteralNode relationshipNameNode = dtdlModel.CreateLiteralNode(propertyLocalName);
                         dtdlModel.Assert(new Triple(relationshipNode, dtdl_name, relationshipNameNode));
 
-                        // Assert the relationship target (falling back to no target if class count <> 1)
-                        if (property.RdfsRanges().Count() == 1) {
-                            IUriNode rangeNode = property.RdfsRanges().First();
-                            string targetDtmi = GetDTMI(rangeNode);
-                            IUriNode targetNode = dtdlModel.CreateUriNode(UriFactory.Create(targetDtmi));
-                            dtdlModel.Assert(new Triple(relationshipNode, dtdl_target, targetNode));
-                        }
-
                         // Mark property as read
                         propertiesParsed.Add(propertyLocalName);
                     }
-                        
-
-                    
                 }
-
 
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);
 
-                List<IUriNode> parentDirectories = shape.LongestSuperClassesPath;
+                List<IUriNode> parentDirectories = shape.LongestSuperShapesPath;
                 string modelPath = string.Join("/", parentDirectories.Select(parent => parent.LocalName()));
                 string modelOutputPath = $"{_outputPath}/{modelPath}/";
                 // If the class has subclasses, place it with them
-                if (shape.DirectSubClasses.Any()) { modelOutputPath += $"{shape.Node.LocalName()}/"; }
+                if (shape.DirectSubShapes.Any()) { modelOutputPath += $"{shape.Node.LocalName()}/"; }
                 Directory.CreateDirectory(modelOutputPath);
                 string outputFileName = modelOutputPath + shape.Node.LocalName() + ".json";
                 using (StreamWriter file = File.CreateText(outputFileName))
