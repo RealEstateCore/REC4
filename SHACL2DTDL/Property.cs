@@ -53,10 +53,14 @@ namespace SHACL2DTDL
         }
 
         public Property(OntologyProperty property) {
-            // TODO: Set WrappedProperty
+            // Set WrappedProperty
+            if (property.Resource is not IUriNode) {
+                throw new ArgumentException($"Property path {property.Resource} is not a URI node");
+            }
+            WrappedProperty = (IUriNode)property.Resource;
+            
             // TODO: Set Target
             // TODO: Set cardinality
-
         }
 
         public class PropertyNameComparer: IEqualityComparer<Property>
