@@ -13,11 +13,10 @@ namespace SHACL2DTDL
             Object
         }
 
-        public IUriNode Source { get;}
         public IUriNode WrappedProperty { get; }
-        public IUriNode Target { get; }
+        public IUriNode? Target { get; }
         public int? MaxCardinality { get; set; }
-        public int? minCardinality { get; set; }
+        public int? MinCardinality { get; set; }
         public PropertyType Type { get; set; }
 
         public string Name {
@@ -26,17 +25,46 @@ namespace SHACL2DTDL
             }
         }
 
+        // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
+        // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
         public Property(PropertyShape pShape) {
+            // Set WrappedProperty
+            if (pShape.Path is not IUriNode) {
+                throw new ArgumentException($"Property path {pShape.Path} is not a URI node");
+            }
+            WrappedProperty = (IUriNode)pShape.Path;
 
+            // Set Type & Target
+            if (pShape.Datatype is IUriNode || (pShape.NodeKind is IUriNode nodeKind1 && nodeKind1.LocalName() == "Literal")) {
+                Type = PropertyType.Data;
+                // Note: pShape.Datatype can be null
+                Target = pShape.Datatype;
+            }
+            else if (pShape.Class.FirstOrDefault() is IUriNode || pShape.NodeKind is IUriNode nodeKind2 && nodeKind2.LocalName() == "IRI") {
+                Type = PropertyType.Object;
+                // Note: pShape.Class.FirstOrDefault() can be null
+                Target = pShape.Class.FirstOrDefault();
+            }
+
+            // Set cardinality
+            // Note: both of these can be null
+            MinCardinality = pShape.MinCount;
+            MaxCardinality = pShape.MaxCount;
         }
 
         public Property(OntologyProperty property) {
+            // TODO: Set WrappedProperty
+            // TODO: Set Target
+            // TODO: Set cardinality
 
         }
 
         public class PropertyNameComparer: IEqualityComparer<Property>
         {
-            public bool Equals(Property one, Property two) {
+            public bool Equals(Property? one, Property? two) {
+                if (one is null || two is null) {
+                    return false;
+                }
                 return StringComparer.InvariantCultureIgnoreCase.Equals(one.Name, two.Name);
             }
 

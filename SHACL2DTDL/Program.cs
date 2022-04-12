@@ -287,6 +287,7 @@ namespace SHACL2DTDL
                     }
                 }
 
+                /*
                 // TODO: Implement cardinality of relationships and properties
                 // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
                 // TODO: Handle case where object properties point to BrickShape# namespace, where the target shape should be translated into a DTDL complex schema
@@ -431,6 +432,7 @@ namespace SHACL2DTDL
                         propertiesParsed.Add(propertyLocalName);
                     }
                 }
+                */
 
                  // Write JSON-LD to target file.
                 JObject modelAsJsonLd = ToJsonLd(dtdlModel);

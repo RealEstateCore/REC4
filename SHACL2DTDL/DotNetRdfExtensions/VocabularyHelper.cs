@@ -23,6 +23,8 @@ namespace DotNetRdfExtensions
         public static readonly Uri path = new Uri("http://www.w3.org/ns/shacl#path");
         public static readonly Uri cls = new Uri("http://www.w3.org/ns/shacl#class");
         public static readonly Uri datatype = new Uri("http://www.w3.org/ns/shacl#datatype");
+        public static readonly Uri minCount = new Uri("http://www.w3.org/ns/shacl#minCount");
+        public static readonly Uri maxCount = new Uri("http://www.w3.org/ns/shacl#maxCount");
         public static readonly Uri nodeKind = new Uri("http://www.w3.org/ns/shacl#nodeKind");   
     }
 
