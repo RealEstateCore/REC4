@@ -2048,7 +2048,7 @@ ifc:projectID
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-04-07" ;
+  dcterms1:modified "2022-04-12" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -54753,13 +54753,6 @@ brick:currentFlowType
   rdfs:range bsh:CurrentFlowTypeShape ;
   skos:definition "The current flow type of the entity" ;
 .
-brick:currentValue
-  a brick:EntityProperty ;
-  rdfs:domain brick:Point ;
-  rdfs:label "Current Value" ;
-  rdfs:range bsh:CurrentValueShape ;
-  skos:definition "The current value of the Point entity" ;
-.
 brick:deprecatedInVersion
   a owl:DatatypeProperty ;
 .
@@ -54989,6 +54982,13 @@ brick:isTagOf
   a owl:ObjectProperty ;
   rdfs:domain brick:Tag ;
   rdfs:label "Is tag of" ;
+.
+brick:lastKnownValue
+  a brick:EntityProperty ;
+  rdfs:domain brick:Point ;
+  rdfs:label "Last known value" ;
+  rdfs:range bsh:LastKnownValueShape ;
+  skos:definition "The last known value of the Point entity" ;
 .
 brick:latitude
   a owl:DatatypeProperty ;
@@ -55577,23 +55577,6 @@ bsh:CurrentShape
       sh:minCount 1 ;
     ] ;
 .
-bsh:CurrentValueShape
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:timestamp ;
-      sh:datatype xsd:dateTime ;
-      sh:minCount 1 ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:value ;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-    ] ;
-.
 bsh:DeprecationRule
   a sh:NodeShape ;
   sh:property [
@@ -55789,6 +55772,23 @@ WHERE {
     ] ;
   sh:targetClass brick:Entity ;
 .
+bsh:LastKnownValueShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:timestamp ;
+      sh:datatype xsd:dateTime ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+.
 bsh:LocationShape
   a sh:NodeShape ;
   sh:and (
@@ -55895,6 +55895,15 @@ CONSTRUCT {
       sh:prefixes owl: ;
     ] ;
   sh:targetObjectsOf owl:equivalentClass ;
+.
+bsh:OneLastKnownValuePerEntity
+  a sh:NodeShape ;
+  sh:property [
+      sh:path brick:lastKnownValue ;
+      sh:maxCount 1 ;
+      sh:message "Only one last known value per entity is allowed" ;
+    ] ;
+  sh:targetSubjectsOf brick:lastKnownValue ;
 .
 bsh:PhaseCountShape
   a owl:Class ;
@@ -56092,12 +56101,12 @@ bsh:PowerShape
           unit:TeraW
           unit:W
           unit:MegaV-A_Reactive
-          unit:V-A_Reactive
           unit:MegaV-A
-          unit:BTU_IT
           unit:V-A
-          unit:KiloV-A
+          unit:BTU_IT
+          unit:V-A_Reactive
           unit:KiloV-A_Reactive
+          unit:KiloV-A
         ) ;
       sh:minCount 1 ;
     ] ;
