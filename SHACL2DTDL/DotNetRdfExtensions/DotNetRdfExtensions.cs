@@ -1,6 +1,7 @@
 using VDS.RDF;
 using VDS.RDF.Shacl;
 using SHACL2DTDL.VocabularyHelper;
+using VDS.RDF.Parsing;
 
 namespace DotNetRdfExtensions
 {
@@ -17,6 +18,10 @@ namespace DotNetRdfExtensions
                 return node.Uri.Fragment.Trim('#');
             }
             return System.IO.Path.GetFileName(node.Uri.AbsolutePath);
+        }
+
+        public static bool IsXsdType(this IUriNode node) {
+            return node.Uri.AbsoluteUri.StartsWith(XmlSpecsHelper.NamespaceXmlSchema);
         }
 
         public static IEnumerable<ILiteralNode> RdfsLabels(this INode node) {

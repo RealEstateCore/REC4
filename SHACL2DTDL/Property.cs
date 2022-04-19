@@ -53,14 +53,35 @@ namespace SHACL2DTDL
         }
 
         public Property(OntologyProperty property) {
+
+            Console.WriteLine($"\t\t Processing OntologyProperty {property}");
+
             // Set WrappedProperty
             if (property.Resource is not IUriNode) {
                 throw new ArgumentException($"Property path {property.Resource} is not a URI node");
             }
             WrappedProperty = (IUriNode)property.Resource;
-            
-            // TODO: Set Target
-            // TODO: Set cardinality
+
+            // Set Target if singleton URI exists
+            if (property.Ranges.Count() == 1 && property.Ranges.Any(range => range.Resource is IUriNode)) {
+                OntologyClass range = property.Ranges.First();
+                IUriNode rangeNode = (IUriNode)range.Resource;
+                Target = rangeNode;
+            }
+
+            // If we are declared to be an OWL datatype property or if our range is explicitly a XSD, then we are a data property
+            if (WrappedProperty.TransitiveRdfTypes().Any(type => type.LocalName() == "DatatypeProperty") || (Target is not null && Target.IsXsdType())) {
+                Type = PropertyType.Data;
+            }
+            else {
+                // Otherwise, we're an object property
+                Type = PropertyType.Object;
+            }
+
+            // Set cardinality
+            if (WrappedProperty.TransitiveRdfTypes().Any(type => type.LocalName() == "FunctionalProperty")) {
+                MinCardinality = MaxCardinality = 1;
+            }
         }
 
         public class PropertyNameComparer: IEqualityComparer<Property>

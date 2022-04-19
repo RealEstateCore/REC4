@@ -220,8 +220,6 @@ namespace SHACL2DTDL
                 }
 
                 // Index all property shapes on the node shape
-                // TODO: Support different types of property paths, see https://www.w3.org/TR/shacl/#property-paths 
-                // (currently we only support simple ) predicate paths, i.e., where ps.Path.NodeType = NodeType.Uri
                 // HashSet with name comparer means we only store every property once, regardless of if it is mentioned multiple times in source
                 HashSet<Property> processedProperties = new HashSet<Property>(new Property.PropertyNameComparer());
                 foreach (PropertyShape pShape in shape.PropertyShapes.Where(pShape => pShape.Path.NodeType == NodeType.Uri)) {
@@ -230,7 +228,7 @@ namespace SHACL2DTDL
 
                 // Index all RDFS properties with the shape in domain
                 OntologyClass oClass = _ontologyGraph.CreateOntologyClass(shape.Node);
-                foreach (OntologyProperty oProp in oClass.IsDomainOf.Where(oProp => oProp is IUriNode)) {
+                foreach (OntologyProperty oProp in oClass.IsDomainOf.Where(oProp => oProp.Resource is IUriNode)) {
                     processedProperties.Add(new Property(oProp));
                 }
 
