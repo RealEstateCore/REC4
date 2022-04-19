@@ -53,9 +53,6 @@ namespace SHACL2DTDL
         }
 
         public Property(OntologyProperty property) {
-
-            Console.WriteLine($"\t\t Processing OntologyProperty {property}");
-
             // Set WrappedProperty
             if (property.Resource is not IUriNode) {
                 throw new ArgumentException($"Property path {property.Resource} is not a URI node");
