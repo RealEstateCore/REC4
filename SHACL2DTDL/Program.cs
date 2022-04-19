@@ -248,19 +248,25 @@ namespace SHACL2DTDL
                     ILiteralNode propertyNameNode = dtdlModel.CreateLiteralNode(propertyName);
                     dtdlModel.Assert(new Triple(contentNode, dtdl_name, propertyNameNode));
 
-                    if (property.Type == Property.PropertyType.Data) {
+                    if (property.Type == Property.PropertyType.Data || (property.Target is not null && IsBrickValueShape(property.Target))) {
                         // This content node is a DTDL Property
                         dtdlModel.Assert(new Triple(contentNode, rdfType, dtdl_Property));
 
-                        // Assert the property schema (falling back to string if none is defined)
-                        Uri schema;
-                        if (property.Target != null && property.Target is IUriNode) {
-                            schema = GetXsdAsDtdl((IUriNode)property.Target);
+                        // Assert the property schema (falling back to a string if none is defined or translation can't be carried out)
+                        INode schemaNode = dtdlModel.CreateUriNode(DTDL._string);
+                        if (property.Target is IUriNode target) {
+                            if (IsBrickValueShape(target)) {
+                                NodeShape targetShape = new NodeShape(target, _shapesGraph);
+                                schemaNode = dtdlModel.CreateBlankNode();
+                                AssertDtdlSchemaFromBrickValueShape(schemaNode, targetShape);
+                            }
+                            else if (target.IsXsdType()) {
+                                schemaNode = dtdlModel.CreateUriNode(GetXsdAsDtdl(target));
+                            } 
                         }
                         else {
-                            schema = DTDL._string;
+                            schemaNode = dtdlModel.CreateUriNode(DTDL._string);
                         }
-                        IUriNode schemaNode = dtdlModel.CreateUriNode(schema);
                         dtdlModel.Assert(new Triple(contentNode, dtdl_schema, schemaNode));
                     }
                     else if (property.Type == Property.PropertyType.Object) {
@@ -590,25 +596,23 @@ namespace SHACL2DTDL
             return node.IsNodeShape() && node.SuperClasses().Any(superClass => superClass.Uri.AbsoluteUri.Contains("https://brickschema.org/schema/BrickShape#ValueShape"));
         }
 
-
-        public static void AssertDtdlSchemaFromBrickValueShape(IBlankNode dtdlProperty, NodeShape shape) {
-            IGraph dtdlGraph = dtdlProperty.Graph;
+        public static void AssertDtdlSchemaFromBrickValueShape(INode dtdlSchemaNode, NodeShape shape) {
+            IGraph dtdlGraph = dtdlSchemaNode.Graph;
             IUriNode dtdlSchema = dtdlGraph.CreateUriNode(DTDL.schema);
             IUriNode rdfType = dtdlGraph.CreateUriNode(RDF.type);
             IUriNode dtdlObject = dtdlGraph.CreateUriNode(DTDL.Object);
             IUriNode dtdlFields = dtdlGraph.CreateUriNode(DTDL.fields);
             IUriNode dtdlName = dtdlGraph.CreateUriNode(DTDL.name);
 
-            IBlankNode schemaNode = dtdlGraph.CreateBlankNode();
+            dtdlGraph.Assert(dtdlSchemaNode, rdfType, dtdlObject);
             
-            dtdlGraph.Assert(dtdlProperty, dtdlSchema, schemaNode);
-            dtdlGraph.Assert(schemaNode, rdfType, dtdlObject);
-
-            
+            // Todo: handle duplicate property shape declarations on the same property (common in Brick..)
+            // If after deduplication we have only one simple property shape decl left, coalesce into a simple schema type
+            // TODO: how about nested objects?
             foreach (PropertyShape ps in shape.PropertyShapes) {
                 IBlankNode fieldNode = dtdlGraph.CreateBlankNode();
                 ILiteralNode fieldName = dtdlGraph.CreateLiteralNode(((IUriNode)ps.Path).LocalName());
-                dtdlGraph.Assert(schemaNode, dtdlFields, fieldNode);
+                dtdlGraph.Assert(dtdlSchemaNode, dtdlFields, fieldNode);
                 dtdlGraph.Assert(fieldNode, dtdlName, fieldName);
 
                 // TODO: Implement schema translation here
