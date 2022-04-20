@@ -1,0 +1,24 @@
+# baseURI: https://w3id.org/rec/brickpatches
+# imports: https://brickschema.org/schema/1.2/Brick
+
+@prefix : <https://w3id.org/rec/brickpatches#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://brickschema.org/schema/Brick#Differential_Temperature_Setpoint>
+  a sh:NodeShape ;
+.
+<https://brickschema.org/schema/Brick#Lighting>
+  a sh:NodeShape ;
+.
+<https://brickschema.org/schema/BrickShape#ValueShape>
+  a sh:NodeShape ;
+.
+<https://w3id.org/rec/brickpatches>
+  a owl:Ontology ;
+  owl:imports <https://brickschema.org/schema/1.2/Brick> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.

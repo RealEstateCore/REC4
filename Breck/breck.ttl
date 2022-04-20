@@ -4,6 +4,7 @@
 @prefix : <https://w3id.org/rec/breck#> .
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix brickpatches: <https://w3id.org/rec/brickpatches#> .
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dcterms1: <http://purl.org/dc/terms#> .
@@ -11928,6 +11929,7 @@ brick:Differential_Temperature
 .
 brick:Differential_Temperature_Setpoint
   a owl:Class ;
+  a sh:NodeShape ;
   rdfs:label "Differential Temperature Setpoint" ;
   rdfs:seeAlso <https://xp20.ashrae.org/terminology/index.php?term=setpoint> ;
   rdfs:subClassOf brick:Differential_Setpoint ;
@@ -27768,6 +27770,7 @@ brick:Library
 .
 brick:Lighting
   a owl:Class ;
+  a sh:NodeShape ;
   rdfs:label "Lighting" ;
   rdfs:subClassOf brick:Lighting_Equipment ;
 .
@@ -56326,6 +56329,7 @@ bsh:TiltShape
 .
 bsh:ValueShape
   a owl:Class ;
+  a sh:NodeShape ;
 .
 bsh:VoltageShape
   a owl:Class ;
@@ -59711,6 +59715,9 @@ rec:Zone
 <https://w3id.org/rec/breck>
   a owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
+.
+<https://w3id.org/rec/brickpatches>
+  owl:versionInfo "Created with TopBraid Composer" ;
 .
 recp:apiEndpoint
   a rdf:Property ;
