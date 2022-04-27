@@ -4,13 +4,14 @@
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcterms1: <http://purl.org/dc/terms#> .
-@prefix ifc: <https://brickschema.org/extension/ifc#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix qudtqk: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 @prefix s223: <http://data.ashrae.org/standard223#> .
 @prefix sdo: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -27,6 +28,7 @@ bacnet:description
   bacnet:propertyEnum bacnet:PropertyIdentifier-description ;
   bacnet:propertyName "description" ;
   bacnet:propertyRef bacnet:Description ;
+  skos:definition "The content of the description field of the BACnet object." ;
 .
 bacnet:object-identifier
   a bacnet:StandardProperty ;
@@ -38,6 +40,7 @@ bacnet:object-identifier
   bacnet:propertyRef bacnet:Object_Identifier ;
   rdfs:label "object-identifier" ;
   rdfs:subPropertyOf bacnet:ReadableProperty ;
+  skos:definition "The BACnet object identifier" ;
 .
 bacnet:object-name
   a bacnet:StandardProperty ;
@@ -47,6 +50,7 @@ bacnet:object-name
   bacnet:propertyOf bacnet:Object ;
   bacnet:propertyRef bacnet:Object_Name ;
   rdfs:subPropertyOf bacnet:ReadableProperty ;
+  skos:definition "The content of the name field of the BACnet object." ;
 .
 bacnet:object-type
   a bacnet:StandardProperty ;
@@ -58,9 +62,13 @@ bacnet:object-type
   bacnet:propertyRef bacnet:Object_Type ;
   rdfs:label "object-type" ;
   rdfs:subPropertyOf bacnet:ReadableProperty ;
+  skos:definition "The type of the BACnet object" ;
 .
 bacnet:objectOf
   a owl:ObjectProperty ;
+  rdfs:comment "The 'parent' BACnet device that hosts this BACnet object." ;
+  rdfs:label "objectOf" ;
+  rdfs:range bacnet:BACnetDevice ;
 .
 unit:A
   a unit:Unit ;
@@ -1999,39 +2007,6 @@ sosa:FeatureOfInterest
 sosa:ObservableProperty
   a owl:Class ;
 .
-ifc:Project
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path ifc:fileLocation ;
-      skos:definition "Location of the IFC file defining the project" ;
-      sh:datatype xsd:string ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path ifc:projectID ;
-      skos:definition "The ID of the project" ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-    ] ;
-.
-ifc:fileLocation
-  a owl:DatatypeProperty ;
-.
-ifc:globalID
-  a owl:DatatypeProperty ;
-.
-ifc:hasProjectReference
-  a owl:ObjectProperty ;
-.
-ifc:name
-  a owl:DatatypeProperty ;
-.
-ifc:projectID
-  a owl:DatatypeProperty ;
-.
 <https://brickschema.org/schema/1.2/Brick>
   a owl:Ontology ;
   dcterms1:creator (
@@ -2048,7 +2023,7 @@ ifc:projectID
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-04-12" ;
+  dcterms1:modified "2022-04-27" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -4286,60 +4261,6 @@ brick:Average_Zone_Air_Temperature_Sensor
   brick:hasAssociatedTag tag:Temperature ;
   brick:hasAssociatedTag tag:Zone ;
 .
-brick:BACnetReference
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:or (
-      [
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path bacnet:description ;
-            sh:datatype xsd:string ;
-          ] ;
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path bacnet:object-identifier ;
-            sh:datatype xsd:string ;
-            sh:minCount 1 ;
-          ] ;
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path bacnet:object-name ;
-            sh:datatype xsd:string ;
-            sh:minLength 1 ;
-          ] ;
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path bacnet:object-type ;
-            sh:datatype xsd:string ;
-          ] ;
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path brick:read-property ;
-            sh:datatype xsd:string ;
-            sh:defaultValue "present-value" ;
-          ] ;
-      ]
-      [
-        sh:property [
-            a sh:PropertyShape ;
-            sh:path brick:BACnetURI ;
-            skos:definition "Clause Q.8 BACnet URI scheme: bacnet:// <device> / <object> [ / <property> [ / <index> ]]" ;
-            sh:datatype xsd:string ;
-          ] ;
-      ]
-    ) ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path bacnet:objectOf ;
-      sh:class bacnet:BACnetDevice ;
-      sh:minCount 1 ;
-    ] ;
-.
-brick:BACnetURI
-  a owl:DatatypeProperty ;
-.
 brick:Baseboard_Radiator
   a owl:Class ;
   a sh:NodeShape ;
@@ -6014,18 +5935,6 @@ brick:CRAH
     ] ;
   brick:hasAssociatedTag tag:CRAH ;
   brick:hasAssociatedTag tag:Equipment ;
-.
-brick:CSVReference
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:fileLocation ;
-      skos:definition "Location of the CSV file defining the project" ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-    ] ;
 .
 brick:Cafeteria
   a owl:Class ;
@@ -26502,31 +26411,6 @@ brick:IDF
   brick:hasAssociatedTag tag:Room ;
   brick:hasAssociatedTag tag:Space ;
   brick:hasAssociatedTag tag:Telecom ;
-.
-brick:IFCReference
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path ifc:globalID ;
-      skos:definition "The global ID of the entity in the IFC project" ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path ifc:hasProjectReference ;
-      skos:definition "Reference to an IFC Project object, containing the project ID" ;
-      sh:class ifc:Project ;
-      sh:minCount 1 ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path ifc:name ;
-      skos:definition "Name of the entity in IFC" ;
-      sh:datatype xsd:string ;
-    ] ;
 .
 brick:Ice
   a owl:Class ;
@@ -50603,24 +50487,6 @@ brick:Time_Setpoint
   brick:hasAssociatedTag tag:Time ;
   brick:hasQuantity brick:Time ;
 .
-brick:TimeseriesReference
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:subClassOf bsh:ValueShape ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:hasTimeseriesId ;
-      skos:definition "The identifier for the timeseries data corresponding to this point" ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:storedAt ;
-      skos:definition "Refers to a database storing the timeseries data for the related point. Properties on this class are *to be determined*; feel free to add arbitrary properties onto Database instances for your particular deployment" ;
-      sh:datatype xsd:string ;
-    ] ;
-.
 brick:Tint_Command
   a owl:Class ;
   a sh:NodeShape ;
@@ -54792,9 +54658,6 @@ brick:feedsAir
   rdfs:subPropertyOf brick:feeds ;
   skos:definition "Passes air"@en ;
 .
-brick:fileLocation
-  a owl:DatatypeProperty ;
-.
 brick:grossArea
   a brick:EntityProperty ;
   rdfs:label "Gross area" ;
@@ -54818,32 +54681,6 @@ brick:hasAssociatedTag
   rdfs:range brick:Tag ;
   owl:inverseOf brick:isAssociatedWith ;
   skos:definition "The class is associated with the given tag"@en ;
-.
-brick:hasBACnetReference
-  a brick:EntityProperty ;
-  rdfs:domain brick:Point ;
-  rdfs:range brick:BACnetReference ;
-  rdfs:subPropertyOf brick:hasExternalReference ;
-  skos:definition "BACnet metadata" ;
-.
-brick:hasCSVReference
-  a brick:EntityProperty ;
-  rdfs:domain brick:Point ;
-  rdfs:range brick:CSVReference ;
-  rdfs:subPropertyOf brick:timeseries ;
-  skos:definition "Metadata for accessing CSV data" ;
-.
-brick:hasExternalReference
-  a brick:EntityProperty ;
-  rdfs:domain brick:Point ;
-  skos:definition "A digital reference of the entity" ;
-.
-brick:hasIFCReference
-  a brick:EntityProperty ;
-  rdfs:domain brick:Entity ;
-  rdfs:range brick:IFCReference ;
-  rdfs:subPropertyOf brick:hasExternalReference ;
-  skos:definition "IFC metadata" ;
 .
 brick:hasInputSubstance
   a owl:AsymmetricProperty ;
@@ -54913,10 +54750,6 @@ brick:hasTag
   rdfs:range brick:Tag ;
   owl:inverseOf brick:isTagOf ;
   skos:definition "The subject has the given tag"@en ;
-.
-brick:hasTimeseriesId
-  a owl:DatatypeProperty ;
-  skos:definition "The unique identifier (primary key) for this TimeseriesReference in some database"@en ;
 .
 brick:hasUnit
   a owl:AsymmetricProperty ;
@@ -55149,9 +54982,6 @@ brick:ratedVoltageOutput
   rdfs:range bsh:VoltageShape ;
   skos:definition "The nominal rated voltage output of the entity" ;
 .
-brick:read-property
-  a owl:DatatypeProperty ;
-.
 brick:regulates
   a owl:AsymmetricProperty ;
   a owl:IrreflexiveProperty ;
@@ -55161,10 +54991,6 @@ brick:regulates
   rdfs:range brick:Substance ;
   owl:inverseOf brick:isRegulatedBy ;
   skos:definition "The subject contributes to or performs the regulation of the substance given by the object"@en ;
-.
-brick:storedAt
-  a owl:DatatypeProperty ;
-  skos:definition "A reference to where the data for this TimeseriesReference is stored"@en ;
 .
 brick:temperatureCoefficientofPmax
   a brick:EntityProperty ;
@@ -55184,14 +55010,6 @@ brick:tilt
   rdfs:label "Tilt" ;
   rdfs:range bsh:TiltShape ;
   skos:definition "The direction an entity is facing in degrees above the horizon" ;
-.
-brick:timeseries
-  a brick:EntityProperty ;
-  rdfs:domain brick:Point ;
-  rdfs:range brick:TimeseriesReference ;
-  rdfs:subPropertyOf brick:hasExternalReference ;
-  skos:definition "Metadata for accessing related timeseries data" ;
-  skos:definition "Relates a Brick point to the TimeseriesReference that indicates where and how the data for this point is stored"@en ;
 .
 brick:timestamp
   a rdf:Property ;
@@ -55220,6 +55038,242 @@ brick:yearBuilt
   rdfs:range bsh:YearBuiltShape ;
   rdfs:seeAlso "https://project-haystack.org/tag/yearBuilt" ;
   skos:definition "Four digit year that a building was first built. (adopted from Project Haystack)" ;
+.
+<https://brickschema.org/schema/Brick/ref>
+  a owl:Ontology ;
+  dcterms:creator (
+      [
+        a sdo:Person ;
+        sdo:email "gtfierro@mines.edu" ;
+        sdo:name "Gabe Fierro" ;
+      ]
+    ) ;
+  dcterms:title "Ref Schema" ;
+.
+ref:BACnetReference
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf ref:ExternalReference ;
+  skos:definition "A reference to the BACnet object represented by this entity." ;
+  sh:or (
+      [
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path bacnet:description ;
+            sh:datatype xsd:string ;
+          ] ;
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path bacnet:object-identifier ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+          ] ;
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path bacnet:object-name ;
+            sh:datatype xsd:string ;
+            sh:minLength 1 ;
+          ] ;
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path bacnet:object-type ;
+            sh:datatype xsd:string ;
+          ] ;
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path bacnet:units ;
+            sh:class bacnet:EngineeringUnitsEnumerationValue ;
+            sh:maxCount 1 ;
+            sh:minCount 0 ;
+          ] ;
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path ref:read-property ;
+            sh:datatype bacnet:Property ;
+            sh:defaultValue bacnet:Present_Value ;
+          ] ;
+      ]
+      [
+        sh:property [
+            a sh:PropertyShape ;
+            sh:path ref:BACnetURI ;
+            skos:definition "Clause Q.8 BACnet URI scheme: bacnet:// <device> / <object> [ / <property> [ / <index> ]]" ;
+            sh:datatype xsd:string ;
+          ] ;
+      ]
+    ) ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path bacnet:objectOf ;
+      sh:class bacnet:BACnetDevice ;
+      sh:minCount 1 ;
+    ] ;
+.
+ref:BACnetReferenceShape
+  a sh:NodeShape ;
+  skos:definition "Infers a BACnetReference instance from the object of an hasExternalReference." ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:condition ref:BACnetReference ;
+      sh:object ref:BACnetReference ;
+      sh:predicate rdf:type ;
+      sh:subject sh:this ;
+    ] ;
+  sh:targetObjectsOf ref:hasExternalReference ;
+.
+ref:BACnetURI
+  a owl:DatatypeProperty ;
+  rdfs:comment "Clause Q.8 BACnet URI scheme: bacnet:// <device> / <object> [ / <property> [ / <index> ]]" ;
+  rdfs:label "BACnetURI" ;
+.
+ref:ExternalReference
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "External reference" ;
+  skos:definition "The parent class of all external reference types" ;
+.
+ref:IFCReference
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf ref:ExternalReference ;
+  skos:definition "A reference to an entity in an IFC project which may contain additional metadata about this entity." ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path ref:hasIfcProjectReference ;
+      skos:definition "Reference to an IFC Project object, containing the project ID" ;
+      sh:class ref:ifcProject ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path ref:ifcGlobalID ;
+      skos:definition "The global ID of the entity in the IFC project" ;
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path ref:ifcName ;
+      skos:definition "Name of the entity in IFC" ;
+      sh:datatype xsd:string ;
+    ] ;
+.
+ref:IFCReferenceShape
+  a sh:NodeShape ;
+  skos:definition "Infers a IFCReference instance from the object of an hasExternalReference." ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:condition ref:IFCReference ;
+      sh:object ref:IFCReference ;
+      sh:predicate rdf:type ;
+      sh:subject sh:this ;
+    ] ;
+  sh:targetObjectsOf ref:hasExternalReference ;
+.
+ref:TimeseriesReference
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf ref:ExternalReference ;
+  skos:definition "A reference to a stream of timeseries data in a database. Contains the data for this entity" ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path ref:hasTimeseriesId ;
+      skos:definition "The identifier for the timeseries data corresponding to this point" ;
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path ref:storedAt ;
+      skos:definition "Refers to a database storing the timeseries data for the related point. Properties on this class are *to be determined*; feel free to add arbitrary properties onto Database instances for your particular deployment" ;
+      sh:datatype xsd:string ;
+    ] ;
+.
+ref:TimeseriesReferenceShape
+  a sh:NodeShape ;
+  skos:definition "Infers a TimeseriesReference instance from the object of an hasExternalReference." ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:condition ref:TimeseriesReference ;
+      sh:object ref:TimeseriesReference ;
+      sh:predicate rdf:type ;
+      sh:subject sh:this ;
+    ] ;
+  sh:targetObjectsOf ref:hasExternalReference ;
+.
+ref:bacnet-read-property
+  a owl:DatatypeProperty ;
+  rdfs:comment "The property of the BACnet object to read to get the current value of this entity." ;
+  rdfs:label "bacnet-read-property" ;
+.
+ref:hasExternalReference
+  a owl:ObjectProperty ;
+  rdfs:label "hasExternalReference" ;
+  skos:definition "Points to the external reference for this entity, which contains additional metadata/data not included in this graph." ;
+.
+ref:hasIfcProjectReference
+  a owl:ObjectProperty ;
+  rdfs:label "hasIfcProjectReference" ;
+  skos:definition "A reference to the IFC Project that defines this entity" ;
+.
+ref:hasTimeseriesId
+  a owl:DatatypeProperty ;
+  rdfs:label "hasTimeseriesId" ;
+  rdfs:range xsd:string ;
+  skos:definition "The unique identifier (primary key) for this TimeseriesReference in some database"@en ;
+.
+ref:hasTimeseriesReference
+  a owl:ObjectProperty ;
+  rdfs:label "hasTimeseriesReference" ;
+  rdfs:subPropertyOf ref:hasExternalReference ;
+  skos:definition "Metadata for accessing related timeseries data: Relates a Brick point to the TimeseriesReference that indicates where and how the data for this point is stored"@en ;
+  sh:class ref:TimeseriesReference ;
+.
+ref:ifcFileLocation
+  a owl:DatatypeProperty ;
+  rdfs:label "The location of the IFC file defining a project" ;
+  rdfs:range xsd:string ;
+.
+ref:ifcGlobalID
+  a owl:DatatypeProperty ;
+  rdfs:label "ifcGlobalID" ;
+  rdfs:range xsd:string ;
+  skos:definition "The IFC Global ID of the entity" ;
+.
+ref:ifcName
+  a owl:DatatypeProperty ;
+  rdfs:label "ifcName" ;
+  rdfs:range xsd:string ;
+  skos:definition "The name of the IFC entity" ;
+.
+ref:ifcProject
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "IfcProject" ;
+  sh:property [
+      sh:path ref:ifcFileLocation ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      sh:path ref:ifcProjectID ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+.
+ref:ifcProjectID
+  a owl:DatatypeProperty ;
+  rdfs:label "ifcProjectID" ;
+  rdfs:range xsd:string ;
+  skos:definition "The IFC ID of the containing project" ;
+.
+ref:storedAt
+  a owl:DatatypeProperty ;
+  rdfs:label "storedAt" ;
+  rdfs:range xsd:anyURI ;
+  skos:definition "A reference to where the data for this TimeseriesReference is stored"@en ;
 .
 bsh:AggregationShape
   a owl:Class ;
@@ -56100,13 +56154,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
-          unit:MegaV-A_Reactive
-          unit:MegaV-A
           unit:V-A
-          unit:BTU_IT
-          unit:V-A_Reactive
           unit:KiloV-A_Reactive
           unit:KiloV-A
+          unit:BTU_IT
+          unit:MegaV-A
+          unit:V-A_Reactive
+          unit:MegaV-A_Reactive
         ) ;
       sh:minCount 1 ;
     ] ;
