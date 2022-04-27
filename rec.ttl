@@ -46,12 +46,6 @@ rec:Agent
       sh:name "member of" ;
       sh:nodeKind sh:IRI ;
     ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:name ;
-      sh:datatype xsd:string ;
-      sh:name "name" ;
-    ] ;
 .
 rec:Apartment
   a rdfs:Class ;
