@@ -14,6 +14,15 @@
 <https://brickschema.org/schema/Brick#Lighting>
   a sh:NodeShape ;
 .
+<https://brickschema.org/schema/Brick#Measurable>
+  a sh:NodeShape ;
+.
+<https://brickschema.org/schema/Brick#Quantity>
+  a sh:NodeShape ;
+.
+<https://brickschema.org/schema/Brick#Substance>
+  a sh:NodeShape ;
+.
 <https://brickschema.org/schema/BrickShape#ValueShape>
   a sh:NodeShape ;
 .
