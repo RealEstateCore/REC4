@@ -483,6 +483,13 @@ rec:Collection
   rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   recp:apiEndpoint "collections" ;
 .
 rec:Company

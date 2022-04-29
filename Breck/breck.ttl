@@ -2099,6 +2099,7 @@ brick:Ablutions_Room
   a sh:NodeShape ;
   rdfs:label "Ablutions Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room for performing cleansing rituals before prayer"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -3771,6 +3772,7 @@ brick:Atrium
   rdfs:label "Atrium" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Atrium_(architecture)> ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "a large open-air or skylight covered space surrounded by a building."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -3806,6 +3808,7 @@ brick:Auditorium
   a sh:NodeShape ;
   rdfs:label "Auditorium" ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "A space for performances or larger gatherings"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -4297,6 +4300,7 @@ brick:Basement
   a sh:NodeShape ;
   rdfs:label "Basement" ;
   rdfs:subClassOf brick:Floor ;
+  owl:deprecated true ;
   skos:definition "The floor of a building which is partly or entirely below ground level."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -4395,6 +4399,7 @@ brick:Battery_Room
   a sh:NodeShape ;
   rdfs:label "Battery Room" ;
   rdfs:subClassOf brick:Electrical_Room ;
+  owl:deprecated true ;
   skos:definition "A room used to hold batteries for backup power"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -4479,6 +4484,7 @@ brick:Bench_Space
   a sh:NodeShape ;
   rdfs:label "Bench Space" ;
   rdfs:subClassOf brick:Outdoor_Area ;
+  owl:deprecated true ;
   skos:definition "For areas of play in a stadium, the area for partcipants and referees by the side of the field"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -4634,6 +4640,7 @@ brick:Break_Room
   a sh:NodeShape ;
   rdfs:label "Break Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Breakroom ;
   skos:definition "A space for people to relax while not working"@en ;
   sh:rule [
@@ -4691,6 +4698,7 @@ brick:Breakroom
   a sh:NodeShape ;
   rdfs:label "Breakroom" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Break_Room ;
   skos:definition "A space for people to relax while not working"@en ;
   sh:rule [
@@ -4727,6 +4735,7 @@ brick:Broadcast_Room
   a sh:NodeShape ;
   rdfs:label "Broadcast Room" ;
   rdfs:subClassOf brick:Media_Room ;
+  owl:deprecated true ;
   skos:definition "A space to organize and manage a broadcast. Separate from studio"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -4769,6 +4778,7 @@ brick:Building
   a sh:NodeShape ;
   rdfs:label "Building" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO 12006-2:2013]"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -5944,6 +5954,7 @@ brick:Cafeteria
   a sh:NodeShape ;
   rdfs:label "Cafeteria" ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "A space to serve food and beverages"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -7759,6 +7770,7 @@ brick:Cold_Box
   a sh:NodeShape ;
   rdfs:label "Cold Box" ;
   rdfs:subClassOf brick:Laboratory ;
+  owl:deprecated true ;
   skos:definition "in a gas separation unit, the insulated section that contains the low-temperature heat exchangers and distillation columns."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -7878,6 +7890,7 @@ brick:Collection
   a sh:NodeShape ;
   rdfs:label "Collection" ;
   rdfs:subClassOf brick:Entity ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Collection ;
@@ -8155,6 +8168,7 @@ brick:Common_Space
   a sh:NodeShape ;
   rdfs:label "Common Space" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "A class of spaces that are used by multiple people at the same time"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -8335,6 +8349,7 @@ brick:Concession
   a sh:NodeShape ;
   rdfs:label "Concession" ;
   rdfs:subClassOf brick:Food_Service_Room ;
+  owl:deprecated true ;
   skos:definition "A space to sell food and beverages. Usually embedded in a larger space and does not include a space where people consume their purchases"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -8827,6 +8842,7 @@ brick:Conference_Room
   a sh:NodeShape ;
   rdfs:label "Conference Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space dedicated in which to hold a meetings"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -8927,6 +8943,7 @@ brick:Control_Room
   a sh:NodeShape ;
   rdfs:label "Control Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space from which operations are managed"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -9787,6 +9804,7 @@ brick:Copy_Room
   a sh:NodeShape ;
   rdfs:label "Copy Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room set aside for common office equipment, including printers and copiers"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -9892,6 +9910,7 @@ brick:Cubicle
   a sh:NodeShape ;
   rdfs:label "Cubicle" ;
   rdfs:subClassOf brick:Office ;
+  owl:deprecated true ;
   skos:definition "A smaller space set aside for an individual, but not with a door and without full-height walls"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -10926,6 +10945,7 @@ brick:Detention_Room
   a sh:NodeShape ;
   rdfs:label "Detention Room" ;
   rdfs:subClassOf brick:Security_Service_Room ;
+  owl:deprecated true ;
   skos:definition "A space for the temporary involuntary confinement of people"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -15235,6 +15255,7 @@ brick:Distribution_Frame
   a sh:NodeShape ;
   rdfs:label "Distribution Frame" ;
   rdfs:subClassOf brick:Telecom_Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces where the cables carrying signals meet and connect, e.g. a wiring closet or a broadcast downlink room"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -16717,6 +16738,7 @@ brick:Electrical_Room
   a sh:NodeShape ;
   rdfs:label "Electrical Room" ;
   rdfs:subClassOf brick:Service_Room ;
+  owl:deprecated true ;
   skos:definition "A class of service rooms that house electrical equipment for a building"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -16802,6 +16824,7 @@ brick:Elevator_Shaft
   a sh:NodeShape ;
   rdfs:label "Elevator Shaft" ;
   rdfs:subClassOf brick:Vertical_Space ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Elevator_Space ;
   skos:definition "The vertical space in which an elevator ascends and descends"@en ;
   sh:rule [
@@ -16845,6 +16868,7 @@ brick:Elevator_Space
   a sh:NodeShape ;
   rdfs:label "Elevator Space" ;
   rdfs:subClassOf brick:Vertical_Space ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Elevator_Shaft ;
   skos:definition "The vertical space in whcih an elevator ascends and descends"@en ;
   sh:rule [
@@ -17507,6 +17531,7 @@ brick:Employee_Entrance_Lobby
   a sh:NodeShape ;
   rdfs:label "Employee Entrance Lobby" ;
   rdfs:subClassOf brick:Lobby ;
+  owl:deprecated true ;
   skos:definition "An open space near an entrance that is typicaly only used for employees"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -17850,6 +17875,7 @@ brick:Enclosed_Office
   a sh:NodeShape ;
   rdfs:label "Enclosed Office" ;
   rdfs:subClassOf brick:Office ;
+  owl:deprecated true ;
   skos:definition "A space for individuals to work with walls and a door"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -18066,6 +18092,7 @@ brick:Energy_Zone
   a sh:NodeShape ;
   rdfs:label "Energy Zone" ;
   rdfs:subClassOf brick:Zone ;
+  owl:deprecated true ;
   skos:definition "A space or group of spaces that are managed or monitored as one unit for energy purposes"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -18421,6 +18448,7 @@ brick:Entrance
   a sh:NodeShape ;
   rdfs:label "Entrance" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "The location and space of a building where people enter and exit the building"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -18449,6 +18477,7 @@ brick:Environment_Box
   a sh:NodeShape ;
   rdfs:label "Environment Box" ;
   rdfs:subClassOf brick:Laboratory ;
+  owl:deprecated true ;
   skos:definition "(also known as climatic chamber), enclosed space designed to create a particular environment."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -18506,6 +18535,7 @@ brick:Equipment_Room
   a sh:NodeShape ;
   rdfs:label "Equipment Room" ;
   rdfs:subClassOf brick:Telecom_Room ;
+  owl:deprecated true ;
   skos:definition "A telecommunications room where equipment that serves the building is stored"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -18616,6 +18646,7 @@ brick:Exercise_Room
   a sh:NodeShape ;
   rdfs:label "Exercise Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "An indoor room used for exercise and physical activities"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -20154,6 +20185,7 @@ brick:Field_Of_Play
   a sh:NodeShape ;
   rdfs:label "Field Of Play" ;
   rdfs:subClassOf brick:Outdoor_Area ;
+  owl:deprecated true ;
   skos:definition "The area of a stadium where athletic events occur, e.g. the soccer pitch"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -20673,6 +20705,7 @@ brick:Fire_Zone
   a sh:NodeShape ;
   rdfs:label "Fire Zone" ;
   rdfs:subClassOf brick:Zone ;
+  owl:deprecated true ;
   skos:definition "combustion chamber in a furnace or boiler."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -20735,6 +20768,7 @@ brick:First_Aid_Room
   a sh:NodeShape ;
   rdfs:label "First Aid Room" ;
   rdfs:subClassOf brick:Medical_Room ;
+  owl:deprecated true ;
   skos:definition "A room for a person with minor injuries can be treated or temporarily treated until transferred to a more advanced medical facility"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -20784,6 +20818,7 @@ brick:Floor
   a sh:NodeShape ;
   rdfs:label "Floor" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Storey ;
   skos:definition "A level, typically representing a horizontal aggregation of spaces that are vertically bound. (referring to IFC)"@en ;
   sh:property [
@@ -21003,6 +21038,7 @@ brick:Food_Service_Room
   a sh:NodeShape ;
   rdfs:label "Food Service Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space used in the production, storage, serving, or cleanup of food and beverages"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -21121,6 +21157,7 @@ brick:Freezer
   a sh:NodeShape ;
   rdfs:label "Freezer" ;
   rdfs:subClassOf brick:Laboratory ;
+  owl:deprecated true ;
   skos:definition "cold chamber usually kept at a temperature of 22°F to 31°F (–5°C to –1°C), with high-volume air circulation."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -21742,6 +21779,7 @@ brick:Gatehouse
   a sh:NodeShape ;
   rdfs:label "Gatehouse" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "The standalone building used to manage the entrance to a campus or building grounds"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -21770,6 +21808,7 @@ brick:Generator_Room
   a sh:NodeShape ;
   rdfs:label "Generator Room" ;
   rdfs:subClassOf brick:Electrical_Room ;
+  owl:deprecated true ;
   skos:definition "A room for electrical equipment, specifically electrical generators."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -21952,6 +21991,7 @@ brick:HVAC_Zone
   a sh:NodeShape ;
   rdfs:label "HVAC Zone" ;
   rdfs:subClassOf brick:Zone ;
+  owl:deprecated true ;
   skos:definition "a space or group of spaces, within a building with heating, cooling, and ventilating requirements, that are sufficiently similar so that desired conditions (e.g., temperature) can be maintained throughout using a single sensor (e.g., thermostat or temperature sensor)."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -22052,6 +22092,7 @@ brick:Hallway
   a sh:NodeShape ;
   rdfs:label "Hallway" ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "A common space, used to connect other parts of a building"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -22087,6 +22128,7 @@ brick:Hazardous_Materials_Storage
   a sh:NodeShape ;
   rdfs:label "Hazardous Materials Storage" ;
   rdfs:subClassOf brick:Storage_Room ;
+  owl:deprecated true ;
   skos:definition "A storage space set aside (usually with restricted access) for the storage of materials that can be hazardous to living beings or the environment"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -24117,6 +24159,7 @@ brick:Hospitality_Box
   a sh:NodeShape ;
   rdfs:label "Hospitality Box" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room at a stadium, usually overlooking the field of play, that is physical separate from the other seating at the venue"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -24159,6 +24202,7 @@ brick:Hot_Box
   a sh:NodeShape ;
   rdfs:label "Hot Box" ;
   rdfs:subClassOf brick:Laboratory ;
+  owl:deprecated true ;
   skos:definition "hot air chamber forming part of an air handler."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -26366,6 +26410,7 @@ brick:IDF
   a sh:NodeShape ;
   rdfs:label "IDF" ;
   rdfs:subClassOf brick:Distribution_Frame ;
+  owl:deprecated true ;
   skos:definition "An room for an intermediate distribution frame, where cables carrying signals from the main distrubtion frame terminate and then feed out to endpoints"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -26621,6 +26666,7 @@ brick:Information_Area
   a sh:NodeShape ;
   rdfs:label "Information Area" ;
   rdfs:subClassOf brick:Outdoor_Area ;
+  owl:deprecated true ;
   skos:definition "An information booth or kiosk where visitors would look for information"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -27064,6 +27110,7 @@ brick:Janitor_Room
   a sh:NodeShape ;
   rdfs:label "Janitor Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room set aside for the storage of cleaning equipment and supplies"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -27141,6 +27188,7 @@ brick:Laboratory
   a sh:NodeShape ;
   rdfs:label "Laboratory" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "facility acceptable to the local, national, or international recognized authority having jurisdiction and which provides uniform testing and examination procedures and standards for meeting design, manufacturing, and factory testing requirements."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -27622,6 +27670,7 @@ brick:Library
   a sh:NodeShape ;
   rdfs:label "Library" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A place for the storage and/or consumption of physical media, e.g. books, periodicals, and DVDs/CDs"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -27726,6 +27775,7 @@ brick:Lighting_Zone
   a sh:NodeShape ;
   rdfs:label "Lighting Zone" ;
   rdfs:subClassOf brick:Zone ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Lighting ;
@@ -28126,6 +28176,7 @@ brick:Loading_Dock
   a sh:NodeShape ;
   rdfs:label "Loading Dock" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A part of a facility where delivery trucks can load and unload. Usually partially enclosed with specific traffic lanes leading to the dock"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -28168,6 +28219,7 @@ brick:Lobby
   a sh:NodeShape ;
   rdfs:label "Lobby" ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "A space just after the entrance to a building or other space of a building, where visitors can wait"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -28244,6 +28296,7 @@ brick:Location
   a sh:NodeShape ;
   rdfs:label "Location" ;
   rdfs:subClassOf brick:Entity ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Location ;
@@ -28326,6 +28379,7 @@ brick:Loop
   a sh:NodeShape ;
   rdfs:label "Loop" ;
   rdfs:subClassOf brick:Collection ;
+  rdfs:subClassOf rec:Collection ;
   skos:definition "A collection of connected equipment; part of a System"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -28361,6 +28415,7 @@ brick:Lounge
   a sh:NodeShape ;
   rdfs:label "Lounge" ;
   rdfs:subClassOf brick:Common_Space ;
+  owl:deprecated true ;
   skos:definition "A room for lesiure activities or relaxing"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -29440,6 +29495,7 @@ brick:MDF
   a sh:NodeShape ;
   rdfs:label "MDF" ;
   rdfs:subClassOf brick:Distribution_Frame ;
+  owl:deprecated true ;
   skos:definition "A room for the Main Distribution Frame, the central place of a building where cables carrying signals meet and connect to the outside world"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -29496,6 +29552,7 @@ brick:Mail_Room
   a sh:NodeShape ;
   rdfs:label "Mail Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room where mail is recieved and sorted for distribution to the rest of the building"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -29601,6 +29658,7 @@ brick:Majlis
   a sh:NodeShape ;
   rdfs:label "Majlis" ;
   rdfs:subClassOf brick:Lounge ;
+  owl:deprecated true ;
   skos:definition "In Arab countries, an Majlis is a private lounge where visitors are recieved and entertained"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -29901,6 +29959,7 @@ brick:Massage_Room
   a sh:NodeShape ;
   rdfs:label "Massage Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "Usually adjunct to an athletic facility, a private/semi-private space where massages are performed"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -31838,6 +31897,7 @@ brick:Max_Water_Temperature_Setpoint
 .
 brick:Measurable
   a owl:Class ;
+  a sh:NodeShape ;
   rdfs:label "Measurable" ;
   rdfs:subClassOf brick:Entity ;
 .
@@ -31846,6 +31906,7 @@ brick:Mechanical_Room
   a sh:NodeShape ;
   rdfs:label "Mechanical Room" ;
   rdfs:subClassOf brick:Service_Room ;
+  owl:deprecated true ;
   skos:definition "A class of service rooms where mechanical equipment (HVAC) operates"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -31888,6 +31949,7 @@ brick:Media_Hot_Desk
   a sh:NodeShape ;
   rdfs:label "Media Hot Desk" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "A non-enclosed space used by members of the media temporarily to cover an event while they are present at a venue"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -31923,6 +31985,7 @@ brick:Media_Production_Room
   a sh:NodeShape ;
   rdfs:label "Media Production Room" ;
   rdfs:subClassOf brick:Media_Room ;
+  owl:deprecated true ;
   skos:definition "A enclosed space used by media professionals for the production of media"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -31965,6 +32028,7 @@ brick:Media_Room
   a sh:NodeShape ;
   rdfs:label "Media Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces related to the creation of media"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -32000,6 +32064,7 @@ brick:Medical_Room
   a sh:NodeShape ;
   rdfs:label "Medical Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of rooms used for medical purposes"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -37141,6 +37206,7 @@ brick:Office
   a sh:NodeShape ;
   rdfs:label "Office" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of rooms dedicated for work or study"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -37176,6 +37242,7 @@ brick:Office_Kitchen
   a sh:NodeShape ;
   rdfs:label "Office Kitchen" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A common space, usually near or in a breakroom, where minor food preperation occurs"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -37509,6 +37576,7 @@ brick:Open_Office
   a sh:NodeShape ;
   rdfs:label "Open Office" ;
   rdfs:subClassOf brick:Office ;
+  owl:deprecated true ;
   skos:definition "An open space used for work or study by mulitple people. Usuaully subdivided into cubicles or desks"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -37599,6 +37667,7 @@ brick:Outdoor_Area
   a sh:NodeShape ;
   rdfs:label "Outdoor Area" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "A class of spaces that exist outside of a building"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -37696,6 +37765,7 @@ brick:Outside
   a sh:NodeShape ;
   rdfs:label "Outside" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Location ;
@@ -39404,6 +39474,7 @@ brick:PV_Array
   a sh:NodeShape ;
   rdfs:label "PV Array" ;
   rdfs:subClassOf brick:Collection ;
+  rdfs:subClassOf rec:Collection ;
   owl:equivalentClass brick:Photovoltaic_Array ;
   sh:property [
       sh:path brick:hasPart ;
@@ -39550,6 +39621,7 @@ brick:Parking_Level
   a sh:NodeShape ;
   rdfs:label "Parking Level" ;
   rdfs:subClassOf brick:Floor ;
+  owl:deprecated true ;
   skos:definition "A floor of a parking structure"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -39585,6 +39657,7 @@ brick:Parking_Space
   a sh:NodeShape ;
   rdfs:label "Parking Space" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "An area large enough to park an individual vehicle"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -39613,6 +39686,7 @@ brick:Parking_Structure
   a sh:NodeShape ;
   rdfs:label "Parking Structure" ;
   rdfs:subClassOf brick:Building ;
+  owl:deprecated true ;
   skos:definition "A building or part of a building devoted to vehicle parking"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -39828,6 +39902,7 @@ brick:Photovoltaic_Array
   a sh:NodeShape ;
   rdfs:label "Photovoltaic Array" ;
   rdfs:subClassOf brick:Collection ;
+  rdfs:subClassOf rec:Collection ;
   owl:equivalentClass brick:PV_Array ;
   skos:definition "A collection of photovoltaic panels"@en ;
   sh:property [
@@ -39958,6 +40033,7 @@ brick:Plumbing_Room
   a sh:NodeShape ;
   rdfs:label "Plumbing Room" ;
   rdfs:subClassOf brick:Service_Room ;
+  owl:deprecated true ;
   skos:definition "A service room devoted to the operation and routing of water in a building. Usually distinct from the HVAC subsystems."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -40013,6 +40089,7 @@ brick:Portfolio
   a sh:NodeShape ;
   rdfs:label "Portfolio" ;
   rdfs:subClassOf brick:Collection ;
+  rdfs:subClassOf rec:Collection ;
   skos:definition "A collection of sites"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -40326,6 +40403,7 @@ brick:Prayer_Room
   a sh:NodeShape ;
   rdfs:label "Prayer Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A room set aside for prayer"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -40830,6 +40908,7 @@ brick:Private_Office
   a sh:NodeShape ;
   rdfs:label "Private Office" ;
   rdfs:subClassOf brick:Enclosed_Office ;
+  owl:deprecated true ;
   skos:definition "An office devoted to a single individual, with walls and door"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -41051,6 +41130,7 @@ brick:Pump_Room
   a sh:NodeShape ;
   rdfs:label "Pump Room" ;
   rdfs:subClassOf brick:Mechanical_Room ;
+  owl:deprecated true ;
   skos:definition "A mechanical room that houses pumps"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -41125,6 +41205,7 @@ brick:Pump_VFD
 .
 brick:Quantity
   a owl:Class ;
+  a sh:NodeShape ;
   rdfs:label "Quantity" ;
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf sosa:ObservableProperty ;
@@ -41692,6 +41773,7 @@ brick:Reception
   a sh:NodeShape ;
   rdfs:label "Reception" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space, usually in a lobby, where visitors to a building or space can go to after arriving at a building and inform building staff that they have arrived"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -41727,6 +41809,7 @@ brick:Region
   a sh:NodeShape ;
   rdfs:label "Region" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "A unit of geographic space, usually contigious or somehow related to a geopolitical feature"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -42022,6 +42105,7 @@ brick:Rest_Room
   a sh:NodeShape ;
   rdfs:label "Rest Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Restroom ;
   skos:definition "A room that provides toilets and washbowls. Alternate spelling of Restroom"@en ;
   sh:rule [
@@ -42058,6 +42142,7 @@ brick:Restroom
   a sh:NodeShape ;
   rdfs:label "Restroom" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Rest_Room ;
   skos:definition "A room that provides toilets and washbowls."@en ;
   sh:rule [
@@ -42094,6 +42179,7 @@ brick:Retail_Room
   a sh:NodeShape ;
   rdfs:label "Retail Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space set aside for retail in a larger establishment, e.g. a gift shop in a hospital"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -43584,6 +43670,7 @@ brick:Riser
   a sh:NodeShape ;
   rdfs:label "Riser" ;
   rdfs:subClassOf brick:Vertical_Space ;
+  owl:deprecated true ;
   skos:definition "A vertical shaft indented for installing building infrastructure e.g., electrical wire, network communication wire, plumbing, etc"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -43619,6 +43706,7 @@ brick:Rooftop
   a sh:NodeShape ;
   rdfs:label "Rooftop" ;
   rdfs:subClassOf brick:Floor ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Floor ;
@@ -43675,6 +43763,7 @@ brick:Room
   a sh:NodeShape ;
   rdfs:label "Room" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "Base class for all more specific room types."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -44067,6 +44156,7 @@ brick:Security_Service_Room
   a sh:NodeShape ;
   rdfs:label "Security Service Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces used by the security staff of a facility"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -44170,6 +44260,7 @@ brick:Server_Room
   a sh:NodeShape ;
   rdfs:label "Server Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Location ;
@@ -44197,6 +44288,7 @@ brick:Service_Room
   a sh:NodeShape ;
   rdfs:label "Service Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces related to the operations of building subsystems, e.g. HVAC, electrical, IT, plumbing, etc"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -44350,6 +44442,7 @@ brick:Shared_Office
   a sh:NodeShape ;
   rdfs:label "Shared Office" ;
   rdfs:subClassOf brick:Enclosed_Office ;
+  owl:deprecated true ;
   skos:definition "An office used by multiple people"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -44434,6 +44527,7 @@ brick:Shower
   a sh:NodeShape ;
   rdfs:label "Shower" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space containing showers, usually adjacent to an athletic or execise area"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -44469,6 +44563,7 @@ brick:Site
   a sh:NodeShape ;
   rdfs:label "Site" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "A geographic region containing 0 or more buildings. Typically used as the encapsulating location for a collection of Brick entities through the hasPart/isPartOf relationships"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -45042,6 +45137,7 @@ brick:Sports_Service_Room
   a sh:NodeShape ;
   rdfs:label "Sports Service Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces used in the support of sports"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -45182,6 +45278,7 @@ brick:Staircase
   a sh:NodeShape ;
   rdfs:label "Staircase" ;
   rdfs:subClassOf brick:Vertical_Space ;
+  owl:deprecated true ;
   skos:definition "A vertical space containing stairs"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -46159,6 +46256,7 @@ brick:Storage_Room
   a sh:NodeShape ;
   rdfs:label "Storage Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces used for storage"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -46194,6 +46292,7 @@ brick:Storey
   a sh:NodeShape ;
   rdfs:label "Storey" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   owl:equivalentClass brick:Floor ;
   sh:rule [
       a sh:TripleRule ;
@@ -46215,6 +46314,7 @@ brick:Studio
   a sh:NodeShape ;
   rdfs:label "Studio" ;
   rdfs:subClassOf brick:Media_Room ;
+  owl:deprecated true ;
   skos:definition "A room used for the production or media, usually with either a specialized set or a specialized sound booth for recording"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -46254,6 +46354,7 @@ brick:Studio
 .
 brick:Substance
   a owl:Class ;
+  a sh:NodeShape ;
   rdfs:label "Substance" ;
   rdfs:subClassOf sosa:FeatureOfInterest ;
   rdfs:subClassOf brick:Measurable ;
@@ -49257,6 +49358,7 @@ brick:Switch_Room
   a sh:NodeShape ;
   rdfs:label "Switch Room" ;
   rdfs:subClassOf brick:Telecom_Room ;
+  owl:deprecated true ;
   skos:definition "A telecommuncations room housing network switches"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -49320,6 +49422,7 @@ brick:System
   a sh:NodeShape ;
   rdfs:label "System" ;
   rdfs:subClassOf brick:Collection ;
+  rdfs:subClassOf rec:Collection ;
   skos:definition "A System is a combination of equipment and auxiliary devices (e.g., controls, accessories, interconnecting means, and termi­nal elements) by which energy is transformed so it performs a specific function such as HVAC, service water heating, or lighting. (ASHRAE Dictionary)."@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -49491,6 +49594,7 @@ brick:TETRA_Room
   a sh:NodeShape ;
   rdfs:label "TETRA Room" ;
   rdfs:subClassOf brick:Telecom_Room ;
+  owl:deprecated true ;
   skos:definition "A room used for local two-way radio networks, e.g. the portable radios carried by facilities staff"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -49640,6 +49744,7 @@ brick:Team_Room
   a sh:NodeShape ;
   rdfs:label "Team Room" ;
   rdfs:subClassOf brick:Enclosed_Office ;
+  owl:deprecated true ;
   skos:definition "An office used by multiple team members for specific work tasks. Distinct from Conference Room"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -49689,6 +49794,7 @@ brick:Telecom_Room
   a sh:NodeShape ;
   rdfs:label "Telecom Room" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A class of spaces used to support telecommuncations and IT equipment"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -50369,6 +50475,7 @@ brick:Ticketing_Booth
   a sh:NodeShape ;
   rdfs:label "Ticketing Booth" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "A room or space used to sell or distribute tickets to events at a venue"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -50716,6 +50823,7 @@ brick:Transformer_Room
   a sh:NodeShape ;
   rdfs:label "Transformer Room" ;
   rdfs:subClassOf brick:Electrical_Room ;
+  owl:deprecated true ;
   skos:definition "An electrical room where electricity enters and is transformed to different voltages and currents by the equipment contained in the room"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -50765,6 +50873,7 @@ brick:Tunnel
   a sh:NodeShape ;
   rdfs:label "Tunnel" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "An enclosed space that connects buildings. Often underground"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -52648,6 +52757,7 @@ brick:Vertical_Space
   a sh:NodeShape ;
   rdfs:label "Vertical Space" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "A class of spaces used to connect multiple floors or levels.."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -52744,6 +52854,7 @@ brick:Visitor_Lobby
   a sh:NodeShape ;
   rdfs:label "Visitor Lobby" ;
   rdfs:subClassOf brick:Lobby ;
+  owl:deprecated true ;
   skos:definition "A lobby for visitors to the building. Sometimes used to distinguish from an employee entrance looby"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -52925,6 +53036,7 @@ brick:Wardrobe
   a sh:NodeShape ;
   rdfs:label "Wardrobe" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "Storage for clothing, costumes, or uniforms"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -53051,6 +53163,7 @@ brick:Waste_Storage
   a sh:NodeShape ;
   rdfs:label "Waste Storage" ;
   rdfs:subClassOf brick:Storage_Room ;
+  owl:deprecated true ;
   skos:definition "A room used for storing waste such as trash or recycling"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -53618,6 +53731,7 @@ brick:Water_Tank
   a sh:NodeShape ;
   rdfs:label "Water Tank" ;
   rdfs:subClassOf brick:Space ;
+  owl:deprecated true ;
   skos:definition "A space used to hold water"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -53964,6 +54078,7 @@ brick:Wing
   a sh:NodeShape ;
   rdfs:label "Wing" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "A wing is part of a building – or any feature of a building – that is subordinate to the main, central structure."@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -53985,6 +54100,7 @@ brick:Workshop
   a sh:NodeShape ;
   rdfs:label "Workshop" ;
   rdfs:subClassOf brick:Room ;
+  owl:deprecated true ;
   skos:definition "A space used to house equipment that can be used to repair or fabricate things"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -54020,6 +54136,7 @@ brick:Zone
   a sh:NodeShape ;
   rdfs:label "Zone" ;
   rdfs:subClassOf brick:Location ;
+  owl:deprecated true ;
   skos:definition "(1) a separately controlled heated or cooled space. (2) one occupied space or several occupied spaces with similar occupancy category, occupant density, zone air distribution effectiveness, and zone primary airflow per unit area. (3) space or group of spaces within a building for which the heating, cooling, or lighting requirements are sufficiently similar that desired conditions can be maintained throughout by a single controlling device."@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -54718,6 +54835,7 @@ brick:hasPart
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:label "Has part" ;
+  owl:deprecated true ;
   owl:inverseOf brick:isPartOf ;
   skos:definition "The subject is composed in part of the entity given by the object"@en ;
 .
@@ -58855,6 +58973,13 @@ rec:Collection
   rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   recp:apiEndpoint "collections" ;
 .
 rec:Company
