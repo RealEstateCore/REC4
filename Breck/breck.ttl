@@ -31897,7 +31897,6 @@ brick:Max_Water_Temperature_Setpoint
 .
 brick:Measurable
   a owl:Class ;
-  a sh:NodeShape ;
   rdfs:label "Measurable" ;
   rdfs:subClassOf brick:Entity ;
 .
@@ -41205,7 +41204,6 @@ brick:Pump_VFD
 .
 brick:Quantity
   a owl:Class ;
-  a sh:NodeShape ;
   rdfs:label "Quantity" ;
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf sosa:ObservableProperty ;
@@ -46354,7 +46352,6 @@ brick:Studio
 .
 brick:Substance
   a owl:Class ;
-  a sh:NodeShape ;
   rdfs:label "Substance" ;
   rdfs:subClassOf sosa:FeatureOfInterest ;
   rdfs:subClassOf brick:Measurable ;

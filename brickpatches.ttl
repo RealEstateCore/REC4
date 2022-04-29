@@ -193,9 +193,6 @@
 <https://brickschema.org/schema/Brick#Massage_Room>
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Measurable>
-  a sh:NodeShape ;
-.
 <https://brickschema.org/schema/Brick#Mechanical_Room>
   owl:deprecated true ;
 .
@@ -256,9 +253,6 @@
 <https://brickschema.org/schema/Brick#Pump_Room>
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Quantity>
-  a sh:NodeShape ;
-.
 <https://brickschema.org/schema/Brick#Reception>
   owl:deprecated true ;
 .
@@ -315,9 +309,6 @@
 .
 <https://brickschema.org/schema/Brick#Studio>
   owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Substance>
-  a sh:NodeShape ;
 .
 <https://brickschema.org/schema/Brick#Switch_Room>
   owl:deprecated true ;
