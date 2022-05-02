@@ -28379,7 +28379,7 @@ brick:Loop
   a sh:NodeShape ;
   rdfs:label "Loop" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
   skos:definition "A collection of connected equipment; part of a System"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -39473,7 +39473,7 @@ brick:PV_Array
   a sh:NodeShape ;
   rdfs:label "PV Array" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
   owl:equivalentClass brick:Photovoltaic_Array ;
   sh:property [
       sh:path brick:hasPart ;
@@ -39901,7 +39901,7 @@ brick:Photovoltaic_Array
   a sh:NodeShape ;
   rdfs:label "Photovoltaic Array" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
   owl:equivalentClass brick:PV_Array ;
   skos:definition "A collection of photovoltaic panels"@en ;
   sh:property [
@@ -40088,7 +40088,7 @@ brick:Portfolio
   a sh:NodeShape ;
   rdfs:label "Portfolio" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:Collection ;
+  owl:deprecated true ;
   skos:definition "A collection of sites"@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -49419,7 +49419,7 @@ brick:System
   a sh:NodeShape ;
   rdfs:label "System" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
   skos:definition "A System is a combination of equipment and auxiliary devices (e.g., controls, accessories, interconnecting means, and termi­nal elements) by which energy is transformed so it performs a specific function such as HVAC, service water heating, or lighting. (ASHRAE Dictionary)."@en ;
   sh:property [
       sh:path brick:hasPart ;
@@ -58538,7 +58538,7 @@ rec:Apartment
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Apartment" ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:SpaceCollection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -58796,6 +58796,20 @@ rec:Asset
       sh:name "weight" ;
     ] ;
 .
+rec:AssetCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Asset collection" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Asset ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:Atrium
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -58813,6 +58827,12 @@ rec:BackOffice
   a sh:NodeShape ;
   rdfs:label "Back office" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:Balcony
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Balcony" ;
+  rdfs:subClassOf rec:BuildingElement ;
 .
 rec:BarRoom
   a rdfs:Class ;
@@ -58867,7 +58887,7 @@ rec:Building
 rec:BuildingElement
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, RoofInner, etc." ;
+  rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc." ;
   rdfs:label "Building element" ;
   rdfs:subClassOf rdfs:Resource ;
 .
@@ -58900,7 +58920,7 @@ rec:Campus
   a sh:NodeShape ;
   rdfs:comment "A campus represents a collection of location entities. The constituent locations may have differing legal ownership and utilization purposes, but they are generally perceived as a coherent unit or sub-region within a city or other region. E.g., a university campus, a hospital campus, a corporate campus, etc." ;
   rdfs:label "Campus" ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:SpaceCollection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -59125,6 +59145,43 @@ rec:Entrance
   rdfs:label "Entrance" ;
   rdfs:subClassOf rec:Room ;
 .
+rec:EquipmentCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Equipment collection" ;
+  rdfs:subClassOf rec:AssetCollection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:Event
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (starting and ending times coalesce) or have temporal extent (starting and ending time diverge). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
+  rdfs:label "Event" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:end ;
+      sh:datatype xsd:dateTime ;
+      sh:description "Event ending timestamp." ;
+      sh:maxCount 1 ;
+      sh:name "end" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:start ;
+      sh:datatype xsd:dateTime ;
+      sh:description "Event start timestamp." ;
+      sh:maxCount 1 ;
+      sh:name "start" ;
+    ] ;
+.
 rec:ExerciseRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59136,6 +59193,12 @@ rec:ExhibitionRoom
   a sh:NodeShape ;
   rdfs:label "Exhibition room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:Facade
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Facade" ;
+  rdfs:subClassOf rec:BuildingElement ;
 .
 rec:FilingCabinet
   a rdfs:Class ;
@@ -59268,6 +59331,53 @@ rec:LaundryRoom
   a sh:NodeShape ;
   rdfs:label "Laundry room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:Lease
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Lease" ;
+  rdfs:subClassOf rec:Event ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leaseOf ;
+      sh:description "The object (e.g., property, equipment, etc) that this a lease of." ;
+      sh:minCount 1 ;
+      sh:name "lease of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leasee ;
+      sh:class rec:Agent ;
+      sh:description "The agent leasing some leasable object, i.e., the user of the asset." ;
+      sh:minCount 1 ;
+      sh:name "leasee" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leasor ;
+      sh:class rec:Agent ;
+      sh:description "The agent leasing out some leasable object, i.e., the owner of the asset." ;
+      sh:minCount 1 ;
+      sh:name "leasor" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:regulatedBy ;
+      sh:class rec:LeaseContract ;
+      sh:description "Indicates the contract regulating the terms of the lease in question. " ;
+      sh:name "regulated by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:LeaseContract
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement." ;
+  rdfs:label "Lease contract" ;
+  rdfs:subClassOf rec:Document ;
 .
 rec:Level
   a rdfs:Class ;
@@ -59487,6 +59597,20 @@ rec:PhoneBooth
   a sh:NodeShape ;
   rdfs:label "PhoneBooth" ;
   rdfs:subClassOf rec:Office ;
+.
+rec:Portfolio
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A portfolio is a grouping of buildings, sites, apartments, campuses, etc. that share some business-relevant commonality, e.g., are managed by the same company, are rented out to the same tenant, share utilization or legal definition (industrial vs commercial), etc." ;
+  rdfs:label "Portfolio" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:PostalAddress
   a rdfs:Class ;
@@ -59736,6 +59860,12 @@ rec:Space
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:SpaceCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Space collection" ;
+  rdfs:subClassOf rec:Collection ;
+.
 rec:SprinklerRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59849,6 +59979,12 @@ rec:Wall
   a sh:NodeShape ;
   rdfs:label "Wall" ;
   rdfs:subClassOf rec:BuildingElement ;
+.
+rec:WallInner
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Wall (inner)" ;
+  rdfs:subClassOf rec:Wall ;
 .
 rec:WasteBasket
   a rdfs:Class ;
