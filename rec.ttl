@@ -341,6 +341,12 @@ rec:BackOffice
   rdfs:label "Back office" ;
   rdfs:subClassOf rec:Room ;
 .
+rec:Balcony
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Balcony" ;
+  rdfs:subClassOf rec:BuildingElement ;
+.
 rec:BarRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -394,7 +400,7 @@ rec:Building
 rec:BuildingElement
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, RoofInner, etc." ;
+  rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc." ;
   rdfs:label "Building element" ;
   rdfs:subClassOf rdfs:Resource ;
 .
@@ -700,6 +706,12 @@ rec:ExhibitionRoom
   a sh:NodeShape ;
   rdfs:label "Exhibition room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:Facade
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Facade" ;
+  rdfs:subClassOf rec:BuildingElement ;
 .
 rec:FilingCabinet
   a rdfs:Class ;
@@ -1480,6 +1492,12 @@ rec:Wall
   a sh:NodeShape ;
   rdfs:label "Wall" ;
   rdfs:subClassOf rec:BuildingElement ;
+.
+rec:WallInner
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Wall (inner)" ;
+  rdfs:subClassOf rec:Wall ;
 .
 rec:WasteBasket
   a rdfs:Class ;
