@@ -176,7 +176,7 @@
   owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#Loop>
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
 .
 <https://brickschema.org/schema/Brick#Lounge>
   owl:deprecated true ;
@@ -224,7 +224,7 @@
   owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#PV_Array>
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
 .
 <https://brickschema.org/schema/Brick#Parking_Level>
   owl:deprecated true ;
@@ -236,13 +236,13 @@
   owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#Photovoltaic_Array>
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
 .
 <https://brickschema.org/schema/Brick#Plumbing_Room>
   owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#Portfolio>
-  rdfs:subClassOf rec:Collection ;
+  owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#Prayer_Room>
   owl:deprecated true ;
@@ -314,7 +314,7 @@
   owl:deprecated true ;
 .
 <https://brickschema.org/schema/Brick#System>
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:EquipmentCollection ;
 .
 <https://brickschema.org/schema/Brick#TETRA_Room>
   owl:deprecated true ;

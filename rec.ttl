@@ -51,7 +51,7 @@ rec:Apartment
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Apartment" ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:SpaceCollection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -309,6 +309,20 @@ rec:Asset
       sh:name "weight" ;
     ] ;
 .
+rec:AssetCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Asset collection" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Asset ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:Atrium
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -413,7 +427,7 @@ rec:Campus
   a sh:NodeShape ;
   rdfs:comment "A campus represents a collection of location entities. The constituent locations may have differing legal ownership and utilization purposes, but they are generally perceived as a coherent unit or sub-region within a city or other region. E.g., a university campus, a hospital campus, a corporate campus, etc." ;
   rdfs:label "Campus" ;
-  rdfs:subClassOf rec:Collection ;
+  rdfs:subClassOf rec:SpaceCollection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -637,6 +651,20 @@ rec:Entrance
   a sh:NodeShape ;
   rdfs:label "Entrance" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:EquipmentCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Equipment collection" ;
+  rdfs:subClassOf rec:AssetCollection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:Event
   a rdfs:Class ;
@@ -1071,6 +1099,20 @@ rec:PhoneBooth
   rdfs:label "PhoneBooth" ;
   rdfs:subClassOf rec:Office ;
 .
+rec:Portfolio
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A portfolio is a grouping of buildings, sites, apartments, campuses, etc. that share some business-relevant commonality, e.g., are managed by the same company, are rented out to the same tenant, share utilization or legal definition (industrial vs commercial), etc." ;
+  rdfs:label "Portfolio" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:PostalAddress
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1318,6 +1360,12 @@ rec:Space
       sh:name "intersecting space" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:SpaceCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Space collection" ;
+  rdfs:subClassOf rec:Collection ;
 .
 rec:SprinklerRoom
   a rdfs:Class ;
