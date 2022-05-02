@@ -58708,6 +58708,14 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:geometry ;
+      sh:datatype xsd:string ;
+      sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
+      sh:maxCount 1 ;
+      sh:name "geometry" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:hasPart ;
       sh:class rec:Asset ;
       sh:name "has part" ;
@@ -59851,6 +59859,14 @@ rec:Space
       sh:class rec:Space ;
       sh:name "contains space" ;
       sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:geometry ;
+      sh:datatype xsd:string ;
+      sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
+      sh:maxCount 1 ;
+      sh:name "geometry" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
