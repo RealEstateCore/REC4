@@ -638,6 +638,29 @@ rec:Entrance
   rdfs:label "Entrance" ;
   rdfs:subClassOf rec:Room ;
 .
+rec:Event
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (starting and ending times coalesce) or have temporal extent (starting and ending time diverge). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
+  rdfs:label "Event" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:end ;
+      sh:datatype xsd:dateTime ;
+      sh:description "Event ending timestamp." ;
+      sh:maxCount 1 ;
+      sh:name "end" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:start ;
+      sh:datatype xsd:dateTime ;
+      sh:description "Event start timestamp." ;
+      sh:maxCount 1 ;
+      sh:name "start" ;
+    ] ;
+.
 rec:ExerciseRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -781,6 +804,53 @@ rec:LaundryRoom
   a sh:NodeShape ;
   rdfs:label "Laundry room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:Lease
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Lease" ;
+  rdfs:subClassOf rec:Event ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leaseOf ;
+      sh:description "The object (e.g., property, equipment, etc) that this a lease of." ;
+      sh:minCount 1 ;
+      sh:name "lease of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leasee ;
+      sh:class rec:Agent ;
+      sh:description "The agent leasing some leasable object, i.e., the user of the asset." ;
+      sh:minCount 1 ;
+      sh:name "leasee" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:leasor ;
+      sh:class rec:Agent ;
+      sh:description "The agent leasing out some leasable object, i.e., the owner of the asset." ;
+      sh:minCount 1 ;
+      sh:name "leasor" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:regulatedBy ;
+      sh:class rec:LeaseContract ;
+      sh:description "Indicates the contract regulating the terms of the lease in question. " ;
+      sh:name "regulated by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:LeaseContract
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement." ;
+  rdfs:label "Lease contract" ;
+  rdfs:subClassOf rec:Document ;
 .
 rec:Level
   a rdfs:Class ;
