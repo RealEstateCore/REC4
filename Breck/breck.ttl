@@ -2027,7 +2027,7 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-04-27" ;
+  dcterms1:modified "2022-05-06" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -18522,6 +18522,12 @@ brick:Equipment
   rdfs:subClassOf brick:Entity ;
   rdfs:subClassOf rec:Asset ;
   skos:definition "devices that serve all or part of the building and may include electric power, lighting, transportation, or service water heating, including, but not limited to, furnaces, boilers, air conditioners, heat pumps, chillers, water heaters, lamps, luminaires, ballasts, elevators, escalators, or other devices or installations."@en ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:feeds ;
+      sh:name "feeds" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Equipment ;
@@ -54816,6 +54822,7 @@ brick:hasLocation
   a owl:ObjectProperty ;
   rdfs:label "Has location" ;
   rdfs:range brick:Location ;
+  owl:equivalentProperty rec:locatedIn ;
   owl:inverseOf brick:isLocationOf ;
   skos:definition "Subject is physically located in the location given by the object"@en ;
 .
@@ -54833,6 +54840,7 @@ brick:hasPart
   a owl:ObjectProperty ;
   rdfs:label "Has part" ;
   owl:deprecated true ;
+  owl:equivalentProperty rec:hasPart ;
   owl:inverseOf brick:isPartOf ;
   skos:definition "The subject is composed in part of the entity given by the object"@en ;
 .
@@ -54911,6 +54919,7 @@ brick:isPartOf
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:label "Is part of" ;
+  owl:equivalentProperty rec:isPartOf ;
   owl:inverseOf brick:hasPart ;
 .
 brick:isPointOf
@@ -56274,13 +56283,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
-          unit:V-A
+          unit:V-A_Reactive
+          unit:MegaV-A
+          unit:BTU_IT
           unit:KiloV-A_Reactive
           unit:KiloV-A
-          unit:BTU_IT
-          unit:MegaV-A
-          unit:V-A_Reactive
           unit:MegaV-A_Reactive
+          unit:V-A
         ) ;
       sh:minCount 1 ;
     ] ;
@@ -56494,6 +56503,25 @@ bsh:TiltShape
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
+.
+bsh:TimeseriesReferenceOnPointsConstraint
+  a sh:NodeShape ;
+  sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "Only Brick Points can have external timeseries references" ;
+      sh:prefixes rdf: ;
+      sh:prefixes rdfs: ;
+      sh:prefixes ref: ;
+      sh:select """
+            SELECT $this
+            WHERE {
+                $this ref:hasExternalReference ?ref .
+                ?ref rdf:type ref:TimeseriesReference .
+                FILTER NOT EXISTS { $this rdf:type/rdfs:subClassOf* brick:Point }
+            }
+        """ ;
+    ] ;
+  sh:targetSubjectsOf ref:hasExternalReference ;
 .
 bsh:ValueShape
   a owl:Class ;
@@ -58528,9 +58556,10 @@ rec:Agent
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:memberOf ;
+      sh:path rec:isMemberOf ;
       sh:class rec:Organization ;
-      sh:name "member of" ;
+      sh:description "Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic Organization.isPartOf property." ;
+      sh:name "is member of" ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
@@ -58599,16 +58628,16 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:containsSpace ;
-      sh:class rec:Architecture ;
-      sh:name "contains space" ;
+      sh:path rec:hasDocument ;
+      sh:class rec:Document ;
+      sh:name "has document" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:documentation ;
-      sh:class rec:Document ;
-      sh:name "documentation" ;
+      sh:path rec:hasPart ;
+      sh:class rec:Architecture ;
+      sh:name "has part" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -58701,13 +58730,6 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:documentation ;
-      sh:class rec:Document ;
-      sh:name "documentation" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:geometry ;
       sh:datatype xsd:string ;
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
@@ -58716,9 +58738,24 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:hasDocument ;
+      sh:class rec:Document ;
+      sh:name "has document" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:hasPart ;
       sh:class rec:Asset ;
       sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hosts ;
+      sh:class rec:LogicalDevice ;
+      sh:description "An asset can act as host to a logical device that communicates with a digital twin platform." ;
+      sh:name "hosts" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -58809,14 +58846,6 @@ rec:AssetCollection
   a sh:NodeShape ;
   rdfs:label "Asset collection" ;
   rdfs:subClassOf rec:Collection ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:includes ;
-      sh:class rec:Asset ;
-      sh:minCount 1 ;
-      sh:name "includes" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
 .
 rec:Atrium
   a rdfs:Class ;
@@ -58898,6 +58927,44 @@ rec:BuildingElement
   rdfs:comment "A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc." ;
   rdfs:label "Building element" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasDocument ;
+      sh:class rec:Document ;
+      sh:name "has document" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPart ;
+      sh:class rec:BuildingElement ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includedIn ;
+      sh:class rec:Collection ;
+      sh:name "included in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:BuildingElement ;
+      sh:maxCount 1 ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:locatedIn ;
+      sh:class rec:Architecture ;
+      sh:description "Indicates the architected space (site, building, level, room...) in which this building element is placed." ;
+      sh:maxCount 1 ;
+      sh:name "located in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:BulletinBoard
   a rdfs:Class ;
@@ -58995,14 +59062,23 @@ rec:CoffeeTable
 rec:Collection
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)." ;
+  rdfs:comment """An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings).
+
+Inclusion in a Collection is determined by the 'includes' field on a specific subclass.""" ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:includes ;
-      sh:minCount 1 ;
-      sh:name "includes" ;
+      sh:path rec:hasDocument ;
+      sh:class rec:Document ;
+      sh:name "has document" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includedIn ;
+      sh:class rec:Collection ;
+      sh:name "included in" ;
       sh:nodeKind sh:IRI ;
     ] ;
   recp:apiEndpoint "collections" ;
@@ -59060,14 +59136,6 @@ rec:Department
   a sh:NodeShape ;
   rdfs:label "Department" ;
   rdfs:subClassOf rec:Organization ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:departmentOf ;
-      sh:class rec:Organization ;
-      sh:description "Indicates a parent organization that this department belongs to." ;
-      sh:name "department of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
 .
 rec:Desk
   a rdfs:Class ;
@@ -59140,6 +59208,43 @@ rec:ElevatorShaft
   a sh:NodeShape ;
   rdfs:label "Elevator shaft" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:ElevatorTrip
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Elevator trip" ;
+  rdfs:subClassOf rec:Event ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:currentLevel ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "current level" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:endLevel ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "end level" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:startLevel ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:name "start level" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:tripDirection ;
+      sh:in (
+          "Up"
+          "Down"
+        ) ;
+      sh:maxCount 1 ;
+      sh:name "trip direction" ;
+    ] ;
 .
 rec:EndTable
   a rdfs:Class ;
@@ -59262,6 +59367,20 @@ rec:Furniture
   rdfs:label "Furniture" ;
   rdfs:subClassOf rec:Asset ;
 .
+rec:FurnitureCollection
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Furniture collection" ;
+  rdfs:subClassOf rec:AssetCollection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Furniture ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:Garage
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59303,6 +59422,13 @@ rec:Information
   a sh:NodeShape ;
   rdfs:label "Information" ;
   rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includedIn ;
+      sh:class rec:Collection ;
+      sh:name "included in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:Kitchenette
   a rdfs:Class ;
@@ -59386,6 +59512,14 @@ rec:LeaseContract
   rdfs:comment "Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement." ;
   rdfs:label "Lease contract" ;
   rdfs:subClassOf rec:Document ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:regulates ;
+      sh:class rec:Lease ;
+      sh:description "Indicates the lease(s) that this contract regulates the conditions of." ;
+      sh:name "regulates" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:Level
   a rdfs:Class ;
@@ -59423,6 +59557,81 @@ rec:LockerRoom
   a sh:NodeShape ;
   rdfs:label "Locker room" ;
   rdfs:subClassOf rec:Room ;
+.
+rec:LogicalController
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Logical controller" ;
+  rdfs:subClassOf rec:LogicalDevice ;
+.
+rec:LogicalDevice
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A piece of software or dedicated circuitry that communicates and interacts with a digital twin platform. Could, represent, e.g., an integrated circuit inside of a smart HVAC unit, or a virtual server running on a Kubernetes cluster. Logical devices can have Point instances (through brick:hasPoint) that describe their input/output capabilties. If Logical Devices are embedded within Asset entities (through the hostedBy/hosts property) such capabilties typically denote the capabilities of the asset." ;
+  rdfs:label "Logical device" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:IPAddress ;
+      sh:datatype xsd:string ;
+      sh:name "IP address" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasDocument ;
+      sh:class rec:Document ;
+      sh:name "has document" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPart ;
+      sh:class rec:LogicalDevice ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hostedBy ;
+      sh:class rec:Asset ;
+      sh:description "Indicates the asset that hosts this logical device." ;
+      sh:name "hosted by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includedIn ;
+      sh:class rec:Collection ;
+      sh:name "included in" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:LogicalDevice ;
+      sh:maxCount 1 ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:LogicalGateway
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Logical gateway" ;
+  rdfs:subClassOf rec:LogicalDevice ;
+.
+rec:LogicalServer
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Logical server" ;
+  rdfs:subClassOf rec:LogicalDevice ;
 .
 rec:MailRoom
   a rdfs:Class ;
@@ -59526,6 +59735,30 @@ rec:Organization
   rdfs:comment "An organization of any sort (e.g., a business, association, project, consortium, tribe, etc.)" ;
   rdfs:label "Organization" ;
   rdfs:subClassOf rec:Agent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasMember ;
+      sh:class rec:Agent ;
+      sh:description "Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic hasPart property." ;
+      sh:name "has member" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPart ;
+      sh:class rec:Organization ;
+      sh:description "Indicates parthood relations in organizations (e.g., departments of a corporation). Note that membership in an organization is expressed using the more specific hasMember property." ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:Organization ;
+      sh:description "Indicates parthood relations in organizations (e.g., departments of a corporation). Note that membership in an organization is expressed using the Agent.isMemberOf property." ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:logo ;
@@ -59848,16 +60081,9 @@ rec:Space
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:adjacentSpace ;
-      sh:class rec:Space ;
-      sh:name "adjacent space" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:containsSpace ;
-      sh:class rec:Space ;
-      sh:name "contains space" ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -59870,9 +60096,17 @@ rec:Space
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:intersectingSpace ;
+      sh:path rec:hasPart ;
       sh:class rec:Space ;
-      sh:name "intersecting space" ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isPartOf ;
+      sh:class rec:Space ;
+      sh:maxCount 1 ;
+      sh:name "is part of" ;
       sh:nodeKind sh:IRI ;
     ] ;
 .

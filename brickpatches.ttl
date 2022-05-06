@@ -100,6 +100,14 @@
 <https://brickschema.org/schema/Brick#Environment_Box>
   owl:deprecated true ;
 .
+<https://brickschema.org/schema/Brick#Equipment>
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <https://brickschema.org/schema/Brick#feeds> ;
+      sh:name "feeds" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 <https://brickschema.org/schema/Brick#Equipment_Room>
   owl:deprecated true ;
 .
@@ -358,8 +366,15 @@
 <https://brickschema.org/schema/Brick#Zone>
   owl:deprecated true ;
 .
+<https://brickschema.org/schema/Brick#hasLocation>
+  owl:equivalentProperty rec:locatedIn ;
+.
 <https://brickschema.org/schema/Brick#hasPart>
   owl:deprecated true ;
+  owl:equivalentProperty rec:hasPart ;
+.
+<https://brickschema.org/schema/Brick#isPartOf>
+  owl:equivalentProperty rec:isPartOf ;
 .
 <https://brickschema.org/schema/BrickShape#ValueShape>
   a sh:NodeShape ;
