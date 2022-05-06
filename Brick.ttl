@@ -1,6 +1,7 @@
 # baseURI: https://brickschema.org/schema/1.2/Brick
 # imports: http://datashapes.org/dash
 
+@prefix : <https://brickschema.org/schema/1.2/Brick#> .
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
@@ -2023,7 +2024,7 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-04-27" ;
+  dcterms1:modified "2022-05-06" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -56154,13 +56155,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
-          unit:V-A
+          unit:V-A_Reactive
+          unit:MegaV-A
+          unit:BTU_IT
           unit:KiloV-A_Reactive
           unit:KiloV-A
-          unit:BTU_IT
-          unit:MegaV-A
-          unit:V-A_Reactive
           unit:MegaV-A_Reactive
+          unit:V-A
         ) ;
       sh:minCount 1 ;
     ] ;
@@ -56374,6 +56375,25 @@ bsh:TiltShape
       sh:minCount 1 ;
       sh:or bsh:NumericValue ;
     ] ;
+.
+bsh:TimeseriesReferenceOnPointsConstraint
+  a sh:NodeShape ;
+  sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "Only Brick Points can have external timeseries references" ;
+      sh:prefixes rdf: ;
+      sh:prefixes rdfs: ;
+      sh:prefixes ref: ;
+      sh:select """
+            SELECT $this
+            WHERE {
+                $this ref:hasExternalReference ?ref .
+                ?ref rdf:type ref:TimeseriesReference .
+                FILTER NOT EXISTS { $this rdf:type/rdfs:subClassOf* brick:Point }
+            }
+        """ ;
+    ] ;
+  sh:targetSubjectsOf ref:hasExternalReference ;
 .
 bsh:ValueShape
   a owl:Class ;
