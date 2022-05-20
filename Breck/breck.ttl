@@ -58542,6 +58542,12 @@ tag:Zone
   rdfs:label "RealEstateCore" ;
   owl:versionInfo "4.0" ;
 .
+rec:ActuationEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Actuation event" ;
+  rdfs:subClassOf rec:PointEvent ;
+.
 rec:AdmittingRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -58748,14 +58754,6 @@ rec:Asset
       sh:path rec:hasPart ;
       sh:class rec:Asset ;
       sh:name "has part" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hosts ;
-      sh:class rec:LogicalDevice ;
-      sh:description "An asset can act as host to a logical device that communicates with a digital twin platform." ;
-      sh:name "hosts" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -59275,7 +59273,7 @@ rec:EquipmentCollection
 rec:Event
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (starting and ending times coalesce) or have temporal extent (starting and ending time diverge). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
+  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (timestamp property assigned) or have temporal extent (start and end properties assigned). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
   rdfs:label "Event" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
@@ -59294,6 +59292,19 @@ rec:Event
       sh:maxCount 1 ;
       sh:name "start" ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:timestamp ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "timestamp" ;
+    ] ;
+.
+rec:ExceptionEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Exception event" ;
+  rdfs:subClassOf rec:PointEvent ;
 .
 rec:ExerciseRoom
   a rdfs:Class ;
@@ -59558,81 +59569,6 @@ rec:LockerRoom
   rdfs:label "Locker room" ;
   rdfs:subClassOf rec:Room ;
 .
-rec:LogicalController
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical controller" ;
-  rdfs:subClassOf rec:LogicalDevice ;
-.
-rec:LogicalDevice
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:comment "A piece of software or dedicated circuitry that communicates and interacts with a digital twin platform. Could, represent, e.g., an integrated circuit inside of a smart HVAC unit, or a virtual server running on a Kubernetes cluster. Logical devices can have Point instances (through brick:hasPoint) that describe their input/output capabilties. If Logical Devices are embedded within Asset entities (through the hostedBy/hosts property) such capabilties typically denote the capabilities of the asset." ;
-  rdfs:label "Logical device" ;
-  rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:IPAddress ;
-      sh:datatype xsd:string ;
-      sh:name "IP address" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
-      sh:class rec:Document ;
-      sh:name "has document" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasPart ;
-      sh:class rec:LogicalDevice ;
-      sh:name "has part" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hostedBy ;
-      sh:class rec:Asset ;
-      sh:description "Indicates the asset that hosts this logical device." ;
-      sh:name "hosted by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:includedIn ;
-      sh:class rec:Collection ;
-      sh:name "included in" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:isPartOf ;
-      sh:class rec:LogicalDevice ;
-      sh:maxCount 1 ;
-      sh:name "is part of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-.
-rec:LogicalGateway
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical gateway" ;
-  rdfs:subClassOf rec:LogicalDevice ;
-.
-rec:LogicalServer
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical server" ;
-  rdfs:subClassOf rec:LogicalDevice ;
-.
 rec:MailRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59692,6 +59628,12 @@ rec:NeonatalNursingRoom
   a sh:NodeShape ;
   rdfs:label "Neonatal nursing room" ;
   rdfs:subClassOf rec:HealthcareRoom ;
+.
+rec:ObservationEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Observation event" ;
+  rdfs:subClassOf rec:PointEvent ;
 .
 rec:OccupancyZone
   a rdfs:Class ;
@@ -59838,6 +59780,32 @@ rec:PhoneBooth
   a sh:NodeShape ;
   rdfs:label "PhoneBooth" ;
   rdfs:subClassOf rec:Office ;
+.
+rec:PointEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment """An event emanating from or targeting a Point; e.g., an individual Observation from a Sensor point, or an Actuation sent to a Command point. In other terms, the Points indicate the capability of some Space or Equipment to emit or accept data, while this class represents those actual data messages. 
+
+Note that in most non-trivially sized systems, these events are not stored in the knowledge graph itself, but are rather forwarded to some C&C system or time series database.""" ;
+  rdfs:label "Point event" ;
+  rdfs:subClassOf rec:Event ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:minCount 1 ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:payload ;
+      sh:datatype xsd:string ;
+      sh:description "The payload message of this point event (e.g., a sensor reading, a command message, an exception message, etc.)" ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "payload" ;
+    ] ;
 .
 rec:Portfolio
   a rdfs:Class ;
