@@ -27,6 +27,12 @@ brick:Equipment
   owl:imports <https://w3id.org/rec/brickpatches> ;
   owl:versionInfo "4.0" ;
 .
+rec:ActuationEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Actuation event" ;
+  rdfs:subClassOf rec:PointEvent ;
+.
 rec:AdmittingRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -752,7 +758,7 @@ rec:EquipmentCollection
 rec:Event
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (starting and ending times coalesce) or have temporal extent (starting and ending time diverge). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
+  rdfs:comment "A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (timestamp property assigned) or have temporal extent (start and end properties assigned). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc." ;
   rdfs:label "Event" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
@@ -771,6 +777,19 @@ rec:Event
       sh:maxCount 1 ;
       sh:name "start" ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:timestamp ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "timestamp" ;
+    ] ;
+.
+rec:ExceptionEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Exception event" ;
+  rdfs:subClassOf rec:PointEvent ;
 .
 rec:ExerciseRoom
   a rdfs:Class ;
@@ -1095,6 +1114,12 @@ rec:NeonatalNursingRoom
   rdfs:label "Neonatal nursing room" ;
   rdfs:subClassOf rec:HealthcareRoom ;
 .
+rec:ObservationEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Observation event" ;
+  rdfs:subClassOf rec:PointEvent ;
+.
 rec:OccupancyZone
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1240,6 +1265,32 @@ rec:PhoneBooth
   a sh:NodeShape ;
   rdfs:label "PhoneBooth" ;
   rdfs:subClassOf rec:Office ;
+.
+rec:PointEvent
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment """An event emanating from or targeting a Point; e.g., an individual Observation from a Sensor point, or an Actuation sent to a Command point. In other terms, the Points indicate the capability of some Space or Equipment to emit or accept data, while this class represents those actual data messages. 
+
+Note that in most non-trivially sized systems, these events are not stored in the knowledge graph itself, but are rather forwarded to some C&C system or time series database.""" ;
+  rdfs:label "Point event" ;
+  rdfs:subClassOf rec:Event ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:minCount 1 ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:payload ;
+      sh:datatype xsd:string ;
+      sh:description "The payload message of this point event (e.g., a sensor reading, a command message, an exception message, etc.)" ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "payload" ;
+    ] ;
 .
 rec:Portfolio
   a rdfs:Class ;
