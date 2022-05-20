@@ -237,14 +237,6 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hosts ;
-      sh:class rec:LogicalDevice ;
-      sh:description "An asset can act as host to a logical device that communicates with a digital twin platform." ;
-      sh:name "hosts" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:initialCost ;
       sh:maxCount 1 ;
       sh:name "initial cost" ;
@@ -1042,81 +1034,6 @@ rec:LockerRoom
   a sh:NodeShape ;
   rdfs:label "Locker room" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:LogicalController
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical controller" ;
-  rdfs:subClassOf rec:LogicalDevice ;
-.
-rec:LogicalDevice
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:comment "A piece of software or dedicated circuitry that communicates and interacts with a digital twin platform. Could, represent, e.g., an integrated circuit inside of a smart HVAC unit, or a virtual server running on a Kubernetes cluster. Logical devices can have Point instances (through brick:hasPoint) that describe their input/output capabilties. If Logical Devices are embedded within Asset entities (through the hostedBy/hosts property) such capabilties typically denote the capabilities of the asset." ;
-  rdfs:label "Logical device" ;
-  rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:IPAddress ;
-      sh:datatype xsd:string ;
-      sh:name "IP address" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
-      sh:class rec:Document ;
-      sh:name "has document" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasPart ;
-      sh:class rec:LogicalDevice ;
-      sh:name "has part" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hostedBy ;
-      sh:class rec:Asset ;
-      sh:description "Indicates the asset that hosts this logical device." ;
-      sh:name "hosted by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:includedIn ;
-      sh:class rec:Collection ;
-      sh:name "included in" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:isPartOf ;
-      sh:class rec:LogicalDevice ;
-      sh:maxCount 1 ;
-      sh:name "is part of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-.
-rec:LogicalGateway
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical gateway" ;
-  rdfs:subClassOf rec:LogicalDevice ;
-.
-rec:LogicalServer
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Logical server" ;
-  rdfs:subClassOf rec:LogicalDevice ;
 .
 rec:MailRoom
   a rdfs:Class ;
