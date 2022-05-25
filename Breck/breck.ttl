@@ -21548,6 +21548,7 @@ brick:Furniture
   rdfs:label "Furniture" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Furniture> ;
   rdfs:subClassOf brick:Equipment ;
+  owl:deprecated true ;
   skos:definition "Movable objects intended to support various human activities such as seating, eating and sleeping"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -45219,6 +45220,7 @@ brick:Stage_Riser
   a sh:NodeShape ;
   rdfs:label "Stage Riser" ;
   rdfs:subClassOf brick:Furniture ;
+  rdfs:subClassOf rec:Furniture ;
   skos:definition "A low platform in a space or on a stage"@en ;
   sh:rule [
       a sh:TripleRule ;
