@@ -132,6 +132,9 @@
 <https://brickschema.org/schema/Brick#Freezer>
   owl:deprecated true ;
 .
+<https://brickschema.org/schema/Brick#Furniture>
+  owl:deprecated true ;
+.
 <https://brickschema.org/schema/Brick#Gatehouse>
   owl:deprecated true ;
 .
@@ -305,6 +308,9 @@
 .
 <https://brickschema.org/schema/Brick#Sports_Service_Room>
   owl:deprecated true ;
+.
+<https://brickschema.org/schema/Brick#Stage_Riser>
+  rdfs:subClassOf rec:Furniture ;
 .
 <https://brickschema.org/schema/Brick#Staircase>
   owl:deprecated true ;
