@@ -1,11 +1,9 @@
 # baseURI: https://brickschema.org/schema/1.2/Brick
 # imports: http://datashapes.org/dash
 
-@prefix : <https://brickschema.org/schema/1.2/Brick#> .
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcterms1: <http://purl.org/dc/terms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -2024,7 +2022,7 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-05-06" ;
+  dcterms1:modified "2022-06-07" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -7876,6 +7874,65 @@ brick:Collection
   a sh:NodeShape ;
   rdfs:label "Collection" ;
   rdfs:subClassOf brick:Entity ;
+  sh:and (
+      [
+        sh:message "Collection is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Equipment ;
+          ] ;
+      ]
+      [
+        sh:message "Collection is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Location ;
+          ] ;
+      ]
+      [
+        sh:message "Collection is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Substance ;
+          ] ;
+      ]
+      [
+        sh:message "Collection is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Quantity ;
+          ] ;
+      ]
+      [
+        sh:message "Collection is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Point ;
+          ] ;
+      ]
+    ) ;
+  sh:message "Collection is an exclusive top class." ;
+  sh:or (
+      sh:property
+      [
+        sh:path brick:hasPart ;
+        sh:class brick:Equipment ;
+        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
+      ]
+      sh:property
+      [
+        sh:path brick:hasPart ;
+        sh:class brick:Location ;
+        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
+      ]
+      sh:property
+      [
+        sh:path brick:hasPart ;
+        sh:class brick:Point ;
+        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
+      ]
+      sh:property
+      [
+        sh:path brick:hasPart ;
+        sh:class brick:Collection ;
+        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
+      ]
+    ) ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Collection ;
@@ -15699,7 +15756,6 @@ brick:Domestic_Water
   rdfs:label "Domestic Water" ;
   rdfs:subClassOf brick:Water ;
   skos:definition "A collection of equipment that transport and regulate domestic water among each other"@en ;
-  skos:definition "Tap water for drinking, washing, cooking, and flushing of toliets"@en ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Domestic ;
@@ -18489,6 +18545,88 @@ brick:Equipment
   rdfs:label "Equipment" ;
   rdfs:subClassOf brick:Entity ;
   skos:definition "devices that serve all or part of the building and may include electric power, lighting, transportation, or service water heating, including, but not limited to, furnaces, boilers, air conditioners, heat pumps, chillers, water heaters, lamps, luminaires, ballasts, elevators, escalators, or other devices or installations."@en ;
+  sh:and (
+      [
+        sh:message "Equipment is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Point ;
+          ] ;
+      ]
+      [
+        sh:message "Equipment is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Location ;
+          ] ;
+      ]
+      [
+        sh:message "Equipment is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Substance ;
+          ] ;
+      ]
+      [
+        sh:message "Equipment is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Quantity ;
+          ] ;
+      ]
+      [
+        sh:message "Equipment is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Collection ;
+          ] ;
+      ]
+    ) ;
+  sh:message "Equipment is an exclusive top class." ;
+  sh:or (
+      sh:property
+      [
+        sh:path brick:feeds ;
+        sh:class brick:Equipment ;
+        sh:message "A piece of Equipment can feed a Equipment" ;
+      ]
+      sh:property
+      [
+        sh:path brick:feeds ;
+        sh:class brick:Location ;
+        sh:message "A piece of Equipment can feed a Location" ;
+      ]
+    ) ;
+  sh:or (
+      sh:property
+      [
+        sh:path brick:isPartOf ;
+        sh:class brick:System ;
+        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
+      ]
+      sh:property
+      [
+        sh:path brick:isPartOf ;
+        sh:class brick:Equipment ;
+        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
+      ]
+      sh:property
+      [
+        sh:path brick:isPartOf ;
+        sh:class brick:Collection ;
+        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
+      ]
+    ) ;
+  sh:property [
+      sh:path brick:hasLocation ;
+      sh:class brick:Location ;
+      sh:message "A piece of Equipment can be located only at a Location" ;
+    ] ;
+  sh:property [
+      sh:path brick:hasPart ;
+      sh:class brick:Equipment ;
+      sh:message "A piece of Equipment's parts should be always other Equipment." ;
+    ] ;
+  sh:property [
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:message "A piece of Equipment may have associated Points" ;
+    ] ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Equipment ;
@@ -25162,7 +25300,6 @@ brick:Hot_Water_Flow_Sensor
   rdfs:label "Hot Water Flow Sensor" ;
   rdfs:subClassOf brick:Water_Flow_Sensor ;
   skos:definition "Measures the rate of flow in a hot water circuit"@en ;
-  skos:definition "Measures the rate of flow of hot water"@en ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Flow ;
@@ -28239,6 +28376,110 @@ brick:Location
   a sh:NodeShape ;
   rdfs:label "Location" ;
   rdfs:subClassOf brick:Entity ;
+  sh:and (
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Point ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Equipment ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Substance ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Quantity ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Collection ;
+          ] ;
+      ]
+    ) ;
+  sh:and (
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Point ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Equipment ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Substance ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Quantity ;
+          ] ;
+      ]
+      [
+        sh:message "Location is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Collection ;
+          ] ;
+      ]
+    ) ;
+  sh:property [
+      sh:path brick:hasPart ;
+      sh:class brick:Location ;
+      sh:message "A Location's parts should be always Locations." ;
+    ] ;
+  sh:property [
+      sh:path brick:hasPart ;
+      sh:class brick:Location ;
+      sh:message "A Location's parts should be always Locations." ;
+    ] ;
+  sh:property [
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:message "A Location may have associated Points" ;
+    ] ;
+  sh:property [
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:message "A Location may have associated Points" ;
+    ] ;
+  sh:property [
+      sh:path brick:isFedBy ;
+      sh:class brick:Equipment ;
+      sh:message "Locations can be fed only by other Equipment." ;
+    ] ;
+  sh:property [
+      sh:path brick:isFedBy ;
+      sh:class brick:Equipment ;
+      sh:message "Locations can be fed only by other Equipment." ;
+    ] ;
+  sh:property [
+      sh:path brick:isPartOf ;
+      sh:class brick:Location ;
+      sh:message "A Location's parts should be always Locations." ;
+    ] ;
+  sh:property [
+      sh:path brick:isPartOf ;
+      sh:class brick:Location ;
+      sh:message "A Location's parts should be always Locations." ;
+    ] ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Location ;
@@ -39152,7 +39393,6 @@ brick:PM1_Level_Sensor
   a sh:NodeShape ;
   rdfs:label "PM1 Level Sensor" ;
   rdfs:subClassOf brick:PM1_Sensor ;
-  skos:definition "Detects level of particulates of size 1 micron"@en ;
   skos:definition "Detects level of particulates of size 1 microns"@en ;
   sh:rule [
       a sh:TripleRule ;
@@ -39995,6 +40235,53 @@ brick:Point
   a sh:NodeShape ;
   rdfs:label "Point" ;
   rdfs:subClassOf brick:Entity ;
+  sh:and (
+      [
+        sh:message "Point is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Equipment ;
+          ] ;
+      ]
+      [
+        sh:message "Point is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Location ;
+          ] ;
+      ]
+      [
+        sh:message "Point is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Substance ;
+          ] ;
+      ]
+      [
+        sh:message "Point is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Quantity ;
+          ] ;
+      ]
+      [
+        sh:message "Point is an exclusive top class." ;
+        sh:not [
+            sh:class brick:Collection ;
+          ] ;
+      ]
+    ) ;
+  sh:message "Point is an exclusive top class." ;
+  sh:or (
+      sh:property
+      [
+        sh:path brick:isPointOf ;
+        sh:class brick:Location ;
+        sh:message "A point can be associated with Locations or Equipment" ;
+      ]
+      sh:property
+      [
+        sh:path brick:isPointOf ;
+        sh:class brick:Equipment ;
+        sh:message "A point can be associated with Locations or Equipment" ;
+      ]
+    ) ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Point ;
@@ -52615,7 +52902,6 @@ brick:Ventilation_Air_System
   rdfs:label "Ventilation Air System" ;
   rdfs:subClassOf brick:Air_System ;
   skos:definition "The equipment, devices, and conduits that handle the introduction and distribution of ventilation air in the building"@en ;
-  skos:definition "The equipment, distribution systems and terminals that introduce or exhaust, either collectively or individually, the air used for the ventilation system of the building"@en ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Air ;
@@ -54738,6 +55024,15 @@ brick:hasQuantity
   rdfs:label "Has QUDT reference" ;
   rdfs:subPropertyOf qudt:hasQuantityKind ;
 .
+brick:hasSubMeter
+  a owl:AsymmetricProperty ;
+  a owl:IrreflexiveProperty ;
+  a owl:ObjectProperty ;
+  rdfs:domain brick:Meter ;
+  rdfs:label "Indicates a submeter of this meter" ;
+  rdfs:range brick:Meter ;
+  owl:inverseOf brick:isSubMeterOf ;
+.
 brick:hasSubstance
   a owl:AsymmetricProperty ;
   a owl:IrreflexiveProperty ;
@@ -54786,6 +55081,14 @@ brick:isLocationOf
   owl:inverseOf brick:hasLocation ;
   skos:definition "Subject is the physical location encapsulating the object"@en ;
 .
+brick:isMeteredBy
+  a owl:AsymmetricProperty ;
+  a owl:IrreflexiveProperty ;
+  a owl:ObjectProperty ;
+  rdfs:label "Indicates the meter measuring the consumption/production of some substance by the subject entity" ;
+  rdfs:range brick:Meter ;
+  owl:inverseOf brick:meters ;
+.
 brick:isPartOf
   a owl:AsymmetricProperty ;
   a owl:IrreflexiveProperty ;
@@ -54802,13 +55105,14 @@ brick:isPointOf
   owl:inverseOf brick:hasPoint ;
   skos:definition "The subject is a source of telemetry related to the object. In some systems the source of telemetry may be represented as a digital/analog input/output point"@en ;
 .
-brick:isRegulatedBy
+brick:isSubMeterOf
   a owl:AsymmetricProperty ;
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
-  rdfs:domain brick:Substance ;
-  rdfs:label "Is regulated by" ;
-  rdfs:range brick:Equipment ;
+  rdfs:domain brick:Meter ;
+  rdfs:label "Indicates the parent for which this meter is a submeter" ;
+  rdfs:range brick:Meter ;
+  owl:inverseOf brick:hasSubMeter ;
 .
 brick:isTagOf
   a owl:AsymmetricProperty ;
@@ -54816,6 +55120,13 @@ brick:isTagOf
   a owl:ObjectProperty ;
   rdfs:domain brick:Tag ;
   rdfs:label "Is tag of" ;
+.
+brick:isVirtualMeter
+  a brick:EntityProperty ;
+  rdfs:domain brick:Meter ;
+  rdfs:label "is virtual meter" ;
+  rdfs:range bsh:VirtualMeterShape ;
+  skos:Definition "True if the associated meter is 'virtual', i.e. a logical meter which includes or aggregates information from a variety of sources such as other submeters or equipment." ;
 .
 brick:lastKnownValue
   a brick:EntityProperty ;
@@ -54853,6 +55164,14 @@ brick:measuredPowerOutput
   a brick:EntityProperty ;
   rdfs:range bsh:PowerShape ;
   skos:definition "The nominal measured power output of the entity" ;
+.
+brick:meters
+  a owl:AsymmetricProperty ;
+  a owl:IrreflexiveProperty ;
+  a owl:ObjectProperty ;
+  rdfs:domain brick:Meter ;
+  rdfs:label "Indicates the entity whose consumption/production of some substance is measured by this meter" ;
+  owl:inverseOf brick:isMeteredBy ;
 .
 brick:netArea
   a brick:EntityProperty ;
@@ -54983,16 +55302,6 @@ brick:ratedVoltageOutput
   rdfs:range bsh:VoltageShape ;
   skos:definition "The nominal rated voltage output of the entity" ;
 .
-brick:regulates
-  a owl:AsymmetricProperty ;
-  a owl:IrreflexiveProperty ;
-  a owl:ObjectProperty ;
-  rdfs:domain brick:Equipment ;
-  rdfs:label "Regulates" ;
-  rdfs:range brick:Substance ;
-  owl:inverseOf brick:isRegulatedBy ;
-  skos:definition "The subject contributes to or performs the regulation of the substance given by the object"@en ;
-.
 brick:temperatureCoefficientofPmax
   a brick:EntityProperty ;
   rdfs:label "Temperature coefficient" ;
@@ -55039,17 +55348,6 @@ brick:yearBuilt
   rdfs:range bsh:YearBuiltShape ;
   rdfs:seeAlso "https://project-haystack.org/tag/yearBuilt" ;
   skos:definition "Four digit year that a building was first built. (adopted from Project Haystack)" ;
-.
-<https://brickschema.org/schema/Brick/ref>
-  a owl:Ontology ;
-  dcterms:creator (
-      [
-        a sdo:Person ;
-        sdo:email "gtfierro@mines.edu" ;
-        sdo:name "Gabe Fierro" ;
-      ]
-    ) ;
-  dcterms:title "Ref Schema" ;
 .
 ref:BACnetReference
   a owl:Class ;
@@ -55367,6 +55665,25 @@ bsh:AzimuthShape
       sh:or bsh:NumericValue ;
     ] ;
 .
+bsh:BuildingMeterRule
+  a sh:NodeShape ;
+  sh:rule [
+      a sh:SPARQLRule ;
+      sh:construct """
+        CONSTRUCT {
+            $this rdf:type ?newtype .
+        }
+        WHERE {
+            $this brick:meters ?bldg .
+            ?bldg rdf:type/rdfs:subClassOf* brick:Building .
+            $this rdf:type ?type .
+            BIND(IRI(CONCAT(\"https://brickschema.org/schema/Brick#Building_\", strafter(str(?type), \"https://brickschema.org/schema/Brick#\"))) as ?newtype) .
+            FILTER (strEnds(str(?type), \"_Meter\"))
+        }
+        """ ;
+    ] ;
+  sh:targetClass brick:Meter ;
+.
 bsh:BuildingPrimaryFunctionShape
   a owl:Class ;
   a sh:NodeShape ;
@@ -55470,69 +55787,6 @@ bsh:BuildingPrimaryFunctionShape
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
-.
-bsh:CollectionShape
-  a sh:NodeShape ;
-  sh:and (
-      [
-        sh:message "Collection is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Equipment ;
-          ] ;
-      ]
-      [
-        sh:message "Collection is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Location ;
-          ] ;
-      ]
-      [
-        sh:message "Collection is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Substance ;
-          ] ;
-      ]
-      [
-        sh:message "Collection is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Quantity ;
-          ] ;
-      ]
-      [
-        sh:message "Collection is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Point ;
-          ] ;
-      ]
-    ) ;
-  sh:message "Collection is an exclusive top class." ;
-  sh:or (
-      sh:property
-      [
-        sh:path brick:hasPart ;
-        sh:class brick:Equipment ;
-        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
-      ]
-      sh:property
-      [
-        sh:path brick:hasPart ;
-        sh:class brick:Location ;
-        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
-      ]
-      sh:property
-      [
-        sh:path brick:hasPart ;
-        sh:class brick:Point ;
-        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
-      ]
-      sh:property
-      [
-        sh:path brick:hasPart ;
-        sh:class brick:Collection ;
-        sh:message "A Collection can be associated with Equipments, Locations, Points, and other Collections." ;
-      ]
-    ) ;
-  sh:targetClass brick:Collection ;
 .
 bsh:CoolingCapacityShape
   a owl:Class ;
@@ -55704,92 +55958,6 @@ bsh:EfficiencyShape
       sh:or bsh:NumericValue ;
     ] ;
 .
-bsh:EquipmentShape
-  a sh:NodeShape ;
-  sh:and (
-      [
-        sh:message "Equipment is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Point ;
-          ] ;
-      ]
-      [
-        sh:message "Equipment is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Location ;
-          ] ;
-      ]
-      [
-        sh:message "Equipment is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Substance ;
-          ] ;
-      ]
-      [
-        sh:message "Equipment is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Quantity ;
-          ] ;
-      ]
-      [
-        sh:message "Equipment is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Collection ;
-          ] ;
-      ]
-    ) ;
-  sh:message "Equipment is an exclusive top class." ;
-  sh:or (
-      sh:property
-      [
-        sh:path brick:feeds ;
-        sh:class brick:Equipment ;
-        sh:message "A piece of Equipment can feed a Equipment" ;
-      ]
-      sh:property
-      [
-        sh:path brick:feeds ;
-        sh:class brick:Location ;
-        sh:message "A piece of Equipment can feed a Location" ;
-      ]
-    ) ;
-  sh:or (
-      sh:property
-      [
-        sh:path brick:isPartOf ;
-        sh:class brick:System ;
-        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
-      ]
-      sh:property
-      [
-        sh:path brick:isPartOf ;
-        sh:class brick:Equipment ;
-        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
-      ]
-      sh:property
-      [
-        sh:path brick:isPartOf ;
-        sh:class brick:Collection ;
-        sh:message "Equipment can be part of a Collection, System or other Equipment" ;
-      ]
-    ) ;
-  sh:property [
-      sh:path brick:hasLocation ;
-      sh:class brick:Location ;
-      sh:message "A piece of Equipment can be located only at a Location" ;
-    ] ;
-  sh:property [
-      sh:path brick:hasPart ;
-      sh:class brick:Equipment ;
-      sh:message "A piece of Equipment's parts should be always other Equipment." ;
-    ] ;
-  sh:property [
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:message "A piece of Equipment may have associated Points" ;
-    ] ;
-  sh:targetClass brick:Equipment ;
-.
 bsh:InferInverseProperties
   a sh:NodeShape ;
   sh:rule [
@@ -55844,61 +56012,25 @@ bsh:LastKnownValueShape
       sh:minCount 1 ;
     ] ;
 .
-bsh:LocationShape
+bsh:MeterRelationshipRule
   a sh:NodeShape ;
-  sh:and (
-      [
-        sh:message "Location is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Point ;
-          ] ;
-      ]
-      [
-        sh:message "Location is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Equipment ;
-          ] ;
-      ]
-      [
-        sh:message "Location is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Substance ;
-          ] ;
-      ]
-      [
-        sh:message "Location is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Quantity ;
-          ] ;
-      ]
-      [
-        sh:message "Location is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Collection ;
-          ] ;
-      ]
-    ) ;
   sh:property [
-      sh:path brick:hasPart ;
-      sh:class brick:Location ;
-      sh:message "A Location's parts should be always Locations." ;
+      sh:path brick:isMeteredBy ;
+      sh:message "Relationship between meters is hasSubMeter/isSubMeterOf, not meters/isMeteredBy" ;
+      sh:qualifiedMaxCount 0 ;
+      sh:qualifiedValueShape [
+          sh:class brick:Meter ;
+        ] ;
     ] ;
   sh:property [
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:message "A Location may have associated Points" ;
+      sh:path brick:meters ;
+      sh:message "Relationship between meters is hasSubMeter/isSubMeterOf, not meters/isMeteredBy" ;
+      sh:qualifiedMaxCount 0 ;
+      sh:qualifiedValueShape [
+          sh:class brick:Meter ;
+        ] ;
     ] ;
-  sh:property [
-      sh:path brick:isFedBy ;
-      sh:class brick:Equipment ;
-      sh:message "Locations can be fed only by other Equipment." ;
-    ] ;
-  sh:property [
-      sh:path brick:isPartOf ;
-      sh:class brick:Location ;
-      sh:message "A Location's parts should be always Locations." ;
-    ] ;
-  sh:targetClass brick:Location ;
+  sh:targetClass brick:Meter ;
 .
 bsh:NumericValue
   a rdf:List ;
@@ -56007,57 +56139,6 @@ bsh:PhasesShape
       sh:minCount 1 ;
     ] ;
 .
-bsh:PointShape
-  a sh:NodeShape ;
-  sh:and (
-      [
-        sh:message "Point is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Equipment ;
-          ] ;
-      ]
-      [
-        sh:message "Point is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Location ;
-          ] ;
-      ]
-      [
-        sh:message "Point is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Substance ;
-          ] ;
-      ]
-      [
-        sh:message "Point is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Quantity ;
-          ] ;
-      ]
-      [
-        sh:message "Point is an exclusive top class." ;
-        sh:not [
-            sh:class brick:Collection ;
-          ] ;
-      ]
-    ) ;
-  sh:message "Point is an exclusive top class." ;
-  sh:or (
-      sh:property
-      [
-        sh:path brick:isPointOf ;
-        sh:class brick:Location ;
-        sh:message "A point can be associated with Locations or Equipment" ;
-      ]
-      sh:property
-      [
-        sh:path brick:isPointOf ;
-        sh:class brick:Equipment ;
-        sh:message "A point can be associated with Locations or Equipment" ;
-      ]
-    ) ;
-  sh:targetClass brick:Point ;
-.
 bsh:PowerComplexityShape
   a owl:Class ;
   a sh:NodeShape ;
@@ -56155,13 +56236,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
+          unit:MegaV-A_Reactive
+          unit:BTU_IT
           unit:V-A_Reactive
           unit:MegaV-A
-          unit:BTU_IT
           unit:KiloV-A_Reactive
-          unit:KiloV-A
-          unit:MegaV-A_Reactive
           unit:V-A
+          unit:KiloV-A
         ) ;
       sh:minCount 1 ;
     ] ;
@@ -56398,6 +56479,40 @@ bsh:TimeseriesReferenceOnPointsConstraint
 bsh:ValueShape
   a owl:Class ;
 .
+bsh:VirtualMeterRule
+  a sh:NodeShape ;
+  sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "Only meters can have the isVirtualMeter property be true" ;
+      sh:prefixes rdf: ;
+      sh:prefixes rdfs: ;
+      sh:prefixes brick: ;
+      sh:select """
+            SELECT $this WHERE {
+                $this brick:isVirtualMeter/brick:value true .
+                FILTER NOT EXISTS { $this rdf:type/rdfs:subClassOf* brick:Meter } .
+            }
+        """ ;
+    ] ;
+  sh:targetClass brick:Entity ;
+.
+bsh:VirtualMeterShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:datatype xsd:boolean ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+.
 bsh:VoltageShape
   a owl:Class ;
   a sh:NodeShape ;
@@ -56481,6 +56596,21 @@ bsh:YearBuiltShape
       sh:minCount 1 ;
     ] ;
 .
+bsh:domain_shape_isMeteredBy
+  a sh:NodeShape ;
+  sh:or (
+      [
+        sh:class brick:Equipment ;
+      ]
+      [
+        sh:class brick:Location ;
+      ]
+      [
+        sh:class brick:Collection ;
+      ]
+    ) ;
+  sh:targetSubjectsOf brick:isMeteredBy ;
+.
 bsh:hasHotColdDeck
   a sh:NodeShape ;
   sh:property [
@@ -56512,6 +56642,25 @@ bsh:hasLocationShape
       sh:class brick:Point ;
     ] ;
   sh:targetSubjectsOf brick:hasLocation ;
+.
+bsh:range_shape_meters
+  a sh:NodeShape ;
+  sh:property [
+      sh:path brick:meters ;
+      sh:minCount 1 ;
+      sh:or (
+          [
+            sh:class brick:Equipment ;
+          ]
+          [
+            sh:class brick:Location ;
+          ]
+          [
+            sh:class brick:Collection ;
+          ]
+        ) ;
+    ] ;
+  sh:targetSubjectsOf brick:meters ;
 .
 tag:AED
   a brick:Tag ;
