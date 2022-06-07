@@ -40370,6 +40370,20 @@ brick:Point
         sh:message "A point can be associated with Locations or Equipment" ;
       ]
     ) ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasQuantity ;
+      sh:class brick:Quantity ;
+      sh:name "has quantity" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasSubstance ;
+      sh:class brick:Substance ;
+      sh:name "has substance" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Point ;

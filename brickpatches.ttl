@@ -252,6 +252,22 @@
 <https://brickschema.org/schema/Brick#Plumbing_Room>
   owl:deprecated true ;
 .
+<https://brickschema.org/schema/Brick#Point>
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <https://brickschema.org/schema/Brick#hasQuantity> ;
+      sh:class <https://brickschema.org/schema/Brick#Quantity> ;
+      sh:name "has quantity" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path <https://brickschema.org/schema/Brick#hasSubstance> ;
+      sh:class <https://brickschema.org/schema/Brick#Substance> ;
+      sh:name "has substance" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 <https://brickschema.org/schema/Brick#Portfolio>
   owl:deprecated true ;
 .
