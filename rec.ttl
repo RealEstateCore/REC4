@@ -1394,6 +1394,19 @@ Note that in most non-trivially sized systems, these events are not stored in th
       sh:name "payload" ;
     ] ;
 .
+rec:PointOfInterest
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Point of Interest" ;
+  rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:objectOfInterest ;
+      sh:maxCount 1 ;
+      sh:name "object of interest" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:Portfolio
   a rdfs:Class ;
   a sh:NodeShape ;
