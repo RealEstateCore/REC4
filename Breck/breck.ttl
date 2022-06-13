@@ -59470,6 +59470,19 @@ rec:EquipmentCollection
   rdfs:subClassOf rec:AssetCollection ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path brick:feeds ;
+      sh:name "feeds" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:includes ;
       sh:class brick:Equipment ;
       sh:minCount 1 ;
