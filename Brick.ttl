@@ -2022,7 +2022,7 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-06-07" ;
+  dcterms1:modified "2022-06-13" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -55029,9 +55029,10 @@ brick:hasSubMeter
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:domain brick:Meter ;
-  rdfs:label "Indicates a submeter of this meter" ;
+  rdfs:label "has sub-meter" ;
   rdfs:range brick:Meter ;
   owl:inverseOf brick:isSubMeterOf ;
+  skos:definition "Indicates a submeter of this meter"@en ;
 .
 brick:hasSubstance
   a owl:AsymmetricProperty ;
@@ -55085,9 +55086,10 @@ brick:isMeteredBy
   a owl:AsymmetricProperty ;
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
-  rdfs:label "Indicates the meter measuring the consumption/production of some substance by the subject entity" ;
+  rdfs:label "is metered by" ;
   rdfs:range brick:Meter ;
   owl:inverseOf brick:meters ;
+  skos:definition "Indicates the meter measuring the consumption/production of some substance by the subject entity"@en ;
 .
 brick:isPartOf
   a owl:AsymmetricProperty ;
@@ -55110,9 +55112,10 @@ brick:isSubMeterOf
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:domain brick:Meter ;
-  rdfs:label "Indicates the parent for which this meter is a submeter" ;
+  rdfs:label "is sub-meter of" ;
   rdfs:range brick:Meter ;
   owl:inverseOf brick:hasSubMeter ;
+  skos:definition "Indicates the parent for which this meter is a submeter"@en ;
 .
 brick:isTagOf
   a owl:AsymmetricProperty ;
@@ -55170,8 +55173,9 @@ brick:meters
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:domain brick:Meter ;
-  rdfs:label "Indicates the entity whose consumption/production of some substance is measured by this meter" ;
+  rdfs:label "meters" ;
   owl:inverseOf brick:isMeteredBy ;
+  skos:definition "Indicates the entity whose consumption/production of some substance is measured by this meter"@en ;
 .
 brick:netArea
   a brick:EntityProperty ;
@@ -56236,12 +56240,12 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
-          unit:MegaV-A_Reactive
+          unit:V-A
           unit:BTU_IT
           unit:V-A_Reactive
+          unit:MegaV-A_Reactive
           unit:MegaV-A
           unit:KiloV-A_Reactive
-          unit:V-A
           unit:KiloV-A
         ) ;
       sh:minCount 1 ;
