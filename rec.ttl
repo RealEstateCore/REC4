@@ -18,6 +18,12 @@
 
 brick:Equipment
   rdfs:subClassOf rec:Asset ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:isFedBy ;
+      sh:name "is fed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 <https://w3id.org/rec>
   a owl:Ontology ;
