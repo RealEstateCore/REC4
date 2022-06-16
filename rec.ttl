@@ -1702,6 +1702,12 @@ rec:Space
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:isLocationOf ;
+      sh:name "is location of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:isPartOf ;
       sh:class rec:Space ;
       sh:maxCount 1 ;
