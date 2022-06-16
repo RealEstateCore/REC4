@@ -27,6 +27,12 @@ brick:Equipment
   owl:imports <https://w3id.org/rec/brickpatches> ;
   owl:versionInfo "4.0" ;
 .
+rec:AccessControlZone
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Access control zone" ;
+  rdfs:subClassOf rec:Zone ;
+.
 rec:ActuationEvent
   a rdfs:Class ;
   a sh:NodeShape ;
