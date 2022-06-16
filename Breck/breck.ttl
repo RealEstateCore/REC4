@@ -18653,6 +18653,12 @@ brick:Equipment
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:isFedBy ;
+      sh:name "is fed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
       sh:path brick:hasLocation ;
       sh:class brick:Location ;
       sh:message "A piece of Equipment can be located only at a Location" ;
@@ -58713,6 +58719,12 @@ tag:Zone
   rdfs:label "RealEstateCore" ;
   owl:versionInfo "4.0" ;
 .
+rec:AccessControlZone
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Access control zone" ;
+  rdfs:subClassOf rec:Zone ;
+.
 rec:ActuationEvent
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -60378,6 +60390,12 @@ rec:Space
       sh:path rec:hasPart ;
       sh:class rec:Space ;
       sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isLocationOf ;
+      sh:name "is location of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
