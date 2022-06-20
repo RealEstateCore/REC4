@@ -1638,6 +1638,102 @@ rec:ServiceEntrance
   rdfs:label "Service entrance" ;
   rdfs:subClassOf rec:Entrance ;
 .
+rec:ServiceObject
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Service object" ;
+  rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:acknowledgedBy ;
+      sh:class rec:Agent ;
+      sh:name "acknowledged by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:acknowledgedTime ;
+      sh:datatype xsd:dateTime ;
+      sh:name "acknowledged time" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:closedBy ;
+      sh:class rec:Agent ;
+      sh:name "closed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:closedTime ;
+      sh:datatype xsd:dateTime ;
+      sh:name "closed time" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:createdBy ;
+      sh:class rec:Agent ;
+      sh:name "created by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:createdTime ;
+      sh:datatype xsd:dateTime ;
+      sh:name "created time" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:producedBy ;
+      sh:class brick:Point ;
+      sh:name "produced by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:relatedTo ;
+      sh:minCount 1 ;
+      sh:name "related to" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:serviceType ;
+      sh:in (
+          "WorkOrder"
+          "ErrorReport"
+          "Alarm"
+          "Notification"
+        ) ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "service type" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:severity ;
+      sh:in (
+          "Severe"
+          "Major"
+          "Minor"
+        ) ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "severity" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:status ;
+      sh:in (
+          "Unacknowledged"
+          "Acknowledged"
+          "Closed"
+        ) ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "status" ;
+    ] ;
+.
 rec:ServiceShaft
   a rdfs:Class ;
   a sh:NodeShape ;
