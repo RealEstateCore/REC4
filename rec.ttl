@@ -44,6 +44,15 @@ rec:ActuationEvent
   a sh:NodeShape ;
   rdfs:label "Actuation event" ;
   rdfs:subClassOf rec:PointEvent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:targetPoint ;
+      sh:class brick:Point ;
+      sh:description "The brick:Point(s) (e.g., brick:Commands, brick:Setpoints, or brick:Parameters) that the actuation will target/execute." ;
+      sh:minCount 1 ;
+      sh:name "target point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:AdmittingRoom
   a rdfs:Class ;
@@ -869,6 +878,16 @@ rec:ExceptionEvent
   a sh:NodeShape ;
   rdfs:label "Exception event" ;
   rdfs:subClassOf rec:PointEvent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:sourcePoint ;
+      sh:class brick:Point ;
+      sh:description "The brick:Point that emitted this exception." ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "source point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:ExerciseRoom
   a rdfs:Class ;
@@ -1234,6 +1253,16 @@ rec:ObservationEvent
   a sh:NodeShape ;
   rdfs:label "Observation event" ;
   rdfs:subClassOf rec:PointEvent ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:sourcePoint ;
+      sh:class brick:Point ;
+      sh:description "The brick:Point that emitted this observation." ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "source point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 rec:OccupancySensorEquipment
   a rdfs:Class ;
@@ -1401,14 +1430,6 @@ rec:PointEvent
 Note that in most non-trivially sized systems, these events are not stored in the knowledge graph itself, but are rather forwarded to some C&C system or time series database.""" ;
   rdfs:label "Point event" ;
   rdfs:subClassOf rec:Event ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:minCount 1 ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:payload ;
