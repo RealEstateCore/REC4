@@ -58796,6 +58796,12 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path brick:isFedBy ;
+      sh:name "is fed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:address ;
       sh:class rec:PostalAddress ;
       sh:description "Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question." ;
