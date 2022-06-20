@@ -58761,6 +58761,12 @@ rec:Agent
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:AlarmObject
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Alarm object" ;
+  rdfs:subClassOf rec:ServiceObject ;
+.
 rec:Apartment
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59511,6 +59517,12 @@ rec:EquipmentCollection
       sh:nodeKind sh:IRI ;
     ] ;
 .
+rec:ErrorReport
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Error report" ;
+  rdfs:subClassOf rec:ServiceObject ;
+.
 rec:EthernetRouter
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -59934,6 +59946,12 @@ rec:NetworkSecurityEquipment
   rdfs:label "Network security equipment" ;
   rdfs:subClassOf rec:DataNetworkEquipment ;
 .
+rec:NotificationObject
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Notification object" ;
+  rdfs:subClassOf rec:ServiceObject ;
+.
 rec:ObservationEvent
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -60333,6 +60351,7 @@ rec:ServiceObject
       a sh:PropertyShape ;
       sh:path rec:acknowledgedBy ;
       sh:class rec:Agent ;
+      sh:maxCount 1 ;
       sh:name "acknowledged by" ;
       sh:nodeKind sh:IRI ;
     ] ;
@@ -60340,12 +60359,14 @@ rec:ServiceObject
       a sh:PropertyShape ;
       sh:path rec:acknowledgedTime ;
       sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
       sh:name "acknowledged time" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:closedBy ;
       sh:class rec:Agent ;
+      sh:maxCount 1 ;
       sh:name "closed by" ;
       sh:nodeKind sh:IRI ;
     ] ;
@@ -60353,12 +60374,14 @@ rec:ServiceObject
       a sh:PropertyShape ;
       sh:path rec:closedTime ;
       sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
       sh:name "closed time" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:createdBy ;
       sh:class rec:Agent ;
+      sh:maxCount 1 ;
       sh:name "created by" ;
       sh:nodeKind sh:IRI ;
     ] ;
@@ -60366,6 +60389,7 @@ rec:ServiceObject
       a sh:PropertyShape ;
       sh:path rec:createdTime ;
       sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
       sh:name "created time" ;
     ] ;
   sh:property [
@@ -60381,19 +60405,6 @@ rec:ServiceObject
       sh:minCount 1 ;
       sh:name "related to" ;
       sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:serviceType ;
-      sh:in (
-          "WorkOrder"
-          "ErrorReport"
-          "Alarm"
-          "Notification"
-        ) ;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-      sh:name "service type" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
@@ -60679,6 +60690,12 @@ rec:WirelessAccessPoint
   a sh:NodeShape ;
   rdfs:label "Wireless access point" ;
   rdfs:subClassOf rec:DataNetworkEquipment ;
+.
+rec:WorkOrder
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Work order" ;
+  rdfs:subClassOf rec:ServiceObject ;
 .
 rec:Workshop
   a rdfs:Class ;
