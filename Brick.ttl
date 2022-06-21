@@ -1,4 +1,4 @@
-# baseURI: https://brickschema.org/schema/1.2/Brick
+# baseURI: https://brickschema.org/schema/1.3/Brick
 # imports: http://datashapes.org/dash
 
 @prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
@@ -2006,7 +2006,7 @@ sosa:FeatureOfInterest
 sosa:ObservableProperty
   a owl:Class ;
 .
-<https://brickschema.org/schema/1.2/Brick>
+<https://brickschema.org/schema/1.3/Brick>
   a owl:Ontology ;
   dcterms1:creator (
       [
@@ -2022,17 +2022,17 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-06-13" ;
+  dcterms1:modified "2022-06-21" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
       sdo:sameAs <https://brickschema.org/consortium/> ;
     ] ;
-  rdfs:isDefinedBy <https://brickschema.org/schema/1.2/Brick> ;
+  rdfs:isDefinedBy <https://brickschema.org/schema/1.3/Brick> ;
   rdfs:label "Brick" ;
   rdfs:seeAlso <https://brickschema.org> ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:versionInfo "1.2.1" ;
+  owl:versionInfo "1.3.0" ;
 .
 brick:AED
   a owl:Class ;
@@ -56240,13 +56240,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
-          unit:V-A
+          unit:KiloV-A
           unit:BTU_IT
+          unit:MegaV-A
           unit:V-A_Reactive
           unit:MegaV-A_Reactive
-          unit:MegaV-A
+          unit:V-A
           unit:KiloV-A_Reactive
-          unit:KiloV-A
         ) ;
       sh:minCount 1 ;
     ] ;
