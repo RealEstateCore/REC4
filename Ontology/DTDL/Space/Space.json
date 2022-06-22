@@ -7,7 +7,7 @@
       "displayName": {
         "en": "is part of"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "isPartOf",
       "target": "dtmi:org:w3id:rec:Space",
       "writable": true
