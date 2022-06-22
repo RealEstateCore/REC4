@@ -14,28 +14,6 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "area"
-      },
-      "description": {
-        "en": "Represents the spatial extent of the Architecture. As this can be measured in multiple ways using multiple units, a string->float map schema is used, such that systems can employ different representations (e.g., area[\"rentableSqFeet\"]=1500.0)"
-      },
-      "name": "area",
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "areaType",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "areaValue",
-          "schema": "float"
-        }
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "person occupancy"
       },
       "name": "personOccupancy",
@@ -104,6 +82,14 @@
       "name": "constructedBy",
       "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "area"
+      },
+      "name": "area",
+      "schema": "dtmi:org:w3id:rec:AreaMeasurement"
     },
     {
       "@type": "Relationship",

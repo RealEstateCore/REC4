@@ -58824,6 +58824,14 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:area ;
+      sh:class rec:AreaMeasurement ;
+      sh:maxCount 1 ;
+      sh:name "area" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:constructedBy ;
       sh:class rec:Agent ;
       sh:nodeKind sh:IRI ;
@@ -58891,6 +58899,35 @@ rec:Architecture
       sh:class rec:Document ;
       sh:name "subject of" ;
       sh:nodeKind sh:IRI ;
+    ] ;
+.
+rec:AreaMeasurement
+  a <dtmi:dtdl:class:Component> ;
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Describes business-relevant area measurements typically associated with architected spaces. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged." ;
+  rdfs:label "Area measurement" ;
+  rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:grossArea ;
+      sh:datatype xsd:float ;
+      sh:maxCount 1 ;
+      sh:name "gross area" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:netArea ;
+      sh:datatype xsd:float ;
+      sh:maxCount 1 ;
+      sh:name "net area" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:rentableArea ;
+      sh:datatype xsd:float ;
+      sh:maxCount 1 ;
+      sh:name "rentable area" ;
     ] ;
 .
 rec:Asset
