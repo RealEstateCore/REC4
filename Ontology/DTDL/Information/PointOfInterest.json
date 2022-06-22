@@ -7,7 +7,7 @@
       "displayName": {
         "en": "object of interest"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "objectOfInterest",
       "writable": true
     }

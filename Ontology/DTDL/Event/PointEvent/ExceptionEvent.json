@@ -10,7 +10,7 @@
       "displayName": {
         "en": "source point"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "sourcePoint",
       "target": "dtmi:org:brickschema:schema:Brick:Point",
       "writable": true

@@ -85,7 +85,7 @@
       "displayName": {
         "en": "created by"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "createdBy",
       "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
@@ -104,7 +104,7 @@
       "displayName": {
         "en": "closed by"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "closedBy",
       "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
@@ -123,7 +123,7 @@
       "displayName": {
         "en": "acknowledged by"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "acknowledgedBy",
       "target": "dtmi:org:w3id:rec:Agent",
       "writable": true

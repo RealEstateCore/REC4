@@ -10,7 +10,7 @@
       "displayName": {
         "en": "located in"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "locatedIn",
       "target": "dtmi:org:w3id:rec:Architecture",
       "writable": true
@@ -20,7 +20,7 @@
       "displayName": {
         "en": "is part of"
       },
-      "maxMultiplicity": "1",
+      "maxMultiplicity": 1,
       "name": "isPartOf",
       "target": "dtmi:org:w3id:rec:BuildingElement",
       "writable": true
