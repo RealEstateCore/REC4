@@ -86,6 +86,14 @@
     {
       "@type": "Component",
       "displayName": {
+        "en": "capacity"
+      },
+      "name": "capacity",
+      "schema": "dtmi:org:w3id:rec:ArchitectureCapacity"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
         "en": "area"
       },
       "name": "area",

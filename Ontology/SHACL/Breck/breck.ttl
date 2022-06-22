@@ -58832,6 +58832,14 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:capacity ;
+      sh:class rec:ArchitectureCapacity ;
+      sh:maxCount 1 ;
+      sh:name "capacity" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:constructedBy ;
       sh:class rec:Agent ;
       sh:nodeKind sh:IRI ;
@@ -58928,6 +58936,29 @@ rec:ArchitectureArea
       sh:datatype xsd:float ;
       sh:maxCount 1 ;
       sh:name "rentable area" ;
+    ] ;
+.
+rec:ArchitectureCapacity
+  a <dtmi:dtdl:class:Component> ;
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Describes business-relevant capacity measurements typically associated with architected spaces. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged." ;
+  rdfs:label "Architecture capacity" ;
+  rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:maxOccupancy ;
+      sh:datatype xsd:integer ;
+      sh:description "E.g., per Building Code" ;
+      sh:maxCount 1 ;
+      sh:name "maximum occupancy" ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:seatingCapacity ;
+      sh:datatype xsd:integer ;
+      sh:maxCount 1 ;
+      sh:name "seating capacity" ;
     ] ;
 .
 rec:Asset
