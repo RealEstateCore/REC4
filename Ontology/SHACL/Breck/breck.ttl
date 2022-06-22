@@ -58889,20 +58889,6 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:personCapacity ;
-      sh:datatype xsd:integer ;
-      sh:maxCount 1 ;
-      sh:name "person capacity" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:personOccupancy ;
-      sh:datatype xsd:integer ;
-      sh:maxCount 1 ;
-      sh:name "person occupancy" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:subjectOf ;
       sh:class rec:Document ;
       sh:name "subject of" ;

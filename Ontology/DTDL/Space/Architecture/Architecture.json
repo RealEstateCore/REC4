@@ -12,24 +12,6 @@
       "writable": true
     },
     {
-      "@type": "Property",
-      "displayName": {
-        "en": "person occupancy"
-      },
-      "name": "personOccupancy",
-      "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "person capacity"
-      },
-      "name": "personCapacity",
-      "schema": "integer",
-      "writable": true
-    },
-    {
       "@type": "Relationship",
       "displayName": {
         "en": "owned by"
