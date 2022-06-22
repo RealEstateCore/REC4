@@ -89,7 +89,7 @@
         "en": "area"
       },
       "name": "area",
-      "schema": "dtmi:org:w3id:rec:AreaMeasurement"
+      "schema": "dtmi:org:w3id:rec:ArchitectureArea"
     },
     {
       "@type": "Relationship",

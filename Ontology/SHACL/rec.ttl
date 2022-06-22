@@ -139,7 +139,7 @@ rec:Architecture
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:area ;
-      sh:class rec:AreaMeasurement ;
+      sh:class rec:ArchitectureArea ;
       sh:maxCount 1 ;
       sh:name "area" ;
       sh:nodeKind sh:IRI ;
@@ -215,12 +215,12 @@ rec:Architecture
       sh:nodeKind sh:IRI ;
     ] ;
 .
-rec:AreaMeasurement
+rec:ArchitectureArea
   a <dtmi:dtdl:class:Component> ;
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:comment "Describes business-relevant area measurements typically associated with architected spaces. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged." ;
-  rdfs:label "Area measurement" ;
+  rdfs:label "Architecture area" ;
   rdfs:subClassOf rec:Information ;
   sh:property [
       a sh:PropertyShape ;

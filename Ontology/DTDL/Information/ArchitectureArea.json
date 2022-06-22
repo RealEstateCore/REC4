@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:AreaMeasurement",
+  "@id": "dtmi:org:w3id:rec:ArchitectureArea",
   "@type": "Interface",
   "contents": [
     {
@@ -34,7 +34,7 @@
     "en": "Describes business-relevant area measurements typically associated with architected spaces. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged."
   },
   "displayName": {
-    "en": "Area measurement"
+    "en": "Architecture area"
   },
   "extends": "dtmi:org:w3id:rec:Information",
   "@context": [
