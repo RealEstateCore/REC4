@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:ServerComputer",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Server computer"
+  },
+  "extends": "dtmi:org:w3id:rec:Computer",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

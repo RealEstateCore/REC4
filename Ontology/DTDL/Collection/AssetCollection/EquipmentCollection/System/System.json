@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:System",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Has part"
+      },
+      "name": "hasPart",
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "System"
+  },
+  "extends": "dtmi:org:w3id:rec:EquipmentCollection",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

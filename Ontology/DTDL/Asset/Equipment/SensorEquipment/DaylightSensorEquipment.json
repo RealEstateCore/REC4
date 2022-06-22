@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:DaylightSensorEquipment",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Daylight sensor equipment"
+  },
+  "extends": "dtmi:org:w3id:rec:SensorEquipment",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

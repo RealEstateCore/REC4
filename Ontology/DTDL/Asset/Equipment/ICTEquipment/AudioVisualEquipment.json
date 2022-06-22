@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:AudioVisualEquipment",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Audio visual equipment"
+  },
+  "extends": "dtmi:org:w3id:rec:ICTEquipment",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

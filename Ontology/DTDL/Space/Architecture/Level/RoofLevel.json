@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:RoofLevel",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Roof level"
+  },
+  "extends": "dtmi:org:w3id:rec:Level",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

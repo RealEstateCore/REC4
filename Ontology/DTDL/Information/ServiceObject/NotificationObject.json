@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:NotificationObject",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Notification object"
+  },
+  "extends": "dtmi:org:w3id:rec:ServiceObject",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

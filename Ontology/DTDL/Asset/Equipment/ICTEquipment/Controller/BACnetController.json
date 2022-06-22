@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:BACnetController",
+  "@type": "Interface",
+  "displayName": {
+    "en": "BACnet controller"
+  },
+  "extends": "dtmi:org:w3id:rec:Controller",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

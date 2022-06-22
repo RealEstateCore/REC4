@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:org:w3id:rec:Information",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "included in"
+      },
+      "name": "includedIn",
+      "target": "dtmi:org:w3id:rec:Collection",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "dtmi:dtdl:property:schema;3": {
+        "@type": "Map",
+        "dtmi:dtdl:property:mapKey;3": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "dtmi:dtdl:property:mapValue;3": {
+          "name": "tagValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "dtmi:dtdl:property:schema;3": {
+        "@type": "Map",
+        "dtmi:dtdl:property:mapKey;3": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "dtmi:dtdl:property:mapValue;3": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "Information"
+  },
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

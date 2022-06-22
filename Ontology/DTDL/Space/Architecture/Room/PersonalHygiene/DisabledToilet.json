@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:DisabledToilet",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Disabled toilet"
+  },
+  "extends": "dtmi:org:w3id:rec:PersonalHygiene",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

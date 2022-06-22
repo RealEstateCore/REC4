@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:Reception",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reception"
+  },
+  "extends": "dtmi:org:w3id:rec:Room",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

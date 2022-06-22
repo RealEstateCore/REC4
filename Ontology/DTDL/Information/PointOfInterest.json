@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:org:w3id:rec:PointOfInterest",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "object of interest"
+      },
+      "maxMultiplicity": "1",
+      "name": "objectOfInterest",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "Point of Interest"
+  },
+  "extends": "dtmi:org:w3id:rec:Information",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

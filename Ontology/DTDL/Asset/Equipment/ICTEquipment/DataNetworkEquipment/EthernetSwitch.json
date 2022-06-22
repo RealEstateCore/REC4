@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:EthernetSwitch",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet switch"
+  },
+  "extends": "dtmi:org:w3id:rec:DataNetworkEquipment",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

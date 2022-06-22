@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:PrinterStand",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Printer stand"
+  },
+  "extends": "dtmi:org:w3id:rec:Stand",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

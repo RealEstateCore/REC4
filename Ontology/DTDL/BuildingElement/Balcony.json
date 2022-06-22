@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:Balcony",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Balcony"
+  },
+  "extends": "dtmi:org:w3id:rec:BuildingElement",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

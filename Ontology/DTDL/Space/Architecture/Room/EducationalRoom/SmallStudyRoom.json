@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:SmallStudyRoom",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Small study room"
+  },
+  "extends": "dtmi:org:w3id:rec:EducationalRoom",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

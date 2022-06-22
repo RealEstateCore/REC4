@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:TreatmentWaitingRoom",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Treatment waiting room"
+  },
+  "extends": "dtmi:org:w3id:rec:TreatmentRoom",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

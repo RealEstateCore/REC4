@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:MailroomCart",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mailroom cart"
+  },
+  "extends": "dtmi:org:w3id:rec:Cart",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

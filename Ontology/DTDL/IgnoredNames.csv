@@ -1,0 +1,3 @@
+https://brickschema.org/schema/BrickShape#;We don't want to include the non-class Brick shapes.
+https://brickschema.org/schema/Brick#DeprecationShape; This is in the wrong namespace, should be with the above.
+https://brickschema.org/schema/Brick/ref#;The Brick reference machinery is replaced by a top-level externalIDs map.

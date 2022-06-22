@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:org:w3id:rec:Apartment",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "includes"
+      },
+      "name": "includes",
+      "target": "dtmi:org:w3id:rec:Room",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "Apartment"
+  },
+  "extends": "dtmi:org:w3id:rec:SpaceCollection",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

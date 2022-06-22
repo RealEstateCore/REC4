@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:PV_Array",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Has part"
+      },
+      "name": "hasPart",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Initialized",
+        "Property"
+      ],
+      "description": {
+        "en": "Brick tags associated with this interface."
+      },
+      "displayName": {
+        "en": "Tags"
+      },
+      "initialValue": [
+        "PV",
+        "Collection",
+        "Array"
+      ],
+      "name": "tags",
+      "dtmi:dtdl:property:schema;3": {
+        "@type": "Array",
+        "elementSchema": "string"
+      },
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "PV Array"
+  },
+  "extends": "dtmi:org:w3id:rec:EquipmentCollection",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

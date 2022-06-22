@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:Furniture",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Furniture"
+  },
+  "extends": "dtmi:org:w3id:rec:Asset",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

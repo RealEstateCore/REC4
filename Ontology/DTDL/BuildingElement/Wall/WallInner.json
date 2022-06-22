@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:WallInner",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wall (inner)"
+  },
+  "extends": "dtmi:org:w3id:rec:Wall",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

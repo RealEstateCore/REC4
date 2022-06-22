@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Power_Alarm",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Power Alarm"
+  },
+  "extends": "dtmi:org:brickschema:schema:Brick:Alarm",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:org:w3id:rec:Document",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "URL"
+      },
+      "name": "url",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "Document"
+  },
+  "extends": "dtmi:org:w3id:rec:Information",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:AssetCollection",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Asset collection"
+  },
+  "extends": "dtmi:org:w3id:rec:Collection",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

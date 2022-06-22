@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Differential_Pressure_Load_Shed_Status",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Differential Pressure Load Shed Status"
+  },
+  "extends": [
+    "dtmi:org:brickschema:schema:Brick:Pressure_Status",
+    "dtmi:org:brickschema:schema:Brick:Load_Shed_Status"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}

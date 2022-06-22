@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Thermostatic_Mixing_Valve",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Initialized",
+        "Property"
+      ],
+      "description": {
+        "en": "Brick tags associated with this interface."
+      },
+      "displayName": {
+        "en": "Tags"
+      },
+      "initialValue": [
+        "Water",
+        "Valve",
+        "Thermal",
+        "Mixed",
+        "Equipment"
+      ],
+      "name": "tags",
+      "dtmi:dtdl:property:schema;3": {
+        "@type": "Array",
+        "elementSchema": "string"
+      },
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "Thermostatic Mixing Valve"
+  },
+  "extends": "dtmi:org:brickschema:schema:Brick:Water_Valve",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:initialization;1"
+  ]
+}
