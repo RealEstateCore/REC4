@@ -58870,6 +58870,12 @@ bsh:LastKnownValueShape
       sh:datatype xsd:dateTime ;
       sh:minCount 1 ;
     ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
 .
 bsh:MeterRelationshipRule
   a sh:NodeShape ;
