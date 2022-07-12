@@ -308,6 +308,10 @@
             "name": "Radon_Concentration"
           },
           {
+            "enumValue": "Reactive_Energy",
+            "name": "Reactive_Energy"
+          },
+          {
             "enumValue": "Reactive_Power",
             "name": "Reactive_Power"
           },
@@ -467,6 +471,10 @@
           {
             "enumValue": "Liquid",
             "name": "Liquid"
+          },
+          {
+            "enumValue": "Refrigerant",
+            "name": "Refrigerant"
           },
           {
             "enumValue": "Air",

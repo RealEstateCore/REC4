@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Switch_Status",
   "@type": "Interface",
   "contents": [
     {
@@ -14,15 +14,9 @@
         "en": "Tags"
       },
       "initialValue": [
-        "Water",
-        "Temperature",
-        "Setpoint",
-        "Reset",
-        "Point",
-        "Medium",
-        "Hot",
-        "High",
-        "Discharge"
+        "Switch",
+        "Status",
+        "Point"
       ],
       "name": "tags",
       "dtmi:dtdl:property:schema;3": {
@@ -33,9 +27,9 @@
     }
   ],
   "displayName": {
-    "en": "Medium Temperature Hot Water Discharge Temperature High Reset Se"
+    "en": "Switch Status"
   },
-  "extends": "dtmi:org:brickschema:schema:Brick:Hot_Water_Discharge_Temperature_High_Reset_Setpoint",
+  "extends": "dtmi:org:brickschema:schema:Brick:Status",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"
