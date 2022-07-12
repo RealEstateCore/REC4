@@ -3092,9 +3092,6 @@ brick:Air_QualityShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -6213,9 +6210,6 @@ brick:CapacityShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -12506,9 +12500,6 @@ brick:DirectionShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -18628,9 +18619,6 @@ brick:EnergyShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -27547,9 +27535,6 @@ brick:HumidityShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -37864,9 +37849,6 @@ brick:OccupancyShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -41867,9 +41849,6 @@ brick:PhasorShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -57072,9 +57051,6 @@ brick:Weather_ConditionShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
@@ -58910,9 +58886,6 @@ bsh:CurrentShape
   sh:property [
       a sh:PropertyShape ;
       sh:path brick:hasUnit ;
-      sh:in [
-          rdf:rest () ;
-        ] ;
       sh:minCount 1 ;
     ] ;
   sh:property [
