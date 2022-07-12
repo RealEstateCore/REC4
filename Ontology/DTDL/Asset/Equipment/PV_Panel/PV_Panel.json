@@ -12,6 +12,10 @@
         "@type": "Object",
         "dtmi:dtdl:property:fields;3": [
           {
+            "name": "value",
+            "schema": "string"
+          },
+          {
             "name": "hasUnit",
             "dtmi:dtdl:property:schema;3": {
               "@type": "Enum",
@@ -21,10 +25,6 @@
               },
               "valueSchema": "string"
             }
-          },
-          {
-            "name": "value",
-            "schema": "string"
           }
         ]
       },

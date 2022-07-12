@@ -117,158 +117,158 @@
         "en": "is fed by"
       },
       "name": "isFedBy",
-      "properties": {
+      "dtmi:dtdl:property:properties;3": {
         "@type": "Property",
         "displayName": {
           "en": "substance"
         },
         "name": "substance",
-        "schema": {
+        "dtmi:dtdl:property:schema;3": {
           "@type": "Enum",
-          "enumValues": [
+          "dtmi:dtdl:property:enumValues;3": [
             {
-              "enumValue": "ACElec",
-              "name": "ACElec"
-            },
-            {
-              "enumValue": "Air",
-              "name": "Air"
-            },
-            {
-              "enumValue": "BlowdownWater",
-              "name": "BlowdownWater"
-            },
-            {
-              "enumValue": "ChilledWater",
-              "name": "ChilledWater"
-            },
-            {
-              "enumValue": "ColdDomesticWater",
-              "name": "ColdDomesticWater"
-            },
-            {
-              "enumValue": "Condensate",
-              "name": "Condensate"
-            },
-            {
-              "enumValue": "CondenserWater",
-              "name": "CondenserWater"
-            },
-            {
-              "enumValue": "DCElec",
-              "name": "DCElec"
-            },
-            {
-              "enumValue": "Diesel",
-              "name": "Diesel"
-            },
-            {
-              "enumValue": "DriveElec",
-              "name": "DriveElec"
-            },
-            {
-              "enumValue": "Ethernet",
-              "name": "Ethernet"
-            },
-            {
-              "enumValue": "ExhaustAir",
-              "name": "ExhaustAir"
-            },
-            {
-              "enumValue": "Freight",
-              "name": "Freight"
-            },
-            {
-              "enumValue": "FuelOil",
-              "name": "FuelOil"
-            },
-            {
-              "enumValue": "Gasoline",
-              "name": "Gasoline"
-            },
-            {
-              "enumValue": "GreaseExhaustAir",
-              "name": "GreaseExhaustAir"
-            },
-            {
-              "enumValue": "HotDomesticWater",
-              "name": "HotDomesticWater"
-            },
-            {
-              "enumValue": "HotWater",
-              "name": "HotWater"
-            },
-            {
-              "enumValue": "IrrigationWater",
-              "name": "IrrigationWater"
-            },
-            {
-              "enumValue": "Light",
-              "name": "Light"
-            },
-            {
-              "enumValue": "MakeupWater",
-              "name": "MakeupWater"
-            },
-            {
-              "enumValue": "NaturalGas",
-              "name": "NaturalGas"
-            },
-            {
-              "enumValue": "NonPotableDomesticWater",
-              "name": "NonPotableDomesticWater"
-            },
-            {
-              "enumValue": "OutsideAir",
-              "name": "OutsideAir"
-            },
-            {
-              "enumValue": "People",
-              "name": "People"
-            },
-            {
-              "enumValue": "Propane",
-              "name": "Propane"
-            },
-            {
-              "enumValue": "RecircHotDomesticWater",
-              "name": "RecircHotDomesticWater"
-            },
-            {
-              "enumValue": "Refrig",
-              "name": "Refrig"
-            },
-            {
-              "enumValue": "ReturnAir",
-              "name": "ReturnAir"
-            },
-            {
-              "enumValue": "SprinklerWater",
-              "name": "SprinklerWater"
-            },
-            {
-              "enumValue": "Steam",
-              "name": "Steam"
-            },
-            {
-              "enumValue": "StormDrainage",
-              "name": "StormDrainage"
-            },
-            {
-              "enumValue": "SupplyAir",
-              "name": "SupplyAir"
-            },
-            {
-              "enumValue": "TransferAir",
-              "name": "TransferAir"
+              "enumValue": "Water",
+              "name": "Water"
             },
             {
               "enumValue": "WasteVentDrainage",
               "name": "WasteVentDrainage"
             },
             {
-              "enumValue": "Water",
-              "name": "Water"
+              "enumValue": "TransferAir",
+              "name": "TransferAir"
+            },
+            {
+              "enumValue": "SupplyAir",
+              "name": "SupplyAir"
+            },
+            {
+              "enumValue": "StormDrainage",
+              "name": "StormDrainage"
+            },
+            {
+              "enumValue": "Steam",
+              "name": "Steam"
+            },
+            {
+              "enumValue": "SprinklerWater",
+              "name": "SprinklerWater"
+            },
+            {
+              "enumValue": "ReturnAir",
+              "name": "ReturnAir"
+            },
+            {
+              "enumValue": "Refrig",
+              "name": "Refrig"
+            },
+            {
+              "enumValue": "RecircHotDomesticWater",
+              "name": "RecircHotDomesticWater"
+            },
+            {
+              "enumValue": "Propane",
+              "name": "Propane"
+            },
+            {
+              "enumValue": "People",
+              "name": "People"
+            },
+            {
+              "enumValue": "OutsideAir",
+              "name": "OutsideAir"
+            },
+            {
+              "enumValue": "NonPotableDomesticWater",
+              "name": "NonPotableDomesticWater"
+            },
+            {
+              "enumValue": "NaturalGas",
+              "name": "NaturalGas"
+            },
+            {
+              "enumValue": "MakeupWater",
+              "name": "MakeupWater"
+            },
+            {
+              "enumValue": "Light",
+              "name": "Light"
+            },
+            {
+              "enumValue": "IrrigationWater",
+              "name": "IrrigationWater"
+            },
+            {
+              "enumValue": "HotWater",
+              "name": "HotWater"
+            },
+            {
+              "enumValue": "HotDomesticWater",
+              "name": "HotDomesticWater"
+            },
+            {
+              "enumValue": "GreaseExhaustAir",
+              "name": "GreaseExhaustAir"
+            },
+            {
+              "enumValue": "Gasoline",
+              "name": "Gasoline"
+            },
+            {
+              "enumValue": "FuelOil",
+              "name": "FuelOil"
+            },
+            {
+              "enumValue": "Freight",
+              "name": "Freight"
+            },
+            {
+              "enumValue": "ExhaustAir",
+              "name": "ExhaustAir"
+            },
+            {
+              "enumValue": "Ethernet",
+              "name": "Ethernet"
+            },
+            {
+              "enumValue": "DriveElec",
+              "name": "DriveElec"
+            },
+            {
+              "enumValue": "Diesel",
+              "name": "Diesel"
+            },
+            {
+              "enumValue": "DCElec",
+              "name": "DCElec"
+            },
+            {
+              "enumValue": "CondenserWater",
+              "name": "CondenserWater"
+            },
+            {
+              "enumValue": "Condensate",
+              "name": "Condensate"
+            },
+            {
+              "enumValue": "ColdDomesticWater",
+              "name": "ColdDomesticWater"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
+            },
+            {
+              "enumValue": "BlowdownWater",
+              "name": "BlowdownWater"
+            },
+            {
+              "enumValue": "Air",
+              "name": "Air"
+            },
+            {
+              "enumValue": "ACElec",
+              "name": "ACElec"
             }
           ],
           "valueSchema": "string"
