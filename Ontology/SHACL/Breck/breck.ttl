@@ -2026,7 +2026,7 @@ sosa:ObservableProperty
     ) ;
   dcterms1:issued "2016-11-16" ;
   dcterms1:license <https://github.com/BrickSchema/brick/blob/master/LICENSE> ;
-  dcterms1:modified "2022-06-21" ;
+  dcterms1:modified "2022-07-12" ;
   dcterms1:publisher [
       a sdo:Consortium ;
       sdo:legalName "Brick Consortium, Inc" ;
@@ -3085,6 +3085,31 @@ brick:Air_Quality
   a brick:Quantity ;
   rdfs:label "Air Quality" ;
 .
+brick:Air_QualityShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Air_Quality_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -3660,6 +3685,42 @@ brick:Angle
   skos:definition "The inclination to each other of two intersecting lines, measured by the arc of a circle intercepted between the two lines forming the angle, the center of the circle being the point of intersection.  An acute angle is less than (90^\\circ), a right angle (90^\\circ); an obtuse angle, more than (90^\\circ) but less than (180^\\circ); a straight angle, (180^\\circ); a reflex angle, more than (180^\\circ) but less than (360^\\circ); a perigon, (360^\\circ). Any angle not a multiple of (90^\\circ) is an oblique angle. If the sum of two angles is (90^\\circ), they are complementary angles; if (180^\\circ), supplementary angles; if (360^\\circ), explementary angles."@en ;
   brick:hasQUDTReference qudtqk:Angle ;
 .
+brick:AngleShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:ARCMIN
+          unit:ARCSEC
+          unit:DEG
+          unit:GON
+          unit:GRAD
+          unit:MIL
+          unit:MIN_Angle
+          unit:MicroRAD
+          unit:MilliARCSEC
+          unit:MilliRAD
+          unit:RAD
+          unit:REV
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Angle_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -3692,6 +3753,8 @@ brick:Angle_Sensor
 brick:Apparent_Energy
   a brick:Quantity ;
   qudt:applicableUnit unit:KiloV-A-HR ;
+  qudt:applicableUnit unit:MegaV-A-HR ;
+  qudt:applicableUnit unit:V-A-HR ;
   rdfs:isDefinedBy <https://brickschema.org/schema/Brick> ;
   rdfs:label "Apparent_Energy" ;
   skos:broader brick:Electric_Energy ;
@@ -4514,6 +4577,70 @@ brick:Bench_Space
   brick:hasAssociatedTag tag:Location ;
   brick:hasAssociatedTag tag:Outdoor ;
 .
+brick:Blind
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Blind" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Window_blind> ;
+  rdfs:subClassOf brick:Shading_Equipment ;
+  skos:definition "A window covering."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Blind ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Equipment ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Shade ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Blind ;
+  brick:hasAssociatedTag tag:Equipment ;
+  brick:hasAssociatedTag tag:Shade ;
+.
+brick:Blind_Group
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Blind Group" ;
+  rdfs:subClassOf brick:Shading_System ;
+  skos:definition "A group of Blinds commonly attached to a single controller."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Blind ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Group ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Shade ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:System ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Blind ;
+  brick:hasAssociatedTag tag:Group ;
+  brick:hasAssociatedTag tag:Shade ;
+  brick:hasAssociatedTag tag:System ;
+.
 brick:Blowdown_Water
   a owl:Class ;
   a sh:NodeShape ;
@@ -4571,6 +4698,34 @@ brick:Boiler
     ] ;
   brick:hasAssociatedTag tag:Boiler ;
   brick:hasAssociatedTag tag:Equipment ;
+.
+brick:Boiler_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Boiler Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "A command to control a boiler"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Boiler ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Boiler ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Point ;
 .
 brick:Booster_Fan
   a owl:Class ;
@@ -5649,6 +5804,48 @@ brick:CO2_Alarm
   brick:hasAssociatedTag tag:CO2 ;
   brick:hasAssociatedTag tag:Point ;
 .
+brick:CO2_Alarm_Sensitivity_Parameter
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "CO2 Alarm Sensitivity Parameter" ;
+  rdfs:subClassOf brick:Alarm_Sensitivity_Parameter ;
+  skos:definition "A parameter indicates the sensitivity to activate a CO2 alarm."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Alarm ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:CO2 ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Parameter ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensitivity ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Alarm ;
+  brick:hasAssociatedTag tag:CO2 ;
+  brick:hasAssociatedTag tag:Parameter ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensitivity ;
+.
 brick:CO2_Concentration
   a brick:Quantity ;
   qudt:applicableUnit unit:PPB ;
@@ -6008,6 +6205,31 @@ brick:Capacity
   a brick:Quantity ;
   rdfs:label "Capacity" ;
   brick:hasQUDTReference qudtqk:Capacity ;
+.
+brick:CapacityShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Capacity_Sensor
   a owl:Class ;
@@ -7700,6 +7922,9 @@ brick:Chiller
   brick:hasAssociatedTag tag:Chiller ;
   brick:hasAssociatedTag tag:Equipment ;
 .
+brick:Class
+  a owl:Class ;
+.
 brick:Close_Limit
   a owl:Class ;
   a sh:NodeShape ;
@@ -7888,6 +8113,7 @@ brick:Collection
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Collection" ;
+  rdfs:subClassOf brick:Class ;
   rdfs:subClassOf brick:Entity ;
   owl:deprecated true ;
   sh:and (
@@ -8621,6 +8847,93 @@ brick:Condenser_Water_Bypass_Valve
   brick:hasAssociatedTag tag:Valve ;
   brick:hasAssociatedTag tag:Water ;
 .
+brick:Condenser_Water_Flow_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Condenser Water Flow Sensor" ;
+  rdfs:subClassOf brick:Water_Flow_Sensor ;
+  skos:definition "Measures the flow of the condenser water"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Condenser ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Flow ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Water ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Condenser ;
+  brick:hasAssociatedTag tag:Flow ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Water ;
+  brick:hasQuantity brick:Flow ;
+  brick:hasSubstance brick:Condenser_Water ;
+.
+brick:Condenser_Water_Flow_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Condenser Water Flow Setpoint" ;
+  rdfs:subClassOf brick:Water_Flow_Setpoint ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Condenser ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Flow ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Water ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Condenser ;
+  brick:hasAssociatedTag tag:Flow ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasAssociatedTag tag:Water ;
+  brick:hasQuantity brick:Flow ;
+  brick:hasSubstance brick:Condenser_Water ;
+.
 brick:Condenser_Water_Isolation_Valve
   a owl:Class ;
   a sh:NodeShape ;
@@ -8865,6 +9178,42 @@ brick:Conductivity
   qudt:applicableUnit unit:S-PER-M ;
   rdfs:label "Conductivity" ;
   brick:hasQUDTReference qudtqk:Conductivity ;
+.
+brick:ConductivityShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:DeciS-PER-M
+          unit:KiloS-PER-M
+          unit:MegaS-PER-M
+          unit:MicroS-PER-CentiM
+          unit:MicroS-PER-M
+          unit:MilliS-PER-CentiM
+          unit:MilliS-PER-M
+          unit:NanoS-PER-CentiM
+          unit:NanoS-PER-M
+          unit:PicoS-PER-M
+          unit:S-PER-CentiM
+          unit:S-PER-M
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Conductivity_Sensor
   a owl:Class ;
@@ -9438,6 +9787,41 @@ brick:Cooling_Enable_Command
   brick:hasAssociatedTag tag:Cooling ;
   brick:hasAssociatedTag tag:Enable ;
   brick:hasAssociatedTag tag:Point ;
+.
+brick:Cooling_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Cooling Mode Status" ;
+  rdfs:subClassOf brick:Mode_Status ;
+  skos:definition "Indicates whether a system, device or control loop is in a cooling mode"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Cool ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Cool ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
 .
 brick:Cooling_Start_Stop_Status
   a owl:Class ;
@@ -10143,6 +10527,48 @@ brick:Current_Output_Sensor
   brick:hasAssociatedTag tag:Output ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Sensor ;
+.
+brick:Current_Ratio_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Current Ratio Setpoint" ;
+  rdfs:subClassOf brick:Setpoint ;
+  skos:definition "Sets the ratio of currents in a transformer"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Current ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Electric ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Ratio ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Current ;
+  brick:hasAssociatedTag tag:Electric ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Ratio ;
+  brick:hasAssociatedTag tag:Setpoint ;
 .
 brick:Current_Sensor
   a owl:Class ;
@@ -11044,6 +11470,36 @@ brick:Dewpoint
   qudt:applicableUnit unit:PlanckTemperature ;
   rdfs:label "Dewpoint" ;
   brick:hasQUDTReference qudtqk:DewPointTemperature ;
+.
+brick:DewpointShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:DEG_C
+          unit:DEG_F
+          unit:DEG_R
+          unit:K
+          unit:MilliDEG_C
+          unit:PlanckTemperature
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Dewpoint_Sensor
   a owl:Class ;
@@ -12043,6 +12499,31 @@ brick:Direction
   a brick:Quantity ;
   rdfs:label "Direction" ;
 .
+brick:DirectionShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Direction_Command
   a owl:Class ;
   a sh:NodeShape ;
@@ -12551,6 +13032,57 @@ brick:Discharge_Air_Differential_Pressure_Sensor
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Pressure ;
   brick:hasAssociatedTag tag:Sensor ;
+.
+brick:Discharge_Air_Differential_Pressure_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Discharge Air Differential Pressure Setpoint" ;
+  rdfs:subClassOf brick:Air_Differential_Pressure_Setpoint ;
+  owl:equivalentClass brick:Supply_Air_Differential_Pressure_Setpoint ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Air ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Differential ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Discharge ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Pressure ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Air ;
+  brick:hasAssociatedTag tag:Differential ;
+  brick:hasAssociatedTag tag:Discharge ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Pressure ;
+  brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasQuantity brick:Differential_Pressure ;
+  brick:hasSubstance brick:Supply_Air ;
 .
 brick:Discharge_Air_Duct_Pressure_Status
   a owl:Class ;
@@ -14354,6 +14886,7 @@ brick:Discharge_Condenser_Water_Flow_Sensor
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Discharge Condenser Water Flow Sensor" ;
+  rdfs:subClassOf brick:Condenser_Water_Flow_Sensor ;
   rdfs:subClassOf brick:Discharge_Water_Flow_Sensor ;
   sh:rule [
       a sh:TripleRule ;
@@ -15940,6 +16473,41 @@ brick:Dry_Bulb_Temperature
   skos:definition "The temperature of air measured by a thermometer freely exposed to the air, but shielded from radiation and moisture. (https://en.wikipedia.org/wiki/Dry-bulb_temperature)" ;
   skos:definition "The temperature of air measured by a thermometer freely exposed to the air, but shielded from radiation and moisture. (https://en.wikipedia.org/wiki/Dry-bulb_temperature)"@en ;
 .
+brick:Dry_Cooler
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Dry Cooler" ;
+  rdfs:subClassOf brick:HVAC_Equipment ;
+  skos:definition "A dry cooler is a fluid cooler that uses air, a relatively dry, non-liquid fluid to accomplish process cooling. (https://submer.com/submer-academy/library/dry-cooler/)"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Cooler ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Dry ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Equipment ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:HVAC ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Cooler ;
+  brick:hasAssociatedTag tag:Dry ;
+  brick:hasAssociatedTag tag:Equipment ;
+  brick:hasAssociatedTag tag:HVAC ;
+.
 brick:Dual_Duct_Air_Handling_Unit
   a owl:Class ;
   a sh:NodeShape ;
@@ -16615,15 +17183,94 @@ brick:Electric_Current
   rdfs:label "Electric Current" ;
   brick:hasQUDTReference qudtqk:ElectricCurrent ;
 .
+brick:Electric_CurrentShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:A
+          unit:A_Ab
+          unit:A_Stat
+          unit:BIOT
+          unit:KiloA
+          unit:MegaA
+          unit:MicroA
+          unit:MilliA
+          unit:NanoA
+          unit:PicoA
+          unit:PlanckCurrent
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Electric_Energy
   a brick:Quantity ;
   qudt:applicableUnit unit:J ;
+  qudt:applicableUnit unit:KiloV-A-HR ;
+  qudt:applicableUnit unit:KiloV-A_Reactive-HR ;
+  qudt:applicableUnit unit:KiloW-HR ;
+  qudt:applicableUnit unit:MegaV-A-HR ;
+  qudt:applicableUnit unit:MegaV-A_Reactive-HR ;
+  qudt:applicableUnit unit:MegaW-HR ;
+  qudt:applicableUnit unit:V-A-HR ;
+  qudt:applicableUnit unit:V-A_Reactive-HR ;
+  qudt:applicableUnit unit:W-HR ;
   qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-2D0> ;
   rdfs:isDefinedBy <https://brickschema.org/schema/Brick> ;
   rdfs:label "ElectricEnergy" ;
   skos:broader qudtqk:Energy ;
   skos:broader brick:Energy ;
   skos:definition "A form of energy resulting from the flow of electrical charge" ;
+.
+brick:Electric_Energy_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Electric Energy Sensor" ;
+  rdfs:subClassOf brick:Energy_Sensor ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Electric ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Energy ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Electric ;
+  brick:hasAssociatedTag tag:Energy ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Electric_Energy ;
 .
 brick:Electric_Power
   a brick:Quantity ;
@@ -17974,6 +18621,66 @@ brick:Energy
   a brick:Quantity ;
   rdfs:label "Energy" ;
 .
+brick:EnergyShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
+brick:Energy_Generation_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Energy Generation Sensor" ;
+  rdfs:subClassOf brick:Generation_Sensor ;
+  skos:definition "A sensor measuring the amount of generated energy."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Energy ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Generation ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Energy ;
+  brick:hasAssociatedTag tag:Generation ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+.
 brick:Energy_Generation_System
   a owl:Class ;
   a sh:NodeShape ;
@@ -18435,6 +19142,73 @@ brick:Enthalpy
   skos:definition "(also known as heat content), thermodynamic quantity equal to the sum of the internal energy of a system plus the product of the pressure volume work done on the system. H = E + pv, where H = enthalpy or total heat content, E = internal energy of the system, p = pressure, and v = volume. (Compare to [[specific enthalpy]].)"@en ;
   brick:hasQUDTReference qudtqk:Enthalpy ;
 .
+brick:EnthalpyShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:AttoJ
+          unit:BTU_IT
+          unit:BTU_TH
+          unit:CAL_IT
+          unit:CAL_TH
+          unit:ERG
+          unit:EV
+          unit:E_h
+          unit:ExaJ
+          unit:FT-LB_F
+          unit:FT-PDL
+          unit:FemtoJ
+          unit:GigaEV
+          unit:GigaJ
+          unit:GigaW-HR
+          unit:J
+          unit:KiloCAL
+          unit:KiloEV
+          unit:KiloJ
+          unit:KiloV-A-HR
+          unit:KiloV-A_Reactive-HR
+          unit:KiloW-HR
+          unit:MegaEV
+          unit:MegaJ
+          unit:MegaTOE
+          unit:MegaV-A-HR
+          unit:MegaV-A_Reactive-HR
+          unit:MegaW-HR
+          unit:MilliJ
+          unit:PetaJ
+          unit:PlanckEnergy
+          unit:QUAD
+          unit:THM_EEC
+          unit:THM_US
+          unit:TOE
+          unit:TeraJ
+          unit:TeraW-HR
+          unit:TonEnergy
+          unit:V-A-HR
+          unit:V-A_Reactive-HR
+          unit:W-HR
+          unit:W-SEC
+          unit:N-M
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Enthalpy_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -18576,6 +19350,7 @@ brick:Equipment
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Equipment" ;
+  rdfs:subClassOf brick:Class ;
   rdfs:subClassOf brick:Entity ;
   rdfs:subClassOf rec:Asset ;
   skos:definition "devices that serve all or part of the building and may include electric power, lighting, transportation, or service water heating, including, but not limited to, furnaces, boilers, air conditioners, heat pumps, chillers, water heaters, lamps, luminaires, ballasts, elevators, escalators, or other devices or installations."@en ;
@@ -19967,6 +20742,25 @@ brick:Exhaust_Fan_Disable_Command
       sh:predicate brick:hasTag ;
       sh:subject sh:this ;
     ] ;
+  brick:deprecation [
+      brick:deprecatedInVersion "1.3.0" ;
+      brick:deprecationMigitationRule [
+          a sh:NodeShape ;
+          sh:rule [
+              a sh:SPARQLRule ;
+              sh:construct """
+            CONSTRUCT {
+              $this rdf:type brick:Disable_Command .
+            } WHERE {
+              $this rdf:type brick:Exhaust_Fan_Disable_Command .
+            }""" ;
+              sh:prefixes rdf: ;
+              sh:prefixes brick: ;
+            ] ;
+          sh:targetClass brick:Exhaust_Fan_Disable_Command ;
+        ] ;
+      brick:deprecationMitigationMessage "Exhaust_Fan_Disable_Command is deprecated as a point name should not include more specific equipment names than top level equipment names" ;
+    ] ;
   brick:hasAssociatedTag tag:Command ;
   brick:hasAssociatedTag tag:Disable ;
   brick:hasAssociatedTag tag:Exhaust ;
@@ -20008,6 +20802,25 @@ brick:Exhaust_Fan_Enable_Command
       sh:object tag:Point ;
       sh:predicate brick:hasTag ;
       sh:subject sh:this ;
+    ] ;
+  brick:deprecation [
+      brick:deprecatedInVersion "1.3.0" ;
+      brick:deprecationMigitationRule [
+          a sh:NodeShape ;
+          sh:rule [
+              a sh:SPARQLRule ;
+              sh:construct """
+            CONSTRUCT {
+              $this rdf:type brick:Disable_Command .
+            } WHERE {
+              $this rdf:type brick:Exhaust_Fan_Enable_Command .
+            }""" ;
+              sh:prefixes rdf: ;
+              sh:prefixes brick: ;
+            ] ;
+          sh:targetClass brick:Exhaust_Fan_Enable_Command ;
+        ] ;
+      brick:deprecationMitigationMessage "Exhaust_Fan_Enable_Command is deprecated as a point name should not include more specific equipment names than top level equipment names" ;
     ] ;
   brick:hasAssociatedTag tag:Command ;
   brick:hasAssociatedTag tag:Enable ;
@@ -20170,6 +20983,34 @@ brick:Fan_Coil_Unit
   brick:hasAssociatedTag tag:Fan ;
   brick:hasAssociatedTag tag:Unit ;
 .
+brick:Fan_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Fan Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "Controls properties of fans"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Fan ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Fan ;
+  brick:hasAssociatedTag tag:Point ;
+.
 brick:Fan_On_Off_Status
   a owl:Class ;
   a sh:NodeShape ;
@@ -20211,6 +21052,41 @@ brick:Fan_On_Off_Status
   brick:hasAssociatedTag tag:On ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Status ;
+.
+brick:Fan_Speed_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Fan Speed Command" ;
+  rdfs:subClassOf brick:Fan_Command ;
+  skos:definition "Controls the speed of fans"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Fan ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Speed ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Fan ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Speed ;
 .
 brick:Fan_Status
   a owl:Class ;
@@ -21102,6 +21978,126 @@ brick:Flow
   rdfs:label "Flow" ;
   brick:hasQUDTReference qudtqk:VolumeFlowRate ;
 .
+brick:FlowShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:BBL_UK_PET-PER-DAY
+          unit:BBL_UK_PET-PER-HR
+          unit:BBL_UK_PET-PER-MIN
+          unit:BBL_UK_PET-PER-SEC
+          unit:BBL_US-PER-DAY
+          unit:BBL_US-PER-MIN
+          unit:BBL_US_PET-PER-HR
+          unit:BBL_US_PET-PER-SEC
+          unit:BU_UK-PER-DAY
+          unit:BU_UK-PER-HR
+          unit:BU_UK-PER-MIN
+          unit:BU_UK-PER-SEC
+          unit:BU_US_DRY-PER-DAY
+          unit:BU_US_DRY-PER-HR
+          unit:BU_US_DRY-PER-MIN
+          unit:BU_US_DRY-PER-SEC
+          unit:CentiM3-PER-DAY
+          unit:CentiM3-PER-HR
+          unit:CentiM3-PER-MIN
+          unit:CentiM3-PER-SEC
+          unit:DeciM3-PER-DAY
+          unit:DeciM3-PER-HR
+          unit:DeciM3-PER-MIN
+          unit:DeciM3-PER-SEC
+          unit:FT3-PER-DAY
+          unit:FT3-PER-HR
+          unit:FT3-PER-MIN
+          unit:FT3-PER-SEC
+          unit:GAL_UK-PER-DAY
+          unit:GAL_UK-PER-HR
+          unit:GAL_UK-PER-MIN
+          unit:GAL_UK-PER-SEC
+          unit:GAL_US-PER-HR
+          unit:GAL_US-PER-SEC
+          unit:GI_UK-PER-DAY
+          unit:GI_UK-PER-HR
+          unit:GI_UK-PER-MIN
+          unit:GI_UK-PER-SEC
+          unit:GI_US-PER-DAY
+          unit:GI_US-PER-HR
+          unit:GI_US-PER-MIN
+          unit:GI_US-PER-SEC
+          unit:IN3-PER-HR
+          unit:IN3-PER-MIN
+          unit:IN3-PER-SEC
+          unit:KiloL-PER-HR
+          unit:L-PER-DAY
+          unit:L-PER-HR
+          unit:L-PER-MIN
+          unit:L-PER-SEC
+          unit:M3-PER-DAY
+          unit:M3-PER-HR
+          unit:M3-PER-MIN
+          unit:M3-PER-SEC
+          unit:MilliL-PER-DAY
+          unit:MilliL-PER-HR
+          unit:MilliL-PER-MIN
+          unit:MilliL-PER-SEC
+          unit:OZ_VOL_UK-PER-DAY
+          unit:OZ_VOL_UK-PER-HR
+          unit:OZ_VOL_UK-PER-MIN
+          unit:OZ_VOL_UK-PER-SEC
+          unit:OZ_VOL_US-PER-DAY
+          unit:OZ_VOL_US-PER-HR
+          unit:OZ_VOL_US-PER-MIN
+          unit:OZ_VOL_US-PER-SEC
+          unit:PINT_UK-PER-DAY
+          unit:PINT_UK-PER-HR
+          unit:PINT_UK-PER-MIN
+          unit:PINT_UK-PER-SEC
+          unit:PINT_US-PER-DAY
+          unit:PINT_US-PER-HR
+          unit:PINT_US-PER-MIN
+          unit:PINT_US-PER-SEC
+          unit:PK_UK-PER-DAY
+          unit:PK_UK-PER-HR
+          unit:PK_UK-PER-MIN
+          unit:PK_UK-PER-SEC
+          unit:PK_US_DRY-PER-DAY
+          unit:PK_US_DRY-PER-HR
+          unit:PK_US_DRY-PER-MIN
+          unit:PK_US_DRY-PER-SEC
+          unit:QT_UK-PER-DAY
+          unit:QT_UK-PER-HR
+          unit:QT_UK-PER-MIN
+          unit:QT_UK-PER-SEC
+          unit:QT_US-PER-DAY
+          unit:QT_US-PER-HR
+          unit:QT_US-PER-MIN
+          unit:QT_US-PER-SEC
+          unit:YD3-PER-DAY
+          unit:YD3-PER-HR
+          unit:YD3-PER-MIN
+          unit:YD3-PER-SEC
+          unit:GAL_US-PER-DAY
+          unit:GAL_US-PER-MIN
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Flow_Loss
   a brick:Quantity ;
   qudt:applicableUnit unit:M3-PER-SEC ;
@@ -21367,6 +22363,52 @@ brick:Frequency
   skos:definition "Frequency is the number of occurrences of a repeating event per unit time. The repetition of the events may be periodic (that is. the length of time between event repetitions is fixed) or aperiodic (i.e. the length of time between event repetitions varies). Therefore, we distinguish between periodic and aperiodic frequencies. In the SI system, periodic frequency is measured in hertz (Hz) or multiples of hertz, while aperiodic frequency is measured in becquerel (Bq).  In spectroscopy, ( u) is mostly used. Light passing through different media keeps its frequency, but not its wavelength or wavenumber."@en ;
   brick:hasQUDTReference qudtqk:Frequency ;
 .
+brick:FrequencyShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:GigaHZ
+          unit:HZ
+          unit:KiloHZ
+          unit:MegaHZ
+          unit:NUM-PER-HR
+          unit:NUM-PER-SEC
+          unit:NUM-PER-YR
+          unit:PER-DAY
+          unit:PER-HR
+          unit:PER-MIN
+          unit:PER-MO
+          unit:PER-MilliSEC
+          unit:PER-SEC
+          unit:PER-WK
+          unit:PER-YR
+          unit:PERCENT-PER-DAY
+          unit:PERCENT-PER-HR
+          unit:PERCENT-PER-WK
+          unit:PlanckFrequency
+          unit:SAMPLE-PER-SEC
+          unit:TeraHZ
+          unit:failures-in-time
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Frequency_Command
   a owl:Class ;
   a sh:NodeShape ;
@@ -21423,6 +22465,35 @@ brick:Frequency_Sensor
   brick:hasAssociatedTag tag:Frequency ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Frequency ;
+.
+brick:Frequency_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Frequency Setpoint" ;
+  rdfs:subClassOf brick:Setpoint ;
+  skos:definition "Sets frequency"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Frequency ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Frequency ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Setpoint ;
   brick:hasQuantity brick:Frequency ;
 .
 brick:Fresh_Air_Fan
@@ -21954,6 +23025,34 @@ brick:Gatehouse
   brick:hasAssociatedTag tag:Gatehouse ;
   brick:hasAssociatedTag tag:Location ;
   brick:hasAssociatedTag tag:Space ;
+.
+brick:Generation_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Generation Sensor" ;
+  rdfs:subClassOf brick:Sensor ;
+  skos:definition "A sensor measuring how much something has been generated."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Generation ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Generation ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
 .
 brick:Generator_Room
   a owl:Class ;
@@ -23131,6 +24230,41 @@ brick:Heating_Enable_Command
   brick:hasAssociatedTag tag:Enable ;
   brick:hasAssociatedTag tag:Heating ;
   brick:hasAssociatedTag tag:Point ;
+.
+brick:Heating_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Heating Mode Status" ;
+  rdfs:subClassOf brick:Mode_Status ;
+  skos:definition "Indicates whether a system, device or control loop is in a heating mode"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Heat ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Heat ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
 .
 brick:Heating_Start_Stop_Status
   a owl:Class ;
@@ -25838,6 +26972,7 @@ brick:Hot_Water_Supply_Temperature_High_Reset_Setpoint
   a sh:NodeShape ;
   rdfs:label "Hot Water Supply Temperature High Reset Setpoint" ;
   rdfs:subClassOf brick:Temperature_High_Reset_Setpoint ;
+  owl:equivalentClass brick:Hot_Water_Discharge_Temperature_High_Reset_Setpoint ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:High ;
@@ -26405,6 +27540,31 @@ brick:Humidity
   a brick:Quantity ;
   rdfs:label "Humidity" ;
 .
+brick:HumidityShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Humidity_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -26432,6 +27592,42 @@ brick:Humidity_Alarm
   brick:hasAssociatedTag tag:Alarm ;
   brick:hasAssociatedTag tag:Humidity ;
   brick:hasAssociatedTag tag:Point ;
+.
+brick:Humidity_Deadband_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Humidity Deadband Setpoint" ;
+  rdfs:subClassOf brick:Deadband_Setpoint ;
+  skos:definition "Sets the size of a deadband of humidity"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Deadband ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Humidity ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Deadband ;
+  brick:hasAssociatedTag tag:Humidity ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasQuantity brick:Humidity ;
 .
 brick:Humidity_Parameter
   a owl:Class ;
@@ -26698,6 +27894,33 @@ brick:Illuminance
   qudt:applicableUnit unit:Phot ;
   rdfs:label "Illuminance" ;
   brick:hasQUDTReference qudtqk:Illuminance ;
+.
+brick:IlluminanceShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:FC
+          unit:LUX
+          unit:Phot
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Illuminance_Sensor
   a owl:Class ;
@@ -27852,6 +29075,34 @@ brick:Library
   brick:hasAssociatedTag tag:Room ;
   brick:hasAssociatedTag tag:Space ;
 .
+brick:Light_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Light Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "Controls the amount of the light provided by the device"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Light ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Light ;
+  brick:hasAssociatedTag tag:Point ;
+.
 brick:Lighting
   a owl:Class ;
   a sh:NodeShape ;
@@ -28446,6 +29697,7 @@ brick:Location
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Location" ;
+  rdfs:subClassOf brick:Class ;
   rdfs:subClassOf brick:Entity ;
   owl:deprecated true ;
   sh:and (
@@ -28701,34 +29953,6 @@ brick:Lounge
   brick:hasAssociatedTag tag:Lounge ;
   brick:hasAssociatedTag tag:Space ;
 .
-brick:Louver
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Louver" ;
-  rdfs:subClassOf brick:Shading_Equipment ;
-  skos:definition "Device consisting of an assembly of parallel sloping vanes, intended to permit the passage of air while providing a measure of protection against environmental influences"@en ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Equipment ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Louver ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Shade ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  brick:hasAssociatedTag tag:Equipment ;
-  brick:hasAssociatedTag tag:Louver ;
-  brick:hasAssociatedTag tag:Shade ;
-.
 brick:Low_Air_Flow_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -28768,6 +29992,41 @@ brick:Low_Air_Flow_Alarm
   brick:hasAssociatedTag tag:Air ;
   brick:hasAssociatedTag tag:Alarm ;
   brick:hasAssociatedTag tag:Flow ;
+  brick:hasAssociatedTag tag:Low ;
+  brick:hasAssociatedTag tag:Point ;
+.
+brick:Low_Battery_Alarm
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Low Battery Alarm" ;
+  rdfs:subClassOf brick:Alarm ;
+  skos:definition "An alarm that indicates the battery is low."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Alarm ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Battery ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Low ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Alarm ;
+  brick:hasAssociatedTag tag:Battery ;
   brick:hasAssociatedTag tag:Low ;
   brick:hasAssociatedTag tag:Point ;
 .
@@ -29595,6 +30854,38 @@ brick:Luminance
   rdfs:label "Luminance" ;
   brick:hasQUDTReference qudtqk:Luminance ;
 .
+brick:LuminanceShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:CD-PER-IN2
+          unit:CD-PER-M2
+          unit:FT-LA
+          unit:LA
+          unit:STILB
+          unit:CD
+          unit:LM
+          unit:CP
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Luminance_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -30208,6 +31499,76 @@ brick:Mass
   qudt:applicableUnit unit:U ;
   rdfs:label "Mass" ;
   brick:hasQUDTReference qudtqk:Mass ;
+.
+brick:MassShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:AMU
+          unit:CARAT
+          unit:CWT_LONG
+          unit:CWT_SHORT
+          unit:CentiGM
+          unit:DRAM_UK
+          unit:DRAM_US
+          unit:DWT
+          unit:DecaGM
+          unit:DeciGM
+          unit:DeciTON_Metric
+          unit:EarthMass
+          unit:GM
+          unit:GRAIN
+          unit:HectoGM
+          unit:Hundredweight_UK
+          unit:Hundredweight_US
+          unit:KiloGM
+          unit:KiloTON_Metric
+          unit:LB
+          unit:LB_T
+          unit:LunarMass
+          unit:MegaGM
+          unit:MicroGM
+          unit:MilliGM
+          unit:NanoGM
+          unit:OZ
+          unit:OZ_TROY
+          unit:Pennyweight
+          unit:PicoGM
+          unit:PlanckMass
+          unit:Quarter_UK
+          unit:SLUG
+          unit:SolarMass
+          unit:Stone_UK
+          unit:TONNE
+          unit:TON_Assay
+          unit:TON_LONG
+          unit:TON_Metric
+          unit:TON_SHORT
+          unit:TON_UK
+          unit:TON_US
+          unit:U
+          unit:KiloTONNE
+          unit:DeciTONNE
+          unit:Da
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Massage_Room
   a owl:Class ;
@@ -32153,6 +33514,7 @@ brick:Max_Water_Temperature_Setpoint
 brick:Measurable
   a owl:Class ;
   rdfs:label "Measurable" ;
+  rdfs:subClassOf brick:Class ;
   rdfs:subClassOf brick:Entity ;
 .
 brick:Mechanical_Room
@@ -32686,7 +34048,6 @@ brick:Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint
   a sh:NodeShape ;
   rdfs:label "Medium Temperature Hot Water Discharge Temperature High Reset Setpoint" ;
   rdfs:subClassOf brick:Hot_Water_Discharge_Temperature_High_Reset_Setpoint ;
-  rdfs:subClassOf brick:Hot_Water_Supply_Temperature_High_Reset_Setpoint ;
   sh:rule [
       a sh:TripleRule ;
       sh:object tag:Discharge ;
@@ -32731,12 +34092,6 @@ brick:Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint
     ] ;
   sh:rule [
       a sh:TripleRule ;
-      sh:object tag:Supply ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
       sh:object tag:Temperature ;
       sh:predicate brick:hasTag ;
       sh:subject sh:this ;
@@ -32754,7 +34109,6 @@ brick:Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Reset ;
   brick:hasAssociatedTag tag:Setpoint ;
-  brick:hasAssociatedTag tag:Supply ;
   brick:hasAssociatedTag tag:Temperature ;
   brick:hasAssociatedTag tag:Water ;
 .
@@ -33080,6 +34434,76 @@ brick:Medium_Temperature_Hot_Water_Return_Temperature_Sensor
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Return ;
   brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Temperature ;
+  brick:hasAssociatedTag tag:Water ;
+.
+brick:Medium_Temperature_Hot_Water_Supply_Temperature_High_Reset_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Medium Temperature Hot Water Supply Temperature High Reset Setpoint" ;
+  rdfs:subClassOf brick:Hot_Water_Supply_Temperature_High_Reset_Setpoint ;
+  owl:equivalentClass brick:Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:High ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Hot ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Medium ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Reset ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Supply ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Temperature ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Water ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:High ;
+  brick:hasAssociatedTag tag:Hot ;
+  brick:hasAssociatedTag tag:Medium ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Reset ;
+  brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasAssociatedTag tag:Supply ;
   brick:hasAssociatedTag tag:Temperature ;
   brick:hasAssociatedTag tag:Water ;
 .
@@ -36123,6 +37547,186 @@ brick:Natural_Gas_Boiler
   brick:hasAssociatedTag tag:Gas ;
   brick:hasAssociatedTag tag:Natural ;
 .
+brick:Natural_Gas_Flow_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Natural Gas Flow Sensor" ;
+  rdfs:subClassOf brick:Flow_Sensor ;
+  rdfs:subClassOf brick:Sensor ;
+  skos:definition "Measures the rate of flow of natural gas"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Flow ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Gas ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Natural ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Flow ;
+  brick:hasAssociatedTag tag:Gas ;
+  brick:hasAssociatedTag tag:Natural ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Flow ;
+  brick:hasSubstance brick:Natrual_Gas ;
+  brick:hasSubstance brick:Natural_Gas ;
+.
+brick:Natural_Gas_Seismic_Shutoff_Valve
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Natural Gas Seismic Shutoff Valve" ;
+  rdfs:subClassOf brick:Valve ;
+  skos:definition "Valves that automatically shut off your natural gas service when an earthquake of a sufficient magnitude occurs at the location."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Equipment ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Gas ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Natural ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Seismic ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Shutoff ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Valve ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Equipment ;
+  brick:hasAssociatedTag tag:Gas ;
+  brick:hasAssociatedTag tag:Natural ;
+  brick:hasAssociatedTag tag:Seismic ;
+  brick:hasAssociatedTag tag:Shutoff ;
+  brick:hasAssociatedTag tag:Valve ;
+.
+brick:Natural_Gas_Temperature_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Natural Gas Temperature Sensor" ;
+  rdfs:subClassOf brick:Temperature_Sensor ;
+  skos:definition "Measures the temperature of natural gas"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Gas ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Natural ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Temperature ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Gas ;
+  brick:hasAssociatedTag tag:Natural ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Temperature ;
+  brick:hasSubstance brick:Natural_Gas ;
+.
+brick:Natural_Gas_Usage_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Natural Gas Usage Sensor" ;
+  rdfs:subClassOf brick:Usage_Sensor ;
+  skos:definition "Measures the amount of natural gas that is consumed or used, over some period of time"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Gas ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Natural ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Usage ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Gas ;
+  brick:hasAssociatedTag tag:Natural ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Usage ;
+.
 brick:Network_Video_Recorder
   a owl:Class ;
   a sh:NodeShape ;
@@ -36253,6 +37857,31 @@ brick:Occupancy
   a brick:Quantity ;
   rdfs:label "Occupancy" ;
 .
+brick:OccupancyShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Occupancy_Command
   a owl:Class ;
   a sh:NodeShape ;
@@ -36289,6 +37918,42 @@ brick:Occupancy_Count
   skos:broader brick:Occupancy ;
   skos:definition "Number of people in an area" ;
   skos:definition "Number of people in an area"@en ;
+.
+brick:Occupancy_Count_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Occupancy Count Sensor" ;
+  rdfs:subClassOf brick:Sensor ;
+  skos:definition "Sensors measuring the number of people in an area"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Count ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Occupancy ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Count ;
+  brick:hasAssociatedTag tag:Occupancy ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Occupancy_Count ;
 .
 brick:Occupancy_Percentage
   a brick:Quantity ;
@@ -36555,6 +38220,48 @@ brick:Occupied_Cooling_Discharge_Air_Flow_Setpoint
   brick:hasAssociatedTag tag:Occupied ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Setpoint ;
+.
+brick:Occupied_Cooling_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Occupied Cooling Mode Status" ;
+  rdfs:subClassOf brick:Cooling_Mode_Status ;
+  rdfs:subClassOf brick:Occupied_Mode_Status ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Cool ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Occupied ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Cool ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Occupied ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
 .
 brick:Occupied_Cooling_Supply_Air_Flow_Setpoint
   a owl:Class ;
@@ -36861,6 +38568,48 @@ brick:Occupied_Heating_Discharge_Air_Flow_Setpoint
   brick:hasAssociatedTag tag:Occupied ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Setpoint ;
+.
+brick:Occupied_Heating_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Occupied Heating Mode Status" ;
+  rdfs:subClassOf brick:Heating_Mode_Status ;
+  rdfs:subClassOf brick:Occupied_Mode_Status ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Heat ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Occupied ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Heat ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Occupied ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
 .
 brick:Occupied_Heating_Supply_Air_Flow_Setpoint
   a owl:Class ;
@@ -40111,6 +41860,31 @@ brick:Phasor
   a brick:Quantity ;
   rdfs:label "Phasor" ;
 .
+brick:PhasorShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Phasor_Angle
   a brick:Quantity ;
   qudt:applicableUnit unit:ARCMIN ;
@@ -40149,6 +41923,41 @@ brick:Phasor_Magnitude
   rdfs:label "PhasorMagnitude" ;
   skos:definition "Magnitude component of a phasor" ;
   skos:related brick:Phasor ;
+.
+brick:Phasor_MagnitudeShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:ARCMIN
+          unit:ARCSEC
+          unit:DEG
+          unit:GON
+          unit:GRAD
+          unit:MIL
+          unit:RAD
+          unit:MicroRAD
+          unit:MilliRAD
+          unit:MilliARCSEC
+          unit:REV
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Photovoltaic_Array
   a owl:Class ;
@@ -40328,6 +42137,7 @@ brick:Point
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Point" ;
+  rdfs:subClassOf brick:Class ;
   rdfs:subClassOf brick:Entity ;
   sh:and (
       [
@@ -40613,6 +42423,77 @@ brick:Power
   skos:definition "Power is the rate at which work is performed or energy is transmitted, or the amount of energy required or expended for a given unit of time. As a rate of change of work done or the energy of a subsystem, power is: (P = W/t), where (P) is power, (W) is work and {t} is time."@en ;
   brick:hasQUDTReference qudtqk:Power ;
 .
+brick:PowerShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:BAR-L-PER-SEC
+          unit:BAR-M3-PER-SEC
+          unit:BTU_IT-PER-HR
+          unit:BTU_IT-PER-SEC
+          unit:ERG-PER-SEC
+          unit:FT-LB_F-PER-HR
+          unit:FT-LB_F-PER-MIN
+          unit:FT-LB_F-PER-SEC
+          unit:GigaW
+          unit:HP
+          unit:HP-PER-M
+          unit:HP-PER-V
+          unit:HP_Boiler
+          unit:HP_Brake
+          unit:HP_Electric
+          unit:HP_Metric
+          unit:J-PER-HR
+          unit:J-PER-SEC
+          unit:KiloCAL-PER-MIN
+          unit:KiloCAL-PER-SEC
+          unit:KiloW
+          unit:MegaJ-PER-SEC
+          unit:MegaPA-L-PER-SEC
+          unit:MegaPA-M3-PER-SEC
+          unit:MegaW
+          unit:MicroW
+          unit:MilliBAR-L-PER-SEC
+          unit:MilliBAR-M3-PER-SEC
+          unit:MilliW
+          unit:NanoW
+          unit:PA-L-PER-SEC
+          unit:PA-M3-PER-SEC
+          unit:PSI-IN3-PER-SEC
+          unit:PSI-M3-PER-SEC
+          unit:PSI-YD3-PER-SEC
+          unit:PicoW
+          unit:PlanckPower
+          unit:TON_FG
+          unit:TeraW
+          unit:W
+          unit:V-A
+          unit:KiloV-A
+          unit:BTU_IT
+          unit:MegaV-A
+          unit:KiloV-A_Reactive
+          unit:V-A_Reactive
+          unit:MegaV-A_Reactive
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Power_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -40647,6 +42528,67 @@ brick:Power_Factor
   rdfs:label "Power Factor" ;
   skos:definition "Power Factor, under periodic conditions, is the ratio of the absolute value of the active power (P) to the apparent power (S)."@en ;
   brick:hasQUDTReference qudtqk:PowerFactor ;
+.
+brick:Power_FactorShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:UNITLESS
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
+brick:Power_Factor_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Power Factor Sensor" ;
+  rdfs:subClassOf brick:Sensor ;
+  skos:definition "Sensors measuring power Factor, under periodic conditions, is the ratio of the absolute value of the active power (P) to the apparent power (S)."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Factor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Power ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Factor ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Power ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Power_Factor ;
 .
 brick:Power_Loss_Alarm
   a owl:Class ;
@@ -40829,6 +42771,34 @@ brick:Precipitation
   skos:broader brick:Level ;
   skos:definition "Amount of atmospheric water vapor fallen including rain, sleet, snow, and hail (https://project-haystack.dev/doc/lib-phScience/precipitation)" ;
   skos:definition "Amount of atmospheric water vapor fallen including rain, sleet, snow, and hail (https://project-haystack.dev/doc/lib-phScience/precipitation)"@en ;
+.
+brick:Preheat_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Preheat Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "A command to activate preheating"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Preheat ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Preheat ;
 .
 brick:Preheat_Demand_Setpoint
   a owl:Class ;
@@ -41101,6 +43071,81 @@ brick:Pressure
   qudt:applicableUnit unit:TORR ;
   rdfs:label "Pressure" ;
   brick:hasQUDTReference qudtqk:Pressure ;
+.
+brick:PressureShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:ATM
+          unit:ATM_T
+          unit:BAR
+          unit:BARAD
+          unit:BARYE
+          unit:CM_H2O
+          unit:CentiBAR
+          unit:CentiM_H2O
+          unit:CentiM_HG
+          unit:DYN-PER-CentiM2
+          unit:DecaPA
+          unit:DeciBAR
+          unit:FT_H2O
+          unit:FT_HG
+          unit:GM_F-PER-CentiM2
+          unit:GigaPA
+          unit:HectoBAR
+          unit:HectoPA
+          unit:IN_H2O
+          unit:IN_HG
+          unit:KIP_F-PER-IN2
+          unit:KiloBAR
+          unit:KiloGM-PER-M-SEC2
+          unit:KiloGM_F-PER-CentiM2
+          unit:KiloGM_F-PER-M2
+          unit:KiloGM_F-PER-MilliM2
+          unit:KiloLB_F-PER-IN2
+          unit:KiloPA
+          unit:KiloPA_A
+          unit:LB_F-PER-FT2
+          unit:LB_F-PER-IN2
+          unit:MegaBAR
+          unit:MegaPA
+          unit:MicroATM
+          unit:MicroBAR
+          unit:MicroPA
+          unit:MicroTORR
+          unit:MilliBAR
+          unit:MilliM_H2O
+          unit:MilliM_HG
+          unit:MilliM_HGA
+          unit:MilliPA
+          unit:MilliTORR
+          unit:N-PER-CentiM2
+          unit:N-PER-M2
+          unit:N-PER-MilliM2
+          unit:PA
+          unit:PDL-PER-FT2
+          unit:PSI
+          unit:PlanckPressure
+          unit:TORR
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Pressure_Alarm
   a owl:Class ;
@@ -41489,6 +43534,34 @@ brick:Pump_Room
   brick:hasAssociatedTag tag:Service ;
   brick:hasAssociatedTag tag:Space ;
 .
+brick:Pump_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Pump Status" ;
+  rdfs:subClassOf brick:Status ;
+  skos:definition "Status of a pump"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Pump ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Pump ;
+  brick:hasAssociatedTag tag:Status ;
+.
 brick:Pump_VFD
   a owl:Class ;
   a sh:NodeShape ;
@@ -41600,6 +43673,31 @@ brick:Radiance
   qudt:applicableUnit unit:W-PER-M2-SR ;
   rdfs:label "Radiance" ;
   brick:hasQUDTReference qudtqk:Radiance ;
+.
+brick:RadianceShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:W-PER-M2-SR
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Radiant_Ceiling_Panel
   a owl:Class ;
@@ -42017,6 +44115,59 @@ brick:Rated_Speed_Setpoint
   brick:hasAssociatedTag tag:Setpoint ;
   brick:hasAssociatedTag tag:Speed ;
 .
+brick:Reactive_Energy
+  a brick:Quantity ;
+  qudt:applicableUnit unit:KiloV-A_Reactive-HR ;
+  qudt:applicableUnit unit:MegaV-A_Reactive-HR ;
+  qudt:applicableUnit unit:V-A_Reactive-HR ;
+  rdfs:isDefinedBy <https://brickschema.org/schema/Brick> ;
+  rdfs:label "Reactive_Energy" ;
+  skos:broader brick:Electric_Energy ;
+  skos:definition "The integral of the reactive power over a time interval" ;
+.
+brick:Reactive_Energy_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Reactive Energy Sensor" ;
+  rdfs:subClassOf brick:Electric_Energy_Sensor ;
+  skos:definition "Measures the integral of reactive power"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Electric ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Energy ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Reactive ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Electric ;
+  brick:hasAssociatedTag tag:Energy ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Reactive ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasQuantity brick:Reactive_Energy ;
+.
 brick:Reactive_Power
   a brick:Quantity ;
   qudt:applicableUnit unit:KiloV-A_Reactive ;
@@ -42116,6 +44267,36 @@ brick:Reception
   brick:hasAssociatedTag tag:Reception ;
   brick:hasAssociatedTag tag:Room ;
   brick:hasAssociatedTag tag:Space ;
+.
+brick:Refrigerant
+  a owl:Class ;
+  a sh:NodeShape ;
+  a brick:Refrigerant ;
+  rdfs:label "Refrigerant" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Refrigerant> ;
+  rdfs:subClassOf brick:Fluid ;
+  skos:definition "A refrigerant is a working fluid used in the refrigeration cycle of air conditioning systems and heat pumps where in most cases they undergo a repeated phase transition from a liquid to a gas and back again."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Fluid ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Refrigerant ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Fluid ;
+  brick:hasAssociatedTag tag:Refrigerant ;
+.
+brick:Refrigerant_Level_Sensor
+  a owl:Class ;
+  rdfs:label "Refrigerant Level Sensor" ;
+  rdfs:subClassOf brick:Sensor ;
+  brick:hasQuantity brick:Level ;
+  brick:hasSubstance brick:Refrigerant ;
 .
 brick:Region
   a owl:Class ;
@@ -42259,6 +44440,56 @@ brick:Relative_Humidity_Sensor
   brick:hasAssociatedTag tag:Sensor ;
   brick:hasQuantity brick:Relative_Humidity ;
   brick:hasSubstance brick:Air ;
+.
+brick:Relay
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Relay" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Relay> ;
+  rdfs:subClassOf brick:Equipment ;
+  skos:definition "an electrically operated switch"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Equipment ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Relay ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Equipment ;
+  brick:hasAssociatedTag tag:Relay ;
+.
+brick:Relay_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Relay Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "Commands to switch the relay"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Relay ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Relay ;
 .
 brick:Relief_Damper
   a owl:Class ;
@@ -43475,6 +45706,7 @@ brick:Return_Condenser_Water_Flow_Sensor
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Return Condenser Water Flow Sensor" ;
+  rdfs:subClassOf brick:Condenser_Water_Flow_Sensor ;
   rdfs:subClassOf brick:Return_Water_Flow_Sensor ;
   skos:definition "Measures the flow of the return condenser water"@en ;
   sh:rule [
@@ -44660,55 +46892,6 @@ brick:Setpoint
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Setpoint ;
 .
-brick:Shade
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Shade" ;
-  rdfs:subClassOf brick:Shading_Equipment ;
-  skos:definition "A screen on a window."@en ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Equipment ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Shade ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  brick:hasAssociatedTag tag:Equipment ;
-  brick:hasAssociatedTag tag:Shade ;
-.
-brick:Shade_Array
-  a owl:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Shade Array" ;
-  rdfs:subClassOf brick:Shading_System ;
-  skos:definition "An array of Shade commonly attached to a single controller."@en ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Array ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:Shade ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  sh:rule [
-      a sh:TripleRule ;
-      sh:object tag:System ;
-      sh:predicate brick:hasTag ;
-      sh:subject sh:this ;
-    ] ;
-  brick:hasAssociatedTag tag:Array ;
-  brick:hasAssociatedTag tag:Shade ;
-  brick:hasAssociatedTag tag:System ;
-.
 brick:Shading_Equipment
   a owl:Class ;
   a sh:NodeShape ;
@@ -45016,6 +47199,42 @@ brick:Smoke_Detector
   brick:hasAssociatedTag tag:Safety ;
   brick:hasAssociatedTag tag:Smoke ;
 .
+brick:Soil_Temperature_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Soil Temperature Sensor" ;
+  rdfs:subClassOf brick:Temperature_Sensor ;
+  skos:definition "Measures the temperature of soil"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Soil ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Temperature ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Soil ;
+  brick:hasAssociatedTag tag:Temperature ;
+  brick:hasSubstance brick:Soil ;
+.
 brick:Solar_Azimuth_Angle_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -45281,6 +47500,114 @@ brick:Speed
   qudt:applicableUnit unit:RAD-PER-SEC ;
   rdfs:label "Speed" ;
   brick:hasQUDTReference qudtqk:Speed ;
+.
+brick:SpeedShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:BFT
+          unit:FT3-PER-MIN-FT2
+          unit:GigaC-PER-M3
+          unit:GigaHZ-M
+          unit:HZ-M
+          unit:M-PER-SEC
+          unit:MegaHZ-M
+          unit:M-PER-HR
+          unit:RAD-PER-SEC
+          unit:MI-PER-SEC
+          unit:MI-PER-HR
+          unit:KiloM-PER-SEC
+          unit:RAD-PER-MIN
+          unit:KiloM-PER-HR
+          unit:DEG-PER-SEC
+          unit:DEG-PER-MIN
+          unit:FT-PER-HR
+          unit:RAD-PER-HR
+          unit:DEG-PER-HR
+          unit:FT-PER-SEC
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
+brick:Speed_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Speed Command" ;
+  rdfs:subClassOf brick:Command ;
+  skos:definition "A command to set speed to a certain degree."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Speed ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Speed ;
+.
+brick:Speed_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Speed Mode Status" ;
+  rdfs:subClassOf brick:Mode_Status ;
+  rdfs:subClassOf brick:Speed_Status ;
+  skos:definition "Status indicating the speed mode"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Speed ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Speed ;
+  brick:hasAssociatedTag tag:Status ;
 .
 brick:Speed_Reset_Command
   a owl:Class ;
@@ -48682,6 +51009,7 @@ brick:Supply_Condenser_Water_Flow_Sensor
   a owl:Class ;
   a sh:NodeShape ;
   rdfs:label "Supply Condenser Water Flow Sensor" ;
+  rdfs:subClassOf brick:Condenser_Water_Flow_Sensor ;
   rdfs:subClassOf brick:Supply_Water_Flow_Sensor ;
   owl:equivalentClass brick:Discharge_Condenser_Water_Flow_Sensor ;
   skos:definition "Measures the flow of the supply condenser water"@en ;
@@ -49709,6 +52037,34 @@ brick:Switch_Room
   brick:hasAssociatedTag tag:Switch ;
   brick:hasAssociatedTag tag:Telecom ;
 .
+brick:Switch_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Switch Status" ;
+  rdfs:subClassOf brick:Status ;
+  skos:definition "Status of a switch"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Switch ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
+  brick:hasAssociatedTag tag:Switch ;
+.
 brick:Switchgear
   a owl:Class ;
   a sh:NodeShape ;
@@ -50149,6 +52505,72 @@ brick:Temperature
   rdfs:label "Temperature" ;
   brick:hasQUDTReference qudtqk:Temperature ;
 .
+brick:TemperatureShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:DEG_C
+          unit:DEG_F
+          unit:DEG_R
+          unit:K
+          unit:MilliDEG_C
+          unit:PlanckTemperature
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
+brick:Temperature_Adjust_Sensor
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Temperature Adjust Sensor" ;
+  rdfs:subClassOf brick:Adjust_Sensor ;
+  skos:definition "Measures user-provided adjustment of temperature"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Adjust ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensor ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Temperature ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Adjust ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensor ;
+  brick:hasAssociatedTag tag:Temperature ;
+  brick:hasQuantity brick:Differential_Temperature ;
+.
 brick:Temperature_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -50175,6 +52597,48 @@ brick:Temperature_Alarm
     ] ;
   brick:hasAssociatedTag tag:Alarm ;
   brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Temperature ;
+.
+brick:Temperature_Alarm_Sensitivity_Parameter
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Temperature Alarm Sensitivity Parameter" ;
+  rdfs:subClassOf brick:Alarm_Sensitivity_Parameter ;
+  skos:definition "A parameter indicates the sensitivity to activate a temperature alarm."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Alarm ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Parameter ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Sensitivity ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Temperature ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Alarm ;
+  brick:hasAssociatedTag tag:Parameter ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Sensitivity ;
   brick:hasAssociatedTag tag:Temperature ;
 .
 brick:Temperature_Deadband_Setpoint
@@ -50740,6 +53204,34 @@ brick:Thermostat
   brick:hasAssociatedTag tag:Equipment ;
   brick:hasAssociatedTag tag:Thermostat ;
 .
+brick:Thermostat_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Thermostat Status" ;
+  rdfs:subClassOf brick:Status ;
+  skos:definition "Status of a thermostat"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Thermostat ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
+  brick:hasAssociatedTag tag:Thermostat ;
+.
 brick:Thermostatic_Mixing_Valve
   a owl:Class ;
   a sh:NodeShape ;
@@ -50857,6 +53349,64 @@ brick:Time
   qudt:applicableUnit unit:YR_TROPICAL ;
   rdfs:label "Time" ;
   brick:hasQUDTReference qudtqk:Time ;
+.
+brick:TimeShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:CentiPOISE-PER-BAR
+          unit:DAY
+          unit:DAY_Sidereal
+          unit:H-PER-KiloOHM
+          unit:H-PER-OHM
+          unit:HR
+          unit:HR_Sidereal
+          unit:KiloSEC
+          unit:MIN
+          unit:MIN_Sidereal
+          unit:MO
+          unit:MO_MeanGREGORIAN
+          unit:MO_MeanJulian
+          unit:MO_Synodic
+          unit:MegaYR
+          unit:MicroH-PER-KiloOHM
+          unit:MicroH-PER-OHM
+          unit:MicroSEC
+          unit:MilliH-PER-KiloOHM
+          unit:MilliH-PER-OHM
+          unit:MilliPA-SEC-PER-BAR
+          unit:MilliSEC
+          unit:NanoSEC
+          unit:PA-SEC-PER-BAR
+          unit:POISE-PER-BAR
+          unit:PicoSEC
+          unit:PlanckTime
+          unit:SEC
+          unit:SH
+          unit:WK
+          unit:YR
+          unit:YR_Common
+          unit:YR_Sidereal
+          unit:YR_TROPICAL
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
 .
 brick:Time_Parameter
   a owl:Class ;
@@ -51018,6 +53568,45 @@ brick:Torque
   skos:definition "In physics, a torque (τ) is a vector that measures the tendency of a force to rotate an object about some axis. The magnitude of a torque is defined as force times its lever arm. Just as a force is a push or a pull, a torque can be thought of as a twist. The SI unit for torque is newton meters ((N m)). In U.S. customary units, it is measured in foot pounds (ft lbf) (also known as \"pounds feet\"). Mathematically, the torque on a particle (which has the position r in some reference frame) can be defined as the cross product: (τ = r x F) where, r is the particle's position vector relative to the fulcrum  F is the force acting on the particles,  or, more generally, torque can be defined as the rate of change of angular momentum: (τ = dL/dt) where, L is the angular momentum vector  t stands for time."@en ;
   brick:hasQUDTReference qudtqk:Torque ;
 .
+brick:TorqueShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:CentiN-M
+          unit:DYN-CentiM
+          unit:DeciN-M
+          unit:KiloGM_F-M
+          unit:KiloGM_F-PER-M
+          unit:KiloN-M
+          unit:LB_F-FT
+          unit:LB_F-IN
+          unit:MegaN-M
+          unit:MicroN-M
+          unit:MilliN-M
+          unit:N-CentiM
+          unit:N-M
+          unit:OZ_F-IN
+          unit:J
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Torque_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -51109,6 +53698,34 @@ brick:Trace_Heat_Sensor
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Sensor ;
   brick:hasAssociatedTag tag:Trace ;
+.
+brick:Transfer_Fan
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Transfer Fan" ;
+  rdfs:subClassOf brick:Fan ;
+  skos:definition "A fan that transfers air from a space to another space."@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Equipment ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Fan ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Transfer ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Equipment ;
+  brick:hasAssociatedTag tag:Fan ;
+  brick:hasAssociatedTag tag:Transfer ;
 .
 brick:Transformer
   a owl:Class ;
@@ -51619,6 +54236,49 @@ brick:Unoccupied_Cooling_Discharge_Air_Flow_Setpoint
   brick:hasAssociatedTag tag:Setpoint ;
   brick:hasAssociatedTag tag:Unoccupied ;
 .
+brick:Unoccupied_Cooling_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Unoccupied Cooling Mode Status" ;
+  rdfs:subClassOf brick:Cooling_Mode_Status ;
+  rdfs:subClassOf brick:Unoccupied_Mode_Status ;
+  skos:definition "Indicates whether a system, device or control loop is in an unoccupied cooling mode"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Cool ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Unoccupied ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Cool ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
+  brick:hasAssociatedTag tag:Unoccupied ;
+.
 brick:Unoccupied_Cooling_Supply_Air_Flow_Setpoint
   a owl:Class ;
   a sh:NodeShape ;
@@ -51917,6 +54577,49 @@ brick:Unoccupied_Heating_Discharge_Air_Flow_Setpoint
   brick:hasAssociatedTag tag:Heat ;
   brick:hasAssociatedTag tag:Point ;
   brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasAssociatedTag tag:Unoccupied ;
+.
+brick:Unoccupied_Heating_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Unoccupied Heating Mode Status" ;
+  rdfs:subClassOf brick:Heating_Mode_Status ;
+  rdfs:subClassOf brick:Unoccupied_Mode_Status ;
+  skos:definition "Indicates whether a system, device or control loop is in an unoccupied heating mode"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Heat ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Unoccupied ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Heat ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
   brick:hasAssociatedTag tag:Unoccupied ;
 .
 brick:Unoccupied_Heating_Supply_Air_Flow_Setpoint
@@ -52641,6 +55344,43 @@ brick:Valve_Position_Alarm
   brick:hasAssociatedTag tag:Position ;
   brick:hasAssociatedTag tag:Valve ;
 .
+brick:Valve_Position_Command
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Valve Position Command" ;
+  rdfs:subClassOf brick:Position_Command ;
+  rdfs:subClassOf brick:Valve_Command ;
+  skos:definition "Controls the position (the degree of openness) of a valve"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Command ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Position ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Valve ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Command ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Position ;
+  brick:hasAssociatedTag tag:Valve ;
+  brick:hasQuantity brick:Position ;
+.
 brick:Valve_Position_Sensor
   a owl:Class ;
   a sh:NodeShape ;
@@ -53218,6 +55958,38 @@ brick:Voltage
   skos:definition "Voltage, also referred to as Electric Tension, is the difference between electrical potentials of two points. For an electric field within a medium, (U_{ab} = - \\int_{r_a}^{r_b} E . {dr}), where (E) is electric field strength. For an irrotational electric field, the voltage is independent of the path between the two points (a) and (b)."@en ;
   brick:hasQUDTReference qudtqk:Voltage ;
 .
+brick:VoltageShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in (
+          unit:KiloV
+          unit:MegaV
+          unit:MicroV
+          unit:MilliV
+          unit:V_Ab
+          unit:V
+          unit:V_Stat
+          unit:PlanckVolt
+        ) ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Voltage_Alarm
   a owl:Class ;
   a sh:NodeShape ;
@@ -53313,6 +56085,48 @@ brick:Voltage_Imbalance_Sensor
   brick:hasAssociatedTag tag:Sensor ;
   brick:hasAssociatedTag tag:Voltage ;
   brick:hasQuantity brick:Voltage_Imbalance ;
+.
+brick:Voltage_Ratio_Setpoint
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Voltage Ratio Setpoint" ;
+  rdfs:subClassOf brick:Setpoint ;
+  skos:definition "Sets the ratio of voltage in a transformer"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Electric ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Ratio ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Setpoint ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Voltage ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Electric ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Ratio ;
+  brick:hasAssociatedTag tag:Setpoint ;
+  brick:hasAssociatedTag tag:Voltage ;
 .
 brick:Voltage_Sensor
   a owl:Class ;
@@ -54251,6 +57065,31 @@ brick:Weather_Condition
   a brick:Quantity ;
   rdfs:label "Weather Condition" ;
 .
+brick:Weather_ConditionShape
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:subClassOf bsh:ValueShape ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasUnit ;
+      sh:in [
+          rdf:rest () ;
+        ] ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:value ;
+      sh:minCount 1 ;
+      sh:or bsh:NumericValue ;
+    ] ;
+.
 brick:Weather_Station
   a owl:Class ;
   a sh:NodeShape ;
@@ -54510,6 +57349,55 @@ brick:Zone_Air
   brick:hasAssociatedTag tag:Air ;
   brick:hasAssociatedTag tag:Fluid ;
   brick:hasAssociatedTag tag:Gas ;
+  brick:hasAssociatedTag tag:Zone ;
+.
+brick:Zone_Air_Conditioning_Mode_Status
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Zone Air Conditioning Mode Status" ;
+  rdfs:subClassOf brick:Mode_Status ;
+  skos:definition "Indicates the mode of AC for a zone"@en ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Air ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Conditioning ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Mode ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Point ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Status ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  sh:rule [
+      a sh:TripleRule ;
+      sh:object tag:Zone ;
+      sh:predicate brick:hasTag ;
+      sh:subject sh:this ;
+    ] ;
+  brick:hasAssociatedTag tag:Air ;
+  brick:hasAssociatedTag tag:Conditioning ;
+  brick:hasAssociatedTag tag:Mode ;
+  brick:hasAssociatedTag tag:Point ;
+  brick:hasAssociatedTag tag:Status ;
   brick:hasAssociatedTag tag:Zone ;
 .
 brick:Zone_Air_Cooling_Temperature_Setpoint
@@ -56161,12 +59049,6 @@ bsh:LastKnownValueShape
       sh:datatype xsd:dateTime ;
       sh:minCount 1 ;
     ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:value ;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-    ] ;
 .
 bsh:MeterRelationshipRule
   a sh:NodeShape ;
@@ -56392,13 +59274,13 @@ bsh:PowerShape
           unit:TON_FG
           unit:TeraW
           unit:W
+          unit:V-A
           unit:KiloV-A
           unit:BTU_IT
           unit:MegaV-A
+          unit:KiloV-A_Reactive
           unit:V-A_Reactive
           unit:MegaV-A_Reactive
-          unit:V-A
-          unit:KiloV-A_Reactive
         ) ;
       sh:minCount 1 ;
     ] ;
@@ -56943,6 +59825,10 @@ tag:Bench
   a brick:Tag ;
   rdfs:label "Bench" ;
 .
+tag:Blind
+  a brick:Tag ;
+  rdfs:label "Blind" ;
+.
 tag:Blowdown
   a brick:Tag ;
   rdfs:label "Blowdown" ;
@@ -57155,6 +60041,10 @@ tag:Cool
   a brick:Tag ;
   rdfs:label "Cool" ;
 .
+tag:Cooler
+  a brick:Tag ;
+  rdfs:label "Cooler" ;
+.
 tag:Cooling
   a brick:Tag ;
   rdfs:label "Cooling" ;
@@ -57166,6 +60056,10 @@ tag:Copy
 tag:Core
   a brick:Tag ;
   rdfs:label "Core" ;
+.
+tag:Count
+  a brick:Tag ;
+  rdfs:label "Count" ;
 .
 tag:Cubicle
   a brick:Tag ;
@@ -57327,6 +60221,10 @@ tag:Driver
   a brick:Tag ;
   rdfs:label "Driver" ;
 .
+tag:Dry
+  a brick:Tag ;
+  rdfs:label "Dry" ;
+.
 tag:Dual
   a brick:Tag ;
   rdfs:label "Dual" ;
@@ -57446,6 +60344,10 @@ tag:FCU
 tag:Face
   a brick:Tag ;
   rdfs:label "Face" ;
+.
+tag:Factor
+  a brick:Tag ;
+  rdfs:label "Factor" ;
 .
 tag:Failure
   a brick:Tag ;
@@ -57582,6 +60484,10 @@ tag:Glycool
 tag:Grains
   a brick:Tag ;
   rdfs:label "Grains" ;
+.
+tag:Group
+  a brick:Tag ;
+  rdfs:label "Group" ;
 .
 tag:HVAC
   a brick:Tag ;
@@ -57775,6 +60681,10 @@ tag:Library
   a brick:Tag ;
   rdfs:label "Library" ;
 .
+tag:Light
+  a brick:Tag ;
+  rdfs:label "Light" ;
+.
 tag:Lighting
   a brick:Tag ;
   rdfs:label "Lighting" ;
@@ -57822,10 +60732,6 @@ tag:Loss
 tag:Lounge
   a brick:Tag ;
   rdfs:label "Lounge" ;
-.
-tag:Louver
-  a brick:Tag ;
-  rdfs:label "Louver" ;
 .
 tag:Low
   a brick:Tag ;
@@ -58251,6 +61157,10 @@ tag:Recovery
   a brick:Tag ;
   rdfs:label "Recovery" ;
 .
+tag:Refrigerant
+  a brick:Tag ;
+  rdfs:label "Refrigerant" ;
+.
 tag:Region
   a brick:Tag ;
   rdfs:label "Region" ;
@@ -58262,6 +61172,10 @@ tag:Reheat
 tag:Relative
   a brick:Tag ;
   rdfs:label "Relative" ;
+.
+tag:Relay
+  a brick:Tag ;
+  rdfs:label "Relay" ;
 .
 tag:Relief
   a brick:Tag ;
@@ -58331,6 +61245,10 @@ tag:Security
   a brick:Tag ;
   rdfs:label "Security" ;
 .
+tag:Seismic
+  a brick:Tag ;
+  rdfs:label "Seismic" ;
+.
 tag:Sensitivity
   a brick:Tag ;
   rdfs:label "Sensitivity" ;
@@ -58379,6 +61297,10 @@ tag:Shutdown
   a brick:Tag ;
   rdfs:label "Shutdown" ;
 .
+tag:Shutoff
+  a brick:Tag ;
+  rdfs:label "Shutoff" ;
+.
 tag:Site
   a brick:Tag ;
   rdfs:label "Site" ;
@@ -58386,6 +61308,10 @@ tag:Site
 tag:Smoke
   a brick:Tag ;
   rdfs:label "Smoke" ;
+.
+tag:Soil
+  a brick:Tag ;
+  rdfs:label "Soil" ;
 .
 tag:Solar
   a brick:Tag ;
@@ -58582,6 +61508,10 @@ tag:Tower
 tag:Trace
   a brick:Tag ;
   rdfs:label "Trace" ;
+.
+tag:Transfer
+  a brick:Tag ;
+  rdfs:label "Transfer" ;
 .
 tag:Transformer
   a brick:Tag ;
