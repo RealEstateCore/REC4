@@ -38,7 +38,7 @@
         "en": "geometry"
       },
       "name": "geometry",
-      "schema": "string",
+      "schema": "polygon",
       "writable": true
     },
     {

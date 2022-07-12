@@ -8,6 +8,7 @@
 @prefix bsh: <https://brickschema.org/schema/BrickShape#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dcterms1: <http://purl.org/dc/terms#> .
+@prefix geojson: <https://geojson.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix qudtqk: <http://qudt.org/vocab/quantitykind/> .
@@ -61624,6 +61625,12 @@ tag:Zone
   a brick:Tag ;
   rdfs:label "Zone" ;
 .
+geojson:Polygon
+  a rdfs:Datatype ;
+  rdfs:comment "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
+  rdfs:label "Polygon" ;
+  owl:onDatatype xsd:string ;
+.
 <https://w3id.org/rec>
   rdfs:label "RealEstateCore" ;
   owl:versionInfo "4.0" ;
@@ -61904,7 +61911,7 @@ rec:Asset
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:geometry ;
-      sh:datatype xsd:string ;
+      sh:datatype geojson:Polygon ;
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
       sh:maxCount 1 ;
       sh:name "geometry" ;
@@ -63477,7 +63484,7 @@ rec:Space
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:geometry ;
-      sh:datatype xsd:string ;
+      sh:datatype geojson:Polygon ;
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
       sh:maxCount 1 ;
       sh:name "geometry" ;

@@ -8,6 +8,7 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix brickpatches: <https://w3id.org/rec/brickpatches#> .
 @prefix dash: <http://datashapes.org/dash#> .
+@prefix geojson: <https://geojson.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,6 +25,12 @@ brick:Equipment
       sh:name "is fed by" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+geojson:Polygon
+  a rdfs:Datatype ;
+  rdfs:comment "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
+  rdfs:label "Polygon" ;
+  owl:onDatatype xsd:string ;
 .
 <https://w3id.org/rec>
   a owl:Ontology ;
@@ -309,7 +316,7 @@ rec:Asset
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:geometry ;
-      sh:datatype xsd:string ;
+      sh:datatype geojson:Polygon ;
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
       sh:maxCount 1 ;
       sh:name "geometry" ;
@@ -1882,7 +1889,7 @@ rec:Space
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:geometry ;
-      sh:datatype xsd:string ;
+      sh:datatype geojson:Polygon ;
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
       sh:maxCount 1 ;
       sh:name "geometry" ;
