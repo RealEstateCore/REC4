@@ -8,14 +8,14 @@
         "en": "Cooling capacity"
       },
       "name": "coolingCapacity",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Object",
-        "dtmi:dtdl:property:fields;3": [
+        "fields": [
           {
             "name": "hasUnit",
-            "dtmi:dtdl:property:schema;3": {
+            "schema": {
               "@type": "Enum",
-              "dtmi:dtdl:property:enumValues;3": [
+              "enumValues": [
                 {
                   "enumValue": "BTU_IT_PER_HR",
                   "name": "BTU_IT_PER_HR"

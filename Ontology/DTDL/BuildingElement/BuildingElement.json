@@ -58,13 +58,13 @@
         "en": "Custom Tags"
       },
       "name": "customTags",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "tagName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "tagValue",
           "schema": "string"
         }
@@ -77,13 +77,13 @@
         "en": "External IDs"
       },
       "name": "externalIds",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "externalIdName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "externalIdValue",
           "schema": "string"
         }

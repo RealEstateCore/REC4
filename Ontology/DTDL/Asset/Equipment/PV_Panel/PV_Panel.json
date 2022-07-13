@@ -8,18 +8,18 @@
         "en": "Rated module conversion efficiency"
       },
       "name": "ratedModuleConversionEfficiency",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Object",
-        "dtmi:dtdl:property:fields;3": [
+        "fields": [
           {
             "name": "value",
             "schema": "string"
           },
           {
             "name": "hasUnit",
-            "dtmi:dtdl:property:schema;3": {
+            "schema": {
               "@type": "Enum",
-              "dtmi:dtdl:property:enumValues;3": {
+              "enumValues": {
                 "enumValue": "PERCENT",
                 "name": "PERCENT"
               },
@@ -36,18 +36,18 @@
         "en": "Measured module conversion efficiency"
       },
       "name": "measuredModuleConversionEfficiency",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Object",
-        "dtmi:dtdl:property:fields;3": [
+        "fields": [
           {
             "name": "value",
             "schema": "string"
           },
           {
             "name": "hasUnit",
-            "dtmi:dtdl:property:schema;3": {
+            "schema": {
               "@type": "Enum",
-              "dtmi:dtdl:property:enumValues;3": {
+              "enumValues": {
                 "enumValue": "PERCENT",
                 "name": "PERCENT"
               },

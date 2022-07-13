@@ -8,15 +8,15 @@
         "en": "feeds"
       },
       "name": "feeds",
-      "dtmi:dtdl:property:properties;3": {
+      "properties": {
         "@type": "Property",
         "displayName": {
           "en": "substance"
         },
         "name": "substance",
-        "dtmi:dtdl:property:schema;3": {
+        "schema": {
           "@type": "Enum",
-          "dtmi:dtdl:property:enumValues;3": [
+          "enumValues": [
             {
               "enumValue": "ChilledWater",
               "name": "ChilledWater"
@@ -174,15 +174,15 @@
         "en": "is fed by"
       },
       "name": "isFedBy",
-      "dtmi:dtdl:property:properties;3": {
+      "properties": {
         "@type": "Property",
         "displayName": {
           "en": "substance"
         },
         "name": "substance",
-        "dtmi:dtdl:property:schema;3": {
+        "schema": {
           "@type": "Enum",
-          "dtmi:dtdl:property:enumValues;3": [
+          "enumValues": [
             {
               "enumValue": "ACElec",
               "name": "ACElec"

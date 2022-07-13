@@ -8,9 +8,9 @@
         "en": "status"
       },
       "name": "status",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;3": [
+        "enumValues": [
           {
             "enumValue": "Closed",
             "name": "Closed"
@@ -34,9 +34,9 @@
         "en": "severity"
       },
       "name": "severity",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;3": [
+        "enumValues": [
           {
             "enumValue": "Minor",
             "name": "Minor"

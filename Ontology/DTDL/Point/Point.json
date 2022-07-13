@@ -8,9 +8,9 @@
         "en": "has quantity"
       },
       "name": "hasQuantity",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;3": [
+        "enumValues": [
           {
             "enumValue": "Precipitation",
             "name": "Precipitation"
@@ -406,13 +406,13 @@
         "en": "Custom Tags"
       },
       "name": "customTags",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "tagName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "tagValue",
           "schema": "string"
         }
@@ -425,13 +425,13 @@
         "en": "External IDs"
       },
       "name": "externalIds",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "externalIdName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "externalIdValue",
           "schema": "string"
         }
@@ -453,9 +453,9 @@
         "en": "has substance"
       },
       "name": "hasSubstance",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;3": [
+        "enumValues": [
           {
             "enumValue": "Fluid",
             "name": "Fluid"
@@ -671,14 +671,14 @@
         "en": "Aggregate"
       },
       "name": "aggregate",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Object",
-        "dtmi:dtdl:property:fields;3": [
+        "fields": [
           {
             "name": "aggregationFunction",
-            "dtmi:dtdl:property:schema;3": {
+            "schema": {
               "@type": "Enum",
-              "dtmi:dtdl:property:enumValues;3": [
+              "enumValues": [
                 {
                   "enumValue": "max",
                   "name": "max"
@@ -733,9 +733,9 @@
         "en": "Last known value"
       },
       "name": "lastKnownValue",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Object",
-        "dtmi:dtdl:property:fields;3": [
+        "fields": [
           {
             "name": "timestamp",
             "schema": "dateTime"

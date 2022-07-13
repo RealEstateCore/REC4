@@ -8,9 +8,9 @@
         "en": "trip direction"
       },
       "name": "tripDirection",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;3": [
+        "enumValues": [
           {
             "enumValue": "Down",
             "name": "Down"

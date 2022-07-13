@@ -24,7 +24,7 @@
         "Discharge"
       ],
       "name": "tags",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Array",
         "elementSchema": "string"
       },

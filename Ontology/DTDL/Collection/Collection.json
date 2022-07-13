@@ -26,13 +26,13 @@
         "en": "Custom Tags"
       },
       "name": "customTags",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "tagName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "tagValue",
           "schema": "string"
         }
@@ -45,13 +45,13 @@
         "en": "External IDs"
       },
       "name": "externalIds",
-      "dtmi:dtdl:property:schema;3": {
+      "schema": {
         "@type": "Map",
-        "dtmi:dtdl:property:mapKey;3": {
+        "mapKey": {
           "name": "externalIdName",
           "schema": "string"
         },
-        "dtmi:dtdl:property:mapValue;3": {
+        "mapValue": {
           "name": "externalIdValue",
           "schema": "string"
         }
@@ -69,7 +69,7 @@
     }
   ],
   "description": {
-    "en": "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings).\n\nInclusion in a Collection is determined by the 'includes' field on a specific subclass."
+    "en": "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings).\r\n\r\nInclusion in a Collection is determined by the 'includes' field on a specific subclass."
   },
   "displayName": {
     "en": "Collection"
