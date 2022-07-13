@@ -62120,13 +62120,6 @@ rec:BuildingElement
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:includedIn ;
-      sh:class rec:Collection ;
-      sh:name "included in" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:isPartOf ;
       sh:class rec:BuildingElement ;
       sh:maxCount 1 ;
@@ -62239,9 +62232,7 @@ rec:CoffeeTable
 rec:Collection
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings).
-
-Inclusion in a Collection is determined by the 'includes' field on a specific subclass.""" ;
+  rdfs:comment "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings). Inclusion in a Collection is determined by the 'includes' field on a specific subclass." ;
   rdfs:label "Collection" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
@@ -62249,13 +62240,6 @@ Inclusion in a Collection is determined by the 'includes' field on a specific su
       sh:path rec:documentation ;
       sh:class rec:Document ;
       sh:name "documentation" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:includedIn ;
-      sh:class rec:Collection ;
-      sh:name "included in" ;
       sh:nodeKind sh:IRI ;
     ] ;
   recp:apiEndpoint "collections" ;
@@ -62707,13 +62691,6 @@ rec:Information
   a sh:NodeShape ;
   rdfs:label "Information" ;
   rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:includedIn ;
-      sh:class rec:Collection ;
-      sh:name "included in" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
 .
 rec:Kitchenette
   a rdfs:Class ;
@@ -63104,9 +63081,7 @@ rec:PhoneBooth
 rec:PointEvent
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """An event emanating from or targeting a Point; e.g., an individual Observation from a Sensor point, or an Actuation sent to a Command point. In other terms, the Points indicate the capability of some Space or Equipment to emit or accept data, while this class represents those actual data messages. 
-
-Note that in most non-trivially sized systems, these events are not stored in the knowledge graph itself, but are rather forwarded to some C&C system or time series database.""" ;
+  rdfs:comment "An event emanating from or targeting a Point; e.g., an individual Observation from a Sensor point, or an Actuation sent to a Command point. In other terms, the Points indicate the capability of some Space or Equipment to emit or accept data, while this class represents those actual data messages. Note that in most non-trivially sized systems, these events are not stored in the knowledge graph itself, but are rather forwarded to some C&C system or time series database." ;
   rdfs:label "Point event" ;
   rdfs:subClassOf rec:Event ;
   sh:property [

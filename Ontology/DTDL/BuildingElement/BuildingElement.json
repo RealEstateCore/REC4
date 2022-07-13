@@ -70,15 +70,6 @@
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "included in"
-      },
-      "name": "includedIn",
-      "target": "dtmi:org:w3id:rec:Collection;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
         "en": "is part of"
       },
       "maxMultiplicity": 1,

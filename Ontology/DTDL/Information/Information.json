@@ -48,15 +48,6 @@
       "name": "name",
       "schema": "string",
       "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "included in"
-      },
-      "name": "includedIn",
-      "target": "dtmi:org:w3id:rec:Collection;1",
-      "writable": true
     }
   ],
   "displayName": {
