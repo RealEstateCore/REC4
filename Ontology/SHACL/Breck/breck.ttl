@@ -63746,6 +63746,3 @@ recp:apiEndpoint
   rdfs:label "API endpoint" ;
   rdfs:range xsd:string ;
 .
-[
-  a sh:PropertyShape ;
-].
