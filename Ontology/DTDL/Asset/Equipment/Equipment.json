@@ -27,20 +27,20 @@
           "@type": "Enum",
           "enumValues": [
             {
-              "enumValue": "ChilledWater",
-              "name": "ChilledWater"
-            },
-            {
-              "enumValue": "BlowdownWater",
-              "name": "BlowdownWater"
+              "enumValue": "ACElec",
+              "name": "ACElec"
             },
             {
               "enumValue": "Air",
               "name": "Air"
             },
             {
-              "enumValue": "ACElec",
-              "name": "ACElec"
+              "enumValue": "BlowdownWater",
+              "name": "BlowdownWater"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
             },
             {
               "enumValue": "ColdDomesticWater",

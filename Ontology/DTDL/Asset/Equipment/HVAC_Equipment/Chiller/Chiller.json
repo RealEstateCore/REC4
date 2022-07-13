@@ -21,12 +21,12 @@
                   "name": "BTU_IT_PER_HR"
                 },
                 {
-                  "enumValue": "TON_FG",
-                  "name": "TON_FG"
-                },
-                {
                   "enumValue": "BTU_TH_PER_HR",
                   "name": "BTU_TH_PER_HR"
+                },
+                {
+                  "enumValue": "TON_FG",
+                  "name": "TON_FG"
                 },
                 {
                   "enumValue": "W",

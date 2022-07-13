@@ -39,12 +39,12 @@
         "@type": "Enum",
         "enumValues": [
           {
-            "enumValue": "Minor",
-            "name": "Minor"
-          },
-          {
             "enumValue": "Major",
             "name": "Major"
+          },
+          {
+            "enumValue": "Minor",
+            "name": "Minor"
           },
           {
             "enumValue": "Severe",
@@ -65,12 +65,12 @@
         "@type": "Enum",
         "enumValues": [
           {
-            "enumValue": "Closed",
-            "name": "Closed"
-          },
-          {
             "enumValue": "Acknowledged",
             "name": "Acknowledged"
+          },
+          {
+            "enumValue": "Closed",
+            "name": "Closed"
           },
           {
             "enumValue": "Unacknowledged",
