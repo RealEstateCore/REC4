@@ -5,6 +5,14 @@
     {
       "@type": "Relationship",
       "displayName": {
+        "en": "document topic"
+      },
+      "name": "documentTopic",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
         "en": "URL"
       },
       "name": "url",

@@ -61770,9 +61770,9 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -61889,6 +61889,13 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:commissionedBy ;
+      sh:class rec:Agent ;
+      sh:name "commissioned by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:commissioningDate ;
       sh:datatype xsd:date ;
       sh:maxCount 1 ;
@@ -61896,9 +61903,9 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:commissionedBy ;
-      sh:class rec:Agent ;
-      sh:name "commissioned by" ;
+      sh:path rec:documentation ;
+      sh:class rec:Document ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -61908,13 +61915,6 @@ rec:Asset
       sh:description "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
       sh:maxCount 1 ;
       sh:name "geometry" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
-      sh:class rec:Document ;
-      sh:name "has document" ;
-      sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
@@ -62106,9 +62106,9 @@ rec:BuildingElement
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -62246,9 +62246,9 @@ Inclusion in a Collection is determined by the 'includes' field on a specific su
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -62373,6 +62373,12 @@ rec:Document
   a sh:NodeShape ;
   rdfs:label "Document" ;
   rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:documentTopic ;
+      sh:name "document topic" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:url ;

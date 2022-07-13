@@ -175,9 +175,9 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -294,17 +294,17 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:commissioningDate ;
-      sh:datatype xsd:date ;
-      sh:maxCount 1 ;
-      sh:name "commissioning date" ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:commissionedBy ;
       sh:class rec:Agent ;
       sh:name "commissioned by" ;
       sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:commissioningDate ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+      sh:name "commissioning date" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
@@ -316,9 +316,9 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -511,9 +511,9 @@ rec:BuildingElement
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -651,9 +651,9 @@ Inclusion in a Collection is determined by the 'includes' field on a specific su
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:hasDocument ;
+      sh:path rec:documentation ;
       sh:class rec:Document ;
-      sh:name "has document" ;
+      sh:name "documentation" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -778,6 +778,12 @@ rec:Document
   a sh:NodeShape ;
   rdfs:label "Document" ;
   rdfs:subClassOf rec:Information ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:documentTopic ;
+      sh:name "document topic" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:url ;
