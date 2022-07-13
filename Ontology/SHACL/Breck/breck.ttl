@@ -61803,13 +61803,6 @@ rec:Architecture
       sh:name "owned by" ;
       sh:nodeKind sh:IRI ;
     ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path rec:subjectOf ;
-      sh:class rec:Document ;
-      sh:name "subject of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
 .
 rec:ArchitectureArea
   a <dtmi:dtdl:class:Component> ;
