@@ -5,27 +5,28 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "status"
+        "en": "acknowledged time"
       },
-      "name": "status",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "Closed",
-            "name": "Closed"
-          },
-          {
-            "enumValue": "Acknowledged",
-            "name": "Acknowledged"
-          },
-          {
-            "enumValue": "Unacknowledged",
-            "name": "Unacknowledged"
-          }
-        ],
-        "valueSchema": "string"
+      "name": "acknowledgedTime",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "closed time"
       },
+      "name": "closedTime",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "created time"
+      },
+      "name": "createdTime",
+      "schema": "dateTime",
       "writable": true
     },
     {
@@ -55,48 +56,39 @@
       "writable": true
     },
     {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "related to"
-      },
-      "name": "relatedTo",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "produced by"
-      },
-      "name": "producedBy",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
-      "writable": true
-    },
-    {
       "@type": "Property",
       "displayName": {
-        "en": "created time"
+        "en": "status"
       },
-      "name": "createdTime",
-      "schema": "dateTime",
+      "name": "status",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Closed",
+            "name": "Closed"
+          },
+          {
+            "enumValue": "Acknowledged",
+            "name": "Acknowledged"
+          },
+          {
+            "enumValue": "Unacknowledged",
+            "name": "Unacknowledged"
+          }
+        ],
+        "valueSchema": "string"
+      },
       "writable": true
     },
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "created by"
+        "en": "acknowledged by"
       },
       "maxMultiplicity": 1,
-      "name": "createdBy",
+      "name": "acknowledgedBy",
       "target": "dtmi:org:w3id:rec:Agent;1",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "closed time"
-      },
-      "name": "closedTime",
-      "schema": "dateTime",
       "writable": true
     },
     {
@@ -110,22 +102,30 @@
       "writable": true
     },
     {
-      "@type": "Property",
+      "@type": "Relationship",
       "displayName": {
-        "en": "acknowledged time"
+        "en": "created by"
       },
-      "name": "acknowledgedTime",
-      "schema": "dateTime",
+      "maxMultiplicity": 1,
+      "name": "createdBy",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "acknowledged by"
+        "en": "produced by"
       },
-      "maxMultiplicity": 1,
-      "name": "acknowledgedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "name": "producedBy",
+      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "related to"
+      },
+      "name": "relatedTo",
       "writable": true
     }
   ],

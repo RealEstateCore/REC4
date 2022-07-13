@@ -4,15 +4,6 @@
   "contents": [
     {
       "@type": "Property",
-      "displayName": {
-        "en": "seating capacity"
-      },
-      "name": "seatingCapacity",
-      "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": "Property",
       "description": {
         "en": "E.g., per Building Code"
       },
@@ -20,6 +11,15 @@
         "en": "maximum occupancy"
       },
       "name": "maxOccupancy",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "seating capacity"
+      },
+      "name": "seatingCapacity",
       "schema": "integer",
       "writable": true
     }

@@ -5,39 +5,6 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "timestamp"
-      },
-      "name": "timestamp",
-      "schema": "dateTime",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "description": {
-        "en": "Event start timestamp."
-      },
-      "displayName": {
-        "en": "start"
-      },
-      "name": "start",
-      "schema": "dateTime",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "description": {
-        "en": "Event ending timestamp."
-      },
-      "displayName": {
-        "en": "end"
-      },
-      "name": "end",
-      "schema": "dateTime",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "Custom Tags"
       },
       "name": "customTags",
@@ -52,6 +19,18 @@
           "schema": "string"
         }
       },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Event ending timestamp."
+      },
+      "displayName": {
+        "en": "end"
+      },
+      "name": "end",
+      "schema": "dateTime",
       "writable": true
     },
     {
@@ -80,6 +59,27 @@
       },
       "name": "name",
       "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Event start timestamp."
+      },
+      "displayName": {
+        "en": "start"
+      },
+      "name": "start",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "timestamp"
+      },
+      "name": "timestamp",
+      "schema": "dateTime",
       "writable": true
     }
   ],

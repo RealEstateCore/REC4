@@ -5,6 +5,33 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "current level"
+      },
+      "name": "currentLevel",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "end level"
+      },
+      "name": "endLevel",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "start level"
+      },
+      "name": "startLevel",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "trip direction"
       },
       "name": "tripDirection",
@@ -22,33 +49,6 @@
         ],
         "valueSchema": "string"
       },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "start level"
-      },
-      "name": "startLevel",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "end level"
-      },
-      "name": "endLevel",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "current level"
-      },
-      "name": "currentLevel",
-      "schema": "string",
       "writable": true
     }
   ],

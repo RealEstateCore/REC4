@@ -3,56 +3,6 @@
   "@type": "Interface",
   "contents": [
     {
-      "@type": "Relationship",
-      "description": {
-        "en": "Indicates the architected space (site, building, level, room...) in which this building element is placed."
-      },
-      "displayName": {
-        "en": "located in"
-      },
-      "maxMultiplicity": 1,
-      "name": "locatedIn",
-      "target": "dtmi:org:w3id:rec:Architecture;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "is part of"
-      },
-      "maxMultiplicity": 1,
-      "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:BuildingElement;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "included in"
-      },
-      "name": "includedIn",
-      "target": "dtmi:org:w3id:rec:Collection;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "has part"
-      },
-      "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:BuildingElement;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "has document"
-      },
-      "name": "hasDocument",
-      "target": "dtmi:org:w3id:rec:Document;1",
-      "writable": true
-    },
-    {
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -97,6 +47,56 @@
       },
       "name": "name",
       "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "has document"
+      },
+      "name": "hasDocument",
+      "target": "dtmi:org:w3id:rec:Document;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "has part"
+      },
+      "name": "hasPart",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "included in"
+      },
+      "name": "includedIn",
+      "target": "dtmi:org:w3id:rec:Collection;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is part of"
+      },
+      "maxMultiplicity": 1,
+      "name": "isPartOf",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates the architected space (site, building, level, room...) in which this building element is placed."
+      },
+      "displayName": {
+        "en": "located in"
+      },
+      "maxMultiplicity": 1,
+      "name": "locatedIn",
+      "target": "dtmi:org:w3id:rec:Architecture;1",
       "writable": true
     }
   ],

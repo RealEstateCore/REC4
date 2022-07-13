@@ -3,48 +3,55 @@
   "@type": "Interface",
   "contents": [
     {
-      "@type": "Relationship",
+      "@type": "Component",
       "displayName": {
-        "en": "subject of"
+        "en": "area"
       },
-      "name": "subjectOf",
-      "target": "dtmi:org:w3id:rec:Document;1",
+      "name": "area",
+      "schema": "dtmi:org:w3id:rec:ArchitectureArea;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "capacity"
+      },
+      "name": "capacity",
+      "schema": "dtmi:org:w3id:rec:ArchitectureCapacity;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question."
+      },
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "target": "dtmi:org:w3id:rec:PostalAddress;1",
       "writable": true
     },
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "owned by"
+        "en": "adjacent element"
       },
-      "name": "ownedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "operated by"
-      },
-      "name": "operatedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "intersecting element"
-      },
-      "name": "intersectingElement",
+      "name": "adjacentElement",
       "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "has document"
+        "en": "architected by"
       },
-      "name": "hasDocument",
-      "target": "dtmi:org:w3id:rec:Document;1",
+      "name": "architectedBy",
+      "target": "dtmi:org:w3id:rec:Agent;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "constructedBy",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -61,54 +68,20 @@
     },
     {
       "@type": "Relationship",
-      "name": "constructedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
-      "writable": true
-    },
-    {
-      "@type": "Component",
       "displayName": {
-        "en": "capacity"
+        "en": "has document"
       },
-      "name": "capacity",
-      "schema": "dtmi:org:w3id:rec:ArchitectureCapacity;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "area"
-      },
-      "name": "area",
-      "schema": "dtmi:org:w3id:rec:ArchitectureArea;1"
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "architected by"
-      },
-      "name": "architectedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "name": "hasDocument",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     },
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "adjacent element"
+        "en": "intersecting element"
       },
-      "name": "adjacentElement",
+      "name": "intersectingElement",
       "target": "dtmi:org:w3id:rec:BuildingElement;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "description": {
-        "en": "Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question."
-      },
-      "displayName": {
-        "en": "address"
-      },
-      "name": "address",
-      "target": "dtmi:org:w3id:rec:PostalAddress;1",
       "writable": true
     },
     {
@@ -275,6 +248,33 @@
         },
         "writable": true
       },
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "operated by"
+      },
+      "name": "operatedBy",
+      "target": "dtmi:org:w3id:rec:Agent;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "owned by"
+      },
+      "name": "ownedBy",
+      "target": "dtmi:org:w3id:rec:Agent;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "subject of"
+      },
+      "name": "subjectOf",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     }
   ],

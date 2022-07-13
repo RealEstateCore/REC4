@@ -17,13 +17,13 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates parthood relations in organizations (e.g., departments of a corporation). Note that membership in an organization is expressed using the Agent.isMemberOf property."
+        "en": "Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic hasPart property."
       },
       "displayName": {
-        "en": "is part of"
+        "en": "has member"
       },
-      "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Organization;1",
+      "name": "hasMember",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -41,13 +41,13 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic hasPart property."
+        "en": "Indicates parthood relations in organizations (e.g., departments of a corporation). Note that membership in an organization is expressed using the Agent.isMemberOf property."
       },
       "displayName": {
-        "en": "has member"
+        "en": "is part of"
       },
-      "name": "hasMember",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "name": "isPartOf",
+      "target": "dtmi:org:w3id:rec:Organization;1",
       "writable": true
     }
   ],

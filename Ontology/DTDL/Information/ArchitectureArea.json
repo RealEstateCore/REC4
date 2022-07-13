@@ -5,9 +5,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "rentable area"
+        "en": "gross area"
       },
-      "name": "rentableArea",
+      "name": "grossArea",
       "schema": "float",
       "writable": true
     },
@@ -23,9 +23,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "gross area"
+        "en": "rentable area"
       },
-      "name": "grossArea",
+      "name": "rentableArea",
       "schema": "float",
       "writable": true
     }

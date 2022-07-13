@@ -4,19 +4,7 @@
   "contents": [
     {
       "@type": "Property",
-      "description": {
-        "en": "URL link to an image that represents the person."
-      },
-      "displayName": {
-        "en": "image"
-      },
-      "name": "image",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "givenName",
+      "name": "familyName",
       "schema": "string",
       "writable": true
     },
@@ -31,7 +19,19 @@
     },
     {
       "@type": "Property",
-      "name": "familyName",
+      "name": "givenName",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "URL link to an image that represents the person."
+      },
+      "displayName": {
+        "en": "image"
+      },
+      "name": "image",
       "schema": "string",
       "writable": true
     }

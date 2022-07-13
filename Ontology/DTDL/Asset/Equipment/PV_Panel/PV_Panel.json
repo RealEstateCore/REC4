@@ -5,9 +5,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Rated module conversion efficiency"
+        "en": "Measured module conversion efficiency"
       },
-      "name": "ratedModuleConversionEfficiency",
+      "name": "measuredModuleConversionEfficiency",
       "schema": {
         "@type": "Object",
         "fields": [
@@ -33,9 +33,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Measured module conversion efficiency"
+        "en": "Rated module conversion efficiency"
       },
-      "name": "measuredModuleConversionEfficiency",
+      "name": "ratedModuleConversionEfficiency",
       "schema": {
         "@type": "Object",
         "fields": [

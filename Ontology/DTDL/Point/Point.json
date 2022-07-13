@@ -5,6 +5,98 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "Aggregate"
+      },
+      "name": "aggregate",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "aggregationFunction",
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "max",
+                  "name": "max"
+                },
+                {
+                  "enumValue": "min",
+                  "name": "min"
+                },
+                {
+                  "enumValue": "count",
+                  "name": "count"
+                },
+                {
+                  "enumValue": "mean",
+                  "name": "mean"
+                },
+                {
+                  "enumValue": "sum",
+                  "name": "sum"
+                },
+                {
+                  "enumValue": "median",
+                  "name": "median"
+                },
+                {
+                  "enumValue": "mode",
+                  "name": "mode"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "aggregationInterval",
+            "schema": "string"
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "has quantity"
       },
       "name": "hasQuantity",
@@ -403,53 +495,6 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Custom Tags"
-      },
-      "name": "customTags",
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "tagName",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "tagValue",
-          "schema": "string"
-        }
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "External IDs"
-      },
-      "name": "externalIds",
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "externalIdName",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "externalIdValue",
-          "schema": "string"
-        }
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "name"
-      },
-      "name": "name",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "has substance"
       },
       "name": "hasSubstance",
@@ -668,68 +713,6 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Aggregate"
-      },
-      "name": "aggregate",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "aggregationFunction",
-            "schema": {
-              "@type": "Enum",
-              "enumValues": [
-                {
-                  "enumValue": "max",
-                  "name": "max"
-                },
-                {
-                  "enumValue": "min",
-                  "name": "min"
-                },
-                {
-                  "enumValue": "count",
-                  "name": "count"
-                },
-                {
-                  "enumValue": "mean",
-                  "name": "mean"
-                },
-                {
-                  "enumValue": "sum",
-                  "name": "sum"
-                },
-                {
-                  "enumValue": "median",
-                  "name": "median"
-                },
-                {
-                  "enumValue": "mode",
-                  "name": "mode"
-                }
-              ],
-              "valueSchema": "string"
-            }
-          },
-          {
-            "name": "aggregationInterval",
-            "schema": "string"
-          }
-        ]
-      },
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "Is point of"
-      },
-      "name": "isPointOf",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "Last known value"
       },
       "name": "lastKnownValue",
@@ -746,6 +729,23 @@
           }
         ]
       },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "Is point of"
+      },
+      "name": "isPointOf",
       "writable": true
     }
   ],

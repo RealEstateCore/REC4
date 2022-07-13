@@ -5,28 +5,19 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "is metered by"
+      },
+      "name": "isMeteredBy",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "is virtual meter"
       },
       "name": "isVirtualMeter",
       "schema": "boolean",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "is sub-meter of"
-      },
-      "name": "isSubMeterOf",
-      "target": "dtmi:org:brickschema:schema:Brick:Meter;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "has sub-meter"
-      },
-      "name": "hasSubMeter",
-      "target": "dtmi:org:brickschema:schema:Brick:Meter;1",
       "writable": true
     },
     {
@@ -39,12 +30,21 @@
       "writable": true
     },
     {
-      "@type": "Property",
+      "@type": "Relationship",
       "displayName": {
-        "en": "is metered by"
+        "en": "has sub-meter"
       },
-      "name": "isMeteredBy",
-      "schema": "string",
+      "name": "hasSubMeter",
+      "target": "dtmi:org:brickschema:schema:Brick:Meter;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is sub-meter of"
+      },
+      "name": "isSubMeterOf",
+      "target": "dtmi:org:brickschema:schema:Brick:Meter;1",
       "writable": true
     }
   ],
