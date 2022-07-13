@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Point",
+  "@id": "dtmi:org:brickschema:schema:Brick:Point;1",
   "@type": "Interface",
   "contents": [
     {

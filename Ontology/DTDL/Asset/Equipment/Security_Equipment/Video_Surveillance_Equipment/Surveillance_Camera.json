@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Surveillance_Camera",
+  "@id": "dtmi:org:brickschema:schema:Brick:Surveillance_Camera;1",
   "@type": "Interface",
   "contents": [
     {
@@ -32,8 +32,8 @@
     "en": "Surveillance Camera"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Video_Surveillance_Equipment",
-    "dtmi:org:brickschema:schema:Brick:Camera"
+    "dtmi:org:brickschema:schema:Brick:Video_Surveillance_Equipment;1",
+    "dtmi:org:brickschema:schema:Brick:Camera;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

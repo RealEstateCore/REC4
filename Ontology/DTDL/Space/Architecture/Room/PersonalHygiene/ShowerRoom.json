@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:ShowerRoom",
+  "@id": "dtmi:org:w3id:rec:ShowerRoom;1",
   "@type": "Interface",
   "displayName": {
     "en": "Shower room"
   },
-  "extends": "dtmi:org:w3id:rec:PersonalHygiene",
+  "extends": "dtmi:org:w3id:rec:PersonalHygiene;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

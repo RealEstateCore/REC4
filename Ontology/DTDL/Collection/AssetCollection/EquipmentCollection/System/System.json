@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:System",
+  "@id": "dtmi:org:brickschema:schema:Brick:System;1",
   "@type": "Interface",
   "contents": [
     {
@@ -15,7 +15,7 @@
   "displayName": {
     "en": "System"
   },
-  "extends": "dtmi:org:w3id:rec:EquipmentCollection",
+  "extends": "dtmi:org:w3id:rec:EquipmentCollection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

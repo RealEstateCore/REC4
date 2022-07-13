@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Energy_Usage_Sensor",
+  "@id": "dtmi:org:brickschema:schema:Brick:Energy_Usage_Sensor;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Energy Usage Sensor"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Usage_Sensor",
-    "dtmi:org:brickschema:schema:Brick:Energy_Sensor"
+    "dtmi:org:brickschema:schema:Brick:Usage_Sensor;1",
+    "dtmi:org:brickschema:schema:Brick:Energy_Sensor;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Electric_Baseboard_Radiator",
+  "@id": "dtmi:org:brickschema:schema:Brick:Electric_Baseboard_Radiator;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Electric Baseboard Radiator"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Electric_Radiator",
-    "dtmi:org:brickschema:schema:Brick:Baseboard_Radiator"
+    "dtmi:org:brickschema:schema:Brick:Electric_Radiator;1",
+    "dtmi:org:brickschema:schema:Brick:Baseboard_Radiator;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

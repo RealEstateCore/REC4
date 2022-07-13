@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:Controller",
+  "@id": "dtmi:org:w3id:rec:Controller;1",
   "@type": "Interface",
   "displayName": {
     "en": "Controller"
   },
-  "extends": "dtmi:org:w3id:rec:ICTEquipment",
+  "extends": "dtmi:org:w3id:rec:ICTEquipment;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

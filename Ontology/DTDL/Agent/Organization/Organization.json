@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Organization",
+  "@id": "dtmi:org:w3id:rec:Organization;1",
   "@type": "Interface",
   "contents": [
     {
@@ -23,7 +23,7 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Organization",
+      "target": "dtmi:org:w3id:rec:Organization;1",
       "writable": true
     },
     {
@@ -35,7 +35,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:Organization",
+      "target": "dtmi:org:w3id:rec:Organization;1",
       "writable": true
     },
     {
@@ -47,7 +47,7 @@
         "en": "has member"
       },
       "name": "hasMember",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     }
   ],
@@ -57,7 +57,7 @@
   "displayName": {
     "en": "Organization"
   },
-  "extends": "dtmi:org:w3id:rec:Agent",
+  "extends": "dtmi:org:w3id:rec:Agent;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

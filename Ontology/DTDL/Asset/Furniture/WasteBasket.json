@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:WasteBasket",
+  "@id": "dtmi:org:w3id:rec:WasteBasket;1",
   "@type": "Interface",
   "displayName": {
     "en": "Waste basket"
   },
-  "extends": "dtmi:org:w3id:rec:Furniture",
+  "extends": "dtmi:org:w3id:rec:Furniture;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

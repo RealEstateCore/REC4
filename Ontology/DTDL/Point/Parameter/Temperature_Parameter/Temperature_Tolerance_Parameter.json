@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Temperature_Tolerance_Parameter",
+  "@id": "dtmi:org:brickschema:schema:Brick:Temperature_Tolerance_Parameter;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Temperature Tolerance Parameter"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Tolerance_Parameter",
-    "dtmi:org:brickschema:schema:Brick:Temperature_Parameter"
+    "dtmi:org:brickschema:schema:Brick:Tolerance_Parameter;1",
+    "dtmi:org:brickschema:schema:Brick:Temperature_Parameter;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

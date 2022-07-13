@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Return_Hot_Water_Temperature_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Return_Hot_Water_Temperature_Setpoint;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Return Hot Water Temperature Setpoint"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Return_Water_Temperature_Setpoint",
-    "dtmi:org:brickschema:schema:Brick:Hot_Water_Temperature_Setpoint"
+    "dtmi:org:brickschema:schema:Brick:Return_Water_Temperature_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Hot_Water_Temperature_Setpoint;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

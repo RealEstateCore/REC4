@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Unoccupied_Room_Air_Temperature_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Unoccupied_Room_Air_Temperature_Setpoint;1",
   "@type": "Interface",
   "contents": [
     {
@@ -34,8 +34,8 @@
     "en": "Unoccupied Room Air Temperature Setpoint"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Unoccupied_Air_Temperature_Setpoint",
-    "dtmi:org:brickschema:schema:Brick:Room_Air_Temperature_Setpoint"
+    "dtmi:org:brickschema:schema:Brick:Unoccupied_Air_Temperature_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Room_Air_Temperature_Setpoint;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

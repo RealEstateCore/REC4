@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Event",
+  "@id": "dtmi:org:w3id:rec:Event;1",
   "@type": "Interface",
   "contents": [
     {

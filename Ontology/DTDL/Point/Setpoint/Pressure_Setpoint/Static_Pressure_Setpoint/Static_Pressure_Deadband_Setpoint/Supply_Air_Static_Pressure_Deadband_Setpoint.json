@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Static_Pressure_Deadband_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Static_Pressure_Deadband_Setpoint;1",
   "@type": "Interface",
   "contents": [
     {
@@ -34,8 +34,8 @@
     "en": "Supply Air Static Pressure Deadband Setpoint"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Supply_Air_Static_Pressure_Setpoint",
-    "dtmi:org:brickschema:schema:Brick:Static_Pressure_Deadband_Setpoint"
+    "dtmi:org:brickschema:schema:Brick:Supply_Air_Static_Pressure_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Static_Pressure_Deadband_Setpoint;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

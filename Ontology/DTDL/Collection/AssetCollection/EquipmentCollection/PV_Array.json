@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:PV_Array",
+  "@id": "dtmi:org:brickschema:schema:Brick:PV_Array;1",
   "@type": "Interface",
   "contents": [
     {
@@ -38,7 +38,7 @@
   "displayName": {
     "en": "PV Array"
   },
-  "extends": "dtmi:org:w3id:rec:EquipmentCollection",
+  "extends": "dtmi:org:w3id:rec:EquipmentCollection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

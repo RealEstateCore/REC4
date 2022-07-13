@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:EthernetSwitchPort",
+  "@id": "dtmi:org:w3id:rec:EthernetSwitchPort;1",
   "@type": "Interface",
   "displayName": {
     "en": "Ethernet switch port"
   },
-  "extends": "dtmi:org:w3id:rec:DataNetworkEquipment",
+  "extends": "dtmi:org:w3id:rec:DataNetworkEquipment;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

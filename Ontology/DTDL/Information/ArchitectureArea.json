@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:ArchitectureArea",
+  "@id": "dtmi:org:w3id:rec:ArchitectureArea;1",
   "@type": "Interface",
   "contents": [
     {
@@ -36,7 +36,7 @@
   "displayName": {
     "en": "Architecture area"
   },
-  "extends": "dtmi:org:w3id:rec:Information",
+  "extends": "dtmi:org:w3id:rec:Information;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

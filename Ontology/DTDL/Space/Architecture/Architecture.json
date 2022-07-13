@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Architecture",
+  "@id": "dtmi:org:w3id:rec:Architecture;1",
   "@type": "Interface",
   "contents": [
     {
@@ -8,7 +8,7 @@
         "en": "subject of"
       },
       "name": "subjectOf",
-      "target": "dtmi:org:w3id:rec:Document",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     },
     {
@@ -17,7 +17,7 @@
         "en": "owned by"
       },
       "name": "ownedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -26,7 +26,7 @@
         "en": "operated by"
       },
       "name": "operatedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -35,7 +35,7 @@
         "en": "intersecting element"
       },
       "name": "intersectingElement",
-      "target": "dtmi:org:w3id:rec:BuildingElement",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
@@ -44,7 +44,7 @@
         "en": "has document"
       },
       "name": "hasDocument",
-      "target": "dtmi:org:w3id:rec:Document",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     },
     {
@@ -56,13 +56,13 @@
         "en": "contains element"
       },
       "name": "containsElement",
-      "target": "dtmi:org:w3id:rec:BuildingElement",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
       "@type": "Relationship",
       "name": "constructedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -71,7 +71,7 @@
         "en": "capacity"
       },
       "name": "capacity",
-      "schema": "dtmi:org:w3id:rec:ArchitectureCapacity"
+      "schema": "dtmi:org:w3id:rec:ArchitectureCapacity;1"
     },
     {
       "@type": "Component",
@@ -79,7 +79,7 @@
         "en": "area"
       },
       "name": "area",
-      "schema": "dtmi:org:w3id:rec:ArchitectureArea"
+      "schema": "dtmi:org:w3id:rec:ArchitectureArea;1"
     },
     {
       "@type": "Relationship",
@@ -87,7 +87,7 @@
         "en": "architected by"
       },
       "name": "architectedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -96,7 +96,7 @@
         "en": "adjacent element"
       },
       "name": "adjacentElement",
-      "target": "dtmi:org:w3id:rec:BuildingElement",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
@@ -108,7 +108,7 @@
         "en": "address"
       },
       "name": "address",
-      "target": "dtmi:org:w3id:rec:PostalAddress",
+      "target": "dtmi:org:w3id:rec:PostalAddress;1",
       "writable": true
     },
     {
@@ -284,7 +284,7 @@
   "displayName": {
     "en": "Architecture"
   },
-  "extends": "dtmi:org:w3id:rec:Space",
+  "extends": "dtmi:org:w3id:rec:Space;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

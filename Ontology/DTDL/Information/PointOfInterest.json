@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:PointOfInterest",
+  "@id": "dtmi:org:w3id:rec:PointOfInterest;1",
   "@type": "Interface",
   "contents": [
     {
@@ -15,7 +15,7 @@
   "displayName": {
     "en": "Point of Interest"
   },
-  "extends": "dtmi:org:w3id:rec:Information",
+  "extends": "dtmi:org:w3id:rec:Information;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

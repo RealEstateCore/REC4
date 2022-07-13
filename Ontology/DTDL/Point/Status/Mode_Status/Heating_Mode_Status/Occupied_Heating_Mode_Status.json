@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Occupied_Heating_Mode_Status",
+  "@id": "dtmi:org:brickschema:schema:Brick:Occupied_Heating_Mode_Status;1",
   "@type": "Interface",
   "contents": [
     {
@@ -32,8 +32,8 @@
     "en": "Occupied Heating Mode Status"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Occupied_Mode_Status",
-    "dtmi:org:brickschema:schema:Brick:Heating_Mode_Status"
+    "dtmi:org:brickschema:schema:Brick:Occupied_Mode_Status;1",
+    "dtmi:org:brickschema:schema:Brick:Heating_Mode_Status;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

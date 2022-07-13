@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Overridden_On_Status",
+  "@id": "dtmi:org:brickschema:schema:Brick:Overridden_On_Status;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Overridden On Status"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Overridden_Status",
-    "dtmi:org:brickschema:schema:Brick:On_Status"
+    "dtmi:org:brickschema:schema:Brick:Overridden_Status;1",
+    "dtmi:org:brickschema:schema:Brick:On_Status;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

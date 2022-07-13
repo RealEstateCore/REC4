@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Damper_Position_Command",
+  "@id": "dtmi:org:brickschema:schema:Brick:Damper_Position_Command;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Damper Position Command"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Position_Command",
-    "dtmi:org:brickschema:schema:Brick:Damper_Command"
+    "dtmi:org:brickschema:schema:Brick:Position_Command;1",
+    "dtmi:org:brickschema:schema:Brick:Damper_Command;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

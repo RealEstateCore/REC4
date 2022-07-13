@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Differential_Discharge_Return_Water_Temperature_Sensor",
+  "@id": "dtmi:org:brickschema:schema:Brick:Differential_Discharge_Return_Water_Temperature_Sensor;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Differential Discharge Return Water Temperature Sensor"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Return_Water_Temperature_Sensor",
-    "dtmi:org:brickschema:schema:Brick:Discharge_Water_Temperature_Sensor"
+    "dtmi:org:brickschema:schema:Brick:Return_Water_Temperature_Sensor;1",
+    "dtmi:org:brickschema:schema:Brick:Discharge_Water_Temperature_Sensor;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

@@ -1,12 +1,12 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Water_Temperature_Alarm",
+  "@id": "dtmi:org:brickschema:schema:Brick:Water_Temperature_Alarm;1",
   "@type": "Interface",
   "displayName": {
     "en": "Water Temperature Alarm"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Water_Alarm",
-    "dtmi:org:brickschema:schema:Brick:Temperature_Alarm"
+    "dtmi:org:brickschema:schema:Brick:Water_Alarm;1",
+    "dtmi:org:brickschema:schema:Brick:Temperature_Alarm;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

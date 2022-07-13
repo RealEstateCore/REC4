@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:LeaseContract",
+  "@id": "dtmi:org:w3id:rec:LeaseContract;1",
   "@type": "Interface",
   "contents": [
     {
@@ -11,7 +11,7 @@
         "en": "regulates"
       },
       "name": "regulates",
-      "target": "dtmi:org:w3id:rec:Lease",
+      "target": "dtmi:org:w3id:rec:Lease;1",
       "writable": true
     }
   ],
@@ -21,7 +21,7 @@
   "displayName": {
     "en": "Lease contract"
   },
-  "extends": "dtmi:org:w3id:rec:Document",
+  "extends": "dtmi:org:w3id:rec:Document;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

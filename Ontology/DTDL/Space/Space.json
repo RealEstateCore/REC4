@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Space",
+  "@id": "dtmi:org:w3id:rec:Space;1",
   "@type": "Interface",
   "contents": [
     {
@@ -9,7 +9,7 @@
       },
       "maxMultiplicity": 1,
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Space",
+      "target": "dtmi:org:w3id:rec:Space;1",
       "writable": true
     },
     {
@@ -26,7 +26,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:Space",
+      "target": "dtmi:org:w3id:rec:Space;1",
       "writable": true
     },
     {
@@ -47,7 +47,7 @@
         "en": "has point"
       },
       "name": "hasPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point",
+      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
       "writable": true
     },
     {

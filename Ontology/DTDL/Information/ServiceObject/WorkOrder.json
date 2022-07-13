@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:WorkOrder",
+  "@id": "dtmi:org:w3id:rec:WorkOrder;1",
   "@type": "Interface",
   "displayName": {
     "en": "Work order"
   },
-  "extends": "dtmi:org:w3id:rec:ServiceObject",
+  "extends": "dtmi:org:w3id:rec:ServiceObject;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

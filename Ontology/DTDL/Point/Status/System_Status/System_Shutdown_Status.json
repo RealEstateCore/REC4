@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:System_Shutdown_Status",
+  "@id": "dtmi:org:brickschema:schema:Brick:System_Shutdown_Status;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "System Shutdown Status"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:System_Status",
-    "dtmi:org:brickschema:schema:Brick:Status"
+    "dtmi:org:brickschema:schema:Brick:System_Status;1",
+    "dtmi:org:brickschema:schema:Brick:Status;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

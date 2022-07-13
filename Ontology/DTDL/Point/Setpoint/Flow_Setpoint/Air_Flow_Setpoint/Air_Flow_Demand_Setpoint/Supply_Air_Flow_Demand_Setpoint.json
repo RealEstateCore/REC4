@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Demand_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Demand_Setpoint;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Supply Air Flow Demand Setpoint"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Setpoint",
-    "dtmi:org:brickschema:schema:Brick:Air_Flow_Demand_Setpoint"
+    "dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Air_Flow_Demand_Setpoint;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

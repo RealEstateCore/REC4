@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:Wall",
+  "@id": "dtmi:org:w3id:rec:Wall;1",
   "@type": "Interface",
   "displayName": {
     "en": "Wall"
   },
-  "extends": "dtmi:org:w3id:rec:BuildingElement",
+  "extends": "dtmi:org:w3id:rec:BuildingElement;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

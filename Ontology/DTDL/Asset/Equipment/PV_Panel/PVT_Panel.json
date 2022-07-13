@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:PVT_Panel",
+  "@id": "dtmi:org:brickschema:schema:Brick:PVT_Panel;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "PVT Panel"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Solar_Thermal_Collector",
-    "dtmi:org:brickschema:schema:Brick:PV_Panel"
+    "dtmi:org:brickschema:schema:Brick:Solar_Thermal_Collector;1",
+    "dtmi:org:brickschema:schema:Brick:PV_Panel;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

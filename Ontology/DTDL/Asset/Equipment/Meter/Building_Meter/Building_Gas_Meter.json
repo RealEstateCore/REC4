@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Building_Gas_Meter",
+  "@id": "dtmi:org:brickschema:schema:Brick:Building_Gas_Meter;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Building Gas Meter"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Gas_Meter",
-    "dtmi:org:brickschema:schema:Brick:Building_Meter"
+    "dtmi:org:brickschema:schema:Brick:Gas_Meter;1",
+    "dtmi:org:brickschema:schema:Brick:Building_Meter;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

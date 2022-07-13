@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Speed_Mode_Status",
+  "@id": "dtmi:org:brickschema:schema:Brick:Speed_Mode_Status;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Speed Mode Status"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Speed_Status",
-    "dtmi:org:brickschema:schema:Brick:Mode_Status"
+    "dtmi:org:brickschema:schema:Brick:Speed_Status;1",
+    "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

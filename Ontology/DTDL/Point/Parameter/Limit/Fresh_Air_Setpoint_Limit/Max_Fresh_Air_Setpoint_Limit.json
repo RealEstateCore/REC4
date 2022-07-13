@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Max_Fresh_Air_Setpoint_Limit",
+  "@id": "dtmi:org:brickschema:schema:Brick:Max_Fresh_Air_Setpoint_Limit;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Max Fresh Air Setpoint Limit"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Max_Limit",
-    "dtmi:org:brickschema:schema:Brick:Fresh_Air_Setpoint_Limit"
+    "dtmi:org:brickschema:schema:Brick:Max_Limit;1",
+    "dtmi:org:brickschema:schema:Brick:Fresh_Air_Setpoint_Limit;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

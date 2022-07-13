@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Information",
+  "@id": "dtmi:org:w3id:rec:Information;1",
   "@type": "Interface",
   "contents": [
     {
@@ -8,7 +8,7 @@
         "en": "included in"
       },
       "name": "includedIn",
-      "target": "dtmi:org:w3id:rec:Collection",
+      "target": "dtmi:org:w3id:rec:Collection;1",
       "writable": true
     },
     {

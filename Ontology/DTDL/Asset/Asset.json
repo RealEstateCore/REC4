@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Asset",
+  "@id": "dtmi:org:w3id:rec:Asset;1",
   "@type": "Interface",
   "contents": [
     {
@@ -26,7 +26,7 @@
         "en": "serviced by"
       },
       "name": "servicedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -53,7 +53,7 @@
         "en": "manufactured by"
       },
       "name": "manufacturedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -71,7 +71,7 @@
         "en": "located in"
       },
       "name": "locatedIn",
-      "target": "dtmi:org:w3id:rec:Space",
+      "target": "dtmi:org:w3id:rec:Space;1",
       "writable": true
     },
     {
@@ -80,7 +80,7 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Asset",
+      "target": "dtmi:org:w3id:rec:Asset;1",
       "writable": true
     },
     {
@@ -89,7 +89,7 @@
         "en": "installed by"
       },
       "name": "installedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -116,7 +116,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:Asset",
+      "target": "dtmi:org:w3id:rec:Asset;1",
       "writable": true
     },
     {
@@ -125,7 +125,7 @@
         "en": "has document"
       },
       "name": "hasDocument",
-      "target": "dtmi:org:w3id:rec:Document",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     },
     {
@@ -146,7 +146,7 @@
         "en": "commissioned by"
       },
       "name": "commissionedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -191,7 +191,7 @@
         "en": "has point"
       },
       "name": "hasPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point",
+      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
       "writable": true
     },
     {

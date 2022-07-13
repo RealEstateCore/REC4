@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Building_Electrical_Meter",
+  "@id": "dtmi:org:brickschema:schema:Brick:Building_Electrical_Meter;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Building Electrical Meter"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Electrical_Meter",
-    "dtmi:org:brickschema:schema:Brick:Building_Meter"
+    "dtmi:org:brickschema:schema:Brick:Electrical_Meter;1",
+    "dtmi:org:brickschema:schema:Brick:Building_Meter;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Smoke_Detection_Alarm",
+  "@id": "dtmi:org:brickschema:schema:Brick:Supply_Air_Smoke_Detection_Alarm;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Supply Air Smoke Detection Alarm"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Smoke_Detection_Alarm",
-    "dtmi:org:brickschema:schema:Brick:Air_Alarm"
+    "dtmi:org:brickschema:schema:Brick:Smoke_Detection_Alarm;1",
+    "dtmi:org:brickschema:schema:Brick:Air_Alarm;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

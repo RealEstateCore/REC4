@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Chilled_Water_Valve",
+  "@id": "dtmi:org:brickschema:schema:Brick:Chilled_Water_Valve;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,8 +31,8 @@
     "en": "Chilled Water Valve"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Water_Valve",
-    "dtmi:org:brickschema:schema:Brick:HVAC_Valve"
+    "dtmi:org:brickschema:schema:Brick:Water_Valve;1",
+    "dtmi:org:brickschema:schema:Brick:HVAC_Valve;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

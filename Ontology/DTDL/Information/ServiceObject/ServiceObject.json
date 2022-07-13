@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:ServiceObject",
+  "@id": "dtmi:org:w3id:rec:ServiceObject;1",
   "@type": "Interface",
   "contents": [
     {
@@ -68,7 +68,7 @@
         "en": "produced by"
       },
       "name": "producedBy",
-      "target": "dtmi:org:brickschema:schema:Brick:Point",
+      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
       "writable": true
     },
     {
@@ -87,7 +87,7 @@
       },
       "maxMultiplicity": 1,
       "name": "createdBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -106,7 +106,7 @@
       },
       "maxMultiplicity": 1,
       "name": "closedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -125,14 +125,14 @@
       },
       "maxMultiplicity": 1,
       "name": "acknowledgedBy",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     }
   ],
   "displayName": {
     "en": "Service object"
   },
-  "extends": "dtmi:org:w3id:rec:Information",
+  "extends": "dtmi:org:w3id:rec:Information;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

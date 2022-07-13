@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Portfolio",
+  "@id": "dtmi:org:w3id:rec:Portfolio;1",
   "@type": "Interface",
   "contents": [
     {
@@ -17,7 +17,7 @@
   "displayName": {
     "en": "Portfolio"
   },
-  "extends": "dtmi:org:w3id:rec:Collection",
+  "extends": "dtmi:org:w3id:rec:Collection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

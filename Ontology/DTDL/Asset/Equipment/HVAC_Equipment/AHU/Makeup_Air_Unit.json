@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Makeup_Air_Unit",
+  "@id": "dtmi:org:brickschema:schema:Brick:Makeup_Air_Unit;1",
   "@type": "Interface",
   "contents": [
     {
@@ -30,7 +30,7 @@
   "displayName": {
     "en": "Makeup Air Unit"
   },
-  "extends": "dtmi:org:brickschema:schema:Brick:AHU",
+  "extends": "dtmi:org:brickschema:schema:Brick:AHU;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

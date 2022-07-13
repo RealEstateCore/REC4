@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Lease",
+  "@id": "dtmi:org:w3id:rec:Lease;1",
   "@type": "Interface",
   "contents": [
     {
@@ -11,7 +11,7 @@
         "en": "regulated by"
       },
       "name": "regulatedBy",
-      "target": "dtmi:org:w3id:rec:LeaseContract",
+      "target": "dtmi:org:w3id:rec:LeaseContract;1",
       "writable": true
     },
     {
@@ -23,7 +23,7 @@
         "en": "leasor"
       },
       "name": "leasor",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -35,7 +35,7 @@
         "en": "leasee"
       },
       "name": "leasee",
-      "target": "dtmi:org:w3id:rec:Agent",
+      "target": "dtmi:org:w3id:rec:Agent;1",
       "writable": true
     },
     {
@@ -53,7 +53,7 @@
   "displayName": {
     "en": "Lease"
   },
-  "extends": "dtmi:org:w3id:rec:Event",
+  "extends": "dtmi:org:w3id:rec:Event;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Vent_Operating_Mode_Status",
+  "@id": "dtmi:org:brickschema:schema:Brick:Vent_Operating_Mode_Status;1",
   "@type": "Interface",
   "contents": [
     {
@@ -31,7 +31,7 @@
   "displayName": {
     "en": "Vent Operating Mode Status"
   },
-  "extends": "dtmi:org:brickschema:schema:Brick:Operating_Mode_Status",
+  "extends": "dtmi:org:brickschema:schema:Brick:Operating_Mode_Status;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

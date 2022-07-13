@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:BuildingElement",
+  "@id": "dtmi:org:w3id:rec:BuildingElement;1",
   "@type": "Interface",
   "contents": [
     {
@@ -12,7 +12,7 @@
       },
       "maxMultiplicity": 1,
       "name": "locatedIn",
-      "target": "dtmi:org:w3id:rec:Architecture",
+      "target": "dtmi:org:w3id:rec:Architecture;1",
       "writable": true
     },
     {
@@ -22,7 +22,7 @@
       },
       "maxMultiplicity": 1,
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:BuildingElement",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
@@ -31,7 +31,7 @@
         "en": "included in"
       },
       "name": "includedIn",
-      "target": "dtmi:org:w3id:rec:Collection",
+      "target": "dtmi:org:w3id:rec:Collection;1",
       "writable": true
     },
     {
@@ -40,7 +40,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:BuildingElement",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
       "writable": true
     },
     {
@@ -49,7 +49,7 @@
         "en": "has document"
       },
       "name": "hasDocument",
-      "target": "dtmi:org:w3id:rec:Document",
+      "target": "dtmi:org:w3id:rec:Document;1",
       "writable": true
     },
     {

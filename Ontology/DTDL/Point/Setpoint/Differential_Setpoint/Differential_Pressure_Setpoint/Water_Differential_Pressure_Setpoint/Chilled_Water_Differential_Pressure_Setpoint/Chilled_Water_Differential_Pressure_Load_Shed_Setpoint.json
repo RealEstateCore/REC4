@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint",
+  "@id": "dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint;1",
   "@type": "Interface",
   "contents": [
     {
@@ -35,8 +35,8 @@
     "en": "Chilled Water Differential Pressure Load Shed Setpoint"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Load_Shed_Differential_Pressure_Setpoint",
-    "dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Setpoint"
+    "dtmi:org:brickschema:schema:Brick:Load_Shed_Differential_Pressure_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Setpoint;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

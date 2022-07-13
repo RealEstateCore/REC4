@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Low_Return_Air_Temperature_Alarm",
+  "@id": "dtmi:org:brickschema:schema:Brick:Low_Return_Air_Temperature_Alarm;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,8 +33,8 @@
     "en": "Low Return Air Temperature Alarm"
   },
   "extends": [
-    "dtmi:org:brickschema:schema:Brick:Return_Air_Temperature_Alarm",
-    "dtmi:org:brickschema:schema:Brick:Low_Temperature_Alarm"
+    "dtmi:org:brickschema:schema:Brick:Return_Air_Temperature_Alarm;1",
+    "dtmi:org:brickschema:schema:Brick:Low_Temperature_Alarm;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3",

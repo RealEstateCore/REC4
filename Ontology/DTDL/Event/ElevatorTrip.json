@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:ElevatorTrip",
+  "@id": "dtmi:org:w3id:rec:ElevatorTrip;1",
   "@type": "Interface",
   "contents": [
     {
@@ -55,7 +55,7 @@
   "displayName": {
     "en": "Elevator trip"
   },
-  "extends": "dtmi:org:w3id:rec:Event",
+  "extends": "dtmi:org:w3id:rec:Event;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

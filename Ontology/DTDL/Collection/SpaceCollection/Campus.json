@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:w3id:rec:Campus",
+  "@id": "dtmi:org:w3id:rec:Campus;1",
   "@type": "Interface",
   "contents": [
     {
@@ -8,7 +8,7 @@
         "en": "includes"
       },
       "name": "includes",
-      "target": "dtmi:org:w3id:rec:Architecture",
+      "target": "dtmi:org:w3id:rec:Architecture;1",
       "writable": true
     }
   ],
@@ -18,7 +18,7 @@
   "displayName": {
     "en": "Campus"
   },
-  "extends": "dtmi:org:w3id:rec:SpaceCollection",
+  "extends": "dtmi:org:w3id:rec:SpaceCollection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

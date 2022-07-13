@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System",
+  "@id": "dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System;1",
   "@type": "Interface",
   "contents": [
     {
@@ -30,7 +30,7 @@
   "displayName": {
     "en": "Emergency Power Off System"
   },
-  "extends": "dtmi:org:brickschema:schema:Brick:Safety_System",
+  "extends": "dtmi:org:brickschema:schema:Brick:Safety_System;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

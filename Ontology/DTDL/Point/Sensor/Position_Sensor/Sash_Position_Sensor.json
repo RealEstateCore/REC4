@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Sash_Position_Sensor",
+  "@id": "dtmi:org:brickschema:schema:Brick:Sash_Position_Sensor;1",
   "@type": "Interface",
   "contents": [
     {
@@ -30,7 +30,7 @@
   "displayName": {
     "en": "Sash Position Sensor"
   },
-  "extends": "dtmi:org:brickschema:schema:Brick:Position_Sensor",
+  "extends": "dtmi:org:brickschema:schema:Brick:Position_Sensor;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"
