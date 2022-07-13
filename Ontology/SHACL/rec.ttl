@@ -294,10 +294,10 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path rec:commissionDate ;
+      sh:path rec:commissioningDate ;
       sh:datatype xsd:date ;
       sh:maxCount 1 ;
-      sh:name "commission date" ;
+      sh:name "commissioning date" ;
     ] ;
   sh:property [
       a sh:PropertyShape ;

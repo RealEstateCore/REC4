@@ -32,9 +32,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "commission date"
+        "en": "commissioning date"
       },
-      "name": "commissionDate",
+      "name": "commissioningDate",
       "schema": "date",
       "writable": true
     },
