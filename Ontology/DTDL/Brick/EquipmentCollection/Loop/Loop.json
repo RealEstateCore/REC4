@@ -1,17 +1,6 @@
 {
   "@id": "dtmi:org:brickschema:schema:Brick:Loop;1",
   "@type": "Interface",
-  "contents": [
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "Has part"
-      },
-      "name": "hasPart",
-      "schema": "string",
-      "writable": true
-    }
-  ],
   "displayName": {
     "en": "Loop"
   },

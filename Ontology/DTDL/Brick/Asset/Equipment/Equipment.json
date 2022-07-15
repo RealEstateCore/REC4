@@ -180,24 +180,6 @@
     {
       "@type": "Relationship",
       "displayName": {
-        "en": "Has part"
-      },
-      "name": "hasPart",
-      "target": "dtmi:org:brickschema:schema:Brick:Equipment;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "Has point"
-      },
-      "name": "hasPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
-      "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
         "en": "is fed by"
       },
       "name": "isFedBy",

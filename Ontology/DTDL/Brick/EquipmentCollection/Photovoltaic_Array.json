@@ -3,15 +3,6 @@
   "@type": "Interface",
   "contents": [
     {
-      "@type": "Property",
-      "displayName": {
-        "en": "Has part"
-      },
-      "name": "hasPart",
-      "schema": "string",
-      "writable": true
-    },
-    {
       "@type": [
         "Initialized",
         "Property"
