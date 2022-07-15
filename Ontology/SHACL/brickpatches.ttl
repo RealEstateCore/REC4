@@ -3,6 +3,7 @@
 # imports: https://w3id.org/rec
 
 @prefix : <https://w3id.org/rec/brickpatches#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,401 +11,423 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://brickschema.org/schema/Brick#Ablutions_Room>
+brick:Ablutions_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Atrium>
+brick:Atrium
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Auditorium>
+brick:Auditorium
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Basement>
+brick:Basement
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Battery_Room>
+brick:Battery_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Bench_Space>
+brick:Bench_Space
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Break_Room>
+brick:Break_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Breakroom>
+brick:Breakroom
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Broadcast_Room>
+brick:Broadcast_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Building>
+brick:Building
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Cafeteria>
+brick:Cafeteria
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Cold_Box>
+brick:Cold_Box
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Collection>
+brick:Collection
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Common_Space>
+brick:Common_Space
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Concession>
+brick:Concession
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Conference_Room>
+brick:Conference_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Control_Room>
+brick:Control_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Copy_Room>
+brick:Copy_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Cubicle>
+brick:Cubicle
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Detention_Room>
+brick:Detention_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Differential_Temperature_Setpoint>
+brick:Differential_Temperature_Setpoint
   a sh:NodeShape ;
 .
-<https://brickschema.org/schema/Brick#Distribution_Frame>
+brick:Distribution_Frame
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Electrical_Room>
+brick:Electrical_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Elevator_Shaft>
+brick:Elevator_Shaft
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Elevator_Space>
+brick:Elevator_Space
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Employee_Entrance_Lobby>
+brick:Employee_Entrance_Lobby
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Enclosed_Office>
+brick:Enclosed_Office
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Energy_Zone>
+brick:Energy_Zone
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Entrance>
+brick:Entrance
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Environment_Box>
+brick:Environment_Box
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Equipment>
+brick:Equipment
+  rdfs:subClassOf rec:Asset ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path <https://brickschema.org/schema/Brick#feeds> ;
+      sh:path brick:feeds ;
       sh:name "feeds" ;
       sh:nodeKind sh:IRI ;
     ] ;
-.
-<https://brickschema.org/schema/Brick#Equipment_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Exercise_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Field_Of_Play>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Fire_Zone>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#First_Aid_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Floor>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Food_Service_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Freezer>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Furniture>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Gatehouse>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Generator_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#HVAC_Zone>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Hallway>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Hazardous_Materials_Storage>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Hospitality_Box>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Hot_Box>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#IDF>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Information_Area>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Janitor_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Laboratory>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Library>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Lighting>
-  a sh:NodeShape ;
-.
-<https://brickschema.org/schema/Brick#Lighting_Zone>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Loading_Dock>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Lobby>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Location>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Loop>
-  rdfs:subClassOf rec:EquipmentCollection ;
-.
-<https://brickschema.org/schema/Brick#Lounge>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#MDF>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Mail_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Majlis>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Massage_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Mechanical_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Media_Hot_Desk>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Media_Production_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Media_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Medical_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Office>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Office_Kitchen>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Open_Office>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Outdoor_Area>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Outside>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#PV_Array>
-  rdfs:subClassOf rec:EquipmentCollection ;
-.
-<https://brickschema.org/schema/Brick#Parking_Level>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Parking_Space>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Parking_Structure>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Photovoltaic_Array>
-  rdfs:subClassOf rec:EquipmentCollection ;
-.
-<https://brickschema.org/schema/Brick#Plumbing_Room>
-  owl:deprecated true ;
-.
-<https://brickschema.org/schema/Brick#Point>
   sh:property [
       a sh:PropertyShape ;
-      sh:path <https://brickschema.org/schema/Brick#hasQuantity> ;
-      sh:class <https://brickschema.org/schema/Brick#Quantity> ;
+      sh:path brick:isFedBy ;
+      sh:name "is fed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+brick:Equipment_Room
+  owl:deprecated true ;
+.
+brick:Exercise_Room
+  owl:deprecated true ;
+.
+brick:Field_Of_Play
+  owl:deprecated true ;
+.
+brick:Fire_Zone
+  owl:deprecated true ;
+.
+brick:First_Aid_Room
+  owl:deprecated true ;
+.
+brick:Floor
+  owl:deprecated true ;
+.
+brick:Food_Service_Room
+  owl:deprecated true ;
+.
+brick:Freezer
+  owl:deprecated true ;
+.
+brick:Furniture
+  owl:deprecated true ;
+.
+brick:Gatehouse
+  owl:deprecated true ;
+.
+brick:Generator_Room
+  owl:deprecated true ;
+.
+brick:HVAC_Zone
+  owl:deprecated true ;
+.
+brick:Hallway
+  owl:deprecated true ;
+.
+brick:Hazardous_Materials_Storage
+  owl:deprecated true ;
+.
+brick:Hospitality_Box
+  owl:deprecated true ;
+.
+brick:Hot_Box
+  owl:deprecated true ;
+.
+brick:IDF
+  owl:deprecated true ;
+.
+brick:Information_Area
+  owl:deprecated true ;
+.
+brick:Janitor_Room
+  owl:deprecated true ;
+.
+brick:Laboratory
+  owl:deprecated true ;
+.
+brick:Library
+  owl:deprecated true ;
+.
+brick:Lighting
+  a sh:NodeShape ;
+.
+brick:Lighting_Zone
+  owl:deprecated true ;
+.
+brick:Loading_Dock
+  owl:deprecated true ;
+.
+brick:Lobby
+  owl:deprecated true ;
+.
+brick:Location
+  owl:deprecated true ;
+.
+brick:Loop
+  rdfs:subClassOf rec:EquipmentCollection ;
+.
+brick:Lounge
+  owl:deprecated true ;
+.
+brick:MDF
+  owl:deprecated true ;
+.
+brick:Mail_Room
+  owl:deprecated true ;
+.
+brick:Majlis
+  owl:deprecated true ;
+.
+brick:Massage_Room
+  owl:deprecated true ;
+.
+brick:Mechanical_Room
+  owl:deprecated true ;
+.
+brick:Media_Hot_Desk
+  owl:deprecated true ;
+.
+brick:Media_Production_Room
+  owl:deprecated true ;
+.
+brick:Media_Room
+  owl:deprecated true ;
+.
+brick:Medical_Room
+  owl:deprecated true ;
+.
+brick:Office
+  owl:deprecated true ;
+.
+brick:Office_Kitchen
+  owl:deprecated true ;
+.
+brick:Open_Office
+  owl:deprecated true ;
+.
+brick:Outdoor_Area
+  owl:deprecated true ;
+.
+brick:Outside
+  owl:deprecated true ;
+.
+brick:PV_Array
+  rdfs:subClassOf rec:EquipmentCollection ;
+.
+brick:Parking_Level
+  owl:deprecated true ;
+.
+brick:Parking_Space
+  owl:deprecated true ;
+.
+brick:Parking_Structure
+  owl:deprecated true ;
+.
+brick:Photovoltaic_Array
+  rdfs:subClassOf rec:EquipmentCollection ;
+.
+brick:Plumbing_Room
+  owl:deprecated true ;
+.
+brick:Point
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path brick:hasQuantity ;
+      sh:class brick:Quantity ;
       sh:name "has quantity" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path <https://brickschema.org/schema/Brick#hasSubstance> ;
-      sh:class <https://brickschema.org/schema/Brick#Substance> ;
+      sh:path brick:hasSubstance ;
+      sh:class brick:Substance ;
       sh:name "has substance" ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
-<https://brickschema.org/schema/Brick#Portfolio>
+brick:Portfolio
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Prayer_Room>
+brick:Prayer_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Private_Office>
+brick:Private_Office
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Pump_Room>
+brick:Pump_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Reception>
+brick:Reception
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Region>
+brick:Region
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Rest_Room>
+brick:Rest_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Restroom>
+brick:Restroom
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Retail_Room>
+brick:Retail_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Riser>
+brick:Riser
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Rooftop>
+brick:Rooftop
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Room>
+brick:Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Security_Service_Room>
+brick:Security_Service_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Server_Room>
+brick:Server_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Service_Room>
+brick:Service_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Shared_Office>
+brick:Shared_Office
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Shower>
+brick:Shower
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Site>
+brick:Site
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Sports_Service_Room>
+brick:Space
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Stage_Riser>
+brick:Sports_Service_Room
+  owl:deprecated true ;
+.
+brick:Stage_Riser
   rdfs:subClassOf rec:Furniture ;
 .
-<https://brickschema.org/schema/Brick#Staircase>
+brick:Staircase
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Storage_Room>
+brick:Storage_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Storey>
+brick:Storey
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Studio>
+brick:Studio
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Switch_Room>
+brick:Switch_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#System>
+brick:System
   rdfs:subClassOf rec:EquipmentCollection ;
 .
-<https://brickschema.org/schema/Brick#TETRA_Room>
+brick:TETRA_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Team_Room>
+brick:Team_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Telecom_Room>
+brick:Telecom_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Ticketing_Booth>
+brick:Ticketing_Booth
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Transformer_Room>
+brick:Transformer_Room
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Tunnel>
+brick:Tunnel
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Vertical_Space>
+brick:Vertical_Space
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Visitor_Lobby>
+brick:Visitor_Lobby
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Wardrobe>
+brick:Wardrobe
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Waste_Storage>
+brick:Waste_Storage
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Water_Tank>
+brick:Water_Tank
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Wing>
+brick:Wing
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Workshop>
+brick:Workshop
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#Zone>
+brick:Zone
   owl:deprecated true ;
 .
-<https://brickschema.org/schema/Brick#hasLocation>
+brick:hasLocation
   owl:equivalentProperty rec:locatedIn ;
 .
-<https://brickschema.org/schema/Brick#hasPart>
+brick:hasPart
   owl:deprecated true ;
   owl:equivalentProperty rec:hasPart ;
 .
-<https://brickschema.org/schema/Brick#isPartOf>
+brick:isPartOf
   owl:equivalentProperty rec:isPartOf ;
 .
 <https://brickschema.org/schema/BrickShape#ValueShape>
   a sh:NodeShape ;
 .
+rec:Asset
+  a sh:NodeShape ;
+.
+rec:AssetCollection
+  a sh:NodeShape ;
+.
+rec:Collection
+  a sh:NodeShape ;
+.
+rec:EquipmentCollection
+  a sh:NodeShape ;
+.
 rec:substance
   a owl:AnnotationProperty ;
-  rdfs:domain <https://brickschema.org/schema/Brick#feeds> ;
-  rdfs:domain <https://brickschema.org/schema/Brick#isFedBy> ;
+  rdfs:domain brick:feeds ;
+  rdfs:domain brick:isFedBy ;
   rdfs:label "substance" ;
   rdfs:range [
       a rdfs:Datatype ;

@@ -17,15 +17,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-brick:Equipment
-  rdfs:subClassOf rec:Asset ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:isFedBy ;
-      sh:name "is fed by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-.
 geojson:Polygon
   a rdfs:Datatype ;
   rdfs:comment "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]." ;
@@ -423,23 +414,11 @@ rec:Atrium
   rdfs:label "Atrium" ;
   rdfs:subClassOf rec:Room ;
 .
-rec:AudioVisualEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Audio visual equipment" ;
-  rdfs:subClassOf rec:ICTEquipment ;
-.
 rec:Auditorium
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Auditorium" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:BACnetController
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "BACnet controller" ;
-  rdfs:subClassOf rec:Controller ;
 .
 rec:BackOffice
   a rdfs:Class ;
@@ -655,12 +634,6 @@ rec:Company
   rdfs:label "Company" ;
   rdfs:subClassOf rec:Organization ;
 .
-rec:Computer
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Computer" ;
-  rdfs:subClassOf rec:ICTEquipment ;
-.
 rec:ComputerCart
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -678,12 +651,6 @@ rec:ConferenceTable
   a sh:NodeShape ;
   rdfs:label "Conference table" ;
   rdfs:subClassOf rec:Table ;
-.
-rec:Controller
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Controller" ;
-  rdfs:subClassOf rec:ICTEquipment ;
 .
 rec:ConversationRoom
   a rdfs:Class ;
@@ -703,23 +670,11 @@ rec:CopyingRoom
   rdfs:label "Copying room" ;
   rdfs:subClassOf rec:Room ;
 .
-rec:DataNetworkEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Data network equipment" ;
-  rdfs:subClassOf rec:ICTEquipment ;
-.
 rec:DataServerRoom
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Data server room" ;
   rdfs:subClassOf rec:UtilitiesRoom ;
-.
-rec:DaylightSensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Daylight sensor equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
 .
 rec:Department
   a rdfs:Class ;
@@ -886,24 +841,6 @@ rec:ErrorReport
   a sh:NodeShape ;
   rdfs:label "Error report" ;
   rdfs:subClassOf rec:ServiceObject ;
-.
-rec:EthernetRouter
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Ethernet router" ;
-  rdfs:subClassOf rec:DataNetworkEquipment ;
-.
-rec:EthernetSwitch
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Ethernet switch" ;
-  rdfs:subClassOf rec:DataNetworkEquipment ;
-.
-rec:EthernetSwitchPort
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Ethernet switch port" ;
-  rdfs:subClassOf rec:DataNetworkEquipment ;
 .
 rec:Event
   a rdfs:Class ;
@@ -1073,24 +1010,6 @@ rec:Hospital
   rdfs:label "Hospital" ;
   rdfs:subClassOf rec:Building ;
 .
-rec:IAQSensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Indoor Air Quality sensor equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
-.
-rec:ICTEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "ICT Equipment" ;
-  rdfs:subClassOf brick:Equipment ;
-.
-rec:ITRack
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "IT Rack" ;
-  rdfs:subClassOf rec:ICTEquipment ;
-.
 rec:Information
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1132,12 +1051,6 @@ rec:LaundryRoom
   a sh:NodeShape ;
   rdfs:label "Laundry room" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:LeakDetectorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Leak detector equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
 .
 rec:Lease
   a rdfs:Class ;
@@ -1267,12 +1180,6 @@ rec:MobileDesk
   rdfs:label "Mobile desk" ;
   rdfs:subClassOf rec:Desk ;
 .
-rec:ModbusController
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Modbus controller" ;
-  rdfs:subClassOf rec:Controller ;
-.
 rec:Morgue
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1297,12 +1204,6 @@ rec:NeonatalNursingRoom
   rdfs:label "Neonatal nursing room" ;
   rdfs:subClassOf rec:HealthcareRoom ;
 .
-rec:NetworkSecurityEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Network security equipment" ;
-  rdfs:subClassOf rec:DataNetworkEquipment ;
-.
 rec:NotificationObject
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1324,12 +1225,6 @@ rec:ObservationEvent
       sh:name "source point" ;
       sh:nodeKind sh:IRI ;
     ] ;
-.
-rec:OccupancySensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Occupancy sensor equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
 .
 rec:OccupancyZone
   a rdfs:Class ;
@@ -1428,12 +1323,6 @@ rec:ParkingSlotWarm
   a sh:NodeShape ;
   rdfs:label "Parking slot (warm)" ;
   rdfs:subClassOf rec:Garage ;
-.
-rec:PeopleCountSensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "People count sensor equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
 .
 rec:Person
   a rdfs:Class ;
@@ -1678,18 +1567,6 @@ rec:SecurityRoom
   a sh:NodeShape ;
   rdfs:label "Security room" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:SensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Sensor equipment" ;
-  rdfs:subClassOf brick:Equipment ;
-.
-rec:ServerComputer
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Server computer" ;
-  rdfs:subClassOf rec:Computer ;
 .
 rec:ServiceEntrance
   a rdfs:Class ;
@@ -1974,12 +1851,6 @@ rec:TherapyRoom
   rdfs:label "Therapy room" ;
   rdfs:subClassOf rec:HealthcareRoom ;
 .
-rec:ThermostatEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Thermostat equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
-.
 rec:Toilet
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -2003,12 +1874,6 @@ rec:UtilitiesRoom
   a sh:NodeShape ;
   rdfs:label "Utilities room" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:VibrationSensorEquipment
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Vibration sensor equipment" ;
-  rdfs:subClassOf rec:SensorEquipment ;
 .
 rec:VirtualBuilding
   a rdfs:Class ;
@@ -2039,12 +1904,6 @@ rec:WasteManagementRoom
   a sh:NodeShape ;
   rdfs:label "Waste management room" ;
   rdfs:subClassOf rec:Room ;
-.
-rec:WirelessAccessPoint
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Wireless access point" ;
-  rdfs:subClassOf rec:DataNetworkEquipment ;
 .
 rec:WorkOrder
   a rdfs:Class ;
