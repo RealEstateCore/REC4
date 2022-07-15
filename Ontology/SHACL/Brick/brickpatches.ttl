@@ -399,12 +399,21 @@ brick:Workshop
 brick:Zone
   owl:deprecated true ;
 .
+brick:feeds
+  owl:equivalentProperty rec:feeds ;
+.
 brick:hasLocation
   owl:equivalentProperty rec:locatedIn ;
 .
 brick:hasPart
   owl:deprecated true ;
   owl:equivalentProperty rec:hasPart ;
+.
+brick:hasPoint
+  owl:equivalentProperty rec:hasPoint ;
+.
+brick:isFedBy
+  owl:equivalentProperty rec:isFedBy ;
 .
 brick:isPartOf
   owl:equivalentProperty rec:isPartOf ;

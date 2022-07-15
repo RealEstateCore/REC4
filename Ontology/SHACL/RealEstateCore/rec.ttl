@@ -101,19 +101,6 @@ rec:Architecture
   rdfs:subClassOf rec:Space ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:isFedBy ;
-      sh:name "is fed by" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:address ;
       sh:class rec:PostalAddress ;
       sh:description "Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question." ;
@@ -180,9 +167,22 @@ rec:Architecture
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:intersectingElement ;
       sh:class rec:BuildingElement ;
       sh:name "intersecting element" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:isFedBy ;
+      sh:name "is fed by" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -260,13 +260,6 @@ rec:Asset
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      a sh:PropertyShape ;
       sh:path rec:IPAddress ;
       sh:datatype xsd:string ;
       sh:name "IP address" ;
@@ -317,6 +310,13 @@ rec:Asset
       sh:path rec:hasPart ;
       sh:class rec:Asset ;
       sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:hasPoint ;
+      sh:class brick:Point ;
+      sh:name "has point" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -816,13 +816,13 @@ rec:EquipmentCollection
   rdfs:subClassOf rec:AssetCollection ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path brick:feeds ;
+      sh:path rec:feeds ;
       sh:name "feeds" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
+      sh:path rec:hasPoint ;
       sh:class brick:Point ;
       sh:name "has point" ;
       sh:nodeKind sh:IRI ;
@@ -1730,13 +1730,6 @@ rec:Space
   rdfs:comment "A contiguous part of the physical world that contains or can contain sub-spaces. E.g., a Region can contain many Sites, which in turn can contain many Buildings." ;
   rdfs:label "Space" ;
   rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      a sh:PropertyShape ;
-      sh:path brick:hasPoint ;
-      sh:class brick:Point ;
-      sh:name "has point" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:geometry ;

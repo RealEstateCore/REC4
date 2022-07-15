@@ -57952,6 +57952,7 @@ brick:feeds
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:label "Feeds" ;
+  owl:equivalentProperty rec:feeds ;
   owl:inverseOf brick:isFedBy ;
   skos:definition "The subject is upstream of the object in the context of some sequential process; some media is passed between them"@en ;
 .
@@ -58025,6 +58026,7 @@ brick:hasPoint
   a owl:ObjectProperty ;
   rdfs:label "Has point" ;
   rdfs:range brick:Point ;
+  owl:equivalentProperty rec:hasPoint ;
   owl:inverseOf brick:isPointOf ;
   skos:definition "The subject has a source of telemetry identified by the object. In some systems the source of telemetry may be represented as a digital/analog input/output point"@en ;
 .
@@ -58088,6 +58090,7 @@ brick:isFedBy
   a owl:IrreflexiveProperty ;
   a owl:ObjectProperty ;
   rdfs:label "Is fed by" ;
+  owl:equivalentProperty rec:isFedBy ;
   owl:inverseOf brick:feeds ;
 .
 brick:isLocationOf
