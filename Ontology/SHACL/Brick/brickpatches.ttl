@@ -337,7 +337,7 @@ brick:Sports_Service_Room
   owl:deprecated true ;
 .
 brick:Stage_Riser
-  rdfs:subClassOf rec:Furniture ;
+  owl:deprecated true ;
 .
 brick:Staircase
   owl:deprecated true ;
