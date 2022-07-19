@@ -82,10 +82,10 @@ components:
             hydra:last:
               type: string
               maximum: 0
-          maxproperties: 0
-          minproperties: 0
-      maxproperties: 0
-      minproperties: 0
+          maxProperties: 0
+          minProperties: 0
+      maxProperties: 0
+      minProperties: 0
     IntegerFilter:
       type: object
       properties:
@@ -104,8 +104,8 @@ components:
         gte:
           type: integer
           maximum: 0
-      maxproperties: 0
-      minproperties: 0
+      maxProperties: 0
+      minProperties: 0
     NumberFilter:
       type: object
       properties:
@@ -124,8 +124,8 @@ components:
         gte:
           type: number
           maximum: 0
-      maxproperties: 0
-      minproperties: 0
+      maxProperties: 0
+      minProperties: 0
     StringFilter:
       type: object
       properties:
@@ -138,8 +138,8 @@ components:
         regex:
           type: string
           maximum: 0
-      maxproperties: 0
-      minproperties: 0
+      maxProperties: 0
+      minProperties: 0
     DateTimeFilter:
       type: object
       properties:
@@ -166,8 +166,8 @@ components:
         latest:
           type: boolean
           maximum: 0
-      maxproperties: 0
-      minproperties: 0
+      maxProperties: 0
+      minProperties: 0
     SortingSchema:
       type: object
       properties:
@@ -177,8 +177,8 @@ components:
         desc:
           type: string
           maximum: 0
-      maxproperties: 0
-      minproperties: 0
+      maxProperties: 0
+      minProperties: 0
 paths: {}
 servers:
 - url: http://localhost:8080/
