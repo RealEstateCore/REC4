@@ -1,0 +1,7 @@
+title=RealEstateCore
+version=4.0
+licenseName=BSD
+licenseUrl=https://opensource.org/licenses/BSD-3-Clause
+contactName=RealEstateCore Consortium
+contactUrl=https://realestatecore.io/
+contactEmail=hello@realestatecore.io
