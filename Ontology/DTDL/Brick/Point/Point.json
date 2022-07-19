@@ -658,6 +658,10 @@
             "name": "Return_Air"
           },
           {
+            "enumValue": "Return_Chilled_Water",
+            "name": "Return_Chilled_Water"
+          },
+          {
             "enumValue": "Return_Condenser_Water",
             "name": "Return_Condenser_Water"
           },
@@ -668,6 +672,10 @@
           {
             "enumValue": "Return_Water",
             "name": "Return_Water"
+          },
+          {
+            "enumValue": "Soil",
+            "name": "Soil"
           },
           {
             "enumValue": "Solid",
