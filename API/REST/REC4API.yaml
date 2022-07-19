@@ -9,7 +9,7 @@ info:
     name: RealEstateCore Consortium
     url: https://realestatecore.io/
     email: hello@realestatecore.io
-  description: 
+  description: RealEstateCore (REC) is an ontology model and API specification for building and interfacing against Smart Buildings, whether on individual building or portfolio level. The REC ontology is released in DTDL (Digital Twin Definition Language) and SHACL (RDF Shapes Contraint language) formats; the REC API is expressed as an OpenAPI Specification (a.k.a. Swagger). We also provide a southbound edge API for bandwidth-constrained devices to communicate telemetry, alerts, commands, etc (see GitHub repository).
 components:
   parameters:
     pageParam:
@@ -22,9 +22,6 @@ components:
         minimum: 0
         maximum: 0
         default: 0
-        enum: 
-      style: 
-      $ref: 
       in: query
     sizeParam:
       name: size
@@ -36,9 +33,6 @@ components:
         minimum: 0
         maximum: 100
         default: 20
-        enum: 
-      style: 
-      $ref: 
       in: query
     sortParam:
       name: sort
@@ -47,7 +41,6 @@ components:
       schema:
         $ref: '#/components/schemas/SortingSchema'
       style: deepObject
-      $ref: 
       in: query
   schemas:
     HydraCollectionWrapper:
@@ -61,243 +54,129 @@ components:
           $ref: '#/components/schemas/Context'
         '@type':
           type: string
-          format: 
-          minimum: 
           maximum: 0
           default: hydra:Collection
-          enum: 
         hydra:totalItems:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         hydra:view:
           type: object
-          required: 
           properties:
             '@id':
               type: string
               format: uri
-              minimum: 
               maximum: 0
-              default: 
-              enum: 
             '@type':
               type: string
-              format: 
-              minimum: 
               maximum: 0
               default: hydra:PartialCollectionView
-              enum: 
             hydra:first:
               type: string
-              format: 
-              minimum: 
               maximum: 0
-              default: 
-              enum: 
             hydra:previous:
               type: string
-              format: 
-              minimum: 
               maximum: 0
-              default: 
-              enum: 
             hydra:next:
               type: string
-              format: 
-              minimum: 
               maximum: 0
-              default: 
-              enum: 
             hydra:last:
               type: string
-              format: 
-              minimum: 
               maximum: 0
-              default: 
-              enum: 
           maxproperties: 0
           minproperties: 0
       maxproperties: 0
       minproperties: 0
     IntegerFilter:
       type: object
-      required: 
       properties:
         eq:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         lt:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         lte:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         gt:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         gte:
           type: integer
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
       maxproperties: 0
       minproperties: 0
     NumberFilter:
       type: object
-      required: 
       properties:
         eq:
           type: number
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         lt:
           type: number
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         lte:
           type: number
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         gt:
           type: number
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         gte:
           type: number
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
       maxproperties: 0
       minproperties: 0
     StringFilter:
       type: object
-      required: 
       properties:
         eq:
           type: string
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         contains:
           type: string
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         regex:
           type: string
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
       maxproperties: 0
       minproperties: 0
     DateTimeFilter:
       type: object
-      required: 
       properties:
         eq:
           type: string
           format: date-time
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         starting:
           type: string
           format: date-time
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         ending:
           type: string
           format: date-time
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         before:
           type: string
           format: date-time
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         after:
           type: string
           format: date-time
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         latest:
           type: boolean
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
       maxproperties: 0
       minproperties: 0
     SortingSchema:
       type: object
-      required: 
       properties:
         asc:
           type: string
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
         desc:
           type: string
-          format: 
-          minimum: 
           maximum: 0
-          default: 
-          enum: 
       maxproperties: 0
       minproperties: 0
 paths: {}
