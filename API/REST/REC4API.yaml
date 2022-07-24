@@ -136,6 +136,30 @@ components:
           maximum: 0
       maxProperties: 0
       minProperties: 0
+    rec_Room:
+      type: object
+      properties:
+        '@id':
+          type: string
+          maximum: 0
+        '@type':
+          type: string
+          maximum: 0
+          default: dtmi:org:w3id:rec:Room;1
+      maxProperties: 0
+      minProperties: 0
+    brick_Point:
+      type: object
+      properties:
+        '@id':
+          type: string
+          maximum: 0
+        '@type':
+          type: string
+          maximum: 0
+          default: dtmi:org:brickschema:schema:Brick:Point;1
+      maxProperties: 0
+      minProperties: 0
 paths:
   /rooms:
     get:
@@ -168,7 +192,9 @@ paths:
         description: New 'Room' entity that is to be added.
         required: true
         content:
-          application/ld+json: {}
+          application/ld+json:
+            schema:
+              $ref: '#/components/schemas/rec_Room'
       responses:
         500:
           description: Internal Server Error
@@ -199,7 +225,9 @@ paths:
         200:
           description: A 'Room' object.
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                $ref: '#/components/schemas/rec_Room'
       tags:
       - rooms
     put:
@@ -308,7 +336,9 @@ paths:
         description: New 'Point' entity that is to be added.
         required: true
         content:
-          application/ld+json: {}
+          application/ld+json:
+            schema:
+              $ref: '#/components/schemas/brick_Point'
       responses:
         500:
           description: Internal Server Error
@@ -339,7 +369,9 @@ paths:
         200:
           description: A 'Point' object.
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                $ref: '#/components/schemas/brick_Point'
       tags:
       - points
     put:
