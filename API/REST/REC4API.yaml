@@ -136,6 +136,286 @@ components:
           maximum: 0
       maxProperties: 0
       minProperties: 0
-paths: {}
+paths:
+  /rooms:
+    get:
+      summary: Get 'Room' entities.
+      parameters:
+      - required: false
+        $ref: '#/components/parameters/pageParam'
+        in: 0
+      - required: false
+        $ref: '#/components/parameters/sizeParam'
+        in: 0
+      - required: false
+        $ref: '#/components/parameters/sortParam'
+        in: 0
+      responses:
+        400:
+          description: Bad Request
+        500:
+          description: Internal Server Error
+        200:
+          description: An array of 'Room' objects.
+          content:
+            application/ld+json: {}
+      tags:
+      - rooms
+    post:
+      summary: Create a new 'Room' object.
+      parameters: []
+      requestBody:
+        description: New 'Room' entity that is to be added.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        500:
+          description: Internal Server Error
+        400:
+          description: Bad Request
+        201:
+          description: Entity was successfully created (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - rooms
+  /rooms/{id}:
+    get:
+      summary: Get a specific 'Room' object.
+      parameters:
+      - name: id
+        description: Id of 'Room' to return.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      responses:
+        404:
+          description: An object of type 'Room' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: A 'Room' object.
+          content:
+            application/ld+json: {}
+      tags:
+      - rooms
+    put:
+      summary: Update an existing 'Room' entity.
+      parameters:
+      - name: id
+        description: Id of 'Room' to update.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      requestBody:
+        description: Updated data for 'Room' entity.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        400:
+          description: Bad Request
+        404:
+          description: An object of type 'Room' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: Entity was updated successfully (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - rooms
+    patch:
+      summary: Update a single property on a specific 'Room' object.
+      parameters:
+      - name: id
+        description: Id of 'Room' to update.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      requestBody:
+        description: A single JSON key-value pair (plus @context), indicating the property to update and its new value. Note that the Swagger UI does not properly show the size constraint on this parameter; but the underlying OpenAPI Specification document does.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        400:
+          description: Bad Request
+        404:
+          description: An object of type 'Room' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: Entity was updated successfully (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - rooms
+    delete:
+      summary: Delete a 'Room' object.
+      parameters:
+      - name: id
+        description: Id of 'Room' to delete.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      responses:
+        404:
+          description: An object of type 'Room' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: "'Room' entity was successfully deleted."
+      tags:
+      - rooms
+  /points:
+    get:
+      summary: Get 'Point' entities.
+      parameters:
+      - required: false
+        $ref: '#/components/parameters/pageParam'
+        in: 0
+      - required: false
+        $ref: '#/components/parameters/sizeParam'
+        in: 0
+      - required: false
+        $ref: '#/components/parameters/sortParam'
+        in: 0
+      responses:
+        400:
+          description: Bad Request
+        500:
+          description: Internal Server Error
+        200:
+          description: An array of 'Point' objects.
+          content:
+            application/ld+json: {}
+      tags:
+      - points
+    post:
+      summary: Create a new 'Point' object.
+      parameters: []
+      requestBody:
+        description: New 'Point' entity that is to be added.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        500:
+          description: Internal Server Error
+        400:
+          description: Bad Request
+        201:
+          description: Entity was successfully created (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - points
+  /points/{id}:
+    get:
+      summary: Get a specific 'Point' object.
+      parameters:
+      - name: id
+        description: Id of 'Point' to return.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      responses:
+        404:
+          description: An object of type 'Point' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: A 'Point' object.
+          content:
+            application/ld+json: {}
+      tags:
+      - points
+    put:
+      summary: Update an existing 'Point' entity.
+      parameters:
+      - name: id
+        description: Id of 'Point' to update.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      requestBody:
+        description: Updated data for 'Point' entity.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        400:
+          description: Bad Request
+        404:
+          description: An object of type 'Point' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: Entity was updated successfully (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - points
+    patch:
+      summary: Update a single property on a specific 'Point' object.
+      parameters:
+      - name: id
+        description: Id of 'Point' to update.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      requestBody:
+        description: A single JSON key-value pair (plus @context), indicating the property to update and its new value. Note that the Swagger UI does not properly show the size constraint on this parameter; but the underlying OpenAPI Specification document does.
+        required: true
+        content:
+          application/ld+json: {}
+      responses:
+        400:
+          description: Bad Request
+        404:
+          description: An object of type 'Point' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: Entity was updated successfully (new representation returned).
+          content:
+            application/ld+json: {}
+      tags:
+      - points
+    delete:
+      summary: Delete a 'Point' object.
+      parameters:
+      - name: id
+        description: Id of 'Point' to delete.
+        required: true
+        schema:
+          type: string
+          maximum: 0
+        in: path
+      responses:
+        404:
+          description: An object of type 'Point' with the specified ID was not found.
+        500:
+          description: Internal Server Error
+        200:
+          description: "'Point' entity was successfully deleted."
+      tags:
+      - points
 servers:
 - url: http://localhost:8080/
