@@ -43,49 +43,6 @@ components:
       style: deepObject
       in: query
   schemas:
-    HydraCollectionWrapper:
-      type: object
-      required:
-      - '@context'
-      - '@type'
-      - hydra:member
-      properties:
-        '@context':
-          $ref: '#/components/schemas/Context'
-        '@type':
-          type: string
-          maximum: 0
-          default: hydra:Collection
-        hydra:totalItems:
-          type: integer
-          maximum: 0
-        hydra:view:
-          type: object
-          properties:
-            '@id':
-              type: string
-              format: uri
-              maximum: 0
-            '@type':
-              type: string
-              maximum: 0
-              default: hydra:PartialCollectionView
-            hydra:first:
-              type: string
-              maximum: 0
-            hydra:previous:
-              type: string
-              maximum: 0
-            hydra:next:
-              type: string
-              maximum: 0
-            hydra:last:
-              type: string
-              maximum: 0
-          maxProperties: 0
-          minProperties: 0
-      maxProperties: 0
-      minProperties: 0
     IntegerFilter:
       type: object
       properties:
