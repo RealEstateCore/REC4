@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Building_Chilled_Water_Meter;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Initialized",
+        "Property"
+      ],
+      "description": {
+        "en": "Brick tags associated with this interface."
+      },
+      "displayName": {
+        "en": "Tags"
+      },
+      "initialValue": [
+        "Water",
+        "Meter",
+        "Equipment",
+        "Chilled",
+        "Building"
+      ],
+      "name": "tags",
+      "schema": { "@type": "Map", "mapKey": { "name": "tagName", "schema": "string" }, "mapValue": { "name": "tagValue", "schema": "boolean" } },
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "Building Chilled Water Meter"
+  },
+  "extends": [
+    "dtmi:org:brickschema:schema:Brick:Chilled_Water_Meter;1",
+    "dtmi:org:brickschema:schema:Brick:Building_Meter;1"
+  ],
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}

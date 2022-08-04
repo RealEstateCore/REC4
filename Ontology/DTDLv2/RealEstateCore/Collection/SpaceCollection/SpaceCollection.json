@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:SpaceCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Space collection"
+  },
+  "extends": "dtmi:org:w3id:rec:Collection;1",
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}

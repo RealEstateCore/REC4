@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:w3id:rec:ParkingSlotWarm;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Parking slot (warm)"
+  },
+  "extends": "dtmi:org:w3id:rec:Garage;1",
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}

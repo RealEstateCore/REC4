@@ -1,0 +1,36 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Laminar_Flow_Air_Diffuser;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Initialized",
+        "Property"
+      ],
+      "description": {
+        "en": "Brick tags associated with this interface."
+      },
+      "displayName": {
+        "en": "Tags"
+      },
+      "initialValue": [
+        "Laminar",
+        "Flow",
+        "Equipment",
+        "Diffuser",
+        "Air"
+      ],
+      "name": "tags",
+      "schema": { "@type": "Map", "mapKey": { "name": "tagName", "schema": "string" }, "mapValue": { "name": "tagValue", "schema": "boolean" } },
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "Laminar Flow Air Diffuser"
+  },
+  "extends": "dtmi:org:brickschema:schema:Brick:Air_Diffuser;1",
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}

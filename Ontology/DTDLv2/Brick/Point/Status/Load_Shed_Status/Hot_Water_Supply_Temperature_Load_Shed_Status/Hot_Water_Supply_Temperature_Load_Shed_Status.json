@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Hot_Water_Supply_Temperature_Load_Shed_Status;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Supply Temperature Load Shed Status"
+  },
+  "extends": "dtmi:org:brickschema:schema:Brick:Load_Shed_Status;1",
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}

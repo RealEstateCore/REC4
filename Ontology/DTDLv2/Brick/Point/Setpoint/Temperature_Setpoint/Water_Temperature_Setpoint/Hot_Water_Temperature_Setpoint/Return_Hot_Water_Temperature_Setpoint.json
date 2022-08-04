@@ -1,0 +1,40 @@
+{
+  "@id": "dtmi:org:brickschema:schema:Brick:Return_Hot_Water_Temperature_Setpoint;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Initialized",
+        "Property"
+      ],
+      "description": {
+        "en": "Brick tags associated with this interface."
+      },
+      "displayName": {
+        "en": "Tags"
+      },
+      "initialValue": [
+        "Water",
+        "Temperature",
+        "Setpoint",
+        "Return",
+        "Point",
+        "Hot"
+      ],
+      "name": "tags",
+      "schema": { "@type": "Map", "mapKey": { "name": "tagName", "schema": "string" }, "mapValue": { "name": "tagValue", "schema": "boolean" } },
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "Return Hot Water Temperature Setpoint"
+  },
+  "extends": [
+    "dtmi:org:brickschema:schema:Brick:Return_Water_Temperature_Setpoint;1",
+    "dtmi:org:brickschema:schema:Brick:Hot_Water_Temperature_Setpoint;1"
+  ],
+  "@context": [
+     "dtmi:dtdl:context;2"
+     
+  ]
+}
