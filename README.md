@@ -4,7 +4,7 @@ This repository contains RealEstateCore (REC) v4, to be released (tentatively) i
 
 REC v4 combines the RealEstateCore and Brick Schema ontologies, covering all aspects of the Smart Building domain using established standard semantics.
 
-We distribute REC v4 both as [SHACL shapes](Ontology/SHACL/) and as [DTDL models](Ontology/DTDL/). 
+We distribute REC v4 both as [SHACL shapes](Ontology/SHACL/) and as [DTDL v2](Ontology/DTDLv2/) and [DTDL v3](Ontology/DTDLv3/) models.
 
 In addition, REC v4 includes northbound [RESTful API declarations](API/REST) in OpenAPI Specification format (formerly known as Swagger), and southbound [edge message formats](API/Edge) for communicating with building management systems.
 
