@@ -39,6 +39,37 @@ components:
       style: deepObject
       in: query
   schemas:
+    HydraCollectionWrapper:
+      type: object
+      required:
+      - '@context'
+      - '@type'
+      - hydra:member
+      properties:
+        '@context':
+          $ref: '#/components/schemas/Context'
+        '@type':
+          type: string
+          default: hydra:Collection
+        hydra:totalItems:
+          type: integer
+        hydra:view:
+          type: object
+          properties:
+            '@id':
+              type: string
+              format: uri
+            '@type':
+              type: string
+              default: hydra:PartialCollectionView
+            hydra:first:
+              type: string
+            hydra:previous:
+              type: string
+            hydra:next:
+              type: string
+            hydra:last:
+              type: string
     IntegerFilter:
       type: object
       properties:
@@ -117,6 +148,30 @@ components:
         '@type':
           type: string
           default: dtmi:org:brickschema:schema:Brick:Point;1
+    Context:
+      type: object
+      required:
+      - '@vocab'
+      - '@base'
+      - hydra
+      - brick
+      - rec
+      properties:
+        '@base':
+          type: string
+          format: uri
+        hydra:
+          type: string
+          format: uri
+          default: http://www.w3.org/ns/hydra/core#
+        brick:
+          type: string
+          format: uri
+          default: dtmi:org:brickschema:schema:Brick
+        rec:
+          type: string
+          format: uri
+          default: dtmi:org:w3id:rec
 paths:
   /rooms:
     get:
