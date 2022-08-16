@@ -550,24 +550,20 @@
             "name": "Discharge_Air"
           },
           {
-            "enumValue": "Discharge_Chilled_Water",
-            "name": "Discharge_Chilled_Water"
-          },
-          {
-            "enumValue": "Discharge_Condenser_Water",
-            "name": "Discharge_Condenser_Water"
-          },
-          {
-            "enumValue": "Discharge_Hot_Water",
-            "name": "Discharge_Hot_Water"
-          },
-          {
-            "enumValue": "Discharge_Water",
-            "name": "Discharge_Water"
-          },
-          {
             "enumValue": "Domestic_Water",
             "name": "Domestic_Water"
+          },
+          {
+            "enumValue": "Entering_Chilled_Water",
+            "name": "Entering_Chilled_Water"
+          },
+          {
+            "enumValue": "Entering_Condenser_Water",
+            "name": "Entering_Condenser_Water"
+          },
+          {
+            "enumValue": "Entering_Hot_Water",
+            "name": "Entering_Hot_Water"
           },
           {
             "enumValue": "Entering_Water",
@@ -614,6 +610,18 @@
             "name": "Ice"
           },
           {
+            "enumValue": "Leaving_Chilled_Water",
+            "name": "Leaving_Chilled_Water"
+          },
+          {
+            "enumValue": "Leaving_Condenser_Water",
+            "name": "Leaving_Condenser_Water"
+          },
+          {
+            "enumValue": "Leaving_Hot_Water",
+            "name": "Leaving_Hot_Water"
+          },
+          {
             "enumValue": "Leaving_Water",
             "name": "Leaving_Water"
           },
@@ -658,22 +666,6 @@
             "name": "Return_Air"
           },
           {
-            "enumValue": "Return_Chilled_Water",
-            "name": "Return_Chilled_Water"
-          },
-          {
-            "enumValue": "Return_Condenser_Water",
-            "name": "Return_Condenser_Water"
-          },
-          {
-            "enumValue": "Return_Hot_Water",
-            "name": "Return_Hot_Water"
-          },
-          {
-            "enumValue": "Return_Water",
-            "name": "Return_Water"
-          },
-          {
             "enumValue": "Soil",
             "name": "Soil"
           },
@@ -688,22 +680,6 @@
           {
             "enumValue": "Supply_Air",
             "name": "Supply_Air"
-          },
-          {
-            "enumValue": "Supply_Chilled_Water",
-            "name": "Supply_Chilled_Water"
-          },
-          {
-            "enumValue": "Supply_Condenser_Water",
-            "name": "Supply_Condenser_Water"
-          },
-          {
-            "enumValue": "Supply_Hot_Water",
-            "name": "Supply_Hot_Water"
-          },
-          {
-            "enumValue": "Supply_Water",
-            "name": "Supply_Water"
           },
           {
             "enumValue": "Water",
