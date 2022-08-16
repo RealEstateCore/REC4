@@ -51686,6 +51686,7 @@ brick:Supply_Air
   a brick:Supply_Air ;
   rdfs:label "Supply Air" ;
   rdfs:subClassOf brick:Air ;
+  owl:equivalentClass brick:Discharge_Air ;
   skos:definition "(1) air delivered by mechanical or natural ventilation to a space, composed of any combination of outdoor air, recirculated air, or transfer air. (2) air entering a space from an air-conditioning, heating, or ventilating apparatus for the purpose of comfort conditioning. Supply air is generally filtered, fan forced, and either heated, cooled, humidified, or dehumidified as necessary to maintain specified conditions. Only the quantity of outdoor air within the supply airflow may be used as replacement air."@en ;
   sh:rule [
       a sh:TripleRule ;
