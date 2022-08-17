@@ -200,7 +200,14 @@ paths:
         content:
           application/ld+json:
             schema:
-              $ref: '#/components/schemas/rec_Room'
+              allOf:
+              - type: object
+                required:
+                - '@context'
+                properties:
+                  '@context':
+                    $ref: '#/components/schemas/Context'
+              - $ref: '#/components/schemas/rec_Room'
       responses:
         500:
           description: Internal Server Error
@@ -209,7 +216,16 @@ paths:
         201:
           description: Entity was successfully created (new representation returned).
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - type: object
+                  required:
+                  - '@context'
+                  properties:
+                    '@context':
+                      $ref: '#/components/schemas/Context'
+                - $ref: '#/components/schemas/rec_Room'
       tags:
       - rooms
   /rooms/{id}:
@@ -275,7 +291,19 @@ paths:
         description: A single JSON key-value pair (plus @context), indicating the property to update and its new value. Note that the Swagger UI does not properly show the size constraint on this parameter; but the underlying OpenAPI Specification document does.
         required: true
         content:
-          application/ld+json: {}
+          application/ld+json:
+            schema:
+              allOf:
+              - type: object
+                required:
+                - '@context'
+                properties:
+                  '@context':
+                    $ref: '#/components/schemas/Context'
+              - $ref: '#/components/schemas/rec_Room'
+              - type: object
+                maxProperties: 2
+                minProperties: 2
       responses:
         400:
           description: Bad Request
@@ -286,7 +314,16 @@ paths:
         200:
           description: Entity was updated successfully (new representation returned).
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - type: object
+                  required:
+                  - '@context'
+                  properties:
+                    '@context':
+                      $ref: '#/components/schemas/Context'
+                - $ref: '#/components/schemas/rec_Room'
       tags:
       - rooms
     delete:
@@ -334,7 +371,14 @@ paths:
         content:
           application/ld+json:
             schema:
-              $ref: '#/components/schemas/brick_Point'
+              allOf:
+              - type: object
+                required:
+                - '@context'
+                properties:
+                  '@context':
+                    $ref: '#/components/schemas/Context'
+              - $ref: '#/components/schemas/brick_Point'
       responses:
         500:
           description: Internal Server Error
@@ -343,7 +387,16 @@ paths:
         201:
           description: Entity was successfully created (new representation returned).
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - type: object
+                  required:
+                  - '@context'
+                  properties:
+                    '@context':
+                      $ref: '#/components/schemas/Context'
+                - $ref: '#/components/schemas/brick_Point'
       tags:
       - points
   /points/{id}:
@@ -409,7 +462,19 @@ paths:
         description: A single JSON key-value pair (plus @context), indicating the property to update and its new value. Note that the Swagger UI does not properly show the size constraint on this parameter; but the underlying OpenAPI Specification document does.
         required: true
         content:
-          application/ld+json: {}
+          application/ld+json:
+            schema:
+              allOf:
+              - type: object
+                required:
+                - '@context'
+                properties:
+                  '@context':
+                    $ref: '#/components/schemas/Context'
+              - $ref: '#/components/schemas/brick_Point'
+              - type: object
+                maxProperties: 2
+                minProperties: 2
       responses:
         400:
           description: Bad Request
@@ -420,7 +485,16 @@ paths:
         200:
           description: Entity was updated successfully (new representation returned).
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - type: object
+                  required:
+                  - '@context'
+                  properties:
+                    '@context':
+                      $ref: '#/components/schemas/Context'
+                - $ref: '#/components/schemas/brick_Point'
       tags:
       - points
     delete:
