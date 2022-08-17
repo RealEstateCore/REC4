@@ -180,6 +180,100 @@ paths:
       - $ref: '#/components/parameters/pageParam'
       - $ref: '#/components/parameters/sizeParam'
       - $ref: '#/components/parameters/sortParam'
+      - name: address
+        description: Filter value on relationship 'address'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: adjacentElement
+        description: Filter value on relationship 'adjacentElement'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: architectedBy
+        description: Filter value on relationship 'architectedBy'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: constructedBy
+        description: Filter value on relationship 'constructedBy'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: containsElement
+        description: Filter value on relationship 'containsElement'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: documentation
+        description: Filter value on relationship 'documentation'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: intersectingElement
+        description: Filter value on relationship 'intersectingElement'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: isFedBy
+        description: Filter value on relationship 'isFedBy'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: operatedBy
+        description: Filter value on relationship 'operatedBy'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: ownedBy
+        description: Filter value on relationship 'ownedBy'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: hasPart
+        description: Filter value on relationship 'hasPart'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: hasPoint
+        description: Filter value on relationship 'hasPoint'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: isLocationOf
+        description: Filter value on relationship 'isLocationOf'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: isPartOf
+        description: Filter value on relationship 'isPartOf'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: customTags
+        description: Filter value on property 'customTags'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: externalIds
+        description: Filter value on property 'externalIds'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: geometry
+        description: Filter value on property 'geometry'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: name
+        description: Filter value on property 'name'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
       responses:
         400:
           description: Bad Request
@@ -392,6 +486,53 @@ paths:
       - $ref: '#/components/parameters/pageParam'
       - $ref: '#/components/parameters/sizeParam'
       - $ref: '#/components/parameters/sortParam'
+      - name: isPointOf
+        description: Filter value on relationship 'isPointOf'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
+      - name: aggregate
+        description: Filter value on property 'aggregate'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: customTags
+        description: Filter value on property 'customTags'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: externalIds
+        description: Filter value on property 'externalIds'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: hasQuantity
+        description: Filter value on property 'hasQuantity'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: hasSubstance
+        description: Filter value on property 'hasSubstance'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: lastKnownValue
+        description: Filter value on property 'lastKnownValue'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
+      - name: name
+        description: Filter value on property 'name'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        style: deepObject
+        in: query
       responses:
         400:
           description: Bad Request
