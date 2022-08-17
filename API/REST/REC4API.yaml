@@ -188,7 +188,23 @@ paths:
         200:
           description: An array of 'Room' objects.
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/HydraCollectionWrapper'
+                - type: object
+                  properties:
+                    hydra:member:
+                      type: array
+                      items:
+                        allOf:
+                        - type: object
+                          required:
+                          - '@context'
+                          properties:
+                            '@context':
+                              $ref: '#/components/schemas/Context'
+                        - $ref: '#/components/schemas/rec_Room'
       tags:
       - rooms
     post:
@@ -384,7 +400,23 @@ paths:
         200:
           description: An array of 'Point' objects.
           content:
-            application/ld+json: {}
+            application/ld+json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/HydraCollectionWrapper'
+                - type: object
+                  properties:
+                    hydra:member:
+                      type: array
+                      items:
+                        allOf:
+                        - type: object
+                          required:
+                          - '@context'
+                          properties:
+                            '@context':
+                              $ref: '#/components/schemas/Context'
+                        - $ref: '#/components/schemas/brick_Point'
       tags:
       - points
     post:
