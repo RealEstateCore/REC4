@@ -140,6 +140,170 @@ components:
         '@type':
           type: string
           default: dtmi:org:w3id:rec:Room;1
+        address:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:PostalAddress;1
+        adjacentElement:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:BuildingElement;1
+        architectedBy:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Agent;1
+        constructedBy:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Agent;1
+        containsElement:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:BuildingElement;1
+        documentation:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Document;1
+        intersectingElement:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:BuildingElement;1
+        isFedBy:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+        operatedBy:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Agent;1
+        ownedBy:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Agent;1
+        hasPart:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:w3id:rec:Space;1
+        hasPoint:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:brickschema:schema:Brick:Point;1
+        isLocationOf:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+        isPartOf:
+          type: object
+          required:
+          - '@id'
+          properties:
+            '@id':
+              type: string
+            '@type':
+              type: string
+              default: dtmi:org:w3id:rec:Space;1
     brick_Point:
       type: object
       properties:
@@ -148,6 +312,17 @@ components:
         '@type':
           type: string
           default: dtmi:org:brickschema:schema:Brick:Point;1
+        isPointOf:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
     Context:
       type: object
       required:
