@@ -376,6 +376,15 @@ rec:Asset
     ] ;
   sh:property [
       a sh:PropertyShape ;
+      sh:path rec:mountedOn ;
+      sh:class rec:BuildingElement ;
+      sh:description "An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc)." ;
+      sh:maxCount 1 ;
+      sh:name "mounted on" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      a sh:PropertyShape ;
       sh:path rec:serialNumber ;
       sh:datatype xsd:string ;
       sh:name "serial number" ;
@@ -1923,13 +1932,6 @@ rec:Zone
   rdfs:label "Zone" ;
   rdfs:subClassOf rec:Architecture ;
 .
-recp:apiEndpoint
-  a rdf:Property ;
-  rdfs:comment "This property governs the endpoint name of this node shape in the RealEstateCore Platform REST API." ;
-  rdfs:domain sh:NodeShape ;
-  rdfs:label "API endpoint" ;
-  rdfs:range xsd:string ;
-.
 rec:substance
   a owl:AnnotationProperty ;
   rdfs:domain rec:feeds ;
@@ -1976,4 +1978,11 @@ rec:substance
           "Water"
         ) ;
     ] ;
+.
+recp:apiEndpoint
+  a rdf:Property ;
+  rdfs:comment "This property governs the endpoint name of this node shape in the RealEstateCore Platform REST API." ;
+  rdfs:domain sh:NodeShape ;
+  rdfs:label "API endpoint" ;
+  rdfs:range xsd:string ;
 .
