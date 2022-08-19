@@ -151,6 +151,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Alarm:
       type: object
       properties:
@@ -170,6 +184,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Command:
       type: object
       properties:
@@ -189,6 +217,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Parameter:
       type: object
       properties:
@@ -208,6 +250,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Sensor:
       type: object
       properties:
@@ -227,6 +283,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Setpoint:
       type: object
       properties:
@@ -246,6 +316,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     brick_Status:
       type: object
       properties:
@@ -265,6 +349,20 @@ components:
                 type: string
               '@type':
                 type: string
+        aggregate:
+          type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        hasQuantity:
+          type: string
+        hasSubstance:
+          type: string
+        lastKnownValue:
+          type: string
+        name:
+          type: string
     rec_Agent:
       type: object
       properties:
@@ -285,6 +383,12 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Organization;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        name:
+          type: string
     rec_Asset:
       type: object
       properties:
@@ -401,6 +505,39 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Agent;1
+        IPAddress:
+          type: string
+        MACAddress:
+          type: string
+        assetTag:
+          type: string
+        commissioningDate:
+          type: string
+          format: date
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        geometry:
+          type: string
+        initialCost:
+          type: string
+        installationDate:
+          type: string
+          format: date
+        maintenanceInterval:
+          type: string
+        modelNumber:
+          type: string
+        name:
+          type: string
+        serialNumber:
+          type: string
+        turnoverDate:
+          type: string
+          format: date
+        weight:
+          type: string
     rec_BuildingElement:
       type: object
       properties:
@@ -453,6 +590,12 @@ components:
             '@type':
               type: string
               default: dtmi:org:w3id:rec:Architecture;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        name:
+          type: string
     rec_Collection:
       type: object
       properties:
@@ -473,6 +616,12 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Document;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        name:
+          type: string
     rec_Event:
       type: object
       properties:
@@ -481,6 +630,21 @@ components:
         '@type':
           type: string
           default: dtmi:org:w3id:rec:Event;1
+        customTags:
+          type: string
+        end:
+          type: string
+          format: date-time
+        externalIds:
+          type: string
+        name:
+          type: string
+        start:
+          type: string
+          format: date-time
+        timestamp:
+          type: string
+          format: date-time
     rec_Information:
       type: object
       properties:
@@ -489,6 +653,12 @@ components:
         '@type':
           type: string
           default: dtmi:org:w3id:rec:Information;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        name:
+          type: string
     rec_Space:
       type: object
       properties:
@@ -542,6 +712,14 @@ components:
             '@type':
               type: string
               default: dtmi:org:w3id:rec:Space;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        geometry:
+          type: string
+        name:
+          type: string
     rec_Document:
       type: object
       properties:
@@ -572,6 +750,12 @@ components:
                 type: string
               '@type':
                 type: string
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        name:
+          type: string
     rec_Level:
       type: object
       properties:
@@ -744,6 +928,17 @@ components:
             '@type':
               type: string
               default: dtmi:org:w3id:rec:Space;1
+        levelNumber:
+          type: integer
+          format: int32
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        geometry:
+          type: string
+        name:
+          type: string
     rec_Site:
       type: object
       properties:
@@ -916,6 +1111,14 @@ components:
             '@type':
               type: string
               default: dtmi:org:w3id:rec:Space;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        geometry:
+          type: string
+        name:
+          type: string
     rec_Room:
       type: object
       properties:
@@ -1088,6 +1291,14 @@ components:
             '@type':
               type: string
               default: dtmi:org:w3id:rec:Space;1
+        customTags:
+          type: string
+        externalIds:
+          type: string
+        geometry:
+          type: string
+        name:
+          type: string
     Context:
       type: object
       required:
