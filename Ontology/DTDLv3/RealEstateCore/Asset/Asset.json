@@ -52,7 +52,7 @@
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "string"
+          "schema": "boolean"
         }
       },
       "writable": true
