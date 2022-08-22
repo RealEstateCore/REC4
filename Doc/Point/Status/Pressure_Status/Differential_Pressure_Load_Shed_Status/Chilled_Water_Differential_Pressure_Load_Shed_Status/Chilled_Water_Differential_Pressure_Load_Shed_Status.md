@@ -1,0 +1,9 @@
+# Chilled_Water_Differential_Pressure_Load_Shed_Status
+**DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Load_Shed_Status;1
+## Display name
+- **en:** Chilled Water Differential Pressure Load Shed Status
+## Description
+## Relationships
+## Properties
+## Telemetries
+## Commands

@@ -1,0 +1,9 @@
+# Outside_Air_Enthalpy_Sensor
+**DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Enthalpy_Sensor;1
+## Display name
+- **en:** Outside Air Enthalpy Sensor
+## Description
+## Relationships
+## Properties
+## Telemetries
+## Commands
