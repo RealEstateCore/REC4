@@ -493,6 +493,16 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Agent;1
+        mountedOn:
+          type: object
+          required:
+          - '@id'
+          properties:
+            '@id':
+              type: string
+            '@type':
+              type: string
+              default: dtmi:org:w3id:rec:BuildingElement;1
         servicedBy:
           type: array
           items:
@@ -679,18 +689,6 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Space;1
-        hasPoint:
-          type: array
-          items:
-            type: object
-            required:
-            - '@id'
-            properties:
-              '@id':
-                type: string
-              '@type':
-                type: string
-                default: dtmi:org:brickschema:schema:Brick:Point;1
         isLocationOf:
           type: array
           items:
@@ -836,6 +834,18 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Document;1
+        hasPoint:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:brickschema:schema:Brick:Point;1
         intersectingElement:
           type: array
           items:
@@ -895,18 +905,6 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Space;1
-        hasPoint:
-          type: array
-          items:
-            type: object
-            required:
-            - '@id'
-            properties:
-              '@id':
-                type: string
-              '@type':
-                type: string
-                default: dtmi:org:brickschema:schema:Brick:Point;1
         isLocationOf:
           type: array
           items:
@@ -1019,6 +1017,18 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Document;1
+        hasPoint:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:brickschema:schema:Brick:Point;1
         intersectingElement:
           type: array
           items:
@@ -1078,18 +1088,6 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Space;1
-        hasPoint:
-          type: array
-          items:
-            type: object
-            required:
-            - '@id'
-            properties:
-              '@id':
-                type: string
-              '@type':
-                type: string
-                default: dtmi:org:brickschema:schema:Brick:Point;1
         isLocationOf:
           type: array
           items:
@@ -1199,6 +1197,18 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Document;1
+        hasPoint:
+          type: array
+          items:
+            type: object
+            required:
+            - '@id'
+            properties:
+              '@id':
+                type: string
+              '@type':
+                type: string
+                default: dtmi:org:brickschema:schema:Brick:Point;1
         intersectingElement:
           type: array
           items:
@@ -1258,18 +1268,6 @@ components:
               '@type':
                 type: string
                 default: dtmi:org:w3id:rec:Space;1
-        hasPoint:
-          type: array
-          items:
-            type: object
-            required:
-            - '@id'
-            properties:
-              '@id':
-                type: string
-              '@type':
-                type: string
-                default: dtmi:org:brickschema:schema:Brick:Point;1
         isLocationOf:
           type: array
           items:
@@ -3419,6 +3417,11 @@ paths:
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
+      - name: mountedOn
+        description: Filter value on relationship 'mountedOn'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
       - name: servicedBy
         description: Filter value on relationship 'servicedBy'.
         schema:
@@ -4694,11 +4697,6 @@ paths:
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
-      - name: hasPoint
-        description: Filter value on relationship 'hasPoint'.
-        schema:
-          $ref: '#/components/schemas/StringFilter'
-        in: query
       - name: isLocationOf
         description: Filter value on relationship 'isLocationOf'.
         schema:
@@ -5215,6 +5213,11 @@ paths:
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
+      - name: hasPoint
+        description: Filter value on relationship 'hasPoint'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
       - name: intersectingElement
         description: Filter value on relationship 'intersectingElement'.
         schema:
@@ -5237,11 +5240,6 @@ paths:
         in: query
       - name: hasPart
         description: Filter value on relationship 'hasPart'.
-        schema:
-          $ref: '#/components/schemas/StringFilter'
-        in: query
-      - name: hasPoint
-        description: Filter value on relationship 'hasPoint'.
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
@@ -5527,6 +5525,11 @@ paths:
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
+      - name: hasPoint
+        description: Filter value on relationship 'hasPoint'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
       - name: intersectingElement
         description: Filter value on relationship 'intersectingElement'.
         schema:
@@ -5549,11 +5552,6 @@ paths:
         in: query
       - name: hasPart
         description: Filter value on relationship 'hasPart'.
-        schema:
-          $ref: '#/components/schemas/StringFilter'
-        in: query
-      - name: hasPoint
-        description: Filter value on relationship 'hasPoint'.
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
@@ -5833,6 +5831,11 @@ paths:
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
+      - name: hasPoint
+        description: Filter value on relationship 'hasPoint'.
+        schema:
+          $ref: '#/components/schemas/StringFilter'
+        in: query
       - name: intersectingElement
         description: Filter value on relationship 'intersectingElement'.
         schema:
@@ -5855,11 +5858,6 @@ paths:
         in: query
       - name: hasPart
         description: Filter value on relationship 'hasPart'.
-        schema:
-          $ref: '#/components/schemas/StringFilter'
-        in: query
-      - name: hasPoint
-        description: Filter value on relationship 'hasPoint'.
         schema:
           $ref: '#/components/schemas/StringFilter'
         in: query
