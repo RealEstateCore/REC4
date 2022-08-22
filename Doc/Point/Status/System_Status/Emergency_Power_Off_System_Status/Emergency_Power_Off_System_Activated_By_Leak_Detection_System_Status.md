@@ -4,6 +4,8 @@
 - **en:** Emergency Power Off System Activated By Leak Detection System St
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

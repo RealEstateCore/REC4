@@ -4,6 +4,8 @@
 - **en:** Heating Discharge Air Temperature Integral Time Parameter
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

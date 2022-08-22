@@ -8,6 +8,8 @@
 |Name|Display name|Description|Multiplicity|Target|Properties|
 |-|-|-|-|-|-|
 |regulates|**en**: regulates|**en**: Indicates the lease(s) that this contract regulates the conditions of.|0-Infinity|dtmi:org:w3id:rec:Lease;1|
+### Inherited Relationships
+* **dtmi:org:w3id:rec:Document;1:** documentTopic, url
 ## Properties
 ## Telemetries
 ## Commands

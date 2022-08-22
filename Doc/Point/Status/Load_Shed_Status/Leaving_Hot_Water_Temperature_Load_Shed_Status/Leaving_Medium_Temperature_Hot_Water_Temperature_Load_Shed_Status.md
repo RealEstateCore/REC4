@@ -4,6 +4,8 @@
 - **en:** Leaving Medium Temperature Hot Water Temperature Load Shed Statu
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

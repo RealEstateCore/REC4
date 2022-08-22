@@ -4,6 +4,8 @@
 - **en:** Entering Medium Temperature Hot Water Temperature High Reset Set
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

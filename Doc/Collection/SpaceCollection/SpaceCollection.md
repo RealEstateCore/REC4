@@ -4,6 +4,8 @@
 - **en:** Space collection
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:w3id:rec:Collection;1:** documentation
 ## Properties
 ## Telemetries
 ## Commands

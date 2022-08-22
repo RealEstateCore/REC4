@@ -4,6 +4,8 @@
 - **en:** Zone Air Cooling Temperature Setpoint
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

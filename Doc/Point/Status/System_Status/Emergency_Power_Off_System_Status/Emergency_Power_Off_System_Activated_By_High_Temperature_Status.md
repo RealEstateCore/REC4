@@ -4,6 +4,8 @@
 - **en:** Emergency Power Off System Activated By High Temperature Status
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

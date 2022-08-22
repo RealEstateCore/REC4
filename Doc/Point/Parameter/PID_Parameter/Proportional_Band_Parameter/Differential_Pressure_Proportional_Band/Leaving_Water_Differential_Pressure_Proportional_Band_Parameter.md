@@ -4,6 +4,8 @@
 - **en:** Leaving Water Differential Pressure Proportional Band Parameter
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

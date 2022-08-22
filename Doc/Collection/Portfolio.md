@@ -8,6 +8,8 @@
 |Name|Display name|Description|Multiplicity|Target|Properties|
 |-|-|-|-|-|-|
 |includes|**en**: includes||0-Infinity||
+### Inherited Relationships
+* **dtmi:org:w3id:rec:Collection;1:** documentation
 ## Properties
 ## Telemetries
 ## Commands

@@ -4,6 +4,8 @@
 - **en:** Return Air Differential Pressure Sensor
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

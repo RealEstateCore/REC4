@@ -18,6 +18,8 @@
 |isFedBy|**en**: is fed by||0-Infinity||substance (schema: TBD)
 |operatedBy|**en**: operated by||0-Infinity|dtmi:org:w3id:rec:Agent;1|
 |ownedBy|**en**: owned by||0-Infinity|dtmi:org:w3id:rec:Agent;1|
+### Inherited Relationships
+* **dtmi:org:w3id:rec:Space;1:** hasPart, isLocationOf, isPartOf
 ## Properties
 ## Telemetries
 ## Commands

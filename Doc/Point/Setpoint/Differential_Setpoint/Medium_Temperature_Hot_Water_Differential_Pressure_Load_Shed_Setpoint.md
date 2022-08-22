@@ -4,6 +4,8 @@
 - **en:** Medium Temperature Hot Water Differential Pressure Load Shed Set
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands

@@ -4,6 +4,8 @@
 - **en:** Enable Hot Water System Outside Air Temperature Setpoint
 ## Description
 ## Relationships
+### Inherited Relationships
+* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
 ## Properties
 ## Telemetries
 ## Commands
