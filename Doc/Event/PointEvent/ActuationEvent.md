@@ -11,3 +11,4 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:PointEvent;1:** payload
 * **dtmi:org:w3id:rec:Event;1:** customTags, end, externalIds, name, start, timestamp
+## Target Of

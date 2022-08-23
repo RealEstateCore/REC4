@@ -36,5 +36,6 @@
 |turnoverDate|**en**: turnover date||TBD|True|
 |weight|**en**: weight||TBD|True|
 ## Target Of
+### Direct
 * Asset.hasPart
 * Asset.isPartOf

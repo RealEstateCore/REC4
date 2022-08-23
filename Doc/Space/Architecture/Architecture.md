@@ -24,9 +24,10 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
 ## Target Of
+### Direct
 * BuildingElement.locatedIn
 * Campus.includes
-## Inherited Target Of
+### Inherited
 * Asset.locatedIn
 * Space.hasPart
 * Space.isPartOf

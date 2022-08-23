@@ -12,7 +12,8 @@
 |tags|**en**: Tags|**en**: Brick tags associated with this interface.|TBD|False|
 ### Inherited Properties
 * **dtmi:org:brickschema:schema:Brick:Point;1:** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
-## Inherited Target Of
+## Target Of
+### Inherited
 * Asset.hasPoint
 * EquipmentCollection.hasPoint
 * ActuationEvent.targetPoint

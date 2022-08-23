@@ -9,7 +9,8 @@
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:BuildingElement;1:** customTags, externalIds, name
-## Inherited Target Of
+## Target Of
+### Inherited
 * Asset.mountedOn
 * BuildingElement.hasPart
 * BuildingElement.isPartOf

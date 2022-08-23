@@ -19,10 +19,11 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Agent;1:** customTags, externalIds, name
 ## Target Of
+### Direct
 * Agent.isMemberOf
 * Organization.hasPart
 * Organization.isPartOf
-## Inherited Target Of
+### Inherited
 * Asset.commissionedBy
 * Asset.installedBy
 * Asset.manufacturedBy

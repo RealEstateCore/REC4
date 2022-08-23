@@ -14,7 +14,8 @@
 |levelNumber|**en**: level number||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
-## Inherited Target Of
+## Target Of
+### Inherited
 * Asset.locatedIn
 * BuildingElement.locatedIn
 * Space.hasPart

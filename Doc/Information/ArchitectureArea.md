@@ -12,3 +12,4 @@
 |rentableArea|**en**: rentable area||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+## Target Of

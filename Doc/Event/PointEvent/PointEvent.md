@@ -10,3 +10,4 @@
 |payload|**en**: payload|**en**: The payload message of this point event (e.g., a sensor reading, a command message, an exception message, etc.)|TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Event;1:** customTags, end, externalIds, name, start, timestamp
+## Target Of

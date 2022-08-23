@@ -14,8 +14,9 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of
+### Direct
 * Lease.regulatedBy
-## Inherited Target Of
+### Inherited
 * Asset.documentation
 * BuildingElement.documentation
 * Collection.documentation

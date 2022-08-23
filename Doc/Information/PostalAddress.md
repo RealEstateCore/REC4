@@ -15,4 +15,5 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of
+### Direct
 * Architecture.address

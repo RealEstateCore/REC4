@@ -12,3 +12,4 @@
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Collection;1:** customTags, externalIds, name
+## Target Of

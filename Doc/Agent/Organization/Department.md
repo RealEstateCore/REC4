@@ -11,7 +11,8 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Organization;1:** logo
 * **dtmi:org:w3id:rec:Agent;1:** customTags, externalIds, name
-## Inherited Target Of
+## Target Of
+### Inherited
 * Agent.isMemberOf
 * Asset.commissionedBy
 * Asset.installedBy

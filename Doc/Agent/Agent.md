@@ -15,6 +15,7 @@
 |externalIds|**en**: External IDs||TBD|True|
 |name|**en**: name||TBD|True|
 ## Target Of
+### Direct
 * Asset.commissionedBy
 * Asset.installedBy
 * Asset.manufacturedBy

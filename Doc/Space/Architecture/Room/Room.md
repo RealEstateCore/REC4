@@ -11,8 +11,9 @@
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
 ## Target Of
+### Direct
 * Apartment.includes
-## Inherited Target Of
+### Inherited
 * Asset.locatedIn
 * BuildingElement.locatedIn
 * Space.hasPart
