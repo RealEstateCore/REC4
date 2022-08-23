@@ -10,7 +10,7 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|tags|**en**: Tags|**en**: Brick tags associated with this interface.|TBD|False|
+|tags|**en**: Tags|**en**: Brick tags associated with this interface.|array (string)|False|
 ### Inherited Properties
 * **dtmi:org:brickschema:schema:Brick:Chiller;1:** coolingCapacity
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** operationalStageCount

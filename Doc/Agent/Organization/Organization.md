@@ -15,7 +15,7 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|logo|**en**: logo|**en**: URL link to an image/logo that represents the organization.|TBD|True|
+|logo|**en**: logo|**en**: URL link to an image/logo that represents the organization.|string|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Agent;1:** customTags, externalIds, name
 ## Target Of

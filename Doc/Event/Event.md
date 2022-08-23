@@ -7,10 +7,10 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|customTags|**en**: Custom Tags||TBD|True|
-|end|**en**: end|**en**: Event ending timestamp.|TBD|True|
-|externalIds|**en**: External IDs||TBD|True|
-|name|**en**: name||TBD|True|
-|start|**en**: start|**en**: Event start timestamp.|TBD|True|
-|timestamp|**en**: timestamp||TBD|True|
+|customTags|**en**: Custom Tags||map (string->boolean)|True|
+|end|**en**: end|**en**: Event ending timestamp.|dateTime|True|
+|externalIds|**en**: External IDs||map (string->string)|True|
+|name|**en**: name||string|True|
+|start|**en**: start|**en**: Event start timestamp.|dateTime|True|
+|timestamp|**en**: timestamp||dateTime|True|
 ## Target Of

@@ -11,7 +11,7 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|customTags|**en**: Custom Tags||TBD|True|
-|externalIds|**en**: External IDs||TBD|True|
-|name|**en**: name||TBD|True|
+|customTags|**en**: Custom Tags||map (string->boolean)|True|
+|externalIds|**en**: External IDs||map (string->string)|True|
+|name|**en**: name||string|True|
 ## Target Of

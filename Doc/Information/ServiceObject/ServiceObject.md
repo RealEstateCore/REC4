@@ -14,11 +14,11 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|acknowledgedTime|**en**: acknowledged time||TBD|True|
-|closedTime|**en**: closed time||TBD|True|
-|createdTime|**en**: created time||TBD|True|
-|severity|**en**: severity||TBD|True|
-|status|**en**: status||TBD|True|
+|acknowledgedTime|**en**: acknowledged time||dateTime|True|
+|closedTime|**en**: closed time||dateTime|True|
+|createdTime|**en**: created time||dateTime|True|
+|severity|**en**: severity||enum (Major, Minor, Severe)|True|
+|status|**en**: status||enum (Acknowledged, Closed, Unacknowledged)|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of

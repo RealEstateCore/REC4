@@ -15,7 +15,7 @@
 |documentation|**en**: documentation||0-Infinity|dtmi:org:w3id:rec:Document;1||True|
 |hasPoint|**en**: has point||0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1||True|
 |intersectingElement|**en**: intersecting element||0-Infinity|dtmi:org:w3id:rec:BuildingElement;1||True|
-|isFedBy|**en**: is fed by||0-Infinity||substance (schema: TBD)|True|
+|isFedBy|**en**: is fed by||0-Infinity||substance (enum (ACElec, Air, BlowdownWater, ChilledWater, ColdDomesticWater, Condensate, CondenserWater, DCElec, Diesel, DriveElec, Ethernet, ExhaustAir, Freight, FuelOil, Gasoline, GreaseExhaustAir, HotDomesticWater, HotWater, IrrigationWater, Light, MakeupWater, NaturalGas, NonPotableDomesticWater, OutsideAir, People, Propane, RecircHotDomesticWater, Refrig, ReturnAir, SprinklerWater, Steam, StormDrainage, SupplyAir, TransferAir, WasteVentDrainage, Water))|True|
 |operatedBy|**en**: operated by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
 |ownedBy|**en**: owned by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
 ### Inherited Relationships

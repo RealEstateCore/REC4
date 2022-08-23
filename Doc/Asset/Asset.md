@@ -20,21 +20,21 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|IPAddress|**en**: IP address||TBD|True|
-|MACAddress|**en**: MAC address||TBD|True|
-|assetTag|**en**: asset tag||TBD|True|
-|commissioningDate|**en**: commissioning date||TBD|True|
-|customTags|**en**: Custom Tags||TBD|True|
-|externalIds|**en**: External IDs||TBD|True|
-|geometry|**en**: geometry|**en**: A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]].|TBD|True|
-|initialCost|**en**: initial cost||TBD|True|
-|installationDate|**en**: installation date||TBD|True|
-|maintenanceInterval|**en**: maintenance interval||TBD|True|
-|modelNumber|**en**: model number||TBD|True|
-|name|**en**: name||TBD|True|
-|serialNumber|**en**: serial number||TBD|True|
-|turnoverDate|**en**: turnover date||TBD|True|
-|weight|**en**: weight||TBD|True|
+|IPAddress|**en**: IP address||string|True|
+|MACAddress|**en**: MAC address||string|True|
+|assetTag|**en**: asset tag||string|True|
+|commissioningDate|**en**: commissioning date||date|True|
+|customTags|**en**: Custom Tags||map (string->boolean)|True|
+|externalIds|**en**: External IDs||map (string->string)|True|
+|geometry|**en**: geometry|**en**: A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]].|Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
+|initialCost|**en**: initial cost||string|True|
+|installationDate|**en**: installation date||date|True|
+|maintenanceInterval|**en**: maintenance interval||duration|True|
+|modelNumber|**en**: model number||string|True|
+|name|**en**: name||string|True|
+|serialNumber|**en**: serial number||string|True|
+|turnoverDate|**en**: turnover date||date|True|
+|weight|**en**: weight||string|True|
 ## Target Of
 ### Direct
 * Asset.hasPart

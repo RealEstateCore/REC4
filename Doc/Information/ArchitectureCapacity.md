@@ -7,8 +7,8 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|maxOccupancy|**en**: maximum occupancy|**en**: E.g., per Building Code|TBD|True|
-|seatingCapacity|**en**: seating capacity||TBD|True|
+|maxOccupancy|**en**: maximum occupancy|**en**: E.g., per Building Code|integer|True|
+|seatingCapacity|**en**: seating capacity||integer|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of

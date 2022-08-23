@@ -11,7 +11,7 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|levelNumber|**en**: level number||TBD|True|
+|levelNumber|**en**: level number||integer|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
 ## Target Of

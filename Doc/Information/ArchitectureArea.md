@@ -7,9 +7,9 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|grossArea|**en**: gross area||TBD|True|
-|netArea|**en**: net area||TBD|True|
-|rentableArea|**en**: rentable area||TBD|True|
+|grossArea|**en**: gross area||float|True|
+|netArea|**en**: net area||float|True|
+|rentableArea|**en**: rentable area||float|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of

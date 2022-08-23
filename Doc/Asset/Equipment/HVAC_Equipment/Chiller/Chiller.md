@@ -10,7 +10,7 @@
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|coolingCapacity|**en**: Cooling capacity||TBD|True|
+|coolingCapacity|**en**: Cooling capacity||Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
 ### Inherited Properties
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** operationalStageCount
 * **dtmi:org:w3id:rec:Asset;1:** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
