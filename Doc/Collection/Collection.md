@@ -9,5 +9,10 @@
 |-|-|-|-|-|-|
 |documentation|**en**: documentation||0-Infinity|dtmi:org:w3id:rec:Document;1|
 ## Properties
+|Name|Display name|Description|Schema|Writeable|
+|-|-|-|-|-|
+|customTags|**en**: Custom Tags||TBD|True
+|externalIds|**en**: External IDs||TBD|True
+|name|**en**: name||TBD|True
 ## Telemetries
 ## Commands

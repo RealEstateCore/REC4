@@ -9,5 +9,10 @@
 |-|-|-|-|-|-|
 |isMemberOf|**en**: is member of|**en**: Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic Organization.isPartOf property.|0-Infinity|dtmi:org:w3id:rec:Organization;1|
 ## Properties
+|Name|Display name|Description|Schema|Writeable|
+|-|-|-|-|-|
+|customTags|**en**: Custom Tags||TBD|True
+|externalIds|**en**: External IDs||TBD|True
+|name|**en**: name||TBD|True
 ## Telemetries
 ## Commands

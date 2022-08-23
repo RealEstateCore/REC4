@@ -12,5 +12,10 @@
 |isPartOf|**en**: is part of||0-1|dtmi:org:w3id:rec:BuildingElement;1|
 |locatedIn|**en**: located in|**en**: Indicates the architected space (site, building, level, room...) in which this building element is placed.|0-1|dtmi:org:w3id:rec:Architecture;1|
 ## Properties
+|Name|Display name|Description|Schema|Writeable|
+|-|-|-|-|-|
+|customTags|**en**: Custom Tags||TBD|True
+|externalIds|**en**: External IDs||TBD|True
+|name|**en**: name||TBD|True
 ## Telemetries
 ## Commands

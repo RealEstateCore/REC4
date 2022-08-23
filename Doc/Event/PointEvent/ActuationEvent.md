@@ -8,5 +8,8 @@
 |-|-|-|-|-|-|
 |targetPoint|**en**: target point|**en**: The brick:Point(s) (e.g., brick:Commands, brick:Setpoints, or brick:Parameters) that the actuation will target/execute.|0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1|
 ## Properties
+### Inherited Properties
+* **dtmi:org:w3id:rec:PointEvent;1:** payload
+* **dtmi:org:w3id:rec:Event;1:** customTags, end, externalIds, name, start, timestamp
 ## Telemetries
 ## Commands

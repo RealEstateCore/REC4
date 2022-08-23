@@ -8,5 +8,7 @@
 |-|-|-|-|-|-|
 |objectOfInterest|**en**: object of interest||0-1||
 ## Properties
+### Inherited Properties
+* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Telemetries
 ## Commands

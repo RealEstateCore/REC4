@@ -11,5 +11,7 @@
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Document;1:** documentTopic, url
 ## Properties
+### Inherited Properties
+* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Telemetries
 ## Commands
