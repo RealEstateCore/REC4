@@ -4,9 +4,9 @@
 - **en:** Observation event
 ## Description
 ## Relationships
-|Name|Display name|Description|Multiplicity|Target|Properties|
-|-|-|-|-|-|-|
-|sourcePoint|**en**: source point|**en**: The brick:Point that emitted this observation.|0-1|dtmi:org:brickschema:schema:Brick:Point;1|
+|Name|Display name|Description|Multiplicity|Target|Properties|Writable|
+|-|-|-|-|-|-|-|
+|sourcePoint|**en**: source point|**en**: The brick:Point that emitted this observation.|0-1|dtmi:org:brickschema:schema:Brick:Point;1||True|
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:PointEvent;1:** payload

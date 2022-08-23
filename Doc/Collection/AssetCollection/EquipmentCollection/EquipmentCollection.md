@@ -4,11 +4,11 @@
 - **en:** Equipment collection
 ## Description
 ## Relationships
-|Name|Display name|Description|Multiplicity|Target|Properties|
-|-|-|-|-|-|-|
-|feeds|**en**: feeds||0-Infinity||substance (schema: TBD)
-|hasPoint|**en**: has point||0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1|
-|includes|**en**: includes||0-Infinity|dtmi:org:brickschema:schema:Brick:Equipment;1|
+|Name|Display name|Description|Multiplicity|Target|Properties|Writable|
+|-|-|-|-|-|-|-|
+|feeds|**en**: feeds||0-Infinity||substance (schema: TBD)|True|
+|hasPoint|**en**: has point||0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1||True|
+|includes|**en**: includes||0-Infinity|dtmi:org:brickschema:schema:Brick:Equipment;1||True|
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Collection;1:** documentation
 ## Properties

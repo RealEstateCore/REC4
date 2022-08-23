@@ -4,10 +4,10 @@
 - **en:** Document
 ## Description
 ## Relationships
-|Name|Display name|Description|Multiplicity|Target|Properties|
-|-|-|-|-|-|-|
-|documentTopic|**en**: document topic||0-Infinity||
-|url|**en**: URL||0-Infinity||
+|Name|Display name|Description|Multiplicity|Target|Properties|Writable|
+|-|-|-|-|-|-|-|
+|documentTopic|**en**: document topic||0-Infinity|||True|
+|url|**en**: URL||0-Infinity|||True|
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name

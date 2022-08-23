@@ -9,9 +9,9 @@
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
 * **dtmi:org:w3id:rec:Space;1:** hasPart, isLocationOf, isPartOf
 ## Properties
-|Name|Display name|Description|Schema|Writeable|
+|Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|levelNumber|**en**: level number||TBD|True
+|levelNumber|**en**: level number||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
 ## Telemetries

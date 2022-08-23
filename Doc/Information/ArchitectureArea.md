@@ -6,11 +6,11 @@
 - **en:** Describes business-relevant area measurements typically associated with architected spaces. As the exact requirements on these measurements will vary from case to case or jurisdiction to jurisdiction, subclassing and specializing this definition is encouraged.
 ## Relationships
 ## Properties
-|Name|Display name|Description|Schema|Writeable|
+|Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
-|grossArea|**en**: gross area||TBD|True
-|netArea|**en**: net area||TBD|True
-|rentableArea|**en**: rentable area||TBD|True
+|grossArea|**en**: gross area||TBD|True|
+|netArea|**en**: net area||TBD|True|
+|rentableArea|**en**: rentable area||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Telemetries
