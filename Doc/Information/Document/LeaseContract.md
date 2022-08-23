@@ -15,3 +15,8 @@
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
 ## Target Of
 * Lease.regulatedBy
+## Inherited Target Of
+* Asset.documentation
+* BuildingElement.documentation
+* Collection.documentation
+* Architecture.documentation

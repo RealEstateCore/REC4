@@ -22,3 +22,18 @@
 * Agent.isMemberOf
 * Organization.hasPart
 * Organization.isPartOf
+## Inherited Target Of
+* Asset.commissionedBy
+* Asset.installedBy
+* Asset.manufacturedBy
+* Asset.servicedBy
+* Lease.leasee
+* Lease.leasor
+* Organization.hasMember
+* ServiceObject.acknowledgedBy
+* ServiceObject.closedBy
+* ServiceObject.createdBy
+* Architecture.architectedBy
+* Architecture.constructedBy
+* Architecture.operatedBy
+* Architecture.ownedBy

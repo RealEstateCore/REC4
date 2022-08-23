@@ -18,3 +18,6 @@
 * **dtmi:org:w3id:rec:Asset;1:** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
 ## Target Of
 * EquipmentCollection.includes
+## Inherited Target Of
+* Asset.hasPart
+* Asset.isPartOf

@@ -26,3 +26,7 @@
 ## Target Of
 * BuildingElement.locatedIn
 * Campus.includes
+## Inherited Target Of
+* Asset.locatedIn
+* Space.hasPart
+* Space.isPartOf

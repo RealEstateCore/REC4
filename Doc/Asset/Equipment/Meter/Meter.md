@@ -23,3 +23,7 @@
 ## Target Of
 * Meter.hasSubMeter
 * Meter.isSubMeterOf
+## Inherited Target Of
+* Asset.hasPart
+* Asset.isPartOf
+* EquipmentCollection.includes
