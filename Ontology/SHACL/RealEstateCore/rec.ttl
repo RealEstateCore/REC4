@@ -36,6 +36,12 @@ rec:AccessControlZone
   rdfs:label "Access control zone" ;
   rdfs:subClassOf rec:Zone ;
 .
+rec:AccessPanel
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Access panel" ;
+  rdfs:subClassOf rec:BarrierAsset ;
+.
 rec:ActuationEvent
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -91,6 +97,12 @@ rec:Apartment
       sh:name "includes" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:ArchitecturalAsset
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Architectural asset" ;
+  rdfs:subClassOf rec:Asset ;
 .
 rec:Architecture
   a rdfs:Class ;
@@ -446,6 +458,12 @@ rec:BarRoom
   rdfs:label "Bar room" ;
   rdfs:subClassOf rec:FoodHandlingRoom ;
 .
+rec:BarrierAsset
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Barrier asset" ;
+  rdfs:subClassOf rec:ArchitecturalAsset ;
+.
 rec:BasementLevel
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -735,6 +753,12 @@ rec:Document
       sh:name "URL" ;
       sh:nodeKind sh:IRI ;
     ] ;
+.
+rec:Door
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Door" ;
+  rdfs:subClassOf rec:BarrierAsset ;
 .
 rec:DressingRoom
   a rdfs:Class ;
@@ -1330,6 +1354,12 @@ rec:ParkingSlotWarm
   rdfs:label "Parking slot (warm)" ;
   rdfs:subClassOf rec:Garage ;
 .
+rec:Partition
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Partition" ;
+  rdfs:subClassOf rec:BarrierAsset ;
+.
 rec:Person
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1903,6 +1933,12 @@ rec:WasteManagementRoom
   rdfs:label "Waste management room" ;
   rdfs:subClassOf rec:Room ;
 .
+rec:Window
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Window" ;
+  rdfs:subClassOf rec:BarrierAsset ;
+.
 rec:WorkOrder
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1974,11 +2010,4 @@ rec:substance
           "Water"
         ) ;
     ] ;
-.
-recp:apiEndpoint
-  a rdf:Property ;
-  rdfs:comment "This property governs the endpoint name of this node shape in the RealEstateCore Platform REST API." ;
-  rdfs:domain sh:NodeShape ;
-  rdfs:label "API endpoint" ;
-  rdfs:range xsd:string ;
 .
