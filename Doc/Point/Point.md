@@ -17,3 +17,11 @@
 |hasSubstance|**en**: has substance||TBD|True|
 |lastKnownValue|**en**: Last known value||TBD|True|
 |name|**en**: name||TBD|True|
+## Target Of
+* Asset.hasPoint
+* EquipmentCollection.hasPoint
+* ActuationEvent.targetPoint
+* ExceptionEvent.sourcePoint
+* ObservationEvent.sourcePoint
+* ServiceObject.producedBy
+* Architecture.hasPoint

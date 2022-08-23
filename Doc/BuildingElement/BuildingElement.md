@@ -17,3 +17,10 @@
 |customTags|**en**: Custom Tags||TBD|True|
 |externalIds|**en**: External IDs||TBD|True|
 |name|**en**: name||TBD|True|
+## Target Of
+* Asset.mountedOn
+* BuildingElement.hasPart
+* BuildingElement.isPartOf
+* Architecture.adjacentElement
+* Architecture.containsElement
+* Architecture.intersectingElement

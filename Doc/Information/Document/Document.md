@@ -11,3 +11,8 @@
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+## Target Of
+* Asset.documentation
+* BuildingElement.documentation
+* Collection.documentation
+* Architecture.documentation

@@ -35,3 +35,6 @@
 |serialNumber|**en**: serial number||TBD|True|
 |turnoverDate|**en**: turnover date||TBD|True|
 |weight|**en**: weight||TBD|True|
+## Target Of
+* Asset.hasPart
+* Asset.isPartOf
