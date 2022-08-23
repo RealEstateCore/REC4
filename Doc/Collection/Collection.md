@@ -14,5 +14,3 @@
 |customTags|**en**: Custom Tags||TBD|True|
 |externalIds|**en**: External IDs||TBD|True|
 |name|**en**: name||TBD|True|
-## Telemetries
-## Commands

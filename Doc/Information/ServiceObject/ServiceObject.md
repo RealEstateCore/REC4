@@ -21,5 +21,3 @@
 |status|**en**: status||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
-## Telemetries
-## Commands

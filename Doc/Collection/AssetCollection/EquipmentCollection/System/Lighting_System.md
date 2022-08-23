@@ -13,5 +13,3 @@
 |tags|**en**: Tags|**en**: Brick tags associated with this interface.|TBD|False|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Collection;1:** customTags, externalIds, name
-## Telemetries
-## Commands

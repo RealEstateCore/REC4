@@ -16,5 +16,3 @@
 |image|**en**: image|**en**: URL link to an image that represents the person.|TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Agent;1:** customTags, externalIds, name
-## Telemetries
-## Commands

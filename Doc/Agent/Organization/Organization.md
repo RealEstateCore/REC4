@@ -18,5 +18,3 @@
 |logo|**en**: logo|**en**: URL link to an image/logo that represents the organization.|TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Agent;1:** customTags, externalIds, name
-## Telemetries
-## Commands

@@ -4,7 +4,6 @@
 - **en:** Event
 ## Description
 - **en:** A temporally indexed entity, e.g., an observation, a lease, a construction project, etc. Can be instantaneous (timestamp property assigned) or have temporal extent (start and end properties assigned). Subclasses may define specific behaviour and requirements, e.g., on spatial indexing, agent participation, etc.
-## Relationships
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -14,5 +13,3 @@
 |name|**en**: name||TBD|True|
 |start|**en**: start|**en**: Event start timestamp.|TBD|True|
 |timestamp|**en**: timestamp||TBD|True|
-## Telemetries
-## Commands

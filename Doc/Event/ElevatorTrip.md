@@ -3,7 +3,6 @@
 ## Display name
 - **en:** Elevator trip
 ## Description
-## Relationships
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -13,5 +12,3 @@
 |tripDirection|**en**: trip direction||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Event;1:** customTags, end, externalIds, name, start, timestamp
-## Telemetries
-## Commands

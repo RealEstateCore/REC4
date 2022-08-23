@@ -17,5 +17,3 @@
 |externalIds|**en**: External IDs||TBD|True|
 |geometry|**en**: geometry|**en**: A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]].|TBD|True|
 |name|**en**: name||TBD|True|
-## Telemetries
-## Commands

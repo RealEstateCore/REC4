@@ -17,5 +17,3 @@
 |hasSubstance|**en**: has substance||TBD|True|
 |lastKnownValue|**en**: Last known value||TBD|True|
 |name|**en**: name||TBD|True|
-## Telemetries
-## Commands

@@ -9,5 +9,3 @@
 ## Properties
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Asset;1:** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
-## Telemetries
-## Commands

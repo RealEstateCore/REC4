@@ -14,5 +14,3 @@
 |levelNumber|**en**: level number||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
-## Telemetries
-## Commands

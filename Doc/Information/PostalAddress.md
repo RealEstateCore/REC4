@@ -3,7 +3,6 @@
 ## Display name
 - **en:** Postal address
 ## Description
-## Relationships
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -15,5 +14,3 @@
 |region|**en**: region||TBD|True|
 ### Inherited Properties
 * **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
-## Telemetries
-## Commands
