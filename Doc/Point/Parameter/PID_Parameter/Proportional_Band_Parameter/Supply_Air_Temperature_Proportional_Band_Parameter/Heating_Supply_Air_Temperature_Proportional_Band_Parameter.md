@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Proportional_Band_Parameter](../Proportional_Band_Parameter.md) > [Supply_Air_Temperature_Proportional_Band_Parameter](Supply_Air_Temperature_Proportional_Band_Parameter.md) > [Heating_Supply_Air_Temperature_Proportional_Band_Parameter](.)
 # Heating_Supply_Air_Temperature_Proportional_Band_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Supply_Air_Temperature_Proportional_Band_Parameter;1
 ## Display name

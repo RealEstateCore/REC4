@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Emergency_Phone](.)
 # Emergency_Phone
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Phone;1
 ## Display name

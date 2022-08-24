@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Position_Command](.)
 # Position_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Position_Command;1
 ## Display name

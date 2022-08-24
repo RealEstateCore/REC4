@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Temperature_Setpoint](Temperature_Setpoint.md) > [Schedule_Temperature_Setpoint](.)
 # Schedule_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Schedule_Temperature_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [ArchitecturalAsset](.)
 # ArchitecturalAsset
 **DTMI:** dtmi:org:w3id:rec:ArchitecturalAsset;1
 ## Display name

@@ -1,3 +1,4 @@
+[BuildingElement](BuildingElement.md) > [Slab](.)
 # Slab
 **DTMI:** dtmi:org:w3id:rec:Slab;1
 ## Display name

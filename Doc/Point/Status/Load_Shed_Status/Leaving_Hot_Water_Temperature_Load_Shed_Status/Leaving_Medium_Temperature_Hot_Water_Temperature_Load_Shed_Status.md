@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [Load_Shed_Status](../Load_Shed_Status.md) > [Leaving_Hot_Water_Temperature_Load_Shed_Status](Leaving_Hot_Water_Temperature_Load_Shed_Status.md) > [Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status](.)
 # Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status;1
 ## Display name

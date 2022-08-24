@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [On_Status](.)
 # On_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Status;1
 ## Display name

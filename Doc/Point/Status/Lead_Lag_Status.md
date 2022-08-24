@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Lead_Lag_Status](.)
 # Lead_Lag_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lead_Lag_Status;1
 ## Display name

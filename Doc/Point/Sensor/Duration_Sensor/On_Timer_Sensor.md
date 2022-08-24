@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](Duration_Sensor.md) > [On_Timer_Sensor](.)
 # On_Timer_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Timer_Sensor;1
 ## Display name

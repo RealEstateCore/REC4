@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Electrical_System](.)
 # Electrical_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electrical_System;1
 ## Display name

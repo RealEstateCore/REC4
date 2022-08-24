@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [RecordingRoom](.)
 # RecordingRoom
 **DTMI:** dtmi:org:w3id:rec:RecordingRoom;1
 ## Display name

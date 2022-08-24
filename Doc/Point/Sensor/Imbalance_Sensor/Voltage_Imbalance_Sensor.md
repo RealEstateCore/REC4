@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](Imbalance_Sensor.md) > [Voltage_Imbalance_Sensor](.)
 # Voltage_Imbalance_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Imbalance_Sensor;1
 ## Display name

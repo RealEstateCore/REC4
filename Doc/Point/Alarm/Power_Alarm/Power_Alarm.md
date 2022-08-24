@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Power_Alarm](.)
 # Power_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Power_Alarm;1
 ## Display name

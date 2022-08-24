@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [Automated_External_Defibrillator](.)
 # Automated_External_Defibrillator
 **DTMI:** dtmi:org:brickschema:schema:Brick:Automated_External_Defibrillator;1
 ## Display name

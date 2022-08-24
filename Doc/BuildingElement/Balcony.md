@@ -1,3 +1,4 @@
+[BuildingElement](BuildingElement.md) > [Balcony](.)
 # Balcony
 **DTMI:** dtmi:org:w3id:rec:Balcony;1
 ## Display name

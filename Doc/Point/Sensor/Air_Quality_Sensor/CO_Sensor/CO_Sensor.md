@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO_Sensor](.)
 # CO_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO_Sensor;1
 ## Display name

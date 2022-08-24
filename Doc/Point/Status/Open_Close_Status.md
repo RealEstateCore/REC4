@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Open_Close_Status](.)
 # Open_Close_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Open_Close_Status;1
 ## Display name

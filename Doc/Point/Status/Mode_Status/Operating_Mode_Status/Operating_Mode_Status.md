@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Operating_Mode_Status](.)
 # Operating_Mode_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Operating_Mode_Status;1
 ## Display name

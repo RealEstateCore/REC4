@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Overload_Alarm](.)
 # Overload_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Overload_Alarm;1
 ## Display name

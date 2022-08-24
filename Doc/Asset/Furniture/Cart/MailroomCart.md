@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Cart](Cart.md) > [MailroomCart](.)
 # MailroomCart
 **DTMI:** dtmi:org:w3id:rec:MailroomCart;1
 ## Display name

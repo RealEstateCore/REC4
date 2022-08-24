@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Availability_Status](.)
 # Availability_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Availability_Status;1
 ## Display name

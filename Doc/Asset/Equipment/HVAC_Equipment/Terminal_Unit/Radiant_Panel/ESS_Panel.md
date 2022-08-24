@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Radiant_Panel](Radiant_Panel.md) > [ESS_Panel](.)
 # ESS_Panel
 **DTMI:** dtmi:org:brickschema:schema:Brick:ESS_Panel;1
 ## Display name

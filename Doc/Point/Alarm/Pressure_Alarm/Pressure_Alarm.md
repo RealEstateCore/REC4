@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Pressure_Alarm](.)
 # Pressure_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Alarm;1
 ## Display name

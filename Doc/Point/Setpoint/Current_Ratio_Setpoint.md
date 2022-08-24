@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Current_Ratio_Setpoint](.)
 # Current_Ratio_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Current_Ratio_Setpoint;1
 ## Display name

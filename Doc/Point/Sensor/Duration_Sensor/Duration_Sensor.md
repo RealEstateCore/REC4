@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](.)
 # Duration_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Duration_Sensor;1
 ## Display name

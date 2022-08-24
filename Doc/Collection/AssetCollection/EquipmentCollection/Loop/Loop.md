@@ -1,3 +1,4 @@
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [Loop](.)
 # Loop
 **DTMI:** dtmi:org:brickschema:schema:Brick:Loop;1
 ## Display name

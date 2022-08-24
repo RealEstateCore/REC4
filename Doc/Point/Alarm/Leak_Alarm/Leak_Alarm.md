@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Leak_Alarm](.)
 # Leak_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leak_Alarm;1
 ## Display name

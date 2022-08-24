@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Switch_Status](.)
 # Switch_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Switch_Status;1
 ## Display name

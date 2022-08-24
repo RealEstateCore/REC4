@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](Temperature_Parameter.md) > [Low_Freeze_Protect_Temperature_Parameter](.)
 # Low_Freeze_Protect_Temperature_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Freeze_Protect_Temperature_Parameter;1
 ## Display name

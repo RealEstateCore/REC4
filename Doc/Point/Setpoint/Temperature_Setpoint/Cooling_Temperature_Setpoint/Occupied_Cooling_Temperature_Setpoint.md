@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Cooling_Temperature_Setpoint](Cooling_Temperature_Setpoint.md) > [Occupied_Cooling_Temperature_Setpoint](.)
 # Occupied_Cooling_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupied_Cooling_Temperature_Setpoint;1
 ## Display name

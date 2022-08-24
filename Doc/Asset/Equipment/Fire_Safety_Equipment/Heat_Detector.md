@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Heat_Detector](.)
 # Heat_Detector
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Detector;1
 ## Display name

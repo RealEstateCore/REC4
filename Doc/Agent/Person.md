@@ -1,3 +1,4 @@
+[Agent](Agent.md) > [Person](.)
 # Person
 **DTMI:** dtmi:org:w3id:rec:Person;1
 ## Display name

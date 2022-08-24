@@ -1,3 +1,4 @@
+[Information](../Information.md) > [ServiceObject](ServiceObject.md) > [NotificationObject](.)
 # NotificationObject
 **DTMI:** dtmi:org:w3id:rec:NotificationObject;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Temperature_Alarm](.)
 # Temperature_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Alarm;1
 ## Display name

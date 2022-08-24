@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [Limit](../../Limit.md) > [Static_Pressure_Setpoint_Limit](../Static_Pressure_Setpoint_Limit.md) > [Min_Static_Pressure_Setpoint_Limit](Min_Static_Pressure_Setpoint_Limit.md) > [Min_Supply_Air_Static_Pressure_Setpoint_Limit](.)
 # Min_Supply_Air_Static_Pressure_Setpoint_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Supply_Air_Static_Pressure_Setpoint_Limit;1
 ## Display name

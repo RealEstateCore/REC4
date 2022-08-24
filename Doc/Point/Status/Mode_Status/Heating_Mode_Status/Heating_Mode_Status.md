@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Heating_Mode_Status](.)
 # Heating_Mode_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Mode_Status;1
 ## Display name

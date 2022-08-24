@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Piezoelectric_Sensor](.)
 # Piezoelectric_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Piezoelectric_Sensor;1
 ## Display name

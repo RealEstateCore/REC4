@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Manual_Auto_Status](.)
 # Manual_Auto_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Manual_Auto_Status;1
 ## Display name

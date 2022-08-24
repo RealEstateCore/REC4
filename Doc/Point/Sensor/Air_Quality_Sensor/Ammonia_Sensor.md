@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ammonia_Sensor](.)
 # Ammonia_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Ammonia_Sensor;1
 ## Display name

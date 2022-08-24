@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Pressure_Setpoint](../Pressure_Setpoint.md) > [Static_Pressure_Setpoint](Static_Pressure_Setpoint.md) > [Chilled_Water_Static_Pressure_Setpoint](.)
 # Chilled_Water_Static_Pressure_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Static_Pressure_Setpoint;1
 ## Display name

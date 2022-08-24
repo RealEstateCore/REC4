@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Natural_Gas_Usage_Sensor](.)
 # Natural_Gas_Usage_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Natural_Gas_Usage_Sensor;1
 ## Display name

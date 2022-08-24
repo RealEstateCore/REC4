@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](.)
 # Fire_Safety_Equipment
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Safety_Equipment;1
 ## Display name

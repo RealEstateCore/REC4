@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](.)
 # Fault_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fault_Status;1
 ## Display name

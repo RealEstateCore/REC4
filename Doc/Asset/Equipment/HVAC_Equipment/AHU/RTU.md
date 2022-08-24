@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [RTU](.)
 # RTU
 **DTMI:** dtmi:org:brickschema:schema:Brick:RTU;1
 ## Display name

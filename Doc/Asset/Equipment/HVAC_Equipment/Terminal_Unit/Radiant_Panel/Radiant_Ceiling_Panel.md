@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Radiant_Panel](Radiant_Panel.md) > [Radiant_Ceiling_Panel](.)
 # Radiant_Ceiling_Panel
 **DTMI:** dtmi:org:brickschema:schema:Brick:Radiant_Ceiling_Panel;1
 ## Display name

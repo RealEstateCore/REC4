@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Flow_Setpoint](../Flow_Setpoint.md) > [Water_Flow_Setpoint](Water_Flow_Setpoint.md) > [Condenser_Water_Flow_Setpoint](.)
 # Condenser_Water_Flow_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Flow_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Air_Plenum](../Air_Plenum.md) > [Supply_Air_Plenum](Supply_Air_Plenum.md) > [Underfloor_Air_Plenum](.)
 # Underfloor_Air_Plenum
 **DTMI:** dtmi:org:brickschema:schema:Brick:Underfloor_Air_Plenum;1
 ## Display name

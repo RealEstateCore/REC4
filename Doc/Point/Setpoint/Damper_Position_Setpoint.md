@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Damper_Position_Setpoint](.)
 # Damper_Position_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper_Position_Setpoint;1
 ## Display name

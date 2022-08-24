@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](Damper.md) > [Mixed_Damper](.)
 # Mixed_Damper
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mixed_Damper;1
 ## Display name

@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [MultiPurposeRoom](.)
 # MultiPurposeRoom
 **DTMI:** dtmi:org:w3id:rec:MultiPurposeRoom;1
 ## Display name

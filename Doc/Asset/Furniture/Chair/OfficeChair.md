@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Chair](Chair.md) > [OfficeChair](.)
 # OfficeChair
 **DTMI:** dtmi:org:w3id:rec:OfficeChair;1
 ## Display name

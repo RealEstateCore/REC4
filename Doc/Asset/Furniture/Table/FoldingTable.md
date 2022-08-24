@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [FoldingTable](.)
 # FoldingTable
 **DTMI:** dtmi:org:w3id:rec:FoldingTable;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Direction_Sensor](Direction_Sensor.md) > [Wind_Direction_Sensor](.)
 # Wind_Direction_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Wind_Direction_Sensor;1
 ## Display name

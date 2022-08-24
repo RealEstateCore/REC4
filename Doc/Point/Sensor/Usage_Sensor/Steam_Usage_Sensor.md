@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Steam_Usage_Sensor](.)
 # Steam_Usage_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Usage_Sensor;1
 ## Display name

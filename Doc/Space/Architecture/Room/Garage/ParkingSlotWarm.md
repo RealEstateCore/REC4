@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [ParkingSlotWarm](.)
 # ParkingSlotWarm
 **DTMI:** dtmi:org:w3id:rec:ParkingSlotWarm;1
 ## Display name

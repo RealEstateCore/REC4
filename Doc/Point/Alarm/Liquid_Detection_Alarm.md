@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Liquid_Detection_Alarm](.)
 # Liquid_Detection_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Liquid_Detection_Alarm;1
 ## Display name

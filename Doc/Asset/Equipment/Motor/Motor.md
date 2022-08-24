@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Motor](.)
 # Motor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor;1
 ## Display name

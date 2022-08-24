@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Stages_Status](.)
 # Stages_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Stages_Status;1
 ## Display name

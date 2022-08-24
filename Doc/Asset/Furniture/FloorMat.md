@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [FloorMat](.)
 # FloorMat
 **DTMI:** dtmi:org:w3id:rec:FloorMat;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Discharge_Fan](.)
 # Discharge_Fan
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Fan;1
 ## Display name

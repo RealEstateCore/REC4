@@ -1,3 +1,4 @@
+[Space](../../../../Space.md) > [Architecture](../../../Architecture.md) > [Room](../../Room.md) > [UtilitiesRoom](../UtilitiesRoom.md) > [CableRoom](CableRoom.md) > [TelecommunicationRoom](.)
 # TelecommunicationRoom
 **DTMI:** dtmi:org:w3id:rec:TelecommunicationRoom;1
 ## Display name

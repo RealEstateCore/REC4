@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [DOAS](.)
 # DOAS
 **DTMI:** dtmi:org:brickschema:schema:Brick:DOAS;1
 ## Display name

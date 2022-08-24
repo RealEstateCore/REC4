@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Cycle_Alarm](.)
 # Cycle_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cycle_Alarm;1
 ## Display name

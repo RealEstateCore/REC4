@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Power_Off_System](.)
 # Emergency_Power_Off_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System;1
 ## Display name

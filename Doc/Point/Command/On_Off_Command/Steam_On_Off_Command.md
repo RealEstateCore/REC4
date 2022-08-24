@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Steam_On_Off_Command](.)
 # Steam_On_Off_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_On_Off_Command;1
 ## Display name

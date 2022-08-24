@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Maintenance_Mode_Command](.)
 # Maintenance_Mode_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Maintenance_Mode_Command;1
 ## Display name

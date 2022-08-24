@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Reset_Setpoint](../../Reset_Setpoint.md) > [Temperature_Low_Reset_Setpoint](../Temperature_Low_Reset_Setpoint.md) > [Entering_Hot_Water_Temperature_Low_Reset_Setpoint](Entering_Hot_Water_Temperature_Low_Reset_Setpoint.md) > [Entering_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint](.)
 # Entering_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint;1
 ## Display name

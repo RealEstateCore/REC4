@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Elevator](.)
 # Elevator
 **DTMI:** dtmi:org:brickschema:schema:Brick:Elevator;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Camera](.)
 # Camera
 **DTMI:** dtmi:org:brickschema:schema:Brick:Camera;1
 ## Display name

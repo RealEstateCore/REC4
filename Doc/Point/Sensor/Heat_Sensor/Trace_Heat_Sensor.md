@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Heat_Sensor](Heat_Sensor.md) > [Trace_Heat_Sensor](.)
 # Trace_Heat_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Trace_Heat_Sensor;1
 ## Display name

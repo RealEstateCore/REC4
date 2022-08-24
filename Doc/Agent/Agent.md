@@ -1,3 +1,4 @@
+[Agent](.)
 # Agent
 **DTMI:** dtmi:org:w3id:rec:Agent;1
 ## Display name

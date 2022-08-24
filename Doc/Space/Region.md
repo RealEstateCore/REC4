@@ -1,3 +1,4 @@
+[Space](Space.md) > [Region](.)
 # Region
 **DTMI:** dtmi:org:w3id:rec:Region;1
 ## Display name

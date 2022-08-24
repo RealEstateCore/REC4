@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Differential_Setpoint](Differential_Setpoint.md) > [Medium_Temperature_Hot_Water_Differential_Pressure_Load_Shed_Setpoint](.)
 # Medium_Temperature_Hot_Water_Differential_Pressure_Load_Shed_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Medium_Temperature_Hot_Water_Differential_Pressure_Load_Shed_Setpoint;1
 ## Display name

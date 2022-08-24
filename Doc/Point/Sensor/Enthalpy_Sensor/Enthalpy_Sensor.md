@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Enthalpy_Sensor](.)
 # Enthalpy_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enthalpy_Sensor;1
 ## Display name

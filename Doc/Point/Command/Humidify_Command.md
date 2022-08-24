@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Humidify_Command](.)
 # Humidify_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidify_Command;1
 ## Display name

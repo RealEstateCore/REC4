@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Temperature_Sensor](../../Temperature_Sensor.md) > [Air_Temperature_Sensor](../Air_Temperature_Sensor.md) > [Zone_Air_Temperature_Sensor](.)
 # Zone_Air_Temperature_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Zone_Air_Temperature_Sensor;1
 ## Display name

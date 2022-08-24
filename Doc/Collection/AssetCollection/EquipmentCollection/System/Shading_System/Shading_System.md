@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Shading_System](.)
 # Shading_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Shading_System;1
 ## Display name

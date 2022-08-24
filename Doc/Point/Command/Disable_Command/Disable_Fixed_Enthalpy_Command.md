@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](Disable_Command.md) > [Disable_Fixed_Enthalpy_Command](.)
 # Disable_Fixed_Enthalpy_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Disable_Fixed_Enthalpy_Command;1
 ## Display name

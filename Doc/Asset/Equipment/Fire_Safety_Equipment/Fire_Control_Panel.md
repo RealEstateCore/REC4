@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Fire_Control_Panel](.)
 # Fire_Control_Panel
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Control_Panel;1
 ## Display name

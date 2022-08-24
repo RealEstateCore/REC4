@@ -1,3 +1,4 @@
+[Information](Information.md) > [ArchitectureArea](.)
 # ArchitectureArea
 **DTMI:** dtmi:org:w3id:rec:ArchitectureArea;1
 ## Display name

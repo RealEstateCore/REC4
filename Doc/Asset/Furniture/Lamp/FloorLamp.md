@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Lamp](Lamp.md) > [FloorLamp](.)
 # FloorLamp
 **DTMI:** dtmi:org:w3id:rec:FloorLamp;1
 ## Display name

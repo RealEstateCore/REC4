@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Electric_Power_Sensor](.)
 # Electric_Power_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electric_Power_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Motor](../Motor.md) > [VFD](VFD.md) > [Pump_VFD](.)
 # Pump_VFD
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pump_VFD;1
 ## Display name

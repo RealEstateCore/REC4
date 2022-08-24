@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [CO2_Alarm](.)
 # CO2_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO2_Alarm;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Angle_Sensor](.)
 # Angle_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Angle_Sensor;1
 ## Display name

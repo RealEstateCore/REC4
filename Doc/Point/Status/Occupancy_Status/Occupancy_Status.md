@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Occupancy_Status](.)
 # Occupancy_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupancy_Status;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Off_Status](.)
 # Off_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Off_Status;1
 ## Display name

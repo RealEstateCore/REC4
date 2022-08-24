@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Enable_Status](.)
 # Enable_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Status;1
 ## Display name

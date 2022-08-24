@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](../Air_Temperature_Setpoint.md) > [Outside_Air_Temperature_Setpoint](Outside_Air_Temperature_Setpoint.md) > [Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint](.)
 # Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint;1
 ## Display name

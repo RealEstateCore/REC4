@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Steam_Distribution](.)
 # Steam_Distribution
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Distribution;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../../../Point.md) > [Sensor](../../../../Sensor.md) > [Temperature_Sensor](../../../Temperature_Sensor.md) > [Air_Temperature_Sensor](../../Air_Temperature_Sensor.md) > [Outside_Air_Temperature_Sensor](../Outside_Air_Temperature_Sensor.md) > [Outside_Air_Temperature_Enable_Differential_Sensor](Outside_Air_Temperature_Enable_Differential_Sensor.md) > [Low_Outside_Air_Temperature_Enable_Differential_Sensor](.)
 # Low_Outside_Air_Temperature_Enable_Differential_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Outside_Air_Temperature_Enable_Differential_Sensor;1
 ## Display name

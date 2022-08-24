@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Air_Flow_System](.)
 # Emergency_Air_Flow_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Air_Flow_System;1
 ## Display name

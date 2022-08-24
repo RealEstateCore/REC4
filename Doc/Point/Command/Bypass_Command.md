@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Bypass_Command](.)
 # Bypass_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Command;1
 ## Display name

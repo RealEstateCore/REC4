@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Temperature_Deadband_Setpoint](.)
 # Temperature_Deadband_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Deadband_Setpoint;1
 ## Display name

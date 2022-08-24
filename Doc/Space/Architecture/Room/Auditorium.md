@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Auditorium](.)
 # Auditorium
 **DTMI:** dtmi:org:w3id:rec:Auditorium;1
 ## Display name

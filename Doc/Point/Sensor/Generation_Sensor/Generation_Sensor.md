@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](.)
 # Generation_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Generation_Sensor;1
 ## Display name

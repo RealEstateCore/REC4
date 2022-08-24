@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [ShoppingMall](.)
 # ShoppingMall
 **DTMI:** dtmi:org:w3id:rec:ShoppingMall;1
 ## Display name

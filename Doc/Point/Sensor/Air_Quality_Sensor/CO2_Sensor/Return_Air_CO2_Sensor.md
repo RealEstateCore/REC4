@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [Return_Air_CO2_Sensor](.)
 # Return_Air_CO2_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Air_CO2_Sensor;1
 ## Display name

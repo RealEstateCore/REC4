@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Hail_Sensor](.)
 # Hail_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hail_Sensor;1
 ## Display name

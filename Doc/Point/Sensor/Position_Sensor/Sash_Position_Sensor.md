@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Position_Sensor](Position_Sensor.md) > [Sash_Position_Sensor](.)
 # Sash_Position_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Sash_Position_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Entrance](Entrance.md) > [ServiceEntrance](.)
 # ServiceEntrance
 **DTMI:** dtmi:org:w3id:rec:ServiceEntrance;1
 ## Display name

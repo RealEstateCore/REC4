@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Communication_Loss_Alarm](.)
 # Communication_Loss_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Communication_Loss_Alarm;1
 ## Display name

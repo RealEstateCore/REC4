@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](Shading_Equipment.md) > [Blind](.)
 # Blind
 **DTMI:** dtmi:org:brickschema:schema:Brick:Blind;1
 ## Display name

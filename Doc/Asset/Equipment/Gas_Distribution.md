@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Gas_Distribution](.)
 # Gas_Distribution
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_Distribution;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [System_Status](../System_Status.md) > [Emergency_Power_Off_System_Status](.)
 # Emergency_Power_Off_System_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System_Status;1
 ## Display name

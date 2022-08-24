@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](.)
 # Zone
 **DTMI:** dtmi:org:w3id:rec:Zone;1
 ## Display name

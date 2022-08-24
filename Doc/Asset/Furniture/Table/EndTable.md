@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [EndTable](.)
 # EndTable
 **DTMI:** dtmi:org:w3id:rec:EndTable;1
 ## Display name

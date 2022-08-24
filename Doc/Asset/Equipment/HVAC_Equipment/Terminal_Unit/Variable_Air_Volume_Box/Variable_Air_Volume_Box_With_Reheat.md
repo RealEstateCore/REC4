@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Variable_Air_Volume_Box](Variable_Air_Volume_Box.md) > [Variable_Air_Volume_Box_With_Reheat](.)
 # Variable_Air_Volume_Box_With_Reheat
 **DTMI:** dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box_With_Reheat;1
 ## Display name

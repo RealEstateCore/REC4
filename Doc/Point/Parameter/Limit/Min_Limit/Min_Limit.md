@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Min_Limit](.)
 # Min_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Limit;1
 ## Display name

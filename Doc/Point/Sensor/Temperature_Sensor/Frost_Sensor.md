@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Frost_Sensor](.)
 # Frost_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Frost_Sensor;1
 ## Display name

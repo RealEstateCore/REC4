@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](.)
 # Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Sensor;1
 ## Display name

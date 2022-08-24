@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Maintenance_Required_Alarm](.)
 # Maintenance_Required_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Maintenance_Required_Alarm;1
 ## Display name

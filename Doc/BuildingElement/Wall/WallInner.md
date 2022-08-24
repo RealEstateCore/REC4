@@ -1,3 +1,4 @@
+[BuildingElement](../BuildingElement.md) > [Wall](Wall.md) > [WallInner](.)
 # WallInner
 **DTMI:** dtmi:org:w3id:rec:WallInner;1
 ## Display name

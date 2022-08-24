@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Shelter](Shelter.md) > [ShelterGasLock](.)
 # ShelterGasLock
 **DTMI:** dtmi:org:w3id:rec:ShelterGasLock;1
 ## Display name

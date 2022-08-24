@@ -1,3 +1,4 @@
+[Agent](../Agent.md) > [Organization](Organization.md) > [Department](.)
 # Department
 **DTMI:** dtmi:org:w3id:rec:Department;1
 ## Display name

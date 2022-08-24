@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Torque_Sensor](Torque_Sensor.md) > [Motor_Torque_Sensor](.)
 # Motor_Torque_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor_Torque_Sensor;1
 ## Display name

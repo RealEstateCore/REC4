@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Direction_Status](Direction_Status.md) > [Motor_Direction_Status](.)
 # Motor_Direction_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor_Direction_Status;1
 ## Display name

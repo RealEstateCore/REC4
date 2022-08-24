@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Differential_Setpoint](.)
 # Differential_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Setpoint;1
 ## Display name

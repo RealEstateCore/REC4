@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Close_Limit](.)
 # Close_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Close_Limit;1
 ## Display name

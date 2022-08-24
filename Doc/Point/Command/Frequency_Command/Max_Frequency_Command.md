@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](Frequency_Command.md) > [Max_Frequency_Command](.)
 # Max_Frequency_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Frequency_Command;1
 ## Display name

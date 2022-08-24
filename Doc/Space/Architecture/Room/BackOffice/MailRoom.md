@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [BackOffice](BackOffice.md) > [MailRoom](.)
 # MailRoom
 **DTMI:** dtmi:org:w3id:rec:MailRoom;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Emergency_Push_Button_Status](.)
 # Emergency_Push_Button_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Push_Button_Status;1
 ## Display name

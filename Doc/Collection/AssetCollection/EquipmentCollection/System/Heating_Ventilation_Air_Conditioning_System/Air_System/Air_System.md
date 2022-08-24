@@ -1,3 +1,4 @@
+[Collection](../../../../../Collection.md) > [AssetCollection](../../../../AssetCollection.md) > [EquipmentCollection](../../../EquipmentCollection.md) > [System](../../System.md) > [Heating_Ventilation_Air_Conditioning_System](../Heating_Ventilation_Air_Conditioning_System.md) > [Air_System](.)
 # Air_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_System;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Pressure_Sensor](../Pressure_Sensor.md) > [Static_Pressure_Sensor](Static_Pressure_Sensor.md) > [Building_Air_Static_Pressure_Sensor](.)
 # Building_Air_Static_Pressure_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Building_Air_Static_Pressure_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Reset_Setpoint](../Reset_Setpoint.md) > [Temperature_Low_Reset_Setpoint](Temperature_Low_Reset_Setpoint.md) > [Outside_Air_Temperature_Low_Reset_Setpoint](.)
 # Outside_Air_Temperature_Low_Reset_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Temperature_Low_Reset_Setpoint;1
 ## Display name

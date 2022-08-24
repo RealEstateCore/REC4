@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [CoffeeTable](.)
 # CoffeeTable
 **DTMI:** dtmi:org:w3id:rec:CoffeeTable;1
 ## Display name

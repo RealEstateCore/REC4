@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Speed_Setpoint_Limit](Speed_Setpoint_Limit.md) > [Min_Speed_Setpoint_Limit](.)
 # Min_Speed_Setpoint_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Speed_Setpoint_Limit;1
 ## Display name

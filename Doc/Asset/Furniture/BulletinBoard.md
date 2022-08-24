@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [BulletinBoard](.)
 # BulletinBoard
 **DTMI:** dtmi:org:w3id:rec:BulletinBoard;1
 ## Display name

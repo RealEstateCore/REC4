@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](.)
 # Voltage_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Demand_Setpoint](Demand_Setpoint.md) > [Heating_Demand_Setpoint](.)
 # Heating_Demand_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Demand_Setpoint;1
 ## Display name

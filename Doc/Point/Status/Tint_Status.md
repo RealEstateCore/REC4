@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Tint_Status](.)
 # Tint_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Tint_Status;1
 ## Display name

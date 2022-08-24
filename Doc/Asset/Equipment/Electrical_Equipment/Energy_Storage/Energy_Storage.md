@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Electrical_Equipment](../Electrical_Equipment.md) > [Energy_Storage](.)
 # Energy_Storage
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_Storage;1
 ## Display name

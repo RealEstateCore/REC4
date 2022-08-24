@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Direction_Status](.)
 # Direction_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direction_Status;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Freeze_Status](.)
 # Freeze_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Freeze_Status;1
 ## Display name

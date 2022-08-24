@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Chiller](Chiller.md) > [Centrifugal_Chiller](.)
 # Centrifugal_Chiller
 **DTMI:** dtmi:org:brickschema:schema:Brick:Centrifugal_Chiller;1
 ## Display name

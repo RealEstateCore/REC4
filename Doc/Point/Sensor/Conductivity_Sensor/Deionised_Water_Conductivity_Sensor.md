@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Conductivity_Sensor](Conductivity_Sensor.md) > [Deionised_Water_Conductivity_Sensor](.)
 # Deionised_Water_Conductivity_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Deionised_Water_Conductivity_Sensor;1
 ## Display name

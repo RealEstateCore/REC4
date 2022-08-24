@@ -1,3 +1,4 @@
+[Information](../Information.md) > [ServiceObject](.)
 # ServiceObject
 **DTMI:** dtmi:org:w3id:rec:ServiceObject;1
 ## Display name

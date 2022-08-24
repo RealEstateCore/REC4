@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [On_Command](.)
 # On_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Command;1
 ## Display name

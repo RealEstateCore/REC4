@@ -1,3 +1,4 @@
+[Space](../Space.md) > [Architecture](Architecture.md) > [SubBuilding](.)
 # SubBuilding
 **DTMI:** dtmi:org:w3id:rec:SubBuilding;1
 ## Display name

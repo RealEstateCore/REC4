@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Change_Filter_Alarm](.)
 # Change_Filter_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Change_Filter_Alarm;1
 ## Display name

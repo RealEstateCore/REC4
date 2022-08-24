@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [WasteManagementRoom](.)
 # WasteManagementRoom
 **DTMI:** dtmi:org:w3id:rec:WasteManagementRoom;1
 ## Display name

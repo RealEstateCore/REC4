@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](Fault_Status.md) > [Last_Fault_Code_Status](.)
 # Last_Fault_Code_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Last_Fault_Code_Status;1
 ## Display name

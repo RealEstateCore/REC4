@@ -1,3 +1,4 @@
+[Information](../Information.md) > [Document](.)
 # Document
 **DTMI:** dtmi:org:w3id:rec:Document;1
 ## Display name

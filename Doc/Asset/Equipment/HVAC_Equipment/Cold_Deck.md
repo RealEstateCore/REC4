@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cold_Deck](.)
 # Cold_Deck
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cold_Deck;1
 ## Display name

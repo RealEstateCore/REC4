@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Chilled_Beam](.)
 # Chilled_Beam
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Beam;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Natural_Gas_Temperature_Sensor](.)
 # Natural_Gas_Temperature_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Natural_Gas_Temperature_Sensor;1
 ## Display name

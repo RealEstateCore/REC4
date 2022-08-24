@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Heating_Temperature_Setpoint](.)
 # Heating_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Temperature_Setpoint;1
 ## Display name

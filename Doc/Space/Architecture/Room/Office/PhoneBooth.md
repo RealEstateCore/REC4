@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Office](Office.md) > [PhoneBooth](.)
 # PhoneBooth
 **DTMI:** dtmi:org:w3id:rec:PhoneBooth;1
 ## Display name

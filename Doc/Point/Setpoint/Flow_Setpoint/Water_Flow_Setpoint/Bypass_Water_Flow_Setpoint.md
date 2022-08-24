@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Flow_Setpoint](../Flow_Setpoint.md) > [Water_Flow_Setpoint](Water_Flow_Setpoint.md) > [Bypass_Water_Flow_Setpoint](.)
 # Bypass_Water_Flow_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Water_Flow_Setpoint;1
 ## Display name

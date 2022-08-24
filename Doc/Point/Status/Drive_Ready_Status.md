@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Drive_Ready_Status](.)
 # Drive_Ready_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Drive_Ready_Status;1
 ## Display name

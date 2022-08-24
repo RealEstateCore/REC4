@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Cooling_Enable_Command](.)
 # Cooling_Enable_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Enable_Command;1
 ## Display name

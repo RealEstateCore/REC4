@@ -1,3 +1,4 @@
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Gas_System](.)
 # Gas_System
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_System;1
 ## Display name

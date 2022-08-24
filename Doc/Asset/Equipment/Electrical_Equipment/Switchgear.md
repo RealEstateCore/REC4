@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Switchgear](.)
 # Switchgear
 **DTMI:** dtmi:org:brickschema:schema:Brick:Switchgear;1
 ## Display name

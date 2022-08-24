@@ -1,3 +1,4 @@
+[Information](Information.md) > [PointOfInterest](.)
 # PointOfInterest
 **DTMI:** dtmi:org:w3id:rec:PointOfInterest;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Computer_Room_Air_Conditioning](.)
 # Computer_Room_Air_Conditioning
 **DTMI:** dtmi:org:brickschema:schema:Brick:Computer_Room_Air_Conditioning;1
 ## Display name

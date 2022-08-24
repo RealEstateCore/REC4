@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [Sofa](.)
 # Sofa
 **DTMI:** dtmi:org:w3id:rec:Sofa;1
 ## Display name

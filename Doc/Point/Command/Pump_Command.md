@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Pump_Command](.)
 # Pump_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pump_Command;1
 ## Display name

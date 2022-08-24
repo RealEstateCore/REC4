@@ -1,3 +1,4 @@
+[BuildingElement](.)
 # BuildingElement
 **DTMI:** dtmi:org:w3id:rec:BuildingElement;1
 ## Display name

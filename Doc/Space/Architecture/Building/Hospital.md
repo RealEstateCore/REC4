@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [Hospital](.)
 # Hospital
 **DTMI:** dtmi:org:w3id:rec:Hospital;1
 ## Display name

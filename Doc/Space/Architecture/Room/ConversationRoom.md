@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ConversationRoom](.)
 # ConversationRoom
 **DTMI:** dtmi:org:w3id:rec:ConversationRoom;1
 ## Display name

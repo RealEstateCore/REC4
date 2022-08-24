@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ElevatorShaft](.)
 # ElevatorShaft
 **DTMI:** dtmi:org:w3id:rec:ElevatorShaft;1
 ## Display name

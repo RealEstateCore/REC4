@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Chair](Chair.md) > [FoldingChair](.)
 # FoldingChair
 **DTMI:** dtmi:org:w3id:rec:FoldingChair;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Unoccupied_Mode_Status](.)
 # Unoccupied_Mode_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unoccupied_Mode_Status;1
 ## Display name

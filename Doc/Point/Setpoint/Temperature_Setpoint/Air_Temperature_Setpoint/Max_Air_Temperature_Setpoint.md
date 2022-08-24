@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](Air_Temperature_Setpoint.md) > [Max_Air_Temperature_Setpoint](.)
 # Max_Air_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Air_Temperature_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [First_Aid_Kit](.)
 # First_Aid_Kit
 **DTMI:** dtmi:org:brickschema:schema:Brick:First_Aid_Kit;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Luminance_Command](.)
 # Luminance_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Command;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Economizer](.)
 # Economizer
 **DTMI:** dtmi:org:brickschema:schema:Brick:Economizer;1
 ## Display name

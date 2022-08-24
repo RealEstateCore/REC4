@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Current_Limit](.)
 # Current_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Current_Limit;1
 ## Display name

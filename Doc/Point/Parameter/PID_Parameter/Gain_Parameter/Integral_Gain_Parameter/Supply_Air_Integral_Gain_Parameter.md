@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Gain_Parameter](../Gain_Parameter.md) > [Integral_Gain_Parameter](Integral_Gain_Parameter.md) > [Supply_Air_Integral_Gain_Parameter](.)
 # Supply_Air_Integral_Gain_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Integral_Gain_Parameter;1
 ## Display name

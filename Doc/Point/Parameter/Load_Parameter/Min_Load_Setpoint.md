@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](Load_Parameter.md) > [Min_Load_Setpoint](.)
 # Min_Load_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Load_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Collection](../Collection.md) > [SpaceCollection](SpaceCollection.md) > [Apartment](.)
 # Apartment
 **DTMI:** dtmi:org:w3id:rec:Apartment;1
 ## Display name

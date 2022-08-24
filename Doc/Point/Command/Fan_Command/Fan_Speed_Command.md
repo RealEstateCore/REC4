@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Fan_Command](Fan_Command.md) > [Fan_Speed_Command](.)
 # Fan_Speed_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Speed_Command;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Solar_Thermal_Collector](Solar_Thermal_Collector.md) > [PVT_Panel](.)
 # PVT_Panel
 **DTMI:** dtmi:org:brickschema:schema:Brick:PVT_Panel;1
 ## Display name

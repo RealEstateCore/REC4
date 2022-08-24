@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Solar_Radiance_Sensor](.)
 # Solar_Radiance_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Solar_Radiance_Sensor;1
 ## Display name

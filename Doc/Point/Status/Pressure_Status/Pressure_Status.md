@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Pressure_Status](.)
 # Pressure_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Status;1
 ## Display name

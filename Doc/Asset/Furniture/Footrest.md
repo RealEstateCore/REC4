@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [Footrest](.)
 # Footrest
 **DTMI:** dtmi:org:w3id:rec:Footrest;1
 ## Display name

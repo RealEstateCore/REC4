@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Humidity_Setpoint](Humidity_Setpoint.md) > [Supply_Air_Humidity_Setpoint](.)
 # Supply_Air_Humidity_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Humidity_Setpoint;1
 ## Display name

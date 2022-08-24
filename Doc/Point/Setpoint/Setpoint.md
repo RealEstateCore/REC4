@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Setpoint](.)
 # Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Setpoint;1
 ## Display name

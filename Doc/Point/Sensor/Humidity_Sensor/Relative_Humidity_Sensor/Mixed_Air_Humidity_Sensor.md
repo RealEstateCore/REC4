@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Humidity_Sensor](../Humidity_Sensor.md) > [Relative_Humidity_Sensor](Relative_Humidity_Sensor.md) > [Mixed_Air_Humidity_Sensor](.)
 # Mixed_Air_Humidity_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mixed_Air_Humidity_Sensor;1
 ## Display name

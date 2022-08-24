@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Reset_Setpoint](.)
 # Reset_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reset_Setpoint;1
 ## Display name

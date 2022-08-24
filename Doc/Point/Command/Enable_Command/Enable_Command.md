@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](.)
 # Enable_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Command;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Water_Heater](../../Water_Heater.md) > [Boiler](../Boiler.md) > [Natural_Gas_Boiler](Natural_Gas_Boiler.md) > [Noncondensing_Natural_Gas_Boiler](.)
 # Noncondensing_Natural_Gas_Boiler
 **DTMI:** dtmi:org:brickschema:schema:Brick:Noncondensing_Natural_Gas_Boiler;1
 ## Display name

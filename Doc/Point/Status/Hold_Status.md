@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Hold_Status](.)
 # Hold_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hold_Status;1
 ## Display name

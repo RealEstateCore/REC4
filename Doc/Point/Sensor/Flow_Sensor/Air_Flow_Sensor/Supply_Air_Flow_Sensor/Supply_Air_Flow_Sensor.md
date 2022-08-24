@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Flow_Sensor](../../Flow_Sensor.md) > [Air_Flow_Sensor](../Air_Flow_Sensor.md) > [Supply_Air_Flow_Sensor](.)
 # Supply_Air_Flow_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Sensor;1
 ## Display name

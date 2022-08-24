@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](.)
 # Temperature_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Parameter;1
 ## Display name

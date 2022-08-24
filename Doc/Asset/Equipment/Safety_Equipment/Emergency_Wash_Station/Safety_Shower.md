@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Safety_Equipment](../Safety_Equipment.md) > [Emergency_Wash_Station](Emergency_Wash_Station.md) > [Safety_Shower](.)
 # Safety_Shower
 **DTMI:** dtmi:org:brickschema:schema:Brick:Safety_Shower;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Delay_Parameter](Delay_Parameter.md) > [Alarm_Delay_Parameter](.)
 # Alarm_Delay_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Alarm_Delay_Parameter;1
 ## Display name

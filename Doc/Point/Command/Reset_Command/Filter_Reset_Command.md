@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](Reset_Command.md) > [Filter_Reset_Command](.)
 # Filter_Reset_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Filter_Reset_Command;1
 ## Display name

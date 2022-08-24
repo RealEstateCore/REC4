@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Solar_Thermal_Collector](.)
 # Solar_Thermal_Collector
 **DTMI:** dtmi:org:brickschema:schema:Brick:Solar_Thermal_Collector;1
 ## Display name

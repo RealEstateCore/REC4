@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Occupancy_Count_Sensor](.)
 # Occupancy_Count_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupancy_Count_Sensor;1
 ## Display name

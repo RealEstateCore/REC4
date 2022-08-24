@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Boiler_Command](.)
 # Boiler_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Boiler_Command;1
 ## Display name

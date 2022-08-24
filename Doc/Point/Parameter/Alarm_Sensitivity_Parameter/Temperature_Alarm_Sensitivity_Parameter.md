@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter.md) > [Temperature_Alarm_Sensitivity_Parameter](.)
 # Temperature_Alarm_Sensitivity_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Alarm_Sensitivity_Parameter;1
 ## Display name

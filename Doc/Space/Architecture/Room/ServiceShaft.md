@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ServiceShaft](.)
 # ServiceShaft
 **DTMI:** dtmi:org:w3id:rec:ServiceShaft;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [HX](.)
 # HX
 **DTMI:** dtmi:org:brickschema:schema:Brick:HX;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Max_Limit](.)
 # Max_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Limit;1
 ## Display name

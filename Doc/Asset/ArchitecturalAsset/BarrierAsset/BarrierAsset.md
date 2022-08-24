@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](.)
 # BarrierAsset
 **DTMI:** dtmi:org:w3id:rec:BarrierAsset;1
 ## Display name

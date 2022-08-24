@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Valve_Status](.)
 # Valve_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Valve_Status;1
 ## Display name

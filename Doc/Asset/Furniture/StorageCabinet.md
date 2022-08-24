@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [StorageCabinet](.)
 # StorageCabinet
 **DTMI:** dtmi:org:w3id:rec:StorageCabinet;1
 ## Display name

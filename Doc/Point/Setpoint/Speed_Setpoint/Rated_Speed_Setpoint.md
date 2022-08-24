@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Speed_Setpoint](Speed_Setpoint.md) > [Rated_Speed_Setpoint](.)
 # Rated_Speed_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rated_Speed_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Alarm](../../Alarm.md) > [Water_Alarm](../Water_Alarm.md) > [Water_Temperature_Alarm](Water_Temperature_Alarm.md) > [Leaving_Water_Temperature_Alarm](.)
 # Leaving_Water_Temperature_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Water_Temperature_Alarm;1
 ## Display name

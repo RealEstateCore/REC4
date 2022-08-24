@@ -1,3 +1,4 @@
+[Point](../../../../../Point.md) > [Parameter](../../../../Parameter.md) > [PID_Parameter](../../../PID_Parameter.md) > [Time_Parameter](../../Time_Parameter.md) > [Integral_Time_Parameter](../Integral_Time_Parameter.md) > [Air_Temperature_Integral_Time_Parameter](.)
 # Air_Temperature_Integral_Time_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Temperature_Integral_Time_Parameter;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Contact_Sensor](.)
 # Contact_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Contact_Sensor;1
 ## Display name

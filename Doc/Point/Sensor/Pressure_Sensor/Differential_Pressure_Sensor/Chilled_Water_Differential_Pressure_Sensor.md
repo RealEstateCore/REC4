@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Pressure_Sensor](../Pressure_Sensor.md) > [Differential_Pressure_Sensor](Differential_Pressure_Sensor.md) > [Chilled_Water_Differential_Pressure_Sensor](.)
 # Chilled_Water_Differential_Pressure_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Sensor;1
 ## Display name

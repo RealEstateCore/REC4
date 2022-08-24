@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Heat_Exchanger](Heat_Exchanger.md) > [Heat_Wheel](.)
 # Heat_Wheel
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Wheel;1
 ## Display name

@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ExhibitionRoom](.)
 # ExhibitionRoom
 **DTMI:** dtmi:org:w3id:rec:ExhibitionRoom;1
 ## Display name

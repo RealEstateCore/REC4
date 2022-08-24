@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Thermostat_Status](.)
 # Thermostat_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostat_Status;1
 ## Display name

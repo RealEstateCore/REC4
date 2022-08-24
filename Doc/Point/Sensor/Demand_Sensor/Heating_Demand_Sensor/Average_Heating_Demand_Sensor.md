@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Demand_Sensor](../Demand_Sensor.md) > [Heating_Demand_Sensor](Heating_Demand_Sensor.md) > [Average_Heating_Demand_Sensor](.)
 # Average_Heating_Demand_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Average_Heating_Demand_Sensor;1
 ## Display name

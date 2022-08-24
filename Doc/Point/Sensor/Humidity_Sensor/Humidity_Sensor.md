@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Humidity_Sensor](.)
 # Humidity_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Sensor;1
 ## Display name

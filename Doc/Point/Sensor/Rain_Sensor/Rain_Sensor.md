@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Rain_Sensor](.)
 # Rain_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rain_Sensor;1
 ## Display name

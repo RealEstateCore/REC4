@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Luminance_Sensor](.)
 # Luminance_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Sensor;1
 ## Display name

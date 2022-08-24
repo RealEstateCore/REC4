@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [LockerRoom](.)
 # LockerRoom
 **DTMI:** dtmi:org:w3id:rec:LockerRoom;1
 ## Display name

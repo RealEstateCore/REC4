@@ -1,3 +1,4 @@
+[Point](../../../../../Point.md) > [Parameter](../../../../Parameter.md) > [PID_Parameter](../../../PID_Parameter.md) > [Step_Parameter](../../Step_Parameter.md) > [Static_Pressure_Step_Parameter](../Static_Pressure_Step_Parameter.md) > [Air_Static_Pressure_Step_Parameter](Air_Static_Pressure_Step_Parameter.md) > [Discharge_Air_Static_Pressure_Step_Parameter](.)
 # Discharge_Air_Static_Pressure_Step_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Static_Pressure_Step_Parameter;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Disconnect_Switch](.)
 # Disconnect_Switch
 **DTMI:** dtmi:org:brickschema:schema:Brick:Disconnect_Switch;1
 ## Display name

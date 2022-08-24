@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](Disable_Command.md) > [Disable_Differential_Temperature_Command](.)
 # Disable_Differential_Temperature_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Disable_Differential_Temperature_Command;1
 ## Display name

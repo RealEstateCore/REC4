@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Air_Diffuser](Air_Diffuser.md) > [Displacement_Flow_Air_Diffuser](.)
 # Displacement_Flow_Air_Diffuser
 **DTMI:** dtmi:org:brickschema:schema:Brick:Displacement_Flow_Air_Diffuser;1
 ## Display name

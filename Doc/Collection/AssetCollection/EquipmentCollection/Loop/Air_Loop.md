@@ -1,3 +1,4 @@
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [Loop](Loop.md) > [Air_Loop](.)
 # Air_Loop
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Loop;1
 ## Display name

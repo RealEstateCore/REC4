@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [LoadingReceivingRoom](.)
 # LoadingReceivingRoom
 **DTMI:** dtmi:org:w3id:rec:LoadingReceivingRoom;1
 ## Display name

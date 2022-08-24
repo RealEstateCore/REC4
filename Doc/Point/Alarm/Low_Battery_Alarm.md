@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Low_Battery_Alarm](.)
 # Low_Battery_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Battery_Alarm;1
 ## Display name

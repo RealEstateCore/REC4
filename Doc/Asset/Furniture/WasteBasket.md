@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [WasteBasket](.)
 # WasteBasket
 **DTMI:** dtmi:org:w3id:rec:WasteBasket;1
 ## Display name

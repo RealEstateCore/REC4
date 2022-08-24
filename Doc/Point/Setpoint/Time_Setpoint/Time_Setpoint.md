@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](.)
 # Time_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Time_Setpoint;1
 ## Display name

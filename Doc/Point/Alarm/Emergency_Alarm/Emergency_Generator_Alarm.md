@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Emergency_Alarm](Emergency_Alarm.md) > [Emergency_Generator_Alarm](.)
 # Emergency_Generator_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Generator_Alarm;1
 ## Display name

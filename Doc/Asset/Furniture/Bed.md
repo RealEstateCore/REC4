@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [Bed](.)
 # Bed
 **DTMI:** dtmi:org:w3id:rec:Bed;1
 ## Display name

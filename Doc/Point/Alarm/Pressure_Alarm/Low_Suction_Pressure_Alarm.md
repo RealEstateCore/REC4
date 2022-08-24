@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Pressure_Alarm](Pressure_Alarm.md) > [Low_Suction_Pressure_Alarm](.)
 # Low_Suction_Pressure_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Suction_Pressure_Alarm;1
 ## Display name

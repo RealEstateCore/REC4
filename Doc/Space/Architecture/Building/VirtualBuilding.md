@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [VirtualBuilding](.)
 # VirtualBuilding
 **DTMI:** dtmi:org:w3id:rec:VirtualBuilding;1
 ## Display name

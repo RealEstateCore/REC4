@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Space_Heater](.)
 # Space_Heater
 **DTMI:** dtmi:org:brickschema:schema:Brick:Space_Heater;1
 ## Display name

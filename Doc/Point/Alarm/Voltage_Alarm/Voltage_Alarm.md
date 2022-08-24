@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Voltage_Alarm](.)
 # Voltage_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Alarm;1
 ## Display name

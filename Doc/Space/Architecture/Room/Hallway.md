@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Hallway](.)
 # Hallway
 **DTMI:** dtmi:org:w3id:rec:Hallway;1
 ## Display name

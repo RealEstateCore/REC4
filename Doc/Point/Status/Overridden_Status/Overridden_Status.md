@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Overridden_Status](.)
 # Overridden_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Overridden_Status;1
 ## Display name

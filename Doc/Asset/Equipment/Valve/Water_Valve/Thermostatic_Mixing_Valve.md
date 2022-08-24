@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Valve](../Valve.md) > [Water_Valve](Water_Valve.md) > [Thermostatic_Mixing_Valve](.)
 # Thermostatic_Mixing_Valve
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostatic_Mixing_Valve;1
 ## Display name

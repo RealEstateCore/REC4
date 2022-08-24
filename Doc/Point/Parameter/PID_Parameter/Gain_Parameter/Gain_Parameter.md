@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [PID_Parameter](../PID_Parameter.md) > [Gain_Parameter](.)
 # Gain_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gain_Parameter;1
 ## Display name

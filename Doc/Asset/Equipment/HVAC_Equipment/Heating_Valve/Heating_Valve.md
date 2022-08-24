@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Heating_Valve](.)
 # Heating_Valve
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Valve;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [CRAC](CRAC.md) > [Standby_CRAC](.)
 # Standby_CRAC
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_CRAC;1
 ## Display name

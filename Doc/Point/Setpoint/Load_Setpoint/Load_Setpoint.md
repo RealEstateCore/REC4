@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Load_Setpoint](.)
 # Load_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Setpoint;1
 ## Display name

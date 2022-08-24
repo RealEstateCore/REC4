@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Relay](.)
 # Relay
 **DTMI:** dtmi:org:brickschema:schema:Brick:Relay;1
 ## Display name

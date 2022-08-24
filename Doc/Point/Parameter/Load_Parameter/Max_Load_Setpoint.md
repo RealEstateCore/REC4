@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](Load_Parameter.md) > [Max_Load_Setpoint](.)
 # Max_Load_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Load_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Lockout_Status](.)
 # Lockout_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lockout_Status;1
 ## Display name

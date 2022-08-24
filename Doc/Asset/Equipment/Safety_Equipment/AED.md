@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [AED](.)
 # AED
 **DTMI:** dtmi:org:brickschema:schema:Brick:AED;1
 ## Display name

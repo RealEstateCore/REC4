@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Reception](.)
 # Reception
 **DTMI:** dtmi:org:w3id:rec:Reception;1
 ## Display name

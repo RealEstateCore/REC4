@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](.)
 # Equipment
 **DTMI:** dtmi:org:brickschema:schema:Brick:Equipment;1
 ## Display name

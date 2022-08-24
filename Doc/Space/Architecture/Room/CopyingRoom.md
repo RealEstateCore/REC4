@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [CopyingRoom](.)
 # CopyingRoom
 **DTMI:** dtmi:org:w3id:rec:CopyingRoom;1
 ## Display name

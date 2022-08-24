@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](.)
 # Load_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Parameter;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Voltage_Ratio_Setpoint](.)
 # Voltage_Ratio_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Ratio_Setpoint;1
 ## Display name

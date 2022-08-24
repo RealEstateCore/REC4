@@ -1,3 +1,4 @@
+[Asset](../../../../../Asset.md) > [Equipment](../../../../Equipment.md) > [HVAC_Equipment](../../../HVAC_Equipment.md) > [Terminal_Unit](../../Terminal_Unit.md) > [Radiator](../Radiator.md) > [Baseboard_Radiator](.)
 # Baseboard_Radiator
 **DTMI:** dtmi:org:brickschema:schema:Brick:Baseboard_Radiator;1
 ## Display name

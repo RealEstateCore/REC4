@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Meter](../../Meter.md) > [Water_Meter](../Water_Meter.md) > [Chilled_Water_Meter](.)
 # Chilled_Water_Meter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Meter;1
 ## Display name

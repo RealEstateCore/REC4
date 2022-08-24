@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Differential_Setpoint](../Differential_Setpoint.md) > [Differential_Temperature_Setpoint](Differential_Temperature_Setpoint.md) > [Water_Differential_Temperature_Setpoint](.)
 # Water_Differential_Temperature_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Differential_Temperature_Setpoint;1
 ## Display name

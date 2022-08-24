@@ -1,3 +1,4 @@
+[Collection](.)
 # Collection
 **DTMI:** dtmi:org:w3id:rec:Collection;1
 ## Display name

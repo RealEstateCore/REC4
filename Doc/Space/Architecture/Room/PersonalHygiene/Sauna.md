@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [Sauna](.)
 # Sauna
 **DTMI:** dtmi:org:w3id:rec:Sauna;1
 ## Display name

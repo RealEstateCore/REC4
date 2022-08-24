@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Video_Intercom](.)
 # Video_Intercom
 **DTMI:** dtmi:org:brickschema:schema:Brick:Video_Intercom;1
 ## Display name

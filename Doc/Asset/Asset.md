@@ -1,3 +1,4 @@
+[Asset](.)
 # Asset
 **DTMI:** dtmi:org:w3id:rec:Asset;1
 ## Display name

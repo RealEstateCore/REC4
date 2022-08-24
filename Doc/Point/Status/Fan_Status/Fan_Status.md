@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Fan_Status](.)
 # Fan_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Status;1
 ## Display name

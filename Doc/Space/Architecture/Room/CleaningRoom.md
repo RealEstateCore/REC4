@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [CleaningRoom](.)
 # CleaningRoom
 **DTMI:** dtmi:org:w3id:rec:CleaningRoom;1
 ## Display name

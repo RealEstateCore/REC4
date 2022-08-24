@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Air_Quality_Sensor](../../Air_Quality_Sensor.md) > [Particulate_Matter_Sensor](../Particulate_Matter_Sensor.md) > [TVOC_Sensor](.)
 # TVOC_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:TVOC_Sensor;1
 ## Display name

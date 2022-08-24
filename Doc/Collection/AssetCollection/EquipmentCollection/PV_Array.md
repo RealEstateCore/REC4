@@ -1,3 +1,4 @@
+[Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](EquipmentCollection.md) > [PV_Array](.)
 # PV_Array
 **DTMI:** dtmi:org:brickschema:schema:Brick:PV_Array;1
 ## Display name

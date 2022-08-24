@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Enthalpy_Setpoint](.)
 # Enthalpy_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enthalpy_Setpoint;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Automatic_Mode_Command](.)
 # Automatic_Mode_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Automatic_Mode_Command;1
 ## Display name

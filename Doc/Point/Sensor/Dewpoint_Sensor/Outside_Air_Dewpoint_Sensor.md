@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Dewpoint_Sensor](Dewpoint_Sensor.md) > [Outside_Air_Dewpoint_Sensor](.)
 # Outside_Air_Dewpoint_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Dewpoint_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Window](.)
 # Window
 **DTMI:** dtmi:org:w3id:rec:Window;1
 ## Display name

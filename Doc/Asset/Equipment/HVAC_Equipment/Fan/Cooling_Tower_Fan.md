@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Cooling_Tower_Fan](.)
 # Cooling_Tower_Fan
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Tower_Fan;1
 ## Display name

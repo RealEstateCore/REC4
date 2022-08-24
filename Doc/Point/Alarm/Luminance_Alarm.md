@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Alarm](Alarm.md) > [Luminance_Alarm](.)
 # Luminance_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Alarm;1
 ## Display name

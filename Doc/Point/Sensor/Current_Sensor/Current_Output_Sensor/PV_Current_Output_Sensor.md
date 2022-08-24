@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Current_Sensor](../Current_Sensor.md) > [Current_Output_Sensor](Current_Output_Sensor.md) > [PV_Current_Output_Sensor](.)
 # PV_Current_Output_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:PV_Current_Output_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Pump](../Pump.md) > [Water_Pump](Water_Pump.md) > [Chilled_Water_Pump](.)
 # Chilled_Water_Pump
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Pump;1
 ## Display name

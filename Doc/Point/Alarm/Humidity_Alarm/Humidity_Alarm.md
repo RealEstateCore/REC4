@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Humidity_Alarm](.)
 # Humidity_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Alarm;1
 ## Display name

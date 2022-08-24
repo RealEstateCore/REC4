@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [TVStand](.)
 # TVStand
 **DTMI:** dtmi:org:w3id:rec:TVStand;1
 ## Display name

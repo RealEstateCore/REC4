@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Air_Alarm](.)
 # Air_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Alarm;1
 ## Display name

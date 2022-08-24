@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Deadband_Setpoint](Deadband_Setpoint.md) > [Humidity_Deadband_Setpoint](.)
 # Humidity_Deadband_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Deadband_Setpoint;1
 ## Display name

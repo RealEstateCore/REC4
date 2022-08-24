@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [ReceptionTable](.)
 # ReceptionTable
 **DTMI:** dtmi:org:w3id:rec:ReceptionTable;1
 ## Display name

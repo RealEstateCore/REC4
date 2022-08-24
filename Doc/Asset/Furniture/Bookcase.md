@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [Bookcase](.)
 # Bookcase
 **DTMI:** dtmi:org:w3id:rec:Bookcase;1
 ## Display name

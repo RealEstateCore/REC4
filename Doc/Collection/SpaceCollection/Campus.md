@@ -1,3 +1,4 @@
+[Collection](../Collection.md) > [SpaceCollection](SpaceCollection.md) > [Campus](.)
 # Campus
 **DTMI:** dtmi:org:w3id:rec:Campus;1
 ## Display name

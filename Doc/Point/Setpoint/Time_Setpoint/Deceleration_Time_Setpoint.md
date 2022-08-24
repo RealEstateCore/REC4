@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](Time_Setpoint.md) > [Deceleration_Time_Setpoint](.)
 # Deceleration_Time_Setpoint
 **DTMI:** dtmi:org:brickschema:schema:Brick:Deceleration_Time_Setpoint;1
 ## Display name

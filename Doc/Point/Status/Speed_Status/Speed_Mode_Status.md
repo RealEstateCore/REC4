@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Speed_Status](Speed_Status.md) > [Speed_Mode_Status](.)
 # Speed_Mode_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Mode_Status;1
 ## Display name

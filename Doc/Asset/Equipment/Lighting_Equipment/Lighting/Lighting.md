@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Lighting_Equipment](../Lighting_Equipment.md) > [Lighting](.)
 # Lighting
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lighting;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [PID_Parameter](../PID_Parameter.md) > [Time_Parameter](Time_Parameter.md) > [Derivative_Time_Parameter](.)
 # Derivative_Time_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Derivative_Time_Parameter;1
 ## Display name

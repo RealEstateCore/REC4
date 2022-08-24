@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [System_Status](System_Status.md) > [System_Shutdown_Status](.)
 # System_Shutdown_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:System_Shutdown_Status;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [FilingCabinet](.)
 # FilingCabinet
 **DTMI:** dtmi:org:w3id:rec:FilingCabinet;1
 ## Display name

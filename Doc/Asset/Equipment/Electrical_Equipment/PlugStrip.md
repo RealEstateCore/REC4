@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [PlugStrip](.)
 # PlugStrip
 **DTMI:** dtmi:org:brickschema:schema:Brick:PlugStrip;1
 ## Display name

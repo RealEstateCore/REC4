@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [Safe](.)
 # Safe
 **DTMI:** dtmi:org:w3id:rec:Safe;1
 ## Display name

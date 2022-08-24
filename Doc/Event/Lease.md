@@ -1,3 +1,4 @@
+[Event](Event.md) > [Lease](.)
 # Lease
 **DTMI:** dtmi:org:w3id:rec:Lease;1
 ## Display name

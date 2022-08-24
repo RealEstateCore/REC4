@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Water_Distribution](.)
 # Water_Distribution
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Distribution;1
 ## Display name

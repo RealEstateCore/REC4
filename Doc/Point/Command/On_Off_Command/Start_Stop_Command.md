@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Start_Stop_Command](.)
 # Start_Stop_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Start_Stop_Command;1
 ## Display name

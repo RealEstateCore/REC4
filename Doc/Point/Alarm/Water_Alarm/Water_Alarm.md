@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Water_Alarm](.)
 # Water_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Alarm;1
 ## Display name

@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Valve](Valve.md) > [Gas_Valve](.)
 # Gas_Valve
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_Valve;1
 ## Display name

@@ -1,3 +1,4 @@
+[Event](.)
 # Event
 **DTMI:** dtmi:org:w3id:rec:Event;1
 ## Display name

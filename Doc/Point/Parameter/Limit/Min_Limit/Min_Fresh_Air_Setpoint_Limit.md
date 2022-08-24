@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Min_Limit](Min_Limit.md) > [Min_Fresh_Air_Setpoint_Limit](.)
 # Min_Fresh_Air_Setpoint_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Fresh_Air_Setpoint_Limit;1
 ## Display name

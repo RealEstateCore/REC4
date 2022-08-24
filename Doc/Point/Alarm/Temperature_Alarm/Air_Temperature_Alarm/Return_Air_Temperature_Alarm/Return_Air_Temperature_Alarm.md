@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Alarm](../../../Alarm.md) > [Temperature_Alarm](../../Temperature_Alarm.md) > [Air_Temperature_Alarm](../Air_Temperature_Alarm.md) > [Return_Air_Temperature_Alarm](.)
 # Return_Air_Temperature_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Air_Temperature_Alarm;1
 ## Display name

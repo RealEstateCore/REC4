@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Frequency_Sensor](.)
 # Frequency_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Frequency_Sensor;1
 ## Display name

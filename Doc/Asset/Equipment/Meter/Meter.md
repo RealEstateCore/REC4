@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Meter](.)
 # Meter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Meter;1
 ## Display name

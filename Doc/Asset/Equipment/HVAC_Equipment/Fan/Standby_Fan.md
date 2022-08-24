@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Standby_Fan](.)
 # Standby_Fan
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_Fan;1
 ## Display name

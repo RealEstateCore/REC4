@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Flow_Sensor](../Flow_Sensor.md) > [Water_Flow_Sensor](Water_Flow_Sensor.md) > [Bypass_Water_Flow_Sensor](.)
 # Bypass_Water_Flow_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Water_Flow_Sensor;1
 ## Display name

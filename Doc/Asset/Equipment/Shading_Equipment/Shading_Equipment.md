@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](.)
 # Shading_Equipment
 **DTMI:** dtmi:org:brickschema:schema:Brick:Shading_Equipment;1
 ## Display name

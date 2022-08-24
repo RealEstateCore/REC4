@@ -1,3 +1,4 @@
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [Toilet](.)
 # Toilet
 **DTMI:** dtmi:org:w3id:rec:Toilet;1
 ## Display name

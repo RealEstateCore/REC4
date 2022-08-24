@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Water_Alarm](Water_Alarm.md) > [Water_Loss_Alarm](.)
 # Water_Loss_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Loss_Alarm;1
 ## Display name

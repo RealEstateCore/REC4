@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Direction_Command](.)
 # Direction_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direction_Command;1
 ## Display name

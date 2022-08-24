@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [ConferenceTable](.)
 # ConferenceTable
 **DTMI:** dtmi:org:w3id:rec:ConferenceTable;1
 ## Display name

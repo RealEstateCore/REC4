@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Lighting_Equipment](../Lighting_Equipment.md) > [Interface](Interface.md) > [Touchpanel](.)
 # Touchpanel
 **DTMI:** dtmi:org:brickschema:schema:Brick:Touchpanel;1
 ## Display name

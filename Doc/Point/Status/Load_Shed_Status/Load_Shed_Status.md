@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Load_Shed_Status](.)
 # Load_Shed_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Shed_Status;1
 ## Display name

@@ -1,3 +1,4 @@
+[BuildingElement](BuildingElement.md) > [Facade](.)
 # Facade
 **DTMI:** dtmi:org:w3id:rec:Facade;1
 ## Display name

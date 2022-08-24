@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Shading_System](Shading_System.md) > [Blind_Group](.)
 # Blind_Group
 **DTMI:** dtmi:org:brickschema:schema:Brick:Blind_Group;1
 ## Display name

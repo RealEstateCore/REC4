@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [HVACZone](.)
 # HVACZone
 **DTMI:** dtmi:org:w3id:rec:HVACZone;1
 ## Display name

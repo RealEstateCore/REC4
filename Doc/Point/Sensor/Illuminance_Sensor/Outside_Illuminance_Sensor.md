@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Illuminance_Sensor](Illuminance_Sensor.md) > [Outside_Illuminance_Sensor](.)
 # Outside_Illuminance_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Illuminance_Sensor;1
 ## Display name

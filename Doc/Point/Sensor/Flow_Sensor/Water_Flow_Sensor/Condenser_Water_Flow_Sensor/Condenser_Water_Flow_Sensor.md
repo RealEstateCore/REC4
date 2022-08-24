@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Flow_Sensor](../../Flow_Sensor.md) > [Water_Flow_Sensor](../Water_Flow_Sensor.md) > [Condenser_Water_Flow_Sensor](.)
 # Condenser_Water_Flow_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Flow_Sensor;1
 ## Display name

@@ -1,3 +1,4 @@
+[Information](../Information.md) > [ServiceObject](ServiceObject.md) > [ErrorReport](.)
 # ErrorReport
 **DTMI:** dtmi:org:w3id:rec:ErrorReport;1
 ## Display name

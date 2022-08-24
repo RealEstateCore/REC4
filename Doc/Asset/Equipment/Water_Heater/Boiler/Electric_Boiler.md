@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Water_Heater](../Water_Heater.md) > [Boiler](Boiler.md) > [Electric_Boiler](.)
 # Electric_Boiler
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electric_Boiler;1
 ## Display name

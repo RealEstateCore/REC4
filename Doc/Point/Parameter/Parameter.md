@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Parameter](.)
 # Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Parameter;1
 ## Display name

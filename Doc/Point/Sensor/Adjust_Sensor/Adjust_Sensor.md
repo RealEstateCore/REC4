@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](.)
 # Adjust_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Adjust_Sensor;1
 ## Display name

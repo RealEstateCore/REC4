@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Load_Shed_Command](.)
 # Load_Shed_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Shed_Command;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Capacity_Sensor](.)
 # Capacity_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Capacity_Sensor;1
 ## Display name

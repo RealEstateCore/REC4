@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Position_Command](Position_Command.md) > [Damper_Position_Command](.)
 # Damper_Position_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper_Position_Command;1
 ## Display name

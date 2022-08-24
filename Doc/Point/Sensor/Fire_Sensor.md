@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Sensor](Sensor.md) > [Fire_Sensor](.)
 # Fire_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Sensor;1
 ## Display name

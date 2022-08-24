@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Override_Command](Override_Command.md) > [Curtailment_Override_Command](.)
 # Curtailment_Override_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Curtailment_Override_Command;1
 ## Display name

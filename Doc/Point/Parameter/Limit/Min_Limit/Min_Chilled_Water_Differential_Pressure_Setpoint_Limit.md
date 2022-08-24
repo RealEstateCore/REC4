@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Min_Limit](Min_Limit.md) > [Min_Chilled_Water_Differential_Pressure_Setpoint_Limit](.)
 # Min_Chilled_Water_Differential_Pressure_Setpoint_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit;1
 ## Display name

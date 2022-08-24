@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Meter](Meter.md) > [Thermal_Power_Meter](.)
 # Thermal_Power_Meter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermal_Power_Meter;1
 ## Display name

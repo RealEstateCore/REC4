@@ -1,3 +1,4 @@
+[Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [Temperature_Parameter](../../Temperature_Parameter.md) > [Air_Temperature_Setpoint_Limit](../Air_Temperature_Setpoint_Limit.md) > [Supply_Air_Temperature_Setpoint_Limit](Supply_Air_Temperature_Setpoint_Limit.md) > [Min_Supply_Air_Temperature_Setpoint_Limit](.)
 # Min_Supply_Air_Temperature_Setpoint_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Supply_Air_Temperature_Setpoint_Limit;1
 ## Display name

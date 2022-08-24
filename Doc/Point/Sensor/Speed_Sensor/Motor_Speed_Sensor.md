@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Speed_Sensor](Speed_Sensor.md) > [Motor_Speed_Sensor](.)
 # Motor_Speed_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor_Speed_Sensor;1
 ## Display name

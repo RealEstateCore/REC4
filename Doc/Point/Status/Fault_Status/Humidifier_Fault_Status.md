@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](Fault_Status.md) > [Humidifier_Fault_Status](.)
 # Humidifier_Fault_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidifier_Fault_Status;1
 ## Display name

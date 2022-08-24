@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Enable_Fixed_Temperature_Command](.)
 # Enable_Fixed_Temperature_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Fixed_Temperature_Command;1
 ## Display name

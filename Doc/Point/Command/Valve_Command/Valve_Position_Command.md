@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Valve_Command](Valve_Command.md) > [Valve_Position_Command](.)
 # Valve_Position_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Valve_Position_Command;1
 ## Display name

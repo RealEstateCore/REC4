@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Position_Limit](.)
 # Position_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Position_Limit;1
 ## Display name

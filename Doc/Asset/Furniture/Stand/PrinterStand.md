@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [PrinterStand](.)
 # PrinterStand
 **DTMI:** dtmi:org:w3id:rec:PrinterStand;1
 ## Display name

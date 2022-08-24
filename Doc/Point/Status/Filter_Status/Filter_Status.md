@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Filter_Status](.)
 # Filter_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Filter_Status;1
 ## Display name

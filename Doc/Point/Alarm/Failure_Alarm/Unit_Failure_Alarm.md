@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Failure_Alarm](Failure_Alarm.md) > [Unit_Failure_Alarm](.)
 # Unit_Failure_Alarm
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unit_Failure_Alarm;1
 ## Display name

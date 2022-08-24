@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Desk](Desk.md) > [MobileDesk](.)
 # MobileDesk
 **DTMI:** dtmi:org:w3id:rec:MobileDesk;1
 ## Display name

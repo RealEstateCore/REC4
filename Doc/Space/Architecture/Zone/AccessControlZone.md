@@ -1,3 +1,4 @@
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [AccessControlZone](.)
 # AccessControlZone
 **DTMI:** dtmi:org:w3id:rec:AccessControlZone;1
 ## Display name

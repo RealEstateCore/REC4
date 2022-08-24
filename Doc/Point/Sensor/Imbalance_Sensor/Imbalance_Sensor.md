@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](.)
 # Imbalance_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Imbalance_Sensor;1
 ## Display name

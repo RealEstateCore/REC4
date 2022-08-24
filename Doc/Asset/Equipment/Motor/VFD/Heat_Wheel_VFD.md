@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Motor](../Motor.md) > [VFD](VFD.md) > [Heat_Wheel_VFD](.)
 # Heat_Wheel_VFD
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Wheel_VFD;1
 ## Display name

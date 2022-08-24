@@ -1,3 +1,4 @@
+[Information](Information.md) > [ArchitectureCapacity](.)
 # ArchitectureCapacity
 **DTMI:** dtmi:org:w3id:rec:ArchitectureCapacity;1
 ## Display name

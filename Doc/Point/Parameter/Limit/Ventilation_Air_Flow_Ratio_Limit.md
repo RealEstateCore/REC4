@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Ventilation_Air_Flow_Ratio_Limit](.)
 # Ventilation_Air_Flow_Ratio_Limit
 **DTMI:** dtmi:org:brickschema:schema:Brick:Ventilation_Air_Flow_Ratio_Limit;1
 ## Display name

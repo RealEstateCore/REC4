@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Heating_Command](.)
 # Heating_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Command;1
 ## Display name

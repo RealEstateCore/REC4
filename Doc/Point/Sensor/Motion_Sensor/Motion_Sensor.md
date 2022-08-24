@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Motion_Sensor](.)
 # Motion_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motion_Sensor;1
 ## Display name

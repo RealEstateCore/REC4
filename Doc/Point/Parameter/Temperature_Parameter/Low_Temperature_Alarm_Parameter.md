@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](Temperature_Parameter.md) > [Low_Temperature_Alarm_Parameter](.)
 # Low_Temperature_Alarm_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Temperature_Alarm_Parameter;1
 ## Display name

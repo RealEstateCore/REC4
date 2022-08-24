@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Status](../Status.md) > [Mode_Status](Mode_Status.md) > [Zone_Air_Conditioning_Mode_Status](.)
 # Zone_Air_Conditioning_Mode_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Zone_Air_Conditioning_Mode_Status;1
 ## Display name

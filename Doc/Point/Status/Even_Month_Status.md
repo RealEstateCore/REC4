@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Status](Status.md) > [Even_Month_Status](.)
 # Even_Month_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Even_Month_Status;1
 ## Display name

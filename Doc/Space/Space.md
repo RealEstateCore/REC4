@@ -1,3 +1,4 @@
+[Space](.)
 # Space
 **DTMI:** dtmi:org:w3id:rec:Space;1
 ## Display name

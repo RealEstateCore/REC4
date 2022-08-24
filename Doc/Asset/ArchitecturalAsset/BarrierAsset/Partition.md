@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Partition](.)
 # Partition
 **DTMI:** dtmi:org:w3id:rec:Partition;1
 ## Display name

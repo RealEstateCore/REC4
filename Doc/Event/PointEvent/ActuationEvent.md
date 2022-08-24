@@ -1,3 +1,4 @@
+[Event](../Event.md) > [PointEvent](PointEvent.md) > [ActuationEvent](.)
 # ActuationEvent
 **DTMI:** dtmi:org:w3id:rec:ActuationEvent;1
 ## Display name

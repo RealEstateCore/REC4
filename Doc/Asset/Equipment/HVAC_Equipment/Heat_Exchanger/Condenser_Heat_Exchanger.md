@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Heat_Exchanger](Heat_Exchanger.md) > [Condenser_Heat_Exchanger](.)
 # Condenser_Heat_Exchanger
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Heat_Exchanger;1
 ## Display name

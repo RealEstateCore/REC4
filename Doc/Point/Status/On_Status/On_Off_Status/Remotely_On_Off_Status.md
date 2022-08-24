@@ -1,3 +1,4 @@
+[Point](../../../Point.md) > [Status](../../Status.md) > [On_Status](../On_Status.md) > [On_Off_Status](On_Off_Status.md) > [Remotely_On_Off_Status](.)
 # Remotely_On_Off_Status
 **DTMI:** dtmi:org:brickschema:schema:Brick:Remotely_On_Off_Status;1
 ## Display name

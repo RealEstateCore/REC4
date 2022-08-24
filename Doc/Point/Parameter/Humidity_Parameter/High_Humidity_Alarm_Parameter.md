@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Humidity_Parameter](Humidity_Parameter.md) > [High_Humidity_Alarm_Parameter](.)
 # High_Humidity_Alarm_Parameter
 **DTMI:** dtmi:org:brickschema:schema:Brick:High_Humidity_Alarm_Parameter;1
 ## Display name

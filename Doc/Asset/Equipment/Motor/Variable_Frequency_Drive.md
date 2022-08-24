@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Motor](Motor.md) > [Variable_Frequency_Drive](.)
 # Variable_Frequency_Drive
 **DTMI:** dtmi:org:brickschema:schema:Brick:Variable_Frequency_Drive;1
 ## Display name

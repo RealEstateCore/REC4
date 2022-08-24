@@ -1,3 +1,4 @@
+[Point](../Point.md) > [Command](Command.md) > [Light_Command](.)
 # Light_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Light_Command;1
 ## Display name

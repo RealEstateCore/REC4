@@ -1,3 +1,4 @@
+[Collection](../Collection.md) > [SpaceCollection](.)
 # SpaceCollection
 **DTMI:** dtmi:org:w3id:rec:SpaceCollection;1
 ## Display name

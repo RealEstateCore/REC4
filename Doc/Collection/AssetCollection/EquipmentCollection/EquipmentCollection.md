@@ -1,3 +1,4 @@
+[Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](.)
 # EquipmentCollection
 **DTMI:** dtmi:org:w3id:rec:EquipmentCollection;1
 ## Display name

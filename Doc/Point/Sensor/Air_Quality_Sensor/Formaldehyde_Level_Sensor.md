@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Formaldehyde_Level_Sensor](.)
 # Formaldehyde_Level_Sensor
 **DTMI:** dtmi:org:brickschema:schema:Brick:Formaldehyde_Level_Sensor;1
 ## Display name

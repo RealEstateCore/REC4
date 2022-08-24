@@ -1,3 +1,4 @@
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Filter](Filter.md) > [Mixed_Air_Filter](.)
 # Mixed_Air_Filter
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mixed_Air_Filter;1
 ## Display name

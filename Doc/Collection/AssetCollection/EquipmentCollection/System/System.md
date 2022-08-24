@@ -1,3 +1,4 @@
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](.)
 # System
 **DTMI:** dtmi:org:brickschema:schema:Brick:System;1
 ## Display name

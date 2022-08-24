@@ -1,3 +1,4 @@
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [CoatRack](.)
 # CoatRack
 **DTMI:** dtmi:org:w3id:rec:CoatRack;1
 ## Display name

@@ -1,3 +1,4 @@
+[Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](.)
 # Mode_Command
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mode_Command;1
 ## Display name

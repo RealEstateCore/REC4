@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [AccessPanel](.)
 # AccessPanel
 **DTMI:** dtmi:org:w3id:rec:AccessPanel;1
 ## Display name

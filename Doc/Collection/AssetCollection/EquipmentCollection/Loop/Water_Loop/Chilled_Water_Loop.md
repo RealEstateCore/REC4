@@ -1,3 +1,4 @@
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [Loop](../Loop.md) > [Water_Loop](Water_Loop.md) > [Chilled_Water_Loop](.)
 # Chilled_Water_Loop
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Loop;1
 ## Display name

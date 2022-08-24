@@ -1,3 +1,4 @@
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Thermostat](.)
 # Thermostat
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostat;1
 ## Display name
