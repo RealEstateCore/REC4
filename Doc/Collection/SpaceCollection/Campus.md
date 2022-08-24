@@ -11,10 +11,10 @@ A campus represents a collection of location entities. The constituent locations
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|includes|**en**: includes||0-Infinity|dtmi:org:w3id:rec:Architecture;1||True|
+|includes|**en**: includes||0-Infinity|[Architecture](../../Space/Architecture/Architecture.md)||True|
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Collection;1:** documentation
+* **[Collection](../Collection.md):** documentation
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Collection;1:** customTags, externalIds, name
+* **[Collection](../Collection.md):** customTags, externalIds, name
 ## Target Of

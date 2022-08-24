@@ -10,12 +10,12 @@ An administrative geospatial unit larger than the individual real estate. For in
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Space;1:** hasPart, isLocationOf, isPartOf
+* **[Space](Space.md):** hasPart, isLocationOf, isPartOf
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
+* **[Space](Space.md):** customTags, externalIds, geometry, name
 ## Target Of
 ### Inherited
-* Asset.locatedIn
-* Space.hasPart
-* Space.isPartOf
+* [Asset](../Asset/Asset.md).locatedIn
+* [Space](Space.md).hasPart
+* [Space](Space.md).isPartOf

@@ -11,5 +11,5 @@
 |objectOfInterest|**en**: object of interest||0-1|||True|
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](Information.md):** customTags, externalIds, name
 ## Target Of

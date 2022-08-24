@@ -7,9 +7,9 @@
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:ServiceObject;1:** acknowledgedBy, closedBy, createdBy, producedBy, relatedTo
+* **[ServiceObject](ServiceObject.md):** acknowledgedBy, closedBy, createdBy, producedBy, relatedTo
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:ServiceObject;1:** acknowledgedTime, closedTime, createdTime, severity, status
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[ServiceObject](ServiceObject.md):** acknowledgedTime, closedTime, createdTime, severity, status
+* **[Information](../Information.md):** customTags, externalIds, name
 ## Target Of

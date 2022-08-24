@@ -32,10 +32,10 @@
 |name|**en**: name||string|True|
 ## Target Of
 ### Direct
-* Asset.hasPoint
-* EquipmentCollection.hasPoint
-* ActuationEvent.targetPoint
-* ExceptionEvent.sourcePoint
-* ObservationEvent.sourcePoint
-* ServiceObject.producedBy
-* Architecture.hasPoint
+* [Asset](../Asset/Asset.md).hasPoint
+* [EquipmentCollection](../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).hasPoint
+* [ActuationEvent](../Event/PointEvent/ActuationEvent.md).targetPoint
+* [ExceptionEvent](../Event/PointEvent/ExceptionEvent.md).sourcePoint
+* [ObservationEvent](../Event/PointEvent/ObservationEvent.md).sourcePoint
+* [ServiceObject](../Information/ServiceObject/ServiceObject.md).producedBy
+* [Architecture](../Space/Architecture/Architecture.md).hasPoint

@@ -7,16 +7,16 @@
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
-* **dtmi:org:w3id:rec:Space;1:** hasPart, isLocationOf, isPartOf
+* **[Architecture](../../Architecture.md):** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
+* **[Space](../../../Space.md):** hasPart, isLocationOf, isPartOf
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
+* **[Space](../../../Space.md):** customTags, externalIds, geometry, name
 ## Target Of
 ### Inherited
-* Asset.locatedIn
-* BuildingElement.locatedIn
-* Space.hasPart
-* Space.isPartOf
-* Apartment.includes
-* Campus.includes
+* [Asset](../../../../Asset/Asset.md).locatedIn
+* [BuildingElement](../../../../BuildingElement/BuildingElement.md).locatedIn
+* [Space](../../../Space.md).hasPart
+* [Space](../../../Space.md).isPartOf
+* [Apartment](../../../../Collection/SpaceCollection/Apartment.md).includes
+* [Campus](../../../../Collection/SpaceCollection/Campus.md).includes

@@ -18,9 +18,9 @@ A contiguous part of the physical world that contains or can contain sub-spaces.
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|hasPart|**en**: has part||0-Infinity|dtmi:org:w3id:rec:Space;1||True|
+|hasPart|**en**: has part||0-Infinity|[Space](#)||True|
 |isLocationOf|**en**: is location of||0-Infinity|||True|
-|isPartOf|**en**: is part of||0-1|dtmi:org:w3id:rec:Space;1||True|
+|isPartOf|**en**: is part of||0-1|[Space](#)||True|
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -30,6 +30,6 @@ A contiguous part of the physical world that contains or can contain sub-spaces.
 |name|**en**: name||string|True|
 ## Target Of
 ### Direct
-* Asset.locatedIn
-* Space.hasPart
-* Space.isPartOf
+* [Asset](../Asset/Asset.md).locatedIn
+* [Space](#).hasPart
+* [Space](#).isPartOf

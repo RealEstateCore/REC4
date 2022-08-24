@@ -7,15 +7,15 @@
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:BuildingElement;1:** documentation, hasPart, isPartOf, locatedIn
+* **[BuildingElement](BuildingElement.md):** documentation, hasPart, isPartOf, locatedIn
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:BuildingElement;1:** customTags, externalIds, name
+* **[BuildingElement](BuildingElement.md):** customTags, externalIds, name
 ## Target Of
 ### Inherited
-* Asset.mountedOn
-* BuildingElement.hasPart
-* BuildingElement.isPartOf
-* Architecture.adjacentElement
-* Architecture.containsElement
-* Architecture.intersectingElement
+* [Asset](../Asset/Asset.md).mountedOn
+* [BuildingElement](BuildingElement.md).hasPart
+* [BuildingElement](BuildingElement.md).isPartOf
+* [Architecture](../Space/Architecture/Architecture.md).adjacentElement
+* [Architecture](../Space/Architecture/Architecture.md).containsElement
+* [Architecture](../Space/Architecture/Architecture.md).intersectingElement

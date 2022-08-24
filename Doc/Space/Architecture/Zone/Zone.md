@@ -19,15 +19,15 @@ A sub-zone within a building defined to support some technology and/or use, e.g.
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
-* **dtmi:org:w3id:rec:Space;1:** hasPart, isLocationOf, isPartOf
+* **[Architecture](../Architecture.md):** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
+* **[Space](../../Space.md):** hasPart, isLocationOf, isPartOf
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Space;1:** customTags, externalIds, geometry, name
+* **[Space](../../Space.md):** customTags, externalIds, geometry, name
 ## Target Of
 ### Inherited
-* Asset.locatedIn
-* BuildingElement.locatedIn
-* Space.hasPart
-* Space.isPartOf
-* Campus.includes
+* [Asset](../../../Asset/Asset.md).locatedIn
+* [BuildingElement](../../../BuildingElement/BuildingElement.md).locatedIn
+* [Space](../../Space.md).hasPart
+* [Space](../../Space.md).isPartOf
+* [Campus](../../../Collection/SpaceCollection/Campus.md).includes

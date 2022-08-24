@@ -21,10 +21,10 @@ A part that constitutes a piece of a building's structural makeup. E.g., Facade,
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|documentation|**en**: documentation||0-Infinity|dtmi:org:w3id:rec:Document;1||True|
-|hasPart|**en**: has part||0-Infinity|dtmi:org:w3id:rec:BuildingElement;1||True|
-|isPartOf|**en**: is part of||0-1|dtmi:org:w3id:rec:BuildingElement;1||True|
-|locatedIn|**en**: located in|**en**: Indicates the architected space (site, building, level, room...) in which this building element is placed.|0-1|dtmi:org:w3id:rec:Architecture;1||True|
+|documentation|**en**: documentation||0-Infinity|[Document](../Information/Document/Document.md)||True|
+|hasPart|**en**: has part||0-Infinity|[BuildingElement](#)||True|
+|isPartOf|**en**: is part of||0-1|[BuildingElement](#)||True|
+|locatedIn|**en**: located in|**en**: Indicates the architected space (site, building, level, room...) in which this building element is placed.|0-1|[Architecture](../Space/Architecture/Architecture.md)||True|
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -33,9 +33,9 @@ A part that constitutes a piece of a building's structural makeup. E.g., Facade,
 |name|**en**: name||string|True|
 ## Target Of
 ### Direct
-* Asset.mountedOn
-* BuildingElement.hasPart
-* BuildingElement.isPartOf
-* Architecture.adjacentElement
-* Architecture.containsElement
-* Architecture.intersectingElement
+* [Asset](../Asset/Asset.md).mountedOn
+* [BuildingElement](#).hasPart
+* [BuildingElement](#).isPartOf
+* [Architecture](../Space/Architecture/Architecture.md).adjacentElement
+* [Architecture](../Space/Architecture/Architecture.md).containsElement
+* [Architecture](../Space/Architecture/Architecture.md).intersectingElement

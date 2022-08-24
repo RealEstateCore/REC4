@@ -11,17 +11,17 @@ Formal document that identifies the Tenant and the leased asset or property; sta
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|regulates|**en**: regulates|**en**: Indicates the lease(s) that this contract regulates the conditions of.|0-Infinity|dtmi:org:w3id:rec:Lease;1||True|
+|regulates|**en**: regulates|**en**: Indicates the lease(s) that this contract regulates the conditions of.|0-Infinity|[Lease](../../Event/Lease.md)||True|
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Document;1:** documentTopic, url
+* **[Document](Document.md):** documentTopic, url
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](../Information.md):** customTags, externalIds, name
 ## Target Of
 ### Direct
-* Lease.regulatedBy
+* [Lease](../../Event/Lease.md).regulatedBy
 ### Inherited
-* Asset.documentation
-* BuildingElement.documentation
-* Collection.documentation
-* Architecture.documentation
+* [Asset](../../Asset/Asset.md).documentation
+* [BuildingElement](../../BuildingElement/BuildingElement.md).documentation
+* [Collection](../../Collection/Collection.md).documentation
+* [Architecture](../../Space/Architecture/Architecture.md).documentation

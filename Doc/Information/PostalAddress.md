@@ -15,7 +15,7 @@
 |postalCode|**en**: postal code||string|True|
 |region|**en**: region||string|True|
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](Information.md):** customTags, externalIds, name
 ## Target Of
 ### Direct
-* Architecture.address
+* [Architecture](../Space/Architecture/Architecture.md).address

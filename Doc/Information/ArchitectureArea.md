@@ -15,5 +15,5 @@ Describes business-relevant area measurements typically associated with architec
 |netArea|**en**: net area||float|True|
 |rentableArea|**en**: rentable area||float|True|
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](Information.md):** customTags, externalIds, name
 ## Target Of

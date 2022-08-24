@@ -18,10 +18,10 @@
 |url|**en**: URL||0-Infinity|||True|
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](../Information.md):** customTags, externalIds, name
 ## Target Of
 ### Direct
-* Asset.documentation
-* BuildingElement.documentation
-* Collection.documentation
-* Architecture.documentation
+* [Asset](../../Asset/Asset.md).documentation
+* [BuildingElement](../../BuildingElement/BuildingElement.md).documentation
+* [Collection](../../Collection/Collection.md).documentation
+* [Architecture](../../Space/Architecture/Architecture.md).documentation

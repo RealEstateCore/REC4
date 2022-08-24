@@ -15,16 +15,16 @@
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
+* **[Point](../../Point.md):** isPointOf
 ## Properties
 ### Inherited Properties
-* **dtmi:org:brickschema:schema:Brick:Point;1:** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+* **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
 ## Target Of
 ### Inherited
-* Asset.hasPoint
-* EquipmentCollection.hasPoint
-* ActuationEvent.targetPoint
-* ExceptionEvent.sourcePoint
-* ObservationEvent.sourcePoint
-* ServiceObject.producedBy
-* Architecture.hasPoint
+* [Asset](../../../Asset/Asset.md).hasPoint
+* [EquipmentCollection](../../../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).hasPoint
+* [ActuationEvent](../../../Event/PointEvent/ActuationEvent.md).targetPoint
+* [ExceptionEvent](../../../Event/PointEvent/ExceptionEvent.md).sourcePoint
+* [ObservationEvent](../../../Event/PointEvent/ObservationEvent.md).sourcePoint
+* [ServiceObject](../../../Information/ServiceObject/ServiceObject.md).producedBy
+* [Architecture](../../../Space/Architecture/Architecture.md).hasPoint

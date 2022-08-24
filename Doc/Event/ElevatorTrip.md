@@ -13,5 +13,5 @@
 |startLevel|**en**: start level||string|True|
 |tripDirection|**en**: trip direction||enum (Down, Up)|True|
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Event;1:** customTags, end, externalIds, name, start, timestamp
+* **[Event](Event.md):** customTags, end, externalIds, name, start, timestamp
 ## Target Of

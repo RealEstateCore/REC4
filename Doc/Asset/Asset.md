@@ -19,16 +19,16 @@ Something which is placed inside of a building, but is not an integral part of t
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|commissionedBy|**en**: commissioned by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
-|documentation|**en**: documentation||0-Infinity|dtmi:org:w3id:rec:Document;1||True|
-|hasPart|**en**: has part||0-Infinity|dtmi:org:w3id:rec:Asset;1||True|
-|hasPoint|**en**: has point||0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1||True|
-|installedBy|**en**: installed by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
-|isPartOf|**en**: is part of||0-Infinity|dtmi:org:w3id:rec:Asset;1||True|
-|locatedIn|**en**: located in||0-Infinity|dtmi:org:w3id:rec:Space;1||True|
-|manufacturedBy|**en**: manufactured by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
-|mountedOn|**en**: mounted on|**en**: An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc).|0-1|dtmi:org:w3id:rec:BuildingElement;1||True|
-|servicedBy|**en**: serviced by||0-Infinity|dtmi:org:w3id:rec:Agent;1||True|
+|commissionedBy|**en**: commissioned by||0-Infinity|[Agent](../Agent/Agent.md)||True|
+|documentation|**en**: documentation||0-Infinity|[Document](../Information/Document/Document.md)||True|
+|hasPart|**en**: has part||0-Infinity|[Asset](#)||True|
+|hasPoint|**en**: has point||0-Infinity|[Point](../Point/Point.md)||True|
+|installedBy|**en**: installed by||0-Infinity|[Agent](../Agent/Agent.md)||True|
+|isPartOf|**en**: is part of||0-Infinity|[Asset](#)||True|
+|locatedIn|**en**: located in||0-Infinity|[Space](../Space/Space.md)||True|
+|manufacturedBy|**en**: manufactured by||0-Infinity|[Agent](../Agent/Agent.md)||True|
+|mountedOn|**en**: mounted on|**en**: An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc).|0-1|[BuildingElement](../BuildingElement/BuildingElement.md)||True|
+|servicedBy|**en**: serviced by||0-Infinity|[Agent](../Agent/Agent.md)||True|
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -49,5 +49,5 @@ Something which is placed inside of a building, but is not an integral part of t
 |weight|**en**: weight||string|True|
 ## Target Of
 ### Direct
-* Asset.hasPart
-* Asset.isPartOf
+* [Asset](#).hasPart
+* [Asset](#).isPartOf

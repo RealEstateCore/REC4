@@ -19,7 +19,7 @@ An administrative grouping of entities that are adressed and treated as a unit f
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|documentation|**en**: documentation||0-Infinity|dtmi:org:w3id:rec:Document;1||True|
+|documentation|**en**: documentation||0-Infinity|[Document](../Information/Document/Document.md)||True|
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

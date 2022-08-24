@@ -14,5 +14,5 @@ Describes business-relevant capacity measurements typically associated with arch
 |maxOccupancy|**en**: maximum occupancy|**en**: E.g., per Building Code|integer|True|
 |seatingCapacity|**en**: seating capacity||integer|True|
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](Information.md):** customTags, externalIds, name
 ## Target Of

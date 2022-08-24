@@ -17,10 +17,10 @@
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
-|acknowledgedBy|**en**: acknowledged by||0-1|dtmi:org:w3id:rec:Agent;1||True|
-|closedBy|**en**: closed by||0-1|dtmi:org:w3id:rec:Agent;1||True|
-|createdBy|**en**: created by||0-1|dtmi:org:w3id:rec:Agent;1||True|
-|producedBy|**en**: produced by||0-Infinity|dtmi:org:brickschema:schema:Brick:Point;1||True|
+|acknowledgedBy|**en**: acknowledged by||0-1|[Agent](../../Agent/Agent.md)||True|
+|closedBy|**en**: closed by||0-1|[Agent](../../Agent/Agent.md)||True|
+|createdBy|**en**: created by||0-1|[Agent](../../Agent/Agent.md)||True|
+|producedBy|**en**: produced by||0-Infinity|[Point](../../Point/Point.md)||True|
 |relatedTo|**en**: related to||0-Infinity|||True|
 ## Properties
 |Name|Display name|Description|Schema|Writable|
@@ -31,5 +31,5 @@
 |severity|**en**: severity||enum (Major, Minor, Severe)|True|
 |status|**en**: status||enum (Acknowledged, Closed, Unacknowledged)|True|
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Information;1:** customTags, externalIds, name
+* **[Information](../Information.md):** customTags, externalIds, name
 ## Target Of

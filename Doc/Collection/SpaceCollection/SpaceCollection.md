@@ -14,8 +14,8 @@
 ---
 ## Relationships
 ### Inherited Relationships
-* **dtmi:org:w3id:rec:Collection;1:** documentation
+* **[Collection](../Collection.md):** documentation
 ## Properties
 ### Inherited Properties
-* **dtmi:org:w3id:rec:Collection;1:** customTags, externalIds, name
+* **[Collection](../Collection.md):** customTags, externalIds, name
 ## Target Of
