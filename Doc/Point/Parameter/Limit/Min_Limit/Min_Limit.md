@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Min_Limit](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Min_Limit](#)
 # Min_Limit
 
 **Display name:** Min Limit<br />

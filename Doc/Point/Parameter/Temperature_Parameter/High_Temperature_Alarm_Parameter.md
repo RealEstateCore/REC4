@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](Temperature_Parameter.md) > [High_Temperature_Alarm_Parameter](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](Temperature_Parameter.md) > [High_Temperature_Alarm_Parameter](#)
 # High_Temperature_Alarm_Parameter
 
 **Display name:** High Temperature Alarm Parameter<br />

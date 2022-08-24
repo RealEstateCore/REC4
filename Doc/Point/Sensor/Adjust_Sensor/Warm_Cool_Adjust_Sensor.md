@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Warm_Cool_Adjust_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Warm_Cool_Adjust_Sensor](#)
 # Warm_Cool_Adjust_Sensor
 
 **Display name:** Warm Cool Adjust Sensor<br />

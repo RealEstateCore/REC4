@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](Imbalance_Sensor.md) > [Voltage_Imbalance_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](Imbalance_Sensor.md) > [Voltage_Imbalance_Sensor](#)
 # Voltage_Imbalance_Sensor
 
 **Display name:** Voltage Imbalance Sensor<br />

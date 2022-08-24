@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [TVStand](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [TVStand](#)
 # TVStand
 
 **Display name:** TV stand<br />

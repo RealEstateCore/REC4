@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Window](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Window](#)
 # Window
 
 **Display name:** Window<br />

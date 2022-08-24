@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [CRAC](CRAC.md) > [Standby_CRAC](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [CRAC](CRAC.md) > [Standby_CRAC](#)
 # Standby_CRAC
 
 **Display name:** Standby CRAC<br />

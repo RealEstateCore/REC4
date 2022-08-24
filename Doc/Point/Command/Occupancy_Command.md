@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Occupancy_Command](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Command](Command.md) > [Occupancy_Command](#)
 # Occupancy_Command
 
 **Display name:** Occupancy Command<br />

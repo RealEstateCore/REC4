@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ElevatorShaft](#)
+[Index](../../../Index.md) > [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ElevatorShaft](#)
 # ElevatorShaft
 
 **Display name:** Elevator shaft<br />

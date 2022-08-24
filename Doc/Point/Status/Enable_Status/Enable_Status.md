@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Enable_Status](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Status](../Status.md) > [Enable_Status](#)
 # Enable_Status
 
 **Display name:** Enable Status<br />

@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Heating_Temperature_Setpoint](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Heating_Temperature_Setpoint](#)
 # Heating_Temperature_Setpoint
 
 **Display name:** Heating Temperature Setpoint<br />

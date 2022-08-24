@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [DisabledToilet](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [DisabledToilet](#)
 # DisabledToilet
 
 **Display name:** Disabled toilet<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [Output_Voltage_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [Output_Voltage_Sensor](#)
 # Output_Voltage_Sensor
 
 **Display name:** Output Voltage Sensor<br />

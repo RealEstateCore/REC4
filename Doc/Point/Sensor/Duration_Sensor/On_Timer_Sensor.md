@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](Duration_Sensor.md) > [On_Timer_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](Duration_Sensor.md) > [On_Timer_Sensor](#)
 # On_Timer_Sensor
 
 **Display name:** On Timer Sensor<br />

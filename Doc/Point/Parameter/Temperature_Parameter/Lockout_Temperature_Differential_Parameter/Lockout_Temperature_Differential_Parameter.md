@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Temperature_Parameter](../Temperature_Parameter.md) > [Lockout_Temperature_Differential_Parameter](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Temperature_Parameter](../Temperature_Parameter.md) > [Lockout_Temperature_Differential_Parameter](#)
 # Lockout_Temperature_Differential_Parameter
 
 **Display name:** Lockout Temperature Differential Parameter<br />

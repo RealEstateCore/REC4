@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Humidity_Parameter](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Humidity_Parameter](#)
 # Humidity_Parameter
 
 **Display name:** Humidity Parameter<br />

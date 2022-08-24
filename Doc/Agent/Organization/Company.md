@@ -1,4 +1,4 @@
-[Agent](../Agent.md) > [Organization](Organization.md) > [Company](#)
+[Index](../../Index.md) > [Agent](../Agent.md) > [Organization](Organization.md) > [Company](#)
 # Company
 
 **Display name:** Company<br />

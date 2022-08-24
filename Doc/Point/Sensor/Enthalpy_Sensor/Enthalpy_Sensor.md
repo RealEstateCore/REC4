@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Enthalpy_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Enthalpy_Sensor](#)
 # Enthalpy_Sensor
 
 **Display name:** Enthalpy Sensor<br />

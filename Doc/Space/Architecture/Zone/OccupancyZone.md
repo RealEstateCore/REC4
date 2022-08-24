@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [OccupancyZone](#)
+[Index](../../../Index.md) > [Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [OccupancyZone](#)
 # OccupancyZone
 
 **Display name:** Occupancy zone<br />

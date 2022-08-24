@@ -1,4 +1,4 @@
-[Agent](../Agent.md) > [Organization](#)
+[Index](../../Index.md) > [Agent](../Agent.md) > [Organization](#)
 # Organization
 
 An organization of any sort (e.g., a business, association, project, consortium, tribe, etc.)

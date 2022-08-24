@@ -1,4 +1,4 @@
-[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Chilled_Beam](Chilled_Beam.md) > [Passive_Chilled_Beam](#)
+[Index](../../../../../Index.md) > [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Chilled_Beam](Chilled_Beam.md) > [Passive_Chilled_Beam](#)
 # Passive_Chilled_Beam
 
 **Display name:** Passive Chilled Beam<br />

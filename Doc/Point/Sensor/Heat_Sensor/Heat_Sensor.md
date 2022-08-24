@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Heat_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Heat_Sensor](#)
 # Heat_Sensor
 
 **Display name:** Heat Sensor<br />

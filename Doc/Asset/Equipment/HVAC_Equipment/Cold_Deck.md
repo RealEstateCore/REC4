@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cold_Deck](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cold_Deck](#)
 # Cold_Deck
 
 **Display name:** Cold Deck<br />

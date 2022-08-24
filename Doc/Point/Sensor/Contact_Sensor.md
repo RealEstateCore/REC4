@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Sensor](Sensor.md) > [Contact_Sensor](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Sensor](Sensor.md) > [Contact_Sensor](#)
 # Contact_Sensor
 
 **Display name:** Contact Sensor<br />

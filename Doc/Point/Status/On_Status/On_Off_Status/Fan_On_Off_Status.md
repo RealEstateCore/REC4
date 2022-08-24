@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Status](../../Status.md) > [On_Status](../On_Status.md) > [On_Off_Status](On_Off_Status.md) > [Fan_On_Off_Status](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Status](../../Status.md) > [On_Status](../On_Status.md) > [On_Off_Status](On_Off_Status.md) > [Fan_On_Off_Status](#)
 # Fan_On_Off_Status
 
 **Display name:** Fan On Off Status<br />

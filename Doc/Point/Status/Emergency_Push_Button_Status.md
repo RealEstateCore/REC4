@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Emergency_Push_Button_Status](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Status](Status.md) > [Emergency_Push_Button_Status](#)
 # Emergency_Push_Button_Status
 
 **Display name:** Emergency Push Button Status<br />

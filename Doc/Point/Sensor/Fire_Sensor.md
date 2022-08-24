@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Sensor](Sensor.md) > [Fire_Sensor](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Sensor](Sensor.md) > [Fire_Sensor](#)
 # Fire_Sensor
 
 **Display name:** Fire Sensor<br />

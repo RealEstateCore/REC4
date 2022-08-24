@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [WasteManagementRoom](#)
+[Index](../../../Index.md) > [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [WasteManagementRoom](#)
 # WasteManagementRoom
 
 **Display name:** Waste management room<br />

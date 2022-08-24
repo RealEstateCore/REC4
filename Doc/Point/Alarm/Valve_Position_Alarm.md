@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Alarm](Alarm.md) > [Valve_Position_Alarm](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Alarm](Alarm.md) > [Valve_Position_Alarm](#)
 # Valve_Position_Alarm
 
 **Display name:** Valve Position Alarm<br />

@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Alarm](Alarm.md) > [Overload_Alarm](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Alarm](Alarm.md) > [Overload_Alarm](#)
 # Overload_Alarm
 
 **Display name:** Overload Alarm<br />

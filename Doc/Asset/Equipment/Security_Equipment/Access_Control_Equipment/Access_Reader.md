@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Access_Control_Equipment](Access_Control_Equipment.md) > [Access_Reader](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Access_Control_Equipment](Access_Control_Equipment.md) > [Access_Reader](#)
 # Access_Reader
 
 **Display name:** Access Reader<br />

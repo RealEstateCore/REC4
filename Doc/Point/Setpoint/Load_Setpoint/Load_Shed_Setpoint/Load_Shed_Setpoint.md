@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Load_Setpoint](../Load_Setpoint.md) > [Load_Shed_Setpoint](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Load_Setpoint](../Load_Setpoint.md) > [Load_Shed_Setpoint](#)
 # Load_Shed_Setpoint
 
 **Display name:** Load Shed Setpoint<br />

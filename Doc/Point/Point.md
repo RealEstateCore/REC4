@@ -1,4 +1,4 @@
-[Point](#)
+[Index](../Index.md) > [Point](#)
 # Point
 
 **Display name:** Point<br />

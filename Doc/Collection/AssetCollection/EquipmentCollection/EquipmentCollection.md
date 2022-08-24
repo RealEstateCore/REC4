@@ -1,4 +1,4 @@
-[Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](#)
+[Index](../../../Index.md) > [Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](#)
 # EquipmentCollection
 
 **Display name:** Equipment collection<br />

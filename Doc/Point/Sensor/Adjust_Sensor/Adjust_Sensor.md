@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](#)
 # Adjust_Sensor
 
 **Display name:** Adjust Sensor<br />

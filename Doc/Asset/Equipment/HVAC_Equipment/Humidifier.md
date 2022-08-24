@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Humidifier](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Humidifier](#)
 # Humidifier
 
 **Display name:** Humidifier<br />

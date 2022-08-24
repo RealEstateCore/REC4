@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Steam_Usage_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Steam_Usage_Sensor](#)
 # Steam_Usage_Sensor
 
 **Display name:** Steam Usage Sensor<br />

@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [UtilitiesRoom](UtilitiesRoom.md) > [SprinklerRoom](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [UtilitiesRoom](UtilitiesRoom.md) > [SprinklerRoom](#)
 # SprinklerRoom
 
 **Display name:** Sprinkler room<br />

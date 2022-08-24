@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Status](#)
 # Status
 
 **Display name:** Status<br />

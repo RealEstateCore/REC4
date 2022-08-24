@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Office](Office.md) > [PhoneBooth](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Office](Office.md) > [PhoneBooth](#)
 # PhoneBooth
 
 **Display name:** PhoneBooth<br />

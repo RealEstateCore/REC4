@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Cooling_Mode_Status](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Cooling_Mode_Status](#)
 # Cooling_Mode_Status
 
 **Display name:** Cooling Mode Status<br />

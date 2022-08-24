@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Close_Limit](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Close_Limit](#)
 # Close_Limit
 
 **Display name:** Close Limit<br />

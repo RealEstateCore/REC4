@@ -1,4 +1,4 @@
-[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Shading_System](#)
+[Index](../../../../../Index.md) > [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Shading_System](#)
 # Shading_System
 
 **Display name:** Shading System<br />

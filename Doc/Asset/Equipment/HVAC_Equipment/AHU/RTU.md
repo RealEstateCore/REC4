@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [RTU](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [RTU](#)
 # RTU
 
 **Display name:** RTU<br />

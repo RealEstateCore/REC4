@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Sensor](Sensor.md) > [Power_Factor_Sensor](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Sensor](Sensor.md) > [Power_Factor_Sensor](#)
 # Power_Factor_Sensor
 
 **Display name:** Power Factor Sensor<br />

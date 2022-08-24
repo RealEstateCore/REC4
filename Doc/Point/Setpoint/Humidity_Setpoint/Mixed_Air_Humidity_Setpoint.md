@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Humidity_Setpoint](Humidity_Setpoint.md) > [Mixed_Air_Humidity_Setpoint](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Humidity_Setpoint](Humidity_Setpoint.md) > [Mixed_Air_Humidity_Setpoint](#)
 # Mixed_Air_Humidity_Setpoint
 
 **Display name:** Mixed Air Humidity Setpoint<br />

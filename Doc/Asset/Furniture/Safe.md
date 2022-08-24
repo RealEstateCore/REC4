@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Furniture](Furniture.md) > [Safe](#)
+[Index](../../Index.md) > [Asset](../Asset.md) > [Furniture](Furniture.md) > [Safe](#)
 # Safe
 
 **Display name:** Safe<br />

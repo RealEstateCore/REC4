@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](#)
 # Time_Setpoint
 
 **Display name:** Time Setpoint<br />

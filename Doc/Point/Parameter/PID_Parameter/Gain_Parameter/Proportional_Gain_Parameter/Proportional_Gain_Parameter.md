@@ -1,4 +1,4 @@
-[Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Gain_Parameter](../Gain_Parameter.md) > [Proportional_Gain_Parameter](#)
+[Index](../../../../../Index.md) > [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Gain_Parameter](../Gain_Parameter.md) > [Proportional_Gain_Parameter](#)
 # Proportional_Gain_Parameter
 
 **Display name:** Proportional Gain Parameter<br />

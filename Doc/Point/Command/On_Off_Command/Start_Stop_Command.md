@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Start_Stop_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Start_Stop_Command](#)
 # Start_Stop_Command
 
 **Display name:** Start Stop Command<br />

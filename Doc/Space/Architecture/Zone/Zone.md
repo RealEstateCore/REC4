@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](#)
+[Index](../../../Index.md) > [Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](#)
 # Zone
 
 A sub-zone within a building defined to support some technology and/or use, e.g., an HVAC zone, a security zone, etc.

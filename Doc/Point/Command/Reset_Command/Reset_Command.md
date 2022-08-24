@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](#)
 # Reset_Command
 
 **Display name:** Reset Command<br />

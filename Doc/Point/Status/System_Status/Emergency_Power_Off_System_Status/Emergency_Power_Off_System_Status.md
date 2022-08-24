@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Status](../../Status.md) > [System_Status](../System_Status.md) > [Emergency_Power_Off_System_Status](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Status](../../Status.md) > [System_Status](../System_Status.md) > [Emergency_Power_Off_System_Status](#)
 # Emergency_Power_Off_System_Status
 
 **Display name:** Emergency Power Off System Status<br />

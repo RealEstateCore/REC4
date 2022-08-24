@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Override_Command](Override_Command.md) > [Curtailment_Override_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Override_Command](Override_Command.md) > [Curtailment_Override_Command](#)
 # Curtailment_Override_Command
 
 **Display name:** Curtailment Override Command<br />

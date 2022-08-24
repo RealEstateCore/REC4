@@ -1,4 +1,4 @@
-[Collection](../Collection.md) > [SpaceCollection](#)
+[Index](../../Index.md) > [Collection](../Collection.md) > [SpaceCollection](#)
 # SpaceCollection
 
 **Display name:** Space collection<br />

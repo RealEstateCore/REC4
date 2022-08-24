@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Valve_Status](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Status](Status.md) > [Valve_Status](#)
 # Valve_Status
 
 **Display name:** Valve Status<br />

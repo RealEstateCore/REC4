@@ -1,4 +1,4 @@
-[Event](Event.md) > [ElevatorTrip](#)
+[Index](../Index.md) > [Event](Event.md) > [ElevatorTrip](#)
 # ElevatorTrip
 
 **Display name:** Elevator trip<br />

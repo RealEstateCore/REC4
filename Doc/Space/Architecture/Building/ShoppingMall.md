@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [ShoppingMall](#)
+[Index](../../../Index.md) > [Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [ShoppingMall](#)
 # ShoppingMall
 
 **Display name:** Shopping mall<br />

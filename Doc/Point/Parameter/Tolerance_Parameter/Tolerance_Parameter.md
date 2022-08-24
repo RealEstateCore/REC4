@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Tolerance_Parameter](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Tolerance_Parameter](#)
 # Tolerance_Parameter
 
 **Display name:** Tolerance Parameter<br />

@@ -1,4 +1,4 @@
-[Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Water_Heater](../../Water_Heater.md) > [Boiler](../Boiler.md) > [Natural_Gas_Boiler](Natural_Gas_Boiler.md) > [Noncondensing_Natural_Gas_Boiler](#)
+[Index](../../../../../Index.md) > [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Water_Heater](../../Water_Heater.md) > [Boiler](../Boiler.md) > [Natural_Gas_Boiler](Natural_Gas_Boiler.md) > [Noncondensing_Natural_Gas_Boiler](#)
 # Noncondensing_Natural_Gas_Boiler
 
 **Display name:** Noncondensing Natural Gas Boiler<br />

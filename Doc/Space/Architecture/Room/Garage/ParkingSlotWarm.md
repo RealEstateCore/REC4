@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [ParkingSlotWarm](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [ParkingSlotWarm](#)
 # ParkingSlotWarm
 
 **Display name:** Parking slot (warm)<br />

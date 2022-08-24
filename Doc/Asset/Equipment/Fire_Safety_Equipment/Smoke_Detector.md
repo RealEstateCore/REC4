@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Smoke_Detector](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Smoke_Detector](#)
 # Smoke_Detector
 
 **Display name:** Smoke Detector<br />

@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](Damper.md) > [Outside_Damper](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](Damper.md) > [Outside_Damper](#)
 # Outside_Damper
 
 **Display name:** Outside Damper<br />

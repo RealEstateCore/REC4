@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [BicycleGarage](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [BicycleGarage](#)
 # BicycleGarage
 
 **Display name:** Bicycle garage<br />

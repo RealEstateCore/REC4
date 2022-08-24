@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Emergency_Alarm](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Alarm](../Alarm.md) > [Emergency_Alarm](#)
 # Emergency_Alarm
 
 **Display name:** Emergency Alarm<br />

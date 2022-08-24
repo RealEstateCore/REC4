@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Rain_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Rain_Sensor](#)
 # Rain_Sensor
 
 **Display name:** Rain Sensor<br />

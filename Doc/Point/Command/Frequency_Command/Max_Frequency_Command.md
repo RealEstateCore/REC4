@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](Frequency_Command.md) > [Max_Frequency_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](Frequency_Command.md) > [Max_Frequency_Command](#)
 # Max_Frequency_Command
 
 **Display name:** Max Frequency Command<br />

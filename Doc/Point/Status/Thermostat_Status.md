@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Thermostat_Status](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Status](Status.md) > [Thermostat_Status](#)
 # Thermostat_Status
 
 **Display name:** Thermostat Status<br />

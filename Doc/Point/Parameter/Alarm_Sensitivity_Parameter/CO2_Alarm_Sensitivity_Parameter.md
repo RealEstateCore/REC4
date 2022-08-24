@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter.md) > [CO2_Alarm_Sensitivity_Parameter](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter.md) > [CO2_Alarm_Sensitivity_Parameter](#)
 # CO2_Alarm_Sensitivity_Parameter
 
 **Display name:** CO2 Alarm Sensitivity Parameter<br />

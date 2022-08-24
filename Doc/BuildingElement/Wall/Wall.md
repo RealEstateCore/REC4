@@ -1,4 +1,4 @@
-[BuildingElement](../BuildingElement.md) > [Wall](#)
+[Index](../../Index.md) > [BuildingElement](../BuildingElement.md) > [Wall](#)
 # Wall
 
 **Display name:** Wall<br />

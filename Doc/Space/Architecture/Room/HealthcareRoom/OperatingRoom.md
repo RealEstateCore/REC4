@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [HealthcareRoom](HealthcareRoom.md) > [OperatingRoom](#)
+[Index](../../../../Index.md) > [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [HealthcareRoom](HealthcareRoom.md) > [OperatingRoom](#)
 # OperatingRoom
 
 **Display name:** Operating room<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Natural_Gas_Temperature_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Natural_Gas_Temperature_Sensor](#)
 # Natural_Gas_Temperature_Sensor
 
 **Display name:** Natural Gas Temperature Sensor<br />

@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Door](#)
+[Index](../../../Index.md) > [Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](BarrierAsset.md) > [Door](#)
 # Door
 
 **Display name:** Door<br />

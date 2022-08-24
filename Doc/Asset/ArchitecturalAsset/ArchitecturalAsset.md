@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [ArchitecturalAsset](#)
+[Index](../../Index.md) > [Asset](../Asset.md) > [ArchitecturalAsset](#)
 # ArchitecturalAsset
 
 **Display name:** Architectural asset<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Frost_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Frost_Sensor](#)
 # Frost_Sensor
 
 **Display name:** Frost Sensor<br />

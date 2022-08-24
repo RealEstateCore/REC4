@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Video_Intercom](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Video_Intercom](#)
 # Video_Intercom
 
 **Display name:** Video Intercom<br />

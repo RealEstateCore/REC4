@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Speed_Command](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Command](Command.md) > [Speed_Command](#)
 # Speed_Command
 
 **Display name:** Speed Command<br />

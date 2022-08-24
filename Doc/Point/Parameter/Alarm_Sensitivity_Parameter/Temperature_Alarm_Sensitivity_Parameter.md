@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter.md) > [Temperature_Alarm_Sensitivity_Parameter](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Parameter](../Parameter.md) > [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter.md) > [Temperature_Alarm_Sensitivity_Parameter](#)
 # Temperature_Alarm_Sensitivity_Parameter
 
 **Display name:** Temperature Alarm Sensitivity Parameter<br />

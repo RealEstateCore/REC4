@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Direction_Status](Direction_Status.md) > [Motor_Direction_Status](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Status](../Status.md) > [Direction_Status](Direction_Status.md) > [Motor_Direction_Status](#)
 # Motor_Direction_Status
 
 **Display name:** Motor Direction Status<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Override_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Override_Command](#)
 # Override_Command
 
 **Display name:** Override Command<br />

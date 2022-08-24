@@ -1,4 +1,4 @@
-[BuildingElement](BuildingElement.md) > [Balcony](#)
+[Index](../Index.md) > [BuildingElement](BuildingElement.md) > [Balcony](#)
 # Balcony
 
 **Display name:** Balcony<br />

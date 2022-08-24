@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Exhaust_Fan](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Exhaust_Fan](#)
 # Exhaust_Fan
 
 **Display name:** Exhaust Fan<br />

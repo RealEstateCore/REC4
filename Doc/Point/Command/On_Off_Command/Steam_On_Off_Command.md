@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Steam_On_Off_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](On_Off_Command.md) > [Steam_On_Off_Command](#)
 # Steam_On_Off_Command
 
 **Display name:** Steam On Off Command<br />

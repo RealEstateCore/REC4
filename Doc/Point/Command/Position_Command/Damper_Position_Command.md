@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Position_Command](Position_Command.md) > [Damper_Position_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Position_Command](Position_Command.md) > [Damper_Position_Command](#)
 # Damper_Position_Command
 
 **Display name:** Damper Position Command<br />

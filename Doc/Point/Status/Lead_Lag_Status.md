@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Lead_Lag_Status](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Status](Status.md) > [Lead_Lag_Status](#)
 # Lead_Lag_Status
 
 **Display name:** Lead Lag Status<br />

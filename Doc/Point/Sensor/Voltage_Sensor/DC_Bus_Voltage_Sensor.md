@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [DC_Bus_Voltage_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [DC_Bus_Voltage_Sensor](#)
 # DC_Bus_Voltage_Sensor
 
 **Display name:** DC Bus Voltage Sensor<br />

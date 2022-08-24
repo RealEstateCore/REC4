@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Position_Limit](Position_Limit.md) > [Min_Position_Setpoint_Limit](#)
+[Index](../../../../Index.md) > [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Position_Limit](Position_Limit.md) > [Min_Position_Setpoint_Limit](#)
 # Min_Position_Setpoint_Limit
 
 **Display name:** Min Position Setpoint Limit<br />

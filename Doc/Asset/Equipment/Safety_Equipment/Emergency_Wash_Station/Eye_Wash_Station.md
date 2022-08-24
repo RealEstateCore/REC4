@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Safety_Equipment](../Safety_Equipment.md) > [Emergency_Wash_Station](Emergency_Wash_Station.md) > [Eye_Wash_Station](#)
+[Index](../../../../Index.md) > [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Safety_Equipment](../Safety_Equipment.md) > [Emergency_Wash_Station](Emergency_Wash_Station.md) > [Eye_Wash_Station](#)
 # Eye_Wash_Station
 
 **Display name:** Eye Wash Station<br />

@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Lead_Lag_Command](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Command](Command.md) > [Lead_Lag_Command](#)
 # Lead_Lag_Command
 
 **Display name:** Lead Lag Command<br />

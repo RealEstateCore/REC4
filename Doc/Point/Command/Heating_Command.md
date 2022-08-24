@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Heating_Command](#)
+[Index](../../Index.md) > [Point](../Point.md) > [Command](Command.md) > [Heating_Command](#)
 # Heating_Command
 
 **Display name:** Heating Command<br />

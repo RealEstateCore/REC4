@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Fan_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Fan_Command](#)
 # Fan_Command
 
 **Display name:** Fan Command<br />

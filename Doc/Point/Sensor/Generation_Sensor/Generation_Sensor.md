@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](#)
 # Generation_Sensor
 
 **Display name:** Generation Sensor<br />

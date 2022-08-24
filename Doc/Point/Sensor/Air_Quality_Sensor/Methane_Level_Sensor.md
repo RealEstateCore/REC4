@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Methane_Level_Sensor](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Methane_Level_Sensor](#)
 # Methane_Level_Sensor
 
 **Display name:** Methane Level Sensor<br />

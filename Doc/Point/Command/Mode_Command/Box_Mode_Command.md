@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Box_Mode_Command](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Box_Mode_Command](#)
 # Box_Mode_Command
 
 **Display name:** Box Mode Command<br />

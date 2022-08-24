@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Power_Alarm](Power_Alarm.md) > [Power_Loss_Alarm](#)
+[Index](../../../Index.md) > [Point](../../Point.md) > [Alarm](../Alarm.md) > [Power_Alarm](Power_Alarm.md) > [Power_Loss_Alarm](#)
 # Power_Loss_Alarm
 
 **Display name:** Power Loss Alarm<br />
