@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [MultiPurposeRoom](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [MultiPurposeRoom](#)
 # MultiPurposeRoom
 
 **Display name:** Multi-purpose room<br />

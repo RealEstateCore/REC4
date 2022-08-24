@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](#)
 # Frequency_Command
 
 **Display name:** Frequency Command<br />

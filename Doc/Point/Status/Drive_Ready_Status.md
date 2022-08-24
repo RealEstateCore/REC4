@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Drive_Ready_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Drive_Ready_Status](#)
 # Drive_Ready_Status
 
 **Display name:** Drive Ready Status<br />

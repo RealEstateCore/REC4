@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Occupancy_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Occupancy_Status](#)
 # Occupancy_Status
 
 **Display name:** Occupancy Status<br />

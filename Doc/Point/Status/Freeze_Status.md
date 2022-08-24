@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Freeze_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Freeze_Status](#)
 # Freeze_Status
 
 **Display name:** Freeze Status<br />

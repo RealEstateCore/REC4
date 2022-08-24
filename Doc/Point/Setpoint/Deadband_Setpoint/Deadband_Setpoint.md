@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Deadband_Setpoint](.)
+[Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Deadband_Setpoint](#)
 # Deadband_Setpoint
 
 **Display name:** Deadband Setpoint<br />

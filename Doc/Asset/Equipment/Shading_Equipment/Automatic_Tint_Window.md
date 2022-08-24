@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](Shading_Equipment.md) > [Automatic_Tint_Window](.)
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](Shading_Equipment.md) > [Automatic_Tint_Window](#)
 # Automatic_Tint_Window
 
 **Display name:** Automatic Tint Window<br />

@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Laboratory](Laboratory.md) > [LaboratoryWet](.)
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Laboratory](Laboratory.md) > [LaboratoryWet](#)
 # LaboratoryWet
 
 **Display name:** Laboratory (wet)<br />

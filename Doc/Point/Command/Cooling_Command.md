@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Cooling_Command](.)
+[Point](../Point.md) > [Command](Command.md) > [Cooling_Command](#)
 # Cooling_Command
 
 **Display name:** Cooling Command<br />

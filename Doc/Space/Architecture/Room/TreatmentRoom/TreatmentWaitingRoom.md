@@ -1,4 +1,4 @@
-[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [TreatmentRoom](TreatmentRoom.md) > [TreatmentWaitingRoom](.)
+[Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [TreatmentRoom](TreatmentRoom.md) > [TreatmentWaitingRoom](#)
 # TreatmentWaitingRoom
 
 **Display name:** Treatment waiting room<br />

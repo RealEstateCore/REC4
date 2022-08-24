@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Thermal_Power_Sensor](Thermal_Power_Sensor.md) > [Heating_Thermal_Power_Sensor](.)
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Thermal_Power_Sensor](Thermal_Power_Sensor.md) > [Heating_Thermal_Power_Sensor](#)
 # Heating_Thermal_Power_Sensor
 
 **Display name:** Heating Thermal Power Sensor<br />

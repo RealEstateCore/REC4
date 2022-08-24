@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Direction_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Direction_Sensor](#)
 # Direction_Sensor
 
 **Display name:** Direction Sensor<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Current_Sensor](Current_Sensor.md) > [Load_Current_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Current_Sensor](Current_Sensor.md) > [Load_Current_Sensor](#)
 # Load_Current_Sensor
 
 **Display name:** Load Current Sensor<br />

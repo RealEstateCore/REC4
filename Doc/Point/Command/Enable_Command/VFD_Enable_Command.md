@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [VFD_Enable_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [VFD_Enable_Command](#)
 # VFD_Enable_Command
 
 **Display name:** VFD Enable Command<br />

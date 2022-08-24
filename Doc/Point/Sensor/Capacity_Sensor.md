@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Sensor](Sensor.md) > [Capacity_Sensor](.)
+[Point](../Point.md) > [Sensor](Sensor.md) > [Capacity_Sensor](#)
 # Capacity_Sensor
 
 **Display name:** Capacity Sensor<br />

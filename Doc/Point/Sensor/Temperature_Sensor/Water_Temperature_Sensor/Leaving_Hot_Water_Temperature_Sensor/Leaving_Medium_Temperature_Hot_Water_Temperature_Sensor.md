@@ -1,4 +1,4 @@
-[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Temperature_Sensor](../../Temperature_Sensor.md) > [Water_Temperature_Sensor](../Water_Temperature_Sensor.md) > [Leaving_Hot_Water_Temperature_Sensor](Leaving_Hot_Water_Temperature_Sensor.md) > [Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor](.)
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Temperature_Sensor](../../Temperature_Sensor.md) > [Water_Temperature_Sensor](../Water_Temperature_Sensor.md) > [Leaving_Hot_Water_Temperature_Sensor](Leaving_Hot_Water_Temperature_Sensor.md) > [Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor](#)
 # Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor
 
 **Display name:** Leaving Medium Temperature Hot Water Temperature Sensor<br />

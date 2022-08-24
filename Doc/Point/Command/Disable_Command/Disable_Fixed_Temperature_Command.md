@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](Disable_Command.md) > [Disable_Fixed_Temperature_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](Disable_Command.md) > [Disable_Fixed_Temperature_Command](#)
 # Disable_Fixed_Temperature_Command
 
 **Display name:** Disable Fixed Temperature Command<br />

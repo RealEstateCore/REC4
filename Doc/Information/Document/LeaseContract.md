@@ -1,4 +1,4 @@
-[Information](../Information.md) > [Document](Document.md) > [LeaseContract](.)
+[Information](../Information.md) > [Document](Document.md) > [LeaseContract](#)
 # LeaseContract
 
 Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement.

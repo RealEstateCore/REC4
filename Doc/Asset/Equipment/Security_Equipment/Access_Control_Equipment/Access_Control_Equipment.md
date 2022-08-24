@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Access_Control_Equipment](.)
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Access_Control_Equipment](#)
 # Access_Control_Equipment
 
 **Display name:** Access Control Equipment<br />

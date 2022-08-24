@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Switch_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Switch_Status](#)
 # Switch_Status
 
 **Display name:** Switch Status<br />

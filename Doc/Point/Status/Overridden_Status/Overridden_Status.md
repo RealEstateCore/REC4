@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Overridden_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Overridden_Status](#)
 # Overridden_Status
 
 **Display name:** Overridden Status<br />

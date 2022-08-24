@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Leak_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Leak_Alarm](#)
 # Leak_Alarm
 
 **Display name:** Leak Alarm<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](.)
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](#)
 # Load_Parameter
 
 **Display name:** Load Parameter<br />

@@ -1,4 +1,4 @@
-[Space](../Space.md) > [Architecture](Architecture.md) > [SubBuilding](.)
+[Space](../Space.md) > [Architecture](Architecture.md) > [SubBuilding](#)
 # SubBuilding
 
 **Display name:** Sub-building<br />

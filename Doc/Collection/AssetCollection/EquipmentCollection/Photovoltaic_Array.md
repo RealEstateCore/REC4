@@ -1,4 +1,4 @@
-[Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](EquipmentCollection.md) > [Photovoltaic_Array](.)
+[Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](EquipmentCollection.md) > [Photovoltaic_Array](#)
 # Photovoltaic_Array
 
 **Display name:** Photovoltaic Array<br />

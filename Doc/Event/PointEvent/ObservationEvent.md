@@ -1,4 +1,4 @@
-[Event](../Event.md) > [PointEvent](PointEvent.md) > [ObservationEvent](.)
+[Event](../Event.md) > [PointEvent](PointEvent.md) > [ObservationEvent](#)
 # ObservationEvent
 
 **Display name:** Observation event<br />

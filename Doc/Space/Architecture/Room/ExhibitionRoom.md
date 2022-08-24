@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ExhibitionRoom](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ExhibitionRoom](#)
 # ExhibitionRoom
 
 **Display name:** Exhibition room<br />

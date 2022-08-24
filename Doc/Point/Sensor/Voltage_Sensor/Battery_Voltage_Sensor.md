@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [Battery_Voltage_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [Battery_Voltage_Sensor](#)
 # Battery_Voltage_Sensor
 
 **Display name:** Battery Voltage Sensor<br />

@@ -1,4 +1,4 @@
-[Point](../../../../Point.md) > [Status](../../../Status.md) > [On_Status](../../On_Status.md) > [On_Off_Status](../On_Off_Status.md) > [Start_Stop_Status](Start_Stop_Status.md) > [Dehumidification_Start_Stop_Status](.)
+[Point](../../../../Point.md) > [Status](../../../Status.md) > [On_Status](../../On_Status.md) > [On_Off_Status](../On_Off_Status.md) > [Start_Stop_Status](Start_Stop_Status.md) > [Dehumidification_Start_Stop_Status](#)
 # Dehumidification_Start_Stop_Status
 
 **Display name:** Dehumidification Start Stop Status<br />

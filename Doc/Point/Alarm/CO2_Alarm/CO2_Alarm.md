@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [CO2_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [CO2_Alarm](#)
 # CO2_Alarm
 
 **Display name:** CO2 Alarm<br />

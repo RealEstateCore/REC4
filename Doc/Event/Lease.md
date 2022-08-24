@@ -1,4 +1,4 @@
-[Event](Event.md) > [Lease](.)
+[Event](Event.md) > [Lease](#)
 # Lease
 
 **Display name:** Lease<br />

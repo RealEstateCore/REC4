@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](Reset_Command.md) > [Fault_Reset_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](Reset_Command.md) > [Fault_Reset_Command](#)
 # Fault_Reset_Command
 
 **Display name:** Fault Reset Command<br />

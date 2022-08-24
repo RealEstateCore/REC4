@@ -1,4 +1,4 @@
-[Information](Information.md) > [PostalAddress](.)
+[Information](Information.md) > [PostalAddress](#)
 # PostalAddress
 
 **Display name:** Postal address<br />

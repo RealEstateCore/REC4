@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Pressure_Status](Pressure_Status.md) > [Discharge_Air_Duct_Pressure_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Pressure_Status](Pressure_Status.md) > [Discharge_Air_Duct_Pressure_Status](#)
 # Discharge_Air_Duct_Pressure_Status
 
 **Display name:** Discharge Air Duct Pressure Status<br />

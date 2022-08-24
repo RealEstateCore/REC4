@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Occupancy_Sensor](Occupancy_Sensor.md) > [PIR_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Occupancy_Sensor](Occupancy_Sensor.md) > [PIR_Sensor](#)
 # PIR_Sensor
 
 **Display name:** PIR Sensor<br />

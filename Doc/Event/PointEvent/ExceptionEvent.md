@@ -1,4 +1,4 @@
-[Event](../Event.md) > [PointEvent](PointEvent.md) > [ExceptionEvent](.)
+[Event](../Event.md) > [PointEvent](PointEvent.md) > [ExceptionEvent](#)
 # ExceptionEvent
 
 **Display name:** Exception event<br />

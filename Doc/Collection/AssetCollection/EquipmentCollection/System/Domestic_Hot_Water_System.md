@@ -1,4 +1,4 @@
-[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Domestic_Hot_Water_System](.)
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Domestic_Hot_Water_System](#)
 # Domestic_Hot_Water_System
 
 **Display name:** Domestic Hot Water System<br />

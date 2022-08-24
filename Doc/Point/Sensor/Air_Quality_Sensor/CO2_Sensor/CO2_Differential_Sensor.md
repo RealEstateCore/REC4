@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [CO2_Differential_Sensor](.)
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [CO2_Differential_Sensor](#)
 # CO2_Differential_Sensor
 
 **Display name:** CO2 Differential Sensor<br />

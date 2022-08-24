@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Humidify_Command](.)
+[Point](../Point.md) > [Command](Command.md) > [Humidify_Command](#)
 # Humidify_Command
 
 **Display name:** Humidify Command<br />

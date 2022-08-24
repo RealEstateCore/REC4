@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Fan_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Fan_Status](#)
 # Fan_Status
 
 **Display name:** Fan Status<br />

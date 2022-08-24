@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [HVACZone](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [HVACZone](#)
 # HVACZone
 
 **Display name:** HVAC zone<br />

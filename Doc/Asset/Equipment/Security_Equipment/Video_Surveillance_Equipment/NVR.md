@@ -1,4 +1,4 @@
-[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Video_Surveillance_Equipment](Video_Surveillance_Equipment.md) > [NVR](.)
+[Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Video_Surveillance_Equipment](Video_Surveillance_Equipment.md) > [NVR](#)
 # NVR
 
 **Display name:** NVR<br />

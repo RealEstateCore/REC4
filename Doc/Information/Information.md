@@ -1,4 +1,4 @@
-[Information](.)
+[Information](#)
 # Information
 
 **Display name:** Information<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ammonia_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ammonia_Sensor](#)
 # Ammonia_Sensor
 
 **Display name:** Ammonia Sensor<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Flow_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Flow_Sensor](#)
 # Flow_Sensor
 
 **Display name:** Flow Sensor<br />

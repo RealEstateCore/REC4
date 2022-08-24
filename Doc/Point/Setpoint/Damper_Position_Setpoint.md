@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Setpoint](Setpoint.md) > [Damper_Position_Setpoint](.)
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Damper_Position_Setpoint](#)
 # Damper_Position_Setpoint
 
 **Display name:** Damper Position Setpoint<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Current_Limit](.)
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Current_Limit](#)
 # Current_Limit
 
 **Display name:** Current Limit<br />

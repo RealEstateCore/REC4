@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Speed_Sensor](Speed_Sensor.md) > [Wind_Speed_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Speed_Sensor](Speed_Sensor.md) > [Wind_Speed_Sensor](#)
 # Wind_Speed_Sensor
 
 **Display name:** Wind Speed Sensor<br />

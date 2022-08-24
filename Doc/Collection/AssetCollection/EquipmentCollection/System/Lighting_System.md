@@ -1,4 +1,4 @@
-[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Lighting_System](.)
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Lighting_System](#)
 # Lighting_System
 
 **Display name:** Lighting System<br />

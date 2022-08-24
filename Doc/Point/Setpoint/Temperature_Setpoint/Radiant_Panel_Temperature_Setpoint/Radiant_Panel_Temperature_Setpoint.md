@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Radiant_Panel_Temperature_Setpoint](.)
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Radiant_Panel_Temperature_Setpoint](#)
 # Radiant_Panel_Temperature_Setpoint
 
 **Display name:** Radiant Panel Temperature Setpoint<br />

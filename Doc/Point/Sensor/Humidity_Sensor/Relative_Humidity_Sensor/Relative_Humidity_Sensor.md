@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Humidity_Sensor](../Humidity_Sensor.md) > [Relative_Humidity_Sensor](.)
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Humidity_Sensor](../Humidity_Sensor.md) > [Relative_Humidity_Sensor](#)
 # Relative_Humidity_Sensor
 
 **Display name:** Relative Humidity Sensor<br />

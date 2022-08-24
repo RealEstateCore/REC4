@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Temperature_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Temperature_Alarm](#)
 # Temperature_Alarm
 
 **Display name:** Temperature Alarm<br />

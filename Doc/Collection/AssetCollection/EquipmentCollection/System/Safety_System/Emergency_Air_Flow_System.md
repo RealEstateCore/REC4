@@ -1,4 +1,4 @@
-[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Air_Flow_System](.)
+[Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Air_Flow_System](#)
 # Emergency_Air_Flow_System
 
 **Display name:** Emergency Air Flow System<br />

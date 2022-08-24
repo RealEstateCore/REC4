@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Temperature_Sensor](../Temperature_Sensor.md) > [Water_Temperature_Sensor](Water_Temperature_Sensor.md) > [Entering_Water_Temperature_Sensor](.)
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Temperature_Sensor](../Temperature_Sensor.md) > [Water_Temperature_Sensor](Water_Temperature_Sensor.md) > [Entering_Water_Temperature_Sensor](#)
 # Entering_Water_Temperature_Sensor
 
 **Display name:** Entering Water Temperature Sensor<br />

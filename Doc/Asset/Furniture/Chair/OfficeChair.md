@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Chair](Chair.md) > [OfficeChair](.)
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Chair](Chair.md) > [OfficeChair](#)
 # OfficeChair
 
 **Display name:** Office chair<br />

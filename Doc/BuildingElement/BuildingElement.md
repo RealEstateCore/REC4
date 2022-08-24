@@ -1,4 +1,4 @@
-[BuildingElement](.)
+[BuildingElement](#)
 # BuildingElement
 
 A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc.

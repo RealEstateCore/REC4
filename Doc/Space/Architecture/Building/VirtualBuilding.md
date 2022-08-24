@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [VirtualBuilding](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [VirtualBuilding](#)
 # VirtualBuilding
 
 **Display name:** Virtual building<br />

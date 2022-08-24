@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Voltage_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Voltage_Alarm](#)
 # Voltage_Alarm
 
 **Display name:** Voltage Alarm<br />

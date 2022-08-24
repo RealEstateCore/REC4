@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Equipment](Equipment.md) > [Gas_Distribution](.)
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Gas_Distribution](#)
 # Gas_Distribution
 
 **Display name:** Gas Distribution<br />

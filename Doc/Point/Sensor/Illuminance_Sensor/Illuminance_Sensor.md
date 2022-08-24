@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Illuminance_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Illuminance_Sensor](#)
 # Illuminance_Sensor
 
 **Display name:** Illuminance Sensor<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Load_Shed_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Load_Shed_Status](#)
 # Load_Shed_Status
 
 **Display name:** Load Shed Status<br />

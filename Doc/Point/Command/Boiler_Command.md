@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Boiler_Command](.)
+[Point](../Point.md) > [Command](Command.md) > [Boiler_Command](#)
 # Boiler_Command
 
 **Display name:** Boiler Command<br />

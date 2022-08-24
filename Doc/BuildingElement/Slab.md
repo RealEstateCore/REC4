@@ -1,4 +1,4 @@
-[BuildingElement](BuildingElement.md) > [Slab](.)
+[BuildingElement](BuildingElement.md) > [Slab](#)
 # Slab
 
 **Display name:** Slab<br />

@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Disable_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Disable_Status](#)
 # Disable_Status
 
 **Display name:** Disable Status<br />

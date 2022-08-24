@@ -1,4 +1,4 @@
-[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Flow_Sensor](../../Flow_Sensor.md) > [Air_Flow_Sensor](../Air_Flow_Sensor.md) > [Discharge_Air_Flow_Sensor](Discharge_Air_Flow_Sensor.md) > [Average_Discharge_Air_Flow_Sensor](.)
+[Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Flow_Sensor](../../Flow_Sensor.md) > [Air_Flow_Sensor](../Air_Flow_Sensor.md) > [Discharge_Air_Flow_Sensor](Discharge_Air_Flow_Sensor.md) > [Average_Discharge_Air_Flow_Sensor](#)
 # Average_Discharge_Air_Flow_Sensor
 
 **Display name:** Average Discharge Air Flow Sensor<br />

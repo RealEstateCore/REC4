@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Water_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Water_Alarm](#)
 # Water_Alarm
 
 **Display name:** Water Alarm<br />

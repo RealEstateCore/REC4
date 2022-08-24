@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Lockout_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Lockout_Status](#)
 # Lockout_Status
 
 **Display name:** Lockout Status<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Conductivity_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Conductivity_Sensor](#)
 # Conductivity_Sensor
 
 **Display name:** Conductivity Sensor<br />

@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Equipment](Equipment.md) > [Weather_Station](.)
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Weather_Station](#)
 # Weather_Station
 
 **Display name:** Weather Station<br />

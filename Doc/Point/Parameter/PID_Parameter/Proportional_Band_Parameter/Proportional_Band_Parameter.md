@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [PID_Parameter](../PID_Parameter.md) > [Proportional_Band_Parameter](.)
+[Point](../../../Point.md) > [Parameter](../../Parameter.md) > [PID_Parameter](../PID_Parameter.md) > [Proportional_Band_Parameter](#)
 # Proportional_Band_Parameter
 
 **Display name:** Proportional Band Parameter<br />

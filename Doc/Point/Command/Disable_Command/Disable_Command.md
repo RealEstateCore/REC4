@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](#)
 # Disable_Command
 
 **Display name:** Disable Command<br />

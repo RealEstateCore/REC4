@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Fire_Alarm_Control_Panel](.)
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Fire_Alarm_Control_Panel](#)
 # Fire_Alarm_Control_Panel
 
 **Display name:** Fire Alarm Control Panel<br />

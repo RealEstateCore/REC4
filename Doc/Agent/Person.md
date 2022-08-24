@@ -1,4 +1,4 @@
-[Agent](Agent.md) > [Person](.)
+[Agent](Agent.md) > [Person](#)
 # Person
 
 A natural person (i.e., an individual human being).

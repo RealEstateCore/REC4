@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [Outside_Air_CO2_Sensor](.)
+[Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [Outside_Air_CO2_Sensor](#)
 # Outside_Air_CO2_Sensor
 
 **Display name:** Outside Air CO2 Sensor<br />

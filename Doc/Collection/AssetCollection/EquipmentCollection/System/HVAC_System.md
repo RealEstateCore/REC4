@@ -1,4 +1,4 @@
-[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [HVAC_System](.)
+[Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [HVAC_System](#)
 # HVAC_System
 
 **Display name:** HVAC System<br />

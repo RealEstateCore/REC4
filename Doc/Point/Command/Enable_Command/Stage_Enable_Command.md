@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Stage_Enable_Command](.)
+[Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Stage_Enable_Command](#)
 # Stage_Enable_Command
 
 **Display name:** Stage Enable Command<br />

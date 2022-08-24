@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Failure_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Failure_Alarm](#)
 # Failure_Alarm
 
 **Display name:** Failure Alarm<br />

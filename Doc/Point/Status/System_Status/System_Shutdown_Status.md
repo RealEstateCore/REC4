@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [System_Status](System_Status.md) > [System_Shutdown_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [System_Status](System_Status.md) > [System_Shutdown_Status](#)
 # System_Shutdown_Status
 
 **Display name:** System Shutdown Status<br />

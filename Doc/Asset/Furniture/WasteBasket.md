@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Furniture](Furniture.md) > [WasteBasket](.)
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [WasteBasket](#)
 # WasteBasket
 
 **Display name:** Waste basket<br />

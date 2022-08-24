@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Temperature_Adjust_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Temperature_Adjust_Sensor](#)
 # Temperature_Adjust_Sensor
 
 **Display name:** Temperature Adjust Sensor<br />

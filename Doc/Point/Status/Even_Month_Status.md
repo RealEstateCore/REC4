@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Even_Month_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Even_Month_Status](#)
 # Even_Month_Status
 
 **Display name:** Even Month Status<br />

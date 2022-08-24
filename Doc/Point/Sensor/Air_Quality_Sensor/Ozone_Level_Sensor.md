@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ozone_Level_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ozone_Level_Sensor](#)
 # Ozone_Level_Sensor
 
 **Display name:** Ozone Level Sensor<br />

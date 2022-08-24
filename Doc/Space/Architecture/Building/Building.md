@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](#)
 # Building
 
 A confined building structure.

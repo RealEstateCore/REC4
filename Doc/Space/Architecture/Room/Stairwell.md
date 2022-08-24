@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Stairwell](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Stairwell](#)
 # Stairwell
 
 **Display name:** Stairwell<br />

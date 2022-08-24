@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](.)
+[Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](#)
 # Limit
 
 **Display name:** Limit<br />

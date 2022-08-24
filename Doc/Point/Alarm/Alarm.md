@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Alarm](.)
+[Point](../Point.md) > [Alarm](#)
 # Alarm
 
 **Display name:** Alarm<br />

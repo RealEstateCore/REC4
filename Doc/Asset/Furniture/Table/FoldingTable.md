@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [FoldingTable](.)
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [FoldingTable](#)
 # FoldingTable
 
 **Display name:** Folding table<br />

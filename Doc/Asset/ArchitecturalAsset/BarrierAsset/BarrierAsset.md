@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](.)
+[Asset](../../Asset.md) > [ArchitecturalAsset](../ArchitecturalAsset.md) > [BarrierAsset](#)
 # BarrierAsset
 
 **Display name:** Barrier asset<br />

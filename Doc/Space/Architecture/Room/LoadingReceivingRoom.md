@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [LoadingReceivingRoom](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [LoadingReceivingRoom](#)
 # LoadingReceivingRoom
 
 **Display name:** Loading/receiving room<br />

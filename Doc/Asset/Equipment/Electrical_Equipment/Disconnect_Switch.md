@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Disconnect_Switch](.)
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Disconnect_Switch](#)
 # Disconnect_Switch
 
 **Display name:** Disconnect Switch<br />

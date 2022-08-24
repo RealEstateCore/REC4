@@ -1,4 +1,4 @@
-[Collection](Collection.md) > [Portfolio](.)
+[Collection](Collection.md) > [Portfolio](#)
 # Portfolio
 
 A portfolio is a grouping of buildings, sites, apartments, campuses, etc. that share some business-relevant commonality, e.g., are managed by the same company, are rented out to the same tenant, share utilization or legal definition (industrial vs commercial), etc.

@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [ConferenceTable](.)
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Table](Table.md) > [ConferenceTable](#)
 # ConferenceTable
 
 **Display name:** Conference table<br />

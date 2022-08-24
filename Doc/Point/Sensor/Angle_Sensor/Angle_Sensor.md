@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Angle_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Angle_Sensor](#)
 # Angle_Sensor
 
 **Display name:** Angle Sensor<br />

@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [PrinterStand](.)
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [PrinterStand](#)
 # PrinterStand
 
 **Display name:** Printer stand<br />

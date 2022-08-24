@@ -1,4 +1,4 @@
-[Information](../Information.md) > [Document](.)
+[Information](../Information.md) > [Document](#)
 # Document
 
 **Display name:** Document<br />

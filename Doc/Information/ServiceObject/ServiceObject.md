@@ -1,4 +1,4 @@
-[Information](../Information.md) > [ServiceObject](.)
+[Information](../Information.md) > [ServiceObject](#)
 # ServiceObject
 
 **Display name:** Service object<br />

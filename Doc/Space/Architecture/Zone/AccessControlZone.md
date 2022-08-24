@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [AccessControlZone](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [AccessControlZone](#)
 # AccessControlZone
 
 **Display name:** Access control zone<br />

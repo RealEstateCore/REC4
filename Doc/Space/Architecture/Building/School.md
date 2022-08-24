@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [School](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [School](#)
 # School
 
 **Display name:** School<br />

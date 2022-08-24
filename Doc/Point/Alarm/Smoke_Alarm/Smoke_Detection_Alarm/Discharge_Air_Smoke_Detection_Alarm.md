@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Alarm](../../Alarm.md) > [Smoke_Alarm](../Smoke_Alarm.md) > [Smoke_Detection_Alarm](Smoke_Detection_Alarm.md) > [Discharge_Air_Smoke_Detection_Alarm](.)
+[Point](../../../Point.md) > [Alarm](../../Alarm.md) > [Smoke_Alarm](../Smoke_Alarm.md) > [Smoke_Detection_Alarm](Smoke_Detection_Alarm.md) > [Discharge_Air_Smoke_Detection_Alarm](#)
 # Discharge_Air_Smoke_Detection_Alarm
 
 **Display name:** Discharge Air Smoke Detection Alarm<br />

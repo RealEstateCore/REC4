@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Bypass_Command](.)
+[Point](../Point.md) > [Command](Command.md) > [Bypass_Command](#)
 # Bypass_Command
 
 **Display name:** Bypass Command<br />

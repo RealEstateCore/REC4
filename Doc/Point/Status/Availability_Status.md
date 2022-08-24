@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Availability_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Availability_Status](#)
 # Availability_Status
 
 **Display name:** Availability Status<br />

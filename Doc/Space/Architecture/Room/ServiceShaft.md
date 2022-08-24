@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ServiceShaft](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ServiceShaft](#)
 # ServiceShaft
 
 **Display name:** Service shaft<br />

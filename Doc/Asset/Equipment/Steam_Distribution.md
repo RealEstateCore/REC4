@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Equipment](Equipment.md) > [Steam_Distribution](.)
+[Asset](../Asset.md) > [Equipment](Equipment.md) > [Steam_Distribution](#)
 # Steam_Distribution
 
 **Display name:** Steam Distribution<br />

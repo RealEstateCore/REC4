@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Desk](Desk.md) > [MobileDesk](.)
+[Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Desk](Desk.md) > [MobileDesk](#)
 # MobileDesk
 
 **Display name:** Mobile desk<br />

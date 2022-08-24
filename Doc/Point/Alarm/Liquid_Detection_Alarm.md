@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Alarm](Alarm.md) > [Liquid_Detection_Alarm](.)
+[Point](../Point.md) > [Alarm](Alarm.md) > [Liquid_Detection_Alarm](#)
 # Liquid_Detection_Alarm
 
 **Display name:** Liquid Detection Alarm<br />

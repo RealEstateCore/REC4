@@ -1,4 +1,4 @@
-[Space](.)
+[Space](#)
 # Space
 
 A contiguous part of the physical world that contains or can contain sub-spaces. E.g., a Region can contain many Sites, which in turn can contain many Buildings.

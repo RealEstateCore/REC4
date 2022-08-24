@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Command](Command.md) > [Relay_Command](.)
+[Point](../Point.md) > [Command](Command.md) > [Relay_Command](#)
 # Relay_Command
 
 **Display name:** Relay Command<br />

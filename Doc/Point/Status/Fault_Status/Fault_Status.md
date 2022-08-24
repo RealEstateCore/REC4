@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](.)
+[Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](#)
 # Fault_Status
 
 **Display name:** Fault Status<br />

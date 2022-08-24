@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Pressure_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Pressure_Alarm](#)
 # Pressure_Alarm
 
 **Display name:** Pressure Alarm<br />

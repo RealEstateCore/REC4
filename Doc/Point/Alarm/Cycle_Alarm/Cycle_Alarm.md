@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Alarm](../Alarm.md) > [Cycle_Alarm](.)
+[Point](../../Point.md) > [Alarm](../Alarm.md) > [Cycle_Alarm](#)
 # Cycle_Alarm
 
 **Display name:** Cycle Alarm<br />

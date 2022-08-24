@@ -1,4 +1,4 @@
-[Agent](.)
+[Agent](#)
 # Agent
 
 The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, ....) to be anchored in one joint place, on the Agent class.

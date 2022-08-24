@@ -1,4 +1,4 @@
-[Collection](../../../../../Collection.md) > [AssetCollection](../../../../AssetCollection.md) > [EquipmentCollection](../../../EquipmentCollection.md) > [System](../../System.md) > [Electrical_System](../Electrical_System.md) > [Energy_System](.)
+[Collection](../../../../../Collection.md) > [AssetCollection](../../../../AssetCollection.md) > [EquipmentCollection](../../../EquipmentCollection.md) > [System](../../System.md) > [Electrical_System](../Electrical_System.md) > [Energy_System](#)
 # Energy_System
 
 **Display name:** Energy System<br />

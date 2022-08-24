@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Status](Status.md) > [Manual_Auto_Status](.)
+[Point](../Point.md) > [Status](Status.md) > [Manual_Auto_Status](#)
 # Manual_Auto_Status
 
 **Display name:** Manual Auto Status<br />

@@ -1,4 +1,4 @@
-[Asset](../Asset.md) > [Furniture](Furniture.md) > [FloorMat](.)
+[Asset](../Asset.md) > [Furniture](Furniture.md) > [FloorMat](#)
 # FloorMat
 
 **Display name:** Floor mat<br />

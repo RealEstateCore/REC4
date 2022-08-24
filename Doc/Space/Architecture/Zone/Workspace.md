@@ -1,4 +1,4 @@
-[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [Workspace](.)
+[Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [Workspace](#)
 # Workspace
 
 **Display name:** Workspace<br />

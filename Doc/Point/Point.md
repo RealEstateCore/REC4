@@ -1,4 +1,4 @@
-[Point](.)
+[Point](#)
 # Point
 
 **Display name:** Point<br />

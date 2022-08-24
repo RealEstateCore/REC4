@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Soil_Temperature_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Soil_Temperature_Sensor](#)
 # Soil_Temperature_Sensor
 
 **Display name:** Soil Temperature Sensor<br />

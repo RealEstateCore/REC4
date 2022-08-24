@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](#)
 # Imbalance_Sensor
 
 **Display name:** Imbalance Sensor<br />

@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Setpoint](Setpoint.md) > [Frequency_Setpoint](.)
+[Point](../Point.md) > [Setpoint](Setpoint.md) > [Frequency_Setpoint](#)
 # Frequency_Setpoint
 
 **Display name:** Frequency Setpoint<br />

@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Radiant_Panel_Temperature_Setpoint](Radiant_Panel_Temperature_Setpoint.md) > [Outside_Face_Surface_Temperature_Setpoint](.)
+[Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Radiant_Panel_Temperature_Setpoint](Radiant_Panel_Temperature_Setpoint.md) > [Outside_Face_Surface_Temperature_Setpoint](#)
 # Outside_Face_Surface_Temperature_Setpoint
 
 **Display name:** Outside Face Surface Temperature Setpoint<br />

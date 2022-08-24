@@ -1,4 +1,4 @@
-[Collection](../Collection.md) > [AssetCollection](AssetCollection.md) > [FurnitureCollection](.)
+[Collection](../Collection.md) > [AssetCollection](AssetCollection.md) > [FurnitureCollection](#)
 # FurnitureCollection
 
 **Display name:** Furniture collection<br />

@@ -1,4 +1,4 @@
-[Information](../Information.md) > [ServiceObject](ServiceObject.md) > [AlarmObject](.)
+[Information](../Information.md) > [ServiceObject](ServiceObject.md) > [AlarmObject](#)
 # AlarmObject
 
 **Display name:** Alarm object<br />

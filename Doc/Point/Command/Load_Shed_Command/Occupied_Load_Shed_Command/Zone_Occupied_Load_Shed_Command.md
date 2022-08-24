@@ -1,4 +1,4 @@
-[Point](../../../Point.md) > [Command](../../Command.md) > [Load_Shed_Command](../Load_Shed_Command.md) > [Occupied_Load_Shed_Command](Occupied_Load_Shed_Command.md) > [Zone_Occupied_Load_Shed_Command](.)
+[Point](../../../Point.md) > [Command](../../Command.md) > [Load_Shed_Command](../Load_Shed_Command.md) > [Occupied_Load_Shed_Command](Occupied_Load_Shed_Command.md) > [Zone_Occupied_Load_Shed_Command](#)
 # Zone_Occupied_Load_Shed_Command
 
 **Display name:** Zone Occupied Load Shed Command<br />

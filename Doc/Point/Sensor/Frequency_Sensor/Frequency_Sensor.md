@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Frequency_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Frequency_Sensor](#)
 # Frequency_Sensor
 
 **Display name:** Frequency Sensor<br />

@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [Automated_External_Defibrillator](.)
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [Automated_External_Defibrillator](#)
 # Automated_External_Defibrillator
 
 **Display name:** Automated External Defibrillator<br />

@@ -1,4 +1,4 @@
-[Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](Generation_Sensor.md) > [Energy_Generation_Sensor](.)
+[Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](Generation_Sensor.md) > [Energy_Generation_Sensor](#)
 # Energy_Generation_Sensor
 
 **Display name:** Energy Generation Sensor<br />

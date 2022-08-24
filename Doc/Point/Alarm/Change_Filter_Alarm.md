@@ -1,4 +1,4 @@
-[Point](../Point.md) > [Alarm](Alarm.md) > [Change_Filter_Alarm](.)
+[Point](../Point.md) > [Alarm](Alarm.md) > [Change_Filter_Alarm](#)
 # Change_Filter_Alarm
 
 **Display name:** Change Filter Alarm<br />

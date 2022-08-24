@@ -1,4 +1,4 @@
-[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](.)
+[Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](#)
 # Electrical_Equipment
 
 **Display name:** Electrical Equipment<br />
