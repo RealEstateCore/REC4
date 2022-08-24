@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:HVAC_Valve;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Valve](../Water_Valve/Chilled_Water_Valve.md)
+* [Condenser_Water_Valve](../Water_Valve/Condenser_Water_Valve.md)
+* [Makeup_Water_Valve](../Water_Valve/Makeup_Water_Valve.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

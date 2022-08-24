@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Current_Output_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Photovoltaic_Current_Output_Sensor](Photovoltaic_Current_Output_Sensor.md)
+* [PV_Current_Output_Sensor](PV_Current_Output_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

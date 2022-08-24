@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Differential_Speed_Sensor](Differential_Speed_Sensor.md)
+* [Motor_Speed_Sensor](Motor_Speed_Sensor.md)
+* [Wind_Speed_Sensor](Wind_Speed_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

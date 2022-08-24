@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Embedded_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Core_Temperature_Sensor](Core_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:w3id:rec:Garage;1
 
 ---
+
+
+## Child interfaces
+* [BicycleGarage](BicycleGarage.md)
+* [ParkingSlotCold](ParkingSlotCold.md)
+* [ParkingSlotWarm](ParkingSlotWarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

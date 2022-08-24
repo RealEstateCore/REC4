@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_Valve;1
 
 ---
+
+
+## Child interfaces
+* [Domestic_Hot_Water_Valve](Domestic_Hot_Water_Valve.md)
+* [Preheat_Hot_Water_Valve](Preheat_Hot_Water_Valve.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

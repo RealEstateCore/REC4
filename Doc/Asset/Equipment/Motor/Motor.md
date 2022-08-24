@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor;1
 
 ---
+
+
+## Child interfaces
+* [Variable_Frequency_Drive](Variable_Frequency_Drive.md)
+* [VFD](VFD/VFD.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Usage_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Energy_Usage_Sensor](Energy_Usage_Sensor.md)
+* [Natural_Gas_Usage_Sensor](Natural_Gas_Usage_Sensor.md)
+* [Steam_Usage_Sensor](Steam_Usage_Sensor.md)
+* [Water_Usage_Sensor](Water_Usage_Sensor/Water_Usage_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

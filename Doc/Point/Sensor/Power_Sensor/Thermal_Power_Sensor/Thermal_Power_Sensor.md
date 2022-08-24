@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermal_Power_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Heating_Thermal_Power_Sensor](Heating_Thermal_Power_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

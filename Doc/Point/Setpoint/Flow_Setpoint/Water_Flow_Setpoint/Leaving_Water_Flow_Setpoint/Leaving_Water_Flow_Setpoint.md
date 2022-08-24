@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Water_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Leaving_Chilled_Water_Flow_Setpoint](Leaving_Chilled_Water_Flow_Setpoint.md)
+* [Leaving_Hot_Water_Flow_Setpoint](Leaving_Hot_Water_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

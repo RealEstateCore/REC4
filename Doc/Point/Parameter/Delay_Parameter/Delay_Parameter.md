@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Delay_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Alarm_Delay_Parameter](Alarm_Delay_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

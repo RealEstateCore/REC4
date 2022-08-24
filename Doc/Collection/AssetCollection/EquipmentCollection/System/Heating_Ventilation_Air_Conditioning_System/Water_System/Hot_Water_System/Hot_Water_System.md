@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_System;1
 
 ---
+
+
+## Child interfaces
+* [Heat_Recovery_Hot_Water_System](Heat_Recovery_Hot_Water_System.md)
+* [Preheat_Hot_Water_System](Preheat_Hot_Water_System.md)
+* [Radiation_Hot_Water_System](Radiation_Hot_Water_System.md)
+* [Reheat_Hot_Water_System](Reheat_Hot_Water_System.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

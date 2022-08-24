@@ -5,6 +5,16 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Zone_Air_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Effective_Zone_Air_Temperature_Setpoint](Effective_Zone_Air_Temperature_Setpoint.md)
+* [Occupied_Zone_Air_Temperature_Setpoint](Occupied_Zone_Air_Temperature_Setpoint.md)
+* [Unoccupied_Zone_Air_Temperature_Setpoint](Unoccupied_Zone_Air_Temperature_Setpoint.md)
+* [Zone_Air_Cooling_Temperature_Setpoint](Zone_Air_Cooling_Temperature_Setpoint.md)
+* [Zone_Air_Heating_Temperature_Setpoint](Zone_Air_Heating_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

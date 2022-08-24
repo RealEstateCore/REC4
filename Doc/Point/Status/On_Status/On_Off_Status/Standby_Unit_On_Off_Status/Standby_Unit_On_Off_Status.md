@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_Unit_On_Off_Status;1
 
 ---
+
+
+## Child interfaces
+* [Standby_Glycool_Unit_On_Off_Status](Standby_Glycool_Unit_On_Off_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

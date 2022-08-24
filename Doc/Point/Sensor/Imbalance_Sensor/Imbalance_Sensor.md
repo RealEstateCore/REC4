@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Imbalance_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Current_Imbalance_Sensor](Current_Imbalance_Sensor.md)
+* [Voltage_Imbalance_Sensor](Voltage_Imbalance_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

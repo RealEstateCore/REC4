@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System_Status;1
 
 ---
+
+
+## Child interfaces
+* [Emergency_Power_Off_System_Activated_By_High_Temperature_Status](Emergency_Power_Off_System_Activated_By_High_Temperature_Status.md)
+* [Emergency_Power_Off_System_Activated_By_Leak_Detection_System_Status](Emergency_Power_Off_System_Activated_By_Leak_Detection_System_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Tolerance_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Humidity_Tolerance_Parameter](Humidity_Tolerance_Parameter.md)
+* [Temperature_Tolerance_Parameter](Temperature_Tolerance_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

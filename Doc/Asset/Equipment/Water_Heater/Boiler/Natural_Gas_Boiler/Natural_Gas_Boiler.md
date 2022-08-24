@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Natural_Gas_Boiler;1
 
 ---
+
+
+## Child interfaces
+* [Condensing_Natural_Gas_Boiler](Condensing_Natural_Gas_Boiler.md)
+* [Noncondensing_Natural_Gas_Boiler](Noncondensing_Natural_Gas_Boiler.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

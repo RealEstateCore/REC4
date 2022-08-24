@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Valve;1
 
 ---
+
+
+## Child interfaces
+* [Condenser_Water_Bypass_Valve](Condenser_Water_Bypass_Valve.md)
+* [Differential_Pressure_Bypass_Valve](Differential_Pressure_Bypass_Valve.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

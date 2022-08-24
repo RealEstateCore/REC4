@@ -5,6 +5,20 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:AHU;1
 
 ---
+
+
+## Child interfaces
+* [DDAHU](DDAHU.md)
+* [Dedicated_Outdoor_Air_System_Unit](Dedicated_Outdoor_Air_System_Unit.md)
+* [DOAS](DOAS.md)
+* [Dual_Duct_Air_Handling_Unit](Dual_Duct_Air_Handling_Unit.md)
+* [Makeup_Air_Unit](Makeup_Air_Unit.md)
+* [MAU](MAU.md)
+* [PAU](PAU.md)
+* [Rooftop_Unit](Rooftop_Unit.md)
+* [RTU](RTU.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

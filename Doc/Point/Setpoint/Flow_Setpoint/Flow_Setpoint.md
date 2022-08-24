@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Air_Flow_Setpoint](Air_Flow_Setpoint/Air_Flow_Setpoint.md)
+* [Water_Flow_Setpoint](Water_Flow_Setpoint/Water_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

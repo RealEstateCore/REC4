@@ -8,6 +8,14 @@ An administrative grouping of entities that are adressed and treated as a unit f
 **DTMI:** dtmi:org:w3id:rec:Collection;1
 
 ---
+
+
+## Child interfaces
+* [Portfolio](Portfolio.md)
+* [AssetCollection](AssetCollection/AssetCollection.md)
+* [SpaceCollection](SpaceCollection/SpaceCollection.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

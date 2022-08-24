@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Shading_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Automatic_Tint_Window](Automatic_Tint_Window.md)
+* [Blind](Blind.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

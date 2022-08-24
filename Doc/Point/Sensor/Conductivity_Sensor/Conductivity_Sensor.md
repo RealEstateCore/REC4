@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Conductivity_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Deionised_Water_Conductivity_Sensor](Deionised_Water_Conductivity_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

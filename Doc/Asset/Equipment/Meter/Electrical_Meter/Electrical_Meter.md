@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electrical_Meter;1
 
 ---
+
+
+## Child interfaces
+* [Building_Electrical_Meter](Building_Electrical_Meter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

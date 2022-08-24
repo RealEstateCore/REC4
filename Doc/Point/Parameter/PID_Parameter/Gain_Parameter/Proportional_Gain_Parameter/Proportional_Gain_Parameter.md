@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Proportional_Gain_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Proportional_Gain_Parameter](Discharge_Air_Proportional_Gain_Parameter.md)
+* [Supply_Air_Proportional_Gain_Parameter](Supply_Air_Proportional_Gain_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Static_Pressure_Integral_Time_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Static_Pressure_Integral_Time_Parameter](Discharge_Air_Static_Pressure_Integral_Time_Parameter.md)
+* [Supply_Air_Static_Pressure_Integral_Time_Parameter](Supply_Air_Static_Pressure_Integral_Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

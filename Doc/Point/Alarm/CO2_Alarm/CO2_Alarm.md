@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO2_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [High_CO2_Alarm](High_CO2_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

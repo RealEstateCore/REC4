@@ -8,6 +8,15 @@ A sub-zone within a building defined to support some technology and/or use, e.g.
 **DTMI:** dtmi:org:w3id:rec:Zone;1
 
 ---
+
+
+## Child interfaces
+* [AccessControlZone](AccessControlZone.md)
+* [HVACZone](HVACZone.md)
+* [OccupancyZone](OccupancyZone.md)
+* [Workspace](Workspace.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

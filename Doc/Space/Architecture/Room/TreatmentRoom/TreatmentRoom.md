@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:w3id:rec:TreatmentRoom;1
 
 ---
+
+
+## Child interfaces
+* [TreatmentWaitingRoom](TreatmentWaitingRoom.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

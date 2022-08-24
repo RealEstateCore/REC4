@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rain_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Rain_Duration_Sensor](Rain_Duration_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -8,6 +8,14 @@ An event emanating from or targeting a Point; e.g., an individual Observation fr
 **DTMI:** dtmi:org:w3id:rec:PointEvent;1
 
 ---
+
+
+## Child interfaces
+* [ActuationEvent](ActuationEvent.md)
+* [ExceptionEvent](ExceptionEvent.md)
+* [ObservationEvent](ObservationEvent.md)
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

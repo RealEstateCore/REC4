@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Torque_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Motor_Torque_Sensor](Motor_Torque_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

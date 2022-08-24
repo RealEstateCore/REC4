@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Off_Status;1
 
 ---
+
+
+## Child interfaces
+* [Overridden_Off_Status](../Overridden_Status/Overridden_Off_Status.md)
+* [Emergency_Power_Off_System_Status](../System_Status/Emergency_Power_Off_System_Status/Emergency_Power_Off_System_Status.md)
+* [On_Off_Status](../On_Status/On_Off_Status/On_Off_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

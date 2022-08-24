@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_Storage_System;1
 
 ---
+
+
+## Child interfaces
+* [Battery_Energy_Storage_System](Battery_Energy_Storage_System.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

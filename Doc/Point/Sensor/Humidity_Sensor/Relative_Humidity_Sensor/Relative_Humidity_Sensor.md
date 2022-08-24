@@ -5,6 +5,18 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Relative_Humidity_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Humidity_Sensor](Discharge_Air_Humidity_Sensor.md)
+* [Exhaust_Air_Humidity_Sensor](Exhaust_Air_Humidity_Sensor.md)
+* [Mixed_Air_Humidity_Sensor](Mixed_Air_Humidity_Sensor.md)
+* [Outside_Air_Humidity_Sensor](Outside_Air_Humidity_Sensor.md)
+* [Return_Air_Humidity_Sensor](Return_Air_Humidity_Sensor.md)
+* [Supply_Air_Humidity_Sensor](Supply_Air_Humidity_Sensor.md)
+* [Zone_Air_Humidity_Sensor](Zone_Air_Humidity_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

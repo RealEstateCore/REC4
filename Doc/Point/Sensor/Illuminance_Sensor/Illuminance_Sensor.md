@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Illuminance_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Outside_Illuminance_Sensor](Outside_Illuminance_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

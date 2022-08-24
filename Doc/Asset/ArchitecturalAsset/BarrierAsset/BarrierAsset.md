@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:w3id:rec:BarrierAsset;1
 
 ---
+
+
+## Child interfaces
+* [AccessPanel](AccessPanel.md)
+* [Door](Door.md)
+* [Partition](Partition.md)
+* [Window](Window.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Asset;1:** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy

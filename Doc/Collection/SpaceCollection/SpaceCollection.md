@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:w3id:rec:SpaceCollection;1
 
 ---
+
+
+## Child interfaces
+* [Apartment](Apartment.md)
+* [Campus](Campus.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Collection;1:** documentation

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Command;1
 
 ---
+
+
+## Child interfaces
+* [Fan_Speed_Command](Fan_Speed_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

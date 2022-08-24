@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Hot_Water_Temperature_Load_Shed_Status;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status](Entering_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Temperature_Integral_Time_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Discharge_Air_Temperature_Integral_Time_Parameter](Cooling_Discharge_Air_Temperature_Integral_Time_Parameter.md)
+* [Cooling_Supply_Air_Temperature_Integral_Time_Parameter](Cooling_Supply_Air_Temperature_Integral_Time_Parameter.md)
+* [Heating_Discharge_Air_Temperature_Integral_Time_Parameter](Heating_Discharge_Air_Temperature_Integral_Time_Parameter.md)
+* [Heating_Supply_Air_Temperature_Integral_Time_Parameter](Heating_Supply_Air_Temperature_Integral_Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

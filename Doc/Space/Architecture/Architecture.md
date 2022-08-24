@@ -8,6 +8,17 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 **DTMI:** dtmi:org:w3id:rec:Architecture;1
 
 ---
+
+
+## Child interfaces
+* [Site](Site.md)
+* [SubBuilding](SubBuilding.md)
+* [Building](Building/Building.md)
+* [Level](Level/Level.md)
+* [Room](Room/Room.md)
+* [Zone](Zone/Zone.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

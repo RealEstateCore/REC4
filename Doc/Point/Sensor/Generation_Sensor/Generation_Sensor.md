@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Generation_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Energy_Generation_Sensor](Energy_Generation_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

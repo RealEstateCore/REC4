@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Rated_Speed_Setpoint](Rated_Speed_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

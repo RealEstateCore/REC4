@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Reset_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Supply_Air_Flow_High_Reset_Setpoint](Supply_Air_Flow_High_Reset_Setpoint.md)
+* [Supply_Air_Flow_Low_Reset_Setpoint](Supply_Air_Flow_Low_Reset_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

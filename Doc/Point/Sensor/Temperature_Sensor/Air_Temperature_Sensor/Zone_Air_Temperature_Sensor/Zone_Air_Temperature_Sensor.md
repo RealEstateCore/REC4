@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Zone_Air_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Average_Zone_Air_Temperature_Sensor](Average_Zone_Air_Temperature_Sensor.md)
+* [Coldest_Zone_Air_Temperature_Sensor](Coldest_Zone_Air_Temperature_Sensor.md)
+* [Warmest_Zone_Air_Temperature_Sensor](Warmest_Zone_Air_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

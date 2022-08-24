@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Video_Surveillance_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Network_Video_Recorder](Network_Video_Recorder.md)
+* [NVR](NVR.md)
+* [Surveillance_Camera](Surveillance_Camera.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

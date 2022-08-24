@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Temperature_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Temperature_Alarm](Discharge_Air_Temperature_Alarm/Discharge_Air_Temperature_Alarm.md)
+* [Return_Air_Temperature_Alarm](Return_Air_Temperature_Alarm/Return_Air_Temperature_Alarm.md)
+* [Supply_Air_Temperature_Alarm](Supply_Air_Temperature_Alarm/Supply_Air_Temperature_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

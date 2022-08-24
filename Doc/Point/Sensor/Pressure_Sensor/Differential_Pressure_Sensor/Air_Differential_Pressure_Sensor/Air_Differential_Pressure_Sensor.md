@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Differential_Pressure_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Differential_Pressure_Sensor](Discharge_Air_Differential_Pressure_Sensor.md)
+* [Exhaust_Air_Differential_Pressure_Sensor](Exhaust_Air_Differential_Pressure_Sensor.md)
+* [Return_Air_Differential_Pressure_Sensor](Return_Air_Differential_Pressure_Sensor.md)
+* [Supply_Air_Differential_Pressure_Sensor](Supply_Air_Differential_Pressure_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

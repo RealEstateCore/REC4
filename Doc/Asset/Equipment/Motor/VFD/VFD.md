@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:VFD;1
 
 ---
+
+
+## Child interfaces
+* [Fan_VFD](Fan_VFD.md)
+* [Heat_Wheel_VFD](Heat_Wheel_VFD.md)
+* [Pump_VFD](Pump_VFD.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

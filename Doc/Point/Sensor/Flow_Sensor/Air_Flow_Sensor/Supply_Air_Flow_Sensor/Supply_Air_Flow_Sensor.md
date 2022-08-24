@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Average_Supply_Air_Flow_Sensor](Average_Supply_Air_Flow_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leak_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Condensate_Leak_Alarm](Condensate_Leak_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

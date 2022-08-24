@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:PID_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Gain_Parameter](Gain_Parameter/Gain_Parameter.md)
+* [Proportional_Band_Parameter](Proportional_Band_Parameter/Proportional_Band_Parameter.md)
+* [Step_Parameter](Step_Parameter/Step_Parameter.md)
+* [Time_Parameter](Time_Parameter/Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

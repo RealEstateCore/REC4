@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Adjust_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Temperature_Adjust_Sensor](Temperature_Adjust_Sensor.md)
+* [Warm_Cool_Adjust_Sensor](Warm_Cool_Adjust_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

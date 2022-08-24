@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Chilled_Water_Flow_Setpoint](Entering_Chilled_Water_Flow_Setpoint.md)
+* [Entering_Hot_Water_Flow_Setpoint](../Hot_Water_Flow_Setpoint/Entering_Hot_Water_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

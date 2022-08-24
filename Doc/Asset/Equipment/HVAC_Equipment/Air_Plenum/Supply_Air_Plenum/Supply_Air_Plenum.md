@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Plenum;1
 
 ---
+
+
+## Child interfaces
+* [Underfloor_Air_Plenum](Underfloor_Air_Plenum.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

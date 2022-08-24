@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_Radiator;1
 
 ---
+
+
+## Child interfaces
+* [Hot_Water_Baseboard_Radiator](Hot_Water_Baseboard_Radiator.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

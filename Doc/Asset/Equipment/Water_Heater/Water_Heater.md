@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Heater;1
 
 ---
+
+
+## Child interfaces
+* [Collection_Basin_Water_Heater](Collection_Basin_Water_Heater.md)
+* [Boiler](Boiler/Boiler.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

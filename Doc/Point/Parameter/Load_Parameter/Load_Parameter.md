@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Max_Load_Setpoint](Max_Load_Setpoint.md)
+* [Min_Load_Setpoint](Min_Load_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

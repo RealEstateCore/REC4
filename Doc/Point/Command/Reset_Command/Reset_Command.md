@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reset_Command;1
 
 ---
+
+
+## Child interfaces
+* [Fault_Reset_Command](Fault_Reset_Command.md)
+* [Filter_Reset_Command](Filter_Reset_Command.md)
+* [Speed_Reset_Command](Speed_Reset_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

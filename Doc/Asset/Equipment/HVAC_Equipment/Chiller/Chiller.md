@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chiller;1
 
 ---
+
+
+## Child interfaces
+* [Absorption_Chiller](Absorption_Chiller.md)
+* [Centrifugal_Chiller](Centrifugal_Chiller.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

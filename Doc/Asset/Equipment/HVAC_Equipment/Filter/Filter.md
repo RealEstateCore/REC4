@@ -5,6 +5,16 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Filter;1
 
 ---
+
+
+## Child interfaces
+* [Final_Filter](Final_Filter.md)
+* [Intake_Air_Filter](Intake_Air_Filter.md)
+* [Mixed_Air_Filter](Mixed_Air_Filter.md)
+* [Pre_Filter](Pre_Filter.md)
+* [Return_Air_Filter](Return_Air_Filter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

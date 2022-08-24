@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Status;1
 
 ---
+
+
+## Child interfaces
+* [Fan_On_Off_Status](../On_Status/On_Off_Status/Fan_On_Off_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Radioactivity_Concentration_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Radon_Concentration_Sensor](Radon_Concentration_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

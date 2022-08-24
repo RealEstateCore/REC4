@@ -5,6 +5,18 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Effective_Air_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Effective_Discharge_Air_Temperature_Setpoint](Effective_Discharge_Air_Temperature_Setpoint.md)
+* [Effective_Air_Temperature_Cooling_Setpoint](Effective_Air_Temperature_Cooling_Setpoint.md)
+* [Effective_Air_Temperature_Heating_Setpoint](Effective_Air_Temperature_Heating_Setpoint.md)
+* [Effective_Return_Air_Temperature_Setpoint](../Return_Air_Temperature_Setpoint/Effective_Return_Air_Temperature_Setpoint.md)
+* [Effective_Room_Air_Temperature_Setpoint](../Room_Air_Temperature_Setpoint/Effective_Room_Air_Temperature_Setpoint.md)
+* [Effective_Supply_Air_Temperature_Setpoint](../Supply_Air_Temperature_Setpoint/Effective_Supply_Air_Temperature_Setpoint.md)
+* [Effective_Zone_Air_Temperature_Setpoint](../Zone_Air_Temperature_Setpoint/Effective_Zone_Air_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

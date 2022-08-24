@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Alarm_Sensitivity_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [CO2_Alarm_Sensitivity_Parameter](CO2_Alarm_Sensitivity_Parameter.md)
+* [Temperature_Alarm_Sensitivity_Parameter](Temperature_Alarm_Sensitivity_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

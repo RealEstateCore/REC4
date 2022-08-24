@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box;1
 
 ---
+
+
+## Child interfaces
+* [RVAV](RVAV.md)
+* [Variable_Air_Volume_Box_With_Reheat](Variable_Air_Volume_Box_With_Reheat.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Level_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Collection_Basin_Water_Level_Sensor](Collection_Basin_Water_Level_Sensor.md)
+* [Deionised_Water_Level_Sensor](Deionised_Water_Level_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

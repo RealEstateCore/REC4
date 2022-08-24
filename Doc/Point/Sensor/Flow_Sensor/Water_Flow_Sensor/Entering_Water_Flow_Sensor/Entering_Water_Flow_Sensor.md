@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Flow_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Chilled_Water_Flow_Sensor](Entering_Chilled_Water_Flow_Sensor.md)
+* [Entering_Condenser_Water_Flow_Sensor](Entering_Condenser_Water_Flow_Sensor.md)
+* [Entering_Hot_Water_Flow_Sensor](../Hot_Water_Flow_Sensor/Entering_Hot_Water_Flow_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

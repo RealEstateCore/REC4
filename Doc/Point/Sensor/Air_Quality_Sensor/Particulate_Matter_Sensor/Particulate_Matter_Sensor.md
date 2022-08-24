@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Particulate_Matter_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [PM10_Sensor](PM10_Sensor/PM10_Sensor.md)
+* [PM1_Sensor](PM1_Sensor/PM1_Sensor.md)
+* [PM25_Sensor](PM25_Sensor/PM25_Sensor.md)
+* [TVOC_Sensor](TVOC_Sensor/TVOC_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

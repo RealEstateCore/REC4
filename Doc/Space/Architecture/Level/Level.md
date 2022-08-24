@@ -8,6 +8,14 @@ The level of a building, a.k.a. storey, floor, etc.
 **DTMI:** dtmi:org:w3id:rec:Level;1
 
 ---
+
+
+## Child interfaces
+* [BasementLevel](BasementLevel.md)
+* [MezzanineLevel](MezzanineLevel.md)
+* [RoofLevel](RoofLevel.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

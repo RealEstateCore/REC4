@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:w3id:rec:Wall;1
 
 ---
+
+
+## Child interfaces
+* [WallInner](WallInner.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:BuildingElement;1:** documentation, hasPart, isPartOf, locatedIn

@@ -5,6 +5,19 @@
 **DTMI:** dtmi:org:w3id:rec:HealthcareRoom;1
 
 ---
+
+
+## Child interfaces
+* [AdmittingRoom](AdmittingRoom.md)
+* [Morgue](Morgue.md)
+* [NeonatalNursingRoom](NeonatalNursingRoom.md)
+* [OperatingRoom](OperatingRoom.md)
+* [OutpatientServicesRoom](OutpatientServicesRoom.md)
+* [PharmacyRoom](PharmacyRoom.md)
+* [RadiologyRoom](RadiologyRoom.md)
+* [TherapyRoom](TherapyRoom.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

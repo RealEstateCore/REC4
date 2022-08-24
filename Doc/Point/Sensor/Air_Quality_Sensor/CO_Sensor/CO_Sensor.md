@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [CO_Differential_Sensor](CO_Differential_Sensor.md)
+* [CO_Level_Sensor](CO_Level_Sensor.md)
+* [Outside_Air_CO_Sensor](Outside_Air_CO_Sensor.md)
+* [Return_Air_CO_Sensor](Return_Air_CO_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

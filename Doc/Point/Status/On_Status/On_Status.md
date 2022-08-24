@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Status;1
 
 ---
+
+
+## Child interfaces
+* [Overridden_On_Status](../Overridden_Status/Overridden_On_Status.md)
+* [On_Off_Status](On_Off_Status/On_Off_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

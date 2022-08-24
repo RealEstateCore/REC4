@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Failure_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Sensor_Failure_Alarm](Sensor_Failure_Alarm.md)
+* [Unit_Failure_Alarm](Unit_Failure_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

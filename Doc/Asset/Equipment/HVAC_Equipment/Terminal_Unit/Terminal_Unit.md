@@ -5,6 +5,22 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Terminal_Unit;1
 
 ---
+
+
+## Child interfaces
+* [CAV](CAV.md)
+* [Constant_Air_Volume_Box](Constant_Air_Volume_Box.md)
+* [Fan_Coil_Unit](Fan_Coil_Unit.md)
+* [FCU](FCU.md)
+* [Induction_Unit](Induction_Unit.md)
+* [VAV](VAV.md)
+* [Air_Diffuser](Air_Diffuser/Air_Diffuser.md)
+* [Chilled_Beam](Chilled_Beam/Chilled_Beam.md)
+* [Radiant_Panel](Radiant_Panel/Radiant_Panel.md)
+* [Radiator](Radiator/Radiator.md)
+* [Variable_Air_Volume_Box](Variable_Air_Volume_Box/Variable_Air_Volume_Box.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

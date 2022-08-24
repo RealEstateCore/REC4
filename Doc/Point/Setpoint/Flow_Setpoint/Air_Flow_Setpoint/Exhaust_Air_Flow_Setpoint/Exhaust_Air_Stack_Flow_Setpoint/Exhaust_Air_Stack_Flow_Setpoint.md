@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Exhaust_Air_Stack_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Exhaust_Air_Stack_Flow_Deadband_Setpoint](Exhaust_Air_Stack_Flow_Deadband_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

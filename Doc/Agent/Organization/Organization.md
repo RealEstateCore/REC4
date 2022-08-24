@@ -8,6 +8,13 @@ An organization of any sort (e.g., a business, association, project, consortium,
 **DTMI:** dtmi:org:w3id:rec:Organization;1
 
 ---
+
+
+## Child interfaces
+* [Company](Company.md)
+* [Department](Department.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

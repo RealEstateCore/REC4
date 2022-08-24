@@ -8,6 +8,14 @@ Something which is placed inside of a building, but is not an integral part of t
 **DTMI:** dtmi:org:w3id:rec:Asset;1
 
 ---
+
+
+## Child interfaces
+* [Equipment](Equipment/Equipment.md)
+* [ArchitecturalAsset](ArchitecturalAsset/ArchitecturalAsset.md)
+* [Furniture](Furniture/Furniture.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

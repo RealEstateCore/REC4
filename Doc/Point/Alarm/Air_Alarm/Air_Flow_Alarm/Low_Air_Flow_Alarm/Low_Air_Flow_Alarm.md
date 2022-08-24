@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Air_Flow_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Low_Discharge_Air_Flow_Alarm](Low_Discharge_Air_Flow_Alarm.md)
+* [Low_Supply_Air_Flow_Alarm](Low_Supply_Air_Flow_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

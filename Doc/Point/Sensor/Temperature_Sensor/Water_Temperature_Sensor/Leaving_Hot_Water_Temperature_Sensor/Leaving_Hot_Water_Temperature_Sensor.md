@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Hot_Water_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Leaving_Domestic_Hot_Water_Temperature_Sensor](Leaving_Domestic_Hot_Water_Temperature_Sensor.md)
+* [Hot_Water_Differential_Temperature_Sensor](Hot_Water_Differential_Temperature_Sensor.md)
+* [Leaving_High_Temperature_Hot_Water_Temperature_Sensor](Leaving_High_Temperature_Hot_Water_Temperature_Sensor.md)
+* [Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor](Leaving_Medium_Temperature_Hot_Water_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

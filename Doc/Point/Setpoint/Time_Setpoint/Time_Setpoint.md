@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Time_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Acceleration_Time_Setpoint](Acceleration_Time_Setpoint.md)
+* [Deceleration_Time_Setpoint](Deceleration_Time_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

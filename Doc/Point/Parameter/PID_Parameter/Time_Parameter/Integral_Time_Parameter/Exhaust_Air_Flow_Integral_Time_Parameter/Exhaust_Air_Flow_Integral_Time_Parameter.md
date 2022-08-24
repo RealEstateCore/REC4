@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Exhaust_Air_Flow_Integral_Time_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Exhaust_Air_Stack_Flow_Integral_Time_Parameter](Exhaust_Air_Stack_Flow_Integral_Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

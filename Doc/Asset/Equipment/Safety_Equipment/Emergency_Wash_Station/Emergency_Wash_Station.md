@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Wash_Station;1
 
 ---
+
+
+## Child interfaces
+* [Drench_Hose](Drench_Hose.md)
+* [Eye_Wash_Station](Eye_Wash_Station.md)
+* [Safety_Shower](Safety_Shower.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

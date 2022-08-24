@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Radiator;1
 
 ---
+
+
+## Child interfaces
+* [Steam_Baseboard_Radiator](Steam_Baseboard_Radiator.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

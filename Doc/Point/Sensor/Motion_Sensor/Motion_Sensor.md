@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motion_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [PIR_Sensor](../Occupancy_Sensor/PIR_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

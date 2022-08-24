@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Low_Voltage_Alarm](Low_Voltage_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

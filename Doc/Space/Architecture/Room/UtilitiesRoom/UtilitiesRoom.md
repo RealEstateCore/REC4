@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:w3id:rec:UtilitiesRoom;1
 
 ---
+
+
+## Child interfaces
+* [Cabinet](Cabinet.md)
+* [ClimateControlRoom](ClimateControlRoom.md)
+* [DataServerRoom](DataServerRoom.md)
+* [ElectricityRoom](ElectricityRoom.md)
+* [SprinklerRoom](SprinklerRoom.md)
+* [CableRoom](CableRoom/CableRoom.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

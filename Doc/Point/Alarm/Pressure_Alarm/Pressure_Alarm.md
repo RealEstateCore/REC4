@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [High_Head_Pressure_Alarm](High_Head_Pressure_Alarm.md)
+* [Low_Suction_Pressure_Alarm](Low_Suction_Pressure_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

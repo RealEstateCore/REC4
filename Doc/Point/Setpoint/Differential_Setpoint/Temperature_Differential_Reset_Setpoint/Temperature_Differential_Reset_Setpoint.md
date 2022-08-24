@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Differential_Reset_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Supply_Air_Temperature_Reset_Differential_Setpoint](Supply_Air_Temperature_Reset_Differential_Setpoint.md)
+* [Discharge_Air_Temperature_Reset_Differential_Setpoint](Discharge_Air_Temperature_Reset_Differential_Setpoint/Discharge_Air_Temperature_Reset_Differential_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Air_Temperature_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [High_Return_Air_Temperature_Alarm](High_Return_Air_Temperature_Alarm.md)
+* [Low_Return_Air_Temperature_Alarm](Low_Return_Air_Temperature_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

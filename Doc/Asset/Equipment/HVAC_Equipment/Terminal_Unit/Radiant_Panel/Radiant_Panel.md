@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Radiant_Panel;1
 
 ---
+
+
+## Child interfaces
+* [Embedded_Surface_System_Panel](Embedded_Surface_System_Panel.md)
+* [ESS_Panel](ESS_Panel.md)
+* [Radiant_Ceiling_Panel](Radiant_Ceiling_Panel.md)
+* [RC_Panel](RC_Panel.md)
+* [TABS_Panel](TABS_Panel.md)
+* [Thermally_Activated_Building_System_Panel](Thermally_Activated_Building_System_Panel.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

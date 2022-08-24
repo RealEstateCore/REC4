@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Static_Pressure_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [Min_Discharge_Air_Static_Pressure_Setpoint_Limit](Min_Discharge_Air_Static_Pressure_Setpoint_Limit.md)
+* [Min_Supply_Air_Static_Pressure_Setpoint_Limit](Min_Supply_Air_Static_Pressure_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

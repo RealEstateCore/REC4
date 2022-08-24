@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Temperature_Enable_Differential_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Low_Outside_Air_Temperature_Enable_Differential_Sensor](Low_Outside_Air_Temperature_Enable_Differential_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

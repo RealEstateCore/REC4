@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Step_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Differential_Pressure_Step_Parameter](Differential_Pressure_Step_Parameter/Differential_Pressure_Step_Parameter.md)
+* [Static_Pressure_Step_Parameter](Static_Pressure_Step_Parameter/Static_Pressure_Step_Parameter.md)
+* [Temperature_Step_Parameter](Temperature_Step_Parameter/Temperature_Step_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Exchanger;1
 
 ---
+
+
+## Child interfaces
+* [Condenser_Heat_Exchanger](Condenser_Heat_Exchanger.md)
+* [Evaporative_Heat_Exchanger](Evaporative_Heat_Exchanger.md)
+* [Heat_Wheel](Heat_Wheel.md)
+* [Coil](Coil/Coil.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

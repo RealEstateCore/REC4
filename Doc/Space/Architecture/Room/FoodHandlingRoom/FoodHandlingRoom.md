@@ -5,6 +5,18 @@
 **DTMI:** dtmi:org:w3id:rec:FoodHandlingRoom;1
 
 ---
+
+
+## Child interfaces
+* [BarRoom](BarRoom.md)
+* [CafeteriaRoom](CafeteriaRoom.md)
+* [CookingRoom](CookingRoom.md)
+* [DiningRoom](DiningRoom.md)
+* [DishingRoom](DishingRoom.md)
+* [Kitchenette](Kitchenette.md)
+* [Pantry](Pantry.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

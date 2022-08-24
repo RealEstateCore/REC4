@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [High_Humidity_Alarm_Parameter](High_Humidity_Alarm_Parameter.md)
+* [Humidity_Tolerance_Parameter](../Tolerance_Parameter/Humidity_Tolerance_Parameter.md)
+* [Low_Humidity_Alarm_Parameter](Low_Humidity_Alarm_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

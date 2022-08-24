@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_System;1
 
 ---
+
+
+## Child interfaces
+* [Energy_Generation_System](Energy_Generation_System.md)
+* [Energy_Storage_System](Energy_Storage_System/Energy_Storage_System.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

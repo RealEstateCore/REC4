@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:w3id:rec:Entrance;1
 
 ---
+
+
+## Child interfaces
+* [MainEntrance](MainEntrance.md)
+* [ServiceEntrance](ServiceEntrance.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

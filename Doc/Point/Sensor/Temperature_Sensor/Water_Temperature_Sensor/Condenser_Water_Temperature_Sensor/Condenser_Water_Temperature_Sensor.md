@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Condenser_Water_Temperature_Sensor](Entering_Condenser_Water_Temperature_Sensor.md)
+* [Leaving_Condenser_Water_Temperature_Sensor](Leaving_Condenser_Water_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

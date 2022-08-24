@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Point;1
 
 ---
+
+
+## Child interfaces
+* [Alarm](Alarm/Alarm.md)
+* [Command](Command/Command.md)
+* [Parameter](Parameter/Parameter.md)
+* [Sensor](Sensor/Sensor.md)
+* [Setpoint](Setpoint/Setpoint.md)
+* [Status](Status/Status.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Load_Shed_Setpoint](Load_Shed_Setpoint/Load_Shed_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

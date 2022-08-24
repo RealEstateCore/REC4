@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Water_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Heat_Exchanger_Leaving_Water_Temperature_Sensor](Heat_Exchanger_Leaving_Water_Temperature_Sensor.md)
+* [Ice_Tank_Leaving_Water_Temperature_Sensor](Ice_Tank_Leaving_Water_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

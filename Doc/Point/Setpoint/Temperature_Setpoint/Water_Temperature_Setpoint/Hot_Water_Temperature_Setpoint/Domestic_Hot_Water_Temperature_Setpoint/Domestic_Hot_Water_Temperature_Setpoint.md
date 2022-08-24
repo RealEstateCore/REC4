@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Domestic_Hot_Water_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Domestic_Hot_Water_Temperature_Setpoint](Entering_Domestic_Hot_Water_Temperature_Setpoint.md)
+* [Leaving_Domestic_Hot_Water_Temperature_Setpoint](Leaving_Domestic_Hot_Water_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

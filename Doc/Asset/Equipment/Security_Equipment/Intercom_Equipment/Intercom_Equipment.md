@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Intercom_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Emergency_Phone](Emergency_Phone.md)
+* [Video_Intercom](Video_Intercom.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

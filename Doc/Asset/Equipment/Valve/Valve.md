@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Valve;1
 
 ---
+
+
+## Child interfaces
+* [Gas_Valve](Gas_Valve.md)
+* [Natural_Gas_Seismic_Shutoff_Valve](Natural_Gas_Seismic_Shutoff_Valve.md)
+* [HVAC_Valve](HVAC_Valve/HVAC_Valve.md)
+* [Water_Valve](Water_Valve/Water_Valve.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

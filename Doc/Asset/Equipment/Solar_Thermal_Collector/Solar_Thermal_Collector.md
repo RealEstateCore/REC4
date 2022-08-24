@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Solar_Thermal_Collector;1
 
 ---
+
+
+## Child interfaces
+* [PVT_Panel](PVT_Panel.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

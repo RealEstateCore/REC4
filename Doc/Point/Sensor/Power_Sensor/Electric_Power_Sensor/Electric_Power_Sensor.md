@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electric_Power_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Active_Power_Sensor](Active_Power_Sensor.md)
+* [Peak_Power_Demand_Sensor](Peak_Power_Demand_Sensor.md)
+* [Reactive_Power_Sensor](Reactive_Power_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

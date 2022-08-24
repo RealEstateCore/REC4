@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Shed_Status;1
 
 ---
+
+
+## Child interfaces
+* [Differential_Pressure_Load_Shed_Status](../Pressure_Status/Differential_Pressure_Load_Shed_Status/Differential_Pressure_Load_Shed_Status.md)
+* [Entering_Hot_Water_Temperature_Load_Shed_Status](Entering_Hot_Water_Temperature_Load_Shed_Status/Entering_Hot_Water_Temperature_Load_Shed_Status.md)
+* [Leaving_Hot_Water_Temperature_Load_Shed_Status](Leaving_Hot_Water_Temperature_Load_Shed_Status/Leaving_Hot_Water_Temperature_Load_Shed_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

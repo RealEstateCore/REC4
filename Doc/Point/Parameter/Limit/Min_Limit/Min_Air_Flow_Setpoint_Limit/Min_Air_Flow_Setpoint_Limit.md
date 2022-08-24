@@ -5,6 +5,16 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Air_Flow_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [Min_Outside_Air_Flow_Setpoint_Limit](Min_Outside_Air_Flow_Setpoint_Limit.md)
+* [Min_Cooling_Discharge_Air_Flow_Setpoint_Limit](Min_Cooling_Discharge_Air_Flow_Setpoint_Limit/Min_Cooling_Discharge_Air_Flow_Setpoint_Limit.md)
+* [Min_Cooling_Supply_Air_Flow_Setpoint_Limit](Min_Cooling_Supply_Air_Flow_Setpoint_Limit/Min_Cooling_Supply_Air_Flow_Setpoint_Limit.md)
+* [Min_Heating_Discharge_Air_Flow_Setpoint_Limit](Min_Heating_Discharge_Air_Flow_Setpoint_Limit/Min_Heating_Discharge_Air_Flow_Setpoint_Limit.md)
+* [Min_Heating_Supply_Air_Flow_Setpoint_Limit](Min_Heating_Supply_Air_Flow_Setpoint_Limit/Min_Heating_Supply_Air_Flow_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

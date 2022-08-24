@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Smoke_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Smoke_Detection_Alarm](Smoke_Detection_Alarm/Smoke_Detection_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

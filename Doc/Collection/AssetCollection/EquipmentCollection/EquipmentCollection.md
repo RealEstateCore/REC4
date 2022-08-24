@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:w3id:rec:EquipmentCollection;1
 
 ---
+
+
+## Child interfaces
+* [Photovoltaic_Array](Photovoltaic_Array.md)
+* [PV_Array](PV_Array.md)
+* [Loop](Loop/Loop.md)
+* [System](System/System.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

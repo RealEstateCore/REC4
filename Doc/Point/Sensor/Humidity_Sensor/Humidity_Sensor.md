@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Relative_Humidity_Sensor](Relative_Humidity_Sensor/Relative_Humidity_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

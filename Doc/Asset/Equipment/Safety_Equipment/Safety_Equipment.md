@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Safety_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [AED](AED.md)
+* [Automated_External_Defibrillator](Automated_External_Defibrillator.md)
+* [First_Aid_Kit](First_Aid_Kit.md)
+* [Emergency_Wash_Station](Emergency_Wash_Station/Emergency_Wash_Station.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

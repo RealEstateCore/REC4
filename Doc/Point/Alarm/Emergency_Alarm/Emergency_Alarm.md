@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Emergency_Generator_Alarm](Emergency_Generator_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

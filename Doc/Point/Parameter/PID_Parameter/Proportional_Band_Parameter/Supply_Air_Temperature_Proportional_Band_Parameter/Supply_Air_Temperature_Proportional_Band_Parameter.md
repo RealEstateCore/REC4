@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Temperature_Proportional_Band_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Supply_Air_Temperature_Proportional_Band_Parameter](Cooling_Supply_Air_Temperature_Proportional_Band_Parameter.md)
+* [Heating_Supply_Air_Temperature_Proportional_Band_Parameter](Heating_Supply_Air_Temperature_Proportional_Band_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

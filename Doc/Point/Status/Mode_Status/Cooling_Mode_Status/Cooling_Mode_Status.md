@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Mode_Status;1
 
 ---
+
+
+## Child interfaces
+* [Occupied_Cooling_Mode_Status](../Occupied_Mode_Status/Occupied_Cooling_Mode_Status.md)
+* [Unoccupied_Cooling_Mode_Status](../Unoccupied_Mode_Status/Unoccupied_Cooling_Mode_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

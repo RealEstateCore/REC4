@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Flow_Demand_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Flow_Demand_Setpoint](../Discharge_Air_Flow_Setpoint/Discharge_Air_Flow_Demand_Setpoint.md)
+* [Supply_Air_Flow_Demand_Setpoint](../Supply_Air_Flow_Setpoint/Supply_Air_Flow_Demand_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

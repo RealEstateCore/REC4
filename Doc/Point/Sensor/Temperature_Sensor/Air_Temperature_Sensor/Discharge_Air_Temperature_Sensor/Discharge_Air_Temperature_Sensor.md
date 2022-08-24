@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Preheat_Discharge_Air_Temperature_Sensor](Preheat_Discharge_Air_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

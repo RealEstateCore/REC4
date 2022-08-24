@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cycle_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Short_Cycle_Alarm](Short_Cycle_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

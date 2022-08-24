@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Usage_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Hot_Water_Usage_Sensor](Hot_Water_Usage_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

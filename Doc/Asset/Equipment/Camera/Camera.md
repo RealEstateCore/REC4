@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Camera;1
 
 ---
+
+
+## Child interfaces
+* [Surveillance_Camera](../Security_Equipment/Video_Surveillance_Equipment/Surveillance_Camera.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

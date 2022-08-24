@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_System_Enable_Command;1
 
 ---
+
+
+## Child interfaces
+* [Domestic_Hot_Water_System_Enable_Command](Domestic_Hot_Water_System_Enable_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

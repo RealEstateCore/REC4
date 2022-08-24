@@ -8,6 +8,13 @@ The human, group, or machine that consumes or acts upon an object or data. This 
 **DTMI:** dtmi:org:w3id:rec:Agent;1
 
 ---
+
+
+## Child interfaces
+* [Person](Person.md)
+* [Organization](Organization/Organization.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

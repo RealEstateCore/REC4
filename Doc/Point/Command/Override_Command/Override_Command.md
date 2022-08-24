@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Override_Command;1
 
 ---
+
+
+## Child interfaces
+* [Curtailment_Override_Command](Curtailment_Override_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

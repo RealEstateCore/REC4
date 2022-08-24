@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper;1
 
 ---
+
+
+## Child interfaces
+* [Economizer_Damper](Economizer_Damper.md)
+* [Exhaust_Damper](Exhaust_Damper.md)
+* [Mixed_Damper](Mixed_Damper.md)
+* [Outside_Damper](Outside_Damper.md)
+* [Relief_Damper](Relief_Damper.md)
+* [Return_Damper](Return_Damper.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

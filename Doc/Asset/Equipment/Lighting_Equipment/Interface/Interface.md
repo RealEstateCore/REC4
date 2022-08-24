@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Interface;1
 
 ---
+
+
+## Child interfaces
+* [Touchpanel](Touchpanel.md)
+* [Switch](Switch/Switch.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:CRAC;1
 
 ---
+
+
+## Child interfaces
+* [Standby_CRAC](Standby_CRAC.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

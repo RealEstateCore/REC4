@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Proportional_Band;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Pressure_Proportional_Band_Parameter](Chilled_Water_Differential_Pressure_Proportional_Band_Parameter.md)
+* [Entering_Water_Differential_Pressure_Proportional_Band_Parameter](Entering_Water_Differential_Pressure_Proportional_Band_Parameter.md)
+* [Hot_Water_Differential_Pressure_Proportional_Band_Parameter](Hot_Water_Differential_Pressure_Proportional_Band_Parameter.md)
+* [Leaving_Water_Differential_Pressure_Proportional_Band_Parameter](Leaving_Water_Differential_Pressure_Proportional_Band_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Static_Pressure_Proportional_Band_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Static_Pressure_Proportional_Band_Parameter](Discharge_Air_Static_Pressure_Proportional_Band_Parameter.md)
+* [Exhaust_Air_Static_Pressure_Proportional_Band_Parameter](Exhaust_Air_Static_Pressure_Proportional_Band_Parameter.md)
+* [Supply_Air_Static_Pressure_Proportional_Band_Parameter](Supply_Air_Static_Pressure_Proportional_Band_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

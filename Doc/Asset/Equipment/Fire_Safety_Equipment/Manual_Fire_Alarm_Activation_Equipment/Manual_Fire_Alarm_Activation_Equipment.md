@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Manual_Fire_Alarm_Activation_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Fire_Alarm_Manual_Call_Point](Fire_Alarm_Manual_Call_Point.md)
+* [Fire_Alarm_Pull_Station](Fire_Alarm_Pull_Station.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:w3id:rec:Laboratory;1
 
 ---
+
+
+## Child interfaces
+* [LaboratoryDry](LaboratoryDry.md)
+* [LaboratoryWet](LaboratoryWet.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

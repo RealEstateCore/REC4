@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Room_Air_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Effective_Room_Air_Temperature_Setpoint](Effective_Room_Air_Temperature_Setpoint.md)
+* [Occupied_Room_Air_Temperature_Setpoint](Occupied_Room_Air_Temperature_Setpoint.md)
+* [Unoccupied_Room_Air_Temperature_Setpoint](../Unoccupied_Air_Temperature_Setpoint/Unoccupied_Room_Air_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

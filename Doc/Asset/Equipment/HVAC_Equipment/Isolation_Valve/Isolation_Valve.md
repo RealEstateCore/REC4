@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Isolation_Valve;1
 
 ---
+
+
+## Child interfaces
+* [Condenser_Water_Isolation_Valve](Condenser_Water_Isolation_Valve.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

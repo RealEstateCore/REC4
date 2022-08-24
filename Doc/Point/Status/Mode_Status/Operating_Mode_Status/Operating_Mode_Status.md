@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Operating_Mode_Status;1
 
 ---
+
+
+## Child interfaces
+* [Vent_Operating_Mode_Status](Vent_Operating_Mode_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

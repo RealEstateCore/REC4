@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [High_Humidity_Alarm](High_Humidity_Alarm.md)
+* [Low_Humidity_Alarm](Low_Humidity_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Start_Stop_Status;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Start_Stop_Status](Cooling_Start_Stop_Status.md)
+* [Dehumidification_Start_Stop_Status](Dehumidification_Start_Stop_Status.md)
+* [EconCycle_Start_Stop_Status](EconCycle_Start_Stop_Status.md)
+* [Heating_Start_Stop_Status](Heating_Start_Stop_Status.md)
+* [Humidification_Start_Stop_Status](Humidification_Start_Stop_Status.md)
+* [Run_Status](Run_Status/Run_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

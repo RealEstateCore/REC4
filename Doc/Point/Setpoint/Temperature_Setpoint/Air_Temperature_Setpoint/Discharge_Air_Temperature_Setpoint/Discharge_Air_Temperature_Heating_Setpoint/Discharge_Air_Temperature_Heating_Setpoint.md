@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Temperature_Heating_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Heating_Discharge_Air_Temperature_Deadband_Setpoint](Heating_Discharge_Air_Temperature_Deadband_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

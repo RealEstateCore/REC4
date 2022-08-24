@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:w3id:rec:PersonalHygiene;1
 
 ---
+
+
+## Child interfaces
+* [DisabledToilet](DisabledToilet.md)
+* [Sauna](Sauna.md)
+* [ShowerRoom](ShowerRoom.md)
+* [Toilet](Toilet.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

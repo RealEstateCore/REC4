@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Time_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Derivative_Time_Parameter](Derivative_Time_Parameter.md)
+* [Integral_Time_Parameter](Integral_Time_Parameter/Integral_Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

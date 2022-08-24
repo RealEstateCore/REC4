@@ -8,6 +8,14 @@ A temporally indexed entity, e.g., an observation, a lease, a construction proje
 **DTMI:** dtmi:org:w3id:rec:Event;1
 
 ---
+
+
+## Child interfaces
+* [ElevatorTrip](ElevatorTrip.md)
+* [Lease](Lease.md)
+* [PointEvent](PointEvent/PointEvent.md)
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Safety_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Fire_Alarm](Fire_Alarm.md)
+* [Fire_Alarm_Control_Panel](Fire_Alarm_Control_Panel.md)
+* [Fire_Control_Panel](Fire_Control_Panel.md)
+* [Heat_Detector](Heat_Detector.md)
+* [Smoke_Detector](Smoke_Detector.md)
+* [Manual_Fire_Alarm_Activation_Equipment](Manual_Fire_Alarm_Activation_Equipment/Manual_Fire_Alarm_Activation_Equipment.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

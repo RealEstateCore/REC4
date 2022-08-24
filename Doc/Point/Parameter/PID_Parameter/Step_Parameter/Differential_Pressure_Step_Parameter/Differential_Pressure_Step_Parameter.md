@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Step_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Pressure_Step_Parameter](Chilled_Water_Differential_Pressure_Step_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

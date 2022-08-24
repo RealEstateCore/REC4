@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO2_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Return_Air_CO2_Setpoint](Return_Air_CO2_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

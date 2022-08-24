@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Differential_Air_Temperature_Setpoint](Differential_Air_Temperature_Setpoint.md)
+* [Water_Differential_Temperature_Setpoint](Water_Differential_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

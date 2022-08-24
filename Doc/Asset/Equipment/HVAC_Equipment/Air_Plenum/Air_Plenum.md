@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Plenum;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Plenum](Discharge_Air_Plenum.md)
+* [Return_Air_Plenum](Return_Air_Plenum.md)
+* [Supply_Air_Plenum](Supply_Air_Plenum/Supply_Air_Plenum.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

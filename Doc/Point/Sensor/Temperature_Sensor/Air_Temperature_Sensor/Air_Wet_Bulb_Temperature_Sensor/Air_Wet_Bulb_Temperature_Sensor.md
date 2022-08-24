@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Wet_Bulb_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Outside_Air_Wet_Bulb_Temperature_Sensor](../Outside_Air_Temperature_Sensor/Outside_Air_Wet_Bulb_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

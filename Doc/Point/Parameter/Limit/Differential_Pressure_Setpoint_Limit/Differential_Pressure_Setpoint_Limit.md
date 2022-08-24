@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [Max_Chilled_Water_Differential_Pressure_Setpoint_Limit](../Max_Limit/Max_Chilled_Water_Differential_Pressure_Setpoint_Limit.md)
+* [Max_Hot_Water_Differential_Pressure_Setpoint_Limit](../Max_Limit/Max_Hot_Water_Differential_Pressure_Setpoint_Limit.md)
+* [Min_Chilled_Water_Differential_Pressure_Setpoint_Limit](../Min_Limit/Min_Chilled_Water_Differential_Pressure_Setpoint_Limit.md)
+* [Min_Hot_Water_Differential_Pressure_Setpoint_Limit](../Min_Limit/Min_Hot_Water_Differential_Pressure_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

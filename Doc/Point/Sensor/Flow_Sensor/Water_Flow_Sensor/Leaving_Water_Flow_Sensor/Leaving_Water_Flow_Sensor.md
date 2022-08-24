@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Water_Flow_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Leaving_Chilled_Water_Flow_Sensor](Leaving_Chilled_Water_Flow_Sensor.md)
+* [Leaving_Condenser_Water_Flow_Sensor](Leaving_Condenser_Water_Flow_Sensor.md)
+* [Leaving_Hot_Water_Flow_Sensor](Leaving_Hot_Water_Flow_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

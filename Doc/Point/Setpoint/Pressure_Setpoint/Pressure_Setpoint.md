@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Velocity_Pressure_Setpoint](Velocity_Pressure_Setpoint.md)
+* [Static_Pressure_Setpoint](Static_Pressure_Setpoint/Static_Pressure_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

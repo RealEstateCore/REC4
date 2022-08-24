@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper_Command;1
 
 ---
+
+
+## Child interfaces
+* [Damper_Position_Command](../Position_Command/Damper_Position_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

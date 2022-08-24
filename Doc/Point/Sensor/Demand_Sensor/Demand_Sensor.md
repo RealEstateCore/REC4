@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Demand_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Demand_Sensor](Cooling_Demand_Sensor/Cooling_Demand_Sensor.md)
+* [Heating_Demand_Sensor](Heating_Demand_Sensor/Heating_Demand_Sensor.md)
+* [Peak_Power_Demand_Sensor](../Power_Sensor/Electric_Power_Sensor/Peak_Power_Demand_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

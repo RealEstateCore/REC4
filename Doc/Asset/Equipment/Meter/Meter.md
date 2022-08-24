@@ -5,6 +5,16 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Meter;1
 
 ---
+
+
+## Child interfaces
+* [Thermal_Power_Meter](Thermal_Power_Meter.md)
+* [Building_Meter](Building_Meter/Building_Meter.md)
+* [Electrical_Meter](Electrical_Meter/Electrical_Meter.md)
+* [Gas_Meter](Gas_Meter/Gas_Meter.md)
+* [Water_Meter](Water_Meter/Water_Meter.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Embedded_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Core_Temperature_Setpoint](Core_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

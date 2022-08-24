@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Hot_Water_Temperature_Low_Reset_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint](Entering_Medium_Temperature_Hot_Water_Temperature_Low_Reset_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

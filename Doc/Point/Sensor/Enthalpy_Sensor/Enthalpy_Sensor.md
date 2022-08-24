@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enthalpy_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Air_Enthalpy_Sensor](Air_Enthalpy_Sensor/Air_Enthalpy_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

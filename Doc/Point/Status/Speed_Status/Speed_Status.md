@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Status;1
 
 ---
+
+
+## Child interfaces
+* [Speed_Mode_Status](Speed_Mode_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

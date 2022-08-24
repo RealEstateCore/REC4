@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Demand_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Average_Cooling_Demand_Sensor](Average_Cooling_Demand_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

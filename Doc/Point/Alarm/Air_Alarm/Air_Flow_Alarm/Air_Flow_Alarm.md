@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Flow_Alarm;1
 
 ---
+
+
+## Child interfaces
+* [Air_Flow_Loss_Alarm](Air_Flow_Loss_Alarm.md)
+* [High_Air_Flow_Alarm](High_Air_Flow_Alarm.md)
+* [Low_Air_Flow_Alarm](Low_Air_Flow_Alarm/Low_Air_Flow_Alarm.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

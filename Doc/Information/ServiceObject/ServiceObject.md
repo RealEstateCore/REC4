@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:w3id:rec:ServiceObject;1
 
 ---
+
+
+## Child interfaces
+* [AlarmObject](AlarmObject.md)
+* [ErrorReport](ErrorReport.md)
+* [NotificationObject](NotificationObject.md)
+* [WorkOrder](WorkOrder.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Bypass_Water_Flow_Setpoint](Bypass_Water_Flow_Setpoint.md)
+* [Condenser_Water_Flow_Setpoint](Condenser_Water_Flow_Setpoint.md)
+* [Chilled_Water_Flow_Setpoint](Chilled_Water_Flow_Setpoint/Chilled_Water_Flow_Setpoint.md)
+* [Entering_Water_Flow_Setpoint](Entering_Water_Flow_Setpoint/Entering_Water_Flow_Setpoint.md)
+* [Hot_Water_Flow_Setpoint](Hot_Water_Flow_Setpoint/Hot_Water_Flow_Setpoint.md)
+* [Leaving_Water_Flow_Setpoint](Leaving_Water_Flow_Setpoint/Leaving_Water_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

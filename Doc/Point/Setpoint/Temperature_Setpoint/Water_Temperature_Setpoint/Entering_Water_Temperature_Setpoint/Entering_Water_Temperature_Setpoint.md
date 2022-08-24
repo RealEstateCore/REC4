@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Entering_Chilled_Water_Temperature_Setpoint](Entering_Chilled_Water_Temperature_Setpoint.md)
+* [Entering_Hot_Water_Temperature_Setpoint](../Hot_Water_Temperature_Setpoint/Entering_Hot_Water_Temperature_Setpoint.md)
+* [Entering_Water_Temperature_Deadband_Setpoint](Entering_Water_Temperature_Deadband_Setpoint.md)
+* [Entering_Domestic_Hot_Water_Temperature_Setpoint](../Hot_Water_Temperature_Setpoint/Domestic_Hot_Water_Temperature_Setpoint/Entering_Domestic_Hot_Water_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

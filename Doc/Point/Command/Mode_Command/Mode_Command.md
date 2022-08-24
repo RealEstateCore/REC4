@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mode_Command;1
 
 ---
+
+
+## Child interfaces
+* [Automatic_Mode_Command](Automatic_Mode_Command.md)
+* [Box_Mode_Command](Box_Mode_Command.md)
+* [Maintenance_Mode_Command](Maintenance_Mode_Command.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

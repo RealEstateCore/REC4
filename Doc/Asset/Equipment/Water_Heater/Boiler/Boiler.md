@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Boiler;1
 
 ---
+
+
+## Child interfaces
+* [Electric_Boiler](Electric_Boiler.md)
+* [Natural_Gas_Boiler](Natural_Gas_Boiler/Natural_Gas_Boiler.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

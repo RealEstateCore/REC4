@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Static_Pressure_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [High_Static_Pressure_Cutout_Setpoint_Limit](High_Static_Pressure_Cutout_Setpoint_Limit.md)
+* [Max_Static_Pressure_Setpoint_Limit](Max_Static_Pressure_Setpoint_Limit/Max_Static_Pressure_Setpoint_Limit.md)
+* [Min_Static_Pressure_Setpoint_Limit](Min_Static_Pressure_Setpoint_Limit/Min_Static_Pressure_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

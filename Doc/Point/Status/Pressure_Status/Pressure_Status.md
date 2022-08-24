@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Status;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Duct_Pressure_Status](Discharge_Air_Duct_Pressure_Status.md)
+* [Supply_Air_Duct_Pressure_Status](Supply_Air_Duct_Pressure_Status.md)
+* [Differential_Pressure_Load_Shed_Status](Differential_Pressure_Load_Shed_Status/Differential_Pressure_Load_Shed_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

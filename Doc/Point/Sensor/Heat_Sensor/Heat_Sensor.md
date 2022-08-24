@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Trace_Heat_Sensor](Trace_Heat_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

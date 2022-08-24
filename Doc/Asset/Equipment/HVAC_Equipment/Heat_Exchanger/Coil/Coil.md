@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Coil;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Coil](Cooling_Coil/Cooling_Coil.md)
+* [Heating_Coil](Heating_Coil/Heating_Coil.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

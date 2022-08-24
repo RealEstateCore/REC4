@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Frequency_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Output_Frequency_Sensor](Output_Frequency_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

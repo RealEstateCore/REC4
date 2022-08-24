@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:PM1_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [PM1_Level_Sensor](PM1_Level_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Temperature_Step_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Temperature_Step_Parameter](Discharge_Air_Temperature_Step_Parameter.md)
+* [Supply_Air_Temperature_Step_Parameter](Supply_Air_Temperature_Step_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

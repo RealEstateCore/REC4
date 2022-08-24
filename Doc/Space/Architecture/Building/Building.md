@@ -8,6 +8,16 @@ A confined building structure.
 **DTMI:** dtmi:org:w3id:rec:Building;1
 
 ---
+
+
+## Child interfaces
+* [Hospital](Hospital.md)
+* [School](School.md)
+* [ShoppingMall](ShoppingMall.md)
+* [Stadium](Stadium.md)
+* [VirtualBuilding](VirtualBuilding.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupancy_Status;1
 
 ---
+
+
+## Child interfaces
+* [Temporary_Occupancy_Status](Temporary_Occupancy_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

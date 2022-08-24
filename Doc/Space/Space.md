@@ -8,6 +8,13 @@ A contiguous part of the physical world that contains or can contain sub-spaces.
 **DTMI:** dtmi:org:w3id:rec:Space;1
 
 ---
+
+
+## Child interfaces
+* [Region](Region.md)
+* [Architecture](Architecture/Architecture.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

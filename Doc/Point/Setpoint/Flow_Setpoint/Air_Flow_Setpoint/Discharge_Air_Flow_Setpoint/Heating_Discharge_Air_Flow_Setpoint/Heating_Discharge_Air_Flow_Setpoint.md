@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Discharge_Air_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Occupied_Heating_Discharge_Air_Flow_Setpoint](../Occupied_Discharge_Air_Flow_Setpoint/Occupied_Heating_Discharge_Air_Flow_Setpoint.md)
+* [Unoccupied_Heating_Discharge_Air_Flow_Setpoint](../Unoccupied_Discharge_Air_Flow_Setpoint/Unoccupied_Heating_Discharge_Air_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

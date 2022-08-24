@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Outside_Air_Wet_Bulb_Temperature_Sensor](Outside_Air_Wet_Bulb_Temperature_Sensor.md)
+* [Intake_Air_Temperature_Sensor](Intake_Air_Temperature_Sensor.md)
+* [Outside_Air_Temperature_Enable_Differential_Sensor](Outside_Air_Temperature_Enable_Differential_Sensor/Outside_Air_Temperature_Enable_Differential_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

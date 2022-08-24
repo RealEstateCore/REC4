@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Pump;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Pump](Chilled_Water_Pump.md)
+* [Condenser_Water_Pump](Condenser_Water_Pump.md)
+* [Hot_Water_Pump](Hot_Water_Pump.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

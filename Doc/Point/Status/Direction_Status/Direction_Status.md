@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direction_Status;1
 
 ---
+
+
+## Child interfaces
+* [Motor_Direction_Status](Motor_Direction_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

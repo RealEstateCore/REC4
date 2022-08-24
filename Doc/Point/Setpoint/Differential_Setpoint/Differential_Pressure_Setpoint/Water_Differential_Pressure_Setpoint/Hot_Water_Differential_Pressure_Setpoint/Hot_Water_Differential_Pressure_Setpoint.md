@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_Differential_Pressure_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Medium_Temperature_Hot_Water_Differential_Pressure_Setpoint](Medium_Temperature_Hot_Water_Differential_Pressure_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

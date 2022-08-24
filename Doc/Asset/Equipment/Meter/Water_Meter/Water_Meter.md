@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Meter;1
 
 ---
+
+
+## Child interfaces
+* [Building_Water_Meter](Building_Water_Meter.md)
+* [Chilled_Water_Meter](Chilled_Water_Meter/Chilled_Water_Meter.md)
+* [Hot_Water_Meter](Hot_Water_Meter/Hot_Water_Meter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lighting;1
 
 ---
+
+
+## Child interfaces
+* [Luminaire](Luminaire.md)
+* [Luminaire_Driver](Luminaire_Driver.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

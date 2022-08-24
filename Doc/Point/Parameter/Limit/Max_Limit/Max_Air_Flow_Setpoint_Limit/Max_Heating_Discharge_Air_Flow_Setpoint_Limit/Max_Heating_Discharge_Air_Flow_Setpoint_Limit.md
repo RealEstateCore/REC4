@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Heating_Discharge_Air_Flow_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit](Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit.md)
+* [Max_Unoccupied_Heating_Discharge_Air_Flow_Setpoint_Limit](Max_Unoccupied_Heating_Discharge_Air_Flow_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

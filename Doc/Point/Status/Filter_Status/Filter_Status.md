@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Filter_Status;1
 
 ---
+
+
+## Child interfaces
+* [Pre_Filter_Status](Pre_Filter_Status.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

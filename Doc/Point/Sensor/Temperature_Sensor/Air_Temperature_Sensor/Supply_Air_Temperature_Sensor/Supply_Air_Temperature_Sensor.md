@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Preheat_Supply_Air_Temperature_Sensor](Preheat_Supply_Air_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

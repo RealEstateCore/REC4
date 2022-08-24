@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Shed_Differential_Pressure_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Pressure_Load_Shed_Setpoint](../../../Differential_Setpoint/Differential_Pressure_Setpoint/Water_Differential_Pressure_Setpoint/Chilled_Water_Differential_Pressure_Setpoint/Chilled_Water_Differential_Pressure_Load_Shed_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

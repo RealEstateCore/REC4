@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Air_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Effective_Return_Air_Temperature_Setpoint](Effective_Return_Air_Temperature_Setpoint.md)
+* [Occupied_Return_Air_Temperature_Setpoint](Occupied_Return_Air_Temperature_Setpoint.md)
+* [Unoccupied_Return_Air_Temperature_Setpoint](../Unoccupied_Air_Temperature_Setpoint/Unoccupied_Return_Air_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

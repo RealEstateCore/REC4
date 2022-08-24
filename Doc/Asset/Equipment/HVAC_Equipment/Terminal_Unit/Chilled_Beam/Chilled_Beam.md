@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Beam;1
 
 ---
+
+
+## Child interfaces
+* [Active_Chilled_Beam](Active_Chilled_Beam.md)
+* [Passive_Chilled_Beam](Passive_Chilled_Beam.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

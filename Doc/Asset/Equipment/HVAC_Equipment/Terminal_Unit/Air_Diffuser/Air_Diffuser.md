@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Diffuser;1
 
 ---
+
+
+## Child interfaces
+* [Displacement_Flow_Air_Diffuser](Displacement_Flow_Air_Diffuser.md)
+* [Jet_Nozzle_Air_Diffuser](Jet_Nozzle_Air_Diffuser.md)
+* [Laminar_Flow_Air_Diffuser](Laminar_Flow_Air_Diffuser.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

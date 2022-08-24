@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:w3id:rec:Document;1
 
 ---
+
+
+## Child interfaces
+* [LeaseContract](LeaseContract.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

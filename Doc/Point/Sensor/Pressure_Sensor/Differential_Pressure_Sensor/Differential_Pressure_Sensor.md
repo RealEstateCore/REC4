@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Pressure_Sensor](Chilled_Water_Differential_Pressure_Sensor.md)
+* [Filter_Differential_Pressure_Sensor](Filter_Differential_Pressure_Sensor.md)
+* [Air_Differential_Pressure_Sensor](Air_Differential_Pressure_Sensor/Air_Differential_Pressure_Sensor.md)
+* [Hot_Water_Differential_Pressure_Sensor](Hot_Water_Differential_Pressure_Sensor/Hot_Water_Differential_Pressure_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

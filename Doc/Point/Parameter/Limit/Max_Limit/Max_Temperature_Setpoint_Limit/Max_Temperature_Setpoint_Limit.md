@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Temperature_Setpoint_Limit;1
 
 ---
+
+
+## Child interfaces
+* [Max_Discharge_Air_Temperature_Setpoint_Limit](Max_Discharge_Air_Temperature_Setpoint_Limit.md)
+* [Max_Supply_Air_Temperature_Setpoint_Limit](../../../Temperature_Parameter/Air_Temperature_Setpoint_Limit/Supply_Air_Temperature_Setpoint_Limit/Max_Supply_Air_Temperature_Setpoint_Limit.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

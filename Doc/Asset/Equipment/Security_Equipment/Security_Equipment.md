@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Security_Equipment;1
 
 ---
+
+
+## Child interfaces
+* [Intrusion_Detection_Equipment](Intrusion_Detection_Equipment.md)
+* [Access_Control_Equipment](Access_Control_Equipment/Access_Control_Equipment.md)
+* [Intercom_Equipment](Intercom_Equipment/Intercom_Equipment.md)
+* [Video_Surveillance_Equipment](Video_Surveillance_Equipment/Video_Surveillance_Equipment.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

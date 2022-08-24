@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Static_Pressure_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Discharge_Air_Static_Pressure_Deadband_Setpoint](../Static_Pressure_Deadband_Setpoint/Discharge_Air_Static_Pressure_Deadband_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

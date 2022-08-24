@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Integral_Time_Parameter;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Pressure_Integral_Time_Parameter](Chilled_Water_Differential_Pressure_Integral_Time_Parameter.md)
+* [Entering_Water_Differential_Pressure_Integral_Time_Parameter](Entering_Water_Differential_Pressure_Integral_Time_Parameter.md)
+* [Hot_Water_Differential_Pressure_Integral_Time_Parameter](Hot_Water_Differential_Pressure_Integral_Time_Parameter.md)
+* [Leaving_Water_Differential_Pressure_Integral_Time_Parameter](Leaving_Water_Differential_Pressure_Integral_Time_Parameter.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Coil;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Coil](Chilled_Water_Coil.md)
+* [Direct_Expansion_Cooling_Coil](Direct_Expansion_Cooling_Coil.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

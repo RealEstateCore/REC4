@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Temperature_Deadband_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Cooling_Supply_Air_Temperature_Deadband_Setpoint](Cooling_Supply_Air_Temperature_Deadband_Setpoint.md)
+* [Heating_Supply_Air_Temperature_Deadband_Setpoint](Heating_Supply_Air_Temperature_Deadband_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

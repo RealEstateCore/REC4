@@ -5,6 +5,15 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Temperature_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Chilled_Water_Differential_Temperature_Sensor](../Water_Differential_Temperature_Sensor/Chilled_Water_Differential_Temperature_Sensor.md)
+* [Differential_Entering_Leaving_Water_Temperature_Sensor](Differential_Entering_Leaving_Water_Temperature_Sensor.md)
+* [Entering_Chilled_Water_Temperature_Sensor](Entering_Chilled_Water_Temperature_Sensor.md)
+* [Leaving_Chilled_Water_Temperature_Sensor](Leaving_Chilled_Water_Temperature_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -5,6 +5,17 @@
 **DTMI:** dtmi:org:w3id:rec:Information;1
 
 ---
+
+
+## Child interfaces
+* [ArchitectureArea](ArchitectureArea.md)
+* [ArchitectureCapacity](ArchitectureCapacity.md)
+* [PointOfInterest](PointOfInterest.md)
+* [PostalAddress](PostalAddress.md)
+* [Document](Document/Document.md)
+* [ServiceObject](ServiceObject/ServiceObject.md)
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

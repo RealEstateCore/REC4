@@ -8,6 +8,16 @@ A part that constitutes a piece of a building's structural makeup. E.g., Facade,
 **DTMI:** dtmi:org:w3id:rec:BuildingElement;1
 
 ---
+
+
+## Child interfaces
+* [Balcony](Balcony.md)
+* [Facade](Facade.md)
+* [Roof](Roof.md)
+* [Slab](Slab.md)
+* [Wall](Wall/Wall.md)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

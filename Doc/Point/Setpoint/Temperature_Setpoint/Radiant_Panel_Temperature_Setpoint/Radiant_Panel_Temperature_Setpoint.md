@@ -5,6 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Radiant_Panel_Temperature_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Inside_Face_Surface_Temperature_Setpoint](Inside_Face_Surface_Temperature_Setpoint.md)
+* [Outside_Face_Surface_Temperature_Setpoint](Outside_Face_Surface_Temperature_Setpoint.md)
+* [Embedded_Temperature_Setpoint](Embedded_Temperature_Setpoint/Embedded_Temperature_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

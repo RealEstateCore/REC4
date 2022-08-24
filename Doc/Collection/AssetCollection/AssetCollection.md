@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:w3id:rec:AssetCollection;1
 
 ---
+
+
+## Child interfaces
+* [EquipmentCollection](EquipmentCollection/EquipmentCollection.md)
+* [FurnitureCollection](FurnitureCollection.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Collection;1:** documentation

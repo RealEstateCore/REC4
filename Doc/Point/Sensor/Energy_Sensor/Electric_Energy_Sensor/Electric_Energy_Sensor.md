@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electric_Energy_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [Reactive_Energy_Sensor](Reactive_Energy_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

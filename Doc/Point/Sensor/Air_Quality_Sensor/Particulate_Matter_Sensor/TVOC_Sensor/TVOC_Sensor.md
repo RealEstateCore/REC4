@@ -5,6 +5,12 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:TVOC_Sensor;1
 
 ---
+
+
+## Child interfaces
+* [TVOC_Level_Sensor](TVOC_Level_Sensor.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

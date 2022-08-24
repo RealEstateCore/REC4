@@ -5,6 +5,13 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupied_Supply_Air_Flow_Setpoint;1
 
 ---
+
+
+## Child interfaces
+* [Occupied_Cooling_Supply_Air_Flow_Setpoint](Occupied_Cooling_Supply_Air_Flow_Setpoint.md)
+* [Occupied_Heating_Supply_Air_Flow_Setpoint](Occupied_Heating_Supply_Air_Flow_Setpoint.md)
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
