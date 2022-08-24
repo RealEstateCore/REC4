@@ -6,16 +6,22 @@
 
 ---
 
-
 ## Child interfaces
 * [Apartment](Apartment.md)
 * [Campus](Campus.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Collection](../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Alarm](Alarm/Alarm.md)
 * [Command](Command/Command.md)
@@ -16,10 +15,14 @@
 * [Status](Status/Status.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |isPointOf|**en**: Is point of||0-Infinity|||True|
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -30,6 +33,9 @@
 |hasSubstance|**en**: has substance||enum (Air, Blowdown_Water, Building_Air, Bypass_Air, Bypass_Water, CO, CO2, Chilled_Water, Collection_Basin_Water, Condenser_Water, Deionized_Water, Discharge_Air, Domestic_Water, Entering_Chilled_Water, Entering_Condenser_Water, Entering_Hot_Water, Entering_Water, Exhaust_Air, Fluid, Frost, Fuel_Oil, Gas, Gasoline, Glycol, Hail, Hot_Water, Ice, Leaving_Chilled_Water, Leaving_Condenser_Water, Leaving_Hot_Water, Leaving_Water, Liquid, Liquid_CO2, Makeup_Water, Mixed_Air, Natural_Gas, Oil, Outside_Air, Potable_Water, Refrigerant, Return_Air, Soil, Solid, Steam, Supply_Air, Water, Zone_Air)|True|
 |lastKnownValue|**en**: Last known value||Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
 |name|**en**: name||string|True|
+
+---
+
 ## Target Of
 ### Direct
 * [Asset](../Asset/Asset.md).hasPoint

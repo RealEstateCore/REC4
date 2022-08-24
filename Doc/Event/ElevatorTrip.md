@@ -5,6 +5,7 @@
 **DTMI:** dtmi:org:w3id:rec:ElevatorTrip;1
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -14,4 +15,7 @@
 |tripDirection|**en**: trip direction||enum (Down, Up)|True|
 ### Inherited Properties
 * **[Event](Event.md):** customTags, end, externalIds, name, start, timestamp
+
+---
+
 ## Target Of

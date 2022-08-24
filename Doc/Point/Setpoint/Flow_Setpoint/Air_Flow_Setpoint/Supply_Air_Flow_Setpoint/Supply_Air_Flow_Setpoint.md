@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Supply_Air_Flow_Demand_Setpoint](Supply_Air_Flow_Demand_Setpoint.md)
 * [Cooling_Supply_Air_Flow_Setpoint](Cooling_Supply_Air_Flow_Setpoint/Cooling_Supply_Air_Flow_Setpoint.md)
@@ -15,12 +14,19 @@
 * [Unoccupied_Supply_Air_Flow_Setpoint](Unoccupied_Supply_Air_Flow_Setpoint/Unoccupied_Supply_Air_Flow_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

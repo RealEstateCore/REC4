@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Collection_Basin_Water_Level_Alarm](Collection_Basin_Water_Level_Alarm.md)
 * [Max_Water_Level_Alarm](Max_Water_Level_Alarm.md)
 * [Min_Water_Level_Alarm](Min_Water_Level_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

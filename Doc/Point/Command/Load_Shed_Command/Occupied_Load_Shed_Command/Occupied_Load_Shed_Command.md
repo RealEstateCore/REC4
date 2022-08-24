@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Zone_Occupied_Load_Shed_Command](Zone_Occupied_Load_Shed_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

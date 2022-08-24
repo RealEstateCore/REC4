@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Max_Air_Temperature_Setpoint](Max_Air_Temperature_Setpoint.md)
 * [Min_Air_Temperature_Setpoint](Min_Air_Temperature_Setpoint.md)
@@ -23,12 +22,19 @@
 * [Zone_Air_Temperature_Setpoint](Zone_Air_Temperature_Setpoint/Zone_Air_Temperature_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

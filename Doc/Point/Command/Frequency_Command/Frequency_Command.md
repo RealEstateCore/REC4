@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Max_Frequency_Command](Max_Frequency_Command.md)
 * [Min_Frequency_Command](Min_Frequency_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Exhaust_Air_Stack_Flow_Deadband_Setpoint](../Exhaust_Air_Flow_Setpoint/Exhaust_Air_Stack_Flow_Setpoint/Exhaust_Air_Stack_Flow_Deadband_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

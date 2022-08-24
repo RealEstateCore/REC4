@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Close_Limit](Close_Limit.md)
 * [Current_Limit](Current_Limit.md)
@@ -22,12 +21,19 @@
 * [Static_Pressure_Setpoint_Limit](Static_Pressure_Setpoint_Limit/Static_Pressure_Setpoint_Limit.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

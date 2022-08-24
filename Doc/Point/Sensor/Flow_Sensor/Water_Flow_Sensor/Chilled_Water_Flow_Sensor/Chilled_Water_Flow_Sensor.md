@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Entering_Chilled_Water_Flow_Sensor](../Entering_Water_Flow_Sensor/Entering_Chilled_Water_Flow_Sensor.md)
 * [Leaving_Chilled_Water_Flow_Sensor](../Leaving_Water_Flow_Sensor/Leaving_Chilled_Water_Flow_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

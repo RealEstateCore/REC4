@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Disable_Hot_Water_System_Outside_Air_Temperature_Setpoint](Disable_Hot_Water_System_Outside_Air_Temperature_Setpoint.md)
 * [Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint](Enable_Hot_Water_System_Outside_Air_Temperature_Setpoint.md)
@@ -15,12 +14,19 @@
 * [Outside_Air_Lockout_Temperature_Setpoint](Outside_Air_Lockout_Temperature_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

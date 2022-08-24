@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [High_Humidity_Alarm_Parameter](High_Humidity_Alarm_Parameter.md)
 * [Humidity_Tolerance_Parameter](../Tolerance_Parameter/Humidity_Tolerance_Parameter.md)
 * [Low_Humidity_Alarm_Parameter](Low_Humidity_Alarm_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Deionized_Water_Alarm](Deionized_Water_Alarm.md)
 * [No_Water_Alarm](No_Water_Alarm.md)
@@ -15,12 +14,19 @@
 * [Water_Level_Alarm](Water_Level_Alarm/Water_Level_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

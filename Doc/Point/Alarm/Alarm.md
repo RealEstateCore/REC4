@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Change_Filter_Alarm](Change_Filter_Alarm.md)
 * [Communication_Loss_Alarm](Communication_Loss_Alarm.md)
@@ -31,12 +30,19 @@
 * [Water_Alarm](Water_Alarm/Water_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset/Asset.md).hasPoint

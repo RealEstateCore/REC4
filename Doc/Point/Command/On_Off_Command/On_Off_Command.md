@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Lead_On_Off_Command](Lead_On_Off_Command.md)
 * [Off_Command](Off_Command.md)
@@ -15,12 +14,19 @@
 * [Steam_On_Off_Command](Steam_On_Off_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

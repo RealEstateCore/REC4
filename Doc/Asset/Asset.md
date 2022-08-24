@@ -9,13 +9,13 @@ Something which is placed inside of a building, but is not an integral part of t
 
 ---
 
-
 ## Child interfaces
 * [Equipment](Equipment/Equipment.md)
 * [ArchitecturalAsset](ArchitecturalAsset/ArchitecturalAsset.md)
 * [Furniture](Furniture/Furniture.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
@@ -29,6 +29,9 @@ Something which is placed inside of a building, but is not an integral part of t
 |manufacturedBy|**en**: manufactured by||0-Infinity|[Agent](../Agent/Agent.md)||True|
 |mountedOn|**en**: mounted on|**en**: An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc).|0-1|[BuildingElement](../BuildingElement/BuildingElement.md)||True|
 |servicedBy|**en**: serviced by||0-Infinity|[Agent](../Agent/Agent.md)||True|
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -47,6 +50,9 @@ Something which is placed inside of a building, but is not an integral part of t
 |serialNumber|**en**: serial number||string|True|
 |turnoverDate|**en**: turnover date||date|True|
 |weight|**en**: weight||string|True|
+
+---
+
 ## Target Of
 ### Direct
 * [Asset](#).hasPart

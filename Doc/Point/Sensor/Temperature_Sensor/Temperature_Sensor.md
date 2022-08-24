@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Frost_Sensor](Frost_Sensor.md)
 * [Heat_Sink_Temperature_Sensor](Heat_Sink_Temperature_Sensor.md)
@@ -18,12 +17,19 @@
 * [Air_Wet_Bulb_Temperature_Sensor](Air_Temperature_Sensor/Air_Wet_Bulb_Temperature_Sensor/Air_Wet_Bulb_Temperature_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

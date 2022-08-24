@@ -8,6 +8,7 @@ Describes business-relevant area measurements typically associated with architec
 **DTMI:** dtmi:org:w3id:rec:ArchitectureArea;1
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -16,4 +17,7 @@ Describes business-relevant area measurements typically associated with architec
 |rentableArea|**en**: rentable area||float|True|
 ### Inherited Properties
 * **[Information](Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

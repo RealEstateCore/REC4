@@ -5,12 +5,19 @@
 **DTMI:** dtmi:org:w3id:rec:Balcony;1
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[BuildingElement](BuildingElement.md):** documentation, hasPart, isPartOf, locatedIn
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[BuildingElement](BuildingElement.md):** customTags, externalIds, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../Asset/Asset.md).mountedOn

@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [High_Head_Pressure_Alarm](High_Head_Pressure_Alarm.md)
 * [Low_Suction_Pressure_Alarm](Low_Suction_Pressure_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

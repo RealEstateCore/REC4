@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Cooling_Discharge_Air_Temperature_Proportional_Band_Parameter](Cooling_Discharge_Air_Temperature_Proportional_Band_Parameter.md)
 * [Heating_Discharge_Air_Temperature_Proportional_Band_Parameter](Heating_Discharge_Air_Temperature_Proportional_Band_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

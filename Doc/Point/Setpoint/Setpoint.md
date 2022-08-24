@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Current_Ratio_Setpoint](Current_Ratio_Setpoint.md)
 * [Damper_Position_Setpoint](Damper_Position_Setpoint.md)
@@ -30,12 +29,19 @@
 * [Time_Setpoint](Time_Setpoint/Time_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset/Asset.md).hasPoint

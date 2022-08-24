@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Energy_Usage_Sensor](Energy_Usage_Sensor.md)
 * [Natural_Gas_Usage_Sensor](Natural_Gas_Usage_Sensor.md)
@@ -14,12 +13,19 @@
 * [Water_Usage_Sensor](Water_Usage_Sensor/Water_Usage_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

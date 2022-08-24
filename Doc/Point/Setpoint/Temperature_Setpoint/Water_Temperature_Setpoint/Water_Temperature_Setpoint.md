@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Max_Water_Temperature_Setpoint](Max_Water_Temperature_Setpoint.md)
 * [Min_Water_Temperature_Setpoint](Min_Water_Temperature_Setpoint.md)
@@ -17,12 +16,19 @@
 * [Domestic_Hot_Water_Temperature_Setpoint](Hot_Water_Temperature_Setpoint/Domestic_Hot_Water_Temperature_Setpoint/Domestic_Hot_Water_Temperature_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

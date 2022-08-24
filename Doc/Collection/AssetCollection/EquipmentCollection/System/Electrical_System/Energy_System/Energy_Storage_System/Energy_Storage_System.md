@@ -6,16 +6,22 @@
 
 ---
 
-
 ## Child interfaces
 * [Battery_Energy_Storage_System](Battery_Energy_Storage_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

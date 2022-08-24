@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [High_Discharge_Air_Temperature_Alarm](../Air_Temperature_Alarm/Discharge_Air_Temperature_Alarm/High_Discharge_Air_Temperature_Alarm.md)
 * [High_Return_Air_Temperature_Alarm](../Air_Temperature_Alarm/Return_Air_Temperature_Alarm/High_Return_Air_Temperature_Alarm.md)
 * [High_Supply_Air_Temperature_Alarm](../Air_Temperature_Alarm/Supply_Air_Temperature_Alarm/High_Supply_Air_Temperature_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

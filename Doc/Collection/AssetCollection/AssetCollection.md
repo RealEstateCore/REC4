@@ -6,16 +6,22 @@
 
 ---
 
-
 ## Child interfaces
 * [EquipmentCollection](EquipmentCollection/EquipmentCollection.md)
 * [FurnitureCollection](FurnitureCollection.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Collection](../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

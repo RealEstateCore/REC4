@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Speed_Mode_Status](../Speed_Status/Speed_Mode_Status.md)
 * [Zone_Air_Conditioning_Mode_Status](Zone_Air_Conditioning_Mode_Status.md)
@@ -17,12 +16,19 @@
 * [Unoccupied_Mode_Status](Unoccupied_Mode_Status/Unoccupied_Mode_Status.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

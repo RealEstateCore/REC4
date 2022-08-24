@@ -9,13 +9,13 @@ A temporally indexed entity, e.g., an observation, a lease, a construction proje
 
 ---
 
-
 ## Child interfaces
 * [ElevatorTrip](ElevatorTrip.md)
 * [Lease](Lease.md)
 * [PointEvent](PointEvent/PointEvent.md)
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -25,4 +25,7 @@ A temporally indexed entity, e.g., an observation, a lease, a construction proje
 |name|**en**: name||string|True|
 |start|**en**: start|**en**: Event start timestamp.|dateTime|True|
 |timestamp|**en**: timestamp||dateTime|True|
+
+---
+
 ## Target Of

@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Boiler_Command](Boiler_Command.md)
 * [Bypass_Command](Bypass_Command.md)
@@ -37,12 +36,19 @@
 * [Valve_Command](Valve_Command/Valve_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset/Asset.md).hasPoint

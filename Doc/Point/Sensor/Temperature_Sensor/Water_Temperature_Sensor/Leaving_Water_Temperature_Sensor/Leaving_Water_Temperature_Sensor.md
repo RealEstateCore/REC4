@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Heat_Exchanger_Leaving_Water_Temperature_Sensor](Heat_Exchanger_Leaving_Water_Temperature_Sensor.md)
 * [Ice_Tank_Leaving_Water_Temperature_Sensor](Ice_Tank_Leaving_Water_Temperature_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

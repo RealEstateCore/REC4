@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Standby_Glycool_Unit_On_Off_Status](Standby_Glycool_Unit_On_Off_Status.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

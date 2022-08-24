@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Entering_Condenser_Water_Temperature_Sensor](Entering_Condenser_Water_Temperature_Sensor.md)
 * [Leaving_Condenser_Water_Temperature_Sensor](Leaving_Condenser_Water_Temperature_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

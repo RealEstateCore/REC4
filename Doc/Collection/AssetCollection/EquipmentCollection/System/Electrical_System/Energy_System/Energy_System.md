@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Energy_Generation_System](Energy_Generation_System.md)
 * [Energy_Storage_System](Energy_Storage_System/Energy_Storage_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

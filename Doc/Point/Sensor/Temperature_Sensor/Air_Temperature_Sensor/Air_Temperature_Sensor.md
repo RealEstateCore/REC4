@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Exhaust_Air_Temperature_Sensor](Exhaust_Air_Temperature_Sensor.md)
 * [Mixed_Air_Temperature_Sensor](Mixed_Air_Temperature_Sensor.md)
@@ -19,12 +18,19 @@
 * [Zone_Air_Temperature_Sensor](Zone_Air_Temperature_Sensor/Zone_Air_Temperature_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

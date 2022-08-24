@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Domestic_Hot_Water_System](Domestic_Hot_Water_System.md)
 * [Gas_System](Gas_System.md)
@@ -18,11 +17,18 @@
 * [Shading_System](Shading_System/Shading_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

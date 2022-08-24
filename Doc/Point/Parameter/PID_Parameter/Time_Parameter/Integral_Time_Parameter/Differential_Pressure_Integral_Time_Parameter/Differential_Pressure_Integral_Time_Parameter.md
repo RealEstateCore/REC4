@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Chilled_Water_Differential_Pressure_Integral_Time_Parameter](Chilled_Water_Differential_Pressure_Integral_Time_Parameter.md)
 * [Entering_Water_Differential_Pressure_Integral_Time_Parameter](Entering_Water_Differential_Pressure_Integral_Time_Parameter.md)
@@ -14,12 +13,19 @@
 * [Leaving_Water_Differential_Pressure_Integral_Time_Parameter](Leaving_Water_Differential_Pressure_Integral_Time_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../../Asset/Asset.md).hasPoint

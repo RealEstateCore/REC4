@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Building_Air_Humidity_Setpoint](Building_Air_Humidity_Setpoint.md)
 * [Bypass_Air_Humidity_Setpoint](Bypass_Air_Humidity_Setpoint.md)
@@ -21,12 +20,19 @@
 * [Zone_Air_Humidity_Setpoint](Zone_Air_Humidity_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

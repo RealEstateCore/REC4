@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Differential_Pressure_Setpoint](Discharge_Air_Differential_Pressure_Setpoint.md)
 * [Exhaust_Air_Differential_Pressure_Setpoint](Exhaust_Air_Differential_Pressure_Setpoint.md)
@@ -14,12 +13,19 @@
 * [Supply_Air_Differential_Pressure_Setpoint](Supply_Air_Differential_Pressure_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Natural_Gas_Flow_Sensor](Natural_Gas_Flow_Sensor.md)
 * [Air_Flow_Sensor](Air_Flow_Sensor/Air_Flow_Sensor.md)
 * [Water_Flow_Sensor](Water_Flow_Sensor/Water_Flow_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

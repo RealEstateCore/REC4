@@ -6,21 +6,27 @@
 
 ---
 
-
 ## Child interfaces
 * [Reheat_Valve](Reheat_Valve.md)
 * [Return_Heating_Valve](Return_Heating_Valve.md)
 * [Hot_Water_Valve](../../Valve/Water_Valve/Hot_Water_Valve/Hot_Water_Valve.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Equipment](../../Equipment.md):** feeds, isFedBy
 * **[Asset](../../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Equipment](../../Equipment.md):** operationalStageCount
 * **[Asset](../../../Asset.md):** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset.md).hasPart

@@ -9,17 +9,20 @@ An event emanating from or targeting a Point; e.g., an individual Observation fr
 
 ---
 
-
 ## Child interfaces
 * [ActuationEvent](ActuationEvent.md)
 * [ExceptionEvent](ExceptionEvent.md)
 * [ObservationEvent](ObservationEvent.md)
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |payload|**en**: payload|**en**: The payload message of this point event (e.g., a sensor reading, a command message, an exception message, etc.)|string|True|
 ### Inherited Properties
 * **[Event](../Event.md):** customTags, end, externalIds, name, start, timestamp
+
+---
+
 ## Target Of

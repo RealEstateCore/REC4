@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Alarm_Sensitivity_Parameter](Alarm_Sensitivity_Parameter/Alarm_Sensitivity_Parameter.md)
 * [Delay_Parameter](Delay_Parameter/Delay_Parameter.md)
@@ -18,12 +17,19 @@
 * [Tolerance_Parameter](Tolerance_Parameter/Tolerance_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset/Asset.md).hasPoint

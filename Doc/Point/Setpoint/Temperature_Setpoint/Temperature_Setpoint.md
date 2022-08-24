@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Schedule_Temperature_Setpoint](Schedule_Temperature_Setpoint.md)
 * [Temperature_Deadband_Setpoint](Temperature_Deadband_Setpoint/Temperature_Deadband_Setpoint.md)
@@ -17,12 +16,19 @@
 * [Water_Temperature_Setpoint](Water_Temperature_Setpoint/Water_Temperature_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

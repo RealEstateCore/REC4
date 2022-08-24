@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [ArchitectureArea](ArchitectureArea.md)
 * [ArchitectureCapacity](ArchitectureCapacity.md)
@@ -16,10 +15,14 @@
 * [ServiceObject](ServiceObject/ServiceObject.md)
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |customTags|**en**: Custom Tags||map (string->boolean)|True|
 |externalIds|**en**: External IDs||map (string->string)|True|
 |name|**en**: name||string|True|
+
+---
+
 ## Target Of

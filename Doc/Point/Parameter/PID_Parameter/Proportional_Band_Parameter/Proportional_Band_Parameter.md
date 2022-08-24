@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Entering_Water_Temperature_Proportional_Band_Parameter](Entering_Water_Temperature_Proportional_Band_Parameter.md)
 * [Leaving_Water_Temperature_Proportional_Band_Parameter](Leaving_Water_Temperature_Proportional_Band_Parameter.md)
@@ -17,12 +16,19 @@
 * [Supply_Air_Temperature_Proportional_Band_Parameter](Supply_Air_Temperature_Proportional_Band_Parameter/Supply_Air_Temperature_Proportional_Band_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

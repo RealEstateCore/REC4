@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Dewpoint_Sensor](Discharge_Air_Dewpoint_Sensor.md)
 * [Exhaust_Air_Dewpoint_Sensor](Exhaust_Air_Dewpoint_Sensor.md)
@@ -16,12 +15,19 @@
 * [Zone_Air_Dewpoint_Sensor](Zone_Air_Dewpoint_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

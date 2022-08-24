@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Static_Pressure_Integral_Time_Parameter](Discharge_Air_Static_Pressure_Integral_Time_Parameter.md)
 * [Supply_Air_Static_Pressure_Integral_Time_Parameter](Supply_Air_Static_Pressure_Integral_Time_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../../Asset/Asset.md).hasPoint

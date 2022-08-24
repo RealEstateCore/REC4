@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Fan_On_Off_Status](Fan_On_Off_Status.md)
 * [Locally_On_Off_Status](Locally_On_Off_Status.md)
@@ -17,12 +16,19 @@
 * [Start_Stop_Status](Start_Stop_Status/Start_Stop_Status.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

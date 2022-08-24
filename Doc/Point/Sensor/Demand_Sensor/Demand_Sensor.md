@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Cooling_Demand_Sensor](Cooling_Demand_Sensor/Cooling_Demand_Sensor.md)
 * [Heating_Demand_Sensor](Heating_Demand_Sensor/Heating_Demand_Sensor.md)
 * [Peak_Power_Demand_Sensor](../Power_Sensor/Electric_Power_Sensor/Peak_Power_Demand_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Differential_Speed_Sensor](Differential_Speed_Sensor.md)
 * [Motor_Speed_Sensor](Motor_Speed_Sensor.md)
 * [Wind_Speed_Sensor](Wind_Speed_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

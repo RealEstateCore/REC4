@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Intrusion_Detection_Equipment](Intrusion_Detection_Equipment.md)
 * [Access_Control_Equipment](Access_Control_Equipment/Access_Control_Equipment.md)
@@ -14,14 +13,21 @@
 * [Video_Surveillance_Equipment](Video_Surveillance_Equipment/Video_Surveillance_Equipment.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Equipment](../Equipment.md):** feeds, isFedBy
 * **[Asset](../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Equipment](../Equipment.md):** operationalStageCount
 * **[Asset](../../Asset.md):** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset.md).hasPart

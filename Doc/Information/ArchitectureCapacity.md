@@ -8,6 +8,7 @@ Describes business-relevant capacity measurements typically associated with arch
 **DTMI:** dtmi:org:w3id:rec:ArchitectureCapacity;1
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -15,4 +16,7 @@ Describes business-relevant capacity measurements typically associated with arch
 |seatingCapacity|**en**: seating capacity||integer|True|
 ### Inherited Properties
 * **[Information](Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Supply_Air_Temperature_Reset_Differential_Setpoint](Supply_Air_Temperature_Reset_Differential_Setpoint.md)
 * [Discharge_Air_Temperature_Reset_Differential_Setpoint](Discharge_Air_Temperature_Reset_Differential_Setpoint/Discharge_Air_Temperature_Reset_Differential_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

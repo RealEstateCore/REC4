@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Emergency_Air_Flow_System](Emergency_Air_Flow_System.md)
 * [Emergency_Power_Off_System](Emergency_Power_Off_System.md)
 * [Fire_Safety_System](Fire_Safety_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

@@ -8,15 +8,22 @@ Formal document that identifies the Tenant and the leased asset or property; sta
 **DTMI:** dtmi:org:w3id:rec:LeaseContract;1
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |regulates|**en**: regulates|**en**: Indicates the lease(s) that this contract regulates the conditions of.|0-Infinity|[Lease](../../Event/Lease.md)||True|
 ### Inherited Relationships
 * **[Document](Document.md):** documentTopic, url
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Information](../Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of
 ### Direct
 * [Lease](../../Event/Lease.md).regulatedBy

@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Chilled_Water_System](Chilled_Water_System.md)
 * [Condenser_Water_System](Condenser_Water_System.md)
 * [Hot_Water_System](Hot_Water_System/Hot_Water_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

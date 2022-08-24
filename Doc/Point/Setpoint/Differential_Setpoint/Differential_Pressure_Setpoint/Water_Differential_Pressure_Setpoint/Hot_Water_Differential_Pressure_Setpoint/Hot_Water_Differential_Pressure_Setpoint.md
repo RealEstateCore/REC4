@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Medium_Temperature_Hot_Water_Differential_Pressure_Setpoint](Medium_Temperature_Hot_Water_Differential_Pressure_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../../Asset/Asset.md).hasPoint

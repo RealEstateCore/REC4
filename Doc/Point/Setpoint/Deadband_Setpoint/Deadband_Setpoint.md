@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Humidity_Deadband_Setpoint](Humidity_Deadband_Setpoint.md)
 * [Temperature_Deadband_Setpoint](../Temperature_Setpoint/Temperature_Deadband_Setpoint/Temperature_Deadband_Setpoint.md)
@@ -14,12 +13,19 @@
 * [Static_Pressure_Deadband_Setpoint](../Pressure_Setpoint/Static_Pressure_Setpoint/Static_Pressure_Deadband_Setpoint/Static_Pressure_Deadband_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

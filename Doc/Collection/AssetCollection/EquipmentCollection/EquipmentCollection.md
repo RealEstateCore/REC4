@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Photovoltaic_Array](Photovoltaic_Array.md)
 * [PV_Array](PV_Array.md)
@@ -14,6 +13,7 @@
 * [System](System/System.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
@@ -22,7 +22,13 @@
 |includes|**en**: includes||0-Infinity|[Equipment](../../../Asset/Equipment/Equipment.md)||True|
 ### Inherited Relationships
 * **[Collection](../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

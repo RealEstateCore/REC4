@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Outside_Air_Wet_Bulb_Temperature_Sensor](Outside_Air_Wet_Bulb_Temperature_Sensor.md)
 * [Intake_Air_Temperature_Sensor](Intake_Air_Temperature_Sensor.md)
 * [Outside_Air_Temperature_Enable_Differential_Sensor](Outside_Air_Temperature_Enable_Differential_Sensor/Outside_Air_Temperature_Enable_Differential_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

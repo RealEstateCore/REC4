@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Static_Pressure_Deadband_Setpoint](../Static_Pressure_Deadband_Setpoint/Discharge_Air_Static_Pressure_Deadband_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

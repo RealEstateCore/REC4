@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Cooling_Enable_Command](Cooling_Enable_Command.md)
 * [Enable_Differential_Enthalpy_Command](Enable_Differential_Enthalpy_Command.md)
@@ -20,12 +19,19 @@
 * [System_Enable_Command](System_Enable_Command/System_Enable_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

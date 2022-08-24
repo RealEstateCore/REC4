@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Thermal_Power_Meter](Thermal_Power_Meter.md)
 * [Building_Meter](Building_Meter/Building_Meter.md)
@@ -15,6 +14,7 @@
 * [Water_Meter](Water_Meter/Water_Meter.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
@@ -23,6 +23,9 @@
 ### Inherited Relationships
 * **[Equipment](../Equipment.md):** feeds, isFedBy
 * **[Asset](../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -32,6 +35,9 @@
 ### Inherited Properties
 * **[Equipment](../Equipment.md):** operationalStageCount
 * **[Asset](../../Asset.md):** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
+
+---
+
 ## Target Of
 ### Direct
 * [Meter](#).hasSubMeter

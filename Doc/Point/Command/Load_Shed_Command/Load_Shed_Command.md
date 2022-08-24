@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Occupied_Load_Shed_Command](Occupied_Load_Shed_Command/Occupied_Load_Shed_Command.md)
 * [Standby_Load_Shed_Command](Standby_Load_Shed_Command/Standby_Load_Shed_Command.md)
 * [Unoccupied_Load_Shed_Command](Unoccupied_Load_Shed_Command/Unoccupied_Load_Shed_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

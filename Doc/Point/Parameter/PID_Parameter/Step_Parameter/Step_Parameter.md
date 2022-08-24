@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Differential_Pressure_Step_Parameter](Differential_Pressure_Step_Parameter/Differential_Pressure_Step_Parameter.md)
 * [Static_Pressure_Step_Parameter](Static_Pressure_Step_Parameter/Static_Pressure_Step_Parameter.md)
 * [Temperature_Step_Parameter](Temperature_Step_Parameter/Temperature_Step_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

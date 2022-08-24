@@ -6,16 +6,22 @@
 
 ---
 
-
 ## Child interfaces
 * [Ventilation_Air_System](Ventilation_Air_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

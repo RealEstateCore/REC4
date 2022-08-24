@@ -6,17 +6,23 @@
 
 ---
 
-
 ## Child interfaces
 * [Domestic_Hot_Water_System_Enable_Command](Domestic_Hot_Water_System_Enable_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

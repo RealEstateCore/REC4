@@ -5,6 +5,7 @@
 **DTMI:** dtmi:org:w3id:rec:PostalAddress;1
 
 ---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -16,6 +17,9 @@
 |region|**en**: region||string|True|
 ### Inherited Properties
 * **[Information](Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of
 ### Direct
 * [Architecture](../Space/Architecture/Architecture.md).address

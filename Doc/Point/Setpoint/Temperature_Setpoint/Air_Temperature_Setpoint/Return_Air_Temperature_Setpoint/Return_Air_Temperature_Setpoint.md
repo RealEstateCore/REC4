@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Effective_Return_Air_Temperature_Setpoint](Effective_Return_Air_Temperature_Setpoint.md)
 * [Occupied_Return_Air_Temperature_Setpoint](Occupied_Return_Air_Temperature_Setpoint.md)
 * [Unoccupied_Return_Air_Temperature_Setpoint](../Unoccupied_Air_Temperature_Setpoint/Unoccupied_Return_Air_Temperature_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

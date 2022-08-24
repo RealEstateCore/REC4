@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Entering_Domestic_Hot_Water_Temperature_Sensor](../Entering_Hot_Water_Temperature_Sensor/Entering_Domestic_Hot_Water_Temperature_Sensor.md)
 * [Leaving_Domestic_Hot_Water_Temperature_Sensor](../Leaving_Hot_Water_Temperature_Sensor/Leaving_Domestic_Hot_Water_Temperature_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

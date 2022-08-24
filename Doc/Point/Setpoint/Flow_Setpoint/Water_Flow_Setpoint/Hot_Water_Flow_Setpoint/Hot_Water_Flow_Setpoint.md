@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Entering_Hot_Water_Flow_Setpoint](Entering_Hot_Water_Flow_Setpoint.md)
 * [Leaving_Hot_Water_Flow_Setpoint](../Leaving_Water_Flow_Setpoint/Leaving_Hot_Water_Flow_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

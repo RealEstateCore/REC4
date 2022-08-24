@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Cooling_Discharge_Air_Temperature_Deadband_Setpoint](Cooling_Discharge_Air_Temperature_Deadband_Setpoint.md)
 * [Heating_Discharge_Air_Temperature_Deadband_Setpoint](../Discharge_Air_Temperature_Heating_Setpoint/Heating_Discharge_Air_Temperature_Deadband_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../../Asset/Asset.md).hasPoint

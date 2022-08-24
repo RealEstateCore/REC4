@@ -9,22 +9,28 @@ The human, group, or machine that consumes or acts upon an object or data. This 
 
 ---
 
-
 ## Child interfaces
 * [Person](Person.md)
 * [Organization](Organization/Organization.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |isMemberOf|**en**: is member of|**en**: Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic Organization.isPartOf property.|0-Infinity|[Organization](Organization/Organization.md)||True|
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |customTags|**en**: Custom Tags||map (string->boolean)|True|
 |externalIds|**en**: External IDs||map (string->string)|True|
 |name|**en**: name||string|True|
+
+---
+
 ## Target Of
 ### Direct
 * [Asset](../Asset/Asset.md).commissionedBy

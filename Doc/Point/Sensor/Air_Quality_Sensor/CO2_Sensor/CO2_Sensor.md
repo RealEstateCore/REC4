@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [CO2_Differential_Sensor](CO2_Differential_Sensor.md)
 * [CO2_Level_Sensor](CO2_Level_Sensor.md)
@@ -14,12 +13,19 @@
 * [Return_Air_CO2_Sensor](Return_Air_CO2_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

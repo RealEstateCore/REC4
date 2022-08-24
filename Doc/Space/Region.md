@@ -8,12 +8,19 @@ An administrative geospatial unit larger than the individual real estate. For in
 **DTMI:** dtmi:org:w3id:rec:Region;1
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Space](Space.md):** hasPart, isLocationOf, isPartOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Space](Space.md):** customTags, externalIds, geometry, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../Asset/Asset.md).locatedIn

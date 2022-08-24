@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Min_Outside_Air_Flow_Setpoint_Limit](Min_Outside_Air_Flow_Setpoint_Limit.md)
 * [Min_Cooling_Discharge_Air_Flow_Setpoint_Limit](Min_Cooling_Discharge_Air_Flow_Setpoint_Limit/Min_Cooling_Discharge_Air_Flow_Setpoint_Limit.md)
@@ -15,12 +14,19 @@
 * [Min_Heating_Supply_Air_Flow_Setpoint_Limit](Min_Heating_Supply_Air_Flow_Setpoint_Limit/Min_Heating_Supply_Air_Flow_Setpoint_Limit.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

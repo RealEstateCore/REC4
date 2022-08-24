@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Heat_Exchanger_System_Enable_Status](Heat_Exchanger_System_Enable_Status.md)
 * [Emergency_Air_Flow_System_Status](Emergency_Air_Flow_System_Status.md)
@@ -14,12 +13,19 @@
 * [Emergency_Power_Off_System_Status](Emergency_Power_Off_System_Status/Emergency_Power_Off_System_Status.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

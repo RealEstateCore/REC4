@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [AlarmObject](AlarmObject.md)
 * [ErrorReport](ErrorReport.md)
@@ -14,6 +13,7 @@
 * [WorkOrder](WorkOrder.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
@@ -22,6 +22,9 @@
 |createdBy|**en**: created by||0-1|[Agent](../../Agent/Agent.md)||True|
 |producedBy|**en**: produced by||0-Infinity|[Point](../../Point/Point.md)||True|
 |relatedTo|**en**: related to||0-Infinity|||True|
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -32,4 +35,7 @@
 |status|**en**: status||enum (Acknowledged, Closed, Unacknowledged)|True|
 ### Inherited Properties
 * **[Information](../Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

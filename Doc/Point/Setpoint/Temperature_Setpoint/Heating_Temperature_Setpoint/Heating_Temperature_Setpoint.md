@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Occupied_Heating_Temperature_Deadband_Setpoint](../Temperature_Deadband_Setpoint/Occupied_Heating_Temperature_Deadband_Setpoint.md)
 * [Occupied_Heating_Temperature_Setpoint](Occupied_Heating_Temperature_Setpoint.md)
@@ -22,12 +21,19 @@
 * [Discharge_Air_Temperature_Heating_Setpoint](../Air_Temperature_Setpoint/Discharge_Air_Temperature_Setpoint/Discharge_Air_Temperature_Heating_Setpoint/Discharge_Air_Temperature_Heating_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

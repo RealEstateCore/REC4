@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [LeaseContract](LeaseContract.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |documentTopic|**en**: document topic||0-Infinity|||True|
 |url|**en**: URL||0-Infinity|||True|
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Information](../Information.md):** customTags, externalIds, name
+
+---
+
 ## Target Of
 ### Direct
 * [Asset](../../Asset/Asset.md).documentation

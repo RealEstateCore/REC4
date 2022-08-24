@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Disable_Differential_Enthalpy_Command](Disable_Differential_Enthalpy_Command.md)
 * [Disable_Differential_Temperature_Command](Disable_Differential_Temperature_Command.md)
@@ -14,12 +13,19 @@
 * [Disable_Fixed_Temperature_Command](Disable_Fixed_Temperature_Command.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

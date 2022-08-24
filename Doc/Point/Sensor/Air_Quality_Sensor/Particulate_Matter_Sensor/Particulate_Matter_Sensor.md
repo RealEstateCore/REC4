@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [PM10_Sensor](PM10_Sensor/PM10_Sensor.md)
 * [PM1_Sensor](PM1_Sensor/PM1_Sensor.md)
@@ -14,12 +13,19 @@
 * [TVOC_Sensor](TVOC_Sensor/TVOC_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

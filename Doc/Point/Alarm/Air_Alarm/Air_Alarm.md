@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Air_Flow_Alarm](Air_Flow_Alarm/Air_Flow_Alarm.md)
 * [Air_Temperature_Alarm](../Temperature_Alarm/Air_Temperature_Alarm/Air_Temperature_Alarm.md)
@@ -14,12 +13,19 @@
 * [Supply_Air_Smoke_Detection_Alarm](../Smoke_Alarm/Smoke_Detection_Alarm/Supply_Air_Smoke_Detection_Alarm.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

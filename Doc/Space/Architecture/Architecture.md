@@ -9,7 +9,6 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 
 ---
 
-
 ## Child interfaces
 * [Site](Site.md)
 * [SubBuilding](SubBuilding.md)
@@ -19,6 +18,7 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 * [Zone](Zone/Zone.md)
 
 ---
+
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
@@ -35,9 +35,15 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 |ownedBy|**en**: owned by||0-Infinity|[Agent](../../Agent/Agent.md)||True|
 ### Inherited Relationships
 * **[Space](../Space.md):** hasPart, isLocationOf, isPartOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Space](../Space.md):** customTags, externalIds, geometry, name
+
+---
+
 ## Target Of
 ### Direct
 * [BuildingElement](../../BuildingElement/BuildingElement.md).locatedIn

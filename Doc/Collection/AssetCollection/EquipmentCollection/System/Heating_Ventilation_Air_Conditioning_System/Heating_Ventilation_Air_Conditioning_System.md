@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Steam_System](Steam_System.md)
 * [Air_System](Air_System/Air_System.md)
 * [Water_System](Water_System/Water_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

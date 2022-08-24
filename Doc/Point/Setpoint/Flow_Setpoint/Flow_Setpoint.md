@@ -6,18 +6,24 @@
 
 ---
 
-
 ## Child interfaces
 * [Air_Flow_Setpoint](Air_Flow_Setpoint/Air_Flow_Setpoint.md)
 * [Water_Flow_Setpoint](Water_Flow_Setpoint/Water_Flow_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

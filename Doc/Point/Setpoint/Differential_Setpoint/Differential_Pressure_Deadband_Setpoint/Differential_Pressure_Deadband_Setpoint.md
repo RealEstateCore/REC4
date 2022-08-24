@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Chilled_Water_Differential_Pressure_Deadband_Setpoint](Chilled_Water_Differential_Pressure_Deadband_Setpoint.md)
 * [Entering_Water_Differential_Pressure_Deadband_Setpoint](Entering_Water_Differential_Pressure_Deadband_Setpoint.md)
@@ -14,12 +13,19 @@
 * [Leaving_Water_Differential_Pressure_Deadband_Setpoint](Leaving_Water_Differential_Pressure_Deadband_Setpoint.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../Asset/Asset.md).hasPoint

@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Heat_Recovery_Hot_Water_System](Heat_Recovery_Hot_Water_System.md)
 * [Preheat_Hot_Water_System](Preheat_Hot_Water_System.md)
@@ -14,11 +13,18 @@
 * [Reheat_Hot_Water_System](Reheat_Hot_Water_System.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[EquipmentCollection](../../../../EquipmentCollection.md):** feeds, hasPoint, includes
 * **[Collection](../../../../../../Collection.md):** documentation
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Collection](../../../../../../Collection.md):** customTags, externalIds, name
+
+---
+
 ## Target Of

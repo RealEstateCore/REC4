@@ -5,10 +5,14 @@
 **DTMI:** dtmi:org:brickschema:schema:Brick:PVT_Panel;1
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Equipment](../Equipment.md):** feeds, isFedBy
 * **[Asset](../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -17,6 +21,9 @@
 * **[Equipment](../Equipment.md):** operationalStageCount
 * **[Asset](../../Asset.md):** assetTag, commissioningDate, customTags, externalIds, geometry, initialCost, installationDate, IPAddress, MACAddress, maintenanceInterval, modelNumber, name, serialNumber, turnoverDate, weight
 * **[PV_Panel](../PV_Panel/PV_Panel.md):** measuredModuleConversionEfficiency, ratedModuleConversionEfficiency
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../Asset.md).hasPart

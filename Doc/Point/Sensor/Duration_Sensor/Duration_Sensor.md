@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [On_Timer_Sensor](On_Timer_Sensor.md)
 * [Rain_Duration_Sensor](../Rain_Sensor/Rain_Duration_Sensor.md)
 * [Run_Time_Sensor](Run_Time_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../Asset/Asset.md).hasPoint

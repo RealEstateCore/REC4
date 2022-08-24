@@ -8,9 +8,13 @@ A natural person (i.e., an individual human being).
 **DTMI:** dtmi:org:w3id:rec:Person;1
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Agent](Agent.md):** isMemberOf
+
+---
+
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
@@ -20,6 +24,9 @@ A natural person (i.e., an individual human being).
 |image|**en**: image|**en**: URL link to an image that represents the person.|string|True|
 ### Inherited Properties
 * **[Agent](Agent.md):** customTags, externalIds, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../Asset/Asset.md).commissionedBy

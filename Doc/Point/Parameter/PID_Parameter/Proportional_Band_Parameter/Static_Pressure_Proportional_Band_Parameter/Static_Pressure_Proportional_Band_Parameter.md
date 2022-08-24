@@ -6,19 +6,25 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Static_Pressure_Proportional_Band_Parameter](Discharge_Air_Static_Pressure_Proportional_Band_Parameter.md)
 * [Exhaust_Air_Static_Pressure_Proportional_Band_Parameter](Exhaust_Air_Static_Pressure_Proportional_Band_Parameter.md)
 * [Supply_Air_Static_Pressure_Proportional_Band_Parameter](Supply_Air_Static_Pressure_Proportional_Band_Parameter.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint

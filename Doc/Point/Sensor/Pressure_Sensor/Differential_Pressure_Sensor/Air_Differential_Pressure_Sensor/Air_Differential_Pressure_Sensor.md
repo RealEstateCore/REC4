@@ -6,7 +6,6 @@
 
 ---
 
-
 ## Child interfaces
 * [Discharge_Air_Differential_Pressure_Sensor](Discharge_Air_Differential_Pressure_Sensor.md)
 * [Exhaust_Air_Differential_Pressure_Sensor](Exhaust_Air_Differential_Pressure_Sensor.md)
@@ -14,12 +13,19 @@
 * [Supply_Air_Differential_Pressure_Sensor](Supply_Air_Differential_Pressure_Sensor.md)
 
 ---
+
 ## Relationships
 ### Inherited Relationships
 * **[Point](../../../../Point.md):** isPointOf
+
+---
+
 ## Properties
 ### Inherited Properties
 * **[Point](../../../../Point.md):** aggregate, customTags, externalIds, hasQuantity, hasSubstance, lastKnownValue, name
+
+---
+
 ## Target Of
 ### Inherited
 * [Asset](../../../../../Asset/Asset.md).hasPoint
