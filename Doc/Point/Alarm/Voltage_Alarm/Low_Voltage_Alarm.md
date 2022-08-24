@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Voltage_Alarm](Voltage_Alarm.md) > [Low_Voltage_Alarm](.)
 # Low_Voltage_Alarm
+
+**Display name:** Low Voltage Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Voltage_Alarm;1
-## Display name
-- **en:** Low Voltage Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

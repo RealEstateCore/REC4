@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [Dedicated_Outdoor_Air_System_Unit](.)
 # Dedicated_Outdoor_Air_System_Unit
+
+**Display name:** Dedicated Outdoor Air System Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Dedicated_Outdoor_Air_System_Unit;1
-## Display name
-- **en:** Dedicated Outdoor Air System Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

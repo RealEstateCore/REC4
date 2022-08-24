@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Space_Heater](.)
 # Space_Heater
+
+**Display name:** Space Heater<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Space_Heater;1
-## Display name
-- **en:** Space Heater
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

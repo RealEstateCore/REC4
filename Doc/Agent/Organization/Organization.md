@@ -1,10 +1,13 @@
 [Agent](../Agent.md) > [Organization](.)
 # Organization
+
+An organization of any sort (e.g., a business, association, project, consortium, tribe, etc.)
+
+
+**Display name:** Organization<br />
 **DTMI:** dtmi:org:w3id:rec:Organization;1
-## Display name
-- **en:** Organization
-## Description
-- **en:** An organization of any sort (e.g., a business, association, project, consortium, tribe, etc.)
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

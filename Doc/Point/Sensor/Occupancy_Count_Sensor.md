@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Sensor](Sensor.md) > [Occupancy_Count_Sensor](.)
 # Occupancy_Count_Sensor
+
+**Display name:** Occupancy Count Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupancy_Count_Sensor;1
-## Display name
-- **en:** Occupancy Count Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

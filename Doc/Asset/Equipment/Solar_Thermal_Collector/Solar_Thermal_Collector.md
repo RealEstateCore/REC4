@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Solar_Thermal_Collector](.)
 # Solar_Thermal_Collector
+
+**Display name:** Solar Thermal Collector<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Solar_Thermal_Collector;1
-## Display name
-- **en:** Solar Thermal Collector
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

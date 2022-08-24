@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Chair](Chair.md) > [FoldingChair](.)
 # FoldingChair
+
+**Display name:** Folding chair<br />
 **DTMI:** dtmi:org:w3id:rec:FoldingChair;1
-## Display name
-- **en:** Folding chair
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Asset;1:** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy

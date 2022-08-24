@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Voltage_Ratio_Setpoint](.)
 # Voltage_Ratio_Setpoint
+
+**Display name:** Voltage Ratio Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Ratio_Setpoint;1
-## Display name
-- **en:** Voltage Ratio Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

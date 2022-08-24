@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Meter](.)
 # Meter
+
+**Display name:** Meter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Meter;1
-## Display name
-- **en:** Meter
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

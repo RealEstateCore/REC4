@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Position_Limit](Position_Limit.md) > [Min_Position_Setpoint_Limit](.)
 # Min_Position_Setpoint_Limit
+
+**Display name:** Min Position Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Position_Setpoint_Limit;1
-## Display name
-- **en:** Min Position Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

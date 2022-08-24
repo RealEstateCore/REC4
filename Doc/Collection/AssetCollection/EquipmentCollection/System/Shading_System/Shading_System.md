@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Shading_System](.)
 # Shading_System
+
+**Display name:** Shading System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Shading_System;1
-## Display name
-- **en:** Shading System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

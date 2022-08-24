@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Motor](../Motor.md) > [VFD](VFD.md) > [Heat_Wheel_VFD](.)
 # Heat_Wheel_VFD
+
+**Display name:** Heat Wheel VFD<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Wheel_VFD;1
-## Display name
-- **en:** Heat Wheel VFD
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

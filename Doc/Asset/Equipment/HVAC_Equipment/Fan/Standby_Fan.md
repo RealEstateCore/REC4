@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Standby_Fan](.)
 # Standby_Fan
+
+**Display name:** Standby Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_Fan;1
-## Display name
-- **en:** Standby Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](.)
 # Disable_Command
+
+**Display name:** Disable Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Disable_Command;1
-## Display name
-- **en:** Disable Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

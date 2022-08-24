@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Meter](../Meter.md) > [Building_Meter](.)
 # Building_Meter
+
+**Display name:** Building Meter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Building_Meter;1
-## Display name
-- **en:** Building Meter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

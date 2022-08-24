@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [System_Status](System_Status.md) > [Heat_Exchanger_System_Enable_Status](.)
 # Heat_Exchanger_System_Enable_Status
+
+**Display name:** Heat Exchanger System Enable Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Exchanger_System_Enable_Status;1
-## Display name
-- **en:** Heat Exchanger System Enable Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

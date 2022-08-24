@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Current_Sensor](../Current_Sensor.md) > [Current_Output_Sensor](Current_Output_Sensor.md) > [Photovoltaic_Current_Output_Sensor](.)
 # Photovoltaic_Current_Output_Sensor
+
+**Display name:** Photovoltaic Current Output Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Photovoltaic_Current_Output_Sensor;1
-## Display name
-- **en:** Photovoltaic Current Output Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

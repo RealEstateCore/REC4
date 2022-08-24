@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Lockout_Status](.)
 # Lockout_Status
+
+**Display name:** Lockout Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lockout_Status;1
-## Display name
-- **en:** Lockout Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

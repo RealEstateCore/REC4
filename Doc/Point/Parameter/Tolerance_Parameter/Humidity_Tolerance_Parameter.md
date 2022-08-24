@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Tolerance_Parameter](Tolerance_Parameter.md) > [Humidity_Tolerance_Parameter](.)
 # Humidity_Tolerance_Parameter
+
+**Display name:** Humidity Tolerance Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Tolerance_Parameter;1
-## Display name
-- **en:** Humidity Tolerance Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

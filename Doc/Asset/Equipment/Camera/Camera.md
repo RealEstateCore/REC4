@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Camera](.)
 # Camera
+
+**Display name:** Camera<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Camera;1
-## Display name
-- **en:** Camera
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [Load_Shed_Status](../Load_Shed_Status.md) > [Entering_Hot_Water_Temperature_Load_Shed_Status](Entering_Hot_Water_Temperature_Load_Shed_Status.md) > [Entering_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status](.)
 # Entering_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status
+
+**Display name:** Entering Medium Temperature Hot Water Temperature Load Shed Stat<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status;1
-## Display name
-- **en:** Entering Medium Temperature Hot Water Temperature Load Shed Stat
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

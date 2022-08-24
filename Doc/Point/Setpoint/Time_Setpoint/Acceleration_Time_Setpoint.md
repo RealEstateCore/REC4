@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](Time_Setpoint.md) > [Acceleration_Time_Setpoint](.)
 # Acceleration_Time_Setpoint
+
+**Display name:** Acceleration Time Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Acceleration_Time_Setpoint;1
-## Display name
-- **en:** Acceleration Time Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

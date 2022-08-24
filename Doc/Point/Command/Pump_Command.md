@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Command](Command.md) > [Pump_Command](.)
 # Pump_Command
+
+**Display name:** Pump Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pump_Command;1
-## Display name
-- **en:** Pump Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

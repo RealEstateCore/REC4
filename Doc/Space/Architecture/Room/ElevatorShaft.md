@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ElevatorShaft](.)
 # ElevatorShaft
+
+**Display name:** Elevator shaft<br />
 **DTMI:** dtmi:org:w3id:rec:ElevatorShaft;1
-## Display name
-- **en:** Elevator shaft
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

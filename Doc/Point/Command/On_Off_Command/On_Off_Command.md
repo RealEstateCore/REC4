@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [On_Off_Command](.)
 # On_Off_Command
+
+**Display name:** On Off Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Off_Command;1
-## Display name
-- **en:** On Off Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

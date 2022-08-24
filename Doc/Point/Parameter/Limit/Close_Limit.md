@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Limit](Limit.md) > [Close_Limit](.)
 # Close_Limit
+
+**Display name:** Close Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Close_Limit;1
-## Display name
-- **en:** Close Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

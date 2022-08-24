@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Temperature_Parameter](Temperature_Parameter.md) > [High_Temperature_Alarm_Parameter](.)
 # High_Temperature_Alarm_Parameter
+
+**Display name:** High Temperature Alarm Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:High_Temperature_Alarm_Parameter;1
-## Display name
-- **en:** High Temperature Alarm Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

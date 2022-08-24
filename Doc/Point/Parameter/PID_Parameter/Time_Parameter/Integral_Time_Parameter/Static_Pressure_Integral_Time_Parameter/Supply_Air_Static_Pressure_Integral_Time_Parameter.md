@@ -1,9 +1,10 @@
 [Point](../../../../../Point.md) > [Parameter](../../../../Parameter.md) > [PID_Parameter](../../../PID_Parameter.md) > [Time_Parameter](../../Time_Parameter.md) > [Integral_Time_Parameter](../Integral_Time_Parameter.md) > [Static_Pressure_Integral_Time_Parameter](Static_Pressure_Integral_Time_Parameter.md) > [Supply_Air_Static_Pressure_Integral_Time_Parameter](.)
 # Supply_Air_Static_Pressure_Integral_Time_Parameter
+
+**Display name:** Supply Air Static Pressure Integral Time Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Static_Pressure_Integral_Time_Parameter;1
-## Display name
-- **en:** Supply Air Static Pressure Integral Time Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Humidity_Setpoint](Humidity_Setpoint.md) > [Occupied_Humidity_Setpoint](.)
 # Occupied_Humidity_Setpoint
+
+**Display name:** Occupied Humidity Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupied_Humidity_Setpoint;1
-## Display name
-- **en:** Occupied Humidity Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

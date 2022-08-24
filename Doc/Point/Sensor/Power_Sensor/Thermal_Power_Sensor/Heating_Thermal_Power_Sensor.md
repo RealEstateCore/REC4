@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Thermal_Power_Sensor](Thermal_Power_Sensor.md) > [Heating_Thermal_Power_Sensor](.)
 # Heating_Thermal_Power_Sensor
+
+**Display name:** Heating Thermal Power Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Thermal_Power_Sensor;1
-## Display name
-- **en:** Heating Thermal Power Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

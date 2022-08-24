@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Breaker_Panel](.)
 # Breaker_Panel
+
+**Display name:** Breaker Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Breaker_Panel;1
-## Display name
-- **en:** Breaker Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

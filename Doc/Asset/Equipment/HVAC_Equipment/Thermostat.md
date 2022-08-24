@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Thermostat](.)
 # Thermostat
+
+**Display name:** Thermostat<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostat;1
-## Display name
-- **en:** Thermostat
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

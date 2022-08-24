@@ -1,9 +1,10 @@
 [Agent](../Agent.md) > [Organization](Organization.md) > [Company](.)
 # Company
+
+**Display name:** Company<br />
 **DTMI:** dtmi:org:w3id:rec:Company;1
-## Display name
-- **en:** Company
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Organization;1:** hasMember, hasPart, isPartOf

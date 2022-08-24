@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Flow_Setpoint](../Flow_Setpoint.md) > [Air_Flow_Setpoint](Air_Flow_Setpoint.md) > [Outside_Air_Flow_Setpoint](.)
 # Outside_Air_Flow_Setpoint
+
+**Display name:** Outside Air Flow Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Flow_Setpoint;1
-## Display name
-- **en:** Outside Air Flow Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

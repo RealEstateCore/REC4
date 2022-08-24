@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Water_Heater](Water_Heater.md) > [Collection_Basin_Water_Heater](.)
 # Collection_Basin_Water_Heater
+
+**Display name:** Collection Basin Water Heater<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Collection_Basin_Water_Heater;1
-## Display name
-- **en:** Collection Basin Water Heater
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

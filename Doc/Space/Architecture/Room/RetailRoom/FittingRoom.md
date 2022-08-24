@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [RetailRoom](RetailRoom.md) > [FittingRoom](.)
 # FittingRoom
+
+**Display name:** Fitting room<br />
 **DTMI:** dtmi:org:w3id:rec:FittingRoom;1
-## Display name
-- **en:** Fitting room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

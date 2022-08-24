@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Compressor](.)
 # Compressor
+
+**Display name:** Compressor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Compressor;1
-## Display name
-- **en:** Compressor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

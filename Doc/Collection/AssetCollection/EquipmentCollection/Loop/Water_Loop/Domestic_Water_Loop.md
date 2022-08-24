@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [Loop](../Loop.md) > [Water_Loop](Water_Loop.md) > [Domestic_Water_Loop](.)
 # Domestic_Water_Loop
+
+**Display name:** Domestic Water Loop<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Domestic_Water_Loop;1
-## Display name
-- **en:** Domestic Water Loop
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Command](Command.md) > [Luminance_Command](.)
 # Luminance_Command
+
+**Display name:** Luminance Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Command;1
-## Display name
-- **en:** Luminance Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

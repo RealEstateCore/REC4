@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](Shading_Equipment.md) > [Blind](.)
 # Blind
+
+**Display name:** Blind<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Blind;1
-## Display name
-- **en:** Blind
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

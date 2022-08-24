@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Water_Heater](../Water_Heater.md) > [Boiler](.)
 # Boiler
+
+**Display name:** Boiler<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Boiler;1
-## Display name
-- **en:** Boiler
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

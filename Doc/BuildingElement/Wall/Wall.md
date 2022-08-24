@@ -1,9 +1,10 @@
 [BuildingElement](../BuildingElement.md) > [Wall](.)
 # Wall
+
+**Display name:** Wall<br />
 **DTMI:** dtmi:org:w3id:rec:Wall;1
-## Display name
-- **en:** Wall
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:BuildingElement;1:** documentation, hasPart, isPartOf, locatedIn

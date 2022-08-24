@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [PV_Panel](.)
 # PV_Panel
+
+**Display name:** PV Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PV_Panel;1
-## Display name
-- **en:** PV Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

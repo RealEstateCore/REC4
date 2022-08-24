@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cooling_Valve](.)
 # Cooling_Valve
+
+**Display name:** Cooling Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Valve;1
-## Display name
-- **en:** Cooling Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Occupancy_Status](Occupancy_Status.md) > [Temporary_Occupancy_Status](.)
 # Temporary_Occupancy_Status
+
+**Display name:** Temporary Occupancy Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temporary_Occupancy_Status;1
-## Display name
-- **en:** Temporary Occupancy Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

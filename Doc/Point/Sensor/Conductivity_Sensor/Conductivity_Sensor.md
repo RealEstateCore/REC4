@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Conductivity_Sensor](.)
 # Conductivity_Sensor
+
+**Display name:** Conductivity Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Conductivity_Sensor;1
-## Display name
-- **en:** Conductivity Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

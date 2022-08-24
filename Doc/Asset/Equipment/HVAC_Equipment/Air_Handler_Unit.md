@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Air_Handler_Unit](.)
 # Air_Handler_Unit
+
+**Display name:** Air Handler Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Handler_Unit;1
-## Display name
-- **en:** Air Handler Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

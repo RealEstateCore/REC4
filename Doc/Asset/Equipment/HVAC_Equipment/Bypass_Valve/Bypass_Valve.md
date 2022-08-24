@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Bypass_Valve](.)
 # Bypass_Valve
+
+**Display name:** Bypass Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Valve;1
-## Display name
-- **en:** Bypass Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

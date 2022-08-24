@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](Reset_Command.md) > [Speed_Reset_Command](.)
 # Speed_Reset_Command
+
+**Display name:** Speed Reset Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Reset_Command;1
-## Display name
-- **en:** Speed Reset Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

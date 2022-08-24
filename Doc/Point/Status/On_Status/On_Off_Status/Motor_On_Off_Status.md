@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [On_Status](../On_Status.md) > [On_Off_Status](On_Off_Status.md) > [Motor_On_Off_Status](.)
 # Motor_On_Off_Status
+
+**Display name:** Motor On Off Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor_On_Off_Status;1
-## Display name
-- **en:** Motor On Off Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

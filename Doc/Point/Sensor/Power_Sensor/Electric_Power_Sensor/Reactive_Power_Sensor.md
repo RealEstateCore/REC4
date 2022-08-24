@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Electric_Power_Sensor](Electric_Power_Sensor.md) > [Reactive_Power_Sensor](.)
 # Reactive_Power_Sensor
+
+**Display name:** Reactive Power Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1
-## Display name
-- **en:** Reactive Power Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

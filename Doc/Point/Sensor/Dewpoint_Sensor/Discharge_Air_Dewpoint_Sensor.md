@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Dewpoint_Sensor](Dewpoint_Sensor.md) > [Discharge_Air_Dewpoint_Sensor](.)
 # Discharge_Air_Dewpoint_Sensor
+
+**Display name:** Discharge Air Dewpoint Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Dewpoint_Sensor;1
-## Display name
-- **en:** Discharge Air Dewpoint Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

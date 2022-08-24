@@ -1,9 +1,10 @@
 [Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [Loop](Loop.md) > [Air_Loop](.)
 # Air_Loop
+
+**Display name:** Air Loop<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Loop;1
-## Display name
-- **en:** Air Loop
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

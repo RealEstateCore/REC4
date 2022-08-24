@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Flow_Setpoint](../../Flow_Setpoint.md) > [Water_Flow_Setpoint](../Water_Flow_Setpoint.md) > [Leaving_Water_Flow_Setpoint](Leaving_Water_Flow_Setpoint.md) > [Leaving_Hot_Water_Flow_Setpoint](.)
 # Leaving_Hot_Water_Flow_Setpoint
+
+**Display name:** Leaving Hot Water Flow Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Hot_Water_Flow_Setpoint;1
-## Display name
-- **en:** Leaving Hot Water Flow Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Power_Off_System](.)
 # Emergency_Power_Off_System
+
+**Display name:** Emergency Power Off System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System;1
-## Display name
-- **en:** Emergency Power Off System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

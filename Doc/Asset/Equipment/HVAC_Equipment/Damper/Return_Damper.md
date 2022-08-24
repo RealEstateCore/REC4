@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](Damper.md) > [Return_Damper](.)
 # Return_Damper
+
+**Display name:** Return Damper<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Damper;1
-## Display name
-- **en:** Return Damper
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

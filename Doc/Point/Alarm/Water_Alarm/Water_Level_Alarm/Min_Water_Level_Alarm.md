@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Alarm](../../Alarm.md) > [Water_Alarm](../Water_Alarm.md) > [Water_Level_Alarm](Water_Level_Alarm.md) > [Min_Water_Level_Alarm](.)
 # Min_Water_Level_Alarm
+
+**Display name:** Min Water Level Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Water_Level_Alarm;1
-## Display name
-- **en:** Min Water Level Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

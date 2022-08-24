@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Alarm](../../../Alarm.md) > [Temperature_Alarm](../../Temperature_Alarm.md) > [Air_Temperature_Alarm](../Air_Temperature_Alarm.md) > [Discharge_Air_Temperature_Alarm](.)
 # Discharge_Air_Temperature_Alarm
+
+**Display name:** Discharge Air Temperature Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Temperature_Alarm;1
-## Display name
-- **en:** Discharge Air Temperature Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

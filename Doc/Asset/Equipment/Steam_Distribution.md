@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Steam_Distribution](.)
 # Steam_Distribution
+
+**Display name:** Steam Distribution<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Distribution;1
-## Display name
-- **en:** Steam Distribution
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

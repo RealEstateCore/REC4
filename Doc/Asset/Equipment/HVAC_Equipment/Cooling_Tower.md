@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cooling_Tower](.)
 # Cooling_Tower
+
+**Display name:** Cooling Tower<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Tower;1
-## Display name
-- **en:** Cooling Tower
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

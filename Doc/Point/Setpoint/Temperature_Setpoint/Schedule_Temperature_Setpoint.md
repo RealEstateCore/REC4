@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Temperature_Setpoint](Temperature_Setpoint.md) > [Schedule_Temperature_Setpoint](.)
 # Schedule_Temperature_Setpoint
+
+**Display name:** Schedule Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Schedule_Temperature_Setpoint;1
-## Display name
-- **en:** Schedule Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

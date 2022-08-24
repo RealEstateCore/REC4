@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Fire_Safety_Equipment](../Fire_Safety_Equipment.md) > [Manual_Fire_Alarm_Activation_Equipment](Manual_Fire_Alarm_Activation_Equipment.md) > [Fire_Alarm_Manual_Call_Point](.)
 # Fire_Alarm_Manual_Call_Point
+
+**Display name:** Fire Alarm Manual Call Point<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Alarm_Manual_Call_Point;1
-## Display name
-- **en:** Fire Alarm Manual Call Point
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

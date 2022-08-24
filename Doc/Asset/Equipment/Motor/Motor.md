@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Motor](.)
 # Motor
+
+**Display name:** Motor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor;1
-## Display name
-- **en:** Motor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

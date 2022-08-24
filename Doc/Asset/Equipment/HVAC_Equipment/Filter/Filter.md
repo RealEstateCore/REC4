@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Filter](.)
 # Filter
+
+**Display name:** Filter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Filter;1
-## Display name
-- **en:** Filter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Entrance](.)
 # Entrance
+
+**Display name:** Entrance<br />
 **DTMI:** dtmi:org:w3id:rec:Entrance;1
-## Display name
-- **en:** Entrance
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

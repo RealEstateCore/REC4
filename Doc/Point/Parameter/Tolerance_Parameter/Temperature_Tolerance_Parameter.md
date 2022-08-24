@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Tolerance_Parameter](Tolerance_Parameter.md) > [Temperature_Tolerance_Parameter](.)
 # Temperature_Tolerance_Parameter
+
+**Display name:** Temperature Tolerance Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Tolerance_Parameter;1
-## Display name
-- **en:** Temperature Tolerance Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](.)
 # Air_Quality_Sensor
+
+**Display name:** Air Quality Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Quality_Sensor;1
-## Display name
-- **en:** Air Quality Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

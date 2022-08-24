@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](../Water_Temperature_Setpoint.md) > [Hot_Water_Temperature_Setpoint](Hot_Water_Temperature_Setpoint.md) > [Entering_Hot_Water_Temperature_Setpoint](.)
 # Entering_Hot_Water_Temperature_Setpoint
+
+**Display name:** Entering Hot Water Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Hot_Water_Temperature_Setpoint;1
-## Display name
-- **en:** Entering Hot Water Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

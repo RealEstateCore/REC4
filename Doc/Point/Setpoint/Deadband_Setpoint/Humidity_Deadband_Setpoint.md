@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Deadband_Setpoint](Deadband_Setpoint.md) > [Humidity_Deadband_Setpoint](.)
 # Humidity_Deadband_Setpoint
+
+**Display name:** Humidity Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Deadband_Setpoint;1
-## Display name
-- **en:** Humidity Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

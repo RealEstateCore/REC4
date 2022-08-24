@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Discharge_Fan](.)
 # Discharge_Fan
+
+**Display name:** Discharge Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Fan;1
-## Display name
-- **en:** Discharge Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

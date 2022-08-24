@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Drive_Ready_Status](.)
 # Drive_Ready_Status
+
+**Display name:** Drive Ready Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Drive_Ready_Status;1
-## Display name
-- **en:** Drive Ready Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

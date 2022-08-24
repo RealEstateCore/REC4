@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Max_Limit](.)
 # Max_Limit
+
+**Display name:** Max Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Limit;1
-## Display name
-- **en:** Max Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

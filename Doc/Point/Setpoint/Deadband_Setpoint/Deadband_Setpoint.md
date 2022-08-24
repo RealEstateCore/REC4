@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Deadband_Setpoint](.)
 # Deadband_Setpoint
+
+**Display name:** Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Deadband_Setpoint;1
-## Display name
-- **en:** Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

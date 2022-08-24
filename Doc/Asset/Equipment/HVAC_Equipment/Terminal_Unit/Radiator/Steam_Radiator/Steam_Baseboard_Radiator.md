@@ -1,9 +1,10 @@
 [Asset](../../../../../Asset.md) > [Equipment](../../../../Equipment.md) > [HVAC_Equipment](../../../HVAC_Equipment.md) > [Terminal_Unit](../../Terminal_Unit.md) > [Radiator](../Radiator.md) > [Steam_Radiator](Steam_Radiator.md) > [Steam_Baseboard_Radiator](.)
 # Steam_Baseboard_Radiator
+
+**Display name:** Steam Baseboard Radiator<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Baseboard_Radiator;1
-## Display name
-- **en:** Steam Baseboard Radiator
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

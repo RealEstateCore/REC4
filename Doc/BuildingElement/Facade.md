@@ -1,9 +1,10 @@
 [BuildingElement](BuildingElement.md) > [Facade](.)
 # Facade
+
+**Display name:** Facade<br />
 **DTMI:** dtmi:org:w3id:rec:Facade;1
-## Display name
-- **en:** Facade
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:BuildingElement;1:** documentation, hasPart, isPartOf, locatedIn

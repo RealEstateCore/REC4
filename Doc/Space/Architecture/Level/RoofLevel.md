@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Level](Level.md) > [RoofLevel](.)
 # RoofLevel
+
+**Display name:** Roof level<br />
 **DTMI:** dtmi:org:w3id:rec:RoofLevel;1
-## Display name
-- **en:** Roof level
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

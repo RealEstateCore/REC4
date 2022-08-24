@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Sensor](Sensor.md) > [Luminance_Sensor](.)
 # Luminance_Sensor
+
+**Display name:** Luminance Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Sensor;1
-## Display name
-- **en:** Luminance Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

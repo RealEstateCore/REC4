@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Valve](../Valve.md) > [Water_Valve](Water_Valve.md) > [Thermostatic_Mixing_Valve](.)
 # Thermostatic_Mixing_Valve
+
+**Display name:** Thermostatic Mixing Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostatic_Mixing_Valve;1
-## Display name
-- **en:** Thermostatic Mixing Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Demand_Sensor](../Demand_Sensor.md) > [Cooling_Demand_Sensor](Cooling_Demand_Sensor.md) > [Average_Cooling_Demand_Sensor](.)
 # Average_Cooling_Demand_Sensor
+
+**Display name:** Average Cooling Demand Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Average_Cooling_Demand_Sensor;1
-## Display name
-- **en:** Average Cooling Demand Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

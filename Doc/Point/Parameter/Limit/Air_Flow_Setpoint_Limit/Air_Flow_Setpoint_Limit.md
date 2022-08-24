@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Air_Flow_Setpoint_Limit](.)
 # Air_Flow_Setpoint_Limit
+
+**Display name:** Air Flow Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Flow_Setpoint_Limit;1
-## Display name
-- **en:** Air Flow Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

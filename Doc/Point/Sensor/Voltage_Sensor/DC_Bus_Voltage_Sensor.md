@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [DC_Bus_Voltage_Sensor](.)
 # DC_Bus_Voltage_Sensor
+
+**Display name:** DC Bus Voltage Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:DC_Bus_Voltage_Sensor;1
-## Display name
-- **en:** DC Bus Voltage Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

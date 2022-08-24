@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Cooling_Enable_Command](.)
 # Cooling_Enable_Command
+
+**Display name:** Cooling Enable Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Enable_Command;1
-## Display name
-- **en:** Cooling Enable Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Event](Event.md) > [ElevatorTrip](.)
 # ElevatorTrip
+
+**Display name:** Elevator trip<br />
 **DTMI:** dtmi:org:w3id:rec:ElevatorTrip;1
-## Display name
-- **en:** Elevator trip
-## Description
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

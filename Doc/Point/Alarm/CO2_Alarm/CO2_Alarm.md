@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [CO2_Alarm](.)
 # CO2_Alarm
+
+**Display name:** CO2 Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:CO2_Alarm;1
-## Display name
-- **en:** CO2 Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

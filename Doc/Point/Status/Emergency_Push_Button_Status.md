@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Emergency_Push_Button_Status](.)
 # Emergency_Push_Button_Status
+
+**Display name:** Emergency Push Button Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Push_Button_Status;1
-## Display name
-- **en:** Emergency Push Button Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

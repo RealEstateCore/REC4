@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Weather_Station](.)
 # Weather_Station
+
+**Display name:** Weather Station<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Weather_Station;1
-## Display name
-- **en:** Weather Station
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

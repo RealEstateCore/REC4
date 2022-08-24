@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Power_Sensor](../Power_Sensor.md) > [Electric_Power_Sensor](Electric_Power_Sensor.md) > [Peak_Power_Demand_Sensor](.)
 # Peak_Power_Demand_Sensor
+
+**Display name:** Peak Power Demand Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Peak_Power_Demand_Sensor;1
-## Display name
-- **en:** Peak Power Demand Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

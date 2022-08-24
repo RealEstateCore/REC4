@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Emergency_Generator_Status](.)
 # Emergency_Generator_Status
+
+**Display name:** Emergency Generator Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Generator_Status;1
-## Display name
-- **en:** Emergency Generator Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

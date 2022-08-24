@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Level](Level.md) > [BasementLevel](.)
 # BasementLevel
+
+**Display name:** Basement level<br />
 **DTMI:** dtmi:org:w3id:rec:BasementLevel;1
-## Display name
-- **en:** Basement level
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

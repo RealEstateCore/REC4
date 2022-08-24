@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [ShowerRoom](.)
 # ShowerRoom
+
+**Display name:** Shower room<br />
 **DTMI:** dtmi:org:w3id:rec:ShowerRoom;1
-## Display name
-- **en:** Shower room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

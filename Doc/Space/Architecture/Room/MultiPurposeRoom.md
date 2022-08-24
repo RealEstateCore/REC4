@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [MultiPurposeRoom](.)
 # MultiPurposeRoom
+
+**Display name:** Multi-purpose room<br />
 **DTMI:** dtmi:org:w3id:rec:MultiPurposeRoom;1
-## Display name
-- **en:** Multi-purpose room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

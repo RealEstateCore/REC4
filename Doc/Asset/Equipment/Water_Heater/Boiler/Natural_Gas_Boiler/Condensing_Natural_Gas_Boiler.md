@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Water_Heater](../../Water_Heater.md) > [Boiler](../Boiler.md) > [Natural_Gas_Boiler](Natural_Gas_Boiler.md) > [Condensing_Natural_Gas_Boiler](.)
 # Condensing_Natural_Gas_Boiler
+
+**Display name:** Condensing Natural Gas Boiler<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condensing_Natural_Gas_Boiler;1
-## Display name
-- **en:** Condensing Natural Gas Boiler
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

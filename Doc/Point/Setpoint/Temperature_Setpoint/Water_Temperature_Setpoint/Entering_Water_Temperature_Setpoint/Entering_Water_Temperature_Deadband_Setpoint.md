@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](../Water_Temperature_Setpoint.md) > [Entering_Water_Temperature_Setpoint](Entering_Water_Temperature_Setpoint.md) > [Entering_Water_Temperature_Deadband_Setpoint](.)
 # Entering_Water_Temperature_Deadband_Setpoint
+
+**Display name:** Entering Water Temperature Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Temperature_Deadband_Setpoint;1
-## Display name
-- **en:** Entering Water Temperature Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

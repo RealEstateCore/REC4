@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Pressure_Sensor](.)
 # Pressure_Sensor
+
+**Display name:** Pressure Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Sensor;1
-## Display name
-- **en:** Pressure Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Command](Command.md) > [Bypass_Command](.)
 # Bypass_Command
+
+**Display name:** Bypass Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bypass_Command;1
-## Display name
-- **en:** Bypass Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

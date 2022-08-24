@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Sensor](Sensor.md) > [Gas_Sensor](.)
 # Gas_Sensor
+
+**Display name:** Gas Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_Sensor;1
-## Display name
-- **en:** Gas Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

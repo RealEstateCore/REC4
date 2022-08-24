@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [System_Status](../System_Status.md) > [Emergency_Power_Off_System_Status](Emergency_Power_Off_System_Status.md) > [Emergency_Power_Off_System_Activated_By_High_Temperature_Status](.)
 # Emergency_Power_Off_System_Activated_By_High_Temperature_Status
+
+**Display name:** Emergency Power Off System Activated By High Temperature Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Power_Off_System_Activated_By_High_Temperature_Status;1
-## Display name
-- **en:** Emergency Power Off System Activated By High Temperature Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

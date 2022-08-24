@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Safety_Equipment](../Safety_Equipment.md) > [Emergency_Wash_Station](Emergency_Wash_Station.md) > [Drench_Hose](.)
 # Drench_Hose
+
+**Display name:** Drench Hose<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Drench_Hose;1
-## Display name
-- **en:** Drench Hose
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

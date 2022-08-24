@@ -1,10 +1,13 @@
 [Space](../Space.md) > [Architecture](.)
 # Architecture
+
+A designed/landscaped (or potentially designed/landscaped) part of the physical world that has a 3D spatial extent. E.g., a building site, a building, levels within the building, rooms, etc.
+
+
+**Display name:** Architecture<br />
 **DTMI:** dtmi:org:w3id:rec:Architecture;1
-## Display name
-- **en:** Architecture
-## Description
-- **en:** A designed/landscaped (or potentially designed/landscaped) part of the physical world that has a 3D spatial extent. E.g., a building site, a building, levels within the building, rooms, etc.
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

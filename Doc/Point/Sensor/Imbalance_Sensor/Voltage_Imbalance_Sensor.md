@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](Imbalance_Sensor.md) > [Voltage_Imbalance_Sensor](.)
 # Voltage_Imbalance_Sensor
+
+**Display name:** Voltage Imbalance Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Voltage_Imbalance_Sensor;1
-## Display name
-- **en:** Voltage Imbalance Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

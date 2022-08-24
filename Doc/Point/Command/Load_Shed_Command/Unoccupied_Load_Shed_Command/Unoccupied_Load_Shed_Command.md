@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Command](../../Command.md) > [Load_Shed_Command](../Load_Shed_Command.md) > [Unoccupied_Load_Shed_Command](.)
 # Unoccupied_Load_Shed_Command
+
+**Display name:** Unoccupied Load Shed Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unoccupied_Load_Shed_Command;1
-## Display name
-- **en:** Unoccupied Load Shed Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

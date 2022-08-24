@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Booster_Fan](.)
 # Booster_Fan
+
+**Display name:** Booster Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Booster_Fan;1
-## Display name
-- **en:** Booster Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Fire_Control_Panel](.)
 # Fire_Control_Panel
+
+**Display name:** Fire Control Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Control_Panel;1
-## Display name
-- **en:** Fire Control Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

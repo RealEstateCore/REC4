@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Humidity_Setpoint](Humidity_Setpoint.md) > [Supply_Air_Humidity_Setpoint](.)
 # Supply_Air_Humidity_Setpoint
+
+**Display name:** Supply Air Humidity Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Humidity_Setpoint;1
-## Display name
-- **en:** Supply Air Humidity Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

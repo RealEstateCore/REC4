@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Disable_Command](Disable_Command.md) > [Disable_Differential_Temperature_Command](.)
 # Disable_Differential_Temperature_Command
+
+**Display name:** Disable Differential Temperature Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Disable_Differential_Temperature_Command;1
-## Display name
-- **en:** Disable Differential Temperature Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

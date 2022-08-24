@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Water_Distribution](.)
 # Water_Distribution
+
+**Display name:** Water Distribution<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Distribution;1
-## Display name
-- **en:** Water Distribution
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

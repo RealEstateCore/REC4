@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Quality_Sensor](Air_Quality_Sensor.md) > [Ozone_Level_Sensor](.)
 # Ozone_Level_Sensor
+
+**Display name:** Ozone Level Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Ozone_Level_Sensor;1
-## Display name
-- **en:** Ozone Level Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

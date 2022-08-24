@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Usage_Sensor](../Usage_Sensor.md) > [Water_Usage_Sensor](.)
 # Water_Usage_Sensor
+
+**Display name:** Water Usage Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Usage_Sensor;1
-## Display name
-- **en:** Water Usage Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

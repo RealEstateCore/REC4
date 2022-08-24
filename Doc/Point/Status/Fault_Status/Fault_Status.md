@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](.)
 # Fault_Status
+
+**Display name:** Fault Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fault_Status;1
-## Display name
-- **en:** Fault Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

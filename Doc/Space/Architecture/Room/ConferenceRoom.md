@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [ConferenceRoom](.)
 # ConferenceRoom
+
+**Display name:** Conference room<br />
 **DTMI:** dtmi:org:w3id:rec:ConferenceRoom;1
-## Display name
-- **en:** Conference room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

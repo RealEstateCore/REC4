@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Dewpoint_Setpoint](.)
 # Dewpoint_Setpoint
+
+**Display name:** Dewpoint Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Dewpoint_Setpoint;1
-## Display name
-- **en:** Dewpoint Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

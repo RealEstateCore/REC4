@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Chiller](.)
 # Chiller
+
+**Display name:** Chiller<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chiller;1
-## Display name
-- **en:** Chiller
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

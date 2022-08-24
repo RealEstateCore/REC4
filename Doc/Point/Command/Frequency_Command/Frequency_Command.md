@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Frequency_Command](.)
 # Frequency_Command
+
+**Display name:** Frequency Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Frequency_Command;1
-## Display name
-- **en:** Frequency Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

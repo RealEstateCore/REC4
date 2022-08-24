@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Override_Command](Override_Command.md) > [Curtailment_Override_Command](.)
 # Curtailment_Override_Command
+
+**Display name:** Curtailment Override Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Curtailment_Override_Command;1
-## Display name
-- **en:** Curtailment Override Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

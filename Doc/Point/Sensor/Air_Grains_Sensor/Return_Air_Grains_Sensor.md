@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Air_Grains_Sensor](Air_Grains_Sensor.md) > [Return_Air_Grains_Sensor](.)
 # Return_Air_Grains_Sensor
+
+**Display name:** Return Air Grains Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Return_Air_Grains_Sensor;1
-## Display name
-- **en:** Return Air Grains Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

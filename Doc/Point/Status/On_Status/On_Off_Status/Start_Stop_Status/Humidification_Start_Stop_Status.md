@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Status](../../../Status.md) > [On_Status](../../On_Status.md) > [On_Off_Status](../On_Off_Status.md) > [Start_Stop_Status](Start_Stop_Status.md) > [Humidification_Start_Stop_Status](.)
 # Humidification_Start_Stop_Status
+
+**Display name:** Humidification Start Stop Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidification_Start_Stop_Status;1
-## Display name
-- **en:** Humidification Start Stop Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

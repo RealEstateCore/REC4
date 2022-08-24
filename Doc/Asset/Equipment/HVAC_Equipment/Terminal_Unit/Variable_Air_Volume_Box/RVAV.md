@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Variable_Air_Volume_Box](Variable_Air_Volume_Box.md) > [RVAV](.)
 # RVAV
+
+**Display name:** RVAV<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:RVAV;1
-## Display name
-- **en:** RVAV
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

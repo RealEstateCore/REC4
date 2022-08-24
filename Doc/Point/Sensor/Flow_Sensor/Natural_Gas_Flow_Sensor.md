@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Flow_Sensor](Flow_Sensor.md) > [Natural_Gas_Flow_Sensor](.)
 # Natural_Gas_Flow_Sensor
+
+**Display name:** Natural Gas Flow Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Natural_Gas_Flow_Sensor;1
-## Display name
-- **en:** Natural Gas Flow Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

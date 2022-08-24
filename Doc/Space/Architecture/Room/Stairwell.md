@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Stairwell](.)
 # Stairwell
+
+**Display name:** Stairwell<br />
 **DTMI:** dtmi:org:w3id:rec:Stairwell;1
-## Display name
-- **en:** Stairwell
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

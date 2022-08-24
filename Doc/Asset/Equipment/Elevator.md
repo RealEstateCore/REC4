@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Elevator](.)
 # Elevator
+
+**Display name:** Elevator<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Elevator;1
-## Display name
-- **en:** Elevator
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

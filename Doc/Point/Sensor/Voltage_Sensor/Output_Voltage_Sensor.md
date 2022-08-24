@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Voltage_Sensor](Voltage_Sensor.md) > [Output_Voltage_Sensor](.)
 # Output_Voltage_Sensor
+
+**Display name:** Output Voltage Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Output_Voltage_Sensor;1
-## Display name
-- **en:** Output Voltage Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

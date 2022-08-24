@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Thermostat_Status](.)
 # Thermostat_Status
+
+**Display name:** Thermostat Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermostat_Status;1
-## Display name
-- **en:** Thermostat Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

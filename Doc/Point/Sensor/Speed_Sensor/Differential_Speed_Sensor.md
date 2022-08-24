@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Speed_Sensor](Speed_Sensor.md) > [Differential_Speed_Sensor](.)
 # Differential_Speed_Sensor
+
+**Display name:** Differential Speed Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Speed_Sensor;1
-## Display name
-- **en:** Differential Speed Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

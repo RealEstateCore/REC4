@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [AccessControlZone](.)
 # AccessControlZone
+
+**Display name:** Access control zone<br />
 **DTMI:** dtmi:org:w3id:rec:AccessControlZone;1
-## Display name
-- **en:** Access control zone
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

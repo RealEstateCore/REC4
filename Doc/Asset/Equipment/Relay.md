@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Relay](.)
 # Relay
+
+**Display name:** Relay<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Relay;1
-## Display name
-- **en:** Relay
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Emergency_Air_Flow_System](.)
 # Emergency_Air_Flow_System
+
+**Display name:** Emergency Air Flow System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Air_Flow_System;1
-## Display name
-- **en:** Emergency Air Flow System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

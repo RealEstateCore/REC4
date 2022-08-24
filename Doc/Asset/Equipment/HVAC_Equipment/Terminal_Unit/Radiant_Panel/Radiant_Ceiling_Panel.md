@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Radiant_Panel](Radiant_Panel.md) > [Radiant_Ceiling_Panel](.)
 # Radiant_Ceiling_Panel
+
+**Display name:** Radiant Ceiling Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Radiant_Ceiling_Panel;1
-## Display name
-- **en:** Radiant Ceiling Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Status](../../../Status.md) > [On_Status](../../On_Status.md) > [On_Off_Status](../On_Off_Status.md) > [Standby_Unit_On_Off_Status](Standby_Unit_On_Off_Status.md) > [Standby_Glycool_Unit_On_Off_Status](.)
 # Standby_Glycool_Unit_On_Off_Status
+
+**Display name:** Standby Glycool Unit On Off Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_Glycool_Unit_On_Off_Status;1
-## Display name
-- **en:** Standby Glycool Unit On Off Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

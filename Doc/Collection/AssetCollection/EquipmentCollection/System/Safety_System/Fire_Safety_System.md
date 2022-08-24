@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [System](../System.md) > [Safety_System](Safety_System.md) > [Fire_Safety_System](.)
 # Fire_Safety_System
+
+**Display name:** Fire Safety System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fire_Safety_System;1
-## Display name
-- **en:** Fire Safety System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

@@ -1,9 +1,10 @@
 [Information](.)
 # Information
+
+**Display name:** Information<br />
 **DTMI:** dtmi:org:w3id:rec:Information;1
-## Display name
-- **en:** Information
-## Description
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

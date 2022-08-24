@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Time_Setpoint](.)
 # Time_Setpoint
+
+**Display name:** Time Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Time_Setpoint;1
-## Display name
-- **en:** Time Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

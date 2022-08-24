@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Enthalpy_Sensor](../Enthalpy_Sensor.md) > [Air_Enthalpy_Sensor](.)
 # Air_Enthalpy_Sensor
+
+**Display name:** Air Enthalpy Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Air_Enthalpy_Sensor;1
-## Display name
-- **en:** Air Enthalpy Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

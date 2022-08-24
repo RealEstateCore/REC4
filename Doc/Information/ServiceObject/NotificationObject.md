@@ -1,9 +1,10 @@
 [Information](../Information.md) > [ServiceObject](ServiceObject.md) > [NotificationObject](.)
 # NotificationObject
+
+**Display name:** Notification object<br />
 **DTMI:** dtmi:org:w3id:rec:NotificationObject;1
-## Display name
-- **en:** Notification object
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:ServiceObject;1:** acknowledgedBy, closedBy, createdBy, producedBy, relatedTo

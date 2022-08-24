@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Speed_Setpoint_Limit](.)
 # Speed_Setpoint_Limit
+
+**Display name:** Speed Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Setpoint_Limit;1
-## Display name
-- **en:** Speed Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

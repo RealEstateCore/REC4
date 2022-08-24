@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Position_Sensor](Position_Sensor.md) > [Damper_Position_Sensor](.)
 # Damper_Position_Sensor
+
+**Display name:** Damper Position Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper_Position_Sensor;1
-## Display name
-- **en:** Damper Position Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

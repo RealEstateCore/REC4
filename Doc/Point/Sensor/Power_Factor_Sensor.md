@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Sensor](Sensor.md) > [Power_Factor_Sensor](.)
 # Power_Factor_Sensor
+
+**Display name:** Power Factor Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1
-## Display name
-- **en:** Power Factor Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

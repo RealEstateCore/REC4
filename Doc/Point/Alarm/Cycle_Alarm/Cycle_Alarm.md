@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Cycle_Alarm](.)
 # Cycle_Alarm
+
+**Display name:** Cycle Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cycle_Alarm;1
-## Display name
-- **en:** Cycle Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

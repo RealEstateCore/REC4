@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Even_Month_Status](.)
 # Even_Month_Status
+
+**Display name:** Even Month Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Even_Month_Status;1
-## Display name
-- **en:** Even Month Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [Meter](../../Meter.md) > [Water_Meter](../Water_Meter.md) > [Chilled_Water_Meter](.)
 # Chilled_Water_Meter
+
+**Display name:** Chilled Water Meter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Meter;1
-## Display name
-- **en:** Chilled Water Meter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

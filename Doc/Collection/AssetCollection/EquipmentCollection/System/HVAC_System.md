@@ -1,9 +1,10 @@
 [Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [HVAC_System](.)
 # HVAC_System
+
+**Display name:** HVAC System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:HVAC_System;1
-## Display name
-- **en:** HVAC System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

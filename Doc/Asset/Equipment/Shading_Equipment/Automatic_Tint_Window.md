@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](Shading_Equipment.md) > [Automatic_Tint_Window](.)
 # Automatic_Tint_Window
+
+**Display name:** Automatic Tint Window<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Automatic_Tint_Window;1
-## Display name
-- **en:** Automatic Tint Window
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

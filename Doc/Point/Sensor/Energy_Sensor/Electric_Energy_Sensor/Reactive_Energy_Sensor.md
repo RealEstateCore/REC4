@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Energy_Sensor](../Energy_Sensor.md) > [Electric_Energy_Sensor](Electric_Energy_Sensor.md) > [Reactive_Energy_Sensor](.)
 # Reactive_Energy_Sensor
+
+**Display name:** Reactive Energy Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reactive_Energy_Sensor;1
-## Display name
-- **en:** Reactive Energy Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

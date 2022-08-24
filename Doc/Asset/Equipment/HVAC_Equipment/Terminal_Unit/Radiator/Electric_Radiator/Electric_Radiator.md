@@ -1,9 +1,10 @@
 [Asset](../../../../../Asset.md) > [Equipment](../../../../Equipment.md) > [HVAC_Equipment](../../../HVAC_Equipment.md) > [Terminal_Unit](../../Terminal_Unit.md) > [Radiator](../Radiator.md) > [Electric_Radiator](.)
 # Electric_Radiator
+
+**Display name:** Electric Radiator<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Electric_Radiator;1
-## Display name
-- **en:** Electric Radiator
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

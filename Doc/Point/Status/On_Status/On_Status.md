@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [On_Status](.)
 # On_Status
+
+**Display name:** On Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Status;1
-## Display name
-- **en:** On Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

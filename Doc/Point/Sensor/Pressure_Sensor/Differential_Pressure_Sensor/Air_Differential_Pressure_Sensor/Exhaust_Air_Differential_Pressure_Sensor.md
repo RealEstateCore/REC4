@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Pressure_Sensor](../../Pressure_Sensor.md) > [Differential_Pressure_Sensor](../Differential_Pressure_Sensor.md) > [Air_Differential_Pressure_Sensor](Air_Differential_Pressure_Sensor.md) > [Exhaust_Air_Differential_Pressure_Sensor](.)
 # Exhaust_Air_Differential_Pressure_Sensor
+
+**Display name:** Exhaust Air Differential Pressure Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Exhaust_Air_Differential_Pressure_Sensor;1
-## Display name
-- **en:** Exhaust Air Differential Pressure Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

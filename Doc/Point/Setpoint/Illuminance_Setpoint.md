@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Illuminance_Setpoint](.)
 # Illuminance_Setpoint
+
+**Display name:** Illuminance Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Illuminance_Setpoint;1
-## Display name
-- **en:** Illuminance Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Gain_Parameter](../Gain_Parameter.md) > [Proportional_Gain_Parameter](Proportional_Gain_Parameter.md) > [Discharge_Air_Proportional_Gain_Parameter](.)
 # Discharge_Air_Proportional_Gain_Parameter
+
+**Display name:** Discharge Air Proportional Gain Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Proportional_Gain_Parameter;1
-## Display name
-- **en:** Discharge Air Proportional Gain Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

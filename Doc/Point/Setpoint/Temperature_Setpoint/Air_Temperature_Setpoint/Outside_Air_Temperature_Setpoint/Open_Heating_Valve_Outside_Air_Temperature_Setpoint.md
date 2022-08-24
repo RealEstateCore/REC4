@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](../Air_Temperature_Setpoint.md) > [Outside_Air_Temperature_Setpoint](Outside_Air_Temperature_Setpoint.md) > [Open_Heating_Valve_Outside_Air_Temperature_Setpoint](.)
 # Open_Heating_Valve_Outside_Air_Temperature_Setpoint
+
+**Display name:** Open Heating Valve Outside Air Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Open_Heating_Valve_Outside_Air_Temperature_Setpoint;1
-## Display name
-- **en:** Open Heating Valve Outside Air Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

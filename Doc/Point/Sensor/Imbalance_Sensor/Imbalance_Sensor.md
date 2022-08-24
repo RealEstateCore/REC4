@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Imbalance_Sensor](.)
 # Imbalance_Sensor
+
+**Display name:** Imbalance Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Imbalance_Sensor;1
-## Display name
-- **en:** Imbalance Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

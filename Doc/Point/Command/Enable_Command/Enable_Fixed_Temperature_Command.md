@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Enable_Fixed_Temperature_Command](.)
 # Enable_Fixed_Temperature_Command
+
+**Display name:** Enable Fixed Temperature Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Fixed_Temperature_Command;1
-## Display name
-- **en:** Enable Fixed Temperature Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

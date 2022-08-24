@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Office](Office.md) > [PhoneBooth](.)
 # PhoneBooth
+
+**Display name:** PhoneBooth<br />
 **DTMI:** dtmi:org:w3id:rec:PhoneBooth;1
-## Display name
-- **en:** PhoneBooth
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

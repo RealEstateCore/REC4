@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Steam_Usage_Sensor](.)
 # Steam_Usage_Sensor
+
+**Display name:** Steam Usage Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Usage_Sensor;1
-## Display name
-- **en:** Steam Usage Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

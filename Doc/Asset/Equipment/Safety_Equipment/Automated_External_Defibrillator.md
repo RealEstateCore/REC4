@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [Automated_External_Defibrillator](.)
 # Automated_External_Defibrillator
+
+**Display name:** Automated External Defibrillator<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Automated_External_Defibrillator;1
-## Display name
-- **en:** Automated External Defibrillator
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

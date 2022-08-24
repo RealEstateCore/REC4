@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Overridden_Status](Overridden_Status.md) > [Overridden_On_Status](.)
 # Overridden_On_Status
+
+**Display name:** Overridden On Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Overridden_On_Status;1
-## Display name
-- **en:** Overridden On Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

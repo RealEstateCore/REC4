@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Temperature_Adjust_Sensor](.)
 # Temperature_Adjust_Sensor
+
+**Display name:** Temperature Adjust Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Adjust_Sensor;1
-## Display name
-- **en:** Temperature Adjust Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

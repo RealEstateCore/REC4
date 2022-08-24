@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Temperature_Sensor](../Temperature_Sensor.md) > [Radiant_Panel_Temperature_Sensor](Radiant_Panel_Temperature_Sensor.md) > [Inside_Face_Surface_Temperature_Sensor](.)
 # Inside_Face_Surface_Temperature_Sensor
+
+**Display name:** Inside Face Surface Temperature Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Inside_Face_Surface_Temperature_Sensor;1
-## Display name
-- **en:** Inside Face Surface Temperature Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

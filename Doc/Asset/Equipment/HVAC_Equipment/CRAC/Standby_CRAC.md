@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [CRAC](CRAC.md) > [Standby_CRAC](.)
 # Standby_CRAC
+
+**Display name:** Standby CRAC<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Standby_CRAC;1
-## Display name
-- **en:** Standby CRAC
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

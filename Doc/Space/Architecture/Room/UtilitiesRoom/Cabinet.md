@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [UtilitiesRoom](UtilitiesRoom.md) > [Cabinet](.)
 # Cabinet
+
+**Display name:** Cabinet<br />
 **DTMI:** dtmi:org:w3id:rec:Cabinet;1
-## Display name
-- **en:** Cabinet
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

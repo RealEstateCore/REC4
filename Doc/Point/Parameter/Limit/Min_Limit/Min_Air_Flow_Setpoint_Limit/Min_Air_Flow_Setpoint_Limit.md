@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [Limit](../../Limit.md) > [Min_Limit](../Min_Limit.md) > [Min_Air_Flow_Setpoint_Limit](.)
 # Min_Air_Flow_Setpoint_Limit
+
+**Display name:** Min Air Flow Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Air_Flow_Setpoint_Limit;1
-## Display name
-- **en:** Min Air Flow Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

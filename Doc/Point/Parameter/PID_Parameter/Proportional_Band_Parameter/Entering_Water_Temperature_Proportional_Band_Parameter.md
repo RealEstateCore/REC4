@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [PID_Parameter](../PID_Parameter.md) > [Proportional_Band_Parameter](Proportional_Band_Parameter.md) > [Entering_Water_Temperature_Proportional_Band_Parameter](.)
 # Entering_Water_Temperature_Proportional_Band_Parameter
+
+**Display name:** Entering Water Temperature Proportional Band Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Temperature_Proportional_Band_Parameter;1
-## Display name
-- **en:** Entering Water Temperature Proportional Band Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

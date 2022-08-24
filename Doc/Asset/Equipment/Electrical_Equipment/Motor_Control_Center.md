@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Motor_Control_Center](.)
 # Motor_Control_Center
+
+**Display name:** Motor Control Center<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Motor_Control_Center;1
-## Display name
-- **en:** Motor Control Center
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

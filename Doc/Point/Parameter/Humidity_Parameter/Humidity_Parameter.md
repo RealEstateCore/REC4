@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Humidity_Parameter](.)
 # Humidity_Parameter
+
+**Display name:** Humidity Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidity_Parameter;1
-## Display name
-- **en:** Humidity Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

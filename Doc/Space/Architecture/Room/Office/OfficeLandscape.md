@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Office](Office.md) > [OfficeLandscape](.)
 # OfficeLandscape
+
+**Display name:** OfficeLandscape<br />
 **DTMI:** dtmi:org:w3id:rec:OfficeLandscape;1
-## Display name
-- **en:** OfficeLandscape
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

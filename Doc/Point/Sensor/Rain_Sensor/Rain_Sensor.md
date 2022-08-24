@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Rain_Sensor](.)
 # Rain_Sensor
+
+**Display name:** Rain Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rain_Sensor;1
-## Display name
-- **en:** Rain Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

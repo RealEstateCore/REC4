@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Transfer_Fan](.)
 # Transfer_Fan
+
+**Display name:** Transfer Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Transfer_Fan;1
-## Display name
-- **en:** Transfer Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

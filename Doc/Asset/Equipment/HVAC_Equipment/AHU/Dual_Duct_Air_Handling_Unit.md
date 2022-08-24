@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [Dual_Duct_Air_Handling_Unit](.)
 # Dual_Duct_Air_Handling_Unit
+
+**Display name:** Dual Duct Air Handling Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Dual_Duct_Air_Handling_Unit;1
-## Display name
-- **en:** Dual Duct Air Handling Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

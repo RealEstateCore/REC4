@@ -1,10 +1,13 @@
 [Agent](.)
 # Agent
+
+The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, ....) to be anchored in one joint place, on the Agent class.
+
+
+**Display name:** Agent<br />
 **DTMI:** dtmi:org:w3id:rec:Agent;1
-## Display name
-- **en:** Agent
-## Description
-- **en:** The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, ....) to be anchored in one joint place, on the Agent class.
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

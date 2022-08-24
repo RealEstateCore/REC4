@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Emergency_Phone](.)
 # Emergency_Phone
+
+**Display name:** Emergency Phone<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Phone;1
-## Display name
-- **en:** Emergency Phone
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

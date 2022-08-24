@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Valve](../Valve.md) > [Water_Valve](Water_Valve.md) > [Condenser_Water_Valve](.)
 # Condenser_Water_Valve
+
+**Display name:** Condenser Water Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Valve;1
-## Display name
-- **en:** Condenser Water Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

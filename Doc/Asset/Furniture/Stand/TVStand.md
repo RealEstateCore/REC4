@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Furniture](../Furniture.md) > [Stand](Stand.md) > [TVStand](.)
 # TVStand
+
+**Display name:** TV stand<br />
 **DTMI:** dtmi:org:w3id:rec:TVStand;1
-## Display name
-- **en:** TV stand
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Asset;1:** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy

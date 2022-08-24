@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Flow_Sensor](../Flow_Sensor.md) > [Air_Flow_Sensor](Air_Flow_Sensor.md) > [Outside_Air_Flow_Sensor](.)
 # Outside_Air_Flow_Sensor
+
+**Display name:** Outside Air Flow Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Flow_Sensor;1
-## Display name
-- **en:** Outside Air Flow Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

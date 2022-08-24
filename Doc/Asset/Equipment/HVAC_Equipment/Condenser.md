@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Condenser](.)
 # Condenser
+
+**Display name:** Condenser<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser;1
-## Display name
-- **en:** Condenser
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

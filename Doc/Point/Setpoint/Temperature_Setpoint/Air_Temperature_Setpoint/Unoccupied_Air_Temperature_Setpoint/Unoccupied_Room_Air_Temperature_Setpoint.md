@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](../Air_Temperature_Setpoint.md) > [Unoccupied_Air_Temperature_Setpoint](Unoccupied_Air_Temperature_Setpoint.md) > [Unoccupied_Room_Air_Temperature_Setpoint](.)
 # Unoccupied_Room_Air_Temperature_Setpoint
+
+**Display name:** Unoccupied Room Air Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unoccupied_Room_Air_Temperature_Setpoint;1
-## Display name
-- **en:** Unoccupied Room Air Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [PID_Parameter](../../PID_Parameter.md) > [Proportional_Band_Parameter](../Proportional_Band_Parameter.md) > [Discharge_Air_Temperature_Proportional_Band_Parameter](Discharge_Air_Temperature_Proportional_Band_Parameter.md) > [Heating_Discharge_Air_Temperature_Proportional_Band_Parameter](.)
 # Heating_Discharge_Air_Temperature_Proportional_Band_Parameter
+
+**Display name:** Heating Discharge Air Temperature Proportional Band Parameter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Discharge_Air_Temperature_Proportional_Band_Parameter;1
-## Display name
-- **en:** Heating Discharge Air Temperature Proportional Band Parameter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

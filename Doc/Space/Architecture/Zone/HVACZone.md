@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Zone](Zone.md) > [HVACZone](.)
 # HVACZone
+
+**Display name:** HVAC zone<br />
 **DTMI:** dtmi:org:w3id:rec:HVACZone;1
-## Display name
-- **en:** HVAC zone
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

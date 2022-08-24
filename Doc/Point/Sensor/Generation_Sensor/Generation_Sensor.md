@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](.)
 # Generation_Sensor
+
+**Display name:** Generation Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Generation_Sensor;1
-## Display name
-- **en:** Generation Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

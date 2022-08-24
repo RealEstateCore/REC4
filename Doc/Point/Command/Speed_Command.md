@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Command](Command.md) > [Speed_Command](.)
 # Speed_Command
+
+**Display name:** Speed Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Command;1
-## Display name
-- **en:** Speed Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

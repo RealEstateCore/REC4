@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [AED](.)
 # AED
+
+**Display name:** AED<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:AED;1
-## Display name
-- **en:** AED
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Meter](../Meter.md) > [Gas_Meter](.)
 # Gas_Meter
+
+**Display name:** Gas Meter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_Meter;1
-## Display name
-- **en:** Gas Meter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

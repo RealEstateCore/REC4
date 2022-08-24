@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Fire_Safety_Equipment](Fire_Safety_Equipment.md) > [Smoke_Detector](.)
 # Smoke_Detector
+
+**Display name:** Smoke Detector<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Smoke_Detector;1
-## Display name
-- **en:** Smoke Detector
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

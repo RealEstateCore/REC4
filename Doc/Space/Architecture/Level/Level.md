@@ -1,10 +1,13 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Level](.)
 # Level
+
+The level of a building, a.k.a. storey, floor, etc.
+
+
+**Display name:** Level<br />
 **DTMI:** dtmi:org:w3id:rec:Level;1
-## Display name
-- **en:** Level
-## Description
-- **en:** The level of a building, a.k.a. storey, floor, etc.
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

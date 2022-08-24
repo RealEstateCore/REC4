@@ -1,9 +1,10 @@
 [Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](EquipmentCollection.md) > [PV_Array](.)
 # PV_Array
+
+**Display name:** PV Array<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PV_Array;1
-## Display name
-- **en:** PV Array
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

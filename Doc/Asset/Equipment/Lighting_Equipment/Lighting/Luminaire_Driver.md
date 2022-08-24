@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Lighting_Equipment](../Lighting_Equipment.md) > [Lighting](Lighting.md) > [Luminaire_Driver](.)
 # Luminaire_Driver
+
+**Display name:** Luminaire Driver<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminaire_Driver;1
-## Display name
-- **en:** Luminaire Driver
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

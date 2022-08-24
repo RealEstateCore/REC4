@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Humidity_Alarm](Humidity_Alarm.md) > [Low_Humidity_Alarm](.)
 # Low_Humidity_Alarm
+
+**Display name:** Low Humidity Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Low_Humidity_Alarm;1
-## Display name
-- **en:** Low Humidity Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

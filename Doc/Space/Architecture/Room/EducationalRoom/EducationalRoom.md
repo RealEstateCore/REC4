@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [EducationalRoom](.)
 # EducationalRoom
+
+**Display name:** Educational room<br />
 **DTMI:** dtmi:org:w3id:rec:EducationalRoom;1
-## Display name
-- **en:** Educational room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](Equipment.md) > [Gas_Distribution](.)
 # Gas_Distribution
+
+**Display name:** Gas Distribution<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_Distribution;1
-## Display name
-- **en:** Gas Distribution
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

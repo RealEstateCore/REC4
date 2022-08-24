@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [Stadium](.)
 # Stadium
+
+**Display name:** Stadium<br />
 **DTMI:** dtmi:org:w3id:rec:Stadium;1
-## Display name
-- **en:** Stadium
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

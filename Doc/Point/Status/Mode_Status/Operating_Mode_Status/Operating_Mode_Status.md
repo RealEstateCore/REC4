@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Operating_Mode_Status](.)
 # Operating_Mode_Status
+
+**Display name:** Operating Mode Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Operating_Mode_Status;1
-## Display name
-- **en:** Operating Mode Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

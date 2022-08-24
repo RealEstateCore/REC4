@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Manual_Auto_Status](.)
 # Manual_Auto_Status
+
+**Display name:** Manual Auto Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Manual_Auto_Status;1
-## Display name
-- **en:** Manual Auto Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

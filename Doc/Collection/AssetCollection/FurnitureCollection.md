@@ -1,9 +1,10 @@
 [Collection](../Collection.md) > [AssetCollection](AssetCollection.md) > [FurnitureCollection](.)
 # FurnitureCollection
+
+**Display name:** Furniture collection<br />
 **DTMI:** dtmi:org:w3id:rec:FurnitureCollection;1
-## Display name
-- **en:** Furniture collection
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

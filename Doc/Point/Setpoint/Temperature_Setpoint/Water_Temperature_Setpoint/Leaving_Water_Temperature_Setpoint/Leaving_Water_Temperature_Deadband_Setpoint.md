@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](../Water_Temperature_Setpoint.md) > [Leaving_Water_Temperature_Setpoint](Leaving_Water_Temperature_Setpoint.md) > [Leaving_Water_Temperature_Deadband_Setpoint](.)
 # Leaving_Water_Temperature_Deadband_Setpoint
+
+**Display name:** Leaving Water Temperature Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Water_Temperature_Deadband_Setpoint;1
-## Display name
-- **en:** Leaving Water Temperature Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

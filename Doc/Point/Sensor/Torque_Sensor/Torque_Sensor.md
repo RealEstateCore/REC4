@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Torque_Sensor](.)
 # Torque_Sensor
+
+**Display name:** Torque Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Torque_Sensor;1
-## Display name
-- **en:** Torque Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

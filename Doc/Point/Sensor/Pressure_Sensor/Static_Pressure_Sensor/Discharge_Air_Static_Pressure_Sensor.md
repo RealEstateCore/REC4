@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Pressure_Sensor](../Pressure_Sensor.md) > [Static_Pressure_Sensor](Static_Pressure_Sensor.md) > [Discharge_Air_Static_Pressure_Sensor](.)
 # Discharge_Air_Static_Pressure_Sensor
+
+**Display name:** Discharge Air Static Pressure Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Static_Pressure_Sensor;1
-## Display name
-- **en:** Discharge Air Static Pressure Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

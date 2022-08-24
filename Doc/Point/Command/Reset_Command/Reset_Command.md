@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](.)
 # Reset_Command
+
+**Display name:** Reset Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reset_Command;1
-## Display name
-- **en:** Reset Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

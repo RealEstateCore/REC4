@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Electrical_Equipment](../Electrical_Equipment.md) > [Energy_Storage](.)
 # Energy_Storage
+
+**Display name:** Energy Storage<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_Storage;1
-## Display name
-- **en:** Energy Storage
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

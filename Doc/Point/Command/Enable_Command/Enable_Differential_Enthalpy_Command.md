@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Enable_Differential_Enthalpy_Command](.)
 # Enable_Differential_Enthalpy_Command
+
+**Display name:** Enable Differential Enthalpy Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Differential_Enthalpy_Command;1
-## Display name
-- **en:** Enable Differential Enthalpy Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

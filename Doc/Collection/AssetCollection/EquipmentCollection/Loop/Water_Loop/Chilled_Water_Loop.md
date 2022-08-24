@@ -1,9 +1,10 @@
 [Collection](../../../../Collection.md) > [AssetCollection](../../../AssetCollection.md) > [EquipmentCollection](../../EquipmentCollection.md) > [Loop](../Loop.md) > [Water_Loop](Water_Loop.md) > [Chilled_Water_Loop](.)
 # Chilled_Water_Loop
+
+**Display name:** Chilled Water Loop<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Loop;1
-## Display name
-- **en:** Chilled Water Loop
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

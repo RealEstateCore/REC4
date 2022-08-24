@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Box_Mode_Command](.)
 # Box_Mode_Command
+
+**Display name:** Box Mode Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Box_Mode_Command;1
-## Display name
-- **en:** Box Mode Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Video_Surveillance_Equipment](Video_Surveillance_Equipment.md) > [Surveillance_Camera](.)
 # Surveillance_Camera
+
+**Display name:** Surveillance Camera<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Surveillance_Camera;1
-## Display name
-- **en:** Surveillance Camera
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [CopyingRoom](.)
 # CopyingRoom
+
+**Display name:** Copying room<br />
 **DTMI:** dtmi:org:w3id:rec:CopyingRoom;1
-## Display name
-- **en:** Copying room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

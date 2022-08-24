@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Valve_Command](Valve_Command.md) > [Valve_Position_Command](.)
 # Valve_Position_Command
+
+**Display name:** Valve Position Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Valve_Position_Command;1
-## Display name
-- **en:** Valve Position Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

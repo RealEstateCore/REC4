@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Solar_Thermal_Collector](Solar_Thermal_Collector.md) > [PVT_Panel](.)
 # PVT_Panel
+
+**Display name:** PVT Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PVT_Panel;1
-## Display name
-- **en:** PVT Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

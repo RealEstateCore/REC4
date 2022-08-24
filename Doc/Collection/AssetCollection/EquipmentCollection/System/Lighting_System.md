@@ -1,9 +1,10 @@
 [Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Lighting_System](.)
 # Lighting_System
+
+**Display name:** Lighting System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lighting_System;1
-## Display name
-- **en:** Lighting System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

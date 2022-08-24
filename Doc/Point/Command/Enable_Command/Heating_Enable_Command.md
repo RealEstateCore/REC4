@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Heating_Enable_Command](.)
 # Heating_Enable_Command
+
+**Display name:** Heating Enable Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Enable_Command;1
-## Display name
-- **en:** Heating Enable Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

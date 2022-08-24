@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Speed_Status](Speed_Status.md) > [Speed_Mode_Status](.)
 # Speed_Mode_Status
+
+**Display name:** Speed Mode Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Speed_Mode_Status;1
-## Display name
-- **en:** Speed Mode Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

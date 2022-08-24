@@ -1,9 +1,10 @@
 [Event](../Event.md) > [PointEvent](PointEvent.md) > [ExceptionEvent](.)
 # ExceptionEvent
+
+**Display name:** Exception event<br />
 **DTMI:** dtmi:org:w3id:rec:ExceptionEvent;1
-## Display name
-- **en:** Exception event
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

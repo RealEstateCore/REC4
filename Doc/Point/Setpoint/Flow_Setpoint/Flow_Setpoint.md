@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Flow_Setpoint](.)
 # Flow_Setpoint
+
+**Display name:** Flow Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Flow_Setpoint;1
-## Display name
-- **en:** Flow Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

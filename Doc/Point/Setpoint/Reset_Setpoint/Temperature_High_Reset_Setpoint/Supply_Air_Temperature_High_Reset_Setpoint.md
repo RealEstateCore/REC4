@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Reset_Setpoint](../Reset_Setpoint.md) > [Temperature_High_Reset_Setpoint](Temperature_High_Reset_Setpoint.md) > [Supply_Air_Temperature_High_Reset_Setpoint](.)
 # Supply_Air_Temperature_High_Reset_Setpoint
+
+**Display name:** Supply Air Temperature High Reset Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Temperature_High_Reset_Setpoint;1
-## Display name
-- **en:** Supply Air Temperature High Reset Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

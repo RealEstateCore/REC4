@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Air_Quality_Sensor](../Air_Quality_Sensor.md) > [CO2_Sensor](CO2_Sensor.md) > [Outside_Air_CO2_Sensor](.)
 # Outside_Air_CO2_Sensor
+
+**Display name:** Outside Air CO2 Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_CO2_Sensor;1
-## Display name
-- **en:** Outside Air CO2 Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

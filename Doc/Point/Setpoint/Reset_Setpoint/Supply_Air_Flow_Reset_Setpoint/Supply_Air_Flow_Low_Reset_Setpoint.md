@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Reset_Setpoint](../Reset_Setpoint.md) > [Supply_Air_Flow_Reset_Setpoint](Supply_Air_Flow_Reset_Setpoint.md) > [Supply_Air_Flow_Low_Reset_Setpoint](.)
 # Supply_Air_Flow_Low_Reset_Setpoint
+
+**Display name:** Supply Air Flow Low Reset Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Flow_Low_Reset_Setpoint;1
-## Display name
-- **en:** Supply Air Flow Low Reset Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

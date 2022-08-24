@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Occupancy_Sensor](Occupancy_Sensor.md) > [PIR_Sensor](.)
 # PIR_Sensor
+
+**Display name:** PIR Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PIR_Sensor;1
-## Display name
-- **en:** PIR Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

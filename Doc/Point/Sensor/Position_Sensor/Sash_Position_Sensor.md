@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Position_Sensor](Position_Sensor.md) > [Sash_Position_Sensor](.)
 # Sash_Position_Sensor
+
+**Display name:** Sash Position Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Sash_Position_Sensor;1
-## Display name
-- **en:** Sash Position Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

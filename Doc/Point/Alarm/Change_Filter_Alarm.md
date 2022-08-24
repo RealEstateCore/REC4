@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Alarm](Alarm.md) > [Change_Filter_Alarm](.)
 # Change_Filter_Alarm
+
+**Display name:** Change Filter Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Change_Filter_Alarm;1
-## Display name
-- **en:** Change Filter Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

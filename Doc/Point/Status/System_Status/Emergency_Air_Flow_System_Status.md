@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [System_Status](System_Status.md) > [Emergency_Air_Flow_System_Status](.)
 # Emergency_Air_Flow_System_Status
+
+**Display name:** Emergency Air Flow System Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Air_Flow_System_Status;1
-## Display name
-- **en:** Emergency Air Flow System Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

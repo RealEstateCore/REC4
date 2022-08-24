@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Water_Level_Sensor](Water_Level_Sensor.md) > [Collection_Basin_Water_Level_Sensor](.)
 # Collection_Basin_Water_Level_Sensor
+
+**Display name:** Collection Basin Water Level Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Collection_Basin_Water_Level_Sensor;1
-## Display name
-- **en:** Collection Basin Water Level Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

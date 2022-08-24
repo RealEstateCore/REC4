@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Air_Plenum](Air_Plenum.md) > [Discharge_Air_Plenum](.)
 # Discharge_Air_Plenum
+
+**Display name:** Discharge Air Plenum<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Discharge_Air_Plenum;1
-## Display name
-- **en:** Discharge Air Plenum
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

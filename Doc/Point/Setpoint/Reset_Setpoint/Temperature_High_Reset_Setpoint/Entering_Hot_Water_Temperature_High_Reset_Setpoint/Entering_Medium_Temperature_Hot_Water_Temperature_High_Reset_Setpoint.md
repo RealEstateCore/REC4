@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Reset_Setpoint](../../Reset_Setpoint.md) > [Temperature_High_Reset_Setpoint](../Temperature_High_Reset_Setpoint.md) > [Entering_Hot_Water_Temperature_High_Reset_Setpoint](Entering_Hot_Water_Temperature_High_Reset_Setpoint.md) > [Entering_Medium_Temperature_Hot_Water_Temperature_High_Reset_Setpoint](.)
 # Entering_Medium_Temperature_Hot_Water_Temperature_High_Reset_Setpoint
+
+**Display name:** Entering Medium Temperature Hot Water Temperature High Reset Set<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Medium_Temperature_Hot_Water_Temperature_High_Reset_Setpoint;1
-## Display name
-- **en:** Entering Medium Temperature Hot Water Temperature High Reset Set
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

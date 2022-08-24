@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Steam_Valve](.)
 # Steam_Valve
+
+**Display name:** Steam Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Steam_Valve;1
-## Display name
-- **en:** Steam Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

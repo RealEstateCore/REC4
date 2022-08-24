@@ -1,9 +1,10 @@
 [Point](../../../../../Point.md) > [Status](../../../../Status.md) > [On_Status](../../../On_Status.md) > [On_Off_Status](../../On_Off_Status.md) > [Start_Stop_Status](../Start_Stop_Status.md) > [Run_Status](Run_Status.md) > [Run_Request_Status](.)
 # Run_Request_Status
+
+**Display name:** Run Request Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Run_Request_Status;1
-## Display name
-- **en:** Run Request Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

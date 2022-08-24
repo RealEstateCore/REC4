@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Enable_Status](.)
 # Enable_Status
+
+**Display name:** Enable Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enable_Status;1
-## Display name
-- **en:** Enable Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

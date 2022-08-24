@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Meter](Meter.md) > [Thermal_Power_Meter](.)
 # Thermal_Power_Meter
+
+**Display name:** Thermal Power Meter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Thermal_Power_Meter;1
-## Display name
-- **en:** Thermal Power Meter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Meter;1:** hasSubMeter, isSubMeterOf

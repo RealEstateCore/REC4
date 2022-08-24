@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Fault_Status](Fault_Status.md) > [Humidifier_Fault_Status](.)
 # Humidifier_Fault_Status
+
+**Display name:** Humidifier Fault Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Humidifier_Fault_Status;1
-## Display name
-- **en:** Humidifier Fault Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

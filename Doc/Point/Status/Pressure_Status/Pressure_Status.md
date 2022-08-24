@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Pressure_Status](.)
 # Pressure_Status
+
+**Display name:** Pressure Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pressure_Status;1
-## Display name
-- **en:** Pressure Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

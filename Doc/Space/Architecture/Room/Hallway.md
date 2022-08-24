@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [Hallway](.)
 # Hallway
+
+**Display name:** Hallway<br />
 **DTMI:** dtmi:org:w3id:rec:Hallway;1
-## Display name
-- **en:** Hallway
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

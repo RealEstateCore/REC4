@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](.)
 # Damper
+
+**Display name:** Damper<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper;1
-## Display name
-- **en:** Damper
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

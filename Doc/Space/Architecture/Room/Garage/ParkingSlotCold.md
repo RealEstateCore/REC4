@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Garage](Garage.md) > [ParkingSlotCold](.)
 # ParkingSlotCold
+
+**Display name:** Parking slot (cold)<br />
 **DTMI:** dtmi:org:w3id:rec:ParkingSlotCold;1
-## Display name
-- **en:** Parking slot (cold)
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

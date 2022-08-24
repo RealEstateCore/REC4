@@ -1,9 +1,10 @@
 [Event](../Event.md) > [PointEvent](PointEvent.md) > [ObservationEvent](.)
 # ObservationEvent
+
+**Display name:** Observation event<br />
 **DTMI:** dtmi:org:w3id:rec:ObservationEvent;1
-## Display name
-- **en:** Observation event
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

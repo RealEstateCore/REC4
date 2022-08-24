@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](../Air_Temperature_Setpoint.md) > [Supply_Air_Temperature_Setpoint](Supply_Air_Temperature_Setpoint.md) > [Effective_Supply_Air_Temperature_Setpoint](.)
 # Effective_Supply_Air_Temperature_Setpoint
+
+**Display name:** Effective Supply Air Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Effective_Supply_Air_Temperature_Setpoint;1
-## Display name
-- **en:** Effective Supply Air Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

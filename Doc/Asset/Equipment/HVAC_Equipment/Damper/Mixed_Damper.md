@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Damper](Damper.md) > [Mixed_Damper](.)
 # Mixed_Damper
+
+**Display name:** Mixed Damper<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mixed_Damper;1
-## Display name
-- **en:** Mixed Damper
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Damper_Position_Setpoint](.)
 # Damper_Position_Setpoint
+
+**Display name:** Damper Position Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Damper_Position_Setpoint;1
-## Display name
-- **en:** Damper Position Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

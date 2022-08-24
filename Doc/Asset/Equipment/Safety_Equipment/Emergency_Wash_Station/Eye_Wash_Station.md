@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Safety_Equipment](../Safety_Equipment.md) > [Emergency_Wash_Station](Emergency_Wash_Station.md) > [Eye_Wash_Station](.)
 # Eye_Wash_Station
+
+**Display name:** Eye Wash Station<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Eye_Wash_Station;1
-## Display name
-- **en:** Eye Wash Station
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

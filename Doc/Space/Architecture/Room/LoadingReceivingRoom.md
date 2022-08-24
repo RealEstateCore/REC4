@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [LoadingReceivingRoom](.)
 # LoadingReceivingRoom
+
+**Display name:** Loading/receiving room<br />
 **DTMI:** dtmi:org:w3id:rec:LoadingReceivingRoom;1
-## Display name
-- **en:** Loading/receiving room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

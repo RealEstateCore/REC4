@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Differential_Setpoint](../Differential_Setpoint.md) > [Differential_Pressure_Deadband_Setpoint](Differential_Pressure_Deadband_Setpoint.md) > [Chilled_Water_Differential_Pressure_Deadband_Setpoint](.)
 # Chilled_Water_Differential_Pressure_Deadband_Setpoint
+
+**Display name:** Chilled Water Differential Pressure Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Chilled_Water_Differential_Pressure_Deadband_Setpoint;1
-## Display name
-- **en:** Chilled Water Differential Pressure Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

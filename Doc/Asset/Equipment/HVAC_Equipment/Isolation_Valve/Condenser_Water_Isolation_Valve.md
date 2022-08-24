@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Isolation_Valve](Isolation_Valve.md) > [Condenser_Water_Isolation_Valve](.)
 # Condenser_Water_Isolation_Valve
+
+**Display name:** Condenser Water Isolation Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Isolation_Valve;1
-## Display name
-- **en:** Condenser Water Isolation Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

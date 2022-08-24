@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Status](../Status.md) > [Direction_Status](.)
 # Direction_Status
+
+**Display name:** Direction Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direction_Status;1
-## Display name
-- **en:** Direction Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

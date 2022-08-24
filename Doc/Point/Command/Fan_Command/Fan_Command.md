@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Fan_Command](.)
 # Fan_Command
+
+**Display name:** Fan Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Command;1
-## Display name
-- **en:** Fan Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

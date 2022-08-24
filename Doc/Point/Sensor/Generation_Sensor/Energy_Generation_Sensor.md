@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Generation_Sensor](Generation_Sensor.md) > [Energy_Generation_Sensor](.)
 # Energy_Generation_Sensor
+
+**Display name:** Energy Generation Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_Generation_Sensor;1
-## Display name
-- **en:** Energy Generation Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

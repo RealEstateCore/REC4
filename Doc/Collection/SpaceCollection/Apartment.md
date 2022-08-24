@@ -1,9 +1,10 @@
 [Collection](../Collection.md) > [SpaceCollection](SpaceCollection.md) > [Apartment](.)
 # Apartment
+
+**Display name:** Apartment<br />
 **DTMI:** dtmi:org:w3id:rec:Apartment;1
-## Display name
-- **en:** Apartment
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

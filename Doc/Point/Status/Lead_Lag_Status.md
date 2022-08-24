@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Lead_Lag_Status](.)
 # Lead_Lag_Status
+
+**Display name:** Lead Lag Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lead_Lag_Status;1
-## Display name
-- **en:** Lead Lag Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

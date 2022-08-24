@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Motor](Motor.md) > [Variable_Frequency_Drive](.)
 # Variable_Frequency_Drive
+
+**Display name:** Variable Frequency Drive<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Variable_Frequency_Drive;1
-## Display name
-- **en:** Variable Frequency Drive
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [Loop](.)
 # Loop
+
+**Display name:** Loop<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Loop;1
-## Display name
-- **en:** Loop
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

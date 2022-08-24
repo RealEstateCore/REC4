@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Transformer](.)
 # Transformer
+
+**Display name:** Transformer<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Transformer;1
-## Display name
-- **en:** Transformer
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

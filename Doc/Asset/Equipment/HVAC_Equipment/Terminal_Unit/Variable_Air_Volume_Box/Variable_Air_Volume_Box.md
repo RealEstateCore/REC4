@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Variable_Air_Volume_Box](.)
 # Variable_Air_Volume_Box
+
+**Display name:** Variable Air Volume Box<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box;1
-## Display name
-- **en:** Variable Air Volume Box
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

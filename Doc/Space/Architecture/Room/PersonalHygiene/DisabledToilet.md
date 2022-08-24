@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [PersonalHygiene](PersonalHygiene.md) > [DisabledToilet](.)
 # DisabledToilet
+
+**Display name:** Disabled toilet<br />
 **DTMI:** dtmi:org:w3id:rec:DisabledToilet;1
-## Display name
-- **en:** Disabled toilet
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Load_Setpoint](.)
 # Load_Setpoint
+
+**Display name:** Load Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Setpoint;1
-## Display name
-- **en:** Load Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

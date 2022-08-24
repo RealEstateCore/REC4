@@ -1,9 +1,10 @@
 [Asset](../Asset.md) > [Equipment](.)
 # Equipment
+
+**Display name:** Equipment<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Equipment;1
-## Display name
-- **en:** Equipment
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

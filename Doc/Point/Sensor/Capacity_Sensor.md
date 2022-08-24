@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Sensor](Sensor.md) > [Capacity_Sensor](.)
 # Capacity_Sensor
+
+**Display name:** Capacity Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Capacity_Sensor;1
-## Display name
-- **en:** Capacity Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

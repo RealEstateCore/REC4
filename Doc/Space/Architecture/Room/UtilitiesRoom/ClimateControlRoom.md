@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [UtilitiesRoom](UtilitiesRoom.md) > [ClimateControlRoom](.)
 # ClimateControlRoom
+
+**Display name:** Climate-control room<br />
 **DTMI:** dtmi:org:w3id:rec:ClimateControlRoom;1
-## Display name
-- **en:** Climate-control room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

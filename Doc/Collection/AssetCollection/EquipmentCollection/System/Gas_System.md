@@ -1,9 +1,10 @@
 [Collection](../../../Collection.md) > [AssetCollection](../../AssetCollection.md) > [EquipmentCollection](../EquipmentCollection.md) > [System](System.md) > [Gas_System](.)
 # Gas_System
+
+**Display name:** Gas System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Gas_System;1
-## Display name
-- **en:** Gas System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Command](../../Command.md) > [Load_Shed_Command](../Load_Shed_Command.md) > [Standby_Load_Shed_Command](Standby_Load_Shed_Command.md) > [Zone_Standby_Load_Shed_Command](.)
 # Zone_Standby_Load_Shed_Command
+
+**Display name:** Zone Standby Load Shed Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Zone_Standby_Load_Shed_Command;1
-## Display name
-- **en:** Zone Standby Load Shed Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

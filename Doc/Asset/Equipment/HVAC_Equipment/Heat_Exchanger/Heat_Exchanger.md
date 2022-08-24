@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Heat_Exchanger](.)
 # Heat_Exchanger
+
+**Display name:** Heat Exchanger<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Exchanger;1
-## Display name
-- **en:** Heat Exchanger
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

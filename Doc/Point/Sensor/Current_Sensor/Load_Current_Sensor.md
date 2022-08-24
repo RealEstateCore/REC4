@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Current_Sensor](Current_Sensor.md) > [Load_Current_Sensor](.)
 # Load_Current_Sensor
+
+**Display name:** Load Current Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Load_Current_Sensor;1
-## Display name
-- **en:** Load Current Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

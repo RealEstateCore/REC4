@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](Duration_Sensor.md) > [On_Timer_Sensor](.)
 # On_Timer_Sensor
+
+**Display name:** On Timer Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:On_Timer_Sensor;1
-## Display name
-- **en:** On Timer Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

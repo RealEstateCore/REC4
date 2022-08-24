@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](Load_Parameter.md) > [Min_Load_Setpoint](.)
 # Min_Load_Setpoint
+
+**Display name:** Min Load Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Load_Setpoint;1
-## Display name
-- **en:** Min Load Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

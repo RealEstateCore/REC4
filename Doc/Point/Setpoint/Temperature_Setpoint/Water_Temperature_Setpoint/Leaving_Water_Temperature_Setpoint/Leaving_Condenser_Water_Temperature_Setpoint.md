@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](../Water_Temperature_Setpoint.md) > [Leaving_Water_Temperature_Setpoint](Leaving_Water_Temperature_Setpoint.md) > [Leaving_Condenser_Water_Temperature_Setpoint](.)
 # Leaving_Condenser_Water_Temperature_Setpoint
+
+**Display name:** Leaving Condenser Water Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Condenser_Water_Temperature_Setpoint;1
-## Display name
-- **en:** Leaving Condenser Water Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

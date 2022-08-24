@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Temperature_Deadband_Setpoint](.)
 # Temperature_Deadband_Setpoint
+
+**Display name:** Temperature Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Temperature_Deadband_Setpoint;1
-## Display name
-- **en:** Temperature Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Temperature_Setpoint](../../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](../Air_Temperature_Setpoint.md) > [Return_Air_Temperature_Setpoint](Return_Air_Temperature_Setpoint.md) > [Occupied_Return_Air_Temperature_Setpoint](.)
 # Occupied_Return_Air_Temperature_Setpoint
+
+**Display name:** Occupied Return Air Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupied_Return_Air_Temperature_Setpoint;1
-## Display name
-- **en:** Occupied Return Air Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

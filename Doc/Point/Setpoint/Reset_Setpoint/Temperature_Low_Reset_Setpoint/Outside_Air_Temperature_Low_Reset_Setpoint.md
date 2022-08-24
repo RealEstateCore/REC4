@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Reset_Setpoint](../Reset_Setpoint.md) > [Temperature_Low_Reset_Setpoint](Temperature_Low_Reset_Setpoint.md) > [Outside_Air_Temperature_Low_Reset_Setpoint](.)
 # Outside_Air_Temperature_Low_Reset_Setpoint
+
+**Display name:** Outside Air Temperature Low Reset Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Temperature_Low_Reset_Setpoint;1
-## Display name
-- **en:** Outside Air Temperature Low Reset Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

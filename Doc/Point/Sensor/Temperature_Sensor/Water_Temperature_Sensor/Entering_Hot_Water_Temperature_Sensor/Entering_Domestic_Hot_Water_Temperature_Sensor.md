@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Temperature_Sensor](../../Temperature_Sensor.md) > [Water_Temperature_Sensor](../Water_Temperature_Sensor.md) > [Entering_Hot_Water_Temperature_Sensor](Entering_Hot_Water_Temperature_Sensor.md) > [Entering_Domestic_Hot_Water_Temperature_Sensor](.)
 # Entering_Domestic_Hot_Water_Temperature_Sensor
+
+**Display name:** Entering Domestic Hot Water Temperature Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Domestic_Hot_Water_Temperature_Sensor;1
-## Display name
-- **en:** Entering Domestic Hot Water Temperature Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

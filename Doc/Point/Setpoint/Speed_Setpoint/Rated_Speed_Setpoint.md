@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Speed_Setpoint](Speed_Setpoint.md) > [Rated_Speed_Setpoint](.)
 # Rated_Speed_Setpoint
+
+**Display name:** Rated Speed Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rated_Speed_Setpoint;1
-## Display name
-- **en:** Rated Speed Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

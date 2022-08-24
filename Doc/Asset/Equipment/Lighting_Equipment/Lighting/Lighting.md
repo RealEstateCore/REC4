@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Lighting_Equipment](../Lighting_Equipment.md) > [Lighting](.)
 # Lighting
+
+**Display name:** Lighting<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Lighting;1
-## Display name
-- **en:** Lighting
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

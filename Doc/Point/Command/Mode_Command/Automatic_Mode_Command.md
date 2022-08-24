@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Automatic_Mode_Command](.)
 # Automatic_Mode_Command
+
+**Display name:** Automatic Mode Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Automatic_Mode_Command;1
-## Display name
-- **en:** Automatic Mode Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

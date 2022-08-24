@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Pressure_Setpoint](Pressure_Setpoint.md) > [Velocity_Pressure_Setpoint](.)
 # Velocity_Pressure_Setpoint
+
+**Display name:** Velocity Pressure Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Velocity_Pressure_Setpoint;1
-## Display name
-- **en:** Velocity Pressure Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

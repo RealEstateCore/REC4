@@ -1,9 +1,10 @@
 [Space](../../../../Space.md) > [Architecture](../../../Architecture.md) > [Room](../../Room.md) > [UtilitiesRoom](../UtilitiesRoom.md) > [CableRoom](.)
 # CableRoom
+
+**Display name:** Cable room<br />
 **DTMI:** dtmi:org:w3id:rec:CableRoom;1
-## Display name
-- **en:** Cable room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

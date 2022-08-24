@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Fan_Command](Fan_Command.md) > [Fan_Speed_Command](.)
 # Fan_Speed_Command
+
+**Display name:** Fan Speed Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Speed_Command;1
-## Display name
-- **en:** Fan Speed Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

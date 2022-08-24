@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Motor](../Motor.md) > [VFD](VFD.md) > [Pump_VFD](.)
 # Pump_VFD
+
+**Display name:** Pump VFD<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Pump_VFD;1
-## Display name
-- **en:** Pump VFD
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

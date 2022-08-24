@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Pressure_Setpoint](../Pressure_Setpoint.md) > [Static_Pressure_Setpoint](.)
 # Static_Pressure_Setpoint
+
+**Display name:** Static Pressure Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Static_Pressure_Setpoint;1
-## Display name
-- **en:** Static Pressure Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

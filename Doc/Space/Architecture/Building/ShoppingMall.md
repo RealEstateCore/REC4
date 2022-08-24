@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](Building.md) > [ShoppingMall](.)
 # ShoppingMall
+
+**Display name:** Shopping mall<br />
 **DTMI:** dtmi:org:w3id:rec:ShoppingMall;1
-## Display name
-- **en:** Shopping mall
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Chilled_Beam](Chilled_Beam.md) > [Passive_Chilled_Beam](.)
 # Passive_Chilled_Beam
+
+**Display name:** Passive Chilled Beam<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Passive_Chilled_Beam;1
-## Display name
-- **en:** Passive Chilled Beam
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [PlugStrip](.)
 # PlugStrip
+
+**Display name:** PlugStrip<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PlugStrip;1
-## Display name
-- **en:** PlugStrip
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

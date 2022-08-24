@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Security_Equipment](../Security_Equipment.md) > [Intercom_Equipment](Intercom_Equipment.md) > [Video_Intercom](.)
 # Video_Intercom
+
+**Display name:** Video Intercom<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Video_Intercom;1
-## Display name
-- **en:** Video Intercom
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [Load_Shed_Status](../Load_Shed_Status.md) > [Leaving_Hot_Water_Temperature_Load_Shed_Status](Leaving_Hot_Water_Temperature_Load_Shed_Status.md) > [Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status](.)
 # Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status
+
+**Display name:** Leaving Medium Temperature Hot Water Temperature Load Shed Statu<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Leaving_Medium_Temperature_Hot_Water_Temperature_Load_Shed_Status;1
-## Display name
-- **en:** Leaving Medium Temperature Hot Water Temperature Load Shed Statu
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Enthalpy_Setpoint](.)
 # Enthalpy_Setpoint
+
+**Display name:** Enthalpy Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Enthalpy_Setpoint;1
-## Display name
-- **en:** Enthalpy Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

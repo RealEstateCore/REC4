@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Command](Command.md) > [Occupancy_Command](.)
 # Occupancy_Command
+
+**Display name:** Occupancy Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Occupancy_Command;1
-## Display name
-- **en:** Occupancy Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Setpoint](Setpoint.md) > [Frequency_Setpoint](.)
 # Frequency_Setpoint
+
+**Display name:** Frequency Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Frequency_Setpoint;1
-## Display name
-- **en:** Frequency Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

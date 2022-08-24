@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [DOAS](.)
 # DOAS
+
+**Display name:** DOAS<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:DOAS;1
-## Display name
-- **en:** DOAS
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

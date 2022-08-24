@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Adjust_Sensor](Adjust_Sensor.md) > [Warm_Cool_Adjust_Sensor](.)
 # Warm_Cool_Adjust_Sensor
+
+**Display name:** Warm Cool Adjust Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Warm_Cool_Adjust_Sensor;1
-## Display name
-- **en:** Warm Cool Adjust Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

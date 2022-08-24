@@ -1,9 +1,10 @@
 [Information](../Information.md) > [Document](.)
 # Document
+
+**Display name:** Document<br />
 **DTMI:** dtmi:org:w3id:rec:Document;1
-## Display name
-- **en:** Document
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

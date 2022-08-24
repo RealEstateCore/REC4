@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Position_Command](.)
 # Position_Command
+
+**Display name:** Position Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Position_Command;1
-## Display name
-- **en:** Position Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

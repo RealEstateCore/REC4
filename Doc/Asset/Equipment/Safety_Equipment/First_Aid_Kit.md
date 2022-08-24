@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Safety_Equipment](Safety_Equipment.md) > [First_Aid_Kit](.)
 # First_Aid_Kit
+
+**Display name:** First Aid Kit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:First_Aid_Kit;1
-## Display name
-- **en:** First Aid Kit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

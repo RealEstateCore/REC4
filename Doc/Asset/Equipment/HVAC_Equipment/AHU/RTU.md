@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [RTU](.)
 # RTU
+
+**Display name:** RTU<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:RTU;1
-## Display name
-- **en:** RTU
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

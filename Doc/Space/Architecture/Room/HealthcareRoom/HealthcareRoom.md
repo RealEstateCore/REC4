@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [HealthcareRoom](.)
 # HealthcareRoom
+
+**Display name:** Healthcare room<br />
 **DTMI:** dtmi:org:w3id:rec:HealthcareRoom;1
-## Display name
-- **en:** Healthcare room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

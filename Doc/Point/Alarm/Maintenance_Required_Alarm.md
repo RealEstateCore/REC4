@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Alarm](Alarm.md) > [Maintenance_Required_Alarm](.)
 # Maintenance_Required_Alarm
+
+**Display name:** Maintenance Required Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Maintenance_Required_Alarm;1
-## Display name
-- **en:** Maintenance Required Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

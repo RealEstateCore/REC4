@@ -1,9 +1,10 @@
 [Collection](../../../../../Collection.md) > [AssetCollection](../../../../AssetCollection.md) > [EquipmentCollection](../../../EquipmentCollection.md) > [System](../../System.md) > [Electrical_System](../Electrical_System.md) > [Energy_System](Energy_System.md) > [Energy_Generation_System](.)
 # Energy_Generation_System
+
+**Display name:** Energy Generation System<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Energy_Generation_System;1
-## Display name
-- **en:** Energy Generation System
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:EquipmentCollection;1:** feeds, hasPoint, includes

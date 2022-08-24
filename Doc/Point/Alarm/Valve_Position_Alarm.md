@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Alarm](Alarm.md) > [Valve_Position_Alarm](.)
 # Valve_Position_Alarm
+
+**Display name:** Valve Position Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Valve_Position_Alarm;1
-## Display name
-- **en:** Valve Position Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

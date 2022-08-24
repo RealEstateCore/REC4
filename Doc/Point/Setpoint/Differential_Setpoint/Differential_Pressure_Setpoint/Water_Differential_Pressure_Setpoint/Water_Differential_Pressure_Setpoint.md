@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Setpoint](../../../Setpoint.md) > [Differential_Setpoint](../../Differential_Setpoint.md) > [Differential_Pressure_Setpoint](../Differential_Pressure_Setpoint.md) > [Water_Differential_Pressure_Setpoint](.)
 # Water_Differential_Pressure_Setpoint
+
+**Display name:** Water Differential Pressure Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Differential_Pressure_Setpoint;1
-## Display name
-- **en:** Water Differential Pressure Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

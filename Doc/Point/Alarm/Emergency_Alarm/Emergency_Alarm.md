@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Emergency_Alarm](.)
 # Emergency_Alarm
+
+**Display name:** Emergency Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Emergency_Alarm;1
-## Display name
-- **en:** Emergency Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

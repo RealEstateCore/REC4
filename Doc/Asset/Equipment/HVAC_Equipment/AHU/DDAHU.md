@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [DDAHU](.)
 # DDAHU
+
+**Display name:** DDAHU<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:DDAHU;1
-## Display name
-- **en:** DDAHU
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

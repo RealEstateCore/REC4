@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Pressure_Sensor](../Pressure_Sensor.md) > [Velocity_Pressure_Sensor](Velocity_Pressure_Sensor.md) > [Supply_Air_Velocity_Pressure_Sensor](.)
 # Supply_Air_Velocity_Pressure_Sensor
+
+**Display name:** Supply Air Velocity Pressure Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Supply_Air_Velocity_Pressure_Sensor;1
-## Display name
-- **en:** Supply Air Velocity Pressure Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

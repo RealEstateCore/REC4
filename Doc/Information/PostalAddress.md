@@ -1,9 +1,10 @@
 [Information](Information.md) > [PostalAddress](.)
 # PostalAddress
+
+**Display name:** Postal address<br />
 **DTMI:** dtmi:org:w3id:rec:PostalAddress;1
-## Display name
-- **en:** Postal address
-## Description
+
+---
 ## Properties
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|

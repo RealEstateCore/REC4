@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Leak_Alarm](Leak_Alarm.md) > [Condensate_Leak_Alarm](.)
 # Condensate_Leak_Alarm
+
+**Display name:** Condensate Leak Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condensate_Leak_Alarm;1
-## Display name
-- **en:** Condensate Leak Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

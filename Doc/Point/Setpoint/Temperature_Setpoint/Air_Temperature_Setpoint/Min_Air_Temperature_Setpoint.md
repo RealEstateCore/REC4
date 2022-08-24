@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Air_Temperature_Setpoint](Air_Temperature_Setpoint.md) > [Min_Air_Temperature_Setpoint](.)
 # Min_Air_Temperature_Setpoint
+
+**Display name:** Min Air Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Air_Temperature_Setpoint;1
-## Display name
-- **en:** Min Air Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

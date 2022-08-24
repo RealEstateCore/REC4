@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Dry_Cooler](.)
 # Dry_Cooler
+
+**Display name:** Dry Cooler<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Dry_Cooler;1
-## Display name
-- **en:** Dry Cooler
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

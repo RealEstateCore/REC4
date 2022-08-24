@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Parameter](../Parameter.md) > [Load_Parameter](Load_Parameter.md) > [Max_Load_Setpoint](.)
 # Max_Load_Setpoint
+
+**Display name:** Max Load Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Load_Setpoint;1
-## Display name
-- **en:** Max Load Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

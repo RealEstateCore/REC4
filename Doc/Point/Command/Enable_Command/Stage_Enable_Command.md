@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Stage_Enable_Command](.)
 # Stage_Enable_Command
+
+**Display name:** Stage Enable Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Stage_Enable_Command;1
-## Display name
-- **en:** Stage Enable Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

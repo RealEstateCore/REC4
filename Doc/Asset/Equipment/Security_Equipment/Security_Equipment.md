@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Security_Equipment](.)
 # Security_Equipment
+
+**Display name:** Security Equipment<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Security_Equipment;1
-## Display name
-- **en:** Security Equipment
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Shading_Equipment](.)
 # Shading_Equipment
+
+**Display name:** Shading Equipment<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Shading_Equipment;1
-## Display name
-- **en:** Shading Equipment
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

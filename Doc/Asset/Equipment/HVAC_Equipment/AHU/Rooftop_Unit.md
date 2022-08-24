@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [Rooftop_Unit](.)
 # Rooftop_Unit
+
+**Display name:** Rooftop Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Rooftop_Unit;1
-## Display name
-- **en:** Rooftop Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

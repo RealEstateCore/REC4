@@ -1,9 +1,10 @@
 [Collection](../../Collection.md) > [AssetCollection](../AssetCollection.md) > [EquipmentCollection](.)
 # EquipmentCollection
+
+**Display name:** Equipment collection<br />
 **DTMI:** dtmi:org:w3id:rec:EquipmentCollection;1
-## Display name
-- **en:** Equipment collection
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

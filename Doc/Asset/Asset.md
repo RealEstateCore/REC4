@@ -1,10 +1,13 @@
 [Asset](.)
 # Asset
+
+Something which is placed inside of a building, but is not an integral part of that building's structure; e.g., furniture, equipment, systems, etc.
+
+
+**Display name:** Asset<br />
 **DTMI:** dtmi:org:w3id:rec:Asset;1
-## Display name
-- **en:** Asset
-## Description
-- **en:** Something which is placed inside of a building, but is not an integral part of that building's structure; e.g., furniture, equipment, systems, etc.
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

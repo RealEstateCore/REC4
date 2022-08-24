@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](Water_Temperature_Setpoint.md) > [Max_Water_Temperature_Setpoint](.)
 # Max_Water_Temperature_Setpoint
+
+**Display name:** Max Water Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Water_Temperature_Setpoint;1
-## Display name
-- **en:** Max Water Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

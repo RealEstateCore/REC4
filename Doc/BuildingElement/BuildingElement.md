@@ -1,10 +1,13 @@
 [BuildingElement](.)
 # BuildingElement
+
+A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc.
+
+
+**Display name:** Building element<br />
 **DTMI:** dtmi:org:w3id:rec:BuildingElement;1
-## Display name
-- **en:** Building element
-## Description
-- **en:** A part that constitutes a piece of a building's structural makeup. E.g., Facade, Wall, Slab, Roof, etc.
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

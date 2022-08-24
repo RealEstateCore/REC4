@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [AHU](AHU.md) > [PAU](.)
 # PAU
+
+**Display name:** PAU<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PAU;1
-## Display name
-- **en:** PAU
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

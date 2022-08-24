@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Setpoint](../Setpoint.md) > [Reset_Setpoint](.)
 # Reset_Setpoint
+
+**Display name:** Reset Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Reset_Setpoint;1
-## Display name
-- **en:** Reset Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

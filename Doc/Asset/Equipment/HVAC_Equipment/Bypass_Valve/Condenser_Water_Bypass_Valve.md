@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Bypass_Valve](Bypass_Valve.md) > [Condenser_Water_Bypass_Valve](.)
 # Condenser_Water_Bypass_Valve
+
+**Display name:** Condenser Water Bypass Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Condenser_Water_Bypass_Valve;1
-## Display name
-- **en:** Condenser Water Bypass Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

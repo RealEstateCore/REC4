@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [HVAC_Equipment](HVAC_Equipment.md) > [Cold_Deck](.)
 # Cold_Deck
+
+**Display name:** Cold Deck<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cold_Deck;1
-## Display name
-- **en:** Cold Deck
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

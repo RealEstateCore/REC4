@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Angle_Sensor](Angle_Sensor.md) > [Solar_Azimuth_Angle_Sensor](.)
 # Solar_Azimuth_Angle_Sensor
+
+**Display name:** Solar Azimuth Angle Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Solar_Azimuth_Angle_Sensor;1
-## Display name
-- **en:** Solar Azimuth Angle Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

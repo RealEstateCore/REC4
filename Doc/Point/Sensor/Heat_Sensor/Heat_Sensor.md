@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Heat_Sensor](.)
 # Heat_Sensor
+
+**Display name:** Heat Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Sensor;1
-## Display name
-- **en:** Heat Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Event](../Event.md) > [PointEvent](PointEvent.md) > [ActuationEvent](.)
 # ActuationEvent
+
+**Display name:** Actuation event<br />
 **DTMI:** dtmi:org:w3id:rec:ActuationEvent;1
-## Display name
-- **en:** Actuation event
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

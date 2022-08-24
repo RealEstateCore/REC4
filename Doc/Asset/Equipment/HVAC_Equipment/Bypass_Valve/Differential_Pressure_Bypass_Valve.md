@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Bypass_Valve](Bypass_Valve.md) > [Differential_Pressure_Bypass_Valve](.)
 # Differential_Pressure_Bypass_Valve
+
+**Display name:** Differential Pressure Bypass Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Differential_Pressure_Bypass_Valve;1
-## Display name
-- **en:** Differential Pressure Bypass Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

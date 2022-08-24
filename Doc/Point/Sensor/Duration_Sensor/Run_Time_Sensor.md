@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Duration_Sensor](Duration_Sensor.md) > [Run_Time_Sensor](.)
 # Run_Time_Sensor
+
+**Display name:** Run Time Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Run_Time_Sensor;1
-## Display name
-- **en:** Run Time Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

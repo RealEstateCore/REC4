@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Terminal_Unit](Terminal_Unit.md) > [Induction_Unit](.)
 # Induction_Unit
+
+**Display name:** Induction Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Induction_Unit;1
-## Display name
-- **en:** Induction Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Temperature_Sensor](../../Temperature_Sensor.md) > [Air_Temperature_Sensor](../Air_Temperature_Sensor.md) > [Outside_Air_Temperature_Sensor](Outside_Air_Temperature_Sensor.md) > [Intake_Air_Temperature_Sensor](.)
 # Intake_Air_Temperature_Sensor
+
+**Display name:** Intake Air Temperature Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Intake_Air_Temperature_Sensor;1
-## Display name
-- **en:** Intake Air Temperature Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Switchgear](.)
 # Switchgear
+
+**Display name:** Switchgear<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Switchgear;1
-## Display name
-- **en:** Switchgear
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

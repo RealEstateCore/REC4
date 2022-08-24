@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Differential_Setpoint](../Differential_Setpoint.md) > [Differential_Pressure_Deadband_Setpoint](Differential_Pressure_Deadband_Setpoint.md) > [Entering_Water_Differential_Pressure_Deadband_Setpoint](.)
 # Entering_Water_Differential_Pressure_Deadband_Setpoint
+
+**Display name:** Entering Water Differential Pressure Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Entering_Water_Differential_Pressure_Deadband_Setpoint;1
-## Display name
-- **en:** Entering Water Differential Pressure Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

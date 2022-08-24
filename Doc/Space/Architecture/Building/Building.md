@@ -1,10 +1,13 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Building](.)
 # Building
+
+A confined building structure.
+
+
+**Display name:** Building<br />
 **DTMI:** dtmi:org:w3id:rec:Building;1
-## Display name
-- **en:** Building
-## Description
-- **en:** A confined building structure.
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

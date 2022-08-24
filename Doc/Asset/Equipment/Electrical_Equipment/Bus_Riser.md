@@ -1,9 +1,10 @@
 [Asset](../../Asset.md) > [Equipment](../Equipment.md) > [Electrical_Equipment](Electrical_Equipment.md) > [Bus_Riser](.)
 # Bus_Riser
+
+**Display name:** Bus Riser<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Bus_Riser;1
-## Display name
-- **en:** Bus Riser
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

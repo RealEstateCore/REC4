@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Shelter](Shelter.md) > [ShelterGasLock](.)
 # ShelterGasLock
+
+**Display name:** Shelter gas lock<br />
 **DTMI:** dtmi:org:w3id:rec:ShelterGasLock;1
-## Display name
-- **en:** Shelter gas lock
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

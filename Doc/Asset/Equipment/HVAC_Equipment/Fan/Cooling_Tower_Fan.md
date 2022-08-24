@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Cooling_Tower_Fan](.)
 # Cooling_Tower_Fan
+
+**Display name:** Cooling Tower Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Cooling_Tower_Fan;1
-## Display name
-- **en:** Cooling Tower Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Sensor](../../../Sensor.md) > [Air_Quality_Sensor](../../Air_Quality_Sensor.md) > [Particulate_Matter_Sensor](../Particulate_Matter_Sensor.md) > [PM25_Sensor](PM25_Sensor.md) > [PM25_Level_Sensor](.)
 # PM25_Level_Sensor
+
+**Display name:** PM2.5 Level Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:PM25_Level_Sensor;1
-## Display name
-- **en:** PM2.5 Level Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

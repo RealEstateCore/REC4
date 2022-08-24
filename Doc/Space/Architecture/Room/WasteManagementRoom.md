@@ -1,9 +1,10 @@
 [Space](../../Space.md) > [Architecture](../Architecture.md) > [Room](Room.md) > [WasteManagementRoom](.)
 # WasteManagementRoom
+
+**Display name:** Waste management room<br />
 **DTMI:** dtmi:org:w3id:rec:WasteManagementRoom;1
-## Display name
-- **en:** Waste management room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

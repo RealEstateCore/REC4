@@ -1,9 +1,10 @@
 [Event](Event.md) > [Lease](.)
 # Lease
+
+**Display name:** Lease<br />
 **DTMI:** dtmi:org:w3id:rec:Lease;1
-## Display name
-- **en:** Lease
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

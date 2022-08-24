@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Usage_Sensor](Usage_Sensor.md) > [Natural_Gas_Usage_Sensor](.)
 # Natural_Gas_Usage_Sensor
+
+**Display name:** Natural Gas Usage Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Natural_Gas_Usage_Sensor;1
-## Display name
-- **en:** Natural Gas Usage Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

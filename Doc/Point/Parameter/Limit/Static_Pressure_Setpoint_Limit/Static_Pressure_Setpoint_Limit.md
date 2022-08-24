@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Parameter](../../Parameter.md) > [Limit](../Limit.md) > [Static_Pressure_Setpoint_Limit](.)
 # Static_Pressure_Setpoint_Limit
+
+**Display name:** Static Pressure Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Static_Pressure_Setpoint_Limit;1
-## Display name
-- **en:** Static Pressure Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

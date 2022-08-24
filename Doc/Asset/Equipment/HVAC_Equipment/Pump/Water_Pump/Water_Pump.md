@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Pump](../Pump.md) > [Water_Pump](.)
 # Water_Pump
+
+**Display name:** Water Pump<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Pump;1
-## Display name
-- **en:** Water Pump
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

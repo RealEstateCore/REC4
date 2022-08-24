@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Alarm](../../Alarm.md) > [Water_Alarm](../Water_Alarm.md) > [Water_Level_Alarm](Water_Level_Alarm.md) > [Max_Water_Level_Alarm](.)
 # Max_Water_Level_Alarm
+
+**Display name:** Max Water Level Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Water_Level_Alarm;1
-## Display name
-- **en:** Max Water Level Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

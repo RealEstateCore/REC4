@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [BackOffice](.)
 # BackOffice
+
+**Display name:** Back office<br />
 **DTMI:** dtmi:org:w3id:rec:BackOffice;1
-## Display name
-- **en:** Back office
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

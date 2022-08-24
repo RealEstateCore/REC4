@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Terminal_Unit](Terminal_Unit.md) > [Fan_Coil_Unit](.)
 # Fan_Coil_Unit
+
+**Display name:** Fan Coil Unit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fan_Coil_Unit;1
-## Display name
-- **en:** Fan Coil Unit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

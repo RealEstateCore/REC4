@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Temperature_Sensor](Temperature_Sensor.md) > [Heat_Sink_Temperature_Sensor](.)
 # Heat_Sink_Temperature_Sensor
+
+**Display name:** Heat Sink Temperature Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heat_Sink_Temperature_Sensor;1
-## Display name
-- **en:** Heat Sink Temperature Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

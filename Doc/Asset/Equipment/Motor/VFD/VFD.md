@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Motor](../Motor.md) > [VFD](.)
 # VFD
+
+**Display name:** VFD<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:VFD;1
-## Display name
-- **en:** VFD
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

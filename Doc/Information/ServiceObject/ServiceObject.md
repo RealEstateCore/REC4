@@ -1,9 +1,10 @@
 [Information](../Information.md) > [ServiceObject](.)
 # ServiceObject
+
+**Display name:** Service object<br />
 **DTMI:** dtmi:org:w3id:rec:ServiceObject;1
-## Display name
-- **en:** Service object
-## Description
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

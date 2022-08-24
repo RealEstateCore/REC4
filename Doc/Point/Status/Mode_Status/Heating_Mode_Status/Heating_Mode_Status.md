@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Status](../../Status.md) > [Mode_Status](../Mode_Status.md) > [Heating_Mode_Status](.)
 # Heating_Mode_Status
+
+**Display name:** Heating Mode Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Heating_Mode_Status;1
-## Display name
-- **en:** Heating Mode Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Filter](Filter.md) > [Intake_Air_Filter](.)
 # Intake_Air_Filter
+
+**Display name:** Intake Air Filter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Intake_Air_Filter;1
-## Display name
-- **en:** Intake Air Filter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

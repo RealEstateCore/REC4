@@ -1,9 +1,10 @@
 [Asset](../../../../../Asset.md) > [Equipment](../../../../Equipment.md) > [HVAC_Equipment](../../../HVAC_Equipment.md) > [Heat_Exchanger](../../Heat_Exchanger.md) > [Coil](../Coil.md) > [Heating_Coil](Heating_Coil.md) > [Direct_Expansion_Heating_Coil](.)
 # Direct_Expansion_Heating_Coil
+
+**Display name:** Direct Expansion Heating Coil<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direct_Expansion_Heating_Coil;1
-## Display name
-- **en:** Direct Expansion Heating Coil
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

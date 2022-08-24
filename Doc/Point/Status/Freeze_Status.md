@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Status](Status.md) > [Freeze_Status](.)
 # Freeze_Status
+
+**Display name:** Freeze Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Freeze_Status;1
-## Display name
-- **en:** Freeze Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

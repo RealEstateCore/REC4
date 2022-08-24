@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Filter](Filter.md) > [Mixed_Air_Filter](.)
 # Mixed_Air_Filter
+
+**Display name:** Mixed Air Filter<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Mixed_Air_Filter;1
-## Display name
-- **en:** Mixed Air Filter
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

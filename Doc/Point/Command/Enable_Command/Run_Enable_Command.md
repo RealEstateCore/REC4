@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Enable_Command](Enable_Command.md) > [Run_Enable_Command](.)
 # Run_Enable_Command
+
+**Display name:** Run Enable Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Run_Enable_Command;1
-## Display name
-- **en:** Run Enable Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

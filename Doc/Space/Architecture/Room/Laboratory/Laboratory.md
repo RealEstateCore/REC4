@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [Laboratory](.)
 # Laboratory
+
+**Display name:** Laboratory<br />
 **DTMI:** dtmi:org:w3id:rec:Laboratory;1
-## Display name
-- **en:** Laboratory
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

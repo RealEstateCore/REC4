@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Air_Diffuser](Air_Diffuser.md) > [Displacement_Flow_Air_Diffuser](.)
 # Displacement_Flow_Air_Diffuser
+
+**Display name:** Displacement Flow Air Diffuser<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Displacement_Flow_Air_Diffuser;1
-## Display name
-- **en:** Displacement Flow Air Diffuser
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

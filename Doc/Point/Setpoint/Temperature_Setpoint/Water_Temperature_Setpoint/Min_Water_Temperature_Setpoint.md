@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Water_Temperature_Setpoint](Water_Temperature_Setpoint.md) > [Min_Water_Temperature_Setpoint](.)
 # Min_Water_Temperature_Setpoint
+
+**Display name:** Min Water Temperature Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Water_Temperature_Setpoint;1
-## Display name
-- **en:** Min Water Temperature Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

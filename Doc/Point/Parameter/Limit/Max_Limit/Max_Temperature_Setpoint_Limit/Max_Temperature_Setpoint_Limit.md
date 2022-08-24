@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [Limit](../../Limit.md) > [Max_Limit](../Max_Limit.md) > [Max_Temperature_Setpoint_Limit](.)
 # Max_Temperature_Setpoint_Limit
+
+**Display name:** Max Temperature Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Max_Temperature_Setpoint_Limit;1
-## Display name
-- **en:** Max Temperature Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

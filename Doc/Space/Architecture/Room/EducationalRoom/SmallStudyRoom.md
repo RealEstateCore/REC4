@@ -1,9 +1,10 @@
 [Space](../../../Space.md) > [Architecture](../../Architecture.md) > [Room](../Room.md) > [EducationalRoom](EducationalRoom.md) > [SmallStudyRoom](.)
 # SmallStudyRoom
+
+**Display name:** Small study room<br />
 **DTMI:** dtmi:org:w3id:rec:SmallStudyRoom;1
-## Display name
-- **en:** Small study room
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:w3id:rec:Architecture;1:** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy

@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Parameter](../../../Parameter.md) > [Limit](../../Limit.md) > [Static_Pressure_Setpoint_Limit](../Static_Pressure_Setpoint_Limit.md) > [Min_Static_Pressure_Setpoint_Limit](Min_Static_Pressure_Setpoint_Limit.md) > [Min_Discharge_Air_Static_Pressure_Setpoint_Limit](.)
 # Min_Discharge_Air_Static_Pressure_Setpoint_Limit
+
+**Display name:** Min Discharge Air Static Pressure Setpoint Limit<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Min_Discharge_Air_Static_Pressure_Setpoint_Limit;1
-## Display name
-- **en:** Min Discharge Air Static Pressure Setpoint Limit
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

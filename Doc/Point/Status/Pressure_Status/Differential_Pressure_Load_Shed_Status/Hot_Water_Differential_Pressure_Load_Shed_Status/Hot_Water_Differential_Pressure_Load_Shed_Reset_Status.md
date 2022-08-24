@@ -1,9 +1,10 @@
 [Point](../../../../Point.md) > [Status](../../../Status.md) > [Pressure_Status](../../Pressure_Status.md) > [Differential_Pressure_Load_Shed_Status](../Differential_Pressure_Load_Shed_Status.md) > [Hot_Water_Differential_Pressure_Load_Shed_Status](Hot_Water_Differential_Pressure_Load_Shed_Status.md) > [Hot_Water_Differential_Pressure_Load_Shed_Reset_Status](.)
 # Hot_Water_Differential_Pressure_Load_Shed_Reset_Status
+
+**Display name:** Hot Water Differential Pressure Load Shed Reset Status<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Hot_Water_Differential_Pressure_Load_Shed_Reset_Status;1
-## Display name
-- **en:** Hot Water Differential Pressure Load Shed Reset Status
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

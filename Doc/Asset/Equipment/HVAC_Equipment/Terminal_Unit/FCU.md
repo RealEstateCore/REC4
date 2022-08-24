@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Terminal_Unit](Terminal_Unit.md) > [FCU](.)
 # FCU
+
+**Display name:** FCU<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:FCU;1
-## Display name
-- **en:** FCU
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

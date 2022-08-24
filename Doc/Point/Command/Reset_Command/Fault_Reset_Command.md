@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Reset_Command](Reset_Command.md) > [Fault_Reset_Command](.)
 # Fault_Reset_Command
+
+**Display name:** Fault Reset Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Fault_Reset_Command;1
-## Display name
-- **en:** Fault Reset Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

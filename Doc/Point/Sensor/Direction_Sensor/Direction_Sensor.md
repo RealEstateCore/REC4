@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Direction_Sensor](.)
 # Direction_Sensor
+
+**Display name:** Direction Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Direction_Sensor;1
-## Display name
-- **en:** Direction Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

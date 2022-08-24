@@ -1,10 +1,13 @@
 [Information](../Information.md) > [Document](Document.md) > [LeaseContract](.)
 # LeaseContract
+
+Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement.
+
+
+**Display name:** Lease contract<br />
 **DTMI:** dtmi:org:w3id:rec:LeaseContract;1
-## Display name
-- **en:** Lease contract
-## Description
-- **en:** Formal document that identifies the Tenant and the leased asset or property; states lease term and fee (rent), and detailed terms and conditions of the lease agreement.
+
+---
 ## Relationships
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|

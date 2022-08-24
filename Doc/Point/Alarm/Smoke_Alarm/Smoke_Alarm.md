@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Smoke_Alarm](.)
 # Smoke_Alarm
+
+**Display name:** Smoke Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Smoke_Alarm;1
-## Display name
-- **en:** Smoke Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

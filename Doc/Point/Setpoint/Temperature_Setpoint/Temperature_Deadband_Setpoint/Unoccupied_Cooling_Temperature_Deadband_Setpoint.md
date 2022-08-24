@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Setpoint](../../Setpoint.md) > [Temperature_Setpoint](../Temperature_Setpoint.md) > [Temperature_Deadband_Setpoint](Temperature_Deadband_Setpoint.md) > [Unoccupied_Cooling_Temperature_Deadband_Setpoint](.)
 # Unoccupied_Cooling_Temperature_Deadband_Setpoint
+
+**Display name:** Unoccupied Cooling Temperature Deadband Setpoint<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unoccupied_Cooling_Temperature_Deadband_Setpoint;1
-## Display name
-- **en:** Unoccupied Cooling Temperature Deadband Setpoint
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

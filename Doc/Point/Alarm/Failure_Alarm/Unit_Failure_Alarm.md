@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Failure_Alarm](Failure_Alarm.md) > [Unit_Failure_Alarm](.)
 # Unit_Failure_Alarm
+
+**Display name:** Unit Failure Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Unit_Failure_Alarm;1
-## Display name
-- **en:** Unit Failure Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

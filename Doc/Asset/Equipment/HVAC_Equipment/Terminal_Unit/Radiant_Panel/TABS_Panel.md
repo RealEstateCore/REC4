@@ -1,9 +1,10 @@
 [Asset](../../../../Asset.md) > [Equipment](../../../Equipment.md) > [HVAC_Equipment](../../HVAC_Equipment.md) > [Terminal_Unit](../Terminal_Unit.md) > [Radiant_Panel](Radiant_Panel.md) > [TABS_Panel](.)
 # TABS_Panel
+
+**Display name:** TABS Panel<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:TABS_Panel;1
-## Display name
-- **en:** TABS Panel
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

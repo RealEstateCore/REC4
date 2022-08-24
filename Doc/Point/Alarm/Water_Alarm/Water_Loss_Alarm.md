@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Alarm](../Alarm.md) > [Water_Alarm](Water_Alarm.md) > [Water_Loss_Alarm](.)
 # Water_Loss_Alarm
+
+**Display name:** Water Loss Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Loss_Alarm;1
-## Display name
-- **en:** Water Loss Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

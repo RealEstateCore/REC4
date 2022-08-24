@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Sensor](../Sensor.md) > [Demand_Sensor](.)
 # Demand_Sensor
+
+**Display name:** Demand Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Demand_Sensor;1
-## Display name
-- **en:** Demand Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

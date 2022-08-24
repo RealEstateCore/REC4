@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [HVAC_Equipment](../HVAC_Equipment.md) > [Fan](Fan.md) > [Ceiling_Fan](.)
 # Ceiling_Fan
+
+**Display name:** Ceiling Fan<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Ceiling_Fan;1
-## Display name
-- **en:** Ceiling Fan
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

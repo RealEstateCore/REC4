@@ -1,9 +1,10 @@
 [Point](../../Point.md) > [Command](../Command.md) > [Mode_Command](Mode_Command.md) > [Maintenance_Mode_Command](.)
 # Maintenance_Mode_Command
+
+**Display name:** Maintenance Mode Command<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Maintenance_Mode_Command;1
-## Display name
-- **en:** Maintenance Mode Command
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

@@ -1,9 +1,10 @@
 [Point](../../../Point.md) > [Sensor](../../Sensor.md) > [Humidity_Sensor](../Humidity_Sensor.md) > [Relative_Humidity_Sensor](Relative_Humidity_Sensor.md) > [Outside_Air_Humidity_Sensor](.)
 # Outside_Air_Humidity_Sensor
+
+**Display name:** Outside Air Humidity Sensor<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Outside_Air_Humidity_Sensor;1
-## Display name
-- **en:** Outside Air Humidity Sensor
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf

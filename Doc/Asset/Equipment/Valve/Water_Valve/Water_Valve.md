@@ -1,9 +1,10 @@
 [Asset](../../../Asset.md) > [Equipment](../../Equipment.md) > [Valve](../Valve.md) > [Water_Valve](.)
 # Water_Valve
+
+**Display name:** Water Valve<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Water_Valve;1
-## Display name
-- **en:** Water Valve
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Equipment;1:** feeds, isFedBy

@@ -1,9 +1,10 @@
 [Point](../Point.md) > [Alarm](Alarm.md) > [Luminance_Alarm](.)
 # Luminance_Alarm
+
+**Display name:** Luminance Alarm<br />
 **DTMI:** dtmi:org:brickschema:schema:Brick:Luminance_Alarm;1
-## Display name
-- **en:** Luminance Alarm
-## Description
+
+---
 ## Relationships
 ### Inherited Relationships
 * **dtmi:org:brickschema:schema:Brick:Point;1:** isPointOf
