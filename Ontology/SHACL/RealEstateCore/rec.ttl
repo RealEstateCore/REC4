@@ -1330,6 +1330,12 @@ rec:Organization
       sh:name "logo" ;
     ] ;
 .
+rec:OutdoorSpace
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Outdoor space" ;
+  rdfs:subClassOf rec:Architecture ;
+.
 rec:OutpatientServicesRoom
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1342,17 +1348,11 @@ rec:Pantry
   rdfs:label "Pantry" ;
   rdfs:subClassOf rec:FoodHandlingRoom ;
 .
-rec:ParkingSlotCold
+rec:ParkingSpace
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:label "Parking slot (cold)" ;
-  rdfs:subClassOf rec:Garage ;
-.
-rec:ParkingSlotWarm
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Parking slot (warm)" ;
-  rdfs:subClassOf rec:Garage ;
+  rdfs:label "Parking space" ;
+  rdfs:subClassOf rec:Zone ;
 .
 rec:Partition
   a rdfs:Class ;
@@ -1960,7 +1960,7 @@ rec:Workspace
 rec:Zone
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A sub-zone within a building defined to support some technology and/or use, e.g., an HVAC zone, a security zone, etc." ;
+  rdfs:comment "A sub-zone within or outside of a building defined to support some technology and/or use, e.g., an HVAC zone, a parking space, a security zone, etc." ;
   rdfs:label "Zone" ;
   rdfs:subClassOf rec:Architecture ;
 .
