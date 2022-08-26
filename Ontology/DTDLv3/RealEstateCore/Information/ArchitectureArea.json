@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:ArchitectureArea;1",
+  "@id": "dtmi:org:w3id:rec:ArchitectureArea",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:grossArea",
       "@type": "Property",
       "displayName": {
         "en": "gross area"
@@ -12,6 +13,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:netArea",
       "@type": "Property",
       "displayName": {
         "en": "net area"
@@ -21,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:rentableArea",
       "@type": "Property",
       "displayName": {
         "en": "rentable area"
@@ -36,7 +39,7 @@
   "displayName": {
     "en": "Architecture area"
   },
-  "extends": "dtmi:org:w3id:rec:Information;1",
+  "extends": "dtmi:org:w3id:rec:Information",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

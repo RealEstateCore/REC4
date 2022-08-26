@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:DiningRoom;1",
+  "@id": "dtmi:org:w3id:rec:DiningRoom",
   "@type": "Interface",
   "displayName": {
     "en": "Dining room"
   },
-  "extends": "dtmi:org:w3id:rec:FoodHandlingRoom;1",
+  "extends": "dtmi:org:w3id:rec:FoodHandlingRoom",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

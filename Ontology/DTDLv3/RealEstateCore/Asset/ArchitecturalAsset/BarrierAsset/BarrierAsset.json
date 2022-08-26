@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:BarrierAsset;1",
+  "@id": "dtmi:org:w3id:rec:BarrierAsset",
   "@type": "Interface",
   "displayName": {
     "en": "Barrier asset"
   },
-  "extends": "dtmi:org:w3id:rec:ArchitecturalAsset;1",
+  "extends": "dtmi:org:w3id:rec:ArchitecturalAsset",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

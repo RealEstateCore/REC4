@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:ShelterRoom;1",
+  "@id": "dtmi:org:w3id:rec:ShelterRoom",
   "@type": "Interface",
   "displayName": {
     "en": "Shelter room"
   },
-  "extends": "dtmi:org:w3id:rec:Shelter;1",
+  "extends": "dtmi:org:w3id:rec:Shelter",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

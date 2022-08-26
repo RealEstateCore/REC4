@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:DataServerRoom;1",
+  "@id": "dtmi:org:w3id:rec:DataServerRoom",
   "@type": "Interface",
   "displayName": {
     "en": "Data server room"
   },
-  "extends": "dtmi:org:w3id:rec:UtilitiesRoom;1",
+  "extends": "dtmi:org:w3id:rec:UtilitiesRoom",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

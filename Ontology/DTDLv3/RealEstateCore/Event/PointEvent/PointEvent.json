@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:PointEvent;1",
+  "@id": "dtmi:org:w3id:rec:PointEvent",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:payload",
       "@type": "Property",
       "description": {
         "en": "The payload message of this point event (e.g., a sensor reading, a command message, an exception message, etc.)"
@@ -21,7 +22,7 @@
   "displayName": {
     "en": "Point event"
   },
-  "extends": "dtmi:org:w3id:rec:Event;1",
+  "extends": "dtmi:org:w3id:rec:Event",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

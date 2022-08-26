@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:ServiceObject;1",
+  "@id": "dtmi:org:w3id:rec:ServiceObject",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:acknowledgedTime",
       "@type": "Property",
       "displayName": {
         "en": "acknowledged time"
@@ -12,6 +13,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:closedTime",
       "@type": "Property",
       "displayName": {
         "en": "closed time"
@@ -21,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:createdTime",
       "@type": "Property",
       "displayName": {
         "en": "created time"
@@ -30,6 +33,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:severity",
       "@type": "Property",
       "displayName": {
         "en": "severity"
@@ -56,6 +60,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:status",
       "@type": "Property",
       "displayName": {
         "en": "status"
@@ -82,45 +87,50 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:acknowledgedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "acknowledged by"
       },
       "maxMultiplicity": 1,
       "name": "acknowledgedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:closedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "closed by"
       },
       "maxMultiplicity": 1,
       "name": "closedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:createdBy",
       "@type": "Relationship",
       "displayName": {
         "en": "created by"
       },
       "maxMultiplicity": 1,
       "name": "createdBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:producedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "produced by"
       },
       "name": "producedBy",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
+      "target": "dtmi:org:brickschema:schema:Brick:Point",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:relatedTo",
       "@type": "Relationship",
       "displayName": {
         "en": "related to"
@@ -132,7 +142,7 @@
   "displayName": {
     "en": "Service object"
   },
-  "extends": "dtmi:org:w3id:rec:Information;1",
+  "extends": "dtmi:org:w3id:rec:Information",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

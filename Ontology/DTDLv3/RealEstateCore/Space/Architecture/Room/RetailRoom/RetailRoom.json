@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:RetailRoom;1",
+  "@id": "dtmi:org:w3id:rec:RetailRoom",
   "@type": "Interface",
   "displayName": {
     "en": "Retail room"
   },
-  "extends": "dtmi:org:w3id:rec:Room;1",
+  "extends": "dtmi:org:w3id:rec:Room",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

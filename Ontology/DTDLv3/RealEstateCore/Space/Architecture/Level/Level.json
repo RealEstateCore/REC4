@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Level;1",
+  "@id": "dtmi:org:w3id:rec:Level",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:levelNumber",
       "@type": "Property",
       "displayName": {
         "en": "level number"
@@ -18,7 +19,7 @@
   "displayName": {
     "en": "Level"
   },
-  "extends": "dtmi:org:w3id:rec:Architecture;1",
+  "extends": "dtmi:org:w3id:rec:Architecture",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:Atrium;1",
+  "@id": "dtmi:org:w3id:rec:Atrium",
   "@type": "Interface",
   "displayName": {
     "en": "Atrium"
   },
-  "extends": "dtmi:org:w3id:rec:Room;1",
+  "extends": "dtmi:org:w3id:rec:Room",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

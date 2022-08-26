@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:PhoneBooth;1",
+  "@id": "dtmi:org:w3id:rec:PhoneBooth",
   "@type": "Interface",
   "displayName": {
     "en": "PhoneBooth"
   },
-  "extends": "dtmi:org:w3id:rec:Office;1",
+  "extends": "dtmi:org:w3id:rec:Office",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

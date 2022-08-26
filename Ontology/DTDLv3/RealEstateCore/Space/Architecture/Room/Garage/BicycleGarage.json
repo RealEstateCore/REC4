@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:BicycleGarage;1",
+  "@id": "dtmi:org:w3id:rec:BicycleGarage",
   "@type": "Interface",
   "displayName": {
     "en": "Bicycle garage"
   },
-  "extends": "dtmi:org:w3id:rec:Garage;1",
+  "extends": "dtmi:org:w3id:rec:Garage",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

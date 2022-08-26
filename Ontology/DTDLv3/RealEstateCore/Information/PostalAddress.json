@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:PostalAddress;1",
+  "@id": "dtmi:org:w3id:rec:PostalAddress",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:addressLine1",
       "@type": "Property",
       "displayName": {
         "en": "address line 1"
@@ -12,6 +13,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:addressLine2",
       "@type": "Property",
       "displayName": {
         "en": "address line 2"
@@ -21,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:city",
       "@type": "Property",
       "displayName": {
         "en": "city"
@@ -30,6 +33,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:country",
       "@type": "Property",
       "description": {
         "en": "The country, e.g., USA, Sweden, Argentina, or optionally a two-letter ISO 3166-1 alpha-2 country code, e.g., \"SE\", \"US\", etc."
@@ -42,6 +46,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:postalCode",
       "@type": "Property",
       "displayName": {
         "en": "postal code"
@@ -51,6 +56,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:region",
       "@type": "Property",
       "displayName": {
         "en": "region"
@@ -63,7 +69,7 @@
   "displayName": {
     "en": "Postal address"
   },
-  "extends": "dtmi:org:w3id:rec:Information;1",
+  "extends": "dtmi:org:w3id:rec:Information",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

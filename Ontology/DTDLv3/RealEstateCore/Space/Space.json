@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Space;1",
+  "@id": "dtmi:org:w3id:rec:Space",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:customTags",
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -22,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:externalIds",
       "@type": "Property",
       "displayName": {
         "en": "External IDs"
@@ -41,6 +43,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:geometry",
       "@type": "Property",
       "description": {
         "en": "A GeoJSON Polygon coordinate listing representing the geometrical representation of the space. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]."
@@ -53,6 +56,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:name",
       "@type": "Property",
       "displayName": {
         "en": "name"
@@ -62,15 +66,17 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:hasPart",
       "@type": "Relationship",
       "displayName": {
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:Space;1",
+      "target": "dtmi:org:w3id:rec:Space",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:isLocationOf",
       "@type": "Relationship",
       "displayName": {
         "en": "is location of"
@@ -79,13 +85,14 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:isPartOf",
       "@type": "Relationship",
       "displayName": {
         "en": "is part of"
       },
       "maxMultiplicity": 1,
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Space;1",
+      "target": "dtmi:org:w3id:rec:Space",
       "writable": true
     }
   ],

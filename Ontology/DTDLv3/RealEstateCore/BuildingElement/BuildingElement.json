@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:BuildingElement;1",
+  "@id": "dtmi:org:w3id:rec:BuildingElement",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:customTags",
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -22,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:externalIds",
       "@type": "Property",
       "displayName": {
         "en": "External IDs"
@@ -41,6 +43,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:name",
       "@type": "Property",
       "displayName": {
         "en": "name"
@@ -50,34 +53,38 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:documentation",
       "@type": "Relationship",
       "displayName": {
         "en": "documentation"
       },
       "name": "documentation",
-      "target": "dtmi:org:w3id:rec:Document;1",
+      "target": "dtmi:org:w3id:rec:Document",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:hasPart",
       "@type": "Relationship",
       "displayName": {
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "target": "dtmi:org:w3id:rec:BuildingElement",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:isPartOf",
       "@type": "Relationship",
       "displayName": {
         "en": "is part of"
       },
       "maxMultiplicity": 1,
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "target": "dtmi:org:w3id:rec:BuildingElement",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:locatedIn",
       "@type": "Relationship",
       "description": {
         "en": "Indicates the architected space (site, building, level, room...) in which this building element is placed."
@@ -87,7 +94,7 @@
       },
       "maxMultiplicity": 1,
       "name": "locatedIn",
-      "target": "dtmi:org:w3id:rec:Architecture;1",
+      "target": "dtmi:org:w3id:rec:Architecture",
       "writable": true
     }
   ],

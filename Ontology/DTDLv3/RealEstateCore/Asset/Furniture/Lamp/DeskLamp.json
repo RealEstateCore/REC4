@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:DeskLamp;1",
+  "@id": "dtmi:org:w3id:rec:DeskLamp",
   "@type": "Interface",
   "displayName": {
     "en": "Desk lamp"
   },
-  "extends": "dtmi:org:w3id:rec:Lamp;1",
+  "extends": "dtmi:org:w3id:rec:Lamp",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

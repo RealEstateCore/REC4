@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:MainEntrance;1",
+  "@id": "dtmi:org:w3id:rec:MainEntrance",
   "@type": "Interface",
   "displayName": {
     "en": "Main entrance"
   },
-  "extends": "dtmi:org:w3id:rec:Entrance;1",
+  "extends": "dtmi:org:w3id:rec:Entrance",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

@@ -1,14 +1,16 @@
 {
-  "@id": "dtmi:org:w3id:rec:EquipmentCollection;1",
+  "@id": "dtmi:org:w3id:rec:EquipmentCollection",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:feeds",
       "@type": "Relationship",
       "displayName": {
         "en": "feeds"
       },
       "name": "feeds",
       "properties": {
+        "@id": "dtmi:org:w3id:rec:substance",
         "@type": "Property",
         "displayName": {
           "en": "substance"
@@ -169,28 +171,30 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:hasPoint",
       "@type": "Relationship",
       "displayName": {
         "en": "has point"
       },
       "name": "hasPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
+      "target": "dtmi:org:brickschema:schema:Brick:Point",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:includes",
       "@type": "Relationship",
       "displayName": {
         "en": "includes"
       },
       "name": "includes",
-      "target": "dtmi:org:brickschema:schema:Brick:Equipment;1",
+      "target": "dtmi:org:brickschema:schema:Brick:Equipment",
       "writable": true
     }
   ],
   "displayName": {
     "en": "Equipment collection"
   },
-  "extends": "dtmi:org:w3id:rec:AssetCollection;1",
+  "extends": "dtmi:org:w3id:rec:AssetCollection",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

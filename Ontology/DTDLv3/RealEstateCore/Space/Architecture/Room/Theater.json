@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:Theater;1",
+  "@id": "dtmi:org:w3id:rec:Theater",
   "@type": "Interface",
   "displayName": {
     "en": "Theater"
   },
-  "extends": "dtmi:org:w3id:rec:Room;1",
+  "extends": "dtmi:org:w3id:rec:Room",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

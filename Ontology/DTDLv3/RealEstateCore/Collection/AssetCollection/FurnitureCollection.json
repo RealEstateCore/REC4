@@ -1,21 +1,22 @@
 {
-  "@id": "dtmi:org:w3id:rec:FurnitureCollection;1",
+  "@id": "dtmi:org:w3id:rec:FurnitureCollection",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:includes",
       "@type": "Relationship",
       "displayName": {
         "en": "includes"
       },
       "name": "includes",
-      "target": "dtmi:org:w3id:rec:Furniture;1",
+      "target": "dtmi:org:w3id:rec:Furniture",
       "writable": true
     }
   ],
   "displayName": {
     "en": "Furniture collection"
   },
-  "extends": "dtmi:org:w3id:rec:AssetCollection;1",
+  "extends": "dtmi:org:w3id:rec:AssetCollection",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

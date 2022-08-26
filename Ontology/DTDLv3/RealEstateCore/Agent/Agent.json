@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Agent;1",
+  "@id": "dtmi:org:w3id:rec:Agent",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:customTags",
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -22,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:externalIds",
       "@type": "Property",
       "displayName": {
         "en": "External IDs"
@@ -41,6 +43,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:name",
       "@type": "Property",
       "displayName": {
         "en": "name"
@@ -50,6 +53,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:isMemberOf",
       "@type": "Relationship",
       "description": {
         "en": "Indicates membership in an organization. Note that componency (e.g., departments of a corporation) are expressed using the more generic Organization.isPartOf property."
@@ -58,7 +62,7 @@
         "en": "is member of"
       },
       "name": "isMemberOf",
-      "target": "dtmi:org:w3id:rec:Organization;1",
+      "target": "dtmi:org:w3id:rec:Organization",
       "writable": true
     }
   ],

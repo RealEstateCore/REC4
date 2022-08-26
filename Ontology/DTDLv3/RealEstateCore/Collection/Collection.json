@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Collection;1",
+  "@id": "dtmi:org:w3id:rec:Collection",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:customTags",
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -22,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:externalIds",
       "@type": "Property",
       "displayName": {
         "en": "External IDs"
@@ -41,6 +43,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:name",
       "@type": "Property",
       "displayName": {
         "en": "name"
@@ -50,12 +53,13 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:documentation",
       "@type": "Relationship",
       "displayName": {
         "en": "documentation"
       },
       "name": "documentation",
-      "target": "dtmi:org:w3id:rec:Document;1",
+      "target": "dtmi:org:w3id:rec:Document",
       "writable": true
     }
   ],

@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Lease;1",
+  "@id": "dtmi:org:w3id:rec:Lease",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:leaseOf",
       "@type": "Relationship",
       "description": {
         "en": "The object (e.g., property, equipment, etc) that this a lease of."
@@ -14,6 +15,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:leasee",
       "@type": "Relationship",
       "description": {
         "en": "The agent leasing some leasable object, i.e., the user of the asset."
@@ -22,10 +24,11 @@
         "en": "leasee"
       },
       "name": "leasee",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:leasor",
       "@type": "Relationship",
       "description": {
         "en": "The agent leasing out some leasable object, i.e., the owner of the asset."
@@ -34,10 +37,11 @@
         "en": "leasor"
       },
       "name": "leasor",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:regulatedBy",
       "@type": "Relationship",
       "description": {
         "en": "Indicates the contract regulating the terms of the lease in question. "
@@ -46,14 +50,14 @@
         "en": "regulated by"
       },
       "name": "regulatedBy",
-      "target": "dtmi:org:w3id:rec:LeaseContract;1",
+      "target": "dtmi:org:w3id:rec:LeaseContract",
       "writable": true
     }
   ],
   "displayName": {
     "en": "Lease"
   },
-  "extends": "dtmi:org:w3id:rec:Event;1",
+  "extends": "dtmi:org:w3id:rec:Event",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

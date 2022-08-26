@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:OccupancyZone;1",
+  "@id": "dtmi:org:w3id:rec:OccupancyZone",
   "@type": "Interface",
   "displayName": {
     "en": "Occupancy zone"
   },
-  "extends": "dtmi:org:w3id:rec:Zone;1",
+  "extends": "dtmi:org:w3id:rec:Zone",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

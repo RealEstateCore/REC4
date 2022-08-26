@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:MobileDesk;1",
+  "@id": "dtmi:org:w3id:rec:MobileDesk",
   "@type": "Interface",
   "displayName": {
     "en": "Mobile desk"
   },
-  "extends": "dtmi:org:w3id:rec:Desk;1",
+  "extends": "dtmi:org:w3id:rec:Desk",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

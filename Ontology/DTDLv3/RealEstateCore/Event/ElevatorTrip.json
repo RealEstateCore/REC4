@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:ElevatorTrip;1",
+  "@id": "dtmi:org:w3id:rec:ElevatorTrip",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:currentLevel",
       "@type": "Property",
       "displayName": {
         "en": "current level"
@@ -12,6 +13,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:endLevel",
       "@type": "Property",
       "displayName": {
         "en": "end level"
@@ -21,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:startLevel",
       "@type": "Property",
       "displayName": {
         "en": "start level"
@@ -30,6 +33,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:tripDirection",
       "@type": "Property",
       "displayName": {
         "en": "trip direction"
@@ -55,7 +59,7 @@
   "displayName": {
     "en": "Elevator trip"
   },
-  "extends": "dtmi:org:w3id:rec:Event;1",
+  "extends": "dtmi:org:w3id:rec:Event",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

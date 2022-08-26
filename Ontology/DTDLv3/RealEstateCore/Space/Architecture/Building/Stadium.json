@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:Stadium;1",
+  "@id": "dtmi:org:w3id:rec:Stadium",
   "@type": "Interface",
   "displayName": {
     "en": "Stadium"
   },
-  "extends": "dtmi:org:w3id:rec:Building;1",
+  "extends": "dtmi:org:w3id:rec:Building",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:LeaseContract;1",
+  "@id": "dtmi:org:w3id:rec:LeaseContract",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:regulates",
       "@type": "Relationship",
       "description": {
         "en": "Indicates the lease(s) that this contract regulates the conditions of."
@@ -11,7 +12,7 @@
         "en": "regulates"
       },
       "name": "regulates",
-      "target": "dtmi:org:w3id:rec:Lease;1",
+      "target": "dtmi:org:w3id:rec:Lease",
       "writable": true
     }
   ],
@@ -21,7 +22,7 @@
   "displayName": {
     "en": "Lease contract"
   },
-  "extends": "dtmi:org:w3id:rec:Document;1",
+  "extends": "dtmi:org:w3id:rec:Document",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

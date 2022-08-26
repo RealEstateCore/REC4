@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:BackOffice;1",
+  "@id": "dtmi:org:w3id:rec:BackOffice",
   "@type": "Interface",
   "displayName": {
     "en": "Back office"
   },
-  "extends": "dtmi:org:w3id:rec:Room;1",
+  "extends": "dtmi:org:w3id:rec:Room",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:org:w3id:rec:MezzanineLevel;1",
+  "@id": "dtmi:org:w3id:rec:MezzanineLevel",
   "@type": "Interface",
   "displayName": {
     "en": "Mezzanine level"
   },
-  "extends": "dtmi:org:w3id:rec:Level;1",
+  "extends": "dtmi:org:w3id:rec:Level",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

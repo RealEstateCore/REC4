@@ -1,14 +1,16 @@
 {
-  "@id": "dtmi:org:w3id:rec:Person;1",
+  "@id": "dtmi:org:w3id:rec:Person",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:familyName",
       "@type": "Property",
       "name": "familyName",
       "schema": "string",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:gender",
       "@type": "Property",
       "displayName": {
         "en": "gender"
@@ -18,12 +20,14 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:givenName",
       "@type": "Property",
       "name": "givenName",
       "schema": "string",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:image",
       "@type": "Property",
       "description": {
         "en": "URL link to an image that represents the person."
@@ -42,7 +46,7 @@
   "displayName": {
     "en": "Person"
   },
-  "extends": "dtmi:org:w3id:rec:Agent;1",
+  "extends": "dtmi:org:w3id:rec:Agent",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

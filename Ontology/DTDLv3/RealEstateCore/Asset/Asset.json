@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:Asset;1",
+  "@id": "dtmi:org:w3id:rec:Asset",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:IPAddress",
       "@type": "Property",
       "displayName": {
         "en": "IP address"
@@ -12,6 +13,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:MACAddress",
       "@type": "Property",
       "displayName": {
         "en": "MAC address"
@@ -21,6 +23,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:assetTag",
       "@type": "Property",
       "displayName": {
         "en": "asset tag"
@@ -30,6 +33,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:commissioningDate",
       "@type": "Property",
       "displayName": {
         "en": "commissioning date"
@@ -39,6 +43,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:customTags",
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
@@ -58,6 +63,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:externalIds",
       "@type": "Property",
       "displayName": {
         "en": "External IDs"
@@ -77,6 +83,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:geometry",
       "@type": "Property",
       "description": {
         "en": "A GeoJSON Polygon coordinate listing representing the geometrical representation of the asset. Coordinates may be expressed in two or three dimensions. Ex: [[30.0, 10.0, 0.0], [40.0, 40.0, 2.0], [20.0, 40.0, 2.0], [10.0, 20.0, 2.0], [30.0, 10.0, 0.0]]."
@@ -89,6 +96,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:initialCost",
       "@type": "Property",
       "displayName": {
         "en": "initial cost"
@@ -98,6 +106,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:installationDate",
       "@type": "Property",
       "displayName": {
         "en": "installation date"
@@ -107,6 +116,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:maintenanceInterval",
       "@type": "Property",
       "displayName": {
         "en": "maintenance interval"
@@ -116,6 +126,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:modelNumber",
       "@type": "Property",
       "displayName": {
         "en": "model number"
@@ -125,6 +136,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:name",
       "@type": "Property",
       "displayName": {
         "en": "name"
@@ -134,6 +146,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:serialNumber",
       "@type": "Property",
       "displayName": {
         "en": "serial number"
@@ -143,6 +156,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:turnoverDate",
       "@type": "Property",
       "displayName": {
         "en": "turnover date"
@@ -152,6 +166,7 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:weight",
       "@type": "Property",
       "displayName": {
         "en": "weight"
@@ -161,78 +176,87 @@
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:commissionedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "commissioned by"
       },
       "name": "commissionedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:documentation",
       "@type": "Relationship",
       "displayName": {
         "en": "documentation"
       },
       "name": "documentation",
-      "target": "dtmi:org:w3id:rec:Document;1",
+      "target": "dtmi:org:w3id:rec:Document",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:hasPart",
       "@type": "Relationship",
       "displayName": {
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:org:w3id:rec:Asset;1",
+      "target": "dtmi:org:w3id:rec:Asset",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:hasPoint",
       "@type": "Relationship",
       "displayName": {
         "en": "has point"
       },
       "name": "hasPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
+      "target": "dtmi:org:brickschema:schema:Brick:Point",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:installedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "installed by"
       },
       "name": "installedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:isPartOf",
       "@type": "Relationship",
       "displayName": {
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:org:w3id:rec:Asset;1",
+      "target": "dtmi:org:w3id:rec:Asset",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:locatedIn",
       "@type": "Relationship",
       "displayName": {
         "en": "located in"
       },
       "name": "locatedIn",
-      "target": "dtmi:org:w3id:rec:Space;1",
+      "target": "dtmi:org:w3id:rec:Space",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:manufacturedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "manufactured by"
       },
       "name": "manufacturedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:mountedOn",
       "@type": "Relationship",
       "description": {
         "en": "An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc)."
@@ -242,16 +266,17 @@
       },
       "maxMultiplicity": 1,
       "name": "mountedOn",
-      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "target": "dtmi:org:w3id:rec:BuildingElement",
       "writable": true
     },
     {
+      "@id": "dtmi:org:w3id:rec:servicedBy",
       "@type": "Relationship",
       "displayName": {
         "en": "serviced by"
       },
       "name": "servicedBy",
-      "target": "dtmi:org:w3id:rec:Agent;1",
+      "target": "dtmi:org:w3id:rec:Agent",
       "writable": true
     }
   ],

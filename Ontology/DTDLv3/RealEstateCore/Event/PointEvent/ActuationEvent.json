@@ -1,8 +1,9 @@
 {
-  "@id": "dtmi:org:w3id:rec:ActuationEvent;1",
+  "@id": "dtmi:org:w3id:rec:ActuationEvent",
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:org:w3id:rec:targetPoint",
       "@type": "Relationship",
       "description": {
         "en": "The brick:Point(s) (e.g., brick:Commands, brick:Setpoints, or brick:Parameters) that the actuation will target/execute."
@@ -11,14 +12,14 @@
         "en": "target point"
       },
       "name": "targetPoint",
-      "target": "dtmi:org:brickschema:schema:Brick:Point;1",
+      "target": "dtmi:org:brickschema:schema:Brick:Point",
       "writable": true
     }
   ],
   "displayName": {
     "en": "Actuation event"
   },
-  "extends": "dtmi:org:w3id:rec:PointEvent;1",
+  "extends": "dtmi:org:w3id:rec:PointEvent",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"
