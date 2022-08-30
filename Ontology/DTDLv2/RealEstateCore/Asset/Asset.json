@@ -234,6 +234,19 @@
     },
     {
       "@type": "Relationship",
+      "description": {
+        "en": "An asset may be mounted on some part of the building construction (e.g., a blind on a facade, a camera on a wall, etc)."
+      },
+      "displayName": {
+        "en": "mounted on"
+      },
+      "maxMultiplicity": 1,
+      "name": "mountedOn",
+      "target": "dtmi:org:w3id:rec:BuildingElement;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
       "displayName": {
         "en": "serviced by"
       },

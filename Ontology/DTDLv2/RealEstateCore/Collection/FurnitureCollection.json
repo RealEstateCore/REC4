@@ -15,7 +15,7 @@
   "displayName": {
     "en": "Furniture collection"
   },
-  "extends": "dtmi:org:w3id:rec:AssetCollection;1",
+  "extends": "dtmi:org:w3id:rec:Collection;1",
   "@context": [
     "dtmi:dtdl:context;2"
   ]
