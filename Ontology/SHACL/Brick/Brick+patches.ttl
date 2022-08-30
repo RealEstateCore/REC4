@@ -32858,8 +32858,16 @@ brick:Loop
   a sh:NodeShape ;
   rdfs:label "Loop" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
   skos:definition "A collection of connected equipment; part of a System"@en ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       sh:path brick:hasPart ;
       sh:or (
@@ -44067,8 +44075,16 @@ brick:PV_Array
   a sh:NodeShape ;
   rdfs:label "PV Array" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
   owl:equivalentClass brick:Photovoltaic_Array ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:PV_Panel ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       sh:path brick:hasPart ;
       sh:or (
@@ -44597,7 +44613,7 @@ brick:Photovoltaic_Array
   a sh:NodeShape ;
   rdfs:label "Photovoltaic Array" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:EquipmentCollection ;
+  owl:deprecated true ;
   owl:equivalentClass brick:PV_Array ;
   skos:definition "A collection of photovoltaic panels"@en ;
   sh:property [
@@ -54153,8 +54169,16 @@ brick:System
   a sh:NodeShape ;
   rdfs:label "System" ;
   rdfs:subClassOf brick:Collection ;
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
   skos:definition "A System is a combination of equipment and auxiliary devices (e.g., controls, accessories, interconnecting means, and termi­nal elements) by which energy is transformed so it performs a specific function such as HVAC, service water heating, or lighting. (ASHRAE Dictionary)."@en ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
       sh:path brick:hasPart ;
       sh:or (

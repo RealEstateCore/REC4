@@ -1,7 +1,16 @@
 {
-  "@id": "dtmi:org:brickschema:schema:Brick:Photovoltaic_Array;1",
+  "@id": "dtmi:org:brickschema:schema:Brick:PV_Array;1",
   "@type": "Interface",
   "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "includes"
+      },
+      "name": "includes",
+      "target": "dtmi:org:brickschema:schema:Brick:PV_Panel;1",
+      "writable": true
+    },
     {
       "@type": [
         "Initialized",
@@ -14,7 +23,7 @@
         "en": "Tags"
       },
       "initialValue": [
-        "Photovoltaic",
+        "PV",
         "Collection",
         "Array"
       ],
@@ -27,9 +36,9 @@
     }
   ],
   "displayName": {
-    "en": "Photovoltaic Array"
+    "en": "PV Array"
   },
-  "extends": "dtmi:org:w3id:rec:EquipmentCollection;1",
+  "extends": "dtmi:org:w3id:rec:Collection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"

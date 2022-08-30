@@ -195,7 +195,15 @@ brick:Location
   owl:deprecated true ;
 .
 brick:Loop
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 brick:Lounge
   owl:deprecated true ;
@@ -243,7 +251,15 @@ brick:Outside
   owl:deprecated true ;
 .
 brick:PV_Array
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:PV_Panel ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 brick:Parking_Level
   owl:deprecated true ;
@@ -255,7 +271,7 @@ brick:Parking_Structure
   owl:deprecated true ;
 .
 brick:Photovoltaic_Array
-  rdfs:subClassOf rec:EquipmentCollection ;
+  owl:deprecated true ;
 .
 brick:Plumbing_Room
   owl:deprecated true ;
@@ -355,7 +371,15 @@ brick:Switch_Room
   owl:deprecated true ;
 .
 brick:System
-  rdfs:subClassOf rec:EquipmentCollection ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class brick:Equipment ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 brick:TETRA_Room
   owl:deprecated true ;

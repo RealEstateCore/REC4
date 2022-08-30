@@ -18,7 +18,7 @@
   "displayName": {
     "en": "Campus"
   },
-  "extends": "dtmi:org:w3id:rec:SpaceCollection;1",
+  "extends": "dtmi:org:w3id:rec:Collection;1",
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:initialization;1"
