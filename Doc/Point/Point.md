@@ -17,6 +17,7 @@
 ---
 
 ## Relationships
+
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |isPointOf|**en**: Is point of||0-Infinity|||True|
@@ -24,6 +25,7 @@
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |aggregate|**en**: Aggregate||Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
@@ -39,7 +41,7 @@
 ## Target Of
 ### Direct
 * [Asset](../Asset/Asset.md).hasPoint
-* [EquipmentCollection](../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).hasPoint
+* [EquipmentCollection](../Collection/EquipmentCollection.md).hasPoint
 * [ActuationEvent](../Event/PointEvent/ActuationEvent.md).targetPoint
 * [ExceptionEvent](../Event/PointEvent/ExceptionEvent.md).sourcePoint
 * [ObservationEvent](../Event/PointEvent/ObservationEvent.md).sourcePoint

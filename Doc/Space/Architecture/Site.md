@@ -10,6 +10,7 @@ A piece of land upon which zero or more buildings may be situated.
 ---
 
 ## Relationships
+
 ### Inherited Relationships
 * **[Architecture](Architecture.md):** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
 * **[Space](../Space.md):** hasPart, isLocationOf, isPartOf
@@ -17,6 +18,7 @@ A piece of land upon which zero or more buildings may be situated.
 ---
 
 ## Properties
+
 ### Inherited Properties
 * **[Space](../Space.md):** customTags, externalIds, geometry, name
 
@@ -26,6 +28,7 @@ A piece of land upon which zero or more buildings may be situated.
 ### Inherited
 * [Asset](../../Asset/Asset.md).locatedIn
 * [BuildingElement](../../BuildingElement/BuildingElement.md).locatedIn
+* [Campus](../../Collection/Campus.md).includes
+* [Premises](../../Collection/Premises.md).includes
 * [Space](../Space.md).hasPart
 * [Space](../Space.md).isPartOf
-* [Campus](../../Collection/SpaceCollection/Campus.md).includes

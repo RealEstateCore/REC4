@@ -10,6 +10,7 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 ---
 
 ## Child interfaces
+* [OutdoorSpace](OutdoorSpace.md)
 * [Site](Site.md)
 * [SubBuilding](SubBuilding.md)
 * [Building](Building/Building.md)
@@ -20,6 +21,7 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 ---
 
 ## Relationships
+
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |address|**en**: address|**en**: Physical address of the architecture (site, building, sub-building, entrance room, etc.) in question.|0-Infinity|[PostalAddress](../../Information/PostalAddress.md)||True|
@@ -39,6 +41,7 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 ---
 
 ## Properties
+
 ### Inherited Properties
 * **[Space](../Space.md):** customTags, externalIds, geometry, name
 
@@ -47,7 +50,8 @@ A designed/landscaped (or potentially designed/landscaped) part of the physical 
 ## Target Of
 ### Direct
 * [BuildingElement](../../BuildingElement/BuildingElement.md).locatedIn
-* [Campus](../../Collection/SpaceCollection/Campus.md).includes
+* [Campus](../../Collection/Campus.md).includes
+* [Premises](../../Collection/Premises.md).includes
 ### Inherited
 * [Asset](../../Asset/Asset.md).locatedIn
 * [Space](../Space.md).hasPart

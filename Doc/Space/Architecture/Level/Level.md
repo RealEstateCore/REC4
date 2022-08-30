@@ -17,6 +17,7 @@ The level of a building, a.k.a. storey, floor, etc.
 ---
 
 ## Relationships
+
 ### Inherited Relationships
 * **[Architecture](../Architecture.md):** address, adjacentElement, architectedBy, constructedBy, containsElement, documentation, hasPoint, intersectingElement, isFedBy, operatedBy, ownedBy
 * **[Space](../../Space.md):** hasPart, isLocationOf, isPartOf
@@ -24,6 +25,7 @@ The level of a building, a.k.a. storey, floor, etc.
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |levelNumber|**en**: level number||integer|True|
@@ -36,6 +38,7 @@ The level of a building, a.k.a. storey, floor, etc.
 ### Inherited
 * [Asset](../../../Asset/Asset.md).locatedIn
 * [BuildingElement](../../../BuildingElement/BuildingElement.md).locatedIn
+* [Campus](../../../Collection/Campus.md).includes
+* [Premises](../../../Collection/Premises.md).includes
 * [Space](../../Space.md).hasPart
 * [Space](../../Space.md).isPartOf
-* [Campus](../../../Collection/SpaceCollection/Campus.md).includes

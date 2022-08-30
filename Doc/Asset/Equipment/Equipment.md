@@ -31,6 +31,7 @@
 ---
 
 ## Relationships
+
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |feeds|**en**: feeds||0-Infinity||substance (enum (ACElec, Air, BlowdownWater, ChilledWater, ColdDomesticWater, Condensate, CondenserWater, DCElec, Diesel, DriveElec, Ethernet, ExhaustAir, Freight, FuelOil, Gasoline, GreaseExhaustAir, HotDomesticWater, HotWater, IrrigationWater, Light, MakeupWater, NaturalGas, NonPotableDomesticWater, OutsideAir, People, Propane, RecircHotDomesticWater, Refrig, ReturnAir, SprinklerWater, Steam, StormDrainage, SupplyAir, TransferAir, WasteVentDrainage, Water))|True|
@@ -41,6 +42,7 @@
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |operationalStageCount|**en**: Operational stage count||string|True|
@@ -51,7 +53,9 @@
 
 ## Target Of
 ### Direct
-* [EquipmentCollection](../../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).includes
+* [EquipmentCollection](../../Collection/EquipmentCollection.md).includes
+* [Loop](../../Collection/Loop/Loop.md).includes
+* [System](../../Collection/System/System.md).includes
 ### Inherited
 * [Asset](../Asset.md).hasPart
 * [Asset](../Asset.md).isPartOf
