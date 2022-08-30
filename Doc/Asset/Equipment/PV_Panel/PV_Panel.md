@@ -12,6 +12,7 @@
 ---
 
 ## Relationships
+
 ### Inherited Relationships
 * **[Equipment](../Equipment.md):** feeds, isFedBy
 * **[Asset](../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
@@ -19,6 +20,7 @@
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |measuredModuleConversionEfficiency|**en**: Measured module conversion efficiency||Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
@@ -30,7 +32,11 @@
 ---
 
 ## Target Of
+### Direct
+* [PV_Array](../../../Collection/PV_Array.md).includes
 ### Inherited
 * [Asset](../../Asset.md).hasPart
 * [Asset](../../Asset.md).isPartOf
-* [EquipmentCollection](../../../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).includes
+* [EquipmentCollection](../../../Collection/EquipmentCollection.md).includes
+* [Loop](../../../Collection/Loop/Loop.md).includes
+* [System](../../../Collection/System/System.md).includes

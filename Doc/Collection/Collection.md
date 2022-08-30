@@ -10,13 +10,20 @@ An administrative grouping of entities that are adressed and treated as a unit f
 ---
 
 ## Child interfaces
+* [PV_Array](PV_Array.md)
+* [Apartment](Apartment.md)
+* [Campus](Campus.md)
+* [EquipmentCollection](EquipmentCollection.md)
+* [FurnitureCollection](FurnitureCollection.md)
 * [Portfolio](Portfolio.md)
-* [AssetCollection](AssetCollection/AssetCollection.md)
-* [SpaceCollection](SpaceCollection/SpaceCollection.md)
+* [Premises](Premises.md)
+* [Loop](Loop/Loop.md)
+* [System](System/System.md)
 
 ---
 
 ## Relationships
+
 |Name|Display name|Description|Multiplicity|Target|Properties|Writable|
 |-|-|-|-|-|-|-|
 |documentation|**en**: documentation||0-Infinity|[Document](../Information/Document/Document.md)||True|
@@ -24,6 +31,7 @@ An administrative grouping of entities that are adressed and treated as a unit f
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |customTags|**en**: Custom Tags||map (string->boolean)|True|

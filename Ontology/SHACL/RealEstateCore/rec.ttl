@@ -88,7 +88,7 @@ rec:Apartment
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Apartment" ;
-  rdfs:subClassOf rec:SpaceCollection ;
+  rdfs:subClassOf rec:Collection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -422,12 +422,6 @@ rec:Asset
       sh:name "weight" ;
     ] ;
 .
-rec:AssetCollection
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Asset collection" ;
-  rdfs:subClassOf rec:Collection ;
-.
 rec:Atrium
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -574,7 +568,7 @@ rec:Campus
   a sh:NodeShape ;
   rdfs:comment "A campus represents a collection of location entities. The constituent locations may have differing legal ownership and utilization purposes, but they are generally perceived as a coherent unit or sub-region within a city or other region. E.g., a university campus, a hospital campus, a corporate campus, etc." ;
   rdfs:label "Campus" ;
-  rdfs:subClassOf rec:SpaceCollection ;
+  rdfs:subClassOf rec:Collection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -843,7 +837,7 @@ rec:EquipmentCollection
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Equipment collection" ;
-  rdfs:subClassOf rec:AssetCollection ;
+  rdfs:subClassOf rec:Collection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:feeds ;
@@ -994,7 +988,7 @@ rec:FurnitureCollection
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Furniture collection" ;
-  rdfs:subClassOf rec:AssetCollection ;
+  rdfs:subClassOf rec:Collection ;
   sh:property [
       a sh:PropertyShape ;
       sh:path rec:includes ;
@@ -1500,6 +1494,21 @@ rec:PostalAddress
       sh:name "region" ;
     ] ;
 .
+rec:Premises
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A premises is an administrative grouping of spaces that are used for some commercial or industrial purpose by a real estate holder or tenant. E.g, a suite of offices, a shop, or an industrial workshop." ;
+  rdfs:label "Premises" ;
+  rdfs:subClassOf rec:Collection ;
+  sh:property [
+      a sh:PropertyShape ;
+      sh:path rec:includes ;
+      sh:class rec:Architecture ;
+      sh:minCount 1 ;
+      sh:name "includes" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 rec:PrinterCart
   a rdfs:Class ;
   a sh:NodeShape ;
@@ -1794,12 +1803,6 @@ rec:Space
       sh:name "is part of" ;
       sh:nodeKind sh:IRI ;
     ] ;
-.
-rec:SpaceCollection
-  a rdfs:Class ;
-  a sh:NodeShape ;
-  rdfs:label "Space collection" ;
-  rdfs:subClassOf rec:Collection ;
 .
 rec:SprinklerRoom
   a rdfs:Class ;

@@ -13,6 +13,7 @@
 ---
 
 ## Relationships
+
 ### Inherited Relationships
 * **[Equipment](../../Equipment.md):** feeds, isFedBy
 * **[Asset](../../../Asset.md):** commissionedBy, documentation, hasPart, hasPoint, installedBy, isPartOf, locatedIn, manufacturedBy, mountedOn, servicedBy
@@ -20,6 +21,7 @@
 ---
 
 ## Properties
+
 |Name|Display name|Description|Schema|Writable|
 |-|-|-|-|-|
 |coolingCapacity|**en**: Cooling capacity||Microsoft.Azure.DigitalTwins.Parser.Models.DTObjectInfo|True|
@@ -33,4 +35,6 @@
 ### Inherited
 * [Asset](../../../Asset.md).hasPart
 * [Asset](../../../Asset.md).isPartOf
-* [EquipmentCollection](../../../../Collection/AssetCollection/EquipmentCollection/EquipmentCollection.md).includes
+* [EquipmentCollection](../../../../Collection/EquipmentCollection.md).includes
+* [Loop](../../../../Collection/Loop/Loop.md).includes
+* [System](../../../../Collection/System/System.md).includes

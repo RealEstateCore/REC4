@@ -5,28 +5,10 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "is metered by"
-      },
-      "name": "isMeteredBy",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "is virtual meter"
       },
       "name": "isVirtualMeter",
       "schema": "boolean",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "meters"
-      },
-      "name": "meters",
-      "schema": "string",
       "writable": true
     },
     {
@@ -45,6 +27,14 @@
       },
       "name": "isSubMeterOf",
       "target": "dtmi:org:brickschema:schema:Brick:Meter;1",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "meters"
+      },
+      "name": "meters",
       "writable": true
     }
   ],
